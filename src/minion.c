@@ -202,16 +202,16 @@ boolean talk;
 /*JP
             pline_The("voice of %s booms:", align_gname(alignment));
 */
-            pline("%s‚Ìº‚ª‹¿‚¢‚½:", align_gname(alignment));
+            pline("%sã®å£°ãŒéŸ¿ã„ãŸ:", align_gname(alignment));
 /*JP
             verbalize("Thou shalt pay for thine indiscretion!");
 */
-            verbalize("“ğC–³•ª•Ê‚È‚és‚¢‚Ì”±‚ğó‚¯‚é‚×‚µI");
+            verbalize("æ±ï¼Œç„¡åˆ†åˆ¥ãªã‚‹è¡Œã„ã®ç½°ã‚’å—ã‘ã‚‹ã¹ã—ï¼");
             if (!Blind)
 /*JP
                 pline("%s appears before you.", Amonnam(mon));
 */
-                pline("%s‚ª‚ ‚È‚½‚Ì‘O‚ÉŒ»‚í‚ê‚½D", Amonnam(mon));
+                pline("%sãŒã‚ãªãŸã®å‰ã«ç¾ã‚ã‚ŒãŸï¼", Amonnam(mon));
             mon->mstrategy &= ~STRAT_APPEARMSG;
         }
         mon->mpeaceful = FALSE;
@@ -232,7 +232,7 @@ register struct monst *mtmp;
 /*JP
         pline("%s looks very angry.", Amonnam(mtmp));
 */
-        pline("%s‚Í‚Æ‚Ä‚à“{‚Á‚Ä‚¢‚é‚æ‚¤‚ÉŒ©‚¦‚éD", Amonnam(mtmp));
+        pline("%sã¯ã¨ã¦ã‚‚æ€’ã£ã¦ã„ã‚‹ã‚ˆã†ã«è¦‹ãˆã‚‹ï¼", Amonnam(mtmp));
         mtmp->mpeaceful = mtmp->mtame = 0;
         set_malign(mtmp);
         newsym(mtmp->mx, mtmp->my);
@@ -258,7 +258,7 @@ register struct monst *mtmp;
 /*JP
             pline("%s appears before you.", Amonnam(mtmp));
 */
-            pline("%s‚ª–Ú‚Ì‘O‚ÉŒ»‚í‚ê‚½D", Amonnam(mtmp));
+            pline("%sãŒç›®ã®å‰ã«ç¾ã‚ã‚ŒãŸï¼", Amonnam(mtmp));
             mtmp->mstrategy &= ~STRAT_APPEARMSG;
         }
         newsym(mtmp->mx, mtmp->my);
@@ -268,8 +268,8 @@ register struct monst *mtmp;
         pline("%s says, \"Good hunting, %s.\"", Amonnam(mtmp),
               flags.female ? "Sister" : "Brother");
 #else
-        pline("%s‚ÍŒ¾‚Á‚½u‚æ‚¤ŒZ%sIvD‚»‚µ‚ÄÁ‚¦‚½D", Amonnam(mtmp),
-              flags.female ? "–…" : "’í");
+        pline("%sã¯è¨€ã£ãŸã€Œã‚ˆã†å…„%sï¼ã€ï¼ãã—ã¦æ¶ˆãˆãŸï¼", Amonnam(mtmp),
+              flags.female ? "å¦¹" : "å¼Ÿ");
 #endif
         if (!tele_restrict(mtmp))
             (void) rloc(mtmp, TRUE);
@@ -295,7 +295,7 @@ register struct monst *mtmp;
         pline("%s demands %ld %s for safe passage.", Amonnam(mtmp), demand,
               currency(demand));
 #else
-        pline("%s‚Í’Ês—¿‚Æ‚µ‚Ä%ld%s—v‹‚µ‚½D", Amonnam(mtmp), demand,
+        pline("%sã¯é€šè¡Œæ–™ã¨ã—ã¦%ld%sè¦æ±‚ã—ãŸï¼", Amonnam(mtmp), demand,
               currency(demand));
 #endif
 
@@ -303,19 +303,19 @@ register struct monst *mtmp;
 /*JP
             pline("%s vanishes, laughing about cowardly mortals.",
 */
-            pline("‰°•a‚È’è–½‚Ì‚à‚Ì‚ğÎ‚¢‚È‚ª‚çC%s‚ÍÁ‚¦‚½D",
+            pline("è‡†ç—…ãªå®šå‘½ã®ã‚‚ã®ã‚’ç¬‘ã„ãªãŒã‚‰ï¼Œ%sã¯æ¶ˆãˆãŸï¼",
                   Amonnam(mtmp));
         } else if (offer > 0L && (long) rnd(40) > (demand - offer)) {
 /*JP
             pline("%s scowls at you menacingly, then vanishes.",
 */
-            pline("%s‚Í‚ ‚È‚½‚ğˆĞŠd‚µCÁ‚¦‚½D",
+            pline("%sã¯ã‚ãªãŸã‚’å¨åš‡ã—ï¼Œæ¶ˆãˆãŸï¼",
                   Amonnam(mtmp));
         } else {
 /*JP
             pline("%s gets angry...", Amonnam(mtmp));
 */
-            pline("%s‚Í“{‚Á‚½DDD", Amonnam(mtmp));
+            pline("%sã¯æ€’ã£ãŸï¼ï¼ï¼", Amonnam(mtmp));
             mtmp->mpeaceful = 0;
             set_malign(mtmp);
             return 0;
@@ -336,7 +336,7 @@ struct monst *mtmp;
 /*JP
     getlin("How much will you offer?", buf);
 */
-    getlin("‚¨‹à‚ğ‚¢‚­‚ç—^‚¦‚éH", buf);
+    getlin("ãŠé‡‘ã‚’ã„ãã‚‰ä¸ãˆã‚‹ï¼Ÿ", buf);
     if (sscanf(buf, "%ld", &offer) != 1)
         offer = 0L;
 
@@ -346,25 +346,25 @@ struct monst *mtmp;
 /*JP
         You("try to shortchange %s, but fumble.", mon_nam(mtmp));
 */
-        You("%s‚ğ‚¾‚Ü‚»‚¤‚Æ‚µ‚½‚ªC¸”s‚µ‚½D", mon_nam(mtmp));
+        You("%sã‚’ã ã¾ãã†ã¨ã—ãŸãŒï¼Œå¤±æ•—ã—ãŸï¼", mon_nam(mtmp));
         return 0L;
     } else if (offer == 0L) {
 /*JP
         You("refuse.");
 */
-        You("‹‘‚ñ‚¾D");
+        You("æ‹’ã‚“ã ï¼");
         return 0L;
     } else if (offer >= umoney) {
 /*JP
         You("give %s all your gold.", mon_nam(mtmp));
 */
-        You("%s‚É‚¨‹à‚ğ‘S‚Ä—^‚¦‚½D", mon_nam(mtmp));
+        You("%sã«ãŠé‡‘ã‚’å…¨ã¦ä¸ãˆãŸï¼", mon_nam(mtmp));
         offer = umoney;
     } else {
 /*JP
         You("give %s %ld %s.", mon_nam(mtmp), offer, currency(offer));
 */
-        You("%s‚É%ld%s—^‚¦‚½D", mon_nam(mtmp), offer, currency(offer));
+        You("%sã«%ld%sä¸ãˆãŸï¼", mon_nam(mtmp), offer, currency(offer));
     }
     (void) money2mon(mtmp, offer);
     context.botl = 1;
@@ -457,16 +457,16 @@ struct monst *mon; /* if null, angel hasn't been created yet */
 /*JP
                 pline("%s rebukes you, saying:", Monnam(mon));
 */
-                pline("%s‚Í‚ ‚È‚½‚ğ”ñ“ï‚µ‚½F", Monnam(mon));
+                pline("%sã¯ã‚ãªãŸã‚’éé›£ã—ãŸï¼š", Monnam(mon));
 /*JP
                 verbalize("Since you desire conflict, have some more!");
 */
-                verbalize("“¬‘ˆ‚ğ–]‚ñ‚Å‚¢‚é‚æ‚¤‚¾‚©‚çC‚à‚Á‚Æ—^‚¦‚Ä‚â‚ë‚¤I");
+                verbalize("é—˜äº‰ã‚’æœ›ã‚“ã§ã„ã‚‹ã‚ˆã†ã ã‹ã‚‰ï¼Œã‚‚ã£ã¨ä¸ãˆã¦ã‚„ã‚ã†ï¼");
             } else {
 /*JP
                 pline("%s vanishes!", Monnam(mon));
 */
-                pline("%s‚ÍÁ‚¦‚½I", Monnam(mon));
+                pline("%sã¯æ¶ˆãˆãŸï¼", Monnam(mon));
             }
         }
         mongone(mon);
@@ -495,22 +495,22 @@ gain_guardian_angel()
 /*JP
         pline("A voice booms:");
 */
-        pline("º‚ª‹¿‚¢‚½:");
+        pline("å£°ãŒéŸ¿ã„ãŸ:");
 /*JP
         verbalize("Thy desire for conflict shall be fulfilled!");
 */
-        verbalize("u“ğ‚Ì“¬‘ˆ‚Ö‚Ì–]‚İC‚©‚È‚¦‚ç‚ê‚é‚×‚µIv");
+        verbalize("ã€Œæ±ã®é—˜äº‰ã¸ã®æœ›ã¿ï¼Œã‹ãªãˆã‚‰ã‚Œã‚‹ã¹ã—ï¼ã€");
         /* send in some hostile angels instead */
         lose_guardian_angel((struct monst *) 0);
     } else if (u.ualign.record > 8) { /* fervent */
 /*JP
         pline("A voice whispers:");
 */
-        pline("‚³‚³‚â‚«º‚ª•·‚±‚¦‚½:");
+        pline("ã•ã•ã‚„ãå£°ãŒèã“ãˆãŸ:");
 /*JP
         verbalize("Thou hast been worthy of me!");
 */
-        verbalize("u“ğC‰ä‚ª•]‰¿‚ğ“¾‚½‚èIv");
+        verbalize("ã€Œæ±ï¼Œæˆ‘ãŒè©•ä¾¡ã‚’å¾—ãŸã‚Šï¼ã€");
         mm.x = u.ux;
         mm.y = u.uy;
         if (enexto(&mm, mm.x, mm.y, &mons[PM_ANGEL])
@@ -521,12 +521,12 @@ gain_guardian_angel()
 /*JP
                 pline("An angel appears near you.");
 */
-                pline("“Vg‚ª‚ ‚È‚½‚Ì‚»‚Î‚ÉŒ»‚í‚ê‚½D");
+                pline("å¤©ä½¿ãŒã‚ãªãŸã®ãã°ã«ç¾ã‚ã‚ŒãŸï¼");
             else
 /*JP
                 You_feel("the presence of a friendly angel near you.");
 */
-                You("‹ß‚­‚É—FD“I‚È“Vg‚Ì‘¶İ‚ğŠ´‚¶‚½D");
+                You("è¿‘ãã«å‹å¥½çš„ãªå¤©ä½¿ã®å­˜åœ¨ã‚’æ„Ÿã˜ãŸï¼");
             /* guardian angel -- the one case mtame doesn't
              * imply an edog structure, so we don't want to
              * call tamedog().

@@ -111,7 +111,7 @@ unsigned seed; /* for semi-controlled randomization */
             }
 #if 0 /*JP*/
             s = &engr[nxt];
-#else /*JP: “ú–{Œê‚Ìê‡‚Íjrubout()‚ğg‚Á‚ÄÁ‚·*/
+#else /*JP: æ—¥æœ¬èªã®å ´åˆã¯jrubout()ã‚’ä½¿ã£ã¦æ¶ˆã™*/
             if (!seed)
                 j = rn2(2);
             else {
@@ -198,10 +198,10 @@ boolean up, check_pit;
                ? "bottom of the pit"
                : surface(x, y));
 #else
-    You("%s‚É“Í‚©‚È‚¢D",
+    You("%sã«å±Šã‹ãªã„ï¼",
         up ? ceiling(x, y)
            : (check_pit && can_reach_floor(FALSE))
-               ? "—‚µŒŠ‚Ì’ê"
+               ? "è½ã—ç©´ã®åº•"
                : surface(x, y));
 #endif
 }
@@ -216,58 +216,58 @@ register int x, y;
 /*JP
         return "maw";
 */
-        return "ˆİ‘Ü";
+        return "èƒƒè¢‹";
     else if (IS_AIR(lev->typ) && Is_airlevel(&u.uz))
 /*JP
         return "air";
 */
-        return "‹ó’†";
+        return "ç©ºä¸­";
     else if (is_pool(x, y))
 /*JP
         return (Underwater && !Is_waterlevel(&u.uz)) ? "bottom" : "water";
 */
-        return (Underwater && !Is_waterlevel(&u.uz)) ? "…‚Ì’ê" : "…’†";
+        return (Underwater && !Is_waterlevel(&u.uz)) ? "æ°´ã®åº•" : "æ°´ä¸­";
     else if (is_ice(x, y))
 /*JP
         return "ice";
 */
-        return "•X";
+        return "æ°·";
     else if (is_lava(x, y))
 /*JP
         return "lava";
 */
-        return "—nŠâ";
+        return "æº¶å²©";
     else if (lev->typ == DRAWBRIDGE_DOWN)
 /*JP
         return "bridge";
 */
-        return "‹´";
+        return "æ©‹";
     else if (IS_ALTAR(levl[x][y].typ))
 /*JP
         return "altar";
 */
-        return "Õ’d";
+        return "ç¥­å£‡";
     else if (IS_GRAVE(levl[x][y].typ))
 /*JP
         return "headstone";
 */
-        return "•æÎ";
+        return "å¢“çŸ³";
     else if (IS_FOUNTAIN(levl[x][y].typ))
 /*JP
         return "fountain";
 */
-        return "ò";
+        return "æ³‰";
     else if ((IS_ROOM(lev->typ) && !Is_earthlevel(&u.uz))
              || IS_WALL(lev->typ) || IS_DOOR(lev->typ) || lev->typ == SDOOR)
 /*JP
         return "floor";
 */
-        return "°";
+        return "åºŠ";
     else
 /*JP
         return "ground";
 */
-        return "’n–Ê";
+        return "åœ°é¢";
 }
 
 const char *
@@ -284,44 +284,44 @@ register int x, y;
 /*JP
         what = "vault's ceiling";
 */
-        what = "‘qŒÉ‚Ì“Vˆä";
+        what = "å€‰åº«ã®å¤©äº•";
     else if (*in_rooms(x, y, TEMPLE))
 /*JP
         what = "temple's ceiling";
 */
-        what = "›‰@‚Ì“Vˆä";
+        what = "å¯ºé™¢ã®å¤©äº•";
     else if (*in_rooms(x, y, SHOPBASE))
 /*JP
         what = "shop's ceiling";
 */
-        what = "“X‚Ì“Vˆä";
+        what = "åº—ã®å¤©äº•";
     else if (Is_waterlevel(&u.uz))
         /* water plane has no surface; its air bubbles aren't below sky */
 /*JP
         what = "water above";
 */
-        what = "…‚Ìã•û";
+        what = "æ°´ã®ä¸Šæ–¹";
     else if (IS_AIR(lev->typ))
 /*JP
         what = "sky";
 */
-        what = "‹ó";
+        what = "ç©º";
     else if (Underwater)
 /*JP
         what = "water's surface";
 */
-        what = "…–Ê";
+        what = "æ°´é¢";
     else if ((IS_ROOM(lev->typ) && !Is_earthlevel(&u.uz))
              || IS_WALL(lev->typ) || IS_DOOR(lev->typ) || lev->typ == SDOOR)
 /*JP
         what = "ceiling";
 */
-        what = "“Vˆä";
+        what = "å¤©äº•";
     else
 /*JP
         what = "rock cavern";
 */
-        what = "“´ŒA‚Ì“Vˆä";
+        what = "æ´çªŸã®å¤©äº•";
 
     return what;
 }
@@ -414,8 +414,8 @@ int x, y;
                 pline("%s is written here in the %s.", Something,
                       is_ice(x, y) ? "frost" : "dust");
 #else
-                pline("‰½‚©‚Ì•¶š‚ª%s‚É‘‚¢‚Ä‚ ‚éD",
-                      is_ice(x, y) ? "‘š" : "‚Ù‚±‚è");
+                pline("ä½•ã‹ã®æ–‡å­—ãŒ%sã«æ›¸ã„ã¦ã‚ã‚‹ï¼",
+                      is_ice(x, y) ? "éœœ" : "ã»ã“ã‚Š");
 #endif
             }
             break;
@@ -426,7 +426,7 @@ int x, y;
 /*JP
                 pline("%s is engraved here on the %s.", Something,
 */
-                pline("‰½‚©‚Ì•¶š‚ª%s‚É‚Ü‚ê‚Ä‚¢‚éD",
+                pline("ä½•ã‹ã®æ–‡å­—ãŒ%sã«åˆ»ã¾ã‚Œã¦ã„ã‚‹ï¼",
                       surface(x, y));
             }
             break;
@@ -437,9 +437,9 @@ int x, y;
                 pline("Some text has been %s into the %s here.",
                       is_ice(x, y) ? "melted" : "burned", surface(x, y));
 #else
-                pline("‰½‚©‚Ì•¶š‚ª%s%s‚¢‚éD",
+                pline("ä½•ã‹ã®æ–‡å­—ãŒ%s%sã„ã‚‹ï¼",
                       surface(x,y),
-                      is_ice(x,y) ? "‚É‚Ü‚ê‚Ä" : "‚ÉÄ‚«•t‚¯‚ç‚ê‚Ä");
+                      is_ice(x,y) ? "ã«åˆ»ã¾ã‚Œã¦" : "ã«ç„¼ãä»˜ã‘ã‚‰ã‚Œã¦");
 #endif
             }
             break;
@@ -449,7 +449,7 @@ int x, y;
 /*JP
                 pline("There's some graffiti on the %s here.", surface(x, y));
 */
-                pline("%s‚É—‘‚ª‚ ‚éD", surface(x,y));
+                pline("%sã«è½æ›¸ãŒã‚ã‚‹ï¼", surface(x,y));
             }
             break;
         case ENGR_BLOOD:
@@ -462,7 +462,7 @@ int x, y;
 /*JP
                 You_see("a message scrawled in blood here.");
 */
-                You("ŒŒ•¶š‚ª‚È‚®‚è‘‚«‚³‚ê‚Ä‚¢‚é‚Ì‚ğŒ©‚Â‚¯‚½D");
+                You("è¡€æ–‡å­—ãŒãªãã‚Šæ›¸ãã•ã‚Œã¦ã„ã‚‹ã®ã‚’è¦‹ã¤ã‘ãŸï¼");
             }
             break;
         default:
@@ -474,7 +474,7 @@ int x, y;
 /*JP
             unsigned maxelen = BUFSZ - sizeof("You feel the words: \"\". ");
 */
-            unsigned maxelen = BUFSZ - sizeof("‚ ‚È‚½‚ÍŸ‚Ì‚æ‚¤‚ÉŠ´‚¶‚½Fuv");
+            unsigned maxelen = BUFSZ - sizeof("ã‚ãªãŸã¯æ¬¡ã®ã‚ˆã†ã«æ„Ÿã˜ãŸï¼šã€Œã€");
             if (strlen(ep->engr_txt) > maxelen) {
                 (void) strncpy(buf, ep->engr_txt, (int) maxelen);
                 buf[maxelen] = '\0';
@@ -484,7 +484,7 @@ int x, y;
 /*JP
             You("%s: \"%s\".", (Blind) ? "feel the words" : "read", et);
 */
-            You("%sFu%sv", (Blind) ? "Ÿ‚Ì‚æ‚¤‚ÉŠ´‚¶‚½" : "“Ç‚ñ‚¾",  et);
+            You("%sï¼šã€Œ%sã€", (Blind) ? "æ¬¡ã®ã‚ˆã†ã«æ„Ÿã˜ãŸ" : "èª­ã‚“ã ",  et);
             if (context.run > 1)
                 nomul(0);
         }
@@ -615,7 +615,7 @@ doengrave()
 /*JP
             pline("What would you write?  \"Jonah was here\"?");
 */
-            pline("‰½‚ğ‘‚­‚ñ‚¾‚¢Huƒˆƒi‚Í‚±‚±‚É‚¢‚évH");
+            pline("ä½•ã‚’æ›¸ãã‚“ã ã„ï¼Ÿã€Œãƒ¨ãƒŠã¯ã“ã“ã«ã„ã‚‹ã€ï¼Ÿ");
             return 0;
         } else if (is_whirly(u.ustuck->data)) {
             cant_reach_floor(u.ux, u.uy, FALSE, FALSE);
@@ -626,34 +626,34 @@ doengrave()
 /*JP
         You_cant("write on the %s!", surface(u.ux, u.uy));
 */
-        You("%s‚É“Í‚©‚È‚¢D", surface(u.ux,u.uy));
+        You("%sã«å±Šã‹ãªã„ï¼", surface(u.ux,u.uy));
         return 0;
     } else if (is_pool(u.ux, u.uy) || IS_FOUNTAIN(levl[u.ux][u.uy].typ)) {
 /*JP
         You_cant("write on the %s!", surface(u.ux, u.uy));
 */
-        You("%s‚É‚Í‘‚¯‚È‚¢I", surface(u.ux, u.uy));
+        You("%sã«ã¯æ›¸ã‘ãªã„ï¼", surface(u.ux, u.uy));
         return 0;
     }
     if (Is_airlevel(&u.uz) || Is_waterlevel(&u.uz) /* in bubble */) {
 /*JP
         You_cant("write in thin air!");
 */
-        You("‹ó’†‚É‚Í‘‚¯‚È‚¢I");
+        You("ç©ºä¸­ã«ã¯æ›¸ã‘ãªã„ï¼");
         return 0;
     } else if (!accessible(u.ux, u.uy)) {
         /* stone, tree, wall, secret corridor, pool, lava, bars */
 /*JP
         You_cant("write here.");
 */
-        You_cant("‚±‚±‚É‚Í‘‚¯‚È‚¢D");
+        You_cant("ã“ã“ã«ã¯æ›¸ã‘ãªã„ï¼");
         return 0;
     }
     if (cantwield(youmonst.data)) {
 /*JP
         You_cant("even hold anything!");
 */
-        You("‰½‚©‚ğ‚Â‚±‚Æ‚·‚ç‚Å‚«‚È‚¢I");
+        You("ä½•ã‹ã‚’æŒã¤ã“ã¨ã™ã‚‰ã§ããªã„ï¼");
         return 0;
     }
     if (check_capacity((char *) 0))
@@ -671,7 +671,7 @@ doengrave()
 /*JP
         Strcat(strcpy(fbuf, "your "), makeplural(body_part(FINGER)));
 */
-        Strcat(strcpy(fbuf, "‚ ‚È‚½‚Ì"), makeplural(body_part(FINGER)));
+        Strcat(strcpy(fbuf, "ã‚ãªãŸã®"), makeplural(body_part(FINGER)));
         writer = fbuf;
     } else
         writer = yname(otmp);
@@ -683,7 +683,7 @@ doengrave()
 /*JP
         You("have no free %s to write with!", body_part(HAND));
 */
-        pline("%s‚Ì©—R‚ªŒø‚©‚È‚¢‚Ì‚Å‘‚¯‚È‚¢I", body_part(HAND));
+        pline("%sã®è‡ªç”±ãŒåŠ¹ã‹ãªã„ã®ã§æ›¸ã‘ãªã„ï¼", body_part(HAND));
         return 0;
     }
 
@@ -691,11 +691,11 @@ doengrave()
 /*JP
         You("tickle %s with %s.", mon_nam(u.ustuck), writer);
 */
-                You("%s‚Å%s‚ğ‚­‚·‚®‚Á‚½D", writer, mon_nam(u.ustuck));
+                You("%sã§%sã‚’ãã™ãã£ãŸï¼", writer, mon_nam(u.ustuck));
 /*JP
         Your("message dissolves...");
 */
-                Your("ƒƒbƒZ[ƒW‚ÍÁ‚¦‚½DDD");
+                Your("ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã¯æ¶ˆãˆãŸï¼ï¼ï¼");
         return 0;
     }
     if (otmp->oclass != WAND_CLASS && !can_reach_floor(TRUE)) {
@@ -706,7 +706,7 @@ doengrave()
 /*JP
         You("make a motion towards the altar with %s.", writer);
 */
-        You("%s‚ğg‚Á‚ÄÕ’d‚É‘‚±‚¤‚Æ‚µ‚½D", writer);
+        You("%sã‚’ä½¿ã£ã¦ç¥­å£‡ã«æ›¸ã“ã†ã¨ã—ãŸï¼", writer);
         altar_wrath(u.ux, u.uy);
         return 0;
     }
@@ -715,14 +715,14 @@ doengrave()
 /*JP
             You("would only make a small smudge on the %s.",
 */
-            You("‚Í%s‚É¬‚³‚È‚µ‚İ‚ğ‚Â‚¯‚é‚±‚Æ‚µ‚©‚Å‚«‚È‚©‚Á‚½D",
+            You("ã¯%sã«å°ã•ãªã—ã¿ã‚’ã¤ã‘ã‚‹ã“ã¨ã—ã‹ã§ããªã‹ã£ãŸï¼",
                 surface(u.ux, u.uy));
             return 0;
         } else if (!levl[u.ux][u.uy].disturbed) {
 /*JP
             You("disturb the undead!");
 */
-            You("•s€‚ÌÒ‚Ì–°‚è‚ğ–W‚°‚½I");
+            You("ä¸æ­»ã®è€…ã®çœ ã‚Šã‚’å¦¨ã’ãŸï¼");
             levl[u.ux][u.uy].disturbed = 1;
             (void) makemon(&mons[PM_GHOUL], u.ux, u.uy, NO_MM_FLAGS);
             exercise(A_WIS, FALSE);
@@ -760,7 +760,7 @@ doengrave()
 /*JP
         You_cant("engrave with such a large object!");
 */
-        pline("‚»‚ñ‚È‘å‚«‚È‚à‚Ì‚ğg‚Á‚Ä•¶š‚ğ‚ß‚È‚¢I");
+        pline("ãã‚“ãªå¤§ããªã‚‚ã®ã‚’ä½¿ã£ã¦æ–‡å­—ã‚’åˆ»ã‚ãªã„ï¼");
         ptext = FALSE;
         break;
     /* Objects too silly to engrave with */
@@ -771,8 +771,8 @@ doengrave()
         pline("%s would get %s.", Yname2(otmp),
               is_ice(u.ux, u.uy) ? "all frosty" : "too dirty");
 #else
-        Your("%s‚Í%s‚È‚Á‚½D", xname(otmp),
-             is_ice(u.ux,u.uy) ? "‘š‚¾‚ç‚¯‚É" : "‰˜‚È‚­");
+        Your("%sã¯%sãªã£ãŸï¼", xname(otmp),
+             is_ice(u.ux,u.uy) ? "éœœã ã‚‰ã‘ã«" : "æ±šãªã");
 #endif
         ptext = FALSE;
         break;
@@ -818,14 +818,14 @@ doengrave()
 /*JP
                     "The wand unsuccessfully fights your attempt to write!");
 */
-                       "‚ ‚È‚½‚ª‘‚±‚¤‚Æ‚·‚é‚Æñ‚Í’ïR‚µ‚½I");
+                       "ã‚ãªãŸãŒæ›¸ã“ã†ã¨ã™ã‚‹ã¨æ–ã¯æŠµæŠ—ã—ãŸï¼");
                 break;
             case WAN_SLOW_MONSTER:
                 if (!Blind) {
 /*JP
                     Sprintf(post_engr_text, "The bugs on the %s slow down!",
 */
-                    Sprintf(post_engr_text, "%s‚Ìã‚Ì’‚Ì“®‚«‚ª’x‚­‚È‚Á‚½I",
+                    Sprintf(post_engr_text, "%sã®ä¸Šã®è™«ã®å‹•ããŒé…ããªã£ãŸï¼",
                             surface(u.ux, u.uy));
                 }
                 break;
@@ -834,7 +834,7 @@ doengrave()
 /*JP
                     Sprintf(post_engr_text, "The bugs on the %s speed up!",
 */
-                    Sprintf(post_engr_text, "%s‚Ìã‚Ì’‚Ì“®‚«‚ª‘¬‚­‚È‚Á‚½I",
+                    Sprintf(post_engr_text, "%sã®ä¸Šã®è™«ã®å‹•ããŒé€Ÿããªã£ãŸï¼",
                             surface(u.ux, u.uy));
                 }
                 break;
@@ -861,7 +861,7 @@ doengrave()
 /*JP
                             "The %s is riddled by bullet holes!",
 */
-                            "%s‚ÍU’e‚Å×‚©‚¢ŒŠ‚¾‚ç‚¯‚É‚È‚Á‚½I",
+                            "%sã¯æ•£å¼¾ã§ç´°ã‹ã„ç©´ã ã‚‰ã‘ã«ãªã£ãŸï¼",
                             surface(u.ux, u.uy));
                 }
                 break;
@@ -872,7 +872,7 @@ doengrave()
 /*JP
                     Sprintf(post_engr_text, "The bugs on the %s stop moving!",
 */
-                    Sprintf(post_engr_text, "%s‚Ìã‚Ì’‚Ì“®‚«‚ª~‚Ü‚Á‚½I",
+                    Sprintf(post_engr_text, "%sã®ä¸Šã®è™«ã®å‹•ããŒæ­¢ã¾ã£ãŸï¼",
                             surface(u.ux, u.uy));
                 }
                 break;
@@ -882,7 +882,7 @@ doengrave()
 /*JP
                            "A few ice cubes drop from the wand.");
 */
-                           "•X‚Ì‚©‚¯‚ç‚ªñ‚©‚ç‚±‚Ú‚ê—‚¿‚½D");
+                           "æ°·ã®ã‹ã‘ã‚‰ãŒæ–ã‹ã‚‰ã“ã¼ã‚Œè½ã¡ãŸï¼");
                 if (!oep || (oep->engr_type != BURN))
                     break;
             case WAN_CANCELLATION:
@@ -892,7 +892,7 @@ doengrave()
 /*JP
                         pline_The("engraving on the %s vanishes!",
 */
-                        pline("%s‚Ìã‚Ì•¶š‚ÍÁ‚¦‚½I",
+                        pline("%sã®ä¸Šã®æ–‡å­—ã¯æ¶ˆãˆãŸï¼",
                                   surface(u.ux, u.uy));
                     dengr = TRUE;
                 }
@@ -903,7 +903,7 @@ doengrave()
 /*JP
                         pline_The("engraving on the %s vanishes!",
 */
-                        pline("%s‚Ìã‚Ì•¶š‚ÍÁ‚¦‚½I",
+                        pline("%sã®ä¸Šã®æ–‡å­—ã¯æ¶ˆãˆãŸï¼",
                                   surface(u.ux, u.uy));
                     teleengr = TRUE;
                 }
@@ -917,7 +917,7 @@ doengrave()
 /*JP
                         pline("This %s is a wand of digging!", xname(otmp));
 */
-                        pline("‚±‚ê‚ÍŒŠŒ@‚è‚Ìñ‚¾I");
+                        pline("ã“ã‚Œã¯ç©´æ˜ã‚Šã®æ–ã ï¼");
                     doknown = TRUE;
                 }
 #if 0 /*JP*/
@@ -935,15 +935,15 @@ doengrave()
 #else
                 Strcpy(post_engr_text,
                        Blind
-                          ? "ŒŠ‚ªŠJ‚­‰¹‚ğ•·‚¢‚½I"
+                          ? "ç©´ãŒé–‹ãéŸ³ã‚’èã„ãŸï¼"
                           : IS_GRAVE(levl[u.ux][u.uy].typ)
-                             ? "•æÎ‚©‚ç”j•Ğ‚ª”ò‚ÑU‚Á‚½D"
+                             ? "å¢“çŸ³ã‹ã‚‰ç ´ç‰‡ãŒé£›ã³æ•£ã£ãŸï¼"
                              : is_ice(u.ux,u.uy)
-                                ? "•X‚Ì•\–Ê‚©‚ç•X‚Ì‚©‚¯‚ç‚ª”ò‚ÑU‚Á‚½D"
+                                ? "æ°·ã®è¡¨é¢ã‹ã‚‰æ°·ã®ã‹ã‘ã‚‰ãŒé£›ã³æ•£ã£ãŸï¼"
                                 : (level.locations[u.ux][u.uy].typ
                                    == DRAWBRIDGE_DOWN)
-                                   ? "”j•Ğ‚ª‹´‚©‚ç•‘‚¢‚ ‚ª‚Á‚½D"
-                                   : "»—˜‚ª°‚©‚ç”ò‚ÑU‚Á‚½D");
+                                   ? "ç ´ç‰‡ãŒæ©‹ã‹ã‚‰èˆã„ã‚ãŒã£ãŸï¼"
+                                   : "ç ‚åˆ©ãŒåºŠã‹ã‚‰é£›ã³æ•£ã£ãŸï¼");
 #endif
                 break;
             /* type = BURN wands */
@@ -955,15 +955,15 @@ doengrave()
 /*JP
                         pline("This %s is a wand of fire!", xname(otmp));
 */
-                        pline("‚±‚ê‚Í‰Š‚Ìñ‚¾I");
+                        pline("ã“ã‚Œã¯ç‚ã®æ–ã ï¼");
                     doknown = TRUE;
                 }
 #if 0 /*JP*/
                 Strcpy(post_engr_text, Blind ? "You feel the wand heat up."
                                              : "Flames fly from the wand.");
 #else
-                Strcpy(post_engr_text, Blind ? "ñ‚ª’g‚©‚­‚È‚Á‚½‚æ‚¤‚È‹C‚ª‚µ‚½D"
-                                             : "‰Š‚ªñ‚©‚ç”ò‚ÑU‚Á‚½D");
+                Strcpy(post_engr_text, Blind ? "æ–ãŒæš–ã‹ããªã£ãŸã‚ˆã†ãªæ°—ãŒã—ãŸï¼"
+                                             : "ç‚ãŒæ–ã‹ã‚‰é£›ã³æ•£ã£ãŸï¼");
 #endif
                 break;
             case WAN_LIGHTNING:
@@ -974,20 +974,20 @@ doengrave()
 /*JP
                         pline("This %s is a wand of lightning!", xname(otmp));
 */
-                        pline("‚±‚ê‚Í—‹‚Ìñ‚¾I");
+                        pline("ã“ã‚Œã¯é›·ã®æ–ã ï¼");
                     doknown = TRUE;
                 }
                 if (!Blind) {
 /*JP
                     Strcpy(post_engr_text, "Lightning arcs from the wand.");
 */
-                    Strcpy(post_engr_text, "‰Î‰Ô‚ªñ‚©‚ç”ò‚ÑU‚Á‚½D");
+                    Strcpy(post_engr_text, "ç«èŠ±ãŒæ–ã‹ã‚‰é£›ã³æ•£ã£ãŸï¼");
                     doblind = TRUE;
                 } else
 /*JP
                     Strcpy(post_engr_text, "You hear crackling!");
 */
-                    Strcpy(post_engr_text, "ƒpƒ`ƒpƒ`‚Æ‚¢‚¤‰¹‚ğ•·‚¢‚½I");
+                    Strcpy(post_engr_text, "ãƒ‘ãƒãƒ‘ãƒã¨ã„ã†éŸ³ã‚’èã„ãŸï¼");
                 break;
 
             /* type = MARK wands */
@@ -1007,7 +1007,7 @@ doengrave()
 /*JP
                     pline_The("wand is too worn out to engrave.");
 */
-                    pline_The("ñ‚Í•¶š‚ğ‚Ş‚É‚Íg‚¢‚·‚¬‚Ä‚¢‚éD");
+                    pline_The("æ–ã¯æ–‡å­—ã‚’åˆ»ã‚€ã«ã¯ä½¿ã„ã™ãã¦ã„ã‚‹ï¼");
             }
         }
         break;
@@ -1020,7 +1020,7 @@ doengrave()
 /*JP
                 pline("%s too dull for engraving.", Yobjnam2(otmp, "are"));
 */
-                pline("%s‚Ín‚ªƒ{ƒƒ{ƒ‚ÅC•¶š‚ğ’¤‚ê‚È‚¢D", xname(otmp));
+                pline("%sã¯åˆƒãŒãƒœãƒ­ãƒœãƒ­ã§ï¼Œæ–‡å­—ã‚’å½«ã‚Œãªã„ï¼", xname(otmp));
         }
         break;
 
@@ -1030,7 +1030,7 @@ doengrave()
 /*JP
                 "That is a bit difficult to engrave with, don't you think?");
 */
-                "‚¿‚å‚Á‚Æ‚»‚ê‚Å’¤‚é‚Ì‚Í‘å•Ï‚¾‚ë‚¤C‚»‚¤v‚í‚È‚¢H");
+                "ã¡ã‚‡ã£ã¨ãã‚Œã§å½«ã‚‹ã®ã¯å¤§å¤‰ã ã‚ã†ï¼Œãã†æ€ã‚ãªã„ï¼Ÿ");
             return 0;
         }
         switch (otmp->otyp) {
@@ -1039,7 +1039,7 @@ doengrave()
 /*JP
                 Your("marker has dried out.");
 */
-                Your("ƒ}[ƒJ‚ÍŠ£‚«‚«‚Á‚½D");
+                Your("ãƒãƒ¼ã‚«ã¯ä¹¾ããã£ãŸï¼");
             else
                 type = MARK;
             break;
@@ -1056,28 +1056,28 @@ doengrave()
 /*JP
                         You("wipe out the message here.");
 */
-                        You("ƒƒbƒZ[ƒW‚ğ@‚«‚Æ‚Á‚½D");
+                        You("ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã‚’æ‹­ãã¨ã£ãŸï¼");
                     else
 #if 0 /*JP*/
                         pline("%s %s.", Yobjnam2(otmp, "get"),
                               is_ice(u.ux, u.uy) ? "frosty" : "dusty");
 #else
-                        pline("%s‚Í%s‚É‚È‚Á‚½D", xname(otmp),
-                              is_ice(u.ux,u.uy) ? "‘š‚¾‚ç‚¯" : "‚Ù‚±‚è‚Ü‚İ‚ê");
+                        pline("%sã¯%sã«ãªã£ãŸï¼", xname(otmp),
+                              is_ice(u.ux,u.uy) ? "éœœã ã‚‰ã‘" : "ã»ã“ã‚Šã¾ã¿ã‚Œ");
 #endif
                     dengr = TRUE;
                 } else
 /*JP
                     pline("%s can't wipe out this engraving.", Yname2(otmp));
 */
-                    pline("‚±‚Ì•¶š‚Í%s‚Å‚Í@‚«‚Æ‚ê‚È‚¢D", xname(otmp));
+                    pline("ã“ã®æ–‡å­—ã¯%sã§ã¯æ‹­ãã¨ã‚Œãªã„ï¼", xname(otmp));
             else
 #if 0 /*JP*/
                 pline("%s %s.", Yobjnam2(otmp, "get"),
                       is_ice(u.ux, u.uy) ? "frosty" : "dusty");
 #else
-                pline("%s‚Í%s‚É‚È‚Á‚½D", xname(otmp),
-                      is_ice(u.ux,u.uy) ? "‘š‚¾‚ç‚¯" : "‚Ù‚±‚è‚Ü‚İ‚ê");
+                pline("%sã¯%sã«ãªã£ãŸï¼", xname(otmp),
+                      is_ice(u.ux,u.uy) ? "éœœã ã‚‰ã‘" : "ã»ã“ã‚Šã¾ã¿ã‚Œ");
 #endif
             break;
         default:
@@ -1090,7 +1090,7 @@ doengrave()
 /*JP
             pline("Writing a poison pen letter??");
 */
-            pline("‚Ó‚ŞD‚±‚ê‚±‚»–{“–‚Ì“Åã‚¾D");
+            pline("ãµã‚€ï¼ã“ã‚Œã“ãæœ¬å½“ã®æ¯’èˆŒã ï¼");
             break;
         }
         /*FALLTHRU*/
@@ -1135,7 +1135,7 @@ doengrave()
 /*JP
         pline_The("engraving now reads: \"%s\".", buf);
 */
-        pline("‚Ü‚ê‚½•¶š‚ğ“Ç‚ñ‚¾Fu%svD", buf);
+        pline("åˆ»ã¾ã‚ŒãŸæ–‡å­—ã‚’èª­ã‚“ã ï¼šã€Œ%sã€ï¼", buf);
         ptext = FALSE;
     }
     if (zapwand && (otmp->spe < 0)) {
@@ -1143,8 +1143,8 @@ doengrave()
         pline("%s %sturns to dust.", The(xname(otmp)),
               Blind ? "" : "glows violently, then ");
 #else
-        pline("%s‚Í%s‚¿‚è‚Æ‚È‚Á‚½D", xname(otmp),
-              Blind ? "" : "Œƒ‚µ‚­‹P‚«C");
+        pline("%sã¯%sã¡ã‚Šã¨ãªã£ãŸï¼", xname(otmp),
+              Blind ? "" : "æ¿€ã—ãè¼ãï¼Œ");
 #endif
         if (!IS_GRAVE(levl[u.ux][u.uy].typ))
 #if 0 /*JP*/
@@ -1153,8 +1153,8 @@ doengrave()
                 is_ice(u.ux, u.uy) ? "frost" : "dust");
 #else
             You(
-                "o‚Å%s‚É‰½‚©‘‚±‚¤‚Æ‚µ‚½‚ªC‚Å‚«‚È‚©‚Á‚½D",
-                is_ice(u.ux,u.uy) ? "•X" : "‚Ù‚±‚è");
+                "å¡µã§%sã«ä½•ã‹æ›¸ã“ã†ã¨ã—ãŸãŒï¼Œã§ããªã‹ã£ãŸï¼",
+                is_ice(u.ux,u.uy) ? "æ°·" : "ã»ã“ã‚Š");
 #endif
         useup(otmp);
         otmp = 0; /* wand is now gone */
@@ -1183,7 +1183,7 @@ doengrave()
 /*JP
             c = yn_function("Do you want to add to the current engraving?",
 */
-            c = yn_function("‰½‚©‘‚«‰Á‚¦‚Ü‚·‚©H",
+            c = yn_function("ä½•ã‹æ›¸ãåŠ ãˆã¾ã™ã‹ï¼Ÿ",
                             ynqchars, 'y');
             if (c == 'q') {
                 pline1(Never_mind);
@@ -1204,12 +1204,12 @@ doengrave()
                                 ? "scrawled in blood"
                                 : "written");
 #else
-                    You("%sƒƒbƒZ[ƒW‚ğ@‚«‚Æ‚Á‚½D",
+                    You("%sãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã‚’æ‹­ãã¨ã£ãŸï¼",
                         (oep->engr_type == DUST)
-                            ? "‚Ù‚±‚è‚É‘‚©‚ê‚Ä‚¢‚é"
+                            ? "ã»ã“ã‚Šã«æ›¸ã‹ã‚Œã¦ã„ã‚‹"
                             : (oep->engr_type == BLOOD)
-                                ? "ŒŒ•¶š‚Å‚È‚®‚è‘‚«‚³‚ê‚Ä‚¢‚é"
-                                : "‘‚©‚ê‚Ä‚¢‚é");
+                                ? "è¡€æ–‡å­—ã§ãªãã‚Šæ›¸ãã•ã‚Œã¦ã„ã‚‹"
+                                : "æ›¸ã‹ã‚Œã¦ã„ã‚‹");
 #endif
                     del_engr(oep);
                     oep = (struct engr *) 0;
@@ -1225,10 +1225,10 @@ doengrave()
                         : "engraved in",
                     surface(u.ux, u.uy));
 #else
-                You("%sƒƒbƒZ[ƒW‚ğ@‚«‚Æ‚ê‚È‚©‚Á‚½D",
+                You("%sãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã‚’æ‹­ãã¨ã‚Œãªã‹ã£ãŸï¼",
                     oep->engr_type == BURN
-                        ? (is_ice(u.ux, u.uy) ? "‚Ü‚ê‚Ä‚¢‚é" : "Ä‚«•t‚¯‚ç‚ê‚Ä‚¢‚é")
-                        : "‚Ü‚ê‚Ä‚¢‚é");
+                        ? (is_ice(u.ux, u.uy) ? "åˆ»ã¾ã‚Œã¦ã„ã‚‹" : "ç„¼ãä»˜ã‘ã‚‰ã‚Œã¦ã„ã‚‹")
+                        : "åˆ»ã¾ã‚Œã¦ã„ã‚‹");
 #endif
                 return 1;
             } else if (type != oep->engr_type || c == 'n') {
@@ -1236,7 +1236,7 @@ doengrave()
 /*JP
                     You("will overwrite the current message.");
 */
-                    You("ƒƒbƒZ[ƒW‚ğã‘‚«‚µ‚æ‚¤‚Æ‚µ‚½D");
+                    You("ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã‚’ä¸Šæ›¸ãã—ã‚ˆã†ã¨ã—ãŸï¼");
                 eow = TRUE;
             }
         }
@@ -1248,33 +1248,33 @@ doengrave()
 /*JP
         everb = (oep && !eow ? "add to the weird writing on"
 */
-        everb = (oep && !eow ? "Šï–­‚È•¶š—ñ‚É‘‚«‰Á‚¦‚é"
+        everb = (oep && !eow ? "å¥‡å¦™ãªæ–‡å­—åˆ—ã«æ›¸ãåŠ ãˆã‚‹"
 /*JP
                              : "write strangely on");
 */
-                             : "Šï–­‚È•¶š—ñ‚ğ‘‚­");
+                             : "å¥‡å¦™ãªæ–‡å­—åˆ—ã‚’æ›¸ã");
         break;
     case DUST:
 /*JP
         everb = (oep && !eow ? "add to the writing in" : "write in");
 */
-        everb = (oep && !eow ? "‘‚«‰Á‚¦‚é" : "‘‚­");
+        everb = (oep && !eow ? "æ›¸ãåŠ ãˆã‚‹" : "æ›¸ã");
 /*JP
         eloc = is_ice(u.ux, u.uy) ? "frost" : "dust";
 */
-        eloc = is_ice(u.ux,u.uy) ? "‘š" : "‚Ù‚±‚è";
+        eloc = is_ice(u.ux,u.uy) ? "éœœ" : "ã»ã“ã‚Š";
         break;
     case HEADSTONE:
 /*JP
         everb = (oep && !eow ? "add to the epitaph on" : "engrave on");
 */
-        everb = (oep && !eow ? "•æ”è–Á‚ğ‚İ‰Á‚¦‚é" : "•æ”è–Á‚ğ‚Ş");
+        everb = (oep && !eow ? "å¢“ç¢‘éŠ˜ã‚’åˆ»ã¿åŠ ãˆã‚‹" : "å¢“ç¢‘éŠ˜ã‚’åˆ»ã‚€");
         break;
     case ENGRAVE:
 /*JP
         everb = (oep && !eow ? "add to the engraving in" : "engrave in");
 */
-        everb = (oep && !eow ? "‚İ‰Á‚¦‚é" : "‚Ş");
+        everb = (oep && !eow ? "åˆ»ã¿åŠ ãˆã‚‹" : "åˆ»ã‚€");
         break;
     case BURN:
 #if 0 /*JP*/
@@ -1284,22 +1284,22 @@ doengrave()
                      : (is_ice(u.ux, u.uy) ? "melt into" : "burn into"));
 #else
         everb = (oep && !eow
-                 ? ( is_ice(u.ux,u.uy) ? "‚İ‰Á‚¦‚é"
-                                       : "”R‚¦‚Ä‚¢‚é•¶š‚É‘‚«‰Á‚¦‚é")
-                 : ( is_ice(u.ux,u.uy) ? "‚Ş" : "Äˆó‚ğ‚¢‚ê‚é"));
+                 ? ( is_ice(u.ux,u.uy) ? "åˆ»ã¿åŠ ãˆã‚‹"
+                                       : "ç‡ƒãˆã¦ã„ã‚‹æ–‡å­—ã«æ›¸ãåŠ ãˆã‚‹")
+                 : ( is_ice(u.ux,u.uy) ? "åˆ»ã‚€" : "ç„¼å°ã‚’ã„ã‚Œã‚‹"));
 #endif
         break;
     case MARK:
 /*JP
         everb = (oep && !eow ? "add to the graffiti on" : "scribble on");
 */
-        everb = (oep && !eow ? "—‘‚É‘‚«‰Á‚¦‚é" : "‚Í‚µ‚è‘‚«‚·‚é");
+        everb = (oep && !eow ? "è½æ›¸ã«æ›¸ãåŠ ãˆã‚‹" : "ã¯ã—ã‚Šæ›¸ãã™ã‚‹");
         break;
     case ENGR_BLOOD:
 /*JP
         everb = (oep && !eow ? "add to the scrawl on" : "scrawl on");
 */
-        everb = (oep && !eow ? "‚È‚®‚è‘‚«‚É‘‚«‰Á‚¦‚é" : "‚È‚®‚è‘‚«‚·‚é");
+        everb = (oep && !eow ? "ãªãã‚Šæ›¸ãã«æ›¸ãåŠ ãˆã‚‹" : "ãªãã‚Šæ›¸ãã™ã‚‹");
         break;
     }
 
@@ -1308,13 +1308,13 @@ doengrave()
 /*JP
         You("%s the %s with %s.", everb, eloc, doname(otmp));
 */
-        You("%s‚Å%s‚É%sD", doname(otmp), eloc, jpast(everb));
+        You("%sã§%sã«%sï¼", doname(otmp), eloc, jpast(everb));
     else
 #if 0 /*JP*/
         You("%s the %s with your %s.", everb, eloc,
             makeplural(body_part(FINGER)));
 #else
-        You("%s‚Å%s‚É%sD", body_part(FINGER),
+        You("%sã§%sã«%sï¼", body_part(FINGER),
             eloc, jpast(everb));
 #endif
 
@@ -1322,7 +1322,7 @@ doengrave()
 /*JP
     Sprintf(qbuf, "What do you want to %s the %s here?", everb, eloc);
 */
-    Sprintf(qbuf,"%s‚É‰½‚Æ%s‚©H", eloc, jpolite(everb));
+    Sprintf(qbuf,"%sã«ä½•ã¨%sã‹ï¼Ÿ", eloc, jpolite(everb));
     getlin(qbuf, ebuf);
     /* convert tabs to spaces and condense consecutive spaces to one */
     mungspaces(ebuf);
@@ -1340,7 +1340,7 @@ doengrave()
                 pline("%s, then %s.", Tobjnam(otmp, "glow"),
                       otense(otmp, "fade"));
 #else
-                pline("%s‚Í‹P‚¢‚½‚ªC‚·‚®‚ÉÁ‚¦‚½D", xname(otmp));
+                pline("%sã¯è¼ã„ãŸãŒï¼Œã™ãã«æ¶ˆãˆãŸï¼", xname(otmp));
 #endif
             return 1;
         } else {
@@ -1364,7 +1364,7 @@ doengrave()
 #if 0 /*JP*/
             *sp = ' ' + rnd(96 - 2); /* ASCII '!' thru '~'
                                         (excludes ' ' and DEL) */
-#else /*JP:“ú–{Œê‚Åƒ‰ƒ“ƒ_ƒ€‰» */
+#else /*JP:æ—¥æœ¬èªã§ãƒ©ãƒ³ãƒ€ãƒ åŒ– */
             {
                 if(is_kanji1(ebuf, sp-ebuf))
                     jrndm_replace(sp);
@@ -1392,7 +1392,7 @@ doengrave()
 /*JP
             nomovemsg = "You finish your weird engraving.";
 */
-            nomovemsg = "‚ ‚È‚½‚ÍŠï–­‚È‚İ‚ğI‚¦‚½D";
+            nomovemsg = "ã‚ãªãŸã¯å¥‡å¦™ãªåˆ»ã¿ã‚’çµ‚ãˆãŸï¼";
         break;
     case DUST:
         multi = -(len / 10);
@@ -1400,7 +1400,7 @@ doengrave()
 /*JP
             nomovemsg = "You finish writing in the dust.";
 */
-            nomovemsg = "‚ ‚È‚½‚Í‚Ù‚±‚è‚É‘‚«I‚¦‚½D";
+            nomovemsg = "ã‚ãªãŸã¯ã»ã“ã‚Šã«æ›¸ãçµ‚ãˆãŸï¼";
         break;
     case HEADSTONE:
     case ENGRAVE:
@@ -1417,7 +1417,7 @@ doengrave()
 /*JP
             pline("%s dull.", Yobjnam2(otmp, "get"));
 */
-            Your("%s‚Ín‚±‚Ú‚ê‚µ‚½D", xname(otmp));
+            Your("%sã¯åˆƒã“ã¼ã‚Œã—ãŸï¼", xname(otmp));
             costly_alteration(otmp, COST_DEGRD);
             if (len > maxelen) {
                 multi = -maxelen;
@@ -1433,7 +1433,7 @@ doengrave()
 /*JP
             nomovemsg = "You finish engraving.";
 */
-            nomovemsg = "‚ ‚È‚½‚Í‚İI‚¦‚½D";
+            nomovemsg = "ã‚ãªãŸã¯åˆ»ã¿çµ‚ãˆãŸï¼";
         break;
     case BURN:
         multi = -(len / 10);
@@ -1442,11 +1442,11 @@ doengrave()
 /*JP
                           ? "You finish melting your message into the ice."
 */
-                          ? "•X‚ÖƒƒbƒZ[ƒW‚ğ‚İI‚¦‚½D"
+                          ? "æ°·ã¸ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã‚’åˆ»ã¿çµ‚ãˆãŸï¼"
 /*JP
                           : "You finish burning your message into the floor.";
 */
-                          : "°‚ÖƒƒbƒZ[ƒW‚ğÄ‚«‚¢‚êI‚¦‚½D";
+                          : "åºŠã¸ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã‚’ç„¼ãã„ã‚Œçµ‚ãˆãŸï¼";
         break;
     case MARK:
         multi = -(len / 10);
@@ -1456,7 +1456,7 @@ doengrave()
 /*JP
                 Your("marker dries out.");
 */
-                Your("ƒ}[ƒJ‚ÍŠ£‚«‚«‚Á‚½D");
+                Your("ãƒãƒ¼ã‚«ã¯ä¹¾ããã£ãŸï¼");
                 otmp->spe = 0;
                 multi = -(maxelen / 10);
             } else if (len > 1)
@@ -1468,7 +1468,7 @@ doengrave()
 /*JP
             nomovemsg = "You finish defacing the dungeon.";
 */
-            nomovemsg = "‚ ‚È‚½‚Í–À‹{‚Ö‚Ì—‘‚ğ‘‚«I‚¦‚½D";
+            nomovemsg = "ã‚ãªãŸã¯è¿·å®®ã¸ã®è½æ›¸ã‚’æ›¸ãçµ‚ãˆãŸï¼";
         break;
     case ENGR_BLOOD:
         multi = -(len / 10);
@@ -1476,7 +1476,7 @@ doengrave()
 /*JP
             nomovemsg = "You finish scrawling.";
 */
-            nomovemsg = "‚Í‚µ‚è‘‚«‚ğ‘‚«I‚¦‚½D";
+            nomovemsg = "ã¯ã—ã‚Šæ›¸ãã‚’æ›¸ãçµ‚ãˆãŸï¼";
         break;
     }
 
@@ -1486,7 +1486,7 @@ doengrave()
             if (*sp == ' ')
                 maxelen--;
         if (!maxelen && *sp) {
-#if 1 /*JP*//*Š¿š‚Ì1ƒoƒCƒg–Ú‚¾‚¯‚ªc‚ç‚È‚¢‚æ‚¤‚É*/
+#if 1 /*JP*//*æ¼¢å­—ã®1ãƒã‚¤ãƒˆç›®ã ã‘ãŒæ®‹ã‚‰ãªã„ã‚ˆã†ã«*/
             if(is_kanji2(ebuf, sp - ebuf))
                 --sp;
 #endif
@@ -1495,11 +1495,11 @@ doengrave()
 /*JP
                 nomovemsg = "You cannot write any more.";
 */
-                nomovemsg = "‚±‚êˆÈã‰½‚à‘‚¯‚È‚©‚Á‚½D";
+                nomovemsg = "ã“ã‚Œä»¥ä¸Šä½•ã‚‚æ›¸ã‘ãªã‹ã£ãŸï¼";
 /*JP
             You("are only able to write \"%s\".", ebuf);
 */
-            You("u%sv‚Æ‚Ü‚Å‚µ‚©‘‚¯‚È‚©‚Á‚½D", ebuf);
+            You("ã€Œ%sã€ã¨ã¾ã§ã—ã‹æ›¸ã‘ãªã‹ã£ãŸï¼", ebuf);
         }
     }
 
@@ -1515,7 +1515,7 @@ doengrave()
 /*JP
         You("are blinded by the flash!");
 */
-        You("‚Ü‚Î‚ä‚¢Œõ‚Å–Ú‚ª‚­‚ç‚ñ‚¾I");
+        You("ã¾ã°ã‚†ã„å…‰ã§ç›®ãŒãã‚‰ã‚“ã ï¼");
         make_blinded((long) rnd(50), FALSE);
         if (!Blind)
             Your1(vision_clears);

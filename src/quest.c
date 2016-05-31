@@ -147,26 +147,26 @@ boolean talk;
             You("are currently %s instead of %s.", align_str(u.ualign.type),
                 align_str(original_alignment));
 #else
-            You("%s‚Å‚Í‚È‚­%s‚Ì‘®«‚Å‚ ‚éD", align_str(original_alignment),
+            You("%sã§ã¯ãªã%sã®å±æ€§ã§ã‚ã‚‹ï¼", align_str(original_alignment),
                 align_str(u.ualign.type));
 #endif
         } else if (u.ualignbase[A_CURRENT] != original_alignment) {
 /*JP
             You("have converted.");
 */
-            You("“]Œü‚µ‚Ä‚¢‚éD");
+            You("è»¢å‘ã—ã¦ã„ã‚‹ï¼");
         } else if (u.ualign.record < MIN_QUEST_ALIGN) {
 #if 0 /*JP*/
             You("are currently %d and require %d.", u.ualign.record,
                 MIN_QUEST_ALIGN);
 #else
-            Your("‘®«’l‚ÍŒ»İ%d‚Å%d•K—v‚¾D", u.ualign.record,
+            Your("å±æ€§å€¤ã¯ç¾åœ¨%dã§%då¿…è¦ã ï¼", u.ualign.record,
                  MIN_QUEST_ALIGN);
 #endif
 /*JP
             if (yn_function("adjust?", (char *) 0, 'y') == 'y')
 */
-            if (yn_function("’¼‚·H", (char *) 0, 'y') == 'y')
+            if (yn_function("ç›´ã™ï¼Ÿ", (char *) 0, 'y') == 'y')
                 u.ualign.record = MIN_QUEST_ALIGN;
         }
     }
@@ -196,7 +196,7 @@ boolean seal;
 /*JP
     br = dungeon_branch("The Quest");
 */
-    br = dungeon_branch("ƒNƒGƒXƒg");
+    br = dungeon_branch("ã‚¯ã‚¨ã‚¹ãƒˆ");
     dest = (br->end1.dnum == u.uz.dnum) ? &br->end2 : &br->end1;
     portal_flag = u.uevent.qexpelled ? 0 /* returned via artifact? */
                                      : !seal ? 1 : -1;
@@ -398,11 +398,11 @@ struct monst *mtmp;
 /*JP
             pline("%s speaks:", Monnam(mtmp));
 */
-            pline("%s‚Í˜b‚µ‚½F", Monnam(mtmp));
+            pline("%sã¯è©±ã—ãŸï¼š", Monnam(mtmp));
 /*JP
         verbalize("I'm finally free!");
 */
-        verbalize("‚Â‚¢‚É©—R‚¾I");
+        verbalize("ã¤ã„ã«è‡ªç”±ã ï¼");
         mtmp->mstrategy &= ~STRAT_WAITMASK;
         mtmp->mpeaceful = 1;
 

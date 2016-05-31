@@ -19,7 +19,7 @@
 /* internal kcode */
 /* IC=0 EUC */
 /* IC=1 SJIS */
-#define IC ((unsigned char)("Š¿"[0])==0x8a)
+#define IC ((unsigned char)("æ¼¢"[0])==0x8a)
 
 #define J_A	0
 #define J_KA	(1*5)
@@ -56,16 +56,16 @@ static unsigned char hira_tab[][2]={
     {0xa4, 0xd1}, {0xa4, 0xd4}, {0xa4, 0xd7}, {0xa4, 0xda}, {0xa4, 0xdd},
 };
 
-#define FIFTH	0 /* ŒÜ’i */
-#define UPPER	1 /* ãˆê’i */
-#define LOWER	2 /* ‰ºˆê’i */
-#define SAHEN	3 /* ƒT•Ï */
-#define KAHEN	4 /* ƒJ•Ï */
+#define FIFTH	0 /* äº”æ®µ */
+#define UPPER	1 /* ä¸Šä¸€æ®µ */
+#define LOWER	2 /* ä¸‹ä¸€æ®µ */
+#define SAHEN	3 /* ã‚µå¤‰ */
+#define KAHEN	4 /* ã‚«å¤‰ */
 
-#define NORMAL	0 /* ‚ ‚¯‚é¨`‚½ */
-#define SOKUON	1 /* ‚Ş¨`‚ñ‚¾ */
-#define HATSUON	2 /* ‘Å‚Â¨`‚Á‚½ */
-#define ION	3 /* •‚‚­¨`‚¢‚½ */
+#define NORMAL	0 /* ã‚ã‘ã‚‹â†’ã€œãŸ */
+#define SOKUON	1 /* åˆ»ã‚€â†’ã€œã‚“ã  */
+#define HATSUON	2 /* æ‰“ã¤â†’ã€œã£ãŸ */
+#define ION	3 /* æµ®ãâ†’ã€œã„ãŸ */
 
 struct _jconj_tab {
     const char *main;
@@ -75,84 +75,84 @@ struct _jconj_tab {
 /* 0: normal 1: sokuon 2: hatson 3: ion */
     int onbin_type;
 } jconj_tab[] = {
-/* ‚  */
-    {"‚ ‚¯‚é", J_KA, LOWER, NORMAL},
-    {"ŠJ‚¯‚é", J_KA, LOWER, NORMAL},
-    {"‚¢‚ê‚é", J_RA, LOWER, NORMAL},
-    {"“ü‚ê‚é", J_RA, LOWER, NORMAL},
-    {"•‚‚­", J_KA, FIFTH, ION},
-    {"‘Å‚Â", J_TA, FIFTH, HATSUON},
-    {"’u‚­", J_KA, FIFTH, ION},
-    {"”[‚ß‚é", J_MA, LOWER, NORMAL},
-    {"—‚¿‚é", J_TA, UPPER, NORMAL},
-    {"—‚·", J_SA, FIFTH, NORMAL},
-/* ‚© */
-    {"‘‚­", J_KA, FIFTH, ION},
-    {"‚©‚¯‚é", J_KA, UPPER, NORMAL},
-    {"‚©‚Ô‚é", J_RA, FIFTH, HATSUON},
-    {"\‚¦‚é", J_A, LOWER, NORMAL},
-    {"Šš‚İ‚Â‚­", J_KA, FIFTH, ION},
-    {"‚Ş", J_MA, FIFTH, SOKUON},
-    {"’…‚é", J_KA, UPPER, NORMAL},
-    {"—ˆ‚é", J_KA, KAHEN, NORMAL}, 
-    {"Ó‚­", J_KA, FIFTH, ION}, 
-    {"‰Á‚¦‚é", J_A, LOWER, NORMAL},
-    {"‚±‚·‚é", J_RA, FIFTH, HATSUON},
-    {"‚±‚Ü‚·", J_SA, FIFTH, NORMAL},
-    {"‚Ş", J_MA, FIFTH, SOKUON},
-    {"E‚·", J_SA, FIFTH, NORMAL},
-    {"‰ó‚·", J_SA, FIFTH, NORMAL},
-/* ‚³ */
-    {"•ù‚°‚é", J_KA, LOWER, NORMAL},
-    {"K‚Ñ‚é", J_BA, UPPER, NORMAL},
-    {"€‚Ê", J_NA, FIFTH, SOKUON},
-    {"ŠŠ‚é", J_RA, FIFTH, HATSUON},
-    {"‚·‚é", J_SA, SAHEN, NORMAL}, 
-/* ‚½ */
-    {"o‚·", J_SA, FIFTH, NORMAL},
-    {"H‚×‚é", J_HA, LOWER, NORMAL}, 
-    {"g‚¤", J_WA, FIFTH, HATSUON},
-    {"‚Â‚¯‚é", J_KA, LOWER, NORMAL},
-    {"‚Â‚Ü‚¸‚­", J_KA, FIFTH, ION},
-    {"o‚é", J_NA, LOWER, NORMAL},
-    {"‰ğ‚­", J_KA, FIFTH, ION},
-    {"—n‚¯‚é", J_KA, LOWER, NORMAL},
-    {"‚Æ‚Î‚·", J_SA, FIFTH, NORMAL},
-    {"”ò‚Ô", J_BA, FIFTH, SOKUON},
-    {"æ‚é", J_RA, FIFTH, HATSUON},
-/* ‚È */
-    {"“Š‚°‚é", J_GA, LOWER, NORMAL},
-    {"–¼‚Ã‚¯‚é", J_KA, LOWER, NORMAL},
-    {"ˆ¬‚é", J_RA, FIFTH, HATSUON},
-    {"’E‚®", J_GA, FIFTH, ION},
-    {"”G‚ç‚·", J_SA, FIFTH, NORMAL},
-    {"“h‚é", J_RA, FIFTH, HATSUON},
-    {"ˆù‚Ş", J_MA, FIFTH, SOKUON},
-/* ‚Í */
-    {"‚Í‚¢‚¸‚é", J_RA, FIFTH, HATSUON},
-    {"—š‚­", J_KA, FIFTH, ION},
-    {"‚Í‚³‚Ş", J_MA, FIFTH, SOKUON},
-    {"‚Í‚¸‚·", J_SA, FIFTH, NORMAL},
-    {"ŠO‚·", J_SA, FIFTH, NORMAL},
-    {"‚Í‚ß‚é", J_MA, UPPER, NORMAL},
-    {"Z‚·", J_SA, FIFTH, NORMAL},
-    {"‚Ğ‚Á‚©‚¯‚é", J_KA, LOWER, NORMAL},
-    {"E‚¤", J_WA, FIFTH, HATSUON},
-    {"“¥‚Ş", J_MA, FIFTH, SOKUON},
-    {"U‚è‚©‚´‚·", J_SA, FIFTH, NORMAL},
-    {"Œ@‚é", J_RA, FIFTH, HATSUON},
-/* ‚Ü */
-    {"Šª‚­", J_KA, FIFTH, ION},
-    {"ç‚é", J_RA, FIFTH, HATSUON},
-    {"‰ñ‚·", J_SA, FIFTH, NORMAL},
-    {"g‚É‚Â‚¯‚é", J_KA, LOWER, NORMAL},
-    {"‚Â", J_TA, FIFTH, HATSUON},
-/* ‚â */
-    {"Ä‚­", J_KA, FIFTH, ION},
-    {"ŒÄ‚Ô", J_BA, FIFTH, SOKUON},
-    {"“Ç‚Ş", J_MA, FIFTH, SOKUON},
-/* ‚ç */
-/* ‚í */
+/* ã‚ */
+    {"ã‚ã‘ã‚‹", J_KA, LOWER, NORMAL},
+    {"é–‹ã‘ã‚‹", J_KA, LOWER, NORMAL},
+    {"ã„ã‚Œã‚‹", J_RA, LOWER, NORMAL},
+    {"å…¥ã‚Œã‚‹", J_RA, LOWER, NORMAL},
+    {"æµ®ã", J_KA, FIFTH, ION},
+    {"æ‰“ã¤", J_TA, FIFTH, HATSUON},
+    {"ç½®ã", J_KA, FIFTH, ION},
+    {"ç´ã‚ã‚‹", J_MA, LOWER, NORMAL},
+    {"è½ã¡ã‚‹", J_TA, UPPER, NORMAL},
+    {"è½ã™", J_SA, FIFTH, NORMAL},
+/* ã‹ */
+    {"æ›¸ã", J_KA, FIFTH, ION},
+    {"ã‹ã‘ã‚‹", J_KA, UPPER, NORMAL},
+    {"ã‹ã¶ã‚‹", J_RA, FIFTH, HATSUON},
+    {"æ§‹ãˆã‚‹", J_A, LOWER, NORMAL},
+    {"å™›ã¿ã¤ã", J_KA, FIFTH, ION},
+    {"åˆ»ã‚€", J_MA, FIFTH, SOKUON},
+    {"ç€ã‚‹", J_KA, UPPER, NORMAL},
+    {"æ¥ã‚‹", J_KA, KAHEN, NORMAL}, 
+    {"ç •ã", J_KA, FIFTH, ION}, 
+    {"åŠ ãˆã‚‹", J_A, LOWER, NORMAL},
+    {"ã“ã™ã‚‹", J_RA, FIFTH, HATSUON},
+    {"ã“ã¾ã™", J_SA, FIFTH, NORMAL},
+    {"è¾¼ã‚€", J_MA, FIFTH, SOKUON},
+    {"æ®ºã™", J_SA, FIFTH, NORMAL},
+    {"å£Šã™", J_SA, FIFTH, NORMAL},
+/* ã• */
+    {"æ§ã’ã‚‹", J_KA, LOWER, NORMAL},
+    {"éŒ†ã³ã‚‹", J_BA, UPPER, NORMAL},
+    {"æ­»ã¬", J_NA, FIFTH, SOKUON},
+    {"æ»‘ã‚‹", J_RA, FIFTH, HATSUON},
+    {"ã™ã‚‹", J_SA, SAHEN, NORMAL}, 
+/* ãŸ */
+    {"å‡ºã™", J_SA, FIFTH, NORMAL},
+    {"é£Ÿã¹ã‚‹", J_HA, LOWER, NORMAL}, 
+    {"ä½¿ã†", J_WA, FIFTH, HATSUON},
+    {"ã¤ã‘ã‚‹", J_KA, LOWER, NORMAL},
+    {"ã¤ã¾ãšã", J_KA, FIFTH, ION},
+    {"å‡ºã‚‹", J_NA, LOWER, NORMAL},
+    {"è§£ã", J_KA, FIFTH, ION},
+    {"æº¶ã‘ã‚‹", J_KA, LOWER, NORMAL},
+    {"ã¨ã°ã™", J_SA, FIFTH, NORMAL},
+    {"é£›ã¶", J_BA, FIFTH, SOKUON},
+    {"å–ã‚‹", J_RA, FIFTH, HATSUON},
+/* ãª */
+    {"æŠ•ã’ã‚‹", J_GA, LOWER, NORMAL},
+    {"åã¥ã‘ã‚‹", J_KA, LOWER, NORMAL},
+    {"æ¡ã‚‹", J_RA, FIFTH, HATSUON},
+    {"è„±ã", J_GA, FIFTH, ION},
+    {"æ¿¡ã‚‰ã™", J_SA, FIFTH, NORMAL},
+    {"å¡—ã‚‹", J_RA, FIFTH, HATSUON},
+    {"é£²ã‚€", J_MA, FIFTH, SOKUON},
+/* ã¯ */
+    {"ã¯ã„ãšã‚‹", J_RA, FIFTH, HATSUON},
+    {"å±¥ã", J_KA, FIFTH, ION},
+    {"ã¯ã•ã‚€", J_MA, FIFTH, SOKUON},
+    {"ã¯ãšã™", J_SA, FIFTH, NORMAL},
+    {"å¤–ã™", J_SA, FIFTH, NORMAL},
+    {"ã¯ã‚ã‚‹", J_MA, UPPER, NORMAL},
+    {"æµ¸ã™", J_SA, FIFTH, NORMAL},
+    {"ã²ã£ã‹ã‘ã‚‹", J_KA, LOWER, NORMAL},
+    {"æ‹¾ã†", J_WA, FIFTH, HATSUON},
+    {"è¸ã‚€", J_MA, FIFTH, SOKUON},
+    {"æŒ¯ã‚Šã‹ã–ã™", J_SA, FIFTH, NORMAL},
+    {"æ˜ã‚‹", J_RA, FIFTH, HATSUON},
+/* ã¾ */
+    {"å·»ã", J_KA, FIFTH, ION},
+    {"å®ˆã‚‹", J_RA, FIFTH, HATSUON},
+    {"å›ã™", J_SA, FIFTH, NORMAL},
+    {"èº«ã«ã¤ã‘ã‚‹", J_KA, LOWER, NORMAL},
+    {"æŒã¤", J_TA, FIFTH, HATSUON},
+/* ã‚„ */
+    {"ç„¼ã", J_KA, FIFTH, ION},
+    {"å‘¼ã¶", J_BA, FIFTH, SOKUON},
+    {"èª­ã‚€", J_MA, FIFTH, SOKUON},
+/* ã‚‰ */
+/* ã‚ */
     {(void*)0, 0, 0, 0},
 };
 
@@ -164,8 +164,8 @@ extern unsigned char *sj2e(unsigned char *s);
 **
 **	Example
 **	arg1	arg2	result
-**	’E‚®	‚È‚¢	’E‚ª‚È‚¢
-**	’E‚®	‚½	’E‚¢‚¾
+**	è„±ã	ãªã„	è„±ãŒãªã„
+**	è„±ã	ãŸ	è„±ã„ã 
 **
 */
 static char *
@@ -181,7 +181,7 @@ jconjsub( tab, jverb, sfx )
     len = strlen(jverb);
     strcpy((char *)tmp, jverb );
 
-    if(!strncmp(sfx, "‚Æ", 2)){
+    if(!strncmp(sfx, "ã¨", 2)){
 	strcat((char *)tmp, sfx);
 	return (char *)tmp;
     }
@@ -189,7 +189,7 @@ jconjsub( tab, jverb, sfx )
     switch( tab->katsuyo_type ){
       case FIFTH:
 	p = tmp + (len - 2);
-	if(!strncmp(sfx, "‚È", 2)){
+	if(!strncmp(sfx, "ãª", 2)){
 	    if(!IC){
 		p[0] = 0xa4;
 		p[1] = hira_tab[tab->column][1];
@@ -200,7 +200,7 @@ jconjsub( tab, jverb, sfx )
 	    strcpy((char *)p + 2, sfx);
 	    break;
 	}
-	else if(!strncmp(sfx, "‚½", 2) || !strncmp(sfx, "‚Ä", 2)){
+	else if(!strncmp(sfx, "ãŸ", 2) || !strncmp(sfx, "ã¦", 2)){
 	    switch( tab->onbin_type ){
 	      case NORMAL:
 		if(!IC){
@@ -213,21 +213,21 @@ jconjsub( tab, jverb, sfx )
 		if(!IC){
 		    p[1] = 0xf3;
 		} else {
-		    memcpy(p, "‚ñ", 2);
+		    memcpy(p, "ã‚“", 2);
 		}
 		break;
 	      case HATSUON:
 		if(!IC){
 		    p[1] = 0xc3;
 		} else {
-		    memcpy(p, "‚Á", 2);
+		    memcpy(p, "ã£", 2);
 		}
 		break;
 	      case ION:
 		if(!IC){
 		    p[1] = 0xa4;
 		} else {
-		    memcpy(p, "‚¢", 2);
+		    memcpy(p, "ã„", 2);
 		}
 		break;
 	    }
@@ -243,7 +243,7 @@ jconjsub( tab, jverb, sfx )
 	    }
 	    break;
 	}
-	else if(!strncmp(sfx, "‚Î", 2)){
+	else if(!strncmp(sfx, "ã°", 2)){
 	    if(!IC){
 		p[1] = hira_tab[tab->column + 3][1];
 	    } else {
@@ -251,7 +251,7 @@ jconjsub( tab, jverb, sfx )
 	    }
 	    strcpy((char *)p + 2, sfx);
 	}
-	else if(!strncmp(sfx, "‚ê", 2)){
+	else if(!strncmp(sfx, "ã‚Œ", 2)){
 	    if(!IC){
 		p[1]=hira_tab[tab->column + 3][1];
 	    } else {
@@ -259,7 +259,7 @@ jconjsub( tab, jverb, sfx )
 	    }
 	    strcpy((char *)p + 2, sfx + 2);
 	}
-	else if(!strncmp(sfx, "‚Ü", 2)) {
+	else if(!strncmp(sfx, "ã¾", 2)) {
 	    if(!IC){
 		p[1] = hira_tab[tab->column + 1][1];
 	    } else {
@@ -268,7 +268,7 @@ jconjsub( tab, jverb, sfx )
 	    strcpy((char *)p + 2, sfx);
 	    break;
 	}
-	else if(!strncmp(sfx, "‚æ", 2)) {
+	else if(!strncmp(sfx, "ã‚ˆ", 2)) {
 	    if(!IC){
 		p[1] = hira_tab[tab->column + 4][1];
 	    } else {
@@ -282,12 +282,12 @@ jconjsub( tab, jverb, sfx )
       case UPPER:
       case KAHEN:
 	p = tmp + (len - 2);
-	if(!strncmp(sfx, "‚Î", 2)){
-	    strcpy((char *)p, "‚ê");
+	if(!strncmp(sfx, "ã°", 2)){
+	    strcpy((char *)p, "ã‚Œ");
 	    strcpy((char *)p + 2, sfx);
 	}
-	else if(!strncmp(sfx, "‚ê", 2) && tab->katsuyo_type == LOWER){
-	    strcpy((char *)p, "‚ç");
+	else if(!strncmp(sfx, "ã‚Œ", 2) && tab->katsuyo_type == LOWER){
+	    strcpy((char *)p, "ã‚‰");
 	    strcpy((char *)p + 2, sfx);
 	}
 	else
@@ -295,23 +295,23 @@ jconjsub( tab, jverb, sfx )
 	break;
       case SAHEN:
 	p = tmp + (len - 4);
-	if(!strncmp(sfx, "‚È", 2) ||
-	   !strncmp(sfx, "‚Ü", 2) ||
-	   !strncmp(sfx, "‚½", 2) ||
-	   !strncmp(sfx, "‚Ä", 2) ||
-	   !strncmp(sfx, "‚æ", 2)){
-	    strcpy((char *)p, "‚µ");
+	if(!strncmp(sfx, "ãª", 2) ||
+	   !strncmp(sfx, "ã¾", 2) ||
+	   !strncmp(sfx, "ãŸ", 2) ||
+	   !strncmp(sfx, "ã¦", 2) ||
+	   !strncmp(sfx, "ã‚ˆ", 2)){
+	    strcpy((char *)p, "ã—");
 	    strcpy((char *)p + 2, sfx);
 	}
-	else if(!strncmp(sfx, "‚Î", 2) || !strncmp(sfx, "‚ê‚Î", 4)){
-	    strcpy((char *)p, "‚·‚ê‚Î");
+	else if(!strncmp(sfx, "ã°", 2) || !strncmp(sfx, "ã‚Œã°", 4)){
+	    strcpy((char *)p, "ã™ã‚Œã°");
 	}
 	break;
     }
     return (char *)tmp;
 }
 
-/* “®Œ‚Ì•Ï‰» */
+/* å‹•è©ã®å¤‰åŒ– */
 const char *
 jconj( jverb, sfx )
      const char *jverb;
@@ -340,7 +340,7 @@ jconj( jverb, sfx )
     return jverb;
 }
 
-/* ‰Â”\ */
+/* å¯èƒ½ */
 const char *
 jcan(jverb)
      const char *jverb;
@@ -349,17 +349,17 @@ jcan(jverb)
     static unsigned char tmp[1024];
 
     int len = strlen(jverb);
-    if(!strcmp(jverb + len - 4, "‚·‚é")){
+    if(!strcmp(jverb + len - 4, "ã™ã‚‹")){
 	strncpy(tmp, jverb, len - 4);
-	strcpy(tmp + len - 4, "‚Å‚«‚é");
+	strcpy(tmp + len - 4, "ã§ãã‚‹");
 	return tmp;
     } else {
-	ret = jconj(jverb, "‚ê‚é");
+	ret = jconj(jverb, "ã‚Œã‚‹");
 	return ret;
     }
 }
 
-/* •s‰Â”\ */
+/* ä¸å¯èƒ½ */
 const char *
 jcannot(jverb)
      const char *jverb;
@@ -367,29 +367,29 @@ jcannot(jverb)
     static unsigned char tmp[1024];
 
     int len = strlen(jverb);
-    if(!strcmp(jverb + len - 4, "‚·‚é")){
+    if(!strcmp(jverb + len - 4, "ã™ã‚‹")){
 	strncpy(tmp, jverb, len-4);
-	strcpy(tmp +len-4, "‚Å‚«‚È‚¢");
+	strcpy(tmp +len-4, "ã§ããªã„");
 	return tmp;
     } else {
-	return jconj(jverb, "‚ê‚È‚¢");
+	return jconj(jverb, "ã‚Œãªã„");
     }
 }
 
-/* ‰ß‹ */
+/* éå» */
 const char *
 jpast(jverb)
      const char *jverb;
 {
-    return jconj(jverb, "‚½");
+    return jconj(jverb, "ãŸ");
 }
 
-/* Œh‘Ì */
+/* æ•¬ä½“ */
 const char *
 jpolite(jverb)
      const char *jverb;
 {
-    return jconj(jverb, "‚Ü‚·");
+    return jconj(jverb, "ã¾ã™");
 }
 
 
@@ -398,11 +398,11 @@ jpolite(jverb)
 **
 **	Example:
 **
-**	Œ`—eŒ“I—p–@	   •›Œ“I—p–@
+**	å½¢å®¹è©çš„ç”¨æ³•	   å‰¯è©çš„ç”¨æ³•
 **
-**	Ô‚¢		-> Ô‚­		(Œ`—eŒ)
-**	ãY—í‚È		-> ãY—í‚É	(Œ`—e“®Œ)
-**	ãY—í‚¾		-> ãY—í‚É	(Œ`—e“®Œ)
+**	èµ¤ã„		-> èµ¤ã		(å½¢å®¹è©)
+**	ç¶ºéº—ãª		-> ç¶ºéº—ã«	(å½¢å®¹å‹•è©)
+**	ç¶ºéº—ã 		-> ç¶ºéº—ã«	(å½¢å®¹å‹•è©)
 */
 const char *
 jconj_adj( jadj )
@@ -414,12 +414,12 @@ jconj_adj( jadj )
     strcpy((char *)tmp, jadj);
     len = strlen((char *)tmp);
 
-    if(!strcmp((char *)tmp + len - 2, "‚¢")){
-	strcpy((char *)tmp + len - 2, "‚­");
-    } else if(!strcmp((char *)tmp + len - 2, "‚¾") ||
-	      !strcmp((char *)tmp + len - 2, "‚È") ||
-	      !strcmp((char *)tmp + len - 2, "‚Ì")){
-	strcpy((char *)tmp + len - 2, "‚É");
+    if(!strcmp((char *)tmp + len - 2, "ã„")){
+	strcpy((char *)tmp + len - 2, "ã");
+    } else if(!strcmp((char *)tmp + len - 2, "ã ") ||
+	      !strcmp((char *)tmp + len - 2, "ãª") ||
+	      !strcmp((char *)tmp + len - 2, "ã®")){
+	strcpy((char *)tmp + len - 2, "ã«");
     }
 
     return (char *)tmp;
@@ -445,19 +445,19 @@ main()
     struct _jconj_tab *tab;
 
     for(tab = jconj_tab; tab->main != (void*)0; ++tab){
-	printf("%-10s ‚È‚¢ %s\n", tab->main, jconj(tab->main, "‚È‚¢"));
-	printf("%-10s ‚Ü‚· %s\n", tab->main, jconj(tab->main, "‚Ü‚·"));
-	printf("%-10s ‚½   %s\n", tab->main, jconj(tab->main, "‚½"));
-	printf("%-10s ‚ê‚Î %s\n", tab->main, jconj(tab->main, "‚ê‚Î"));
-	printf("%-10s ‚Æ‚« %s\n", tab->main, jconj(tab->main, "‚Æ‚«"));
-	printf("%-10s ‚æ‚¤ %s\n", tab->main, jconj(tab->main, "‚æ‚¤"));
+	printf("%-10s ãªã„ %s\n", tab->main, jconj(tab->main, "ãªã„"));
+	printf("%-10s ã¾ã™ %s\n", tab->main, jconj(tab->main, "ã¾ã™"));
+	printf("%-10s ãŸ   %s\n", tab->main, jconj(tab->main, "ãŸ"));
+	printf("%-10s ã‚Œã° %s\n", tab->main, jconj(tab->main, "ã‚Œã°"));
+	printf("%-10s ã¨ã %s\n", tab->main, jconj(tab->main, "ã¨ã"));
+	printf("%-10s ã‚ˆã† %s\n", tab->main, jconj(tab->main, "ã‚ˆã†"));
 	printf("%-10s %s\n", tab->main, jcan(tab->main));
 	printf("%-10s %s\n", tab->main, jcannot(tab->main));
     }
-    printf("%s\n", jconj("“O–é‚Ånethack‚Ì–|–ó‚ğ‚·‚é", "‚È‚¢"));
-    printf("%s\n", jconj("“O–é‚Ånethack‚Ì–|–ó‚ğ‚·‚é", "‚Ü‚·"));
-    printf("%s\n", jconj("“O–é‚Ånethack‚Ì–|–ó‚ğ‚·‚é", "‚½"));
-    printf("%s\n", jconj("“O–é‚Ånethack‚Ì–|–ó‚ğ‚·‚é", "‚ê‚Î"));
-    printf("%s\n", jconj("“O–é‚Ånethack‚Ì–|–ó‚ğ‚·‚é", "‚Æ‚«"));
+    printf("%s\n", jconj("å¾¹å¤œã§nethackã®ç¿»è¨³ã‚’ã™ã‚‹", "ãªã„"));
+    printf("%s\n", jconj("å¾¹å¤œã§nethackã®ç¿»è¨³ã‚’ã™ã‚‹", "ã¾ã™"));
+    printf("%s\n", jconj("å¾¹å¤œã§nethackã®ç¿»è¨³ã‚’ã™ã‚‹", "ãŸ"));
+    printf("%s\n", jconj("å¾¹å¤œã§nethackã®ç¿»è¨³ã‚’ã™ã‚‹", "ã‚Œã°"));
+    printf("%s\n", jconj("å¾¹å¤œã§nethackã®ç¿»è¨³ã‚’ã™ã‚‹", "ã¨ã"));
 }
 #endif

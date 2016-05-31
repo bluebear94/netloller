@@ -251,215 +251,215 @@ static struct Comp_Opt {
 /*JP
     { "align", "your starting alignment (lawful, neutral, or chaotic)", 8,
 */
-    { "align",    "ƒQ[ƒ€ƒXƒ^[ƒg‚Ì‘®« (lawful, neutral, or chaotic‚Ì‚¢‚¸‚ê‚©)", 8,
+    { "align",    "ã‚²ãƒ¼ãƒ ã‚¹ã‚¿ãƒ¼ãƒˆæ™‚ã®å±æ€§ (lawful, neutral, or chaoticã®ã„ãšã‚Œã‹)", 8,
       DISP_IN_GAME },
 #if 0 /*JP*/
     { "align_message", "message window alignment", 20, DISP_IN_GAME }, /*WC*/
 #else
-    { "align_message", "ƒƒbƒZ[ƒWƒEƒBƒ“ƒhƒE‚Ì‘µ‚¦", 20, DISP_IN_GAME }, /*WC*/
+    { "align_message", "ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã‚¦ã‚£ãƒ³ãƒ‰ã‚¦ã®æƒãˆ", 20, DISP_IN_GAME }, /*WC*/
 #endif
 #if 0 /*JP*/
     { "align_status", "status window alignment", 20, DISP_IN_GAME },   /*WC*/
 #else
-    { "align_status", "ó‹µƒEƒBƒ“ƒhƒE‚Ì‘µ‚¦", 20, DISP_IN_GAME }, /*WC*/
+    { "align_status", "çŠ¶æ³ã‚¦ã‚£ãƒ³ãƒ‰ã‚¦ã®æƒãˆ", 20, DISP_IN_GAME }, /*WC*/
 #endif
 /*JP
     { "altkeyhandler", "alternate key handler", 20, DISP_IN_GAME },
 */
-    { "altkeyhandler", "ALTƒL[ƒnƒ“ƒhƒ‰", 20, DISP_IN_GAME },
+    { "altkeyhandler", "ALTã‚­ãƒ¼ãƒãƒ³ãƒ‰ãƒ©", 20, DISP_IN_GAME },
 #ifdef BACKWARD_COMPAT
 /*JP
     { "boulder", "deprecated (use S_boulder in sym file instead)", 1,
 */
-    { "boulder",  "‹Šâ‚ğ•\¦‚·‚éƒVƒ“ƒ{ƒ‹•¶š", 1,
+    { "boulder",  "å·¨å²©ã‚’è¡¨ç¤ºã™ã‚‹ã‚·ãƒ³ãƒœãƒ«æ–‡å­—", 1,
       SET_IN_FILE },
 #endif
 /*JP
     { "catname", "the name of your (first) cat (e.g., catname:Tabby)",
 */
-    { "catname",  "–`Œ¯‚ğ‹Ÿ‚É‚·‚é(Å‰‚Ì)”L‚Ì–¼‘O (—á catname:‚½‚Ü)",
+    { "catname",  "å†’é™ºã‚’ä¾›ã«ã™ã‚‹(æœ€åˆã®)çŒ«ã®åå‰ (ä¾‹ catname:ãŸã¾)",
       PL_PSIZ, DISP_IN_GAME },
 /*JP
     { "disclose", "the kinds of information to disclose at end of game",
 */
-    { "disclose", "ƒQ[ƒ€I—¹‚ÉŒ©‚éî•ñ‚Ìí—Ş",
+    { "disclose", "ã‚²ãƒ¼ãƒ çµ‚äº†æ™‚ã«è¦‹ã‚‹æƒ…å ±ã®ç¨®é¡",
       sizeof(flags.end_disclose) * 2, SET_IN_GAME },
 /*JP
     { "dogname", "the name of your (first) dog (e.g., dogname:Fang)", PL_PSIZ,
 */
-    { "dogname",  "–`Œ¯‚ğ‹Ÿ‚É‚·‚é(Å‰‚Ì)Œ¢‚Ì–¼‘O (—á dogname:ƒ|ƒ`)", PL_PSIZ,
+    { "dogname",  "å†’é™ºã‚’ä¾›ã«ã™ã‚‹(æœ€åˆã®)çŠ¬ã®åå‰ (ä¾‹ dogname:ãƒãƒ)", PL_PSIZ,
       DISP_IN_GAME },
 /*JP
     { "dungeon", "the symbols to use in drawing the dungeon map",
 */
-    { "dungeon",  "ƒ_ƒ“ƒWƒ‡ƒ“‚ğ•`‰æ‚·‚éƒVƒ“ƒ{ƒ‹•¶š",
+    { "dungeon",  "ãƒ€ãƒ³ã‚¸ãƒ§ãƒ³ã‚’æç”»ã™ã‚‹ã‚·ãƒ³ãƒœãƒ«æ–‡å­—",
       MAXDCHARS + 1, SET_IN_FILE },
 /*JP
     { "effects", "the symbols to use in drawing special effects",
 */
-    { "effects",  "“ÁêŒø‰Ê‚ğ•`‰æ‚·‚éƒVƒ“ƒ{ƒ‹•¶š",
+    { "effects",  "ç‰¹æ®ŠåŠ¹æœã‚’æç”»ã™ã‚‹ã‚·ãƒ³ãƒœãƒ«æ–‡å­—",
       MAXECHARS + 1, SET_IN_FILE },
 /*JP
     { "font_map", "the font to use in the map window", 40,
 */
-    { "font_map", "ƒ}ƒbƒvƒEƒBƒ“ƒhƒE‚Ég—p‚·‚éƒtƒHƒ“ƒg", 40,
+    { "font_map", "ãƒãƒƒãƒ—ã‚¦ã‚£ãƒ³ãƒ‰ã‚¦ã«ä½¿ç”¨ã™ã‚‹ãƒ•ã‚©ãƒ³ãƒˆ", 40,
       DISP_IN_GAME },                                              /*WC*/
 #if 0 /*JP*/
     { "font_menu", "the font to use in menus", 40, DISP_IN_GAME }, /*WC*/
 #else
-    { "font_menu", "ƒƒjƒ…[‚Ég—p‚·‚éƒtƒHƒ“ƒg", 40, DISP_IN_GAME }, /*WC*/
+    { "font_menu", "ãƒ¡ãƒ‹ãƒ¥ãƒ¼ã«ä½¿ç”¨ã™ã‚‹ãƒ•ã‚©ãƒ³ãƒˆ", 40, DISP_IN_GAME }, /*WC*/
 #endif
 /*JP
     { "font_message", "the font to use in the message window", 40,
 */
-    { "font_message", "ƒƒbƒZ[ƒWƒEƒBƒ“ƒhƒE‚Ég—p‚·‚éƒtƒHƒ“ƒg", 40,
+    { "font_message", "ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã‚¦ã‚£ãƒ³ãƒ‰ã‚¦ã«ä½¿ç”¨ã™ã‚‹ãƒ•ã‚©ãƒ³ãƒˆ", 40,
       DISP_IN_GAME },                                                  /*WC*/
 #if 0 /*JP*/
     { "font_size_map", "the size of the map font", 20, DISP_IN_GAME }, /*WC*/
 #else
-    { "font_size_map", "ƒ}ƒbƒvƒtƒHƒ“ƒg‚ÌƒTƒCƒY", 20, DISP_IN_GAME }, /*WC*/
+    { "font_size_map", "ãƒãƒƒãƒ—ãƒ•ã‚©ãƒ³ãƒˆã®ã‚µã‚¤ã‚º", 20, DISP_IN_GAME }, /*WC*/
 #endif
 /*JP
     { "font_size_menu", "the size of the menu font", 20,
 */
-    { "font_size_menu", "ƒƒjƒ…[ƒtƒHƒ“ƒg‚ÌƒTƒCƒY", 20,
+    { "font_size_menu", "ãƒ¡ãƒ‹ãƒ¥ãƒ¼ãƒ•ã‚©ãƒ³ãƒˆã®ã‚µã‚¤ã‚º", 20,
       DISP_IN_GAME }, /*WC*/
 /*JP
     { "font_size_message", "the size of the message font", 20,
 */
-    { "font_size_message", "ƒƒbƒZ[ƒWƒtƒHƒ“ƒg‚ÌƒTƒCƒY", 20,
+    { "font_size_message", "ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ãƒ•ã‚©ãƒ³ãƒˆã®ã‚µã‚¤ã‚º", 20,
       DISP_IN_GAME }, /*WC*/
 /*JP
     { "font_size_status", "the size of the status font", 20,
 */
-    { "font_size_status", "ó‹µƒtƒHƒ“ƒg‚ÌƒTƒCƒY", 20,
+    { "font_size_status", "çŠ¶æ³ãƒ•ã‚©ãƒ³ãƒˆã®ã‚µã‚¤ã‚º", 20,
       DISP_IN_GAME }, /*WC*/
 /*JP
     { "font_size_text", "the size of the text font", 20,
 */
-    { "font_size_text", "ƒeƒLƒXƒgƒtƒHƒ“ƒg‚ÌƒTƒCƒY", 20,
+    { "font_size_text", "ãƒ†ã‚­ã‚¹ãƒˆãƒ•ã‚©ãƒ³ãƒˆã®ã‚µã‚¤ã‚º", 20,
       DISP_IN_GAME }, /*WC*/
 /*JP
     { "font_status", "the font to use in status window", 40,
 */
-    { "font_status", "ó‹µƒEƒBƒ“ƒhƒE‚Ég—p‚·‚éƒtƒHƒ“ƒg", 40,
+    { "font_status", "çŠ¶æ³ã‚¦ã‚£ãƒ³ãƒ‰ã‚¦ã«ä½¿ç”¨ã™ã‚‹ãƒ•ã‚©ãƒ³ãƒˆ", 40,
       DISP_IN_GAME }, /*WC*/
 /*JP
     { "font_text", "the font to use in text windows", 40,
 */
-    { "font_text", "ƒeƒLƒXƒgƒEƒBƒ“ƒhƒE‚Ég—p‚·‚éƒtƒHƒ“ƒg", 40,
+    { "font_text", "ãƒ†ã‚­ã‚¹ãƒˆã‚¦ã‚£ãƒ³ãƒ‰ã‚¦ã«ä½¿ç”¨ã™ã‚‹ãƒ•ã‚©ãƒ³ãƒˆ", 40,
       DISP_IN_GAME }, /*WC*/
 /*JP
     { "fruit", "the name of a fruit you enjoy eating", PL_FSIZ, SET_IN_GAME },
 */
-    { "fruit", "D•¨‚Ì‰Ê•¨‚Ì–¼‘O", PL_FSIZ, SET_IN_GAME },
+    { "fruit", "å¥½ç‰©ã®æœç‰©ã®åå‰", PL_FSIZ, SET_IN_GAME },
 /*JP
     { "gender", "your starting gender (male or female)", 8, DISP_IN_GAME },
 */
-    { "gender", "ƒQ[ƒ€ŠJn‚Ì«•Ê(male ‚Ü‚½‚Í female)", 8, DISP_IN_GAME },
+    { "gender", "ã‚²ãƒ¼ãƒ é–‹å§‹æ™‚ã®æ€§åˆ¥(male ã¾ãŸã¯ female)", 8, DISP_IN_GAME },
 /*JP
     { "horsename", "the name of your (first) horse (e.g., horsename:Silver)",
 */
-    { "horsename", "–`Œ¯‚ğ‹Ÿ‚É‚·‚é(Å‰‚Ì)”n‚Ì–¼‘O (—á ghoulname:ƒVƒ‹ƒo[)",
+    { "horsename", "å†’é™ºã‚’ä¾›ã«ã™ã‚‹(æœ€åˆã®)é¦¬ã®åå‰ (ä¾‹ ghoulname:ã‚·ãƒ«ãƒãƒ¼)",
       PL_PSIZ, DISP_IN_GAME },
 #if 0 /*JP*/
     { "map_mode", "map display mode under Windows", 20, DISP_IN_GAME }, /*WC*/
 #else
-    { "map_mode", "ƒEƒBƒ“ƒhƒE•\¦‚Ìƒ}ƒbƒv‚Ì•\¦ƒ‚[ƒh", 20, DISP_IN_GAME }, /*WC*/
+    { "map_mode", "ã‚¦ã‚£ãƒ³ãƒ‰ã‚¦è¡¨ç¤ºæ™‚ã®ãƒãƒƒãƒ—ã®è¡¨ç¤ºãƒ¢ãƒ¼ãƒ‰", 20, DISP_IN_GAME }, /*WC*/
 #endif
 /*JP
     { "menustyle", "user interface for object selection", MENUTYPELEN,
 */
-    { "menustyle", "ƒIƒuƒWƒFƒNƒg‚ğ‘I‘ğ‚·‚é‚Æ‚«‚Ìƒ†[ƒU[ƒCƒ“ƒ^ƒtƒF[ƒX", MENUTYPELEN,
+    { "menustyle", "ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’é¸æŠã™ã‚‹ã¨ãã®ãƒ¦ãƒ¼ã‚¶ãƒ¼ã‚¤ãƒ³ã‚¿ãƒ•ã‚§ãƒ¼ã‚¹", MENUTYPELEN,
       SET_IN_GAME },
 /*JP
     { "menu_deselect_all", "deselect all items in a menu", 4, SET_IN_FILE },
 */
-    { "menu_deselect_all", "‘S‚Ä‚ÌƒAƒCƒeƒ€‚ğ”ñ‘I‘ğ", 4, SET_IN_FILE },
+    { "menu_deselect_all", "å…¨ã¦ã®ã‚¢ã‚¤ãƒ†ãƒ ã‚’éé¸æŠ", 4, SET_IN_FILE },
 /*JP
     { "menu_deselect_page", "deselect all items on this page of a menu", 4,
 */
-    { "menu_deselect_page", "Œ»İ•\¦‚³‚ê‚Ä‚¢‚éƒy[ƒW‚ÌƒAƒCƒeƒ€‚ğ”ñ‘I‘ğ", 4,
+    { "menu_deselect_page", "ç¾åœ¨è¡¨ç¤ºã•ã‚Œã¦ã„ã‚‹ãƒšãƒ¼ã‚¸ã®ã‚¢ã‚¤ãƒ†ãƒ ã‚’éé¸æŠ", 4,
       SET_IN_FILE },
 /*JP
     { "menu_first_page", "jump to the first page in a menu", 4, SET_IN_FILE },
 */
-    { "menu_first_page", "ƒƒjƒ…[‚ÌÅ‰‚Ìƒy[ƒW‚Ö", 4, SET_IN_FILE },
+    { "menu_first_page", "ãƒ¡ãƒ‹ãƒ¥ãƒ¼ã®æœ€åˆã®ãƒšãƒ¼ã‚¸ã¸", 4, SET_IN_FILE },
 /*JP
     { "menu_headings", "text attribute for menu headings", 9, SET_IN_GAME },
 */
-    { "menu_headings", "‹­’²C”½“]‚Ü‚½‚Í‰ºü‚Åí—Ş‚ğ•\¦‚·‚é", 9, SET_IN_GAME },
+    { "menu_headings", "å¼·èª¿ï¼Œåè»¢ã¾ãŸã¯ä¸‹ç·šã§ç¨®é¡ã‚’è¡¨ç¤ºã™ã‚‹", 9, SET_IN_GAME },
 /*JP
     { "menu_invert_all", "invert all items in a menu", 4, SET_IN_FILE },
 */
-    { "menu_invert_all", "‘S‚Ä‚ÌƒAƒCƒeƒ€‚ğ”½“]", 4, SET_IN_FILE },
+    { "menu_invert_all", "å…¨ã¦ã®ã‚¢ã‚¤ãƒ†ãƒ ã‚’åè»¢", 4, SET_IN_FILE },
 /*JP
     { "menu_invert_page", "invert all items on this page of a menu", 4,
 */
-    { "menu_invert_page", "Œ»İ•\¦‚³‚ê‚Ä‚¢‚éƒy[ƒW‚ÌƒAƒCƒeƒ€‚ğ”½“]",
+    { "menu_invert_page", "ç¾åœ¨è¡¨ç¤ºã•ã‚Œã¦ã„ã‚‹ãƒšãƒ¼ã‚¸ã®ã‚¢ã‚¤ãƒ†ãƒ ã‚’åè»¢",
       SET_IN_FILE },
 /*JP
     { "menu_last_page", "jump to the last page in a menu", 4, SET_IN_FILE },
 */
-    { "menu_last_page", "ƒƒjƒ…[‚ÌÅŒã‚Ìƒy[ƒW‚Ö", 4, SET_IN_FILE },
+    { "menu_last_page", "ãƒ¡ãƒ‹ãƒ¥ãƒ¼ã®æœ€å¾Œã®ãƒšãƒ¼ã‚¸ã¸", 4, SET_IN_FILE },
 /*JP
     { "menu_next_page", "goto the next menu page", 4, SET_IN_FILE },
 */
-    { "menu_next_page", "Ÿ‚Ìƒƒjƒ…[‚Ìƒy[ƒW‚Ö", 4, SET_IN_FILE },
+    { "menu_next_page", "æ¬¡ã®ãƒ¡ãƒ‹ãƒ¥ãƒ¼ã®ãƒšãƒ¼ã‚¸ã¸", 4, SET_IN_FILE },
 /*JP
     { "menu_previous_page", "goto the previous menu page", 4, SET_IN_FILE },
 */
-    { "menu_previous_page", "‘O‚Ìƒƒjƒ…[‚Ìƒy[ƒW‚Ö", 4, SET_IN_FILE },
+    { "menu_previous_page", "å‰ã®ãƒ¡ãƒ‹ãƒ¥ãƒ¼ã®ãƒšãƒ¼ã‚¸ã¸", 4, SET_IN_FILE },
 /*JP
     { "menu_search", "search for a menu item", 4, SET_IN_FILE },
 */
-    { "menu_search", "ƒƒjƒ…[‚ÌŒŸõ", 4, SET_IN_FILE },
+    { "menu_search", "ãƒ¡ãƒ‹ãƒ¥ãƒ¼ã®æ¤œç´¢", 4, SET_IN_FILE },
 /*JP
     { "menu_select_all", "select all items in a menu", 4, SET_IN_FILE },
 */
-    { "menu_select_all", "‘S‚Ä‚ÌƒAƒCƒeƒ€‚ğ‘I‘ğ", 4, SET_IN_FILE },
+    { "menu_select_all", "å…¨ã¦ã®ã‚¢ã‚¤ãƒ†ãƒ ã‚’é¸æŠ", 4, SET_IN_FILE },
 /*JP
     { "menu_select_page", "select all items on this page of a menu", 4,
 */
-    { "menu_select_page", "Œ»İ•\¦‚³‚ê‚Ä‚¢‚é‘S‚Ä‚ÌƒAƒCƒeƒ€‚ğ‘I‘ğ", 4,
+    { "menu_select_page", "ç¾åœ¨è¡¨ç¤ºã•ã‚Œã¦ã„ã‚‹å…¨ã¦ã®ã‚¢ã‚¤ãƒ†ãƒ ã‚’é¸æŠ", 4,
       SET_IN_FILE },
 /*JP
     { "monsters", "the symbols to use for monsters", MAXMCLASSES,
 */
-    { "monsters", "ƒ‚ƒ“ƒXƒ^[‚Ég—p‚³‚ê‚éƒVƒ“ƒ{ƒ‹•¶š", MAXMCLASSES,
+    { "monsters", "ãƒ¢ãƒ³ã‚¹ã‚¿ãƒ¼ã«ä½¿ç”¨ã•ã‚Œã‚‹ã‚·ãƒ³ãƒœãƒ«æ–‡å­—", MAXMCLASSES,
       SET_IN_FILE },
 /*JP
     { "msghistory", "number of top line messages to save", 5, DISP_IN_GAME },
 */
-    { "msghistory", "æ“ªs‚É•\¦‚³‚ê‚½ƒƒbƒZ[ƒW—š—ğ‚Ì•Û‘¶”", 5, DISP_IN_GAME },
+    { "msghistory", "å…ˆé ­è¡Œã«è¡¨ç¤ºã•ã‚ŒãŸãƒ¡ãƒƒã‚»ãƒ¼ã‚¸å±¥æ­´ã®ä¿å­˜æ•°", 5, DISP_IN_GAME },
 #ifdef TTY_GRAPHICS
 /*JP
     { "msg_window", "the type of message window required", 1, SET_IN_GAME },
 */
-    {"msg_window", "ƒƒbƒZ[ƒWƒEƒBƒ“ƒhƒE‚Ìƒ^ƒCƒv‚ğİ’è",1, SET_IN_GAME },
+    {"msg_window", "ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã‚¦ã‚£ãƒ³ãƒ‰ã‚¦ã®ã‚¿ã‚¤ãƒ—ã‚’è¨­å®š",1, SET_IN_GAME },
 #else
 /*JP
     { "msg_window", "the type of message window required", 1, SET_IN_FILE },
 */
-    {"msg_window", "ƒƒbƒZ[ƒWƒEƒBƒ“ƒhƒE‚Ìƒ^ƒCƒv‚ğİ’è", 1, SET_IN_FILE },
+    {"msg_window", "ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã‚¦ã‚£ãƒ³ãƒ‰ã‚¦ã®ã‚¿ã‚¤ãƒ—ã‚’è¨­å®š", 1, SET_IN_FILE },
 #endif
 /*JP
     { "name", "your character's name (e.g., name:Merlin-W)", PL_NSIZ,
 */
-    { "name", "‚ ‚È‚½‚Ì–¼‘O (—á name:ƒ}[ƒŠƒ“-W)", PL_NSIZ,
+    { "name", "ã‚ãªãŸã®åå‰ (ä¾‹ name:ãƒãƒ¼ãƒªãƒ³-W)", PL_NSIZ,
       DISP_IN_GAME },
 /*JP
     { "number_pad", "use the number pad for movement", 1, SET_IN_GAME },
 */
-    { "number_pad", "ƒiƒ“ƒo[ƒpƒbƒh‚ğg—p‚·‚é", 1, SET_IN_GAME },
+    { "number_pad", "ãƒŠãƒ³ãƒãƒ¼ãƒ‘ãƒƒãƒ‰ã‚’ä½¿ç”¨ã™ã‚‹", 1, SET_IN_GAME },
 /*JP
     { "objects", "the symbols to use for objects", MAXOCLASSES, SET_IN_FILE },
 */
-    { "objects",  "ƒAƒCƒeƒ€‚Ég—p‚³‚ê‚éƒVƒ“ƒ{ƒ‹•¶š", MAXOCLASSES, SET_IN_FILE },
+    { "objects",  "ã‚¢ã‚¤ãƒ†ãƒ ã«ä½¿ç”¨ã•ã‚Œã‚‹ã‚·ãƒ³ãƒœãƒ«æ–‡å­—", MAXOCLASSES, SET_IN_FILE },
 /*JP
     { "packorder", "the inventory order of the items in your pack",
 */
-    { "packorder", "”w•‰‚¢‘Ü“à‚Ì•¨‚Ì‡”Ô",
+    { "packorder", "èƒŒè² ã„è¢‹å†…ã®ç‰©ã®é †ç•ª",
       MAXOCLASSES, SET_IN_GAME },
 #ifdef CHANGE_COLOR
     { "palette",
@@ -467,108 +467,108 @@ static struct Comp_Opt {
 /*JP
       "palette (00c/880/-fff is blue/yellow/reverse white)", 15,
 */
-      "ƒpƒŒƒbƒg (00c/880/-fff‚Í‚»‚ê‚¼‚êÂ/‰©/”½“]”’‚ğ¦‚·)", 15,
+      "ãƒ‘ãƒ¬ãƒƒãƒˆ (00c/880/-fffã¯ãã‚Œãã‚Œé’/é»„/åè»¢ç™½ã‚’ç¤ºã™)", 15,
       SET_IN_GAME },
 #else
 /*JP
       "palette (adjust an RGB color in palette (color-R-G-B)", 15,
 */
-      "ƒpƒŒƒbƒg (ƒpƒŒƒbƒg‚ÌRGBF‚ğ’²®‚·‚é (F-R-G-B)", 15,
+      "ãƒ‘ãƒ¬ãƒƒãƒˆ (ãƒ‘ãƒ¬ãƒƒãƒˆã®RGBè‰²ã‚’èª¿æ•´ã™ã‚‹ (è‰²-R-G-B)", 15,
       SET_IN_FILE },
 #endif
 #if defined(MAC)
 /*JP
     { "hicolor", "same as palette, only order is reversed", 15, SET_IN_FILE },
 */
-    { "hicolor",  "ƒpƒŒƒbƒg‚ª“¯‚¶‚Æ‚«Aw¦‚µ‚½‚à‚Ì‚¾‚¯”½“]‚³‚¹‚é", 15, SET_IN_FILE },
+    { "hicolor",  "ãƒ‘ãƒ¬ãƒƒãƒˆãŒåŒã˜ã¨ãã€æŒ‡ç¤ºã—ãŸã‚‚ã®ã ã‘åè»¢ã•ã›ã‚‹", 15, SET_IN_FILE },
 #endif
 #endif
 #if 0 /*JP*/
     { "paranoid_confirmation", "extra prompting in certain situations", 28,
       SET_IN_GAME },
 #else
-    { "paranoid_confirmation", "ˆê•”‚Ìó‹µ‚Å’Ç‰Á‚ÌŠm”F‚ğ‚·‚é", 28,
+    { "paranoid_confirmation", "ä¸€éƒ¨ã®çŠ¶æ³ã§è¿½åŠ ã®ç¢ºèªã‚’ã™ã‚‹", 28,
       SET_IN_GAME },
 #endif
 /*JP
     { "pettype", "your preferred initial pet type", 4, DISP_IN_GAME },
 */
-    { "pettype",  "‚ ‚È‚½‚Ì‘I‘ğ‚µ‚½‰Šúƒyƒbƒg‚Ìí—Ş", 4, DISP_IN_GAME },
+    { "pettype",  "ã‚ãªãŸã®é¸æŠã—ãŸåˆæœŸãƒšãƒƒãƒˆã®ç¨®é¡", 4, DISP_IN_GAME },
 /*JP
     { "pickup_burden", "maximum burden picked up before prompt", 20,
 */
-    { "pickup_burden",  "E‚¤‚Æ‚«‚ÉÅ‘å‰×d‚É‚È‚éè‘O‚ÅŠm”F‚·‚é", 20,
+    { "pickup_burden",  "æ‹¾ã†ã¨ãã«æœ€å¤§è·é‡ã«ãªã‚‹æ‰‹å‰ã§ç¢ºèªã™ã‚‹", 20,
       SET_IN_GAME },
 /*JP
     { "pickup_types", "types of objects to pick up automatically",
 */
-    { "pickup_types", "©“®‚ÅE‚¢‚ ‚°‚é•¨‚ÌƒVƒ“ƒ{ƒ‹",
+    { "pickup_types", "è‡ªå‹•ã§æ‹¾ã„ã‚ã’ã‚‹ç‰©ã®ã‚·ãƒ³ãƒœãƒ«",
       MAXOCLASSES, SET_IN_GAME },
 #if 0 /*JP*/
     { "pile_limit", "threshold for \"there are many objects here\"", 24,
       SET_IN_GAME },
 #else
-    { "pile_limit", "u‚±‚±‚É‚Í‚½‚­‚³‚ñ‚Ì‚à‚Ì‚ª‚ ‚év‚Ì‚µ‚«‚¢’l", 24,
+    { "pile_limit", "ã€Œã“ã“ã«ã¯ãŸãã•ã‚“ã®ã‚‚ã®ãŒã‚ã‚‹ã€ã®ã—ãã„å€¤", 24,
       SET_IN_GAME },
 #endif
 #if 0 /*JP*/
     { "playmode", "normal play, non-scoring explore mode, or debug mode", 8,
       DISP_IN_GAME },
 #else
-    { "playmode", "’Êíƒ‚[ƒhC’TŒŸƒ‚[ƒhCƒfƒoƒbƒOƒ‚[ƒh‚Ì‚¢‚¸‚ê‚©", 8,
+    { "playmode", "é€šå¸¸ãƒ¢ãƒ¼ãƒ‰ï¼Œæ¢æ¤œãƒ¢ãƒ¼ãƒ‰ï¼Œãƒ‡ãƒãƒƒã‚°ãƒ¢ãƒ¼ãƒ‰ã®ã„ãšã‚Œã‹", 8,
       DISP_IN_GAME },
 #endif
 /*JP
     { "player_selection", "choose character via dialog or prompts", 12,
 */
-    { "player_selection", "ƒLƒƒƒ‰ƒNƒ^[‘I‘ğ‚Éƒ_ƒCƒAƒƒO‚âŠm”F‰æ–Ê‚ğg‚¤", 12,
+    { "player_selection", "ã‚­ãƒ£ãƒ©ã‚¯ã‚¿ãƒ¼é¸æŠã«ãƒ€ã‚¤ã‚¢ãƒ­ã‚°ã‚„ç¢ºèªç”»é¢ã‚’ä½¿ã†", 12,
       DISP_IN_GAME },
 /*JP
     { "race", "your starting race (e.g., Human, Elf)", PL_CSIZ,
 */
-    { "race",     "ƒQ[ƒ€ŠJn‚Ìí‘° (—á Human, Elf)", PL_CSIZ,
+    { "race",     "ã‚²ãƒ¼ãƒ é–‹å§‹æ™‚ã®ç¨®æ— (ä¾‹ Human, Elf)", PL_CSIZ,
       DISP_IN_GAME },
 /*JP
     { "role", "your starting role (e.g., Barbarian, Valkyrie)", PL_CSIZ,
 */
-    { "role",     "ƒQ[ƒ€ŠJn‚ÌE‹Æ (—á Barbarian, Valkyrie)", PL_CSIZ,
+    { "role",     "ã‚²ãƒ¼ãƒ é–‹å§‹æ™‚ã®è·æ¥­ (ä¾‹ Barbarian, Valkyrie)", PL_CSIZ,
       DISP_IN_GAME },
 /*JP
     { "runmode", "display frequency when `running' or `travelling'",
 */
-    { "runmode", "ƒgƒ‰ƒxƒ‹ƒRƒ}ƒ“ƒh“™‚Å‚Ì˜A‘±ˆÚ“®‚Ì•`‰æ•p“x",
+    { "runmode", "ãƒˆãƒ©ãƒ™ãƒ«ã‚³ãƒãƒ³ãƒ‰ç­‰ã§ã®é€£ç¶šç§»å‹•æ™‚ã®æç”»é »åº¦",
       sizeof "teleport", SET_IN_GAME },
 /*JP
     { "scores", "the parts of the score list you wish to see", 32,
 */
-    { "scores",   "ƒQ[ƒ€I—¹‚ÉŒ©‚éƒXƒRƒA‚Ìí—Ş", 32,
+    { "scores",   "ã‚²ãƒ¼ãƒ çµ‚äº†æ™‚ã«è¦‹ã‚‹ã‚¹ã‚³ã‚¢ã®ç¨®é¡", 32,
       SET_IN_GAME },
 /*JP
     { "scroll_amount", "amount to scroll map when scroll_margin is reached",
 */
-    { "scroll_amount", "scroll_margin‚É“Í‚¢‚½‚Æ‚«‚Ìƒ}ƒbƒvƒXƒNƒ[ƒ‹—Ê",
+    { "scroll_amount", "scroll_marginã«å±Šã„ãŸã¨ãã®ãƒãƒƒãƒ—ã‚¹ã‚¯ãƒ­ãƒ¼ãƒ«é‡",
       20, DISP_IN_GAME }, /*WC*/
 /*JP
     { "scroll_margin", "scroll map when this far from the edge", 20,
 */
-    { "scroll_margin", "ƒ}ƒbƒv’[‚©‚ç‚Ìƒ}ƒbƒvƒXƒNƒ[ƒ‹ŠJn‹——£", 20,
+    { "scroll_margin", "ãƒãƒƒãƒ—ç«¯ã‹ã‚‰ã®ãƒãƒƒãƒ—ã‚¹ã‚¯ãƒ­ãƒ¼ãƒ«é–‹å§‹è·é›¢", 20,
       DISP_IN_GAME }, /*WC*/
 /*JP
     { "sortloot", "sort object selection lists by description", 4,
 */
-    { "sortloot", "•¨‘Ì‘I‘ğƒŠƒXƒg‚ğà–¾‚Åƒ\[ƒg‚·‚é", 4,
+    { "sortloot", "ç‰©ä½“é¸æŠãƒªã‚¹ãƒˆã‚’èª¬æ˜ã§ã‚½ãƒ¼ãƒˆã™ã‚‹", 4,
       SET_IN_GAME },
 #ifdef MSDOS
 /*JP
     { "soundcard", "type of sound card to use", 20, SET_IN_FILE },
 */
-    { "soundcard", "g—p‚µ‚Ä‚¢‚éƒTƒEƒ“ƒhƒJ[ƒh‚Ìí—Ş", 20, SET_IN_FILE },
+    { "soundcard", "ä½¿ç”¨ã—ã¦ã„ã‚‹ã‚µã‚¦ãƒ³ãƒ‰ã‚«ãƒ¼ãƒ‰ã®ç¨®é¡", 20, SET_IN_FILE },
 #endif
 #if 0 /*JP*/
     { "symset", "load a set of display symbols from the symbols file", 70,
       SET_IN_GAME },
 #else
-    { "symset", "symbolsƒtƒ@ƒCƒ‹‚©‚ç•\¦ƒVƒ“ƒ{ƒ‹‚Ìİ’è‚ğ“Ç‚İ‚Ş", 70,
+    { "symset", "symbolsãƒ•ã‚¡ã‚¤ãƒ«ã‹ã‚‰è¡¨ç¤ºã‚·ãƒ³ãƒœãƒ«ã®è¨­å®šã‚’èª­ã¿è¾¼ã‚€", 70,
       SET_IN_GAME },
 #endif
 #if 0 /*JP*/
@@ -577,97 +577,97 @@ static struct Comp_Opt {
       SET_IN_GAME },
 #else
     { "roguesymset",
-      "symbolsƒtƒ@ƒCƒ‹‚©‚çƒ[ƒOƒŒƒxƒ‹‚Ì•\¦ƒVƒ“ƒ{ƒ‹‚Ìİ’è‚ğ“Ç‚İ‚Ş", 70,
+      "symbolsãƒ•ã‚¡ã‚¤ãƒ«ã‹ã‚‰ãƒ­ãƒ¼ã‚°ãƒ¬ãƒ™ãƒ«ã®è¡¨ç¤ºã‚·ãƒ³ãƒœãƒ«ã®è¨­å®šã‚’èª­ã¿è¾¼ã‚€", 70,
       SET_IN_GAME },
 #endif
 /*JP
     { "suppress_alert", "suppress alerts about version-specific features", 8,
 */
-    { "suppress_alert", "ƒo[ƒWƒ‡ƒ“ŠÔ‚Ìˆá‚¢‚ÉŠÖ‚·‚éŒxƒƒbƒZ[ƒW‚Ì–³Œø‰»", 8,
+    { "suppress_alert", "ãƒãƒ¼ã‚¸ãƒ§ãƒ³é–“ã®é•ã„ã«é–¢ã™ã‚‹è­¦å‘Šãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã®ç„¡åŠ¹åŒ–", 8,
       SET_IN_GAME },
 #if 0 /*JP*/
     { "tile_width", "width of tiles", 20, DISP_IN_GAME },   /*WC*/
 #else
-    { "tile_width", "ƒ^ƒCƒ‹‚Ì•", 20, DISP_IN_GAME }, /*WC*/
+    { "tile_width", "ã‚¿ã‚¤ãƒ«ã®å¹…", 20, DISP_IN_GAME }, /*WC*/
 #endif
 #if 0 /*JP*/
     { "tile_height", "height of tiles", 20, DISP_IN_GAME }, /*WC*/
 #else
-    { "tile_height", "ƒ^ƒCƒ‹‚Ì‚‚³", 20, DISP_IN_GAME }, /*WC*/
+    { "tile_height", "ã‚¿ã‚¤ãƒ«ã®é«˜ã•", 20, DISP_IN_GAME }, /*WC*/
 #endif
 #if 0 /*JP*/
     { "tile_file", "name of tile file", 70, DISP_IN_GAME }, /*WC*/
 #else
-    { "tile_file", "ƒ^ƒCƒ‹ƒtƒ@ƒCƒ‹‚Ì–¼‘O", 70, DISP_IN_GAME }, /*WC*/
+    { "tile_file", "ã‚¿ã‚¤ãƒ«ãƒ•ã‚¡ã‚¤ãƒ«ã®åå‰", 70, DISP_IN_GAME }, /*WC*/
 #endif
 /*JP
     { "traps", "the symbols to use in drawing traps", MAXTCHARS + 1,
 */
-    { "traps", "ã©‚ğ•`‰æ‚·‚éƒVƒ“ƒ{ƒ‹•¶š", MAXTCHARS + 1,
+    { "traps", "ç½ ã‚’æç”»ã™ã‚‹ã‚·ãƒ³ãƒœãƒ«æ–‡å­—", MAXTCHARS + 1,
       SET_IN_FILE },
 /*JP
     { "vary_msgcount", "show more old messages at a time", 20,
 */
-    { "vary_msgcount", "ˆê“x‚É•\¦‚·‚éƒƒbƒZ[ƒW‚Ì”", 20,
+    { "vary_msgcount", "ä¸€åº¦ã«è¡¨ç¤ºã™ã‚‹ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã®æ•°", 20,
       DISP_IN_GAME }, /*WC*/
 #ifdef MSDOS
 /*JP
     { "video", "method of video updating", 20, SET_IN_FILE },
 */
-    { "video", "g—p‚·‚éƒrƒfƒIƒ‚[ƒh‚ğİ’è‚·‚é", 20, SET_IN_FILE },
+    { "video", "ä½¿ç”¨ã™ã‚‹ãƒ“ãƒ‡ã‚ªãƒ¢ãƒ¼ãƒ‰ã‚’è¨­å®šã™ã‚‹", 20, SET_IN_FILE },
 #endif
 #ifdef VIDEOSHADES
 /*JP
     { "videocolors", "color mappings for internal screen routines", 40,
 */
-    { "videocolors", "“à‘ ƒXƒNƒŠ[ƒ“ƒ‹[ƒ`ƒ“—p‚ÌƒJƒ‰[ƒ}ƒbƒv‚ğ—p‚¢‚é", 40,
+    { "videocolors", "å†…è”µã‚¹ã‚¯ãƒªãƒ¼ãƒ³ãƒ«ãƒ¼ãƒãƒ³ç”¨ã®ã‚«ãƒ©ãƒ¼ãƒãƒƒãƒ—ã‚’ç”¨ã„ã‚‹", 40,
       DISP_IN_GAME },
 /*JP
     { "videoshades", "gray shades to map to black/gray/white", 32,
 */
-    { "videoshades", "•\¦‚ÉƒOƒŒƒCƒXƒP[ƒ‹‚ğ—p‚¢‚é", 32,
+    { "videoshades", "è¡¨ç¤ºã«ã‚°ãƒ¬ã‚¤ã‚¹ã‚±ãƒ¼ãƒ«ã‚’ç”¨ã„ã‚‹", 32,
       DISP_IN_GAME },
 #endif
 #ifdef WIN32
 /*JP
     { "subkeyvalue", "override keystroke value", 7, SET_IN_FILE },
 */
-    {"subkeyvalue", "ƒL[ƒ}ƒbƒsƒ“ƒO‚ğ•ÏX‚·‚é", 7, SET_IN_FILE },
+    {"subkeyvalue", "ã‚­ãƒ¼ãƒãƒƒãƒ”ãƒ³ã‚°ã‚’å¤‰æ›´ã™ã‚‹", 7, SET_IN_FILE },
 #endif
 #if 0 /*JP*/
     { "windowcolors", "the foreground/background colors of windows", /*WC*/
 #else
-    { "windowcolors",  "ƒEƒBƒ“ƒhƒE‚ğw’è‚µ‚½‘OŒiF/”wŒiF‚Å•\¦‚·‚é", /*WC*/
+    { "windowcolors",  "ã‚¦ã‚£ãƒ³ãƒ‰ã‚¦ã‚’æŒ‡å®šã—ãŸå‰æ™¯è‰²/èƒŒæ™¯è‰²ã§è¡¨ç¤ºã™ã‚‹", /*WC*/
 #endif
       80, DISP_IN_GAME },
 /*JP
     { "windowtype", "windowing system to use", WINTYPELEN, DISP_IN_GAME },
 */
-    { "windowtype", "g—p‚·‚éƒEƒCƒ“ƒhƒEƒVƒXƒeƒ€", WINTYPELEN, DISP_IN_GAME },
+    { "windowtype", "ä½¿ç”¨ã™ã‚‹ã‚¦ã‚¤ãƒ³ãƒ‰ã‚¦ã‚·ã‚¹ãƒ†ãƒ ", WINTYPELEN, DISP_IN_GAME },
 #ifdef WINCHAIN
 /*JP
     { "windowchain", "window processor to use", WINTYPELEN, SET_IN_SYS },
 */
-    { "windowchain", "g—p‚·‚éƒEƒBƒ“ƒhƒEƒvƒƒZƒbƒT", WINTYPELEN, SET_IN_SYS },
+    { "windowchain", "ä½¿ç”¨ã™ã‚‹ã‚¦ã‚£ãƒ³ãƒ‰ã‚¦ãƒ—ãƒ­ã‚»ãƒƒã‚µ", WINTYPELEN, SET_IN_SYS },
 #endif
 #ifdef BACKWARD_COMPAT
 /*JP
     { "DECgraphics", "load DECGraphics display symbols", 70, SET_IN_FILE },
 */
-    { "DECgraphics", "DECGraphics•\¦ƒVƒ“ƒ{ƒ‹‚ğ“Ç‚İ‚Ş", 70, SET_IN_FILE },
+    { "DECgraphics", "DECGraphicsè¡¨ç¤ºã‚·ãƒ³ãƒœãƒ«ã‚’èª­ã¿è¾¼ã‚€", 70, SET_IN_FILE },
 /*JP
     { "IBMgraphics", "load IBMGraphics display symbols", 70, SET_IN_FILE },
 */
-    { "IBMgraphics", "IBMGraphics•\¦ƒVƒ“ƒ{ƒ‹‚ğ“Ç‚İ‚Ş", 70, SET_IN_FILE },
+    { "IBMgraphics", "IBMGraphicsè¡¨ç¤ºã‚·ãƒ³ãƒœãƒ«ã‚’èª­ã¿è¾¼ã‚€", 70, SET_IN_FILE },
 #ifdef MAC_GRAPHICS_ENV
 /*JP
     { "Macgraphics", "load MACGraphics display symbols", 70, SET_IN_FILE },
 */
-    { "Macgraphics", "MACGraphics•\¦ƒVƒ“ƒ{ƒ‹‚ğ“Ç‚İ‚Ş", 70, SET_IN_FILE },
+    { "Macgraphics", "MACGraphicsè¡¨ç¤ºã‚·ãƒ³ãƒœãƒ«ã‚’èª­ã¿è¾¼ã‚€", 70, SET_IN_FILE },
 #endif
 #endif
 #if 1 /*JP*/
-    { "kcode", "’[––‚ÌŠ¿šƒR[ƒh,", 4, SET_IN_FILE },
+    { "kcode", "ç«¯æœ«ã®æ¼¢å­—ã‚³ãƒ¼ãƒ‰,", 4, SET_IN_FILE },
 #endif
     { (char *) 0, (char *) 0, 0, 0 }
 };
@@ -2161,7 +2161,7 @@ boolean tinitial, tfrom_file;
 #if 0 /*JP*/
                     pline("Unrecognized pet type '%s'.", op);
 #else
-                    pline("'%s'‚Íƒyƒbƒg‚Ìí—Ş‚Æ‚µ‚Äó‚¯•t‚¯‚ç‚ê‚Ü‚¹‚ñD", op);
+                    pline("'%s'ã¯ãƒšãƒƒãƒˆã®ç¨®é¡ã¨ã—ã¦å—ã‘ä»˜ã‘ã‚‰ã‚Œã¾ã›ã‚“ï¼", op);
 #endif
                     break;
                 }
@@ -2568,7 +2568,7 @@ boolean tinitial, tfrom_file;
 /*JP
                 pline("Doing that so many times isn't very fruitful.");
 */
-                pline("‚»‚ñ‚È‚É‰½‰ñ‚à‚â‚Á‚Ä‚à‚Ù‚Æ‚ñ‚ÇˆÓ–¡‚Í‚È‚¢D");
+                pline("ãã‚“ãªã«ä½•å›ã‚‚ã‚„ã£ã¦ã‚‚ã»ã¨ã‚“ã©æ„å‘³ã¯ãªã„ï¼");
                 return;
             }
         }
@@ -2861,7 +2861,7 @@ boolean tinitial, tfrom_file;
                 Sprintf(qbuf, "New pickup_types: [%s am] (%s)", ocl,
                         *tbuf ? tbuf : "all");
 #else
-                Sprintf(qbuf, "V‚µ‚¢pickup_type‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢F[%s am] (%s)", ocl,
+                Sprintf(qbuf, "æ–°ã—ã„pickup_typeã‚’å…¥åŠ›ã—ã¦ãã ã•ã„ï¼š[%s am] (%s)", ocl,
                         *tbuf ? tbuf : "all");
 #endif
                 getlin(qbuf, abuf);
@@ -2876,7 +2876,7 @@ boolean tinitial, tfrom_file;
                 (void) choose_classes_menu("Auto-Pickup what?", 1, TRUE, ocl,
                                            tbuf);
 #else
-                (void) choose_classes_menu("‚Ç‚ê‚ğ©“®E‚¢‚Éİ’è‚·‚éH", 1, TRUE, ocl,
+                (void) choose_classes_menu("ã©ã‚Œã‚’è‡ªå‹•æ‹¾ã„ã«è¨­å®šã™ã‚‹ï¼Ÿ", 1, TRUE, ocl,
                                            tbuf);
 #endif
                 op = tbuf;
@@ -3815,7 +3815,7 @@ doset()
 /*JP
              "Booleans (selecting will toggle value):", MENU_UNSELECTED);
 */
-             "^‹UƒIƒvƒVƒ‡ƒ“ (‘I‘ğ‚·‚é‚Æ’l‚ªØ‚è‘Ö‚í‚è‚Ü‚·)F", MENU_UNSELECTED);
+             "çœŸå½ã‚ªãƒ—ã‚·ãƒ§ãƒ³ (é¸æŠã™ã‚‹ã¨å€¤ãŒåˆ‡ã‚Šæ›¿ã‚ã‚Šã¾ã™)ï¼š", MENU_UNSELECTED);
     any.a_int = 0;
     /* first list any other non-modifiable booleans, then modifiable ones */
     for (pass = 0; pass <= 1; pass++)
@@ -3856,7 +3856,7 @@ doset()
              MENU_UNSELECTED);
 #else
     add_menu(tmpwin, NO_GLYPH, &any, 0, 0, iflags.menu_headings,
-             "•¶š—ñƒIƒvƒVƒ‡ƒ“ (‘I‘ğ‚·‚é‚ÆV‚µ‚¢’l‚Ì“ü—Í‚ğ‹‚ß‚Ü‚·)F",
+             "æ–‡å­—åˆ—ã‚ªãƒ—ã‚·ãƒ§ãƒ³ (é¸æŠã™ã‚‹ã¨æ–°ã—ã„å€¤ã®å…¥åŠ›ã‚’æ±‚ã‚ã¾ã™)ï¼š",
              MENU_UNSELECTED);
 #endif
 
@@ -3950,7 +3950,7 @@ doset()
 /*JP
     end_menu(tmpwin, "Set what options?");
 */
-    end_menu(tmpwin, "‚Ç‚ÌƒIƒvƒVƒ‡ƒ“‚ğİ’è‚µ‚Ü‚·‚©H");
+    end_menu(tmpwin, "ã©ã®ã‚ªãƒ—ã‚·ãƒ§ãƒ³ã‚’è¨­å®šã—ã¾ã™ã‹ï¼Ÿ");
     need_redraw = FALSE;
     if ((pick_cnt = select_menu(tmpwin, PICK_ANY, &pick_list)) > 0) {
         /*
@@ -3999,7 +3999,7 @@ doset()
 /*JP
                     Sprintf(buf, "Set %s to what?", compopt[opt_indx].name);
 */
-                    Sprintf(buf, "%s‚É‰½‚ğİ’è‚·‚éH", compopt[opt_indx].name);
+                    Sprintf(buf, "%sã«ä½•ã‚’è¨­å®šã™ã‚‹ï¼Ÿ", compopt[opt_indx].name);
                     getlin(buf, buf2);
                     if (buf2[0] == '\033')
                         continue;
@@ -4040,22 +4040,22 @@ int numtotal;
 #if 0 /*JP*/
         { 'a', "add new %s" },         /* [0] */
 #else
-        { 'a', "V‚µ‚¢%s‚ğ’Ç‰Á" },     /* [0] */
+        { 'a', "æ–°ã—ã„%sã‚’è¿½åŠ " },     /* [0] */
 #endif
 #if 0 /*JP*/
         { 'l', "list %s" },            /* [1] */
 #else
-        { 'l', "%s‚ğˆê——•\¦" },       /* [1] */
+        { 'l', "%sã‚’ä¸€è¦§è¡¨ç¤º" },       /* [1] */
 #endif
 #if 0 /*JP*/
         { 'r', "remove existing %s" }, /* [2] */
 #else
-        { 'r', "Šù‚É‚ ‚é%s‚ğíœ" },   /* [2] */
+        { 'r', "æ—¢ã«ã‚ã‚‹%sã‚’å‰Šé™¤" },   /* [2] */
 #endif
 #if 0 /*JP*/
         { 'x', "exit this menu" },     /* [3] */
 #else
-        { 'x', "‚±‚Ìƒƒjƒ…[‚ğ•Â‚¶‚é" }, /* [3] */
+        { 'x', "ã“ã®ãƒ¡ãƒ‹ãƒ¥ãƒ¼ã‚’é–‰ã˜ã‚‹" }, /* [3] */
 #endif
     };
 
@@ -4081,7 +4081,7 @@ int numtotal;
 /*JP
     end_menu(tmpwin, "Do what?");
 */
-    end_menu(tmpwin, "‚Ç‚¤‚·‚éH");
+    end_menu(tmpwin, "ã©ã†ã™ã‚‹ï¼Ÿ");
     if ((pick_cnt = select_menu(tmpwin, PICK_ONE, &pick_list)) > 0) {
         for (pick_idx = 0; pick_idx < pick_cnt; ++pick_idx) {
             opt_idx = pick_list[pick_idx].item.a_int - 1;
@@ -4131,7 +4131,7 @@ boolean setinitial, setfromfile;
 /*JP
         end_menu(tmpwin, "Select menustyle:");
 */
-        end_menu(tmpwin, "ƒƒjƒ…[ƒXƒ^ƒCƒ‹‚ğ‘I‘ğ‚µ‚Ä‚­‚¾‚³‚¢F");
+        end_menu(tmpwin, "ãƒ¡ãƒ‹ãƒ¥ãƒ¼ã‚¹ã‚¿ã‚¤ãƒ«ã‚’é¸æŠã—ã¦ãã ã•ã„ï¼š");
         if (select_menu(tmpwin, PICK_ONE, &style_pick) > 0) {
             flags.menu_style = style_pick->item.a_int - 1;
             free((genericptr_t) style_pick);
@@ -4184,7 +4184,7 @@ boolean setinitial, setfromfile;
 /*JP
         end_menu(tmpwin, "Select encumbrance level:");
 */
-        end_menu(tmpwin, "Œx‚ğo‚·‰×dƒŒƒxƒ‹‚ğ‘I‘ğ‚µ‚Ä‚­‚¾‚³‚¢F");
+        end_menu(tmpwin, "è­¦å‘Šã‚’å‡ºã™è·é‡ãƒ¬ãƒ™ãƒ«ã‚’é¸æŠã—ã¦ãã ã•ã„ï¼š");
         if (select_menu(tmpwin, PICK_ONE, &burden_pick) > 0) {
             flags.pickup_burden = burden_pick->item.a_int - 1;
             free((genericptr_t) burden_pick);
@@ -4218,7 +4218,7 @@ boolean setinitial, setfromfile;
 /*JP
         end_menu(tmpwin, "Change which disclosure options categories:");
 */
-        end_menu(tmpwin, "‚Ç‚ÌƒJƒeƒSƒŠ‚Ì•\¦î•ñƒIƒvƒVƒ‡ƒ“‚ğ•ÏX‚µ‚Ü‚·‚©F");
+        end_menu(tmpwin, "ã©ã®ã‚«ãƒ†ã‚´ãƒªã®è¡¨ç¤ºæƒ…å ±ã‚ªãƒ—ã‚·ãƒ§ãƒ³ã‚’å¤‰æ›´ã—ã¾ã™ã‹ï¼š");
         pick_cnt = select_menu(tmpwin, PICK_ANY, &disclosure_pick);
         if (pick_cnt > 0) {
             for (pick_idx = 0; pick_idx < pick_cnt; ++pick_idx) {
@@ -4235,7 +4235,7 @@ boolean setinitial, setfromfile;
 /*JP
                 Sprintf(buf, "Disclosure options for %s:",
 */
-                Sprintf(buf, "%s‚Ìo—ÍŒ`®F",
+                Sprintf(buf, "%sã®å‡ºåŠ›å½¢å¼ï¼š",
                         disclosure_names[i]);
                 tmpwin = create_nhwindow(NHW_MENU);
                 start_menu(tmpwin);
@@ -4246,28 +4246,28 @@ boolean setinitial, setfromfile;
 /*JP
                          "Never disclose, without prompting",
 */
-                         "Šm”F‚¹‚¸‚Éo—Í‚à‚µ‚È‚¢",
+                         "ç¢ºèªã›ãšã«å‡ºåŠ›ã‚‚ã—ãªã„",
                          MENU_UNSELECTED);
                 any.a_char = DISCLOSE_YES_WITHOUT_PROMPT;
                 add_menu(tmpwin, NO_GLYPH, &any, 'b', any.a_char, ATR_NONE,
 /*JP
                          "Always disclose, without prompting",
 */
-                         "Šm”F‚¹‚¸‚Éo—Í‚·‚é",
+                         "ç¢ºèªã›ãšã«å‡ºåŠ›ã™ã‚‹",
                          MENU_UNSELECTED);
                 any.a_char = DISCLOSE_PROMPT_DEFAULT_NO;
                 add_menu(tmpwin, NO_GLYPH, &any, 'c', any.a_char, ATR_NONE,
 /*JP
                          "Prompt, with default answer of \"No\"",
 */
-                         "Šm”F‚·‚éCƒfƒtƒHƒ‹ƒg‚Íuo—Í‚µ‚È‚¢v",
+                         "ç¢ºèªã™ã‚‹ï¼Œãƒ‡ãƒ•ã‚©ãƒ«ãƒˆã¯ã€Œå‡ºåŠ›ã—ãªã„ã€",
                          MENU_UNSELECTED);
                 any.a_char = DISCLOSE_PROMPT_DEFAULT_YES;
                 add_menu(tmpwin, NO_GLYPH, &any, 'd', any.a_char, ATR_NONE,
 /*JP
                          "Prompt, with default answer of \"Yes\"",
 */
-                         "Šm”F‚·‚éCƒfƒtƒHƒ‹ƒg‚Íuo—Í‚·‚év",
+                         "ç¢ºèªã™ã‚‹ï¼Œãƒ‡ãƒ•ã‚©ãƒ«ãƒˆã¯ã€Œå‡ºåŠ›ã™ã‚‹ã€",
                          MENU_UNSELECTED);
                 end_menu(tmpwin, buf);
                 if (select_menu(tmpwin, PICK_ONE, &disclosure_pick) > 0) {
@@ -4293,7 +4293,7 @@ boolean setinitial, setfromfile;
 /*JP
         end_menu(tmpwin, "Select run/travel display mode:");
 */
-        end_menu(tmpwin, "‘–s/ƒgƒ‰ƒxƒ‹‚Ì•\¦ƒ‚[ƒh‚ğ‘I‘ğ‚µ‚Ä‚­‚¾‚³‚¢F");
+        end_menu(tmpwin, "èµ°è¡Œ/ãƒˆãƒ©ãƒ™ãƒ«ã®è¡¨ç¤ºãƒ¢ãƒ¼ãƒ‰ã‚’é¸æŠã—ã¦ãã ã•ã„ï¼š");
         if (select_menu(tmpwin, PICK_ONE, &mode_pick) > 0) {
             flags.runmode = mode_pick->item.a_int - 1;
             free((genericptr_t) mode_pick);
@@ -4322,7 +4322,7 @@ boolean setinitial, setfromfile;
 /*JP
         end_menu(tmpwin, "Select message history display type:");
 */
-        end_menu(tmpwin, "ƒƒbƒZ[ƒW—š—ğ‚Ì•\¦•û–@‚ğ‘I‘ğ‚µ‚Ä‚­‚¾‚³‚¢F");
+        end_menu(tmpwin, "ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸å±¥æ­´ã®è¡¨ç¤ºæ–¹æ³•ã‚’é¸æŠã—ã¦ãã ã•ã„ï¼š");
         if (select_menu(tmpwin, PICK_ONE, &window_pick) > 0) {
             iflags.prevmsg_window = window_pick->item.a_char;
             free((genericptr_t) window_pick);
@@ -4373,8 +4373,8 @@ boolean setinitial, setfromfile;
         Sprintf(abuf, "Select %s window placement relative to the map:",
                 msg ? "message" : "status");
 #else
-        Sprintf(abuf, "%sƒEƒBƒ“ƒhƒE‚Ìƒ}ƒbƒv‚É‘Î‚·‚é•\¦ˆÊ’u‚ğ‘I‘ğ‚µ‚Ä‚­‚¾‚³‚¢F",
-                msg ? "ƒƒbƒZ[ƒW" : "ó‘Ô");
+        Sprintf(abuf, "%sã‚¦ã‚£ãƒ³ãƒ‰ã‚¦ã®ãƒãƒƒãƒ—ã«å¯¾ã™ã‚‹è¡¨ç¤ºä½ç½®ã‚’é¸æŠã—ã¦ãã ã•ã„ï¼š",
+                msg ? "ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸" : "çŠ¶æ…‹");
 #endif
         end_menu(tmpwin, abuf);
         if (select_menu(tmpwin, PICK_ONE, &window_pick) > 0) {
@@ -4390,19 +4390,19 @@ boolean setinitial, setfromfile;
 /*JP
             " 0 (off)", " 1 (on)", " 2 (on, MSDOS compatible)",
 */
-            "0 (–³Œø)", "1 (—LŒø)", "2 (—LŒøCMSDOSŒİŠ·)",
+            "0 (ç„¡åŠ¹)", "1 (æœ‰åŠ¹)", "2 (æœ‰åŠ¹ï¼ŒMSDOSäº’æ›)",
 /*JP
             " 3 (on, phone-style digit layout)",
 */
-            " 3 (—LŒøC“d˜b®‚Ì”š”z’u)",
+            " 3 (æœ‰åŠ¹ï¼Œé›»è©±å¼ã®æ•°å­—é…ç½®)",
 /*JP
             " 4 (on, phone-style layout, MSDOS compatible)",
 */
-            " 4 (—LŒøC“d˜b®‚Ì”z’uCMSDOS ŒİŠ·)",
+            " 4 (æœ‰åŠ¹ï¼Œé›»è©±å¼ã®é…ç½®ï¼ŒMSDOS äº’æ›)",
 /*JP
             "-1 (off, 'z' to move upper-left, 'y' to zap wands)"
 */
-            "-1 (–³ŒøC'z' ‚Å¶ã‚ÉˆÚ“®C'y' ‚Åñ‚ğU‚é)"
+            "-1 (ç„¡åŠ¹ï¼Œ'z' ã§å·¦ä¸Šã«ç§»å‹•ï¼Œ'y' ã§æ–ã‚’æŒ¯ã‚‹)"
         };
         menu_item *mode_pick = (menu_item *) 0;
 
@@ -4417,7 +4417,7 @@ boolean setinitial, setfromfile;
 /*JP
         end_menu(tmpwin, "Select number_pad mode:");
 */
-        end_menu(tmpwin, "number_padƒ‚[ƒh‚ğ‘I‘ğ‚µ‚Ä‚­‚¾‚³‚¢F");
+        end_menu(tmpwin, "number_padãƒ¢ãƒ¼ãƒ‰ã‚’é¸æŠã—ã¦ãã ã•ã„ï¼š");
         if (select_menu(tmpwin, PICK_ONE, &mode_pick) > 0) {
             switch (mode_pick->item.a_int - 1) {
             case 0:
@@ -4455,7 +4455,7 @@ boolean setinitial, setfromfile;
 /*JP
         int mhattr = query_attr("How to highlight menu headings:");
 */
-        int mhattr = query_attr("ƒƒjƒ…[ƒwƒbƒ_‚Ì‹­’²•û–@‚ğ‘I‘ğ‚µ‚Ä‚­‚¾‚³‚¢F");
+        int mhattr = query_attr("ãƒ¡ãƒ‹ãƒ¥ãƒ¼ãƒ˜ãƒƒãƒ€ã®å¼·èª¿æ–¹æ³•ã‚’é¸æŠã—ã¦ãã ã•ã„ï¼š");
 
         if (mhattr != -1)
             iflags.menu_headings = mhattr;
@@ -4591,7 +4591,7 @@ boolean setinitial, setfromfile;
 /*JP
             getlin("What new autopickup exception pattern?", &apebuf[1]);
 */
-            getlin("V‚µ‚¢©“®E‚¢—áŠO‚Ìƒpƒ^[ƒ“‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢F", &apebuf[1]);
+            getlin("æ–°ã—ã„è‡ªå‹•æ‹¾ã„ä¾‹å¤–ã®ãƒ‘ã‚¿ãƒ¼ãƒ³ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„ï¼š", &apebuf[1]);
             mungspaces(&apebuf[1]); /* regularize whitespace */
             if (apebuf[1] == '\033') {
                 ; /* fall through to function exit */
@@ -4622,7 +4622,7 @@ boolean setinitial, setfromfile;
 /*JP
                          (pass == 0) ? "Never pickup" : "Always pickup",
 */
-                         (pass == 0) ? "í‚ÉE‚í‚È‚¢" : "í‚ÉE‚¤",
+                         (pass == 0) ? "å¸¸ã«æ‹¾ã‚ãªã„" : "å¸¸ã«æ‹¾ã†",
                          MENU_UNSELECTED);
                 for (i = 0; i < numapes[pass] && ape; i++) {
                     any.a_void = (opt_idx == 1) ? 0 : ape;
@@ -4636,9 +4636,9 @@ boolean setinitial, setfromfile;
             Sprintf(apebuf, "%s autopickup exceptions",
                     (opt_idx == 1) ? "List of" : "Remove which");
 #else
-            Sprintf(apebuf, "%s©“®E‚¢—áŠO%s",
-                    (opt_idx == 1) ? "" : "‚Ç‚Ì",
-                    (opt_idx == 1) ? "‚Ìˆê——" : "‚ğíœ‚µ‚Ü‚·‚©H");
+            Sprintf(apebuf, "%sè‡ªå‹•æ‹¾ã„ä¾‹å¤–%s",
+                    (opt_idx == 1) ? "" : "ã©ã®",
+                    (opt_idx == 1) ? "ã®ä¸€è¦§" : "ã‚’å‰Šé™¤ã—ã¾ã™ã‹ï¼Ÿ");
 #endif
             end_menu(tmpwin, apebuf);
             pick_cnt = select_menu(tmpwin,
@@ -4849,8 +4849,8 @@ char *buf;
                       to_be_done[] = "(to be done)", defopt[] = "default",
                       defbrief[] = "def";
 #else
-    static const char none[] = "(‚È‚µ)", randomrole[] = "ƒ‰ƒ“ƒ_ƒ€",
-                      to_be_done[] = "(–¢İ’è)", defopt[] = "ƒfƒtƒHƒ‹ƒg",
+    static const char none[] = "(ãªã—)", randomrole[] = "ãƒ©ãƒ³ãƒ€ãƒ ",
+                      to_be_done[] = "(æœªè¨­å®š)", defopt[] = "ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆ",
                       defbrief[] = "def";
 #endif
     int i;
@@ -4871,13 +4871,13 @@ char *buf;
 #else
         Sprintf(buf, "%s",
                 iflags.wc_align_message == ALIGN_TOP
-                    ? "ã‘¤"
+                    ? "ä¸Šå´"
                     : iflags.wc_align_message == ALIGN_LEFT
-                          ? "¶‘¤"
+                          ? "å·¦å´"
                           : iflags.wc_align_message == ALIGN_BOTTOM
-                                ? "‰º‘¤"
+                                ? "ä¸‹å´"
                                 : iflags.wc_align_message == ALIGN_RIGHT
-                                      ? "‰E‘¤" : defopt);
+                                      ? "å³å´" : defopt);
 #endif
     else if (!strcmp(optname, "align_status"))
 #if 0 /*JP*/
@@ -4894,13 +4894,13 @@ char *buf;
 #else
         Sprintf(buf, "%s",
                 iflags.wc_align_status == ALIGN_TOP
-                    ? "ã‘¤"
+                    ? "ä¸Šå´"
                     : iflags.wc_align_status == ALIGN_LEFT
-                          ? "¶‘¤"
+                          ? "å·¦å´"
                           : iflags.wc_align_status == ALIGN_BOTTOM
-                                ? "‰º‘¤"
+                                ? "ä¸‹å´"
                                 : iflags.wc_align_status == ALIGN_RIGHT
-                                      ? "‰E‘¤"
+                                      ? "å³å´"
                                       : defopt);
 #endif
     else if (!strcmp(optname, "align"))
@@ -5056,19 +5056,19 @@ char *buf;
 /*JP
             "0=off", "1=on", "2=on, MSDOS compatible",
 */
-            "0=–³Œø", "1=—LŒø", "2=—LŒøCDOSŒİŠ·",
+            "0=ç„¡åŠ¹", "1=æœ‰åŠ¹", "2=æœ‰åŠ¹ï¼ŒDOSäº’æ›",
 /*JP
             "3=on, phone-style layout",
 */
-            "3=—LŒøC“d˜b®‚Ì”š”z’u",
+            "3=æœ‰åŠ¹ï¼Œé›»è©±å¼ã®æ•°å­—é…ç½®",
 /*JP
             "4=on, phone layout, MSDOS compatible",
 */
-            "4=—LŒøC“d˜b®‚Ì”z’uCMSDOS ŒİŠ·",
+            "4=æœ‰åŠ¹ï¼Œé›»è©±å¼ã®é…ç½®ï¼ŒMSDOS äº’æ›",
 #if 0 /*JP*/
             "-1=off, y & z swapped", /*[5]*/
 #else
-            "-1=–³ŒøCy‚Æz‚ğ“ü‚ê‘Ö‚¦", /*[5]*/
+            "-1=ç„¡åŠ¹ï¼Œyã¨zã‚’å…¥ã‚Œæ›¿ãˆ", /*[5]*/
 #endif
         };
         int indx = Cmd.num_pad
@@ -5113,11 +5113,11 @@ char *buf;
                                : (preferred_pet == 'n') ? "none"
                                  : "random");
 #else
-        Sprintf(buf, "%s", (preferred_pet == 'c') ? "”L"
-                           : (preferred_pet == 'd') ? "Œ¢"
-                             : (preferred_pet == 'h') ? "”n"
-                               : (preferred_pet == 'n') ? "‚È‚µ"
-                                 : "ƒ‰ƒ“ƒ_ƒ€");
+        Sprintf(buf, "%s", (preferred_pet == 'c') ? "çŒ«"
+                           : (preferred_pet == 'd') ? "çŠ¬"
+                             : (preferred_pet == 'h') ? "é¦¬"
+                               : (preferred_pet == 'n') ? "ãªã—"
+                                 : "ãƒ©ãƒ³ãƒ€ãƒ ");
 #endif
     } else if (!strcmp(optname, "pickup_burden")) {
         Sprintf(buf, "%s", burdentype[flags.pickup_burden]);
@@ -5162,7 +5162,7 @@ char *buf;
 #if 0 /*JP*/
         Sprintf(buf, "%s", iflags.wc_player_selection ? "prompts" : "dialog");
 #else
-        Sprintf(buf, "%s“ü—Í", iflags.wc_player_selection ? "ƒvƒƒ“ƒvƒg" : "ƒ_ƒCƒAƒƒO");
+        Sprintf(buf, "%så…¥åŠ›", iflags.wc_player_selection ? "ãƒ—ãƒ­ãƒ³ãƒ—ãƒˆ" : "ãƒ€ã‚¤ã‚¢ãƒ­ã‚°");
 #endif
 #ifdef MSDOS
     } else if (!strcmp(optname, "soundcard")) {
@@ -5244,7 +5244,7 @@ char *buf;
 /*JP
         return "unknown";
 */
-        return "•s–¾";
+        return "ä¸æ˜";
 }
 
 int
@@ -5264,22 +5264,22 @@ dotogglepickup()
                            : ", with some exceptions")
                     : "");
 #else
-        Sprintf(buf, "%sƒAƒCƒeƒ€‚É‚Â‚¢‚ÄƒIƒ“%s", ocl[0] ? ocl : "‘S‚Ä‚Ì",
+        Sprintf(buf, "%sã‚¢ã‚¤ãƒ†ãƒ ã«ã¤ã„ã¦ã‚ªãƒ³%s", ocl[0] ? ocl : "å…¨ã¦ã®",
                 (iflags.autopickup_exceptions[AP_LEAVE]
                  || iflags.autopickup_exceptions[AP_GRAB])
-                    ? "C—áŠO‚ ‚è"
+                    ? "ï¼Œä¾‹å¤–ã‚ã‚Š"
                     : "");
 #endif
     } else {
 /*JP
         Strcpy(buf, "OFF");
 */
-        Strcpy(buf, "ƒIƒt");
+        Strcpy(buf, "ã‚ªãƒ•");
     }
 /*JP
     pline("Autopickup: %s.", buf);
 */
-    pline("©“®E‚¢F%sD", buf);
+    pline("è‡ªå‹•æ‹¾ã„ï¼š%sï¼", buf);
     return 0;
 }
 
@@ -5496,33 +5496,33 @@ static const char *opt_intro[] = {
 /*JP
     "", "                 NetHack Options Help:", "",
 */
-    "", "               NetHackƒIƒvƒVƒ‡ƒ“ƒwƒ‹ƒvF", "",
+    "", "               NetHackã‚ªãƒ—ã‚·ãƒ§ãƒ³ãƒ˜ãƒ«ãƒ—ï¼š", "",
 #define CONFIG_SLOT 3 /* fill in next value at run-time */
     (char *) 0,
 #if !defined(MICRO) && !defined(MAC)
 /*JP
     "or use `NETHACKOPTIONS=\"<options>\"' in your environment",
 */
-    "‚Ü‚½‚ÍŠÂ‹«•Ï”‚É`NETHACKOPTIONS=\"<options>\"'‚Æ’è‹`‚Å‚«‚Ü‚·",
+    "ã¾ãŸã¯ç’°å¢ƒå¤‰æ•°ã«`NETHACKOPTIONS=\"<options>\"'ã¨å®šç¾©ã§ãã¾ã™",
 #endif
 /*JP
     "(<options> is a list of options separated by commas)",
 */
-    "(<options>‚ÍƒJƒ“ƒ}‚Å‹æØ‚Á‚½ƒIƒvƒVƒ‡ƒ“‚Å‚·)",
+    "(<options>ã¯ã‚«ãƒ³ãƒã§åŒºåˆ‡ã£ãŸã‚ªãƒ—ã‚·ãƒ§ãƒ³ã§ã™)",
 #ifdef VMS
 /*JP
     "-- for example, $ DEFINE NETHACKOPTIONS \"noautopickup,fruit:kumquat\"",
 */
-    "-- —á‚¦‚ÎŸ‚Ì‚æ‚¤‚É‚µ‚Ü‚·F$ DEFINE NETHACKOPTIONS \"noautopickup,fruit:kumquat\"",
+    "-- ä¾‹ãˆã°æ¬¡ã®ã‚ˆã†ã«ã—ã¾ã™ï¼š$ DEFINE NETHACKOPTIONS \"noautopickup,fruit:kumquat\"",
 #endif
 /*JP
     "or press \"O\" while playing and use the menu.", "",
 */
-    "‚à‚µ‚­‚ÍƒQ[ƒ€ƒvƒŒƒC’†‚É\"O\"ƒ{ƒ^ƒ“‚ğ‰Ÿ‚·‚±‚Æ‚Åİ’è‰Â”\‚Å‚·D",
+    "ã‚‚ã—ãã¯ã‚²ãƒ¼ãƒ ãƒ—ãƒ¬ã‚¤ä¸­ã«\"O\"ãƒœã‚¿ãƒ³ã‚’æŠ¼ã™ã“ã¨ã§è¨­å®šå¯èƒ½ã§ã™ï¼",
 /*JP
  "Boolean options (which can be negated by prefixing them with '!' or \"no\"):",
 */
- "^‹U’lƒIƒvƒVƒ‡ƒ“ (”Û’è‚Ì’l‚ğw’è‚·‚éê‡C'!'‚à‚µ‚­‚Í\"no\"‚ğæ“ª‚É•t‰Á‚µ‚Ü‚·):",
+ "çœŸå½å€¤ã‚ªãƒ—ã‚·ãƒ§ãƒ³ (å¦å®šã®å€¤ã‚’æŒ‡å®šã™ã‚‹å ´åˆï¼Œ'!'ã‚‚ã—ãã¯\"no\"ã‚’å…ˆé ­ã«ä»˜åŠ ã—ã¾ã™):",
     (char *) 0
 };
 
@@ -5531,11 +5531,11 @@ static const char *opt_epilog[] = {
 /*JP
     "Some of the options can be set only before the game is started; those",
 */
-    "ƒIƒvƒVƒ‡ƒ“‚É‚ÍƒQ[ƒ€ŠJn‘O‚Ì‚İ‚É‚µ‚©İ’è‚Å‚«‚È‚¢‚à‚Ì‚ª‚ ‚è‚Ü‚·D",
+    "ã‚ªãƒ—ã‚·ãƒ§ãƒ³ã«ã¯ã‚²ãƒ¼ãƒ é–‹å§‹å‰ã®ã¿ã«ã—ã‹è¨­å®šã§ããªã„ã‚‚ã®ãŒã‚ã‚Šã¾ã™ï¼",
 /*JP
     "items will not be selectable in the 'O' command's menu.", (char *) 0
 */
-    "‚»‚ê‚ç‚Í'O'ƒRƒ}ƒ“ƒh‚Ìƒƒjƒ…[‚Å‚Í‘I‘ğ‚·‚é‚±‚Æ‚ª‚Å‚«‚Ü‚¹‚ñD", (char *) 0
+    "ãã‚Œã‚‰ã¯'O'ã‚³ãƒãƒ³ãƒ‰ã®ãƒ¡ãƒ‹ãƒ¥ãƒ¼ã§ã¯é¸æŠã™ã‚‹ã“ã¨ãŒã§ãã¾ã›ã‚“ï¼", (char *) 0
 };
 
 void
@@ -5549,7 +5549,7 @@ option_help()
 /*JP
     Sprintf(buf, "Set options as OPTIONS=<options> in %s", lastconfigfile);
 */
-    Sprintf(buf, "ƒIƒvƒVƒ‡ƒ“‚Í%s‚Ì’†‚ÅOPTIONS=<options>‚Æİ’è‚µ‚Ü‚·", lastconfigfile);
+    Sprintf(buf, "ã‚ªãƒ—ã‚·ãƒ§ãƒ³ã¯%sã®ä¸­ã§OPTIONS=<options>ã¨è¨­å®šã—ã¾ã™", lastconfigfile);
     opt_intro[CONFIG_SLOT] = (const char *) buf;
     for (i = 0; opt_intro[i]; i++)
         putstr(datawin, 0, opt_intro[i]);
@@ -5570,7 +5570,7 @@ option_help()
 /*JP
     putstr(datawin, 0, "Compound options:");
 */
-    putstr(datawin, 0, "•¶š—ñƒIƒvƒVƒ‡ƒ“:");
+    putstr(datawin, 0, "æ–‡å­—åˆ—ã‚ªãƒ—ã‚·ãƒ§ãƒ³:");
     for (i = 0; compopt[i].name; i++) {
         Sprintf(buf2, "`%s'", compopt[i].name);
         Sprintf(buf, "%-20s - %s%c", buf2, compopt[i].descr,

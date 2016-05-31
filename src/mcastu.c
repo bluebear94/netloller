@@ -60,7 +60,7 @@ boolean undirected;
 /*JP
             point_msg = "all around, then curses";
 */
-            point_msg = "‚ ‚½‚èˆê–Ê‚ğ";
+            point_msg = "ã‚ãŸã‚Šä¸€é¢ã‚’";
         else if ((Invis && !perceives(mtmp->data)
                   && (mtmp->mux != u.ux || mtmp->muy != u.uy))
                  || is_obj_mappear(&youmonst, STRANGE_OBJECT)
@@ -68,28 +68,28 @@ boolean undirected;
 /*JP
             point_msg = "and curses in your general direction";
 */
-            point_msg = "‚ ‚È‚½‚Ì‚¢‚é‚ ‚½‚è‚ğ";
+            point_msg = "ã‚ãªãŸã®ã„ã‚‹ã‚ãŸã‚Šã‚’";
         else if (Displaced && (mtmp->mux != u.ux || mtmp->muy != u.uy))
 /*JP
             point_msg = "and curses at your displaced image";
 */
-            point_msg = "‚ ‚È‚½‚ÌŒ¶‰e‚ğ";
+            point_msg = "ã‚ãªãŸã®å¹»å½±ã‚’";
         else
 /*JP
             point_msg = "at you, then curses";
 */
-            point_msg = "‚ ‚È‚½‚ğ";
+            point_msg = "ã‚ãªãŸã‚’";
 
 /*JP
         pline("%s points %s.", Monnam(mtmp), point_msg);
 */
-        pline("%s‚Í%sw·‚µCô‚¢‚ğ‚©‚¯‚½D", Monnam(mtmp), point_msg);
+        pline("%sã¯%sæŒ‡å·®ã—ï¼Œå‘ªã„ã‚’ã‹ã‘ãŸï¼", Monnam(mtmp), point_msg);
     } else if ((!(moves % 4) || !rn2(4))) {
         if (!Deaf)
 /*JP
             Norep("You hear a mumbled curse.");
 */
-            Norep("ô‚¢‚ÌŒ¾—t‚ğ‚Â‚Ô‚â‚­º‚ğ•·‚¢‚½D");
+            Norep("å‘ªã„ã®è¨€è‘‰ã‚’ã¤ã¶ã‚„ãå£°ã‚’èã„ãŸï¼");
     }
 }
 
@@ -269,10 +269,10 @@ boolean foundyou;
               levl[mtmp->mux][mtmp->muy].typ == WATER ? "empty water"
                                                       : "thin air");
 #else
-        pline("%s‚Í‰½‚à‚È‚¢%s‚É–‚–@‚ğ‚©‚¯‚½I",
-              canseemon(mtmp) ? Monnam(mtmp) : "‰½Ò‚©",
-              levl[mtmp->mux][mtmp->muy].typ == WATER ? "…’†"
-                                                      : "‹óŠÔ");
+        pline("%sã¯ä½•ã‚‚ãªã„%sã«é­”æ³•ã‚’ã‹ã‘ãŸï¼",
+              canseemon(mtmp) ? Monnam(mtmp) : "ä½•è€…ã‹",
+              levl[mtmp->mux][mtmp->muy].typ == WATER ? "æ°´ä¸­"
+                                                      : "ç©ºé–“");
 #endif
         return (0);
     }
@@ -283,7 +283,7 @@ boolean foundyou;
 /*JP
             pline_The("air crackles around %s.", mon_nam(mtmp));
 */
-            pline("%s‚Ì‰ñ‚è‚Ì‹ó‹C‚ªƒpƒ`ƒpƒ`‰¹‚ğ‚½‚Ä‚Ä‚¢‚éD", mon_nam(mtmp));
+            pline("%sã®å›ã‚Šã®ç©ºæ°—ãŒãƒ‘ãƒãƒ‘ãƒéŸ³ã‚’ãŸã¦ã¦ã„ã‚‹ï¼", mon_nam(mtmp));
         return (0);
     }
     if (canspotmon(mtmp) || !is_undirected_spell(mattk->adtyp, spellnum)) {
@@ -300,17 +300,17 @@ boolean foundyou;
                               ? " at your displaced image"
                               : " at you");
 #else
-        char *who = (canspotmon(mtmp) ? Monnam(mtmp) : "‰½Ò‚©");
+        char *who = (canspotmon(mtmp) ? Monnam(mtmp) : "ä½•è€…ã‹");
         if(is_undirected_spell(mattk->adtyp, spellnum)){
-            pline("%s‚Íô•¶‚ğ¥‚¦‚½I", who);
+            pline("%sã¯å‘ªæ–‡ã‚’å”±ãˆãŸï¼", who);
         } else {
-            pline("%s‚Í‚ ‚È‚½%s‚É–‚–@‚ğ‚©‚¯‚½I",
+            pline("%sã¯ã‚ãªãŸ%sã«é­”æ³•ã‚’ã‹ã‘ãŸï¼",
                   who,
                   (Invisible && !perceives(mtmp->data) && 
                    (mtmp->mux != u.ux || mtmp->muy != u.uy)) ?
-                  "‚Ì‚·‚®‚»‚Î" :
+                  "ã®ã™ããã°" :
                   (Displaced && (mtmp->mux != u.ux || mtmp->muy != u.uy)) ?
-                  "‚ÌŒ¶‰e" :
+                  "ã®å¹»å½±" :
                   "");
         }
 #endif
@@ -342,13 +342,13 @@ boolean foundyou;
 /*JP
         pline("You're enveloped in flames.");
 */
-        You("‰Š‚É‚Â‚Â‚Ü‚ê‚½D");
+        You("ç‚ã«ã¤ã¤ã¾ã‚ŒãŸï¼");
         if (Fire_resistance) {
             shieldeff(u.ux, u.uy);
 /*JP
             pline("But you resist the effects.");
 */
-            pline("‚µ‚©‚µC‚ ‚È‚½‚Í‰e‹¿‚ğó‚¯‚È‚¢D");
+            pline("ã—ã‹ã—ï¼Œã‚ãªãŸã¯å½±éŸ¿ã‚’å—ã‘ãªã„ï¼");
             dmg = 0;
         }
         burn_away_slime();
@@ -357,13 +357,13 @@ boolean foundyou;
 /*JP
         pline("You're covered in frost.");
 */
-        You("•X‚É•¢‚í‚ê‚½D");
+        You("æ°·ã«è¦†ã‚ã‚ŒãŸï¼");
         if (Cold_resistance) {
             shieldeff(u.ux, u.uy);
 /*JP
             pline("But you resist the effects.");
 */
-            pline("‚µ‚©‚µC‚ ‚È‚½‚Í‰e‹¿‚ğó‚¯‚È‚¢D");
+            pline("ã—ã‹ã—ï¼Œã‚ãªãŸã¯å½±éŸ¿ã‚’å—ã‘ãªã„ï¼");
             dmg = 0;
         }
         break;
@@ -371,13 +371,13 @@ boolean foundyou;
 /*JP
         You("are hit by a shower of missiles!");
 */
-        You("–‚–@‚Ì–î‚ğ‚­‚ç‚Á‚½I");
+        You("é­”æ³•ã®çŸ¢ã‚’ãã‚‰ã£ãŸï¼");
         if (Antimagic) {
             shieldeff(u.ux, u.uy);
 /*JP
             pline_The("missiles bounce off!");
 */
-            pline("–‚–@‚Ì–î‚Í”½Ë‚µ‚½I");
+            pline("é­”æ³•ã®çŸ¢ã¯åå°„ã—ãŸï¼");
             dmg = 0;
         } else
             dmg = d((int) mtmp->m_lev / 2 + 1, 6);
@@ -424,24 +424,24 @@ int spellnum;
 /*JP
         pline("Oh no, %s's using the touch of death!", mhe(mtmp));
 */
-        pline("‚È‚ñ‚Ä‚±‚Á‚½‚¢C%s‚Í€‚Ìé‚ğg‚Á‚Ä‚¢‚éI", mhe(mtmp));
+        pline("ãªã‚“ã¦ã“ã£ãŸã„ï¼Œ%sã¯æ­»ã®å®£å‘Šã‚’ä½¿ã£ã¦ã„ã‚‹ï¼", mhe(mtmp));
         if (nonliving(youmonst.data) || is_demon(youmonst.data)) {
 /*JP
             You("seem no deader than before.");
 */
-            You("‚±‚êˆÈã€‚Ë‚È‚¢‚æ‚¤‚¾D");
+            You("ã“ã‚Œä»¥ä¸Šæ­»ã­ãªã„ã‚ˆã†ã ï¼");
         } else if (!Antimagic && rn2(mtmp->m_lev) > 12) {
             if (Hallucination) {
 /*JP
                 You("have an out of body experience.");
 */
-                You("—H‘Ì—£’E‚ğ‘ÌŒ±‚µ‚½D");
+                You("å¹½ä½“é›¢è„±ã‚’ä½“é¨“ã—ãŸï¼");
             } else {
                 killer.format = KILLED_BY_AN;
 /*JP
                 Strcpy(killer.name, "touch of death");
 */
-                Strcpy(killer.name, "€‚Ìé‚Å");
+                Strcpy(killer.name, "æ­»ã®å®£å‘Šã§");
                 done(DIED);
             }
         } else {
@@ -450,7 +450,7 @@ int spellnum;
 /*JP
             pline("Lucky for you, it didn't work!");
 */
-            pline("‰^‚Ì‚æ‚¢‚±‚Æ‚É‚È‚ñ‚Æ‚à‚È‚©‚Á‚½I");
+            pline("é‹ã®ã‚ˆã„ã“ã¨ã«ãªã‚“ã¨ã‚‚ãªã‹ã£ãŸï¼");
         }
         dmg = 0;
         break;
@@ -459,7 +459,7 @@ int spellnum;
 /*JP
             pline("Double Trouble...");
 */
-            pline("“ñd‹ê‚¾DDD");
+            pline("äºŒé‡è‹¦ã ï¼ï¼ï¼");
             clonewiz();
             dmg = 0;
         } else
@@ -473,7 +473,7 @@ int spellnum;
 /*JP
             verbalize("Destroy the thief, my pet%s!", plur(count));
 */
-            verbalize("“‘¯‚ğE‚¹I‰ä‚ª‰º–l‚æI");
+            verbalize("ç›—è³Šã‚’æ®ºã›ï¼æˆ‘ãŒä¸‹åƒ•ã‚ˆï¼");
         else {
 #if 0 /*JP*/
             const char *mappear =
@@ -487,19 +487,19 @@ int spellnum;
 #if 0 /*JP*/
                 pline("%s around a spot near you!", mappear);
 #else
-                pline("‰ö•¨‚ª‚ ‚È‚½‚Ì‚·‚®‚»‚Î‚ÉŒ»‚ê‚½I");
+                pline("æ€ªç‰©ãŒã‚ãªãŸã®ã™ããã°ã«ç¾ã‚ŒãŸï¼");
 #endif
             else if (Displaced && (mtmp->mux != u.ux || mtmp->muy != u.uy))
 #if 0 /*JP*/
                 pline("%s around your displaced image!", mappear);
 #else
-                pline("‰ö•¨‚ª‚ ‚È‚½‚ÌŒ¶‰e‚Ì‚·‚®‚»‚Î‚ÉŒ»‚ê‚½I");
+                pline("æ€ªç‰©ãŒã‚ãªãŸã®å¹»å½±ã®ã™ããã°ã«ç¾ã‚ŒãŸï¼");
 #endif
             else
 #if 0 /*JP*/
                 pline("%s from nowhere!", mappear);
 #else
-                pline("‰ö•¨‚ª‚Ç‚±‚©‚ç‚Æ‚à‚È‚­Œ»‚ê‚½I");
+                pline("æ€ªç‰©ãŒã©ã“ã‹ã‚‰ã¨ã‚‚ãªãç¾ã‚ŒãŸï¼");
 #endif
         }
         dmg = 0;
@@ -509,7 +509,7 @@ int spellnum;
 /*JP
         You_feel("that monsters are aware of your presence.");
 */
-        You_feel("‰ö•¨‚½‚¿‚ª‚ ‚È‚½‚Ì‘¶İ‚É‹C•t‚¢‚½‚æ‚¤‚È‹C‚ª‚µ‚½D");
+        You_feel("æ€ªç‰©ãŸã¡ãŒã‚ãªãŸã®å­˜åœ¨ã«æ°—ä»˜ã„ãŸã‚ˆã†ãªæ°—ãŒã—ãŸï¼");
         aggravate();
         dmg = 0;
         break;
@@ -517,7 +517,7 @@ int spellnum;
 /*JP
         You_feel("as if you need some help.");
 */
-        You_feel("•‚¯‚ª•K—v‚È‹C‚ª‚µ‚½D");
+        You_feel("åŠ©ã‘ãŒå¿…è¦ãªæ°—ãŒã—ãŸï¼");
         rndcurse();
         dmg = 0;
         break;
@@ -527,12 +527,12 @@ int spellnum;
 /*JP
             pline("A field of force surrounds you!");
 */
-            pline("•sv‹c‚È—Í‚ª‚ ‚È‚½‚ğ‚Æ‚è‚Ü‚¢‚½I");
+            pline("ä¸æ€è­°ãªåŠ›ãŒã‚ãªãŸã‚’ã¨ã‚Šã¾ã„ãŸï¼");
         } else if (!destroy_arm(some_armor(&youmonst))) {
 /*JP
             Your("skin itches.");
 */
-            You("ƒ€ƒYƒ€ƒY‚µ‚½D");
+            You("ãƒ ã‚ºãƒ ã‚ºã—ãŸï¼");
         }
         dmg = 0;
         break;
@@ -542,12 +542,12 @@ int spellnum;
 /*JP
             You_feel("momentarily weakened.");
 */
-            You_feel("ˆêuã‚­‚È‚Á‚½‚æ‚¤‚È‹C‚ª‚µ‚½D");
+            You_feel("ä¸€ç¬å¼±ããªã£ãŸã‚ˆã†ãªæ°—ãŒã—ãŸï¼");
         } else {
 /*JP
             You("suddenly feel weaker!");
 */
-            You("“Ë‘Rã‚­‚È‚Á‚½‚æ‚¤‚È‹C‚ª‚µ‚½D");
+            You("çªç„¶å¼±ããªã£ãŸã‚ˆã†ãªæ°—ãŒã—ãŸï¼");
             dmg = mtmp->m_lev - 6;
             if (Half_spell_damage)
                 dmg = (dmg + 1) / 2;
@@ -564,8 +564,8 @@ int spellnum;
                 pline("%s suddenly %s!", Monnam(mtmp),
                       !See_invisible ? "disappears" : "becomes transparent");
 #else
-                pline("%s‚Í“Ë‘R%sI", Monnam(mtmp),
-                      !See_invisible ? "Á‚¦‚½" : "“§–¾‚É‚È‚Á‚½");
+                pline("%sã¯çªç„¶%sï¼", Monnam(mtmp),
+                      !See_invisible ? "æ¶ˆãˆãŸ" : "é€æ˜ã«ãªã£ãŸ");
 #endif
             mon_set_minvis(mtmp);
             dmg = 0;
@@ -579,13 +579,13 @@ int spellnum;
 /*JP
                 You_feel("momentarily disoriented.");
 */
-                You("ˆêu•ûŒüŠ´Šo‚ğ¸‚Á‚½D");
+                You("ä¸€ç¬æ–¹å‘æ„Ÿè¦šã‚’å¤±ã£ãŸï¼");
             make_stunned(1L, FALSE);
         } else {
 /*JP
             You(Stunned ? "struggle to keep your balance." : "reel...");
 */
-            You(Stunned ? "ƒoƒ‰ƒ“ƒX‚ğæ‚ë‚¤‚Æ‚à‚ª‚¢‚½D" : "‚æ‚ë‚ß‚¢‚½DDD");
+            You(Stunned ? "ãƒãƒ©ãƒ³ã‚¹ã‚’å–ã‚ã†ã¨ã‚‚ãŒã„ãŸï¼" : "ã‚ˆã‚ã‚ã„ãŸï¼ï¼ï¼");
             dmg = d(ACURR(A_DEX) < 12 ? 6 : 4, 4);
             if (Half_spell_damage)
                 dmg = (dmg + 1) / 2;
@@ -603,7 +603,7 @@ int spellnum;
 /*JP
                 pline("%s looks better.", Monnam(mtmp));
 */
-                pline("%s‚Í‹C•ª‚ª‚æ‚­‚È‚Á‚½‚æ‚¤‚¾D", Monnam(mtmp));
+                pline("%sã¯æ°—åˆ†ãŒã‚ˆããªã£ãŸã‚ˆã†ã ï¼", Monnam(mtmp));
             /* note: player healing does 6d4; this used to do 1d8 */
             if ((mtmp->mhp += d(3, 6)) > mtmp->mhpmax)
                 mtmp->mhp = mtmp->mhpmax;
@@ -621,22 +621,22 @@ int spellnum;
 /*JP
             You("get a slight %sache.", body_part(HEAD));
 */
-            You("‚¿‚å‚Á‚Æ%s’É‚ª‚µ‚½D",body_part(HEAD));
+            You("ã¡ã‚‡ã£ã¨%sç—›ãŒã—ãŸï¼",body_part(HEAD));
         else if (dmg <= 10)
 /*JP
             Your("brain is on fire!");
 */
-            You("“{‚è‚É‚Â‚Â‚Ü‚ê‚½I");
+            You("æ€’ã‚Šã«ã¤ã¤ã¾ã‚ŒãŸï¼");
         else if (dmg <= 20)
 /*JP
             Your("%s suddenly aches painfully!", body_part(HEAD));
 */
-            You("“Ë‘R%s’É‚É‚¨‚»‚í‚ê‚½I", body_part(HEAD));
+            You("çªç„¶%sç—›ã«ãŠãã‚ã‚ŒãŸï¼", body_part(HEAD));
         else
 /*JP
             Your("%s suddenly aches very painfully!", body_part(HEAD));
 */
-            You("“Ë‘RŒƒ‚µ‚¢%s’É‚É‚¨‚»‚í‚ê‚½I", body_part(HEAD));
+            You("çªç„¶æ¿€ã—ã„%sç—›ã«ãŠãã‚ã‚ŒãŸï¼", body_part(HEAD));
         break;
     default:
         impossible("mcastu: invalid magic spell (%d)", spellnum);
@@ -668,7 +668,7 @@ int spellnum;
 /*JP
         pline("A sudden geyser slams into you from nowhere!");
 */
-        pline("‘÷—¬‚ª‚Ç‚±‚©‚ç‚Æ‚à‚È‚­Œ»‚ê‚Ä‚ ‚È‚½‚ğ‘Å‚¿‚Â‚¯‚½I");
+        pline("æ¿æµãŒã©ã“ã‹ã‚‰ã¨ã‚‚ãªãç¾ã‚Œã¦ã‚ãªãŸã‚’æ‰“ã¡ã¤ã‘ãŸï¼");
         dmg = d(8, 6);
         if (Half_physical_damage)
             dmg = (dmg + 1) / 2;
@@ -677,7 +677,7 @@ int spellnum;
 /*JP
         pline("A pillar of fire strikes all around you!");
 */
-        pline("‚ ‚È‚½‚Ìü‚è‚É‰Î’Œ‚ª—§‚Á‚½I");
+        pline("ã‚ãªãŸã®å‘¨ã‚Šã«ç«æŸ±ãŒç«‹ã£ãŸï¼");
         if (Fire_resistance) {
             shieldeff(u.ux, u.uy);
             dmg = 0;
@@ -698,11 +698,11 @@ int spellnum;
 /*JP
         pline("A bolt of lightning strikes down at you from above!");
 */
-        pline("‚ ‚È‚½‚Ì^ã‚©‚çˆîÈ‚ª~‚è’‚¢‚¾I");
+        pline("ã‚ãªãŸã®çœŸä¸Šã‹ã‚‰ç¨²å¦»ãŒé™ã‚Šæ³¨ã„ã ï¼");
 /*JP
         reflects = ureflects("It bounces off your %s%s.", "");
 */
-        reflects = ureflects("‚»‚ê‚Í‚ ‚È‚½‚Ì%s%s‚Å’µ‚Ë•Ô‚Á‚½D", "");
+        reflects = ureflects("ãã‚Œã¯ã‚ãªãŸã®%s%sã§è·³ã­è¿”ã£ãŸï¼", "");
         if (reflects || Shock_resistance) {
             shieldeff(u.ux, u.uy);
             dmg = 0;
@@ -721,7 +721,7 @@ int spellnum;
 /*JP
         You_feel("as if you need some help.");
 */
-        You_feel("•‚¯‚ª•K—v‚È‹C‚ª‚µ‚½D");
+        You_feel("åŠ©ã‘ãŒå¿…è¦ãªæ°—ãŒã—ãŸï¼");
         rndcurse();
         dmg = 0;
         break;
@@ -762,7 +762,7 @@ int spellnum;
 /*JP
             const char *what = (let == S_SNAKE) ? "snake" : "insect";
 */
-            const char *what = (let == S_SNAKE) ? "ƒwƒr" : "’";
+            const char *what = (let == S_SNAKE) ? "ãƒ˜ãƒ“" : "è™«";
 
             if (newseen <= oldseen || Unaware) {
                 /* unseen caster fails or summons unseen critters,
@@ -770,7 +770,7 @@ int spellnum;
 /*JP
                 You_hear("someone summoning %s.", makeplural(what));
 */
-                You_hear("’N‚©‚ª%s‚ğ¢Š«‚µ‚Ä‚¢‚é‚Ì‚ğ•·‚¢‚½D", what);
+                You_hear("èª°ã‹ãŒ%sã‚’å¬å–šã—ã¦ã„ã‚‹ã®ã‚’èã„ãŸï¼", what);
             } else {
                 /* unseen caster summoned seen critter(s) */
                 arg = (newseen == oldseen + 1) ? an(what) : makeplural(what);
@@ -779,14 +779,14 @@ int spellnum;
                     You_hear("someone summoning something, and %s %s.", arg,
                              vtense(arg, "appear"));
 #else
-                    You_hear("’N‚©‚ª‰½‚©‚ğ¢Š«‚·‚é‚Ì‚ğ•·‚¢‚½C‚»‚µ‚Ä%s‚ªŒ»‚ê‚½D",
+                    You_hear("èª°ã‹ãŒä½•ã‹ã‚’å¬å–šã™ã‚‹ã®ã‚’èã„ãŸï¼Œãã—ã¦%sãŒç¾ã‚ŒãŸï¼",
                              arg);
 #endif
                 else
 /*JP
                     pline("%s %s.", upstart(arg), vtense(arg, "appear"));
 */
-                    pline("%s‚ªŒ»‚ê‚½D", arg);
+                    pline("%sãŒç¾ã‚ŒãŸï¼", arg);
             }
 
             /* seen caster, possibly producing unseen--or just one--critters;
@@ -798,28 +798,28 @@ int spellnum;
 /*JP
             fmt = "%s casts at a clump of sticks, but nothing happens.";
 */
-            fmt = "%s‚Í–_Ø‚ê‚É–‚–@‚ğ‚©‚¯‚½‚ªC‚È‚É‚à‚¨‚±‚ç‚È‚©‚Á‚½D";
+            fmt = "%sã¯æ£’åˆ‡ã‚Œã«é­”æ³•ã‚’ã‹ã‘ãŸãŒï¼Œãªã«ã‚‚ãŠã“ã‚‰ãªã‹ã£ãŸï¼";
         else if (let == S_SNAKE)
 /*JP
             fmt = "%s transforms a clump of sticks into snakes!";
 */
-            fmt = "%s‚Í–_Ø‚ê‚ğƒwƒr‚É•Ï‚¦‚½I";
+            fmt = "%sã¯æ£’åˆ‡ã‚Œã‚’ãƒ˜ãƒ“ã«å¤‰ãˆãŸï¼";
         else if (Invisible && !perceives(mtmp->data)
                  && (mtmp->mux != u.ux || mtmp->muy != u.uy))
 /*JP
             fmt = "%s summons insects around a spot near you!";
 */
-            fmt = "%s‚Í’‚ğ‚ ‚È‚½‚Ì‚·‚®‚»‚Î‚É¢Š«‚µ‚½I";
+            fmt = "%sã¯è™«ã‚’ã‚ãªãŸã®ã™ããã°ã«å¬å–šã—ãŸï¼";
         else if (Displaced && (mtmp->mux != u.ux || mtmp->muy != u.uy))
 /*JP
             fmt = "%s summons insects around your displaced image!";
 */
-            fmt = "%s‚Í’‚ğ‚ ‚È‚½‚ÌŒ¶‰e‚Ìü‚è‚É¢Š«‚µ‚½I";
+            fmt = "%sã¯è™«ã‚’ã‚ãªãŸã®å¹»å½±ã®å‘¨ã‚Šã«å¬å–šã—ãŸï¼";
         else
 /*JP
             fmt = "%s summons insects!";
 */
-            fmt = "%s‚Í’‚ğ¢Š«‚µ‚½I";
+            fmt = "%sã¯è™«ã‚’å¬å–šã—ãŸï¼";
         if (fmt)
             pline(fmt, Monnam(mtmp));
 
@@ -835,7 +835,7 @@ int spellnum;
                                                ? body_part(EYE)
                                                : makeplural(body_part(EYE)));
 #else
-            pline("—Ø‚ª‚ ‚È‚½‚Ì%s‚ğ•¢‚Á‚½I", body_part(EYE));
+            pline("é±—ãŒã‚ãªãŸã®%sã‚’è¦†ã£ãŸï¼", body_part(EYE));
 #endif
             make_blinded(Half_spell_damage ? 100L : 200L, FALSE);
             if (!Blind)
@@ -851,7 +851,7 @@ int spellnum;
 /*JP
                 You("stiffen briefly.");
 */
-                You("ˆêud’¼‚µ‚½D");
+                You("ä¸€ç¬ç¡¬ç›´ã—ãŸï¼");
             nomul(-1);
             multi_reason = "paralyzed by a monster";
         } else {
@@ -859,7 +859,7 @@ int spellnum;
 /*JP
                 You("are frozen in place!");
 */
-                You("‚»‚Ìê‚Å“®‚¯‚È‚­‚È‚Á‚½I");
+                You("ãã®å ´ã§å‹•ã‘ãªããªã£ãŸï¼");
             dmg = 4 + (int) mtmp->m_lev;
             if (Half_spell_damage)
                 dmg = (dmg + 1) / 2;
@@ -875,7 +875,7 @@ int spellnum;
 /*JP
             You_feel("momentarily dizzy.");
 */
-            You("ˆêu‚ß‚Ü‚¢‚ª‚µ‚½D");
+            You("ä¸€ç¬ã‚ã¾ã„ãŒã—ãŸï¼");
         } else {
             boolean oldprop = !!Confusion;
 
@@ -887,13 +887,13 @@ int spellnum;
 #if 0 /*JP*/
                 You_feel("%s!", oldprop ? "trippier" : "trippy");
 #else
-                You("%s‚Ö‚ë‚Ö‚ë‚É‚È‚Á‚½I", oldprop ? "‚à‚Á‚Æ" : "");
+                You("%sã¸ã‚ã¸ã‚ã«ãªã£ãŸï¼", oldprop ? "ã‚‚ã£ã¨" : "");
 #endif
             else
 #if 0 /*JP*/
                 You_feel("%sconfused!", oldprop ? "more " : "");
 #else
-                You("%s¬—‚µ‚½I", oldprop ? "‚à‚Á‚Æ" : "");
+                You("%sæ··ä¹±ã—ãŸï¼", oldprop ? "ã‚‚ã£ã¨" : "");
 #endif
         }
         dmg = 0;
@@ -904,7 +904,7 @@ int spellnum;
 #if 0 /*JP*/
                 pline("%s looks better.", Monnam(mtmp));
 #else
-                pline("%s‚Í‹C•ª‚ª‚æ‚­‚È‚Á‚½‚æ‚¤‚¾D", Monnam(mtmp));
+                pline("%sã¯æ°—åˆ†ãŒã‚ˆããªã£ãŸã‚ˆã†ã ï¼", Monnam(mtmp));
 #endif
             /* note: player healing does 6d4; this used to do 1d8 */
             if ((mtmp->mhp += d(3, 6)) > mtmp->mhpmax)
@@ -921,22 +921,22 @@ int spellnum;
 /*JP
             Your("skin itches badly for a moment.");
 */
-            Your("”ç•†‚ÍˆêuCƒ€ƒYƒ€ƒY‚Á‚Æ‚µ‚½D");
+            Your("çš®è†šã¯ä¸€ç¬ï¼Œãƒ ã‚ºãƒ ã‚ºã£ã¨ã—ãŸï¼");
         else if (dmg <= 10)
 /*JP
             pline("Wounds appear on your body!");
 */
-            pline("‚ª‚ ‚È‚½‚Ì‘Ì‚Éo—ˆ‚½I");
+            pline("å‚·ãŒã‚ãªãŸã®ä½“ã«å‡ºæ¥ãŸï¼");
         else if (dmg <= 20)
 /*JP
             pline("Severe wounds appear on your body!");
 */
-            pline("‚Ğ‚Ç‚¢‚ª‚ ‚È‚½‚Ì‘Ì‚Éo—ˆ‚½I");
+            pline("ã²ã©ã„å‚·ãŒã‚ãªãŸã®ä½“ã«å‡ºæ¥ãŸï¼");
         else
 /*JP
             Your("body is covered with painful wounds!");
 */
-            pline("‘Ì‚ª‚¾‚ç‚¯‚É‚È‚Á‚½I");
+            pline("ä½“ãŒå‚·ã ã‚‰ã‘ã«ãªã£ãŸï¼");
         break;
     default:
         impossible("mcastu: invalid clerical spell (%d)", spellnum);
@@ -1085,7 +1085,7 @@ register struct attack *mattk;
                 pline("%s zaps you with a %s!", Monnam(mtmp),
                       flash_types[ad_to_typ(mattk->adtyp)]);
 #else
-                pline("%s‚Í%s‚ğ‚ ‚È‚½‚ÉŒü‚¯‚Ä•ú‚Á‚½D", Monnam(mtmp),
+                pline("%sã¯%sã‚’ã‚ãªãŸã«å‘ã‘ã¦æ”¾ã£ãŸï¼", Monnam(mtmp),
                       flash_types[ad_to_typ(mattk->adtyp)]);
 #endif
             buzz(-ad_to_typ(mattk->adtyp), (int) mattk->damn, mtmp->mx,

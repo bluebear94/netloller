@@ -65,17 +65,17 @@ amulet()
 /*JP
                     pline("%s hot!", Tobjnam(amu, "feel"));
 */
-                        pline("%s‚Í”M‚­Š´‚¶‚½I", xname(amu));
+                        pline("%sã¯ç†±ãæ„Ÿã˜ãŸï¼", xname(amu));
                 else if (du <= 64)
 /*JP
                     pline("%s very warm.", Tobjnam(amu, "feel"));
 */
-                        pline("%s‚Í‚Æ‚Ä‚à’g‚©‚­Š´‚¶‚½D", xname(amu));
+                        pline("%sã¯ã¨ã¦ã‚‚æš–ã‹ãæ„Ÿã˜ãŸï¼", xname(amu));
                 else if (du <= 144)
 /*JP
                     pline("%s warm.", Tobjnam(amu, "feel"));
 */
-                        pline("%s‚Í’g‚©‚­Š´‚¶‚½D", xname(amu));
+                        pline("%sã¯æš–ã‹ãæ„Ÿã˜ãŸï¼", xname(amu));
                 /* else, the amulet feels normal */
                 break;
             }
@@ -95,7 +95,7 @@ amulet()
 /*JP
       "get the creepy feeling that somebody noticed your taking the Amulet.");
 */
-      "‚ ‚È‚½‚ª–‚œ‚¯‚ğ‚Á‚Ä‚¢‚é‚±‚Æ‚ª’N‚©‚É’m‚ç‚ê‚½‚ÆŠ´‚¶‚Ä‚¼‚Á‚Æ‚µ‚½D");
+      "ã‚ãªãŸãŒé­”é™¤ã‘ã‚’æŒã£ã¦ã„ã‚‹ã“ã¨ãŒèª°ã‹ã«çŸ¥ã‚‰ã‚ŒãŸã¨æ„Ÿã˜ã¦ãã£ã¨ã—ãŸï¼");
             return;
         }
     }
@@ -386,7 +386,7 @@ register struct monst *mtmp;
                                   ? doname(otmp)
                                   : distant_name(otmp, doname));
 #else
-                        pline("%s‚Í%s‚ğE‚Á‚½D", Monnam(mtmp),
+                        pline("%sã¯%sã‚’æ‹¾ã£ãŸï¼", Monnam(mtmp),
                               (distu(mtmp->mx, mtmp->my) <= 5)
                                   ? doname(otmp)
                                   : distant_name(otmp, doname));
@@ -541,7 +541,7 @@ resurrect()
 /*JP
         verb = "kill";
 */
-        verb = "‚ğ“¢‚Ä‚µ";
+        verb = "ã‚’è¨ã¦ã—";
         mtmp = makemon(&mons[PM_WIZARD_OF_YENDOR], u.ux, u.uy, MM_NOWAIT);
         /* affects experience; he's not coming back from a corpse
            but is subject to repeated killing like a revived corpse */
@@ -551,7 +551,7 @@ resurrect()
 /*JP
         verb = "elude";
 */
-        verb = "‚æ‚è“¦‚ê‚ñ";
+        verb = "ã‚ˆã‚Šé€ƒã‚Œã‚“";
         mmtmp = &migrating_mons;
         while ((mtmp = *mmtmp) != 0) {
             if (mtmp->iswiz
@@ -585,11 +585,11 @@ resurrect()
 /*JP
             pline("A voice booms out...");
 */
-            pline("º‚ª‚‚­–Â‚è‹¿‚¢‚½DDD");
+            pline("å£°ãŒé«˜ãé³´ã‚ŠéŸ¿ã„ãŸï¼ï¼ï¼");
 /*JP
             verbalize("So thou thought thou couldst %s me, fool.", verb);
 */
-            verbalize("—]%s‚Æv‚¢‚µ‚©C’s‚êÒ‚ªD", verb);
+            verbalize("ä½™%sã¨æ€ã„ã—ã‹ï¼Œç—´ã‚Œè€…ãŒï¼", verb);
         }
     }
 }
@@ -607,14 +607,14 @@ intervene()
 /*JP
         You_feel("vaguely nervous.");
 */
-        You("‰½‚Æ‚È‚­•sˆÀ‚É‚È‚Á‚½D");
+        You("ä½•ã¨ãªãä¸å®‰ã«ãªã£ãŸï¼");
         break;
     case 2:
         if (!Blind)
 /*JP
             You("notice a %s glow surrounding you.", hcolor(NH_BLACK));
 */
-            pline("%sŒõ‚ª‚ ‚È‚½‚ğ‚Æ‚è‚Ü‚¢‚Ä‚¢‚é‚Ì‚É‹C‚ª‚Â‚¢‚½D", hcolor(NH_BLACK));
+            pline("%så…‰ãŒã‚ãªãŸã‚’ã¨ã‚Šã¾ã„ã¦ã„ã‚‹ã®ã«æ°—ãŒã¤ã„ãŸï¼", hcolor(NH_BLACK));
         rndcurse();
         break;
     case 3:
@@ -650,14 +650,14 @@ const char *const random_insult[] = {
     "villein", /* (sic.) */
     "wittol",     "worm",         "wretch",
 #else
-    "‚Ó‚´‚¯‚½–ì˜Y", "ˆ«“}",       "‚­‚»‚Á‚½‚ê", "‚Ì‚ë‚Ü",
-    "‚ ‚ñ‚Û‚ñ‚½‚ñ", "‰°•aÒ",     "”’’s",       "‚ë‚­‚Å‚È‚µ",
-    "‚¤‚Â‚¯",       "ˆ«–‚‚Ì‰aH", "‚¤‚·‚Ì‚ë",   "‚Ü‚Ê‚¯",
-    "”n­",         "‚¨‚¢‚Í‚¬",   "‹ğ‚©Ò",     "‚È‚ç‚¸Ò",
-    "ˆ«l",         "‹Éˆ«l",     "”n­‚½‚ê",   "”Ú‹¯Ò",
-    "•—‘D“ª",       "“¹ŠyÒ",     "–ï‰îÒ",     "‰º˜Y",
-    "“z—ê", /* (sic.) */
-    "‚Ó‚È‚Ş‚µ",     "åv’",       "l‚Å‚È‚µ",
+    "ãµã–ã‘ãŸé‡éƒ", "æ‚ªå…š",       "ããã£ãŸã‚Œ", "ã®ã‚ã¾",
+    "ã‚ã‚“ã½ã‚“ãŸã‚“", "è‡†ç—…è€…",     "ç™½ç—´",       "ã‚ãã§ãªã—",
+    "ã†ã¤ã‘",       "æ‚ªé­”ã®é¤Œé£Ÿ", "ã†ã™ã®ã‚",   "ã¾ã¬ã‘",
+    "é¦¬é¹¿",         "ãŠã„ã¯ã",   "æ„šã‹è€…",     "ãªã‚‰ãšè€…",
+    "æ‚ªäºº",         "æ¥µæ‚ªäºº",     "é¦¬é¹¿ãŸã‚Œ",   "å‘æ€¯è€…",
+    "é¢¨èˆ¹é ­",       "é“æ¥½è€…",     "å„ä»‹è€…",     "ä¸‹éƒ",
+    "å¥´éš·", /* (sic.) */
+    "ãµãªã‚€ã—",     "è›†è™«",       "äººã§ãªã—",
 #endif
 };
 
@@ -670,17 +670,17 @@ const char *const random_malediction[] = {
     "Thou art doomed,", "Thy fate is sealed,",
     "Verily, thou shalt be one dead"
 #else
-    "’n–‚Í‚¢‚Ã‚êC“ğ‚Ì–SŠ[‚ğ—v‹‚·‚é‚Å‚ ‚ë‚¤C",
-    "ˆ£‚ê‚È‚â‚Â‚æ‚Ì‚¤D—]‚Í–‘«‚¶‚á",
-    "“ğC€‚É”õ‚¦‚æ",
-    "’ïR‚µ‚Ä‚à–³‘Ê‚¶‚áC",
-    "~Q‚¹‚æD‚³‚à‚È‚­‚Î€‚¶‚áD",
-    "œ”ß‚Í–³‚©‚ç‚ñ",
-    "“ğC‚¸‚é‚ğŒã‰÷‚·‚×‚µC",
-    "“ğ‚Í—]‚É‚Æ‚Á‚Äƒmƒ~‚Ì‚æ‚¤‚È‚à‚Ì‚¶‚áC",
-    "“ğ‚Íô‚í‚ê‚Ä‚¨‚éC",
-    "“ğ‚Ì‰^–½‚Í••ˆó‚³‚ê‚Ä‚¨‚éC",
-    "‚Ü‚±‚Æ‚É“ğ‚Í€‚É‚½‚éÒ‚È‚è"
+    "åœ°ç„ã¯ã„ã¥ã‚Œï¼Œæ±ã®äº¡éª¸ã‚’è¦æ±‚ã™ã‚‹ã§ã‚ã‚ã†ï¼Œ",
+    "å“€ã‚Œãªã‚„ã¤ã‚ˆã®ã†ï¼ä½™ã¯æº€è¶³ã˜ã‚ƒ",
+    "æ±ï¼Œæ­»ã«å‚™ãˆã‚ˆ",
+    "æŠµæŠ—ã—ã¦ã‚‚ç„¡é§„ã˜ã‚ƒï¼Œ",
+    "é™å‚ã›ã‚ˆï¼ã•ã‚‚ãªãã°æ­»ã˜ã‚ƒï¼",
+    "æ…ˆæ‚²ã¯ç„¡ã‹ã‚‰ã‚“",
+    "æ±ï¼Œãšã‚‹ã‚’å¾Œæ‚”ã™ã¹ã—ï¼Œ",
+    "æ±ã¯ä½™ã«ã¨ã£ã¦ãƒãƒŸã®ã‚ˆã†ãªã‚‚ã®ã˜ã‚ƒï¼Œ",
+    "æ±ã¯å‘ªã‚ã‚Œã¦ãŠã‚‹ï¼Œ",
+    "æ±ã®é‹å‘½ã¯å°å°ã•ã‚Œã¦ãŠã‚‹ï¼Œ",
+    "ã¾ã“ã¨ã«æ±ã¯æ­»ã«ãŸã‚‹è€…ãªã‚Š"
 #endif
 };
 
@@ -696,12 +696,12 @@ register struct monst *mtmp;
 /*JP
             pline("%s laughs fiendishly.", Monnam(mtmp));
 */
-            pline("%s‚Íˆ«–‚‚Ì‚æ‚¤‚ÉÎ‚Á‚½D", Monnam(mtmp));
+            pline("%sã¯æ‚ªé­”ã®ã‚ˆã†ã«ç¬‘ã£ãŸï¼", Monnam(mtmp));
         else if (u.uhave.amulet && !rn2(SIZE(random_insult)))
 /*JP
             verbalize("Relinquish the amulet, %s!",
 */
-            verbalize("–‚‚æ‚¯‚ğè•ú‚¹C%sI",
+            verbalize("é­”ã‚ˆã‘ã‚’æ‰‹æ”¾ã›ï¼Œ%sï¼",
                       random_insult[rn2(SIZE(random_insult))]);
         else if (u.uhp < 5 && !rn2(2)) /* Panic */
 #if 0 /*JP*/
@@ -709,22 +709,22 @@ register struct monst *mtmp;
                              : "Savor thy breath, %s, it be thy last!",
                       random_insult[rn2(SIZE(random_insult))]);
 #else
-            verbalize(rn2(2) ? "¡‚Æ‚È‚Á‚Ä‚à‚È‚¨“ğ‚Ì–½‚Í‚ ‚¦‚ÄŠ‚¦‚é‚Ì‚¾C%sI"
-                             : "‘§‚ğ–¡‚í‚Á‚Ä‚¨‚¯C%sC“ğ‚ÌÅŠú‚Ì‚¾I",
+            verbalize(rn2(2) ? "ä»Šã¨ãªã£ã¦ã‚‚ãªãŠæ±ã®å‘½ã¯ã‚ãˆã¦è¡°ãˆã‚‹ã®ã ï¼Œ%sï¼"
+                             : "æ¯ã‚’å‘³ã‚ã£ã¦ãŠã‘ï¼Œ%sï¼Œæ±ã®æœ€æœŸã®æ™‚ã ï¼",
                       random_insult[rn2(SIZE(random_insult))]);
 #endif
         else if (mtmp->mhp < 5 && !rn2(2)) /* Parthian shot */
 /*JP
             verbalize(rn2(2) ? "I shall return." : "I'll be back.");
 */
-            verbalize(rn2(2) ? "—]‚Í•K‚¸‹A‚Á‚Ä‚­‚éD" : "—]‚Í–ß‚Á‚Ä‚­‚éD");
+            verbalize(rn2(2) ? "ä½™ã¯å¿…ãšå¸°ã£ã¦ãã‚‹ï¼" : "ä½™ã¯æˆ»ã£ã¦ãã‚‹ï¼");
         else
 #if 0 /*JP*/
             verbalize("%s %s!",
                       random_malediction[rn2(SIZE(random_malediction))],
                       random_insult[rn2(SIZE(random_insult))]);
 #else
-            verbalize("%sC%sI",
+            verbalize("%sï¼Œ%sï¼",
                       random_malediction[rn2(SIZE(random_malediction))],
                       random_insult[rn2(SIZE(random_insult))]);
 #endif
@@ -736,7 +736,7 @@ register struct monst *mtmp;
 /*JP
             pline("%s casts aspersions on your ancestry.", Monnam(mtmp));
 */
-                pline("%s‚Í‚ ‚È‚½‚Ì‰Æ•¿‚ğ’†‚µ‚½D", Monnam(mtmp));
+                pline("%sã¯ã‚ãªãŸã®å®¶æŸ„ã‚’ä¸­å‚·ã—ãŸï¼", Monnam(mtmp));
         else
             com_pager(rn2(QTN_DEMONIC) + QT_DEMONIC);
     }

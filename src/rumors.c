@@ -150,7 +150,7 @@ boolean exclude_cookie;
 #if 0 /*JP*/
             && (strstri(rumor_buf, "fortune") || strstri(rumor_buf, "pity")));
 #else
-            && (strstri(rumor_buf, "è") || strstri(rumor_buf, "‚È‚ñ‚Ä‚±‚Æ‚¾")));
+            && (strstri(rumor_buf, "å ") || strstri(rumor_buf, "ãªã‚“ã¦ã“ã¨ã ")));
 #endif
         (void) dlb_fclose(rumors);
         if (count >= 50)
@@ -161,7 +161,7 @@ boolean exclude_cookie;
 /*JP
         pline("Can't open rumors file!");
 */
-        pline("rumorsƒtƒ@ƒCƒ‹‚ªŠJ‚¯‚È‚¢I");
+        pline("rumorsãƒ•ã‚¡ã‚¤ãƒ«ãŒé–‹ã‘ãªã„ï¼");
         true_rumor_size = -1; /* don't try to open it again */
     }
 /* this is safe either way, so do it always since we can't get the definition
@@ -334,7 +334,7 @@ int mechanism;
 /*JP
         "This cookie has a scrap of paper inside.";
 */
-        "‚±‚ÌƒNƒbƒL[‚É‚Í†Ø‚ª“ü‚Á‚Ä‚¢‚éD";
+        "ã“ã®ã‚¯ãƒƒã‚­ãƒ¼ã«ã¯ç´™åˆ‡ãŒå…¥ã£ã¦ã„ã‚‹ï¼";
     const char *line;
     char buf[BUFSZ];
     boolean reading = (mechanism == BY_COOKIE || mechanism == BY_PAPER);
@@ -349,7 +349,7 @@ int mechanism;
 /*JP
             pline("What a pity that you cannot read it!");
 */
-            pline("‚»‚ê‚ğ“Ç‚ß‚È‚¢‚È‚ñ‚Ä‹C‚Ì“Å‚ÈI");
+            pline("ãã‚Œã‚’èª­ã‚ãªã„ãªã‚“ã¦æ°—ã®æ¯’ãªï¼");
             return;
         }
     }
@@ -358,7 +358,7 @@ int mechanism;
 /*JP
         line = "NetHack rumors file closed for renovation.";
 */
-        line = "‰\‚Ì^‘Š‚ÍüV‚Ì‚½‚ß‹xŠ§‚µ‚Ä‚¢‚éD";
+        line = "å™‚ã®çœŸç›¸ã¯åˆ·æ–°ã®ãŸã‚ä¼‘åˆŠã—ã¦ã„ã‚‹ï¼";
     switch (mechanism) {
     case BY_ORACLE:
         /* Oracle delivers the rumor */
@@ -368,10 +368,10 @@ int mechanism;
                        : (!rn2(3) ? "casually "
                                   : (rn2(2) ? "nonchalantly " : ""))));
 #else
-        pline("–ñ‘©‚Ç‚¨‚è‚ÉCŒ«Ò‚Í%sq‚×‚½:",
-              (!rn2(4) ? "–³‘¢ì‚É"
-                       : (!rn2(3) ? "‰½‹C‚È‚­"
-                                  : (rn2(2) ? "–³“Ú’…‚É" : ""))));
+        pline("ç´„æŸã©ãŠã‚Šã«ï¼Œè³¢è€…ã¯%sè¿°ã¹ãŸ:",
+              (!rn2(4) ? "ç„¡é€ ä½œã«"
+                       : (!rn2(3) ? "ä½•æ°—ãªã"
+                                  : (rn2(2) ? "ç„¡é “ç€ã«" : ""))));
 #endif
         verbalize1(line);
         /* [WIS exercized by getrumor()] */
@@ -383,7 +383,7 @@ int mechanism;
 /*JP
         pline("It reads:");
 */
-        pline("‚»‚ê‚ğ“Ç‚ñ‚¾:");
+        pline("ãã‚Œã‚’èª­ã‚“ã :");
         break;
     }
     pline1(line);
@@ -482,16 +482,16 @@ boolean delphi;
 /*JP
                      ? "The Oracle scornfully takes all your money and says:"
 */
-                     ? "Œ«Ò‚ÍŒy•Ì‚µ‚½‚æ‚¤‚É‚ ‚È‚½‚Ì‘S‚Ä‚Ì‚¨‹à‚ğó‚¯‚Æ‚èCq‚×‚½F"
+                     ? "è³¢è€…ã¯è»½è”‘ã—ãŸã‚ˆã†ã«ã‚ãªãŸã®å…¨ã¦ã®ãŠé‡‘ã‚’å—ã‘ã¨ã‚Šï¼Œè¿°ã¹ãŸï¼š"
 /*JP
                      : "The Oracle meditates for a moment and then intones:");
 */
-                     : "Œ«Ò‚Í‚µ‚Î‚ç‚­–»‘z‚µC‰Ì‚¤‚æ‚¤‚É˜b‚µ‚½F");
+                     : "è³¢è€…ã¯ã—ã°ã‚‰ãå†¥æƒ³ã—ï¼Œæ­Œã†ã‚ˆã†ã«è©±ã—ãŸï¼š");
         else
 /*JP
             putstr(tmpwin, 0, "The message reads:");
 */
-            putstr(tmpwin, 0, "ƒƒbƒZ[ƒW:");
+            putstr(tmpwin, 0, "ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸:");
         putstr(tmpwin, 0, "");
 
         while (dlb_fgets(line, COLNO, oracles) && strcmp(line, "---\n")) {
@@ -506,7 +506,7 @@ boolean delphi;
 /*JP
         pline("Can't open oracles file!");
 */
-        pline("oraclesƒtƒ@ƒCƒ‹‚ğŠJ‚¯‚È‚¢I");
+        pline("oraclesãƒ•ã‚¡ã‚¤ãƒ«ã‚’é–‹ã‘ãªã„ï¼");
         oracle_flg = -1; /* don't try to open it again */
     }
 }
@@ -527,26 +527,26 @@ struct monst *oracl;
 /*JP
         There("is no one here to consult.");
 */
-        pline("‚±‚±‚É‚Í_‘õ‚ğq‚×‚él‚Í‚¢‚È‚¢D");
+        pline("ã“ã“ã«ã¯ç¥è¨—ã‚’è¿°ã¹ã‚‹äººã¯ã„ãªã„ï¼");
         return 0;
     } else if (!oracl->mpeaceful) {
 /*JP
         pline("%s is in no mood for consultations.", Monnam(oracl));
 */
-        pline("Œ«Ò‚Í_‘õ‚ğ‚°‚Ä‚­‚ê‚é•µˆÍ‹C‚Å‚Í‚È‚¢D");
+        pline("è³¢è€…ã¯ç¥è¨—ã‚’å‘Šã’ã¦ãã‚Œã‚‹é›°å›²æ°—ã§ã¯ãªã„ï¼");
         return 0;
     } else if (!umoney) {
 /*JP
         You("have no money.");
 */
-        You("‚¨‹à‚ª‚È‚¢D");
+        You("ãŠé‡‘ãŒãªã„ï¼");
         return 0;
     }
 
 /*JP
     Sprintf(qbuf, "\"Wilt thou settle for a minor consultation?\" (%d %s)",
 */
-    Sprintf(qbuf, "u“ğC’áˆÊ‚Ì_‘õ‚ğó‚¯‚é‚©Hv(%d%s)",
+    Sprintf(qbuf, "ã€Œæ±ï¼Œä½ä½ã®ç¥è¨—ã‚’å—ã‘ã‚‹ã‹ï¼Ÿã€(%d%s)",
             minor_cost, currency((long) minor_cost));
     switch (ynq(qbuf)) {
     default:
@@ -557,7 +557,7 @@ struct monst *oracl;
 /*JP
             You("don't even have enough money for that!");
 */
-            You("‚±‚ê‚É•¥‚¦‚é‚¾‚¯‚Ì‚¨‹à‚·‚ç‚Á‚Ä‚¢‚È‚¢I");
+            You("ã“ã‚Œã«æ‰•ãˆã‚‹ã ã‘ã®ãŠé‡‘ã™ã‚‰æŒã£ã¦ã„ãªã„ï¼");
             return 0;
         }
         u_pay = minor_cost;
@@ -566,7 +566,7 @@ struct monst *oracl;
         if (umoney <= (long) minor_cost /* don't even ask */
             || (oracle_cnt == 1 || oracle_flg < 0))
             return 0;
-        Sprintf(qbuf, "u‚È‚ç‚Î“ğC‚ˆÊ‚Ì_‘õ‚ğó‚¯‚é‚©Hv(%d%s)",
+        Sprintf(qbuf, "ã€Œãªã‚‰ã°æ±ï¼Œé«˜ä½ã®ç¥è¨—ã‚’å—ã‘ã‚‹ã‹ï¼Ÿã€(%d%s)",
                 major_cost, currency((long) major_cost));
         if (yn(qbuf) != 'y')
             return 0;

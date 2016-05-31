@@ -75,15 +75,15 @@ static NEARDATA struct obj *current_container;
 /*JP
 static const char moderateloadmsg[] = "You have a little trouble lifting";
 */
-static const char moderateloadmsg[] = "‚ğ‚Á‚½‚ç­‚µ‚Ó‚ç‚Â‚¢‚½";
+static const char moderateloadmsg[] = "ã‚’æŒã£ãŸã‚‰å°‘ã—ãµã‚‰ã¤ã„ãŸ";
 /*JP
 static const char nearloadmsg[] = "You have much trouble lifting";
 */
-static const char nearloadmsg[] = "‚Í‚¸‚Á‚µ‚è‚ÆŒ¨‚É‚Ì‚µ‚©‚©‚Á‚½";
+static const char nearloadmsg[] = "ã¯ãšã£ã—ã‚Šã¨è‚©ã«ã®ã—ã‹ã‹ã£ãŸ";
 /*JP
 static const char overloadmsg[] = "You have extreme difficulty lifting";
 */
-static const char overloadmsg[] = "‚ğ‚¿‚ ‚°‚é‚Ì‚Í‚Æ‚Ä‚à‚Â‚ç‚¢";
+static const char overloadmsg[] = "ã‚’æŒã¡ã‚ã’ã‚‹ã®ã¯ã¨ã¦ã‚‚ã¤ã‚‰ã„";
 
 /* BUG: this lets you look at cockatrice corpses while blind without
    touching them */
@@ -149,10 +149,10 @@ int *itemcount;
  *	"?/a" or "a?/" or "/a?",&c picks all '?' even though no '/'
  *	    (ie, treated as if it had just been "?a").
  */
-/*JP CHECK: 3.4.3 ‚Å‚ÌŒÄ‚Ño‚µŒ³
-pickup.c:572:("E‚¤")   if (!query_classes(oclasses, &selective, &all_of_a_type,
-pickup.c:2604:("æ‚èo‚·")    if (query_classes(select, &one_by_one, &allflag,
-pickup.c:2704:("“ü‚ê‚é")        if (query_classes(select, &one_by_one, &allflag, "“ü‚ê‚é",
+/*JP CHECK: 3.4.3 ã§ã®å‘¼ã³å‡ºã—å…ƒ
+pickup.c:572:("æ‹¾ã†")   if (!query_classes(oclasses, &selective, &all_of_a_type,
+pickup.c:2604:("å–ã‚Šå‡ºã™")    if (query_classes(select, &one_by_one, &allflag,
+pickup.c:2704:("å…¥ã‚Œã‚‹")        if (query_classes(select, &one_by_one, &allflag, "å…¥ã‚Œã‚‹",
 */
 STATIC_OVL boolean
 query_classes(oclasses, one_at_a_time, everything, action, objs, here,
@@ -206,7 +206,7 @@ int *menu_on_demand;
         Sprintf(qbuf, "What kinds of thing do you want to %s? [%s]", action,
                 ilets);
 #else
-        Sprintf(qbuf,"‚Ç‚Ìí—Ş‚Ì‚à‚Ì‚ğ%s‚©H[%s]", jpolite(action),
+        Sprintf(qbuf,"ã©ã®ç¨®é¡ã®ã‚‚ã®ã‚’%sã‹ï¼Ÿ[%s]", jpolite(action),
                 ilets);
 #endif
         getlin(qbuf, inbuf);
@@ -245,25 +245,25 @@ int *menu_on_demand;
 /*JP
                             !strcmp(action, "pick up")
 */
-                            !strcmp(action, "E‚¤")
+                            !strcmp(action, "æ‹¾ã†")
 /*JP
                                 ? "here"
 */
-                                ? "‚±‚±"
+                                ? "ã“ã“"
 /*JP
                                 : !strcmp(action, "take out") ? "inside" : "";
 */
-                                : !strcmp(action, "æ‚èo‚·") ? "‚Ì’†" : "";
+                                : !strcmp(action, "å–ã‚Šå‡ºã™") ? "ã®ä¸­" : "";
                     if (*where)
 /*JP
                         There("are no %c's %s.", sym, where);
 */
-                        pline("%c‚Í%s‚É‚È‚¢D", sym, where);
+                        pline("%cã¯%sã«ãªã„ï¼", sym, where);
                     else
 /*JP
                         You("have no %c's.", sym);
 */
-                        You("%c‚Í‚Á‚Ä‚¢‚È‚¢D", sym);
+                        You("%cã¯æŒã£ã¦ã„ãªã„ï¼", sym);
                     not_everything = TRUE;
                 }
             }
@@ -300,7 +300,7 @@ boolean remotely;
 /*JP
     pline("Touching %s is a fatal mistake.",
 */
-    pline("%s‚ÉG‚ê‚é‚Ì‚Í’v–½“I‚ÈŠÔˆá‚¢‚¾D",
+    pline("%sã«è§¦ã‚Œã‚‹ã®ã¯è‡´å‘½çš„ãªé–“é•ã„ã ï¼",
           corpse_xname(obj, (const char *) 0, CXN_SINGULAR | CXN_ARTICLE));
     instapetrify(killer_xname(obj));
     return TRUE;
@@ -318,11 +318,11 @@ boolean remotely;
 /*JP
     pline("At your %s, the corpse suddenly moves...",
 */
-    pline("‚ ‚È‚½‚ª%s‚é‚Æ“Ë‘R€‘Ì‚ª“®‚«o‚µ‚½DDD",
+    pline("ã‚ãªãŸãŒ%sã‚‹ã¨çªç„¶æ­»ä½“ãŒå‹•ãå‡ºã—ãŸï¼ï¼ï¼",
 /*JP
           remotely ? "attempted acquisition" : "touch");
 */
-          remotely ? "Šl“¾‚µ‚æ‚¤‚Æ‚·" : "G");
+          remotely ? "ç²å¾—ã—ã‚ˆã†ã¨ã™" : "è§¦");
     (void) revive_corpse(obj);
     exercise(A_WIS, FALSE);
     return TRUE;
@@ -555,7 +555,7 @@ int what; /* should be a long */
 /*JP
                 You("are physically incapable of picking anything up.");
 */
-                You("•¨—“I‚ÉE‚¢‚ ‚°‚é‚±‚Æ‚ª‚Å‚«‚È‚¢D");
+                You("ç‰©ç†çš„ã«æ‹¾ã„ã‚ã’ã‚‹ã“ã¨ãŒã§ããªã„ï¼");
             else
                 check_here(FALSE);
             return 0;
@@ -593,7 +593,7 @@ int what; /* should be a long */
 /*JP
             Sprintf(buf, "Pick %d of what?", count);
 */
-            Sprintf(buf, "‰½‚ğ%dŒÂE‚¢‚Ü‚·‚©H", count);
+            Sprintf(buf, "ä½•ã‚’%då€‹æ‹¾ã„ã¾ã™ã‹ï¼Ÿ", count);
             val_for_n_or_more = count; /* set up callback selector */
             n = query_objlist(buf, objchain, traverse_how | AUTOSELECT_SINGLE
                                                  | INVORDER_SORT,
@@ -605,7 +605,7 @@ int what; /* should be a long */
 /*JP
             n = query_objlist("Pick up what?", objchain,
 */
-            n = query_objlist("‰½‚ğE‚¢‚Ü‚·‚©H", objchain,
+            n = query_objlist("ä½•ã‚’æ‹¾ã„ã¾ã™ã‹ï¼Ÿ", objchain,
                               traverse_how | AUTOSELECT_SINGLE | INVORDER_SORT
                                   | FEEL_COCKATRICE,
                               &pick_list, PICK_ANY, all_but_uchain);
@@ -654,12 +654,12 @@ int what; /* should be a long */
 /*JP
             There("are %s objects here.", (ct <= 10) ? "several" : "many");
 */
-            pline("‚±‚±‚É‚Í%s‚à‚Ì‚ª‚ ‚éD", (ct <= 10) ? "‚¢‚­‚Â‚©" : "‘òR‚Ì");
+            pline("ã“ã“ã«ã¯%sã‚‚ã®ãŒã‚ã‚‹ï¼", (ct <= 10) ? "ã„ãã¤ã‹" : "æ²¢å±±ã®");
             if (!query_classes(oclasses, &selective, &all_of_a_type,
 /*JP
                                "pick up", objchain,
 */
-                               "E‚¤", objchain,
+                               "æ‹¾ã†", objchain,
                                traverse_how == BY_NEXTHERE, &via_menu)) {
                 if (!via_menu)
                     return 0;
@@ -667,7 +667,7 @@ int what; /* should be a long */
 /*JP
                     "Pick up what?", objchain,
 */
-                    "‰½‚ğE‚¢‚Ü‚·‚©H", objchain,
+                    "ä½•ã‚’æ‹¾ã„ã¾ã™ã‹ï¼Ÿ", objchain,
                     traverse_how | (selective ? 0 : INVORDER_SORT),
                     &pick_list, PICK_ANY,
                     via_menu == -2 ? allow_all : allow_category);
@@ -692,8 +692,8 @@ int what; /* should be a long */
                 (void) safe_qbuf(qbuf, "Pick up ", "?", obj, doname,
                                  ansimpleoname, something);
 #else
-                (void) safe_qbuf(qbuf, "", "‚ğE‚¢‚Ü‚·‚©H", obj, doname,
-                                 ansimpleoname, "‚±‚ê");
+                (void) safe_qbuf(qbuf, "", "ã‚’æ‹¾ã„ã¾ã™ã‹ï¼Ÿ", obj, doname,
+                                 ansimpleoname, "ã“ã‚Œ");
 #endif
                 switch ((obj->quan < 2L) ? ynaq(qbuf) : ynNaq(qbuf)) {
                 case 'q':
@@ -949,8 +949,8 @@ boolean FDECL((*allow), (OBJ_P)); /* allow function */
             Sprintf(buf, "%s Creatures",
                     is_animal(u.ustuck->data) ? "Swallowed" : "Engulfed");
 #else
-            Sprintf(buf, "%s‚Ü‚ê‚Ä‚¢‚é‰ö•¨",
-                    is_animal(u.ustuck->data) ? "ˆù‚İ" : "Šª‚«");
+            Sprintf(buf, "%sè¾¼ã¾ã‚Œã¦ã„ã‚‹æ€ªç‰©",
+                    is_animal(u.ustuck->data) ? "é£²ã¿" : "å·»ã");
 #endif
             add_menu(win, NO_GLYPH, &any, 0, 0, iflags.menu_headings, buf,
                      MENU_UNSELECTED);
@@ -1080,7 +1080,7 @@ int how;               /* type of query */
 /*JP
                  (qflags & WORN_TYPES) ? "All worn types" : "All types",
 */
-                 (qflags & WORN_TYPES) ? "g‚É‚Â‚¯‚é‚à‚Ì‘S‚Ä" : "‘S‚Ä",
+                 (qflags & WORN_TYPES) ? "èº«ã«ã¤ã‘ã‚‹ã‚‚ã®å…¨ã¦" : "å…¨ã¦",
                  MENU_UNSELECTED);
         invlet = 'b';
     } else
@@ -1120,7 +1120,7 @@ int how;               /* type of query */
 /*JP
         add_menu(win, NO_GLYPH, &any, invlet, 0, ATR_NONE, "Unpaid items",
 */
-        add_menu(win, NO_GLYPH, &any, invlet, 0, ATR_NONE, "–¢•¥‚Ì‚à‚Ì",
+        add_menu(win, NO_GLYPH, &any, invlet, 0, ATR_NONE, "æœªæ‰•ã®ã‚‚ã®",
                  MENU_UNSELECTED);
     }
     /* billed items: checked by caller, so always include if BILLED_TYPES */
@@ -1132,7 +1132,7 @@ int how;               /* type of query */
 /*JP
                  "Unpaid items already used up", MENU_UNSELECTED);
 */
-                 "–¢•¥‚Åg‚Á‚Ä‚µ‚Ü‚Á‚½‚à‚Ì", MENU_UNSELECTED);
+                 "æœªæ‰•ã§ä½¿ã£ã¦ã—ã¾ã£ãŸã‚‚ã®", MENU_UNSELECTED);
     }
     if (qflags & CHOOSE_ALL) {
         invlet = 'A';
@@ -1142,11 +1142,11 @@ int how;               /* type of query */
 /*JP
                  (qflags & WORN_TYPES) ? "Auto-select every item being worn"
 */
-                 (qflags & WORN_TYPES) ? "g‚É‚Â‚¯‚ç‚ê‚é•¨‘S‚Ä"
+                 (qflags & WORN_TYPES) ? "èº«ã«ã¤ã‘ã‚‰ã‚Œã‚‹ç‰©å…¨ã¦"
 /*JP
                                        : "Auto-select every item",
 */
-                                       : "‘S‚Ä",
+                                       : "å…¨ã¦",
                  MENU_UNSELECTED);
     }
     /* items with b/u/c/unknown if there are any */
@@ -1158,7 +1158,7 @@ int how;               /* type of query */
 /*JP
                  "Items known to be Blessed", MENU_UNSELECTED);
 */
-                 "j•Ÿ‚³‚ê‚Ä‚¢‚é‚Æ‚í‚©‚Á‚Ä‚¢‚é‚à‚Ì", MENU_UNSELECTED);
+                 "ç¥ç¦ã•ã‚Œã¦ã„ã‚‹ã¨ã‚ã‹ã£ã¦ã„ã‚‹ã‚‚ã®", MENU_UNSELECTED);
     }
     if (do_cursed) {
         invlet = 'C';
@@ -1168,7 +1168,7 @@ int how;               /* type of query */
 /*JP
                  "Items known to be Cursed", MENU_UNSELECTED);
 */
-                 "ô‚í‚ê‚Ä‚¢‚é‚Æ‚í‚©‚Á‚Ä‚¢‚é‚à‚Ì", MENU_UNSELECTED);
+                 "å‘ªã‚ã‚Œã¦ã„ã‚‹ã¨ã‚ã‹ã£ã¦ã„ã‚‹ã‚‚ã®", MENU_UNSELECTED);
     }
     if (do_uncursed) {
         invlet = 'U';
@@ -1178,7 +1178,7 @@ int how;               /* type of query */
 /*JP
                  "Items known to be Uncursed", MENU_UNSELECTED);
 */
-                 "ô‚í‚ê‚Ä‚¢‚È‚¢‚Æ‚í‚©‚Á‚Ä‚¢‚é‚à‚Ì", MENU_UNSELECTED);
+                 "å‘ªã‚ã‚Œã¦ã„ãªã„ã¨ã‚ã‹ã£ã¦ã„ã‚‹ã‚‚ã®", MENU_UNSELECTED);
     }
     if (do_buc_unknown) {
         invlet = 'X';
@@ -1188,7 +1188,7 @@ int how;               /* type of query */
 /*JP
                  "Items of unknown B/C/U status", MENU_UNSELECTED);
 */
-                 "j•Ÿ^ô‚¢‚ª‚í‚©‚ç‚È‚¢‚à‚Ì", MENU_UNSELECTED);
+                 "ç¥ç¦ï¼å‘ªã„ãŒã‚ã‹ã‚‰ãªã„ã‚‚ã®", MENU_UNSELECTED);
     }
     end_menu(win, qstr);
     n = select_menu(win, how, pick_list);
@@ -1337,20 +1337,20 @@ int *wt_before, *wt_after;
 /*JP
             Sprintf(where, "in %s", the(xname(container)));
 */
-            Sprintf(where, "%s‚Ì’†‚É“ü‚Á‚Ä‚¢‚é", the(xname(container)));
+            Sprintf(where, "%sã®ä¸­ã«å…¥ã£ã¦ã„ã‚‹", the(xname(container)));
 /*JP
             verb = "carry";
 */
-            verb = "‰^‚×‚È‚¢";
+            verb = "é‹ã¹ãªã„";
         } else {
 /*JP
             Strcpy(where, "lying here");
 */
-            Strcpy(where, "‚±‚±‚É’u‚¢‚Ä‚ ‚é");
+            Strcpy(where, "ã“ã“ã«ç½®ã„ã¦ã‚ã‚‹");
 /*JP
             verb = telekinesis ? "acquire" : "lift";
 */
-            verb = telekinesis ? "Šl“¾‚Å‚«‚È‚¢" : "‚¿‚ ‚°‚ç‚ê‚È‚¢";
+            verb = telekinesis ? "ç²å¾—ã§ããªã„" : "æŒã¡ã‚ã’ã‚‰ã‚Œãªã„";
         }
     } else {
         /* lint suppression */
@@ -1364,8 +1364,8 @@ int *wt_before, *wt_after;
             You("can only %s %s of the %s %s.", verb,
                 (qq == 1L) ? "one" : "some", obj_nambuf, where);
 #else
-            You("%s%s‚Ì‚¤‚¿‚Ì%s‚µ‚©%sD",
-                where, obj_nambuf, (qq == 1L) ? "ˆê‚Â" : "‚¢‚­‚Â‚©", verb);
+            You("%s%sã®ã†ã¡ã®%sã—ã‹%sï¼",
+                where, obj_nambuf, (qq == 1L) ? "ä¸€ã¤" : "ã„ãã¤ã‹", verb);
 #endif
         *wt_after = wt;
         return qq;
@@ -1375,7 +1375,7 @@ int *wt_before, *wt_after;
 #if 0 /*JP*/
         Strcpy(where, "here"); /* slightly shorter form */
 #else
-        Strcpy(where, "‚±‚±‚É‚Í");  /* slightly shorter form */
+        Strcpy(where, "ã“ã“ã«ã¯");  /* slightly shorter form */
 #endif
     if (invent || umoney) {
 #if 0 /*JP*/
@@ -1383,7 +1383,7 @@ int *wt_before, *wt_after;
         prefx2 = "";
         suffx = " any more";
 #else
-        prefx1 = "‚±‚êˆÈã";
+        prefx1 = "ã“ã‚Œä»¥ä¸Š";
 #endif
     } else {
 #if 0 /*JP*/
@@ -1391,14 +1391,14 @@ int *wt_before, *wt_after;
         prefx2 = "is too heavy for you to ";
         suffx = "";
 #else
-        prefx1 = "d‚·‚¬‚Ä";
+        prefx1 = "é‡ã™ãã¦";
 #endif
     }
 #if 0 /*JP:C*/
     There("%s %s %s, but %s%s%s%s.", otense(obj, "are"), obj_nambuf, where,
           prefx1, prefx2, verb, suffx);
 #else
-    pline("%s%s‚ª‚ ‚éC‚µ‚©‚µ%s%sD",
+    pline("%s%sãŒã‚ã‚‹ï¼Œã—ã‹ã—%s%sï¼",
           where, obj_nambuf, prefx1, verb);
 #endif
 
@@ -1421,7 +1421,7 @@ boolean telekinesis;
         You("cannot get your %s around this %s.", body_part(HAND),
             xname(obj));
 #else
-        You("%s‚ğ%s‚Å‚¿‚ ‚°‚é‚±‚Æ‚ª‚Å‚«‚È‚¢D",
+        You("%sã‚’%sã§æŒã¡ã‚ã’ã‚‹ã“ã¨ãŒã§ããªã„ï¼",
                         xname(obj), body_part(HAND));
 #endif
         return -1;
@@ -1440,8 +1440,8 @@ boolean telekinesis;
         You("are carrying too much stuff to pick up %s %s.",
             (obj->quan == 1L) ? "another" : "more", simpleonames(obj));
 #else
-        You("%s‚ğ%sE‚¤‚É‚Í•¨‚ğ‚¿‚·‚¬‚Ä‚¢‚éD",
-            simpleonames(obj), (obj->quan == 1L) ? "‚à‚¤ˆê‚Â" : "‚à‚Á‚Æ");
+        You("%sã‚’%sæ‹¾ã†ã«ã¯ç‰©ã‚’æŒã¡ã™ãã¦ã„ã‚‹ï¼",
+            simpleonames(obj), (obj->quan == 1L) ? "ã‚‚ã†ä¸€ã¤" : "ã‚‚ã£ã¨");
 #endif
         return -1;
     }
@@ -1457,7 +1457,7 @@ boolean telekinesis;
 /*JP
         Your("knapsack cannot accommodate any more items.");
 */
-        Your("ƒiƒbƒvƒUƒbƒN‚Í‚±‚êˆÈãƒAƒCƒeƒ€‚ğ‹l‚ß‚ß‚È‚¢D");
+        Your("ãƒŠãƒƒãƒ—ã‚¶ãƒƒã‚¯ã¯ã“ã‚Œä»¥ä¸Šã‚¢ã‚¤ãƒ†ãƒ ã‚’è©°ã‚è¾¼ã‚ãªã„ï¼");
         result = -1; /* nothing lifted */
     } else {
         result = 1;
@@ -1483,17 +1483,17 @@ boolean telekinesis;
                                        ? nearloadmsg
                                        : moderateloadmsg);
 #else
-                /*JP:ƒAƒCƒeƒ€–¼‚ÌŒã‚ë‚É•t‚¯‚½‚¢‚ªsafe_qbuf‚Ìqsuffix‚Í
-                     qbuf‚Æ‹¤—p‚Å‚«‚È‚¢‚Ì‚Å•Ê‚Éqsfx‚ğ—pˆÓ‚µ‚Ä‚»‚¿‚ç‚ğg‚¤*/
+                /*JP:ã‚¢ã‚¤ãƒ†ãƒ åã®å¾Œã‚ã«ä»˜ã‘ãŸã„ãŒsafe_qbufã®qsuffixã¯
+                     qbufã¨å…±ç”¨ã§ããªã„ã®ã§åˆ¥ã«qsfxã‚’ç”¨æ„ã—ã¦ãã¡ã‚‰ã‚’ä½¿ã†*/
                 Strcpy(qsfx, (next_encumbr > HVY_ENCUMBER)
                                  ? overloadmsg
                                  : (next_encumbr > MOD_ENCUMBER)
                                        ? nearloadmsg
                                        : moderateloadmsg);
-                Strcat(qsfx, "D‘±‚¯‚Ü‚·‚©H");
+                Strcat(qsfx, "ï¼ç¶šã‘ã¾ã™ã‹ï¼Ÿ");
 #endif
 
-#if 0 /*JP*//*“ú–{Œê‚Å‚Í‚Ç‚¿‚ç‚àu‚Âv‚ÅÏ‚Ü‚¹‚é*/
+#if 0 /*JP*//*æ—¥æœ¬èªã§ã¯ã©ã¡ã‚‰ã‚‚ã€ŒæŒã¤ã€ã§æ¸ˆã¾ã›ã‚‹*/
                 if (container)
                     (void) strsubst(qbuf, "lifting", "removing");
 #endif
@@ -1501,9 +1501,9 @@ boolean telekinesis;
                 Strcat(qbuf, " ");
                 (void) safe_qbuf(qbuf, qbuf, ".  Continue?", obj, doname,
                                  ansimpleoname, something);
-#else /*JP:‘O‚É‚Í‰½‚à•t‚¯‚¸Œã‚ë‚Éqsfx‚ğ•t‚¯‚é*/
+#else /*JP:å‰ã«ã¯ä½•ã‚‚ä»˜ã‘ãšå¾Œã‚ã«qsfxã‚’ä»˜ã‘ã‚‹*/
                 (void) safe_qbuf(qbuf, "", qsfx, obj, doname,
-                                 ansimpleoname, "‚±‚ê");
+                                 ansimpleoname, "ã“ã‚Œ");
 #endif
                 obj->quan = savequan;
                 switch (ynq(qbuf)) {
@@ -1568,8 +1568,8 @@ boolean telekinesis; /* not picking it up directly by hand */
                       otense(obj, "turn"), telekinesis ? "raise" : "pick",
                       (obj->quan == 1L) ? "it" : "them");
 #else
-            pline("Šª•¨‚Í‚ ‚È‚½‚ª%sã‚°‚é‚Æo‚Æ‚È‚Á‚Ä‚µ‚Ü‚Á‚½D",
-                      telekinesis ? "‚¿" : "E‚¢");
+            pline("å·»ç‰©ã¯ã‚ãªãŸãŒ%sä¸Šã’ã‚‹ã¨å¡µã¨ãªã£ã¦ã—ã¾ã£ãŸï¼",
+                      telekinesis ? "æŒã¡" : "æ‹¾ã„");
 #endif
             if (!(objects[SCR_SCARE_MONSTER].oc_name_known)
                 && !(objects[SCR_SCARE_MONSTER].oc_uname))
@@ -1648,20 +1648,20 @@ encumber_msg()
 /*JP
             Your("movements are slowed slightly because of your load.");
 */
-            Your("“®‚«‚Í‰×•¨‚Ì‚½‚ß‚É­‚µ’x‚­‚È‚Á‚½D");
+            Your("å‹•ãã¯è·ç‰©ã®ãŸã‚ã«å°‘ã—é…ããªã£ãŸï¼");
             break;
         case 2:
 /*JP
             You("rebalance your load.  Movement is difficult.");
 */
-            You("‰×•¨‚Ì’Ş‡‚ğ‚Æ‚è’¼‚µ‚½‚ªC“®‚«‚É‚­‚¢D");
+            You("è·ç‰©ã®é‡£åˆã‚’ã¨ã‚Šç›´ã—ãŸãŒï¼Œå‹•ãã«ãã„ï¼");
             break;
         case 3:
 #if 0 /*JP*/
             You("%s under your heavy load.  Movement is very hard.",
                 stagger(youmonst.data, "stagger"));
 #else
-            You("‰×•¨‚Ìd‚İ‚Å‚Ì‚½‚¤‚¿‚Ü‚í‚Á‚½D“®‚­‚Ì‚ª”ñí‚É‚«‚Â‚¢D");
+            You("è·ç‰©ã®é‡ã¿ã§ã®ãŸã†ã¡ã¾ã‚ã£ãŸï¼å‹•ãã®ãŒéå¸¸ã«ãã¤ã„ï¼");
 #endif
             break;
         default:
@@ -1669,7 +1669,7 @@ encumber_msg()
             You("%s move a handspan with this load!",
                 newcap == 4 ? "can barely" : "can't even");
 #else
-            You("‚±‚Ìd‚³‚Å‚Í­‚µ‚à“®‚¯‚È‚¢I");
+            You("ã“ã®é‡ã•ã§ã¯å°‘ã—ã‚‚å‹•ã‘ãªã„ï¼");
 #endif
             break;
         }
@@ -1680,26 +1680,26 @@ encumber_msg()
 /*JP
             Your("movements are now unencumbered.");
 */
-            Your("“®‚«‚ÍŠy‚É‚È‚Á‚½D");
+            Your("å‹•ãã¯æ¥½ã«ãªã£ãŸï¼");
             break;
         case 1:
 /*JP
             Your("movements are only slowed slightly by your load.");
 */
-            You("‚¿‚å‚Á‚Æ“®‚«‚â‚·‚­‚È‚Á‚½D");
+            You("ã¡ã‚‡ã£ã¨å‹•ãã‚„ã™ããªã£ãŸï¼");
             break;
         case 2:
 /*JP
             You("rebalance your load.  Movement is still difficult.");
 */
-            You("‰×•¨‚Ì’Ş‡‚ğ‚Æ‚è’¼‚µ‚½D‚¾‚ª‚Ü‚¾“®‚­‚Ì‚Í‚«‚Â‚¢D");
+            You("è·ç‰©ã®é‡£åˆã‚’ã¨ã‚Šç›´ã—ãŸï¼ã ãŒã¾ã å‹•ãã®ã¯ãã¤ã„ï¼");
             break;
         case 3:
 #if 0 /*JP*/
             You("%s under your load.  Movement is still very hard.",
                 stagger(youmonst.data, "stagger"));
 #else
-            You("‰×•¨‚Ìd‚İ‚ª‚¸‚Á‚µ‚è‚ÆŒ¨‚É‚­‚éD‚Ü‚¾“®‚­‚Ì‚ª”ñí‚É‚«‚Â‚¢D");
+            You("è·ç‰©ã®é‡ã¿ãŒãšã£ã—ã‚Šã¨è‚©ã«ãã‚‹ï¼ã¾ã å‹•ãã®ãŒéå¸¸ã«ãã¤ã„ï¼");
 #endif
             break;
         }
@@ -1738,7 +1738,7 @@ boolean looting; /* loot vs tip */
 /*JP
     const char *verb = looting ? "loot" : "tip";
 */
-    const char *verb = looting ? "ŠJ‚¯‚é" : "‚Ğ‚Á‚­‚è•Ô‚·";
+    const char *verb = looting ? "é–‹ã‘ã‚‹" : "ã²ã£ãã‚Šè¿”ã™";
 
     if (!can_reach_floor(TRUE)) {
         if (u.usteed && P_SKILL(P_RIDING) < P_BASIC)
@@ -1753,21 +1753,21 @@ boolean looting; /* loot vs tip */
         You("cannot %s things that are deep in the %s.", verb,
             is_lava(x, y) ? "lava" : "water");
 #else
-        You("%s‚É[‚­‚É’¾‚ñ‚¾‚à‚Ì‚ğ%s‚±‚Æ‚Í‚Å‚«‚È‚¢D",
-            is_lava(u.ux, u.uy) ? "—nŠâ" : "…", verb);
+        You("%sã«æ·±ãã«æ²ˆã‚“ã ã‚‚ã®ã‚’%sã“ã¨ã¯ã§ããªã„ï¼",
+            is_lava(u.ux, u.uy) ? "æº¶å²©" : "æ°´", verb);
 #endif
         return FALSE;
     } else if (nolimbs(youmonst.data)) {
 /*JP
         pline("Without limbs, you cannot %s anything.", verb);
 */
-        pline("è‘«‚ª‚È‚¢‚Ì‚ÅC%s‚±‚Æ‚Í‚Å‚«‚È‚¢D", verb);
+        pline("æ‰‹è¶³ãŒãªã„ã®ã§ï¼Œ%sã“ã¨ã¯ã§ããªã„ï¼", verb);
         return FALSE;
     } else if (looting && !freehand()) {
 /*JP
         pline("Without a free %s, you cannot loot anything.",
 */
-        pline("©—R‚É‚È‚é%s‚ª‚È‚¢‚Ì‚ÅCŠJ‚¯‚é‚±‚Æ‚Í‚Å‚«‚È‚¢D",
+        pline("è‡ªç”±ã«ãªã‚‹%sãŒãªã„ã®ã§ï¼Œé–‹ã‘ã‚‹ã“ã¨ã¯ã§ããªã„ï¼",
               body_part(HAND));
         return FALSE;
     }
@@ -1801,7 +1801,7 @@ struct obj **cobjp;
         pline("%s locked.",
               cobj->lknown ? "It is" : "Hmmm, it turns out to be");
 #else
-        pline("%sŒ®‚ª‚©‚©‚Á‚Ä‚¢‚éD", cobj->lknown ? "" : "‚Ş[‚ñC");
+        pline("%séµãŒã‹ã‹ã£ã¦ã„ã‚‹ï¼", cobj->lknown ? "" : "ã‚€ãƒ¼ã‚“ï¼Œ");
 #endif
         cobj->lknown = 1;
         return 0;
@@ -1813,16 +1813,16 @@ struct obj **cobjp;
 /*JP
         You("carefully open the bag...");
 */
-        You("Td‚ÉŠ“‚ğŠJ‚¯‚½DDD");
+        You("æ…é‡ã«é„ã‚’é–‹ã‘ãŸï¼ï¼ï¼");
 /*JP
         pline("It develops a huge set of teeth and bites you!");
 */
-        pline("Š“‚©‚ç‘å‚«‚È•‚ª¶‚¦‚Ä‚«‚ÄC‚ ‚È‚½‚ğŠš‚ñ‚¾I");
+        pline("é„ã‹ã‚‰å¤§ããªæ­¯ãŒç”Ÿãˆã¦ãã¦ï¼Œã‚ãªãŸã‚’å™›ã‚“ã ï¼");
         tmp = rnd(10);
 /*JP
         losehp(Maybe_Half_Phys(tmp), "carnivorous bag", KILLED_BY_AN);
 */
-        losehp(Maybe_Half_Phys(tmp), "H“÷Š“‚ÉŠš‚Ü‚ê‚Ä", KILLED_BY_AN);
+        losehp(Maybe_Half_Phys(tmp), "é£Ÿè‚‰é„ã«å™›ã¾ã‚Œã¦", KILLED_BY_AN);
         makeknown(BAG_OF_TRICKS);
         return 1;
     }
@@ -1830,7 +1830,7 @@ struct obj **cobjp;
 /*JP
     You("%sopen %s...", (!cobj->cknown || !cobj->lknown) ? "carefully " : "",
 */
-    You("%s%s‚ğŠJ‚¯‚½DDD", (!cobj->cknown || !cobj->lknown) ? "Td‚É" : "",
+    You("%s%sã‚’é–‹ã‘ãŸï¼ï¼ï¼", (!cobj->cknown || !cobj->lknown) ? "æ…é‡ã«" : "",
         the(xname(cobj)));
     return use_container(cobjp, 0);
 }
@@ -1861,7 +1861,7 @@ doloot()
 #if 0 /*JP*/
         You("have no hands!"); /* not `body_part(HAND)' */
 #else
-        pline("‚ ‚È‚½‚É‚Íè‚ª‚È‚¢I");
+        pline("ã‚ãªãŸã«ã¯æ‰‹ãŒãªã„ï¼");
 #endif
         return 0;
     }
@@ -1872,7 +1872,7 @@ doloot()
 /*JP
             pline("Being confused, you find nothing to loot.");
 */
-            pline("¬—‚µ‚Ä‚¢‚é‚Ì‚ÅCŠJ‚¯‚é‚à‚Ì‚ğŒ©‚Â‚¯‚ç‚ê‚È‚¢D");
+            pline("æ··ä¹±ã—ã¦ã„ã‚‹ã®ã§ï¼Œé–‹ã‘ã‚‹ã‚‚ã®ã‚’è¦‹ã¤ã‘ã‚‰ã‚Œãªã„ï¼");
             return 1; /* costs a turn */
         }             /* else fallthrough to normal looting */
     }
@@ -1908,7 +1908,7 @@ lootcont:
 /*JP
             end_menu(win, "Loot which containers?");
 */
-            end_menu(win, "‚Ç‚ê‚ğŠJ‚¯‚Ü‚·‚©H");
+            end_menu(win, "ã©ã‚Œã‚’é–‹ã‘ã¾ã™ã‹ï¼Ÿ");
             n = select_menu(win, PICK_ANY, &pick_list);
             destroy_nhwindow(win);
 
@@ -1935,9 +1935,9 @@ lootcont:
                                       cobj, doname, ansimpleoname,
                                       "a container"));
 #else
-                    c = ynq(safe_qbuf(qbuf, "‚±‚±‚É‚Í", "‚ª‚ ‚éCŠJ‚¯‚Ü‚·‚©H",
+                    c = ynq(safe_qbuf(qbuf, "ã“ã“ã«ã¯", "ãŒã‚ã‚‹ï¼Œé–‹ã‘ã¾ã™ã‹ï¼Ÿ",
                                       cobj, doname, ansimpleoname,
-                                      "“ü‚ê•¨"));
+                                      "å…¥ã‚Œç‰©"));
 #endif
                     if (c == 'q')
                         return timepassed;
@@ -1959,7 +1959,7 @@ lootcont:
 /*JP
         You("need to dig up the grave to effectively loot it...");
 */
-        You("•ær‚ç‚µ‚ğ‚·‚é‚É‚ÍŒ@‚ç‚È‚­‚Ä‚ÍDDD");
+        You("å¢“è’ã‚‰ã—ã‚’ã™ã‚‹ã«ã¯æ˜ã‚‰ãªãã¦ã¯ï¼ï¼ï¼");
     }
     /*
      * 3.3.1 introduced directional looting for some things.
@@ -1968,11 +1968,11 @@ lootcont:
 /*JP
         if (!get_adjacent_loc("Loot in what direction?",
 */
-        if (!get_adjacent_loc("‚Ç‚Ì•ûŒü‚ğ’²‚×‚éH",
+        if (!get_adjacent_loc("ã©ã®æ–¹å‘ã‚’èª¿ã¹ã‚‹ï¼Ÿ",
 /*JP
                               "Invalid loot location", u.ux, u.uy, &cc))
 */
-                              "–³Œø‚È•ûŒü", u.ux, u.uy, &cc))
+                              "ç„¡åŠ¹ãªæ–¹å‘", u.ux, u.uy, &cc))
             return 0;
         if (cc.x == u.ux && cc.y == u.uy) {
             underfoot = TRUE;
@@ -1985,7 +1985,7 @@ lootcont:
             You("%s to loot on the %s.", dont_find_anything,
                 ceiling(cc.x, cc.y));
 #else
-            You("%s‚ğ’²‚×‚½‚ª‰½‚à‚İ‚Â‚©‚ç‚È‚©‚Á‚½D",
+            You("%sã‚’èª¿ã¹ãŸãŒä½•ã‚‚ã¿ã¤ã‹ã‚‰ãªã‹ã£ãŸï¼",
                 ceiling(cc.x, cc.y));
 #endif
             timepassed = 1;
@@ -2011,15 +2011,15 @@ lootcont:
                     You_cant("loot anything %sthere with %s in the way.",
                              prev_inquiry ? "else " : "", mon_nam(mtmp));
 #else
-                    pline("%s‚ª‚¢‚é‚Ì‚Å%s” ‚ğŠJ‚¯‚ç‚ê‚È‚¢D",
-                            mon_nam(mtmp), prev_inquiry ? "‚Ù‚©‚Ì" : "");
+                    pline("%sãŒã„ã‚‹ã®ã§%sç®±ã‚’é–‹ã‘ã‚‰ã‚Œãªã„ï¼",
+                            mon_nam(mtmp), prev_inquiry ? "ã»ã‹ã®" : "");
 #endif
                     return timepassed;
                 } else {
 #if 0 /*JP*/
                     You("have to be at a container to loot it.");
 #else
-                    You("‚Í” ‚ğŠJ‚¯‚é‚½‚ß‚É‚Í“¯‚¶ˆÊ’u‚É‚¢‚È‚¯‚ê‚Î‚È‚ç‚È‚¢D");
+                    You("ã¯ç®±ã‚’é–‹ã‘ã‚‹ãŸã‚ã«ã¯åŒã˜ä½ç½®ã«ã„ãªã‘ã‚Œã°ãªã‚‰ãªã„ï¼");
 #endif
                 }
             } else {
@@ -2027,8 +2027,8 @@ lootcont:
                 You("%s %sthere to loot.", dont_find_anything,
                     (prev_inquiry || prev_loot) ? "else " : "");
 #else
-                pline("‚±‚±‚É‚Í%sŠJ‚¯‚ç‚ê‚é‚à‚Ì‚Í‚È‚¢D",
-                    (prev_inquiry || prev_loot) ? "‚Ù‚©‚É" : "");
+                pline("ã“ã“ã«ã¯%sé–‹ã‘ã‚‰ã‚Œã‚‹ã‚‚ã®ã¯ãªã„ï¼",
+                    (prev_inquiry || prev_loot) ? "ã»ã‹ã«" : "");
 #endif
                 return timepassed;
             }
@@ -2038,8 +2038,8 @@ lootcont:
         You("%s %s to loot.", dont_find_anything,
             underfoot ? "here" : "there");
 #else
-        pline("%s‚É‚ÍŠJ‚¯‚ç‚ê‚é‚à‚Ì‚Í‚È‚¢D",
-            underfoot ? "‚±‚±" : "‚»‚±");
+        pline("%sã«ã¯é–‹ã‘ã‚‰ã‚Œã‚‹ã‚‚ã®ã¯ãªã„ï¼",
+            underfoot ? "ã“ã“" : "ãã“");
 #endif
     }
     return timepassed;
@@ -2062,7 +2062,7 @@ reverse_loot()
 /*JP
                 prinv("You find old loot:", otmp, 0L);
 */
-                prinv("ˆÈ‘OŠJ‚¯‚½‚à‚Ì:", otmp, 0L);
+                prinv("ä»¥å‰é–‹ã‘ãŸã‚‚ã®:", otmp, 0L);
                 return TRUE;
             }
         return FALSE;
@@ -2086,7 +2086,7 @@ reverse_loot()
 /*JP
             pline("Ok, now there is loot here.");
 */
-            pline("ƒI[ƒP[C‚±‚±‚É˜d˜G‚ğ’u‚¢‚Ä‚¨‚±‚¤D");
+            pline("ã‚ªãƒ¼ã‚±ãƒ¼ï¼Œã“ã“ã«è³„è³‚ã‚’ç½®ã„ã¦ãŠã“ã†ï¼");
     } else {
         /* find original coffers chest if present, otherwise use nearest one
          */
@@ -2107,7 +2107,7 @@ reverse_loot()
 /*JP
             verbalize("Thank you for your contribution to reduce the debt.");
 */
-            verbalize("Ôš‘Â•ÔÏ‚Ì‚½‚ß‚ÌŠñ•t‚ÉŠ´Ó‚µ‚Ü‚·D");
+            verbalize("èµ¤å­—å›½å‚µè¿”æ¸ˆã®ãŸã‚ã®å¯„ä»˜ã«æ„Ÿè¬ã—ã¾ã™ï¼");
             freeinv(goldob);
             (void) add_to_container(coffers, goldob);
             coffers->owt = weight(coffers);
@@ -2123,14 +2123,14 @@ reverse_loot()
 /*JP
             pline("The exchequer accepts your contribution.");
 */
-            pline("à–±È‚Í‚ ‚È‚½‚ÌŠñ•t‚ğó‚¯‚Æ‚Á‚½D");
+            pline("è²¡å‹™çœã¯ã‚ãªãŸã®å¯„ä»˜ã‚’å—ã‘ã¨ã£ãŸï¼");
             if (!rn2(10))
                 levl[x][y].looted = T_LOOTED;
         } else {
 /*JP
             You("drop %s.", doname(goldob));
 */
-            You("%s‚ğ—‚µ‚½D", doname(goldob));
+            You("%sã‚’è½ã—ãŸï¼", doname(goldob));
             dropx(goldob);
         }
     }
@@ -2162,14 +2162,14 @@ boolean *prev_loot;
 /*JP
             qbuf, "Do you want to remove the saddle from %s?",
 */
-            qbuf, "%s‚©‚çˆÆ‚ğ‚Í‚¸‚µ‚Ü‚·‚©H",
+            qbuf, "%sã‹ã‚‰éã‚’ã¯ãšã—ã¾ã™ã‹ï¼Ÿ",
             x_monnam(mtmp, ARTICLE_THE, (char *) 0, SUPPRESS_SADDLE, FALSE));
         if ((c = yn_function(qbuf, ynqchars, 'n')) == 'y') {
             if (nolimbs(youmonst.data)) {
 #if 0 /*JP*/
                 You_cant("do that without limbs."); /* not body_part(HAND) */
 #else
-                You_cant("è‚ª‚È‚¢‚Æ‚Å‚«‚È‚¢D");
+                You_cant("æ‰‹ãŒãªã„ã¨ã§ããªã„ï¼");
 #endif
                 return 0;
             }
@@ -2177,7 +2177,7 @@ boolean *prev_loot;
 /*JP
                 You("can't.  The saddle seems to be stuck to %s.",
 */
-                pline("ˆÆ‚Í%s‚É‚­‚Á‚Â‚¢‚Ä‚¢‚é‚æ‚¤‚¾D",
+                pline("éã¯%sã«ãã£ã¤ã„ã¦ã„ã‚‹ã‚ˆã†ã ï¼",
                     x_monnam(mtmp, ARTICLE_THE, (char *) 0, SUPPRESS_SADDLE,
                              FALSE));
                 /* the attempt costs you time */
@@ -2192,7 +2192,7 @@ boolean *prev_loot;
 /*JP
             otmp = hold_another_object(otmp, "You drop %s!", doname(otmp),
 */
-            otmp = hold_another_object(otmp, "%s‚ğ—‚Æ‚µ‚½I", doname(otmp),
+            otmp = hold_another_object(otmp, "%sã‚’è½ã¨ã—ãŸï¼", doname(otmp),
                                        (const char *) 0);
             timepassed = rnd(3);
             if (prev_loot)
@@ -2254,21 +2254,21 @@ register struct obj *obj;
 /*JP
         You("must be kidding.");
 */
-        pline("‚²ç’k‚ğD");
+        pline("ã”å†—è«‡ã‚’ï¼");
         return 0;
     } else if (obj == current_container) {
 /*JP
         pline("That would be an interesting topological exercise.");
 */
-        pline("‚»‚ê‚Í‹»–¡‚ğ‚»‚»‚ç‚ê‚éƒgƒ|ƒƒW[‚Ì–â‘è‚¾D");
+        pline("ãã‚Œã¯èˆˆå‘³ã‚’ããã‚‰ã‚Œã‚‹ãƒˆãƒãƒ­ã‚¸ãƒ¼ã®å•é¡Œã ï¼");
         return 0;
     } else if (obj->owornmask & (W_ARMOR | W_ACCESSORY)) {
 #if 0 /*JP*/
         Norep("You cannot %s %s you are wearing.",
               Icebox ? "refrigerate" : "stash", something);
 #else
-        Norep("g‚É‚Â‚¯‚Ä‚¢‚é‚à‚Ì‚ğ%s‚±‚Æ‚Í‚Å‚«‚È‚¢D", 
-              Icebox ? "—â“€‚·‚é" : "‚µ‚Ü‚¤");
+        Norep("èº«ã«ã¤ã‘ã¦ã„ã‚‹ã‚‚ã®ã‚’%sã“ã¨ã¯ã§ããªã„ï¼", 
+              Icebox ? "å†·å‡ã™ã‚‹" : "ã—ã¾ã†");
 #endif
         return 0;
     } else if ((obj->otyp == LOADSTONE) && obj->cursed) {
@@ -2276,7 +2276,7 @@ register struct obj *obj;
 /*JP
         pline_The("stone%s won't leave your person.", plur(obj->quan));
 */
-        pline("‚Ç‚¤‚¢‚¤‚í‚¯‚©‚»‚ÌÎ‚ğ‚µ‚Ü‚¤‚±‚Æ‚Í‚Å‚«‚È‚¢D");
+        pline("ã©ã†ã„ã†ã‚ã‘ã‹ãã®çŸ³ã‚’ã—ã¾ã†ã“ã¨ã¯ã§ããªã„ï¼");
         return 0;
     } else if (obj->otyp == AMULET_OF_YENDOR
                || obj->otyp == CANDELABRUM_OF_INVOCATION
@@ -2289,13 +2289,13 @@ register struct obj *obj;
 /*JP
         pline("%s cannot be confined in such trappings.", The(xname(obj)));
 */
-        pline("%s‚Í‹l‚ß‚é‚±‚Æ‚Í‚Å‚«‚È‚¢D", The(xname(obj)));
+        pline("%sã¯è©°ã‚ã‚‹ã“ã¨ã¯ã§ããªã„ï¼", The(xname(obj)));
         return 0;
     } else if (obj->otyp == LEASH && obj->leashmon != 0) {
 /*JP
         pline("%s attached to your pet.", Tobjnam(obj, "are"));
 */
-        pline("%s‚Íƒyƒbƒg‚É•t‚¯‚ç‚ê‚Ä‚¢‚éD", xname(obj));
+        pline("%sã¯ãƒšãƒƒãƒˆã«ä»˜ã‘ã‚‰ã‚Œã¦ã„ã‚‹ï¼", xname(obj));
         return 0;
     } else if (obj == uwep) {
         if (welded(obj)) {
@@ -2331,7 +2331,7 @@ register struct obj *obj;
 /*JP
         You("cannot fit %s into %s.", buf, the(xname(current_container)));
 */
-        pline("%s‚ğ%s‚É‹l‚ß‚Ş‚±‚Æ‚Í‚Å‚«‚È‚¢D", buf, the(xname(current_container)));
+        pline("%sã‚’%sã«è©°ã‚è¾¼ã‚€ã“ã¨ã¯ã§ããªã„ï¼", buf, the(xname(current_container)));
         return 0;
     }
 
@@ -2368,7 +2368,7 @@ register struct obj *obj;
 /*JP
         pline("As you put %s inside, you are blasted by a magical explosion!",
 */
-        pline("%s‚ğ’†‚É“ü‚ê‚é‚ÆC‚ ‚È‚½‚Í–‚–@‚Ì”š”­‚ğ—‚Ñ‚½I",
+        pline("%sã‚’ä¸­ã«å…¥ã‚Œã‚‹ã¨ï¼Œã‚ãªãŸã¯é­”æ³•ã®çˆ†ç™ºã‚’æµ´ã³ãŸï¼",
               doname(obj));
         /* did not actually insert obj yet */
         if (was_unpaid)
@@ -2385,7 +2385,7 @@ register struct obj *obj;
 /*JP
         losehp(d(6, 6), "magical explosion", KILLED_BY_AN);
 */
-        losehp(d(6, 6), "–‚–@‚Ì”š”­‚Å", KILLED_BY_AN);
+        losehp(d(6, 6), "é­”æ³•ã®çˆ†ç™ºã§", KILLED_BY_AN);
         current_container = 0; /* baggone = TRUE; */
     }
 
@@ -2394,7 +2394,7 @@ register struct obj *obj;
 /*JP
         You("put %s into %s.", doname(obj), buf);
 */
-        You("%s‚ğ%s‚Ì’†‚É‚µ‚Ü‚Á‚½D", doname(obj), buf);
+        You("%sã‚’%sã®ä¸­ã«ã—ã¾ã£ãŸï¼", doname(obj), buf);
 
         /* gold in container always needs to be added to credit */
         if (floor_container && obj->oclass == COIN_CLASS)
@@ -2474,11 +2474,11 @@ register struct obj *obj;
 /*JP
               ? (loadlev < MOD_ENCUMBER ? "You have a little trouble removing"
 */
-              ? (loadlev < MOD_ENCUMBER ? "‚ğ‰^‚Ô‚Ì‚Í­X¢“ï‚¾D"
+              ? (loadlev < MOD_ENCUMBER ? "ã‚’é‹ã¶ã®ã¯å°‘ã€…å›°é›£ã ï¼"
 /*JP
                                         : "You have much trouble removing")
 */
-                                        : "‚ğ‰^‚Ô‚Ì‚Í‚©‚È‚è¢“ï‚¾D")
+                                        : "ã‚’é‹ã¶ã®ã¯ã‹ãªã‚Šå›°é›£ã ï¼")
               : (char *) 0,
           otmp, count);
 
@@ -2501,12 +2501,12 @@ struct obj *item;
 /*JP
         pline("%s %s vanished!", Doname2(item), otense(item, "have"));
 */
-        pline("%s‚ÍÁ‚¦‹‚Á‚½I", Doname2(item));
+        pline("%sã¯æ¶ˆãˆå»ã£ãŸï¼", Doname2(item));
     else
 #if 0 /*JP*/
         You("%s %s disappear!", Blind ? "notice" : "see", doname(item));
 #else
-        You("%s‚ªŒ©‚¦‚È‚­‚È‚é‚Ì%sD", doname(item), Blind ? "‚É‹C‚Ã‚¢‚½" : "‚ğŒ©‚½");
+        You("%sãŒè¦‹ãˆãªããªã‚‹ã®%sï¼", doname(item), Blind ? "ã«æ°—ã¥ã„ãŸ" : "ã‚’è¦‹ãŸ");
 #endif
 
     if (*u.ushops && (shkp = shop_keeper(*u.ushops)) != 0) {
@@ -2525,7 +2525,7 @@ struct obj *box;
 /*JP
     static NEARDATA const char sc[] = "Schroedinger's Cat";
 */
-    static NEARDATA const char sc[] = "ƒVƒ…ƒŒƒfƒBƒ“ƒK[‚Ì”L";
+    static NEARDATA const char sc[] = "ã‚·ãƒ¥ãƒ¬ãƒ‡ã‚£ãƒ³ã‚¬ãƒ¼ã®çŒ«";
     struct obj *deadcat;
     struct monst *livecat;
     xchar ox, oy;
@@ -2548,12 +2548,12 @@ struct obj *box;
 /*JP
             You("think %s brushed your %s.", something, body_part(FOOT));
 */
-            You("%s‚ª‚ ‚È‚½‚Ì%s‚ğ‚­‚·‚®‚Á‚½D", something, body_part(FOOT));
+            You("%sãŒã‚ãªãŸã®%sã‚’ãã™ãã£ãŸï¼", something, body_part(FOOT));
         else
 /*JP
             pline("%s inside the box is still alive!", Monnam(livecat));
 */
-            pline("” ‚Ì‚È‚©‚Ì%s‚Í‚Ü‚¾¶‚«‚Ä‚¢‚éI", Monnam(livecat));
+            pline("ç®±ã®ãªã‹ã®%sã¯ã¾ã ç”Ÿãã¦ã„ã‚‹ï¼", Monnam(livecat));
         (void) christen_monst(livecat, sc);
     } else {
         deadcat =
@@ -2566,8 +2566,8 @@ struct obj *box;
         pline_The("%s inside the box is dead!",
                   Hallucination ? rndmonnam(NULL) : "housecat");
 #else
-        pline_The("” ‚Ì’†‚Ì%s‚Í€‚ñ‚Å‚¢‚éI",
-                  Hallucination ? rndmonnam(NULL) : "”L");
+        pline_The("ç®±ã®ä¸­ã®%sã¯æ­»ã‚“ã§ã„ã‚‹ï¼",
+                  Hallucination ? rndmonnam(NULL) : "çŒ«");
 #endif
     }
     box->owt = weight(box);
@@ -2598,12 +2598,12 @@ explain_container_prompt()
         " s -- Stash: put one item in", " q -- Quit: do nothing",
         " ? -- Help: display this text.", "", 0
 #else
-        "“ü‚ê•¨‚Ö‚Ìs“®F", "", " : -- Look: ’†g‚ğ’²‚×‚é",
-        " o -- Out: •¨‚ğo‚·", " i -- In: •¨‚ğ“ü‚ê‚é",
-        " b -- Both: ‚Ü‚¸•¨‚ğo‚µA‚»‚ê‚©‚ç•¨‚ğ“ü‚ê‚é",
-        " r -- Reversed: •¨‚ğ“ü‚êA‚»‚ê‚©‚ç•¨‚ğo‚·",
-        " s -- Stash: •¨‚ğˆê‚Â“ü‚ê‚é", " q -- Quit: ‰½‚à‚µ‚È‚¢",
-        " ? -- Help: ‚±‚ê‚ğ•\¦‚·‚é", "", 0
+        "å…¥ã‚Œç‰©ã¸ã®è¡Œå‹•ï¼š", "", " : -- Look: ä¸­èº«ã‚’èª¿ã¹ã‚‹",
+        " o -- Out: ç‰©ã‚’å‡ºã™", " i -- In: ç‰©ã‚’å…¥ã‚Œã‚‹",
+        " b -- Both: ã¾ãšç‰©ã‚’å‡ºã—ã€ãã‚Œã‹ã‚‰ç‰©ã‚’å…¥ã‚Œã‚‹",
+        " r -- Reversed: ç‰©ã‚’å…¥ã‚Œã€ãã‚Œã‹ã‚‰ç‰©ã‚’å‡ºã™",
+        " s -- Stash: ç‰©ã‚’ä¸€ã¤å…¥ã‚Œã‚‹", " q -- Quit: ä½•ã‚‚ã—ãªã„",
+        " ? -- Help: ã“ã‚Œã‚’è¡¨ç¤ºã™ã‚‹", "", 0
 #endif
     };
     const char *const *txtpp;
@@ -2625,14 +2625,14 @@ u_handsy()
 #if 0 /*JP*/
         You("have no hands!"); /* not `body_part(HAND)' */
 #else
-        pline("‚ ‚È‚½‚É‚Íè‚ª‚È‚¢I");  /* not `body_part(HAND)' */
+        pline("ã‚ãªãŸã«ã¯æ‰‹ãŒãªã„ï¼");  /* not `body_part(HAND)' */
 #endif
         return FALSE;
     } else if (!freehand()) {
 /*JP
         You("have no free %s.", body_part(HAND));
 */
-        You("%s‚Ì©—R‚ªŒø‚©‚È‚¢D", body_part(HAND));
+        You("%sã®è‡ªç”±ãŒåŠ¹ã‹ãªã„ï¼", body_part(HAND));
         return FALSE;
     }
     return TRUE;
@@ -2660,12 +2660,12 @@ int held;
 /*JP
         pline("%s locked.", Tobjnam(obj, "are"));
 */
-        pline("%s‚ÍŒ®‚ª‚©‚©‚Á‚Ä‚¢‚éD", xname(obj));
+        pline("%sã¯éµãŒã‹ã‹ã£ã¦ã„ã‚‹ï¼", xname(obj));
         if (held)
 /*JP
             You("must put it down to unlock.");
 */
-            if (held) pline("‰º‚É’u‚©‚È‚¢‚±‚Æ‚É‚ÍŒ®‚ğ‚Í‚¸‚¹‚È‚¢D");
+            if (held) pline("ä¸‹ã«ç½®ã‹ãªã„ã“ã¨ã«ã¯éµã‚’ã¯ãšã›ãªã„ï¼");
         obj->lknown = 1;
         return 0;
     } else if (obj->otrapped) {
@@ -2673,7 +2673,7 @@ int held;
 /*JP
             You("open %s...", the(xname(obj)));
 */
-            You("%s‚ğŠJ‚¯‚½DDD", the(xname(obj)));
+            You("%sã‚’é–‹ã‘ãŸï¼ï¼ï¼", the(xname(obj)));
         obj->lknown = 1;
         (void) chest_trap(obj, HAND, FALSE);
         /* even if the trap fails, you've used up this turn */
@@ -2713,7 +2713,7 @@ int held;
 /*JP
             You("owe %ld %s for lost merchandise.", loss, currency(loss));
 */
-            You("¸‚Á‚½¤•i‚Ì‚½‚ß‚É%ld%s‚Ì•‰Â‚ğ•‰‚Á‚½D", loss, currency(loss));
+            You("å¤±ã£ãŸå•†å“ã®ãŸã‚ã«%ld%sã®è² å‚µã‚’è² ã£ãŸï¼", loss, currency(loss));
         current_container->owt = weight(current_container);
     }
     inokay = (invent != 0
@@ -2724,8 +2724,8 @@ int held;
         Sprintf(emptymsg, "%s is %sempty.", Ysimple_name2(current_container),
                 (quantum_cat || cursed_mbag) ? "now " : "");
 #else
-        Sprintf(emptymsg, "%s‚Í%s‹ó‚Á‚Û‚¾D", Ysimple_name2(current_container),
-                (quantum_cat || cursed_mbag) ? "¡‚Í" : "");
+        Sprintf(emptymsg, "%sã¯%sç©ºã£ã½ã ï¼", Ysimple_name2(current_container),
+                (quantum_cat || cursed_mbag) ? "ä»Šã¯" : "");
 #endif
 
     /*
@@ -2759,17 +2759,17 @@ int held;
                              current_container, Yname2, Ysimple_name2,
                              "This");
 #else
-            (void) safe_qbuf(qbuf, (char *) 0, "‚Í‹ó‚¾D‚Ç‚¤‚·‚éH",
+            (void) safe_qbuf(qbuf, (char *) 0, "ã¯ç©ºã ï¼ã©ã†ã™ã‚‹ï¼Ÿ",
                              current_container, Yname2, Ysimple_name2,
-                             "‚±‚ê");
+                             "ã“ã‚Œ");
 #endif
         else
 #if 0 /*JP*/
             (void) safe_qbuf(qbuf, "Do what with ", "?", current_container,
                              yname, ysimple_name, "it");
 #else
-            (void) safe_qbuf(qbuf, (char *) 0, "‚ğ‚Ç‚¤‚·‚éH", current_container,
-                             yname, ysimple_name, "‚±‚ê");
+            (void) safe_qbuf(qbuf, (char *) 0, "ã‚’ã©ã†ã™ã‚‹ï¼Ÿ", current_container,
+                             yname, ysimple_name, "ã“ã‚Œ");
 #endif
         /* ask player about what to do with this container */
         if (flags.menu_style == MENU_FULL) {
@@ -2837,7 +2837,7 @@ int held;
         You("don't have anything%s to %s.", invent ? " else" : "",
             stash_one ? "stash" : "put in");
 #else
-        You("%s“ü‚ê‚é‚à‚Ì‚ª‚È‚¢D", invent ? "‘¼‚É" : "");
+        You("%så…¥ã‚Œã‚‹ã‚‚ã®ãŒãªã„ï¼", invent ? "ä»–ã«" : "");
 #endif
         loot_in = stash_one = FALSE;
     }
@@ -2920,7 +2920,7 @@ boolean put_in;
 /*JP
         action = "put in";
 */
-        action = "“ü‚ê‚é";
+        action = "å…¥ã‚Œã‚‹";
         objlist = &invent;
         actionfunc = in_container;
         checkfunc = ck_bag;
@@ -2928,7 +2928,7 @@ boolean put_in;
 /*JP
         action = "take out";
 */
-        action = "æ‚èo‚·";
+        action = "å–ã‚Šå‡ºã™";
         objlist = &(current_container->cobj);
         actionfunc = out_container;
         checkfunc = (int FDECL((*), (OBJ_P))) 0;
@@ -2957,7 +2957,7 @@ boolean put_in;
 /*JP
     const char *action = put_in ? "Put in" : "Take out";
 */
-    const char *action = put_in ? "“ü‚ê‚é" : "æ‚èo‚·";
+    const char *action = put_in ? "å…¥ã‚Œã‚‹" : "å–ã‚Šå‡ºã™";
     struct obj *otmp, *otmp2;
     menu_item *pick_list;
     int mflags, res;
@@ -2970,7 +2970,7 @@ boolean put_in;
 /*JP
         Sprintf(buf, "%s what type of objects?", action);
 */
-        Sprintf(buf, "‚Ç‚Ìí—Ş‚Ì‚à‚Ì‚ğ%sH", action);
+        Sprintf(buf, "ã©ã®ç¨®é¡ã®ã‚‚ã®ã‚’%sï¼Ÿ", action);
         mflags = put_in
                      ? ALL_TYPES | BUC_ALLBKNOWN | BUC_UNKNOWN
                      : ALL_TYPES | CHOOSE_ALL | BUC_ALLBKNOWN | BUC_UNKNOWN;
@@ -3006,7 +3006,7 @@ boolean put_in;
 /*JP
         Sprintf(buf, "%s what?", action);
 */
-        Sprintf(buf, "‰½‚ğ%sH", action);
+        Sprintf(buf, "ä½•ã‚’%sï¼Ÿ", action);
         n = query_objlist(buf, put_in ? invent : current_container->cobj,
                           mflags, &pick_list, PICK_ANY,
                           all_categories ? allow_all : allow_category);
@@ -3061,7 +3061,7 @@ boolean outokay, inokay, alreadyused;
 /*JP
     Sprintf(buf, "Look inside %s", thesimpleoname(obj));
 */
-    Sprintf(buf, "%s‚Ì’†g‚ğŒ©‚é", thesimpleoname(obj));
+    Sprintf(buf, "%sã®ä¸­èº«ã‚’è¦‹ã‚‹", thesimpleoname(obj));
     add_menu(win, NO_GLYPH, &any, menuselector[any.a_int], 0, ATR_NONE, buf,
              MENU_UNSELECTED);
     if (outokay) {
@@ -3069,7 +3069,7 @@ boolean outokay, inokay, alreadyused;
 /*JP
         Sprintf(buf, "take %s out", something);
 */
-        Strcpy(buf, "‰½‚©‚ğæ‚èo‚·");
+        Strcpy(buf, "ä½•ã‹ã‚’å–ã‚Šå‡ºã™");
         add_menu(win, NO_GLYPH, &any, menuselector[any.a_int], 0, ATR_NONE,
                  buf, MENU_UNSELECTED);
     }
@@ -3078,7 +3078,7 @@ boolean outokay, inokay, alreadyused;
 /*JP
         Sprintf(buf, "put %s in", something);
 */
-        Strcpy(buf, "‰½‚©‚ğ“ü‚ê‚é");
+        Strcpy(buf, "ä½•ã‹ã‚’å…¥ã‚Œã‚‹");
         add_menu(win, NO_GLYPH, &any, menuselector[any.a_int], 0, ATR_NONE,
                  buf, MENU_UNSELECTED);
     }
@@ -3087,7 +3087,7 @@ boolean outokay, inokay, alreadyused;
 /*JP
         Sprintf(buf, "%stake out, then put in", inokay ? "both; " : "");
 */
-        Sprintf(buf, "%s‚Ü‚¸æ‚èo‚·C‚»‚ê‚©‚ç“ü‚ê‚é", inokay ? "—¼•û; " : "");
+        Sprintf(buf, "%sã¾ãšå–ã‚Šå‡ºã™ï¼Œãã‚Œã‹ã‚‰å…¥ã‚Œã‚‹", inokay ? "ä¸¡æ–¹; " : "");
         add_menu(win, NO_GLYPH, &any, menuselector[any.a_int], 0, ATR_NONE,
                  buf, MENU_UNSELECTED);
     }
@@ -3097,8 +3097,8 @@ boolean outokay, inokay, alreadyused;
         Sprintf(buf, "%sput in, then take out",
                 outokay ? "both reversed; " : "");
 #else
-        Sprintf(buf, "%s‚Ü‚¸“ü‚ê‚éC‚»‚ê‚©‚çæ‚èo‚·",
-                outokay ? "—¼•û‚ğ‹t‡‚Å; " : "");
+        Sprintf(buf, "%sã¾ãšå…¥ã‚Œã‚‹ï¼Œãã‚Œã‹ã‚‰å–ã‚Šå‡ºã™",
+                outokay ? "ä¸¡æ–¹ã‚’é€†é †ã§; " : "");
 #endif
         add_menu(win, NO_GLYPH, &any, menuselector[any.a_int], 0, ATR_NONE,
                  buf, MENU_UNSELECTED);
@@ -3106,7 +3106,7 @@ boolean outokay, inokay, alreadyused;
 /*JP
         Sprintf(buf, "stash one item into %s", thesimpleoname(obj));
 */
-        Sprintf(buf, "‚à‚Ì‚ğˆê‚Â‚¾‚¯%s‚É“ü‚ê‚é", thesimpleoname(obj));
+        Sprintf(buf, "ã‚‚ã®ã‚’ä¸€ã¤ã ã‘%sã«å…¥ã‚Œã‚‹", thesimpleoname(obj));
         add_menu(win, NO_GLYPH, &any, menuselector[any.a_int], 0, ATR_NONE,
                  buf, MENU_UNSELECTED);
     }
@@ -3114,7 +3114,7 @@ boolean outokay, inokay, alreadyused;
 /*JP
     Strcpy(buf, alreadyused ? "done" : "do nothing");
 */
-    Strcpy(buf, alreadyused ? "I‚í‚é" : "‰½‚à‚µ‚È‚¢");
+    Strcpy(buf, alreadyused ? "çµ‚ã‚ã‚‹" : "ä½•ã‚‚ã—ãªã„");
     add_menu(win, NO_GLYPH, &any, menuselector[any.a_int], 0, ATR_NONE, buf,
              MENU_SELECTED);
 
@@ -3155,7 +3155,7 @@ dotip()
         Sprintf(buf, "You can't tip %s while carrying so much.",
                 !flags.verbose ? "a container" : (boxes > 1) ? "one" : "it");
 #else
-        Strcpy(buf, "‚½‚­‚³‚ñ‚à‚Ì‚ğ‚¿‚·‚¬‚Ä‚¢‚é‚Ì‚Å‚Ğ‚Á‚­‚è‚©‚¦‚¹‚È‚¢D");
+        Strcpy(buf, "ãŸãã•ã‚“ã‚‚ã®ã‚’æŒã¡ã™ãã¦ã„ã‚‹ã®ã§ã²ã£ãã‚Šã‹ãˆã›ãªã„ï¼");
 #endif
         if (!check_capacity(buf) && able_to_loot(cc.x, cc.y, FALSE)) {
             if (boxes > 1 && (flags.menu_style != MENU_TRADITIONAL
@@ -3222,9 +3222,9 @@ dotip()
                                       cobj,
                                       doname, ansimpleoname, "container"));
 #else
-                    c = ynq(safe_qbuf(qbuf, "‚±‚±‚É‚Í", " ‚ª‚ ‚éC‚Ğ‚Á‚­‚è•Ô‚·?",
+                    c = ynq(safe_qbuf(qbuf, "ã“ã“ã«ã¯", " ãŒã‚ã‚‹ï¼Œã²ã£ãã‚Šè¿”ã™?",
                                       cobj,
-                                      doname, ansimpleoname, "“ü‚ê•¨"));
+                                      doname, ansimpleoname, "å…¥ã‚Œç‰©"));
 #endif
                     if (c == 'q')
                         return 0;
@@ -3254,32 +3254,32 @@ dotip()
 /*JP
         spillage = "wax";
 */
-        spillage = "‚ë‚¤";
+        spillage = "ã‚ã†";
     } else if ((cobj->otyp == POT_OIL && cobj->lamplit)
                || (cobj->otyp == OIL_LAMP && cobj->age != 0L)
                || (cobj->otyp == MAGIC_LAMP && cobj->spe != 0)) {
 /*JP
         spillage = "oil";
 */
-        spillage = "–û";
+        spillage = "æ²¹";
         /* todo: reduce potion's remaining burn timer or oil lamp's fuel */
     } else if (cobj->otyp == CAN_OF_GREASE && cobj->spe > 0) {
         /* charged consumed below */
 /*JP
         spillage = "grease";
 */
-        spillage = "‰";
+        spillage = "è„‚";
     } else if (cobj->otyp == FOOD_RATION || cobj->otyp == CRAM_RATION
                || cobj->otyp == LEMBAS_WAFER) {
 /*JP
         spillage = "crumbs";
 */
-        spillage = "ƒpƒ“‚­‚¸";
+        spillage = "ãƒ‘ãƒ³ããš";
     } else if (cobj->oclass == VENOM_CLASS) {
 /*JP
         spillage = "venom";
 */
-        spillage = "“Å‰t";
+        spillage = "æ¯’æ¶²";
     }
     if (spillage) {
         buf[0] = '\0';
@@ -3287,19 +3287,19 @@ dotip()
 /*JP
             Sprintf(buf, " and gradually %s", vtense(spillage, "dissipate"));
 */
-            Strcpy(buf, "‚»‚µ‚Ä™X‚ÉU‚Á‚Ä‚¢‚Á‚½D");
+            Strcpy(buf, "ãã—ã¦å¾ã€…ã«æ•£ã£ã¦ã„ã£ãŸï¼");
         else if (is_lava(u.ux, u.uy))
 #if 0 /*JP*/
             Sprintf(buf, " and immediately %s away",
                     vtense(spillage, "burn"));
 #else
-            Strcpy(buf, "‚»‚µ‚Ä‚·‚®‚É”R‚¦‚Â‚«‚½D");
+            Strcpy(buf, "ãã—ã¦ã™ãã«ç‡ƒãˆã¤ããŸï¼");
 #endif
 #if 0 /*JP*/
         pline("Some %s %s onto the %s%s.", spillage,
               vtense(spillage, "spill"), surface(u.ux, u.uy), buf);
 #else
-        pline("%s‚ª%s‚Ìã‚É”ò‚ÑU‚Á‚½D%s", spillage,
+        pline("%sãŒ%sã®ä¸Šã«é£›ã³æ•£ã£ãŸï¼%s", spillage,
               surface(u.ux, u.uy), buf);
 #endif
         /* shop usage message comes after the spill message */
@@ -3314,12 +3314,12 @@ dotip()
 /*JP
         pline_The("%s %s securely sealed.", xname(cobj), otense(cobj, "are"));
 */
-        pline_The("%s‚Í‚µ‚Á‚©‚è‚Æğ‚ª‚³‚ê‚Ä‚¢‚éD", xname(cobj));
+        pline_The("%sã¯ã—ã£ã‹ã‚Šã¨æ “ãŒã•ã‚Œã¦ã„ã‚‹ï¼", xname(cobj));
     else if (cobj->otyp == STATUE)
 /*JP
         pline("Nothing interesting happens.");
 */
-        pline("–Ê”’‚¢‚±‚Æ‚Í‰½‚à‹N‚«‚È‚©‚Á‚½D");
+        pline("é¢ç™½ã„ã“ã¨ã¯ä½•ã‚‚èµ·ããªã‹ã£ãŸï¼");
     else
         pline1(nothing_happens);
     return 0;
@@ -3353,7 +3353,7 @@ struct obj *box; /* or bag */
 /*JP
         pline("It's locked.");
 */
-        pline("Œ®‚ªŠ|‚©‚Á‚Ä‚¢‚éD");
+        pline("éµãŒæ›ã‹ã£ã¦ã„ã‚‹ï¼");
     } else if (box->otrapped) {
         /* we're not reaching inside but we're still handling it... */
         (void) chest_trap(box, HAND, FALSE);
@@ -3384,9 +3384,9 @@ struct obj *box; /* or bag */
                                   : (seen == 1) ? "A monster appears."
                                                 : "Monsters appear!");
 #else
-                pline((seen == 0) ? "‰½‚à‹N‚«‚È‚©‚Á‚½‚æ‚¤‚¾D"
-                                  : (seen == 1) ? "‰ö•¨‚ªŒ»‚ê‚½D"
-                                                : "‰ö•¨‚ªŒ»‚ê‚½I");
+                pline((seen == 0) ? "ä½•ã‚‚èµ·ããªã‹ã£ãŸã‚ˆã†ã ï¼"
+                                  : (seen == 1) ? "æ€ªç‰©ãŒç¾ã‚ŒãŸï¼"
+                                                : "æ€ªç‰©ãŒç¾ã‚ŒãŸï¼");
 #endif
             /* check_unpaid wants to see a non-zero charge count */
             box->spe = old_spe;
@@ -3405,7 +3405,7 @@ struct obj *box; /* or bag */
 /*JP
             pline("%sbox is now empty.", Shk_Your(yourbuf, box));
 */
-            pline("%s” ‚Í‹ó‚É‚È‚Á‚½D", Shk_Your(yourbuf, box));
+            pline("%sç®±ã¯ç©ºã«ãªã£ãŸï¼", Shk_Your(yourbuf, box));
         else /* holds cat corpse or other random stuff */
             empty_it = TRUE;
         box->cknown = 1;
@@ -3414,7 +3414,7 @@ struct obj *box; /* or bag */
 /*JP
         pline("It's empty.");
 */
-        pline("‚±‚ê‚Í‹ó‚¾D");
+        pline("ã“ã‚Œã¯ç©ºã ï¼");
     } else {
         empty_it = TRUE;
     }
@@ -3435,8 +3435,8 @@ struct obj *box; /* or bag */
               box->cobj->nobj ? "Objects spill" : "An object spills",
               !(highdrop || altarizing) ? ':' : '.');
 #else
-        pline("’†g‚ªo‚Ä‚«‚½%s",
-              !(highdrop || altarizing) ? "F" : "D");
+        pline("ä¸­èº«ãŒå‡ºã¦ããŸ%s",
+              !(highdrop || altarizing) ? "ï¼š" : "ï¼");
 #endif
         for (otmp = box->cobj; otmp; otmp = nobj) {
             nobj = otmp->nobj;
@@ -3464,14 +3464,14 @@ struct obj *box; /* or bag */
                     pline("%s %s to the %s.", Doname2(otmp),
                           otense(otmp, "drop"), surface(ox, oy));
 #else
-                    pline("%s‚Í%s‚Ìã‚É—‚¿‚½D", Doname2(otmp),
+                    pline("%sã¯%sã®ä¸Šã«è½ã¡ãŸï¼", Doname2(otmp),
                           surface(ox, oy));
 #endif
                 else
 /*JP
                     pline("%s%c", doname(otmp), nobj ? ',' : '.');
 */
-                    pline("%s%s", doname(otmp), nobj ? "C" : "D");
+                    pline("%s%s", doname(otmp), nobj ? "ï¼Œ" : "ï¼");
                 dropy(otmp);
             }
             if (maybeshopgoods)
@@ -3481,7 +3481,7 @@ struct obj *box; /* or bag */
 /*JP
             You("owe %ld %s for lost merchandise.", loss, currency(loss));
 */
-            You("¸‚Á‚½‚à‚Ì‚É‘Î‚µ‚Ä%ld%s‚Ì•‰Â‚ğ•‰‚Á‚½D", loss, currency(loss));
+            You("å¤±ã£ãŸã‚‚ã®ã«å¯¾ã—ã¦%ld%sã®è² å‚µã‚’è² ã£ãŸï¼", loss, currency(loss));
         box->owt = weight(box); /* mbag_item_gone() doesn't update this */
         if (held)
             (void) encumber_msg();

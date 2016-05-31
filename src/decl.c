@@ -218,8 +218,8 @@ NEARDATA struct c_color_names c_color_names = {
 };
 #else
 NEARDATA struct c_color_names c_color_names = {
-    "•‚¢",   "àæàßF‚Ì", "‹àF‚Ì", "…F‚Ì", "Ô‚¢", "—ÎF‚Ì",
-    "‹âF‚Ì", "Â‚¢",     "Ž‡F‚Ì", "”’‚¢",   "žòF‚Ì"
+    "é»’ã„",   "ç¥ç€è‰²ã®", "é‡‘è‰²ã®", "æ°´è‰²ã®", "èµ¤ã„", "ç·‘è‰²ã®",
+    "éŠ€è‰²ã®", "é’ã„",     "ç´«è‰²ã®", "ç™½ã„",   "æ©™è‰²ã®"
 };
 #endif
 
@@ -244,22 +244,22 @@ const char *c_obj_colors[] = {
     "bright cyan",    /* CLR_BRIGHT_CYAN */
     "white",          /* CLR_WHITE */
 #else
-    "•‚¢",           /* CLR_BLACK */
-    "Ô‚¢",           /* CLR_RED */
-    "—ÎF‚Ì",         /* CLR_GREEN */
-    "’ƒF‚Ì",         /* CLR_BROWN */
-    "Â‚¢",           /* CLR_BLUE */
-    "ƒ}ƒ[ƒ“ƒ^F‚Ì",   /* CLR_MAGENTA */
-    "ƒVƒAƒ“F‚Ì",     /* CLR_CYAN */
-    "ŠDF‚Ì",         /* CLR_GRAY */
-    "“§–¾‚È",         /* no_color */
-    "žòF‚Ì",         /* CLR_ORANGE */
-    "–¾‚é‚¢—ÎF‚Ì",   /* CLR_BRIGHT_GREEN */
-    "‰©F‚Ì",         /* CLR_YELLOW */
-    "–¾‚é‚¢ÂF‚Ì",   /* CLR_BRIGHT_BLUE */
-    "–¾‚é‚¢ƒ}ƒ[ƒ“ƒ^F‚Ì", /* CLR_BRIGHT_MAGENTA */
-    "–¾‚é‚¢ƒVƒAƒ“F‚Ì", /* CLR_BRIGHT_CYAN */
-    "”’‚¢",           /* CLR_WHITE */
+    "é»’ã„",           /* CLR_BLACK */
+    "èµ¤ã„",           /* CLR_RED */
+    "ç·‘è‰²ã®",         /* CLR_GREEN */
+    "èŒ¶è‰²ã®",         /* CLR_BROWN */
+    "é’ã„",           /* CLR_BLUE */
+    "ãƒžã‚¼ãƒ³ã‚¿è‰²ã®",   /* CLR_MAGENTA */
+    "ã‚·ã‚¢ãƒ³è‰²ã®",     /* CLR_CYAN */
+    "ç°è‰²ã®",         /* CLR_GRAY */
+    "é€æ˜Žãª",         /* no_color */
+    "æ©™è‰²ã®",         /* CLR_ORANGE */
+    "æ˜Žã‚‹ã„ç·‘è‰²ã®",   /* CLR_BRIGHT_GREEN */
+    "é»„è‰²ã®",         /* CLR_YELLOW */
+    "æ˜Žã‚‹ã„é’è‰²ã®",   /* CLR_BRIGHT_BLUE */
+    "æ˜Žã‚‹ã„ãƒžã‚¼ãƒ³ã‚¿è‰²ã®", /* CLR_BRIGHT_MAGENTA */
+    "æ˜Žã‚‹ã„ã‚·ã‚¢ãƒ³è‰²ã®", /* CLR_BRIGHT_CYAN */
+    "ç™½ã„",           /* CLR_WHITE */
 #endif
 };
 
@@ -275,16 +275,16 @@ struct c_common_strings c_common_strings = { "Nothing happens.",
                                              "vision quickly clears.",
                                              { "the", "your" } };
 #else
-struct c_common_strings c_common_strings = { "‰½‚à‹N‚«‚È‚©‚Á‚½D",
-                                             "‚¢‚¢‰ÁŒ¸‚É‚µ‚ëI",
-                                             "%sH‚»‚è‚á‚Î‚©‚°‚Ä‚¢‚éD",
-                                             "ˆêuk‚¦‚½D",
-                                             "‰½‚©",
-                                             "‰½‚©",
-                                             "‚Ü‚½“®‚¯‚é‚æ‚¤‚É‚È‚Á‚½D",
-                                             "‚¦H",
-                                             "Ž‹ŠE‚ª‚Í‚Á‚«‚è‚µ‚½D",
-                                             { "", "‚ ‚È‚½‚Ì" } };
+struct c_common_strings c_common_strings = { "ä½•ã‚‚èµ·ããªã‹ã£ãŸï¼Ž",
+                                             "ã„ã„åŠ æ¸›ã«ã—ã‚ï¼",
+                                             "%sï¼Ÿãã‚Šã‚ƒã°ã‹ã’ã¦ã„ã‚‹ï¼Ž",
+                                             "ä¸€çž¬éœ‡ãˆãŸï¼Ž",
+                                             "ä½•ã‹",
+                                             "ä½•ã‹",
+                                             "ã¾ãŸå‹•ã‘ã‚‹ã‚ˆã†ã«ãªã£ãŸï¼Ž",
+                                             "ãˆï¼Ÿ",
+                                             "è¦–ç•ŒãŒã¯ã£ãã‚Šã—ãŸï¼Ž",
+                                             { "", "ã‚ãªãŸã®" } };
 #endif
 
 /* NOTE: the order of these words exactly corresponds to the
@@ -297,12 +297,12 @@ const char *materialnm[] = { "mysterious", "liquid",  "wax",        "organic",
                              "platinum",   "mithril", "plastic",    "glass",
                              "gemstone",   "stone" };
 #else
-const char *materialnm[] = { "_”é", "‰tó", "˜X",   "—L‹@",
-                             "“÷",   "Ž†",   "•z",   "Šv",
-                             "–Ø",   "œ",   "—³”ç", "“S",
-                             "‹à‘®", "“º",   "”’‹â", "‹à",
-                             "ƒvƒ‰ƒ`ƒi", "ƒ~ƒXƒŠƒ‹", "ƒvƒ‰ƒXƒ`ƒbƒN", "ƒKƒ‰ƒX",
-                             "•óÎ", "Î" };
+const char *materialnm[] = { "ç¥žç§˜", "æ¶²çŠ¶", "è‹",   "æœ‰æ©Ÿ",
+                             "è‚‰",   "ç´™",   "å¸ƒ",   "é©",
+                             "æœ¨",   "éª¨",   "ç«œçš®", "é‰„",
+                             "é‡‘å±ž", "éŠ…",   "ç™½éŠ€", "é‡‘",
+                             "ãƒ—ãƒ©ãƒãƒŠ", "ãƒŸã‚¹ãƒªãƒ«", "ãƒ—ãƒ©ã‚¹ãƒãƒƒã‚¯", "ã‚¬ãƒ©ã‚¹",
+                             "å®çŸ³", "çŸ³" };
 #endif
 
 /* Vision */

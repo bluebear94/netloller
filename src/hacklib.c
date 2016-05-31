@@ -112,7 +112,7 @@ char *s;
     register char *p;
 
     for (p = s; *p; p++)
-#if 1 /*JP*//*Š¿š‚Í¬•¶š‰»‚µ‚È‚¢*/
+#if 1 /*JP*//*æ¼¢å­—ã¯å°æ–‡å­—åŒ–ã—ãªã„*/
         if (is_kanji(*(unsigned char *)p)) p++; else
 #endif
         if ('A' <= *p && *p <= 'Z')
@@ -128,7 +128,7 @@ char *s;
     register char *p;
 
     for (p = s; *p; p++)
-#if 1 /*JP*//*Š¿š‚Í‘å•¶š‰»‚µ‚È‚¢*/
+#if 1 /*JP*//*æ¼¢å­—ã¯å¤§æ–‡å­—åŒ–ã—ãªã„*/
         if (is_kanji(*(unsigned char *)p)) p++; else
 #endif
         if ('a' <= *p && *p <= 'z')
@@ -276,7 +276,7 @@ const char *s;
     Static char buf[BUFSZ];
 
     Strcpy(buf, s);
-#if 0 /*JP*//*“ú–{Œê‚Å‚ÍŠ—LŠi‚Ìs‚ğ•t‚¯‚È‚¢*/
+#if 0 /*JP*//*æ—¥æœ¬èªã§ã¯æ‰€æœ‰æ ¼ã®sã‚’ä»˜ã‘ãªã„*/
     if (!strcmpi(buf, "it")) /* it -> its */
         Strcat(buf, "s");
     else if (!strcmpi(buf, "you")) /* you -> your */

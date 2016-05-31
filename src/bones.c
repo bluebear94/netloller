@@ -354,14 +354,14 @@ struct obj *corpse;
 /*JP
             if (yn("Bones file already exists.  Replace it?") == 'y') {
 */
-            if (yn("œƒtƒ@ƒCƒ‹‚ªŠù‚É‘¶İ‚µ‚Ä‚é‚æD  ’u‚«Š·‚¦‚éH") == 'y') {
+            if (yn("éª¨ãƒ•ã‚¡ã‚¤ãƒ«ãŒæ—¢ã«å­˜åœ¨ã—ã¦ã‚‹ã‚ˆï¼  ç½®ãæ›ãˆã‚‹ï¼Ÿ") == 'y') {
                 if (delete_bonesfile(&u.uz))
                     goto make_bones;
                 else
 /*JP
                     pline("Cannot unlink old bones.");
 */
-                    pline("ŒÃ‚¢œ‚ğíœ‚Å‚«‚È‚©‚Á‚½D");
+                    pline("å¤ã„éª¨ã‚’å‰Šé™¤ã§ããªã‹ã£ãŸï¼");
             }
         }
         /* compression can change the file's name, so must
@@ -538,7 +538,7 @@ make_bones:
 /*JP
                 pline("Insufficient space to create bones file.");
 */
-                pline("œƒtƒ@ƒCƒ‹‚ğ¶¬‚·‚é‚½‚ß‚Ì[•ª‚È—Ìˆæ‚ª‚È‚¢D");
+                pline("éª¨ãƒ•ã‚¡ã‚¤ãƒ«ã‚’ç”Ÿæˆã™ã‚‹ãŸã‚ã®å……åˆ†ãªé ˜åŸŸãŒãªã„ï¼");
             (void) nhclose(fd);
             cancel_bonesfile();
             return;
@@ -586,7 +586,7 @@ getbones()
 /*JP
             pline("Discarding unuseable bones; no need to panic...");
 */
-            pline("g‚¦‚È‚¢œ‚ğÌ‚Ä‚½DQ‚Ä‚é•K—v‚Í‚È‚¢DDD");
+            pline("ä½¿ãˆãªã„éª¨ã‚’æ¨ã¦ãŸï¼æ…Œã¦ã‚‹å¿…è¦ã¯ãªã„ï¼ï¼ï¼");
         ok = FALSE;
     } else {
         ok = TRUE;
@@ -594,7 +594,7 @@ getbones()
 /*JP
             if (yn("Get bones?") == 'n') {
 */
-            if (yn("œ‚ğE‚¤H") == 'n') {
+            if (yn("éª¨ã‚’æ‹¾ã†ï¼Ÿ") == 'n') {
                 (void) nhclose(fd);
                 compress_bonesfile();
                 return 0;
@@ -608,7 +608,7 @@ getbones()
 /*JP
             Sprintf(errbuf, "This is bones level '%s', not '%s'!", oldbonesid,
 */
-            Sprintf(errbuf, "‚±‚Ìœ‚ÌƒŒƒxƒ‹‚Í'%s'‚Å‚ ‚Á‚ÄA'%s'‚Å‚Í‚È‚¢I", oldbonesid,
+            Sprintf(errbuf, "ã“ã®éª¨ã®ãƒ¬ãƒ™ãƒ«ã¯'%s'ã§ã‚ã£ã¦ã€'%s'ã§ã¯ãªã„ï¼", oldbonesid,
                     bonesid);
             if (wizard) {
                 pline1(errbuf);
@@ -652,7 +652,7 @@ getbones()
 /*JP
         if (yn("Unlink bones?") == 'n') {
 */
-        if (yn("œ‚ğÁ‚·H") == 'n') {
+        if (yn("éª¨ã‚’æ¶ˆã™ï¼Ÿ") == 'n') {
             compress_bonesfile();
             return ok;
         }

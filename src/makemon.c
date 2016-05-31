@@ -1740,9 +1740,9 @@ struct monst *mtmp, *victim;
                       an(ptr->mname), mhe(mtmp),
                       nonliving(ptr) ? "expires" : "dies");
 #else
-                pline("%s‚ª¬’·‚µ‚Ä%s‚É‚È‚é‚Æ%s‚µ‚Ü‚Á‚½I", mon_nam(mtmp),
+                pline("%sãŒæˆé•·ã—ã¦%sã«ãªã‚‹ã¨%sã—ã¾ã£ãŸï¼", mon_nam(mtmp),
                       ptr->mname,
-                      nonliving(ptr) ? "Á‚¦‚Ä" : "€‚ñ‚Å");
+                      nonliving(ptr) ? "æ¶ˆãˆã¦" : "æ­»ã‚“ã§");
 #endif
             set_mon_data(mtmp, ptr, -1); /* keep mvitals[] accurate */
             mondied(mtmp);
@@ -1753,9 +1753,9 @@ struct monst *mtmp, *victim;
                   humanoid(ptr) ? "becomes" : "grows up into",
                   an(ptr->mname));
 #else
-            pline("%s‚Í%s‚É%sD", Monnam(mtmp),
+            pline("%sã¯%sã«%sï¼", Monnam(mtmp),
                   ptr->mname,
-                  humanoid(ptr) ? "‚È‚Á‚½" : "¬’·‚µ‚½");
+                  humanoid(ptr) ? "ãªã£ãŸ" : "æˆé•·ã—ãŸ");
 #endif
         }
         set_mon_data(mtmp, ptr, 1);    /* preserve intrinsics */
@@ -2126,7 +2126,7 @@ int *seencount;  /* secondary output */
 /*JP
         pline1((tipping && bag->cknown) ? "It's empty." : nothing_happens);
 */
-        pline1((tipping && bag->cknown) ? "‚»‚ê‚Í‹ó‚¾D" : nothing_happens);
+        pline1((tipping && bag->cknown) ? "ãã‚Œã¯ç©ºã ï¼" : nothing_happens);
         /* now known to be empty if sufficiently discovered */
         if (bag->dknown && objects[bag->otyp].oc_name_known)
             bag->cknown = 1;
@@ -2155,7 +2155,7 @@ int *seencount;  /* secondary output */
 /*JP
             pline1(!moncount ? nothing_happens : "Nothing seems to happen.");
 */
-            pline1(!moncount ? nothing_happens : "‰½‚à‹N‚«‚È‚©‚Á‚½‚æ‚¤‚¾D");
+            pline1(!moncount ? nothing_happens : "ä½•ã‚‚èµ·ããªã‹ã£ãŸã‚ˆã†ã ï¼");
         }
     }
     return moncount;

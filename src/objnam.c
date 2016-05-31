@@ -13,7 +13,7 @@
 #if 0 /*JP*/
 #define PREFIX 80 /* (56) */
 #else
-/* uô‚í‚ê‚Ä‚¢‚È‚¢–û‚Ì“h‚ç‚ê‚½H‚×‚©‚¯‚ÌƒNƒƒ}ƒeƒBƒbƒNEƒhƒ‰ƒSƒ“(‚Ì€‘Ì)v*/
+/* ã€Œå‘ªã‚ã‚Œã¦ã„ãªã„æ²¹ã®å¡—ã‚‰ã‚ŒãŸé£Ÿã¹ã‹ã‘ã®ã‚¯ãƒ­ãƒãƒ†ã‚£ãƒƒã‚¯ãƒ»ãƒ‰ãƒ©ã‚´ãƒ³(ã®æ­»ä½“)ã€*/
 #define PREFIX 100
 #endif
 #define SCHAR_LIM 127
@@ -71,18 +71,18 @@ STATIC_OVL struct Jitem Japanese_items[] = { { SHORT_SWORD, "wakizashi" },
                                              { POT_BOOZE, "sake" },
                                              { 0, "" } };
 #else
-STATIC_OVL struct Jitem Japanese_items[] = { { SHORT_SWORD, "˜e·‚µ" },
-                                             { BROADSWORD, "”EÒ“" },
-                                             { FLAIL, "ƒkƒ“ƒ`ƒƒƒN" },
-                                             { GLAIVE, "‚È‚¬‚È‚½" },
-                                             { LOCK_PICK, "‚¨‚³‚­" },
-                                             { WOODEN_HARP, "‹Õ" },
-                                             { KNIFE, "h“" },
-                                             { PLATE_MAIL, "’Zb" },
-                                             { HELMET, "Š•" },
-                                             { LEATHER_GLOVES, "‹|Œœ" },
-                                             { FOOD_RATION, "ŠÛ–ò" },
-                                             { POT_BOOZE, "ğ" },
+STATIC_OVL struct Jitem Japanese_items[] = { { SHORT_SWORD, "è„‡å·®ã—" },
+                                             { BROADSWORD, "å¿è€…åˆ€" },
+                                             { FLAIL, "ãƒŒãƒ³ãƒãƒ£ã‚¯" },
+                                             { GLAIVE, "ãªããªãŸ" },
+                                             { LOCK_PICK, "ãŠã•ã" },
+                                             { WOODEN_HARP, "ç´" },
+                                             { KNIFE, "åˆºåˆ€" },
+                                             { PLATE_MAIL, "çŸ­ç”²" },
+                                             { HELMET, "å…œ" },
+                                             { LEATHER_GLOVES, "å¼“æ‡¸" },
+                                             { FOOD_RATION, "ä¸¸è–¬" },
+                                             { POT_BOOZE, "é…’" },
                                              { 0, "" } };
 #endif
 
@@ -141,44 +141,44 @@ register int otyp;
         actualn = Japanese_item_name(otyp);
 #if 1 /*JP*/
     if(un)
-        Sprintf(buf, "%s‚ÆŒÄ‚Î‚ê‚é", un);
+        Sprintf(buf, "%sã¨å‘¼ã°ã‚Œã‚‹", un);
 #endif
     switch (ocl->oc_class) {
     case COIN_CLASS:
 /*JP
         Strcpy(buf, "coin");
 */
-        Strcat(buf, "‹à‰İ");
+        Strcat(buf, "é‡‘è²¨");
         break;
     case POTION_CLASS:
 /*JP
         Strcpy(buf, "potion");
 */
-        Strcat(buf, "–ò");
+        Strcat(buf, "è–¬");
         break;
     case SCROLL_CLASS:
 /*JP
         Strcpy(buf, "scroll");
 */
-        Strcat(buf, "Šª•¨");
+        Strcat(buf, "å·»ç‰©");
         break;
     case WAND_CLASS:
 /*JP
         Strcpy(buf, "wand");
 */
-        Strcat(buf, "ñ");
+        Strcat(buf, "æ–");
         break;
     case SPBOOK_CLASS:
 /*JP
         Strcpy(buf, "spellbook");
 */
-        Strcat(buf, "–‚–@‘");
+        Strcat(buf, "é­”æ³•æ›¸");
         break;
     case RING_CLASS:
 /*JP
         Strcpy(buf, "ring");
 */
-        Strcat(buf, "w—Ö");
+        Strcat(buf, "æŒ‡è¼ª");
         break;
     case AMULET_CLASS:
 #if 0 /*JP*/
@@ -195,7 +195,7 @@ register int otyp;
         if (nn)
             Strcat(buf, actualn);
         else if(un)
-            Strcat(buf, "–‚œ‚¯");
+            Strcat(buf, "é­”é™¤ã‘");
         break;
 #endif
 #if 1 /*JP*/
@@ -203,7 +203,7 @@ register int otyp;
         if(nn)
           Strcat(buf, actualn);
         else if(un)
-          Strcat(buf, "•óÎ");
+          Strcat(buf, "å®çŸ³");
         break;
 #endif
     default:
@@ -317,9 +317,9 @@ char *
 fruitname(juice)
 boolean juice; /* whether or not to append " juice" to the name */
 {
-#if 1 /*JP*//*“ú–{Œê‚Å‚Í‚»‚±‚Ü‚Å‚µ‚È‚¢*/
+#if 1 /*JP*//*æ—¥æœ¬èªã§ã¯ãã“ã¾ã§ã—ãªã„*/
     char *buf = nextobuf();
-    Sprintf(buf, "%s%s", pl_fruit, juice ? "ƒWƒ…[ƒX" : "");
+    Sprintf(buf, "%s%s", pl_fruit, juice ? "ã‚¸ãƒ¥ãƒ¼ã‚¹" : "");
     return buf;
 #else
     char *buf = nextobuf();
@@ -396,7 +396,7 @@ unsigned cxn_flags; /* bitmask of CXN_xxx values */
 #if 1 /*JP*/
     if (has_oname(obj) && dknown) {
         Strcat(buf, ONAME(obj));
-        Strcat(buf, "‚Æ–¼‚Ã‚¯‚ç‚ê‚½");
+        Strcat(buf, "ã¨åã¥ã‘ã‚‰ã‚ŒãŸ");
     }
 #endif
     switch (obj->oclass) {
@@ -405,7 +405,7 @@ unsigned cxn_flags; /* bitmask of CXN_xxx values */
 /*JP
             Strcpy(buf, "amulet");
 */
-            Strcat(buf, "–‚œ‚¯");  
+            Strcat(buf, "é­”é™¤ã‘");  
         else if (typ == AMULET_OF_YENDOR || typ == FAKE_AMULET_OF_YENDOR)
             /* each must be identified individually */
             Strcpy(buf, known ? actualn : dn);
@@ -415,7 +415,7 @@ unsigned cxn_flags; /* bitmask of CXN_xxx values */
 /*JP
             Sprintf(buf, "amulet called %s", un);
 */
-            Sprintf(eos(buf), "%s‚ÆŒÄ‚Î‚ê‚é–‚œ‚¯", un);
+            Sprintf(eos(buf), "%sã¨å‘¼ã°ã‚Œã‚‹é­”é™¤ã‘", un);
         else
 /*JP
             Sprintf(buf, "%s amulet", dn);
@@ -427,23 +427,23 @@ unsigned cxn_flags; /* bitmask of CXN_xxx values */
 /*JP
             Strcpy(buf, "poisoned ");
 */
-            Strcpy(buf, "“Å‚Ì“h‚ç‚ê‚½");
+            Strcpy(buf, "æ¯’ã®å¡—ã‚‰ã‚ŒãŸ");
     case VENOM_CLASS:
     case TOOL_CLASS:
 #if 1 /*JP*/
         if (typ == FIGURINE)
-            Sprintf(eos(buf), "%s‚Ì", mons[obj->corpsenm].mname);
+            Sprintf(eos(buf), "%sã®", mons[obj->corpsenm].mname);
 #endif
         if (typ == LENSES)
 /*JP
             Strcpy(buf, "pair of ");
 */
-            Strcpy(buf, "ˆê‘Î‚Ì");
+            Strcpy(buf, "ä¸€å¯¾ã®");
         else if (is_wet_towel(obj))
 /*JP
             Strcpy(buf, (obj->spe < 3) ? "moist " : "wet ");
 */
-            Strcpy(buf, (obj->spe < 3) ? "¼‚Á‚½" : "”G‚ê‚½");
+            Strcpy(buf, (obj->spe < 3) ? "æ¹¿ã£ãŸ" : "æ¿¡ã‚ŒãŸ");
 
         if (!dknown)
             Strcat(buf, dn ? dn : actualn);
@@ -456,12 +456,12 @@ unsigned cxn_flags; /* bitmask of CXN_xxx values */
             Strcat(buf, un);
 #else
             Strcat(buf, un);
-            Strcat(buf, "‚ÆŒÄ‚Î‚ê‚é");
+            Strcat(buf, "ã¨å‘¼ã°ã‚Œã‚‹");
             Strcat(buf, dn ? dn : actualn);
 #endif
         } else
             Strcat(buf, dn ? dn : actualn);
-#if 0 /*JP*/ /*‚±‚ê‚ÍŒê‡‚ÌŠÖŒW‚©‚çã‚Ì•û‚Å’è‹`*/
+#if 0 /*JP*/ /*ã“ã‚Œã¯èªé †ã®é–¢ä¿‚ã‹ã‚‰ä¸Šã®æ–¹ã§å®šç¾©*/
         /* If we use an() here we'd have to remember never to use */
         /* it whenever calling doname() or xname(). */
         if (typ == FIGURINE && omndx != NON_PM) {
@@ -482,28 +482,28 @@ unsigned cxn_flags; /* bitmask of CXN_xxx values */
 /*JP
             Sprintf(buf, "set of %s", actualn);
 */
-            Sprintf(buf, "%sˆê®", actualn);
+            Sprintf(buf, "%sä¸€å¼", actualn);
             break;
         }
         if (is_boots(obj) || is_gloves(obj))
 /*JP
             Strcpy(buf, "pair of ");
 */
-            Strcat(buf,"ˆê‘Î‚Ì");
+            Strcat(buf,"ä¸€å¯¾ã®");
 
         if (obj->otyp >= ELVEN_SHIELD && obj->otyp <= ORCISH_SHIELD
             && !dknown) {
 /*JP
             Strcpy(buf, "shield");
 */
-            Strcat(buf, "‚");
+            Strcat(buf, "ç›¾");
             break;
         }
         if (obj->otyp == SHIELD_OF_REFLECTION && !dknown) {
 /*JP
             Strcpy(buf, "smooth shield");
 */
-            Strcat(buf, "‚·‚×‚·‚×‚µ‚½‚");
+            Strcat(buf, "ã™ã¹ã™ã¹ã—ãŸç›¾");
             break;
         }
 
@@ -528,18 +528,18 @@ unsigned cxn_flags; /* bitmask of CXN_xxx values */
 #else
             char *p;
             if (is_boots(obj))
-                p = "ŒC";
+                p = "é´";
             else if (is_gloves(obj))
-                p = "¬è";
+                p = "å°æ‰‹";
             else if (is_cloak(obj))
-                p = "ƒNƒ[ƒN";
+                p = "ã‚¯ãƒ­ãƒ¼ã‚¯";
             else if (is_helmet(obj))
-                p = "Š•";
+                p = "å…œ";
             else if (is_shield(obj))
-                p = "‚";
+                p = "ç›¾";
             else
-                p = "ŠZ";
-            Sprintf(eos(buf), "%s‚ÆŒÄ‚Î‚ê‚é%s", un, p);
+                p = "é§";
+            Sprintf(eos(buf), "%sã¨å‘¼ã°ã‚Œã‚‹%s", un, p);
 #endif
         } else
             Strcat(buf, dn);
@@ -572,17 +572,17 @@ unsigned cxn_flags; /* bitmask of CXN_xxx values */
 /*JP
                        ? "small "
 */
-                       ? "¬‚³‚¢"
+                       ? "å°ã•ã„"
                        : (obj->owt > 500)
 /*JP
                           ? "very large "
 */
-                          ? "‚Æ‚Ä‚à‘å‚«‚¢"
+                          ? "ã¨ã¦ã‚‚å¤§ãã„"
                           : (obj->owt > 300)
 /*JP
                              ? "large "
 */
-                             ? "‘å‚«‚¢"
+                             ? "å¤§ãã„"
                              : "",
                     actualn);
             break;
@@ -594,7 +594,7 @@ unsigned cxn_flags; /* bitmask of CXN_xxx values */
             tin_details(obj, omndx, buf);
 #else
         if (typ == TIN && known)
-            /*JP u`‚Ì“÷‚Ìv*/
+            /*JP ã€Œã€œã®è‚‰ã®ã€*/
             tin_details(obj, omndx, buf);
         Strcat(buf, actualn);
 #endif
@@ -624,9 +624,9 @@ unsigned cxn_flags; /* bitmask of CXN_xxx values */
                              : "a ",
                     mons[omndx].mname);
 #else
-            Sprintf(eos(buf), "%s%s‚Ì%s", 
+            Sprintf(eos(buf), "%s%sã®%s", 
                     (Role_if(PM_ARCHEOLOGIST) && (obj->spe & STATUE_HISTORIC))
-                    ? "—ğj“I‚È"
+                    ? "æ­´å²çš„ãª"
                     : "",
                     mons[obj->corpsenm].mname, actualn);
 #endif
@@ -642,8 +642,8 @@ unsigned cxn_flags; /* bitmask of CXN_xxx values */
         Sprintf(buf, "%sheavy iron ball",
                 (obj->owt > ocl->oc_weight) ? "very " : "");
 #else
-        Sprintf(eos(buf), "%sd‚¢“S‹…",
-                (obj->owt > ocl->oc_weight) ? "‚Æ‚Ä‚à" : "");
+        Sprintf(eos(buf), "%sé‡ã„é‰„çƒ",
+                (obj->owt > ocl->oc_weight) ? "ã¨ã¦ã‚‚" : "");
 #endif
         break;
     case POTION_CLASS:
@@ -651,7 +651,7 @@ unsigned cxn_flags; /* bitmask of CXN_xxx values */
 /*JP
             Strcpy(buf, "diluted ");
 */
-            Strcat(buf, "”–‚Ü‚Á‚½");
+            Strcat(buf, "è–„ã¾ã£ãŸ");
         if (nn || un || !dknown) {
 #if 0 /*JP*/
             Strcat(buf, "potion");
@@ -659,7 +659,7 @@ unsigned cxn_flags; /* bitmask of CXN_xxx values */
                 break;
 #else
             if (!dknown){
-                Strcat(buf, "–ò");
+                Strcat(buf, "è–¬");
                 break;
             }
 #endif
@@ -672,7 +672,7 @@ unsigned cxn_flags; /* bitmask of CXN_xxx values */
 /*JP
                     Strcat(buf, obj->blessed ? "holy " : "unholy ");
 */
-                    Strcat(buf, obj->blessed ? "¹" : "•sò‚È");
+                    Strcat(buf, obj->blessed ? "è–" : "ä¸æµ„ãª");
                 }
                 Strcat(buf, actualn);
             } else {
@@ -681,12 +681,12 @@ unsigned cxn_flags; /* bitmask of CXN_xxx values */
                 Strcat(buf, un);
 #else
                 Strcat(buf, un);
-                Strcat(buf, "‚ÆŒÄ‚Î‚ê‚é–ò");
+                Strcat(buf, "ã¨å‘¼ã°ã‚Œã‚‹è–¬");
 #endif
             }
         } else {
             Strcat(buf, dn);
-#if 0 /*JP*//*•sŠm’è–¼‚Éu–òv‚Í•t‚¢‚Ä‚¢‚é*/
+#if 0 /*JP*//*ä¸ç¢ºå®šåã«ã€Œè–¬ã€ã¯ä»˜ã„ã¦ã„ã‚‹*/
             Strcat(buf, " potion");
 #endif
         }
@@ -698,7 +698,7 @@ unsigned cxn_flags; /* bitmask of CXN_xxx values */
             break;
 #else
         if(!dknown){
-            Strcat(buf,"Šª•¨");
+            Strcat(buf,"å·»ç‰©");
             break;
         }
 #endif
@@ -713,7 +713,7 @@ unsigned cxn_flags; /* bitmask of CXN_xxx values */
             Strcat(buf, un);
 #else
             Strcat(buf, un);
-            Strcat(buf, "‚ÆŒÄ‚Î‚ê‚éŠª•¨");
+            Strcat(buf, "ã¨å‘¼ã°ã‚Œã‚‹å·»ç‰©");
 #endif
         } else if (ocl->oc_magic) {
 #if 0 /*JP*/
@@ -734,7 +734,7 @@ unsigned cxn_flags; /* bitmask of CXN_xxx values */
 /*JP
             Strcpy(buf, "wand");
 */
-            Strcat(buf, "ñ");
+            Strcat(buf, "æ–");
         else if (nn)
 /*JP
             Sprintf(buf, "wand of %s", actualn);
@@ -744,7 +744,7 @@ unsigned cxn_flags; /* bitmask of CXN_xxx values */
 /*JP
             Sprintf(buf, "wand called %s", un);
 */
-            Sprintf(eos(buf), "%s‚ÆŒÄ‚Î‚ê‚éñ", un);
+            Sprintf(eos(buf), "%sã¨å‘¼ã°ã‚Œã‚‹æ–", un);
         else
 /*JP
             Sprintf(buf, "%s wand", dn);
@@ -767,7 +767,7 @@ unsigned cxn_flags; /* bitmask of CXN_xxx values */
 /*JP
             Strcpy(buf, "spellbook");
 */
-            Strcat(buf, "–‚–@‘");
+            Strcat(buf, "é­”æ³•æ›¸");
         } else if (nn) {
 #if 0 /*JP*/
             if (typ != SPE_BOOK_OF_THE_DEAD)
@@ -778,7 +778,7 @@ unsigned cxn_flags; /* bitmask of CXN_xxx values */
 /*JP
             Sprintf(buf, "spellbook called %s", un);
 */
-            Sprintf(eos(buf), "%s‚ÆŒÄ‚Î‚ê‚é–‚–@‘", un);
+            Sprintf(eos(buf), "%sã¨å‘¼ã°ã‚Œã‚‹é­”æ³•æ›¸", un);
         } else
 /*JP
             Sprintf(buf, "%s spellbook", dn);
@@ -790,7 +790,7 @@ unsigned cxn_flags; /* bitmask of CXN_xxx values */
 /*JP
             Strcpy(buf, "ring");
 */
-            Strcat(buf, "w—Ö");
+            Strcat(buf, "æŒ‡è¼ª");
         else if (nn)
 /*JP
             Sprintf(buf, "ring of %s", actualn);
@@ -800,7 +800,7 @@ unsigned cxn_flags; /* bitmask of CXN_xxx values */
 /*JP
             Sprintf(buf, "ring called %s", un);
 */
-            Sprintf(eos(buf), "%s‚ÆŒÄ‚Î‚ê‚éw—Ö", un);
+            Sprintf(eos(buf), "%sã¨å‘¼ã°ã‚Œã‚‹æŒ‡è¼ª", un);
         else
 /*JP
             Sprintf(buf, "%s ring", dn);
@@ -811,7 +811,7 @@ unsigned cxn_flags; /* bitmask of CXN_xxx values */
 /*JP
         const char *rock = (ocl->oc_material == MINERAL) ? "stone" : "gem";
 */
-        const char *rock = (ocl->oc_material == MINERAL) ? "Î" : "•óÎ";
+        const char *rock = (ocl->oc_material == MINERAL) ? "çŸ³" : "å®çŸ³";
 
         if (!dknown) {
 #if 0 /*JP*/
@@ -824,7 +824,7 @@ unsigned cxn_flags; /* bitmask of CXN_xxx values */
 /*JP
                 Sprintf(buf, "%s called %s", rock, un);
 */
-                Sprintf(eos(buf), "%s‚ÆŒÄ‚Î‚ê‚é%s", un, rock);
+                Sprintf(eos(buf), "%sã¨å‘¼ã°ã‚Œã‚‹%s", un, rock);
             else
 /*JP
                 Sprintf(buf, "%s %s", dn, rock);
@@ -853,7 +853,7 @@ unsigned cxn_flags; /* bitmask of CXN_xxx values */
 /*JP
         Sprintf(eos(buf), " with text \"%s\"", tshirt_text(obj, tmpbuf));
 */
-        Sprintf(eos(buf), "(u%sv‚Æ‘‚¢‚Ä‚ ‚é)", tshirt_text(obj, tmpbuf));
+        Sprintf(eos(buf), "(ã€Œ%sã€ã¨æ›¸ã„ã¦ã‚ã‚‹)", tshirt_text(obj, tmpbuf));
     }
 
 #if 0 /*JP*/
@@ -917,7 +917,7 @@ struct obj *obj;
     if (!strncmp(bufp, "uncursed ", 9))
         bufp += 9; /* Role_if(PM_PRIEST) */
 #else
-    if (!strncmp(bufp, "ô‚í‚ê‚Ä‚¢‚È‚¢", 14))
+    if (!strncmp(bufp, "å‘ªã‚ã‚Œã¦ã„ãªã„", 14))
         bufp += 14; /* Role_if(PM_PRIEST) */
 #endif
 
@@ -940,7 +940,7 @@ struct obj *obj;
 /*JP
         Sprintf(tmpbuf, "the %d%s ", m_shot.i, ordin(m_shot.i));
 */
-        Sprintf(tmpbuf, "%d%s–Ú‚Ì", m_shot.i, numeral(obj));
+        Sprintf(tmpbuf, "%d%sç›®ã®", m_shot.i, numeral(obj));
         onm = strprepend(onm, tmpbuf);
     }
     return onm;
@@ -1012,19 +1012,19 @@ char *prefix;
 /*JP
             Strcat(prefix, "very ");
 */
-            Strcat(prefix, "‚Æ‚Ä‚à");
+            Strcat(prefix, "ã¨ã¦ã‚‚");
             break;
         case 3:
 /*JP
             Strcat(prefix, "thoroughly ");
 */
-            Strcat(prefix, "‚©‚È‚è");
+            Strcat(prefix, "ã‹ãªã‚Š");
             break;
         }
 /*JP
         Strcat(prefix, is_rustprone(obj) ? "rusty " : "burnt ");
 */
-        Strcat(prefix, is_rustprone(obj) ? "K‚Ñ‚½" : "‚Â‚¢‚½");
+        Strcat(prefix, is_rustprone(obj) ? "éŒ†ã³ãŸ" : "å‚·ã¤ã„ãŸ");
     }
     if (obj->oeroded2 && !iscrys) {
         switch (obj->oeroded2) {
@@ -1032,42 +1032,42 @@ char *prefix;
 /*JP
             Strcat(prefix, "very ");
 */
-            Strcat(prefix, "‚Æ‚Ä‚à");
+            Strcat(prefix, "ã¨ã¦ã‚‚");
             break;
         case 3:
 /*JP
             Strcat(prefix, "thoroughly ");
 */
-            Strcat(prefix, "‚©‚È‚è");
+            Strcat(prefix, "ã‹ãªã‚Š");
             break;
         }
 /*JP
         Strcat(prefix, is_corrodeable(obj) ? "corroded " : "rotted ");
 */
-        Strcat(prefix, is_corrodeable(obj) ? "•…H‚µ‚½" : "•…‚Á‚½");
+        Strcat(prefix, is_corrodeable(obj) ? "è…é£Ÿã—ãŸ" : "è…ã£ãŸ");
     }
     if (rknown && obj->oerodeproof)
         Strcat(prefix, iscrys
 /*JP
                           ? "fixed "
 */
-                          ? "ˆÀ’è‚µ‚½"
+                          ? "å®‰å®šã—ãŸ"
                           : is_rustprone(obj)
 /*JP
                              ? "rustproof "
 */
-                             ? "K‚Ñ‚È‚¢"
+                             ? "éŒ†ã³ãªã„"
                              : is_corrodeable(obj)
 #if 0 /*JP*/
                                 ? "corrodeproof " /* "stainless"? */
 #else
-                                ? "•…H‚µ‚È‚¢" /* "stainless"? */
+                                ? "è…é£Ÿã—ãªã„" /* "stainless"? */
 #endif
                                 : is_flammable(obj)
 /*JP
                                    ? "fireproof "
 */
-                                   ? "”R‚¦‚È‚¢"
+                                   ? "ç‡ƒãˆãªã„"
                                    : "");
 }
 
@@ -1084,7 +1084,7 @@ boolean with_price;
                                 the start of prefix instead of the
                                 end (Strcat is used on the end) */
     register char *bp = xname(obj);
-#if 1 /*JP*//*‡˜“ü‚ê‘Ö‚¦‚Ég‚¤*/
+#if 1 /*JP*//*é †åºå…¥ã‚Œæ›¿ãˆã«ä½¿ã†*/
     char preprefix[PREFIX];
 #endif
 
@@ -1109,21 +1109,21 @@ boolean with_price;
         ispoisoned = TRUE;
     }
 #else
-    if (!strncmp(bp, "“Å‚Ì“h‚ç‚ê‚½", 12) && obj->opoisoned) {
+    if (!strncmp(bp, "æ¯’ã®å¡—ã‚‰ã‚ŒãŸ", 12) && obj->opoisoned) {
         bp += 12;
         ispoisoned = TRUE;
     }
 #endif
 #if 1 /*JP*/
     /* JP
-     *uq”L‚Ì‚½‚Ü‚Æ–¼‚Ã‚¯‚ç‚ê‚½€‘Ìv‚æ‚èu‚½‚Ü‚Æ–¼‚Ã‚¯‚ç‚ê‚½q”L‚Ì€‘Ìv
-     *  ‚Ì‚Ù‚¤‚ª©‘R‚Å‚ ‚éD
+     *ã€Œå­çŒ«ã®ãŸã¾ã¨åã¥ã‘ã‚‰ã‚ŒãŸæ­»ä½“ã€ã‚ˆã‚Šã€ŒãŸã¾ã¨åã¥ã‘ã‚‰ã‚ŒãŸå­çŒ«ã®æ­»ä½“ã€
+     *  ã®ã»ã†ãŒè‡ªç„¶ã§ã‚ã‚‹ï¼
      */
     {
         char *tp;
         preprefix[0] = '\0';
-        if((tp = strstri(bp, "–¼‚Ã‚¯‚ç‚ê‚½")) != NULL){
-            tp += 12; /* u–¼‚Ã‚¯‚ç‚ê‚½v*/
+        if((tp = strstri(bp, "åã¥ã‘ã‚‰ã‚ŒãŸ")) != NULL){
+            tp += 12; /* ã€Œåã¥ã‘ã‚‰ã‚ŒãŸã€*/
             strncpy(preprefix, bp, tp - bp);
             preprefix[tp - bp] = '\0';
             bp = tp;
@@ -1135,21 +1135,21 @@ boolean with_price;
     if (obj->quan != 1L) {
 #if 0 /*JP*/
         Sprintf(prefix, "%ld ", obj->quan);
-#else /* “ú–{Œê‚Æ‚µ‚Ä‚Í”Œ‚ª‚È‚¢‚Ì‚Í•s©‘R */
-        Sprintf(prefix, "%ld%s‚Ì", obj->quan, numeral(obj));
+#else /* æ—¥æœ¬èªã¨ã—ã¦ã¯æ•°è©ãŒãªã„ã®ã¯ä¸è‡ªç„¶ */
+        Sprintf(prefix, "%ld%sã®", obj->quan, numeral(obj));
 #endif
     } else if (obj->otyp == CORPSE) {
         /* skip article prefix for corpses [else corpse_xname()
            would have to be taught how to strip it off again] */
         *prefix = '\0';
-#if 0 /*JP*/ /* Š¥Œ‚Í•s—v */
+#if 0 /*JP*/ /* å† è©ã¯ä¸è¦ */
     } else if (obj_is_pname(obj) || the_unique_obj(obj)) {
         if (!strncmpi(bp, "the ", 4))
             bp += 4;
         Strcpy(prefix, "the ");
     } else {
         Strcpy(prefix, "a ");
-#else /*prefix‚Ì‰Šú‰»*/
+#else /*prefixã®åˆæœŸåŒ–*/
     } else {
         Strcpy(prefix, "");
 #endif
@@ -1171,7 +1171,7 @@ boolean with_price;
 /*JP
         Strcat(prefix, "empty ");
 */
-        Strcat(prefix, "‹ó‚Ì");
+        Strcat(prefix, "ç©ºã®");
 
     if (bknown && obj->oclass != COIN_CLASS
         && (obj->otyp != POT_WATER || !objects[POT_WATER].oc_name_known
@@ -1183,12 +1183,12 @@ boolean with_price;
 /*JP
             Strcat(prefix, "cursed ");
 */
-            Strcat(prefix, "ô‚í‚ê‚½");
+            Strcat(prefix, "å‘ªã‚ã‚ŒãŸ");
         else if (obj->blessed)
 /*JP
             Strcat(prefix, "blessed ");
 */
-            Strcat(prefix, "j•Ÿ‚³‚ê‚½");
+            Strcat(prefix, "ç¥ç¦ã•ã‚ŒãŸ");
         else if (!iflags.implicit_uncursed
             /* For most items with charges or +/-, if you know how many
              * charges are left or what the +/- is, then you must have
@@ -1212,7 +1212,7 @@ boolean with_price;
 /*JP
             Strcat(prefix, "uncursed ");
 */
-            Strcat(prefix, "ô‚í‚ê‚Ä‚¢‚È‚¢");
+            Strcat(prefix, "å‘ªã‚ã‚Œã¦ã„ãªã„");
     }
 
     if (lknown && Is_box(obj)) {
@@ -1220,24 +1220,24 @@ boolean with_price;
 /*JP
             Strcat(prefix, "unlockable ");
 */
-            Strcat(prefix, "Œ®‚Ì‰ó‚ê‚½");
+            Strcat(prefix, "éµã®å£Šã‚ŒãŸ");
         else if (obj->olocked)
 /*JP
             Strcat(prefix, "locked ");
 */
-            Strcat(prefix, "Œ®‚ÌŠ|‚©‚Á‚½");
+            Strcat(prefix, "éµã®æ›ã‹ã£ãŸ");
         else
 /*JP
             Strcat(prefix, "unlocked ");
 */
-            Strcat(prefix, "Œ®‚ÌŠ|‚©‚Á‚Ä‚¢‚È‚¢");
+            Strcat(prefix, "éµã®æ›ã‹ã£ã¦ã„ãªã„");
     }
 
     if (obj->greased)
 /*JP
         Strcat(prefix, "greased ");
 */
-        Strcat(prefix, "–û‚Ì“h‚ç‚ê‚½");
+        Strcat(prefix, "æ²¹ã®å¡—ã‚‰ã‚ŒãŸ");
 
     if (cknown && Has_contents(obj)) {
         /* we count all objects (obj->quantity); perhaps we should
@@ -1251,7 +1251,7 @@ boolean with_price;
         Sprintf(eos(bp), " containing %ld item%s", itemcount,
                 plur(itemcount));
 #else
-        Sprintf(eos(bp), "(%ldŒÂ“ü‚Á‚Ä‚¢‚é)", itemcount);
+        Sprintf(eos(bp), "(%ldå€‹å…¥ã£ã¦ã„ã‚‹)", itemcount);
 #endif
     }
 
@@ -1261,14 +1261,14 @@ boolean with_price;
 /*JP
             Strcat(bp, " (being worn)");
 */
-            Strcat(bp, "(g‚É‚Â‚¯‚Ä‚¢‚é)");
+            Strcat(bp, "(èº«ã«ã¤ã‘ã¦ã„ã‚‹)");
         break;
     case WEAPON_CLASS:
         if (ispoisoned)
 /*JP
             Strcat(prefix, "poisoned ");
 */
-            Strcat(prefix, "“Å‚Ì“h‚ç‚ê‚½");
+            Strcat(prefix, "æ¯’ã®å¡—ã‚‰ã‚ŒãŸ");
     plus:
         add_erosion_words(obj, prefix);
         if (known) {
@@ -1281,11 +1281,11 @@ boolean with_price;
 /*JP
             Strcat(bp, (obj == uskin) ? " (embedded in your skin)"
 */
-            Strcat(bp, (obj == uskin) ? "(”§‚É–„‚ß‚±‚Ü‚ê‚Ä‚¢‚é)"
+            Strcat(bp, (obj == uskin) ? "(è‚Œã«åŸ‹ã‚ã“ã¾ã‚Œã¦ã„ã‚‹)"
 /*JP
                                       : " (being worn)");
 */
-                                      : "(g‚É‚Â‚¯‚Ä‚¢‚é)");
+                                      : "(èº«ã«ã¤ã‘ã¦ã„ã‚‹)");
         goto plus;
     case TOOL_CLASS:
         /* weptools already get this done when we go to the +n code */
@@ -1295,14 +1295,14 @@ boolean with_price;
 /*JP
             Strcat(bp, " (being worn)");
 */
-            Strcat(bp, "(g‚É‚Â‚¯‚Ä‚¢‚é)");
+            Strcat(bp, "(èº«ã«ã¤ã‘ã¦ã„ã‚‹)");
             break;
         }
         if (obj->otyp == LEASH && obj->leashmon != 0) {
 /*JP
             Strcat(bp, " (in use)");
 */
-            Strcat(bp, "(Œ‹‚Ñ‚Â‚¯‚Ä‚¢‚é)");
+            Strcat(bp, "(çµã³ã¤ã‘ã¦ã„ã‚‹)");
             break;
         }
         if (is_weptool(obj))
@@ -1317,12 +1317,12 @@ boolean with_price;
                     !obj->lamplit ? " attached" : ", lit");
 #else
             if(!obj->spe)
-                Sprintf(eos(bp), "(ˆê–{‚àæ‚è‚Â‚¯‚ç‚ê‚Ä‚¢‚È‚¢)");
+                Sprintf(eos(bp), "(ä¸€æœ¬ã‚‚å–ã‚Šã¤ã‘ã‚‰ã‚Œã¦ã„ãªã„)");
             else {
                 if(!obj->lamplit)
-                  Sprintf(eos(bp), "(%d–{æ‚è‚Â‚¯‚ç‚ê‚Ä‚¢‚é)", obj->spe);
+                  Sprintf(eos(bp), "(%dæœ¬å–ã‚Šã¤ã‘ã‚‰ã‚Œã¦ã„ã‚‹)", obj->spe);
                 else
-                  Sprintf(eos(bp), "(%d–{Œõ‚Á‚Ä‚¢‚é)", obj->spe);
+                  Sprintf(eos(bp), "(%dæœ¬å…‰ã£ã¦ã„ã‚‹)", obj->spe);
             }
 #endif
             break;
@@ -1333,12 +1333,12 @@ boolean with_price;
 /*JP
                 Strcat(prefix, "partly used ");
 */
-                Strcat(prefix, "g‚¢‚³‚µ‚Ì");
+                Strcat(prefix, "ä½¿ã„ã•ã—ã®");
             if (obj->lamplit)
 /*JP
                 Strcat(bp, " (lit)");
 */
-                Strcat(bp, "(Œõ‚Á‚Ä‚¢‚é)");
+                Strcat(bp, "(å…‰ã£ã¦ã„ã‚‹)");
             break;
         }
         if (objects[obj->otyp].oc_charged)
@@ -1358,7 +1358,7 @@ boolean with_price;
 /*JP
             Strcat(bp, " (lit)");
 */
-            Strcat(bp, "(Œõ‚Á‚Ä‚¢‚é)");
+            Strcat(bp, "(å…‰ã£ã¦ã„ã‚‹)");
         break;
     case RING_CLASS:
         add_erosion_words(obj, prefix);
@@ -1367,12 +1367,12 @@ boolean with_price;
 /*JP
             Strcat(bp, " (on right ");
 */
-            Strcat(bp, "(‰E");
+            Strcat(bp, "(å³");
         if (obj->owornmask & W_RINGL)
 /*JP
             Strcat(bp, " (on left ");
 */
-            Strcat(bp, "(¶");
+            Strcat(bp, "(å·¦");
         if (obj->owornmask & W_RING) {
             Strcat(bp, body_part(HAND));
             Strcat(bp, ")");
@@ -1390,13 +1390,13 @@ boolean with_price;
 /*JP
             Strcat(prefix, "partly eaten ");
 */
-            Strcat(prefix, "H‚×‚©‚¯‚Ì");
+            Strcat(prefix, "é£Ÿã¹ã‹ã‘ã®");
         if (obj->otyp == CORPSE) {
 #if 0 /*JP*/
             Sprintf(prefix, "%s ",
                     corpse_xname(obj, prefix, CXN_ARTICLE | CXN_NOCORPSE));
 #else
-            Sprintf(prefix, "%s‚Ì",
+            Sprintf(prefix, "%sã®",
                     corpse_xname(obj, prefix, CXN_ARTICLE | CXN_NOCORPSE));
 #endif
         } else if (obj->otyp == EGG) {
@@ -1411,13 +1411,13 @@ boolean with_price;
                 Strcat(prefix, " ");
 #else
                 Strcat(prefix, mons[omndx].mname);
-                Strcat(prefix, "‚Ì");
+                Strcat(prefix, "ã®");
 #endif
                 if (obj->spe)
 /*JP
                     Strcat(bp, " (laid by you)");
 */
-                    Strcat(bp, "(‚ ‚È‚½‚ªY‚ñ‚¾)");
+                    Strcat(bp, "(ã‚ãªãŸãŒç”£ã‚“ã )");
             }
         }
         if (obj->otyp == MEAT_RING)
@@ -1430,7 +1430,7 @@ boolean with_price;
 /*JP
             Strcat(bp, " (chained to you)");
 */
-            Strcat(bp, "(‚ ‚È‚½‚ÉŒq‚ª‚ê‚Ä‚¢‚é)");
+            Strcat(bp, "(ã‚ãªãŸã«ç¹‹ãŒã‚Œã¦ã„ã‚‹)");
         break;
     }
 
@@ -1439,7 +1439,7 @@ boolean with_price;
 /*JP
             Strcat(bp, " (wielded)");
 */
-            Strcat(bp, "(‘•”õ‚µ‚Ä‚¢‚é)");
+            Strcat(bp, "(è£…å‚™ã—ã¦ã„ã‚‹)");
         } else {
             const char *hand_s = body_part(HAND);
 
@@ -1448,15 +1448,15 @@ boolean with_price;
 /*JP
             Sprintf(eos(bp), " (weapon in %s)", hand_s);
 */
-            Sprintf(eos(bp), "(%s‚É‚µ‚Ä‚¢‚é)", hand_s);
+            Sprintf(eos(bp), "(%sã«ã—ã¦ã„ã‚‹)", hand_s);
 
             if (warn_obj_cnt && obj == uwep && (EWarn_of_mon & W_WEP) != 0L) {
                 /* presumably can be felt when blind */
 #if 0 /*JP*/
                 Strcat(bp, " (");
                 if (!Blind)
-                    Sprintf(eos(bp), "%sF‚É", glow_color(obj->oartifact));
-                Strcat(bp, "‹P‚¢‚Ä‚¢‚é)");
+                    Sprintf(eos(bp), "%sè‰²ã«", glow_color(obj->oartifact));
+                Strcat(bp, "è¼ã„ã¦ã„ã‚‹)");
 #else
 #endif
             }
@@ -1467,12 +1467,12 @@ boolean with_price;
 /*JP
             Sprintf(eos(bp), " (wielded in other %s)", body_part(HAND));
 */
-            Sprintf(eos(bp), "(¶%s‚É‚µ‚Ä‚¢‚é)", body_part(HAND));
+            Sprintf(eos(bp), "(å·¦%sã«ã—ã¦ã„ã‚‹)", body_part(HAND));
         else
 /*JP
             Strcat(bp, " (alternate weapon; not wielded)");
 */
-            Strcat(bp, "(—\”õ‚Ì•Ší;‘•”õ‚µ‚Ä‚¢‚È‚¢)");
+            Strcat(bp, "(äºˆå‚™ã®æ­¦å™¨;è£…å‚™ã—ã¦ã„ãªã„)");
     }
     if (obj->owornmask & W_QUIVER) {
         switch (obj->oclass) {
@@ -1483,14 +1483,14 @@ boolean with_price;
 /*JP
                     Strcat(bp, " (in quiver)");
 */
-                    Strcat(bp, "(–î“›‚É“ü‚Á‚Ä‚¢‚é)");
+                    Strcat(bp, "(çŸ¢ç­’ã«å…¥ã£ã¦ã„ã‚‹)");
                     break;
                 } else {
                     /* Ammo not for a bow */
 /*JP
                     Strcat(bp, " (in quiver pouch)");
 */
-                    Strcat(bp, "(’e“ü‚ê‚É“ü‚Á‚Ä‚¢‚é)");
+                    Strcat(bp, "(å¼¾å…¥ã‚Œã«å…¥ã£ã¦ã„ã‚‹)");
                     break;
                 }
             } else {
@@ -1498,7 +1498,7 @@ boolean with_price;
 /*JP
                 Strcat(bp, " (at the ready)");
 */
-                Strcat(bp, "(€”õ‚µ‚Ä‚¢‚é)");
+                Strcat(bp, "(æº–å‚™ã—ã¦ã„ã‚‹)");
                 break;
             }
         /* Small things and ammo not for a bow */
@@ -1510,13 +1510,13 @@ boolean with_price;
 /*JP
             Strcat(bp, " (in quiver pouch)");
 */
-            Strcat(bp, "(’e“ü‚ê‚É“ü‚Á‚Ä‚¢‚é)");
+            Strcat(bp, "(å¼¾å…¥ã‚Œã«å…¥ã£ã¦ã„ã‚‹)");
             break;
         default: /* odd things */
 /*JP
             Strcat(bp, " (at the ready)");
 */
-            Strcat(bp, "(€”õ‚µ‚Ä‚¢‚é)");
+            Strcat(bp, "(æº–å‚™ã—ã¦ã„ã‚‹)");
         }
     }
     if (!iflags.suppress_price && is_unpaid(obj)) {
@@ -1531,7 +1531,7 @@ boolean with_price;
         if (price > 0)
             Sprintf(eos(bp), " (%ld %s)", price, currency(price));
     }
-#if 0 /*JP*//*“ú–{Œê‚Å‚Í•s—v*/
+#if 0 /*JP*//*æ—¥æœ¬èªã§ã¯ä¸è¦*/
     if (!strncmp(prefix, "a ", 2)
         && index(vowels, *(prefix + 2) ? *(prefix + 2) : *bp)
         && (*(prefix + 2)
@@ -1550,7 +1550,7 @@ boolean with_price;
     }
 #if 0 /*JP*/
     bp = strprepend(bp, prefix);
-#else /*JP:u–¼•t‚¯‚ç‚ê‚½v‚ğ–ß‚·*/
+#else /*JP:ã€Œåä»˜ã‘ã‚‰ã‚ŒãŸã€ã‚’æˆ»ã™*/
     Strcat(preprefix, prefix);
     bp = strprepend(bp, preprefix);
 #endif
@@ -1633,7 +1633,7 @@ unsigned cxn_flags; /* bitmask of CXN_xxx values */
 /*JP
         mname = "thing";
 */
-        mname = "‰½‚©";
+        mname = "ä½•ã‹";
         /* [Possible enhancement:  check whether corpse has monster traits
             attached in order to use priestname() for priests and minions.] */
     } else if (omndx == PM_ALIGNED_PRIEST) {
@@ -1641,7 +1641,7 @@ unsigned cxn_flags; /* bitmask of CXN_xxx values */
 /*JP
         mname = "priest";
 */
-        mname = "‘m—µ";
+        mname = "åƒ§ä¾¶";
     } else {
         mname = mons[omndx].mname;
         if (the_unique_pm(&mons[omndx]) || type_is_pname(&mons[omndx])) {
@@ -1666,7 +1666,7 @@ unsigned cxn_flags; /* bitmask of CXN_xxx values */
        Name causes it to assume a personal name and return Name as-is;
        that's usually the behavior wanted, but here we need to force "the"
        to precede capitalized unique monsters (pnames are handled above) */
-#if 0 /*JP*//*“ú–{Œê‚É’èŠ¥Œ‚Í•s—v*/
+#if 0 /*JP*//*æ—¥æœ¬èªã«å®šå† è©ã¯ä¸è¦*/
     if (the_prefix)
         Strcat(nambuf, "the ");
 #endif
@@ -1703,7 +1703,7 @@ unsigned cxn_flags; /* bitmask of CXN_xxx values */
             any_prefix = FALSE; /* avoid "a newt corpses" */
         }
 #else
-        Strcat(nambuf, "‚Ì€‘Ì");
+        Strcat(nambuf, "ã®æ­»ä½“");
 #endif
     }
 
@@ -1789,12 +1789,12 @@ struct obj *obj;
 /*JP
         Sprintf(buf, "deadly slime mold%s", plur(obj->quan));
 */
-        Strcpy(buf, "ŠëŒ¯‚È‚Ë‚Î‚Ë‚ÎƒJƒr");
+        Strcpy(buf, "å±é™ºãªã­ã°ã­ã°ã‚«ãƒ“");
     } else {
         buf = xname(obj);
     }
     /* apply an article if appropriate; caller should always use KILLED_BY */
-#if 0 /*JP*//*“ú–{Œê‚Å‚Í•s—v*/
+#if 0 /*JP*//*æ—¥æœ¬èªã§ã¯ä¸è¦*/
     if (obj->quan == 1L && !strstri(buf, "'s ") && !strstri(buf, "s' "))
         buf = (obj_is_pname(obj) || the_unique_obj(obj)) ? the(buf) : an(buf);
 #endif
@@ -1916,7 +1916,7 @@ register const char *str;
 {
     char *buf = nextobuf();
 
-#if 0 /*JP*//*•s’èŠ¥Œ‚Í•s—v*/
+#if 0 /*JP*//*ä¸å®šå† è©ã¯ä¸è¦*/
     buf[0] = '\0';
 
     if (strncmpi(str, "the ", 4) && strcmp(str, "molten lava")
@@ -1930,7 +1930,7 @@ register const char *str;
     }
 
     Strcat(buf, str);
-#else /*’P‚ÉƒRƒs[*/
+#else /*å˜ã«ã‚³ãƒ”ãƒ¼*/
     Strcpy(buf, str);
 #endif
     return buf;
@@ -1942,7 +1942,7 @@ const char *str;
 {
     char *tmp = an(str);
 
-#if 0 /*JP*//*‘å•¶š‰»‚µ‚È‚¢*/
+#if 0 /*JP*//*å¤§æ–‡å­—åŒ–ã—ãªã„*/
     *tmp = highc(*tmp);
 #endif
     return tmp;
@@ -1957,7 +1957,7 @@ the(str)
 const char *str;
 {
     char *buf = nextobuf();
-#if 0 /*JP*//*’èŠ¥Œ‚Í•s—v*/
+#if 0 /*JP*//*å®šå† è©ã¯ä¸è¦*/
     boolean insert_the = FALSE;
 
     if (!strncmpi(str, "the ", 4)) {
@@ -1999,7 +1999,7 @@ const char *str;
         buf[0] = '\0';
     Strcat(buf, str);
 
-#else /*’P‚ÉƒRƒs[*/
+#else /*å˜ã«ã‚³ãƒ”ãƒ¼*/
     Strcpy(buf, str);
 #endif /*JP*/
     return buf;
@@ -2011,7 +2011,7 @@ const char *str;
 {
     char *tmp = the(str);
 
-#if 0 /*JP*//*‘å•¶š‰»‚µ‚È‚¢*/
+#if 0 /*JP*//*å¤§æ–‡å­—åŒ–ã—ãªã„*/
     *tmp = highc(*tmp);
 #endif
     return tmp;
@@ -2090,7 +2090,7 @@ const char *verb;
 {
     char *bp = The(xname(otmp));
 
-#if 0 /*JP*//*“ú–{Œê‚É‚ÍO’PŒ»‚Ìs‚Í‚È‚¢*/
+#if 0 /*JP*//*æ—¥æœ¬èªã«ã¯ä¸‰å˜ç¾ã®sã¯ãªã„*/
     if (verb) {
         Strcat(bp, " ");
         Strcat(bp, otense(otmp, verb));
@@ -2184,7 +2184,7 @@ struct obj *obj;
 {
     char *simpleoname = minimal_xname(obj);
 
-#if 0 /*JP*//*“ú–{Œê‚Í’P•¡“¯Œ^*/
+#if 0 /*JP*//*æ—¥æœ¬èªã¯å˜è¤‡åŒå‹*/
     if (obj->quan != 1L)
         simpleoname = makeplural(simpleoname);
 #endif
@@ -2269,7 +2269,7 @@ const char *verb;
      * if the result of xname(otmp) would be plural.  Don't bother
      * recomputing xname(otmp) at this time.
      */
-#if 0 /*JP*//*“ú–{Œê‚É‚ÍO’PŒ»‚Ìs‚Í‚È‚¢*/
+#if 0 /*JP*//*æ—¥æœ¬èªã«ã¯ä¸‰å˜ç¾ã®sã¯ãªã„*/
     if (!is_plural(otmp))
         return vtense((char *) 0, verb);
 #endif /*JP*/
@@ -2298,7 +2298,7 @@ vtense(subj, verb)
 register const char *subj;
 register const char *verb;
 {
-#if 0 /*JP*//*“ú–{Œê‚É‚ÍO’PŒ»‚Ìs‚Í‚È‚¢*/
+#if 0 /*JP*//*æ—¥æœ¬èªã«ã¯ä¸‰å˜ç¾ã®sã¯ãªã„*/
     char *buf = nextobuf(), *bspot;
     int len, ltmp;
     const char *sp, *spot;
@@ -2534,7 +2534,7 @@ char *
 makeplural(oldstr)
 const char *oldstr;
 {
-#if 0 /*JP*//*“ú–{Œê‚Í’P•¡“¯Œ^*/
+#if 0 /*JP*//*æ—¥æœ¬èªã¯å˜è¤‡åŒå‹*/
     register char *spot;
     char lo_c, *str = nextobuf();
     const char *excess = (char *) 0;
@@ -2704,7 +2704,7 @@ char *
 makesingular(oldstr)
 const char *oldstr;
 {
-#if 0 /*JP*//*“ú–{Œê‚Í’P•¡“¯Œ^*/
+#if 0 /*JP*//*æ—¥æœ¬èªã¯å˜è¤‡åŒå‹*/
     register char *p, *bp;
     const char *excess = 0;
     char *str = nextobuf();
@@ -3079,7 +3079,7 @@ struct obj *no_wish;
     if (!strcmpi(bp, "nothing") || !strcmpi(bp, "nil")
         || !strcmpi(bp, "none"))
 #else
-    if (!strcmpi(bp, "‚È‚µ") || !strcmpi(bp, "–³‚µ"))
+    if (!strcmpi(bp, "ãªã—") || !strcmpi(bp, "ç„¡ã—"))
 #endif
         return no_wish;
     /* save the [nearly] unmodified choice string */
@@ -3113,20 +3113,20 @@ struct obj *no_wish;
         } else if (!strncmpi(bp, "blessed ", l = 8)
                    || !strncmpi(bp, "holy ", l = 5)) {
 #else
-        } else if (!strncmpi(bp, "j•Ÿ‚³‚ê‚½", l = 10)) {
+        } else if (!strncmpi(bp, "ç¥ç¦ã•ã‚ŒãŸ", l = 10)) {
 #endif
             blessed = 1;
 #if 0 /*JP*/
         } else if (!strncmpi(bp, "moist ", l = 6)
                    || !strncmpi(bp, "wet ", l = 4)) {
 #else
-        } else if (!strncmpi(bp, "¼‚Á‚½", l = 6)
-                   || !strncmpi(bp, "”G‚ê‚½", l = 6)) {
+        } else if (!strncmpi(bp, "æ¹¿ã£ãŸ", l = 6)
+                   || !strncmpi(bp, "æ¿¡ã‚ŒãŸ", l = 6)) {
 #endif
 #if 0 /*JP*/
             if (!strncmpi(bp, "wet ", 4))
 #else
-            if (!strncmpi(bp, "”G‚ê‚½", 4))
+            if (!strncmpi(bp, "æ¿¡ã‚ŒãŸ", 4))
 #endif
                 wetness = rn2(3) + 3;
             else
@@ -3135,13 +3135,13 @@ struct obj *no_wish;
         } else if (!strncmpi(bp, "cursed ", l = 7)
                    || !strncmpi(bp, "unholy ", l = 7)) {
 #else
-        } else if (!strncmpi(bp, "ô‚í‚ê‚½", l = 8)) {
+        } else if (!strncmpi(bp, "å‘ªã‚ã‚ŒãŸ", l = 8)) {
 #endif
             iscursed = 1;
 #if 0 /*JP*/
         } else if (!strncmpi(bp, "uncursed ", l = 9)) {
 #else
-        } else if (!strncmpi(bp, "ô‚í‚ê‚Ä‚¢‚È‚¢", l = 9)) {
+        } else if (!strncmpi(bp, "å‘ªã‚ã‚Œã¦ã„ãªã„", l = 9)) {
 #endif
             uncursed = 1;
 #if 0 /*JP*/
@@ -3152,10 +3152,10 @@ struct obj *no_wish;
                    || !strncmpi(bp, "fireproof ", l = 10)
                    || !strncmpi(bp, "rotproof ", l = 9)) {
 #else
-        } else if (!strncmpi(bp, "K‚Ñ‚È‚¢", l = 8)
-                   || !strncmpi(bp, "•…H‚µ‚È‚¢", l = 10)
-                   || !strncmpi(bp, "ˆÀ’è‚µ‚½", l = 8)
-                   || !strncmpi(bp, "”R‚¦‚È‚¢", l = 8)) {
+        } else if (!strncmpi(bp, "éŒ†ã³ãªã„", l = 8)
+                   || !strncmpi(bp, "è…é£Ÿã—ãªã„", l = 10)
+                   || !strncmpi(bp, "å®‰å®šã—ãŸ", l = 8)
+                   || !strncmpi(bp, "ç‡ƒãˆãªã„", l = 8)) {
 #endif
             erodeproof = 1;
         } else if (!strncmpi(bp, "lit ", l = 4)
@@ -3301,7 +3301,7 @@ struct obj *no_wish;
         contents = SPINACH;
     }
 
-#if 0 /*JP*//*“ú–{Œê‚Å‚Íˆ—‚µ‚È‚¢*/
+#if 0 /*JP*//*æ—¥æœ¬èªã§ã¯å‡¦ç†ã—ãªã„*/
     /*
     Skip over "pair of ", "pairs of", "set of" and "sets of".
 
@@ -3328,7 +3328,7 @@ struct obj *no_wish;
     }
 #endif
 
-#if 0 /*JP*//*“ú–{Œê‚Å‚Íˆ—‚µ‚È‚¢*/
+#if 0 /*JP*//*æ—¥æœ¬èªã§ã¯å‡¦ç†ã—ãªã„*/
     /* intercept pudding globs here; they're a valid wish target,
      * but we need them to not get treated like a corpse.
      *
@@ -3392,7 +3392,7 @@ struct obj *no_wish;
                             }
                         }
 
-#if 0 /*JP*//*’P”‰»‚Í‚µ‚È‚¢*/
+#if 0 /*JP*//*å˜æ•°åŒ–ã¯ã—ãªã„*/
     /* first change to singular if necessary */
     if (*bp) {
         char *sng = makesingular(bp);
@@ -3404,7 +3404,7 @@ struct obj *no_wish;
     }
 #endif
 
-#if 0 /*JP*//*ƒXƒyƒ‹—h‚êˆ—‚Í‚µ‚È‚¢*/
+#if 0 /*JP*//*ã‚¹ãƒšãƒ«æºã‚Œå‡¦ç†ã¯ã—ãªã„*/
     /* Alternate spellings (pick-ax, silver sabre, &c) */
     {
         struct alt_spellings *as = spellings;
@@ -3447,13 +3447,13 @@ struct obj *no_wish;
             blessed = 1;
         goto typfnd;
     }
-#else /*JP:¹…‚Æ•sò‚È…‚ğ•Ê‚É”»’è*/
-    if (!BSTRCMPI(bp, p - 4, "¹…")) {
+#else /*JP:è–æ°´ã¨ä¸æµ„ãªæ°´ã‚’åˆ¥ã«åˆ¤å®š*/
+    if (!BSTRCMPI(bp, p - 4, "è–æ°´")) {
         typ = POT_WATER;
 	blessed = 1;
         goto typfnd;
     }
-    if (!BSTRCMPI(bp, p - 4, "•sò‚È…")) {
+    if (!BSTRCMPI(bp, p - 4, "ä¸æµ„ãªæ°´")) {
         typ = POT_WATER;
 	iscursed = 1;
         goto typfnd;
@@ -3462,7 +3462,7 @@ struct obj *no_wish;
 #if 0 /*JP*/
     if (unlabeled && !BSTRCMPI(bp, p - 6, "scroll")) {
 #else
-    if (unlabeled && !BSTRCMPI(bp, p - 4, "Šª•¨")) {
+    if (unlabeled && !BSTRCMPI(bp, p - 4, "å·»ç‰©")) {
 #endif
         typ = SCR_BLANK_PAPER;
         goto typfnd;
@@ -3470,7 +3470,7 @@ struct obj *no_wish;
 #if 0 /*JP*/
     if (unlabeled && !BSTRCMPI(bp, p - 9, "spellbook")) {
 #else
-    if (unlabeled && !BSTRCMPI(bp, p - 6, "–‚–@‘")) {
+    if (unlabeled && !BSTRCMPI(bp, p - 6, "é­”æ³•æ›¸")) {
 #endif
         typ = SPE_BLANK_PAPER;
         goto typfnd;
@@ -3486,7 +3486,7 @@ struct obj *no_wish;
         || !strcmpi(bp, "gold") || !strcmpi(bp, "money")
         || !strcmpi(bp, "coin") || *bp == GOLD_SYM) {
 #else
-    if (!BSTRCMPI(bp, p - 4, "‹à‰İ") || !BSTRCMPI(bp, p - 8, "ƒS[ƒ‹ƒh")
+    if (!BSTRCMPI(bp, p - 4, "é‡‘è²¨") || !BSTRCMPI(bp, p - 8, "ã‚´ãƒ¼ãƒ«ãƒ‰")
         || *bp == GOLD_SYM) {
 #endif
         if (cnt > 5000 && !wizard)
@@ -3686,7 +3686,7 @@ srch:
 #if 0 /*JP*/
     if (!strcmpi(bp, "spinach")) {
 #else
-    if (!strcmp(bp, "ƒzƒEƒŒƒ“‘")) {
+    if (!strcmp(bp, "ãƒ›ã‚¦ãƒ¬ãƒ³è‰")) {
 #endif
         contents = SPINACH;
         typ = TIN;
@@ -4172,7 +4172,7 @@ typfnd:
 /*JP
         pline("For a moment, you feel %s in your %s, but it disappears!",
 */
-        pline("ˆêu%s‚ª%s‚Ì’†‚É‚ ‚é‚æ‚¤‚ÈŠ´‚¶‚ª‚µ‚½‚ªC‚·‚®‚ÉÁ‚¦‚³‚Á‚½I",
+        pline("ä¸€ç¬%sãŒ%sã®ä¸­ã«ã‚ã‚‹ã‚ˆã†ãªæ„Ÿã˜ãŒã—ãŸãŒï¼Œã™ãã«æ¶ˆãˆã•ã£ãŸï¼",
               something, makeplural(body_part(HAND)));
     }
 
@@ -4254,22 +4254,22 @@ struct obj *cloak;
 /*JP
             return "robe";
 */
-            return "ƒ[ƒu";
+            return "ãƒ­ãƒ¼ãƒ–";
         case MUMMY_WRAPPING:
 /*JP
             return "wrapping";
 */
-            return "•ï‘Ñ";
+            return "åŒ…å¸¯";
         case ALCHEMY_SMOCK:
             return (objects[cloak->otyp].oc_name_known && cloak->dknown)
 /*JP
                        ? "smock"
 */
-                       ? "ƒXƒ‚ƒbƒN"
+                       ? "ã‚¹ãƒ¢ãƒƒã‚¯"
 /*JP
                        : "apron";
 */
-                       : "ƒGƒvƒƒ“";
+                       : "ã‚¨ãƒ—ãƒ­ãƒ³";
         default:
             break;
         }
@@ -4277,7 +4277,7 @@ struct obj *cloak;
 /*JP
     return "cloak";
 */
-    return "ƒNƒ[ƒN";
+    return "ã‚¯ãƒ­ãƒ¼ã‚¯";
 }
 
 /* helm vs hat for messages */
@@ -4300,7 +4300,7 @@ struct obj *helmet;
 /*JP
     return (helmet && !is_metallic(helmet)) ? "hat" : "helm";
 */
-    return (helmet && !is_metallic(helmet)) ? "–Xq" : "Š•";
+    return (helmet && !is_metallic(helmet)) ? "å¸½å­" : "å…œ";
 }
 
 const char *
@@ -4314,13 +4314,13 @@ struct monst *mtmp;
 /*JP
             return "gold";
 */
-            return "‹à‰İ";
+            return "é‡‘è²¨";
         return obj_descr[idx].oc_name;
     }
 /*JP
     return "whatcha-may-callit";
 */
-    return "‰½‚Æ‚©‚¢‚¤‚à‚Ì";
+    return "ä½•ã¨ã‹ã„ã†ã‚‚ã®";
 }
 
 /*

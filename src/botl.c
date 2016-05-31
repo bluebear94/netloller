@@ -16,8 +16,8 @@ extern const char *hu_stat[]; /* defined in eat.c */
 const char *const enc_stat[] = { "",         "Burdened",  "Stressed",
                                  "Strained", "Overtaxed", "Overloaded" };
 #else
-const char *const enc_stat[] = { "",     "‚æ‚ë‚ß‚«", "ˆ³”—",
-                                 "ŒÀŠE", "‰×d",     "’´‰ß"};
+const char *const enc_stat[] = { "",     "ã‚ˆã‚ã‚ã", "åœ§è¿«",
+                                 "é™ç•Œ", "è·é‡",     "è¶…é"};
 #endif
 
 STATIC_OVL NEARDATA int mrank_sz = 0; /* loaded by max_rank_sz (from u_init) */
@@ -73,26 +73,26 @@ bot1()
 /*JP
             Sprintf(nb = eos(nb), "St:%2d ", ACURR(A_STR) - 100);
 */
-            Sprintf(nb = eos(nb), "‹­:%2d ", ACURR(A_STR) - 100);
+            Sprintf(nb = eos(nb), "å¼·:%2d ", ACURR(A_STR) - 100);
         else if (ACURR(A_STR) < STR18(100))
 /*JP
             Sprintf(nb = eos(nb), "St:18/%02d ", ACURR(A_STR) - 18);
 */
-            Sprintf(nb = eos(nb), "‹­:18/%02d ", ACURR(A_STR) - 18);
+            Sprintf(nb = eos(nb), "å¼·:18/%02d ", ACURR(A_STR) - 18);
         else
 /*JP
             Sprintf(nb = eos(nb), "St:18/** ");
 */
-            Sprintf(nb = eos(nb), "‹­:18/** ");
+            Sprintf(nb = eos(nb), "å¼·:18/** ");
     } else
 /*JP
         Sprintf(nb = eos(nb), "St:%-1d ", ACURR(A_STR));
 */
-        Sprintf(nb = eos(nb), "‹­:%-1d ", ACURR(A_STR));
+        Sprintf(nb = eos(nb), "å¼·:%-1d ", ACURR(A_STR));
 /*JP
     Sprintf(nb = eos(nb), "Dx:%-1d Co:%-1d In:%-1d Wi:%-1d Ch:%-1d",
 */
-    Sprintf(nb = eos(nb), "‘:%-1d ‘Ï:%-1d ’m:%-1d Œ«:%-1d –£:%-1d ",
+    Sprintf(nb = eos(nb), "æ—©:%-1d è€:%-1d çŸ¥:%-1d è³¢:%-1d é­…:%-1d ",
             ACURR(A_DEX), ACURR(A_CON), ACURR(A_INT), ACURR(A_WIS),
             ACURR(A_CHA));
 #if 0 /*JP*/
@@ -103,15 +103,15 @@ bot1()
 #else
     Sprintf(nb = eos(nb),
             (u.ualign.type == A_CHAOTIC)
-                ? "¬“×"
-                : (u.ualign.type == A_NEUTRAL) ? "’†—§" : "’˜");
+                ? "æ··æ²Œ"
+                : (u.ualign.type == A_NEUTRAL) ? "ä¸­ç«‹" : "ç§©åº");
 #endif
 #ifdef SCORE_ON_BOTL
     if (flags.showscore)
 /*JP
         Sprintf(nb = eos(nb), " S:%ld", botl_score());
 */
-        Sprintf(nb = eos(nb), "%ld“_", botl_score());
+        Sprintf(nb = eos(nb), "%ldç‚¹", botl_score());
 #endif
     curs(WIN_STATUS, 1, 0);
     putstr(WIN_STATUS, 0, newbot1);
@@ -134,7 +134,7 @@ bot2()
 /*JP
     Sprintf(nb = eos(newbot2), "%s:%-2ld HP:%d(%d) Pw:%d(%d) AC:%-2d",
 */
-    Sprintf(nb = eos(newbot2), "%s:%-2ld ‘Ì:%d(%d) –‚:%d(%d) ŠZ:%-2d",
+    Sprintf(nb = eos(newbot2), "%s:%-2ld ä½“:%d(%d) é­”:%d(%d) é§:%-2d",
             encglyph(objnum_to_glyph(GOLD_PIECE)), money_cnt(invent), hp,
             hpmax, u.uen, u.uenmax, u.uac);
 
@@ -144,18 +144,18 @@ bot2()
 /*JP
         Sprintf(nb = eos(nb), " Xp:%u/%-1ld", u.ulevel, u.uexp);
 */
-        Sprintf(nb = eos(nb), " ŒoŒ±:%u/%-1ld", u.ulevel,u.uexp);
+        Sprintf(nb = eos(nb), " çµŒé¨“:%u/%-1ld", u.ulevel,u.uexp);
     else
 /*JP
         Sprintf(nb = eos(nb), " Exp:%u", u.ulevel);
 */
-        Sprintf(nb = eos(nb), " ŒoŒ±:%u", u.ulevel);
+        Sprintf(nb = eos(nb), " çµŒé¨“:%u", u.ulevel);
 
     if (flags.time)
 /*JP
         Sprintf(nb = eos(nb), " T:%ld", moves);
 */
-        Sprintf(nb = eos(nb), " •à:%ld", moves);
+        Sprintf(nb = eos(nb), " æ­©:%ld", moves);
     if (strcmp(hu_stat[u.uhs], "        ")) {
         Sprintf(nb = eos(nb), " ");
         Strcat(newbot2, hu_stat[u.uhs]);
@@ -164,39 +164,39 @@ bot2()
 /*JP
         Sprintf(nb = eos(nb), " Conf");
 */
-        Sprintf(nb = eos(nb), " ¬—");
+        Sprintf(nb = eos(nb), " æ··ä¹±");
     if (Sick) {
         if (u.usick_type & SICK_VOMITABLE)
 /*JP
             Sprintf(nb = eos(nb), " FoodPois");
 */
-            Sprintf(nb = eos(nb), " H“Å");
+            Sprintf(nb = eos(nb), " é£Ÿæ¯’");
         if (u.usick_type & SICK_NONVOMITABLE)
 /*JP
             Sprintf(nb = eos(nb), " Ill");
 */
-            Sprintf(nb = eos(nb), " •a‹C");
+            Sprintf(nb = eos(nb), " ç—…æ°—");
     }
     if (Blind)
 /*JP
         Sprintf(nb = eos(nb), " Blind");
 */
-        Sprintf(nb = eos(nb), " –Ó–Ú");
+        Sprintf(nb = eos(nb), " ç›²ç›®");
     if (Stunned)
 /*JP
         Sprintf(nb = eos(nb), " Stun");
 */
-        Sprintf(nb = eos(nb), " á¿ò");
+        Sprintf(nb = eos(nb), " çœ©æšˆ");
     if (Hallucination)
 /*JP
         Sprintf(nb = eos(nb), " Hallu");
 */
-        Sprintf(nb = eos(nb), " Œ¶Šo");
+        Sprintf(nb = eos(nb), " å¹»è¦š");
     if (Slimed)
 /*JP
         Sprintf(nb = eos(nb), " Slime");
 */
-        Sprintf(nb = eos(nb), " ‚Ç‚ë‚Ç‚ë");
+        Sprintf(nb = eos(nb), " ã©ã‚ã©ã‚");
     if (cap > UNENCUMBERED)
         Sprintf(nb = eos(nb), " %s", enc_stat[cap]);
     curs(WIN_STATUS, 1, 1);
@@ -265,7 +265,7 @@ boolean female;
 /*JP
     return "Player";
 */
-    return "ƒvƒŒƒCƒ„[";
+    return "ãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ¼";
 }
 
 STATIC_OVL const char *
@@ -353,18 +353,18 @@ char *buf;
 /*JP
         Sprintf(buf, "Home %d ", dunlev(&u.uz));
 */
-        Sprintf(buf, "ŒÌ‹½ %d ", dunlev(&u.uz));
+        Sprintf(buf, "æ•…éƒ· %d ", dunlev(&u.uz));
     else if (In_endgame(&u.uz))
 /*JP
         Sprintf(buf, Is_astralevel(&u.uz) ? "Astral Plane " : "End Game ");
 */
-        Sprintf(buf, Is_astralevel(&u.uz) ? "¸—ìŠE " : "ÅI—û ");
+        Sprintf(buf, Is_astralevel(&u.uz) ? "ç²¾éœŠç•Œ " : "æœ€çµ‚è©¦ç·´ ");
     else {
         /* ports with more room may expand this one */
 /*JP
         Sprintf(buf, "Dlvl:%-2d ", depth(&u.uz));
 */
-        Sprintf(buf, "’n‰º:%-2d ", depth(&u.uz));
+        Sprintf(buf, "åœ°ä¸‹:%-2d ", depth(&u.uz));
         ret = 0;
     }
     return ret;

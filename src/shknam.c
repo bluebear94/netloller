@@ -208,7 +208,7 @@ const struct shclass shtypes[] = {
 /*JP
     { "general store",
 */
-    { "G‰İ‰®",
+    { "é›‘è²¨å±‹",
       RANDOM_CLASS,
       42,
       D_SHOP,
@@ -222,7 +222,7 @@ const struct shclass shtypes[] = {
 /*JP
     { "used armor dealership",
 */
-    { "’†ŒÃŠZ¤‰ï",
+    { "ä¸­å¤é§å•†ä¼š",
       ARMOR_CLASS,
       14,
       D_SHOP,
@@ -236,7 +236,7 @@ const struct shclass shtypes[] = {
 /*JP
     { "second-hand bookstore",
 */
-    { "ŒÃ‘“X",
+    { "å¤æ›¸åº—",
       SCROLL_CLASS,
       10,
       D_SHOP,
@@ -250,7 +250,7 @@ const struct shclass shtypes[] = {
 /*JP
     { "liquor emporium",
 */
-    {"‚¨ğ‚Ì•S‰İ“X",
+    {"ãŠé…’ã®ç™¾è²¨åº—",
       POTION_CLASS,
       10,
       D_SHOP,
@@ -264,7 +264,7 @@ const struct shclass shtypes[] = {
 /*JP
     { "antique weapons outlet",
 */
-    { "ŒÃ•Šíê–å¬”„“X",
+    { "å¤æ­¦å™¨å°‚é–€å°å£²åº—",
       WEAPON_CLASS,
       5,
       D_SHOP,
@@ -278,7 +278,7 @@ const struct shclass shtypes[] = {
 /*JP
     { "delicatessen",
 */
-    { "H•i“X",
+    { "é£Ÿå“åº—",
       FOOD_CLASS,
       5,
       D_SHOP,
@@ -292,7 +292,7 @@ const struct shclass shtypes[] = {
 /*JP
     { "jewelers",
 */
-    { "•óÎ“X",
+    { "å®çŸ³åº—",
       RING_CLASS,
       3,
       D_SHOP,
@@ -306,7 +306,7 @@ const struct shclass shtypes[] = {
 /*JP
     { "quality apparel and accessories",
 */
-    { "‚¨ƒVƒƒƒŒ‚È—m•i“X",
+    { "ãŠã‚·ãƒ£ãƒ¬ãªæ´‹å“åº—",
       WAND_CLASS,
       3,
       D_SHOP,
@@ -318,7 +318,7 @@ const struct shclass shtypes[] = {
 /*JP
     { "hardware store",
 */
-    { "“¹‹ï‰®",
+    { "é“å…·å±‹",
       TOOL_CLASS,
       3,
       D_SHOP,
@@ -332,7 +332,7 @@ const struct shclass shtypes[] = {
 /*JP
     { "rare books",
 */
-    { "Œ¶‚Ì–{‰®",
+    { "å¹»ã®æœ¬å±‹",
       SPBOOK_CLASS,
       3,
       D_SHOP,
@@ -346,7 +346,7 @@ const struct shclass shtypes[] = {
 /*JP
     { "health food store",
 */
-    { "Œ’NH•i‚Ì“X",
+    { "å¥åº·é£Ÿå“ã®åº—",
       FOOD_CLASS,
       2,
       D_SHOP,
@@ -364,7 +364,7 @@ const struct shclass shtypes[] = {
 /*JP
     { "lighting store",
 */
-    { "Æ–¾“X",
+    { "ç…§æ˜åº—",
       TOOL_CLASS,
       0,
       D_SHOP,
@@ -766,7 +766,7 @@ register struct mkroom *sroom;
 /*JP
         Sprintf(buf, "Closed for inventory");
 */
-        Sprintf(buf, "’I‰µ‚µ‚Ì‚½‚ß•Â“X");
+        Sprintf(buf, "æ£šå¸ã—ã®ãŸã‚é–‰åº—");
         make_engr_at(m, n, buf, 0L, DUST);
     }
 

@@ -380,7 +380,7 @@ struct entity *etmp;
 /*JP
     return is_u(etmp) ? "you" : mon_nam(etmp->emon);
 */
-    return is_u(etmp) ? "‚ ‚È‚½" : mon_nam(etmp->emon);
+    return is_u(etmp) ? "ã‚ãªãŸ" : mon_nam(etmp->emon);
 }
 
 /*
@@ -396,7 +396,7 @@ const char *verb;
     static char wholebuf[80];
 
 #if 1 /*JP*/
-    Strcpy(wholebuf, is_u(etmp) ? "‚ ‚È‚½" : Monnam(etmp->emon));
+    Strcpy(wholebuf, is_u(etmp) ? "ã‚ãªãŸ" : Monnam(etmp->emon));
     return wholebuf;
 #else
     Strcpy(wholebuf, is_u(etmp) ? "You" : Monnam(etmp->emon));
@@ -460,7 +460,7 @@ int dest, how;
 /*JP
                 Strcpy(killer.name, "falling drawbridge");
 */
-                Strcpy(killer.name, "~‚è‚Ä‚«‚½’µ‚Ë‹´‚Å");
+                Strcpy(killer.name, "é™ã‚Šã¦ããŸè·³ã­æ©‹ã§");
             }
             done(how);
             /* So, you didn't die */
@@ -470,8 +470,8 @@ int dest, how;
                     pline("A %s force teleports you away...",
                           Hallucination ? "normal" : "strange");
 #else
-                    pline("%s—Í‚ª‚ ‚È‚½‚ğ‰“‚­‚É‰^‚ñ‚¾DDD",
-                          Hallucination ? "•’Ê‚Ì" : "Šï–­‚È");
+                    pline("%såŠ›ãŒã‚ãªãŸã‚’é ãã«é‹ã‚“ã ï¼ï¼ï¼",
+                          Hallucination ? "æ™®é€šã®" : "å¥‡å¦™ãª");
 #endif
                     teleds(xy.x, xy.y, FALSE);
                 }
@@ -609,8 +609,8 @@ struct entity *etmp;
                       at_portcullis ? "portcullis" : "drawbridge",
                       e_nam(etmp));
 #else
-            pline_The("%s‚Í%s‚ğ’Ê‚è”²‚¯‚½I",
-                      at_portcullis ? "—‚µŠiq" : "’µ‚Ë‹´",
+            pline_The("%sã¯%sã‚’é€šã‚ŠæŠœã‘ãŸï¼",
+                      at_portcullis ? "è½ã—æ ¼å­" : "è·³ã­æ©‹",
                       e_nam(etmp));
 #endif
         if (is_u(etmp))
@@ -622,7 +622,7 @@ struct entity *etmp;
 /*JP
             pline_The("portcullis misses %s!", e_nam(etmp));
 */
-            pline("—‚µŠiq‚Í%s‚É–½’†‚µ‚È‚©‚Á‚½I", e_nam(etmp));
+            pline("è½ã—æ ¼å­ã¯%sã«å‘½ä¸­ã—ãªã‹ã£ãŸï¼", e_nam(etmp));
         } else {
             debugpline1("The drawbridge misses %s!", e_nam(etmp));
         }
@@ -640,7 +640,7 @@ struct entity *etmp;
 /*JP
             pline("%s crushed underneath the drawbridge.",
 */
-            pline("%s‚Í’µ‚Ë‹´‚Ì‰º•~‚É‚È‚Á‚½D",
+            pline("%sã¯è·³ã­æ©‹ã®ä¸‹æ•·ã«ãªã£ãŸï¼",
                   E_phrase(etmp, "are"));             /* no jump */
             e_died(etmp, e_inview ? 3 : 2, CRUSHING); /* no corpse */
             return;       /* Note: Beyond this point, we know we're  */
@@ -657,13 +657,13 @@ struct entity *etmp;
 /*JP
                     pline("%s crushed by the falling portcullis!",
 */
-                    pline("%s‚Í—‚¿‚Ä‚«‚½—‚µŠiq‚É’×‚³‚ê‚½I",
+                    pline("%sã¯è½ã¡ã¦ããŸè½ã—æ ¼å­ã«æ½°ã•ã‚ŒãŸï¼",
                           E_phrase(etmp, "are"));
                 else if (!Deaf)
 /*JP
                     You_hear("a crushing sound.");
 */
-                    You_hear("‰½‚©‚ª’×‚ê‚é‰¹‚ğ•·‚¢‚½D");
+                    You_hear("ä½•ã‹ãŒæ½°ã‚Œã‚‹éŸ³ã‚’èã„ãŸï¼");
                 e_died(etmp, e_inview ? 3 : 2, CRUSHING);
                 /* no corpse */
                 return;
@@ -751,22 +751,22 @@ struct entity *etmp;
 /*JP
                 You("tumble towards the closed portcullis!");
 */
-                You("•Â‚Ü‚è‚©‚¯‚Ì—‚µŠiq‚ğ‚±‚ë‚Ô‚æ‚¤‚É‚·‚è‚Ê‚¯‚½I");
+                You("é–‰ã¾ã‚Šã‹ã‘ã®è½ã—æ ¼å­ã‚’ã“ã‚ã¶ã‚ˆã†ã«ã™ã‚Šã¬ã‘ãŸï¼");
                 if (automiss(etmp))
 /*JP
                     You("pass through it!");
 */
-                    You("’Ê‚è‚Ê‚¯‚½I");
+                    You("é€šã‚Šã¬ã‘ãŸï¼");
                 else
 /*JP
                     pline_The("drawbridge closes in...");
 */
-                    pline_The("’µ‚Ë‹´‚Í•Â‚¶‚½DDD");
+                    pline_The("è·³ã­æ©‹ã¯é–‰ã˜ãŸï¼ï¼ï¼");
             } else
 /*JP
                 pline("%s behind the drawbridge.",
 */
-                pline("%s‚Í’µ‚Ë‹´‚Ì— ‚ÉˆÚ“®‚µ‚½D",
+                pline("%sã¯è·³ã­æ©‹ã®è£ã«ç§»å‹•ã—ãŸï¼",
                       E_phrase(etmp, "disappear"));
         }
         if (!e_survives_at(etmp, etmp->ex, etmp->ey)) {
@@ -774,7 +774,7 @@ struct entity *etmp;
 /*JP
             Strcpy(killer.name, "closing drawbridge");
 */
-            Strcpy(killer.name, "•Â‚¶‚Ä‚¢‚­’µ‚Ë‹´‚É‹·‚Ü‚ê‚Ä");
+            Strcpy(killer.name, "é–‰ã˜ã¦ã„ãè·³ã­æ©‹ã«ç‹­ã¾ã‚Œã¦");
             e_died(etmp, 0, CRUSHING); /* no message */
             return;
         }
@@ -786,14 +786,14 @@ struct entity *etmp;
 /*JP
                 You_hear("a splash.");
 */
-                You_hear("ƒpƒVƒƒƒpƒVƒƒ‚Æ‚¢‚¤‰¹‚ğ•·‚¢‚½D");
+                You_hear("ãƒ‘ã‚·ãƒ£ãƒ‘ã‚·ãƒ£ã¨ã„ã†éŸ³ã‚’èã„ãŸï¼");
         if (e_survives_at(etmp, etmp->ex, etmp->ey)) {
             if (e_inview && !is_flyer(etmp->edata)
                 && !is_floater(etmp->edata))
 /*JP
                 pline("%s from the bridge.", E_phrase(etmp, "fall"));
 */
-                pline("%s‚Í‹´‚©‚ç—‚¿‚½D", E_phrase(etmp, "fall"));
+                pline("%sã¯æ©‹ã‹ã‚‰è½ã¡ãŸï¼", E_phrase(etmp, "fall"));
             return;
         }
         debugpline1("%s cannot survive on the drawbridge square",
@@ -808,16 +808,16 @@ struct entity *etmp;
                     pline("%s the %s and disappears.",
                           E_phrase(etmp, "drink"), lava ? "lava" : "moat");
 #else
-                    pline("%s‚Í%s‚ğˆù‚İCÁ‚¦‚½D",
-                          E_phrase(etmp, "drink"), lava ? "—nŠâ" : "–x");
+                    pline("%sã¯%sã‚’é£²ã¿ï¼Œæ¶ˆãˆãŸï¼",
+                          E_phrase(etmp, "drink"), lava ? "æº¶å²©" : "å €");
 #endif
                 else
 #if 0 /*JP*/
                     pline("%s into the %s.", E_phrase(etmp, "fall"),
                           lava ? "lava" : "moat");
 #else
-                    pline("%s‚Í%s‚Ì’†‚É—‚¿‚½D", E_phrase(etmp, "fall"),
-                          lava ? "—nŠâ" : "–x");
+                    pline("%sã¯%sã®ä¸­ã«è½ã¡ãŸï¼", E_phrase(etmp, "fall"),
+                          lava ? "æº¶å²©" : "å €");
 #endif
             }
 #if 0 /*JP:T*/
@@ -825,7 +825,7 @@ struct entity *etmp;
         Strcpy(killer.name, "fell from a drawbridge");
 #else
         killer.format = KILLED_BY;
-        Strcpy(killer.name, "’µ‚Ë‹´‚©‚ç—‚¿‚Ä");
+        Strcpy(killer.name, "è·³ã­æ©‹ã‹ã‚‰è½ã¡ã¦");
 #endif
         e_died(etmp, e_inview ? 3 : 2, /* CRUSHING is arbitrary */
                (is_pool(etmp->ex, etmp->ey))
@@ -862,13 +862,13 @@ int x, y;
                     ? "coming"
                     : "going");
 #else
-        pline("’µ‚Ë‹´‚ªã‚ª‚Á‚Ä‚¢‚­‚Ì‚ªŒ©‚¦‚½I");
+        pline("è·³ã­æ©‹ãŒä¸ŠãŒã£ã¦ã„ãã®ãŒè¦‹ãˆãŸï¼");
 #endif
     else /* "5 gears turn" for castle drawbridge tune */
 /*JP
         You_hear("chains rattling and gears turning.");
 */
-        You_hear("•Ô‚ª‰ñ‚èƒ`ƒF[ƒ“‚ªƒKƒ‰ƒKƒ‰‚¢‚¤‰¹‚ğ•·‚¢‚½D");
+        You_hear("æ­¯è»ŠãŒå›ã‚Šãƒã‚§ãƒ¼ãƒ³ãŒã‚¬ãƒ©ã‚¬ãƒ©ã„ã†éŸ³ã‚’èã„ãŸï¼");
     lev1->typ = DRAWBRIDGE_UP;
     lev2 = &levl[x2][y2];
     lev2->typ = DBWALL;
@@ -892,7 +892,7 @@ int x, y;
 /*JP
         You_hear("smashing and crushing.");
 */
-        You_hear("ƒKƒVƒƒƒ“CƒKƒ‰ƒ“‚Æ‚¢‚¤‰¹‚ğ•·‚¢‚½D");
+        You_hear("ã‚¬ã‚·ãƒ£ãƒ³ï¼Œã‚¬ãƒ©ãƒ³ã¨ã„ã†éŸ³ã‚’èã„ãŸï¼");
     (void) revive_nasty(x, y, (char *) 0);
     (void) revive_nasty(x2, y2, (char *) 0);
     delallobj(x, y);
@@ -931,13 +931,13 @@ int x, y;
         You_see("a drawbridge %s down!",
                 (distu(x2, y2) < distu(x, y)) ? "going" : "coming");
 #else
-        pline("’µ‚Ë‹´‚ª‰º‚ª‚é‚Ì‚ªŒ©‚¦‚½I");
+        pline("è·³ã­æ©‹ãŒä¸‹ãŒã‚‹ã®ãŒè¦‹ãˆãŸï¼");
 #endif
     else /* "5 gears turn" for castle drawbridge tune */
 /*JP
         You_hear("gears turning and chains rattling.");
 */
-        You_hear("•Ô‚ª‰ñ‚èƒ`ƒF[ƒ“‚ªƒKƒ‰ƒKƒ‰‚¢‚¤‰¹‚ğ•·‚¢‚½D");
+        You_hear("æ­¯è»ŠãŒå›ã‚Šãƒã‚§ãƒ¼ãƒ³ãŒã‚¬ãƒ©ã‚¬ãƒ©ã„ã†éŸ³ã‚’èã„ãŸï¼");
     lev1->typ = DRAWBRIDGE_DOWN;
     lev2 = &levl[x2][y2];
     lev2->typ = DOOR;
@@ -994,28 +994,28 @@ int x, y;
                 pline_The("portcullis of the drawbridge falls into the %s!",
                           lava ? "lava" : "moat");
 #else
-                pline("’µ‚Ë‹´‚Ì—‚µŠiq‚ª%s‚É—‚¿‚½I",
-                          lava ? "—nŠâ" : "–x");
+                pline("è·³ã­æ©‹ã®è½ã—æ ¼å­ãŒ%sã«è½ã¡ãŸï¼",
+                          lava ? "æº¶å²©" : "å €");
 #endif
             else if (!Deaf)
 /*JP
                 You_hear("a loud *SPLASH*!");
 */
-                You_hear("‘å‚«‚ÈƒoƒbƒVƒƒ[ƒ“‚Æ‚¢‚¤‰¹‚ğ•·‚¢‚½I");
+                You_hear("å¤§ããªãƒãƒƒã‚·ãƒ£ãƒ¼ãƒ³ã¨ã„ã†éŸ³ã‚’èã„ãŸï¼");
         } else {
             if (cansee(x, y))
 #if 0 /*JP*/
                 pline_The("drawbridge collapses into the %s!",
                           lava ? "lava" : "moat");
 #else
-                pline("’µ‚Ë‹´‚Í%s‚É‚­‚¸‚ê—‚¿‚½I",
-                          lava ? "—nŠâ" : "–x");
+                pline("è·³ã­æ©‹ã¯%sã«ããšã‚Œè½ã¡ãŸï¼",
+                          lava ? "æº¶å²©" : "å €");
 #endif
             else if (!Deaf)
 /*JP
                 You_hear("a loud *SPLASH*!");
 */
-                You_hear("‘å‚«‚ÈƒoƒbƒVƒƒ[ƒ“‚Æ‚¢‚¤‰¹‚ğ•·‚¢‚½I");
+                You_hear("å¤§ããªãƒãƒƒã‚·ãƒ£ãƒ¼ãƒ³ã¨ã„ã†éŸ³ã‚’èã„ãŸï¼");
         }
         lev1->typ = lava ? LAVAPOOL : MOAT;
         lev1->drawbridgemask = 0;
@@ -1024,19 +1024,19 @@ int x, y;
 /*JP
             (void) flooreffects(otmp2, x, y, "fall");
 */
-            (void) flooreffects(otmp2, x, y, "—‚¿‚é");
+            (void) flooreffects(otmp2, x, y, "è½ã¡ã‚‹");
         }
     } else {
         if (cansee(x, y))
 /*JP
             pline_The("drawbridge disintegrates!");
 */
-            pline("’µ‚Ë‹´‚Í‚±‚È‚²‚È‚É‚È‚Á‚½I");
+            pline("è·³ã­æ©‹ã¯ã“ãªã”ãªã«ãªã£ãŸï¼");
         else
 /*JP
             You_hear("a loud *CRASH*!");
 */
-            You_hear("‘å‚«‚ÈƒKƒVƒƒ[ƒ“‚Æ‚¢‚¤‰¹‚ğ•·‚¢‚½I");
+            You_hear("å¤§ããªã‚¬ã‚·ãƒ£ãƒ¼ãƒ³ã¨ã„ã†éŸ³ã‚’èã„ãŸï¼");
         lev1->typ = ((lev1->drawbridgemask & DB_ICE) ? ICE : ROOM);
         lev1->icedpool = ((lev1->drawbridgemask & DB_ICE) ? ICED_MOAT : 0);
     }
@@ -1074,13 +1074,13 @@ int x, y;
 /*JP
                 pline("%s blown apart by flying debris.",
 */
-                pline("%s‚Í”ò‚ÑU‚Á‚½Š¢âI‚Ì”j•Ğ‚ğ—‚Ñ‚½D",
+                pline("%sã¯é£›ã³æ•£ã£ãŸç“¦ç¤«ã®ç ´ç‰‡ã‚’æµ´ã³ãŸï¼",
                       E_phrase(etmp2, "are"));
             killer.format = KILLED_BY_AN;
 /*JP
             Strcpy(killer.name, "exploding drawbridge");
 */
-            Strcpy(killer.name, "’µ‚Ë‹´‚Ì”š”­‚Å");
+            Strcpy(killer.name, "è·³ã­æ©‹ã®çˆ†ç™ºã§");
             e_died(etmp2, e_inview ? 3 : 2, CRUSHING); /*no corpse*/
         } /* nothing which is vulnerable can survive this */
     }
@@ -1100,20 +1100,20 @@ int x, y;
 /*JP
                     pline("%s into some heavy metal!",
 */
-                    pline("%s‚Íd‹à‘®‚É–„‚à‚ê‚½I",
+                    pline("%sã¯é‡é‡‘å±ã«åŸ‹ã‚‚ã‚ŒãŸï¼",
                           E_phrase(etmp1, "get"));
                 else
 /*JP
                     pline("%s hit by a huge chunk of metal!",
 */
-                    pline("‘å‚«‚È“S‚Ì‰ò‚ª%s‚É–½’†‚µ‚½I",
+                    pline("å¤§ããªé‰„ã®å¡ŠãŒ%sã«å‘½ä¸­ã—ãŸï¼",
                           E_phrase(etmp1, "are"));
             } else {
                 if (!Deaf && !is_u(etmp1) && !is_pool(x, y)) {
 /*JP
                     You_hear("a crushing sound.");
 */
-                    You_hear("ƒKƒ‰ƒ“‚Æ‚¢‚¤‰¹‚ğ•·‚¢‚½D");
+                    You_hear("ã‚¬ãƒ©ãƒ³ã¨ã„ã†éŸ³ã‚’èã„ãŸï¼");
                 } else {
                     debugpline1("%s from shrapnel", E_phrase(etmp1, "die"));
                 }
@@ -1122,7 +1122,7 @@ int x, y;
 /*JP
             Strcpy(killer.name, "collapsing drawbridge");
 */
-            Strcpy(killer.name, "ƒoƒ‰ƒoƒ‰‚É‚È‚Á‚½’µ‚Ë‹´‚Å");
+            Strcpy(killer.name, "ãƒãƒ©ãƒãƒ©ã«ãªã£ãŸè·³ã­æ©‹ã§");
             e_died(etmp1, e_inview ? 3 : 2, CRUSHING); /*no corpse*/
             if (levl[etmp1->ex][etmp1->ey].typ == MOAT)
                 do_entity(etmp1);

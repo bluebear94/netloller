@@ -258,8 +258,8 @@ coord *startp; /* starting position (read only) */
 static NEARDATA const char *mail_text[] = { "Gangway!", "Look out!",
                                             "Pardon me!" };
 #else
-static NEARDATA const char *mail_text[] = { "‚Ç‚¢‚½‚Ç‚¢‚½I", "‹C‚ğ‚Â‚¯‚ëI",
-                                            "‚¶‚á‚Ü‚·‚é‚æI" };
+static NEARDATA const char *mail_text[] = { "ã©ã„ãŸã©ã„ãŸï¼", "æ°—ã‚’ã¤ã‘ã‚ï¼",
+                                            "ã˜ã‚ƒã¾ã™ã‚‹ã‚ˆï¼" };
 #endif
 #define md_exclamations() (mail_text[rn2(3)])
 
@@ -325,7 +325,7 @@ register int tx, ty; /* destination of mail daemon */
 /*JP
             verbalize("Excuse me.");
 */
-            verbalize("‚¿‚å‚Á‚Æ‚µ‚Â‚ê‚¢D");
+            verbalize("ã¡ã‚‡ã£ã¨ã—ã¤ã‚Œã„ï¼");
 
         place_monster(md, fx, fy); /* put md down */
         newsym(fx, fy);            /* see it */
@@ -353,7 +353,7 @@ register int tx, ty; /* destination of mail daemon */
 /*JP
         verbalize("This place's too crowded.  I'm outta here.");
 */
-        verbalize("‚±‚±‚Í¬‚İ‚·‚¬D‚±‚±‚Å‘Ò‚Á‚Ä‚é‚æD");
+        verbalize("ã“ã“ã¯æ··ã¿ã™ãï¼ã“ã“ã§å¾…ã£ã¦ã‚‹ã‚ˆï¼");
 
         if ((mon->mx != fx) || (mon->my != fy)) /* put mon back */
             place_worm_seg(mon, fx, fy);
@@ -396,7 +396,7 @@ struct mail_info *info;
 #if 0 /*JP*/
     verbalize("%s, %s!  %s.", Hello(md), plname, info->display_txt);
 #else
-    verbalize("%sI%sD", Hello(md), info->display_txt);
+    verbalize("%sï¼%sï¼", Hello(md), info->display_txt);
 #endif
 
     if (info->message_typ) {
@@ -411,13 +411,13 @@ struct mail_info *info;
 /*JP
             verbalize("Catch!");
 */
-            verbalize("‚Ù‚ç‚æI");
+            verbalize("ã»ã‚‰ã‚ˆï¼");
         display_nhwindow(WIN_MESSAGE, FALSE);
 #if 0 /*JP*/
         obj = hold_another_object(obj, "Oops!", (const char *) 0,
                                   (const char *) 0);
 #else
-        obj = hold_another_object(obj, "‚¨‚Á‚ÆI", (const char *) 0,
+        obj = hold_another_object(obj, "ãŠã£ã¨ï¼", (const char *) 0,
                                   (const char *) 0);
 #endif
     }
@@ -432,7 +432,7 @@ give_up:
 /*JP
         pline("Hark!  \"%s.\"", info->display_txt);
 */
-        pline("u%sDv‚ÆŒ¾‚¤‚±‚Æ‚¾I", info->display_txt);
+        pline("ã€Œ%sï¼ã€ã¨è¨€ã†ã“ã¨ã ï¼", info->display_txt);
 }
 
 #if !defined(UNIX) && !defined(VMS)
@@ -453,7 +453,7 @@ ckmailstatus()
 /*JP
                                             "I have some mail for you", 0,
 */
-                                            "ƒ[ƒ‹‚ğ‚Á‚Ä‚«‚½‚æ", 0,
+                                            "ãƒ¡ãƒ¼ãƒ«ã‚’æŒã£ã¦ããŸã‚ˆ", 0,
                                             0 };
         newmail(&deliver);
         mustgetmail = -1;
@@ -470,34 +470,34 @@ struct obj *otmp;
 /*JP
         "Please disregard previous letter.", "Welcome to NetHack.",
 */
-        "‘O‚Ìƒ[ƒ‹‚Í–Y‚ê‚Ä‚­‚¾‚³‚¢D", "NetHack‚Ö‚æ‚¤‚±‚»I",
+        "å‰ã®ãƒ¡ãƒ¼ãƒ«ã¯å¿˜ã‚Œã¦ãã ã•ã„ï¼", "NetHackã¸ã‚ˆã†ã“ãï¼",
 #ifdef AMIGA
         "Only Amiga makes it possible.", "CATS have all the answers.",
 #endif
 /*JP
         "This mail complies with the Yendorian Anti-Spam Act (YASA)",
 */
-        "‚±‚Ìƒ[ƒ‹‚ÍƒCƒFƒ“ƒ_[ƒXƒpƒ€‘Îô–@(YASA)‚É€‹’‚µ‚Ä‚¢‚Ü‚·D",
+        "ã“ã®ãƒ¡ãƒ¼ãƒ«ã¯ã‚¤ã‚§ãƒ³ãƒ€ãƒ¼ã‚¹ãƒ‘ãƒ å¯¾ç­–æ³•(YASA)ã«æº–æ‹ ã—ã¦ã„ã¾ã™ï¼",
 /*JP
         "Please find enclosed a small token to represent your Owlbear",
 */
-        "‚ ‚È‚½‚ÌƒAƒEƒ‹ƒxƒA‚ğ•\Œ»‚·‚é‚½‚ß‚É“¯••‚µ‚½¬‚³‚¢ƒg[ƒNƒ“‚ğ’T‚µ‚Ä‚­‚¾‚³‚¢",
+        "ã‚ãªãŸã®ã‚¢ã‚¦ãƒ«ãƒ™ã‚¢ã‚’è¡¨ç¾ã™ã‚‹ãŸã‚ã«åŒå°ã—ãŸå°ã•ã„ãƒˆãƒ¼ã‚¯ãƒ³ã‚’æ¢ã—ã¦ãã ã•ã„",
 /*JP
         "**FR33 P0T10N 0F FULL H34L1NG**",
 */
-        "**Š®‘S‰ñ•œ‚Ì–òƒvƒŒƒ[ƒ“ƒg**",
+        "**å®Œå…¨å›å¾©ã®è–¬ãƒ—ãƒ¬ã‚¼ãƒ³ãƒˆ**",
 /*JP
         "Please return to sender (Asmodeus)",
 */
-        "‘—MÒ(ƒAƒXƒ‚ƒfƒEƒX)‚É‘—‚è•Ô‚µ‚Ä‚­‚¾‚³‚¢",
+        "é€ä¿¡è€…(ã‚¢ã‚¹ãƒ¢ãƒ‡ã‚¦ã‚¹)ã«é€ã‚Šè¿”ã—ã¦ãã ã•ã„",
 /*JP
       "Buy a potion of gain level for only $19.99! Guaranteed to be blessed!",
 */
-      "ƒŒƒxƒ‹ƒAƒbƒv‚Ì–ò‚ª‚½‚Á‚½‚Ì1980‰~!j•Ÿ•ÛØ!",
+      "ãƒ¬ãƒ™ãƒ«ã‚¢ãƒƒãƒ—ã®è–¬ãŒãŸã£ãŸã®1980å††!ç¥ç¦ä¿è¨¼!",
 /*JP
         "Invitation: Visit the NetHack web site at http://www.nethack.org!"
 */
-        "µ‘Òó: NetHack ƒEƒFƒuƒTƒCƒg http://www.nethack.org ‚É—ˆ‚Ä‚Ë!"
+        "æ‹›å¾…çŠ¶: NetHack ã‚¦ã‚§ãƒ–ã‚µã‚¤ãƒˆ http://www.nethack.org ã«æ¥ã¦ã­!"
     };
 
     /* XXX replace with more general substitution code and add local
@@ -513,12 +513,12 @@ struct obj *otmp;
 /*JP
         pline("Unfortunately you cannot see what it says.");
 */
-        pline("c”O‚È‚ª‚ç‰½‚Æ‘‚¢‚Ä‚ ‚é‚Ì‚©Œ©‚é‚±‚Æ‚ª‚Å‚«‚È‚¢D");
+        pline("æ®‹å¿µãªãŒã‚‰ä½•ã¨æ›¸ã„ã¦ã‚ã‚‹ã®ã‹è¦‹ã‚‹ã“ã¨ãŒã§ããªã„ï¼");
     } else
 /*JP
         pline("It reads:  \"%s\"", junk[rn2(SIZE(junk))]);
 */
-        pline("‚»‚ê‚ğ“Ç‚ñ‚¾F\"%s\"", junk[rn2(SIZE(junk))]);
+        pline("ãã‚Œã‚’èª­ã‚“ã ï¼š\"%s\"", junk[rn2(SIZE(junk))]);
 }
 
 #endif /* !UNIX && !VMS */
@@ -550,13 +550,13 @@ ckmailstatus()
 /*JP
                 MSG_MAIL, "I have some mail for you",
 */
-                MSG_MAIL, "ƒƒCƒ‹‚ğ‚Á‚Ä‚«‚½‚æ",
+                MSG_MAIL, "ãƒ¡ã‚¤ãƒ«ã‚’æŒã£ã¦ããŸã‚ˆ",
 #else
                 /* suppress creation and delivery of scroll of mail */
 /*JP
                 MSG_OTHER, "You have some mail in the outside world",
 */
-                MSG_OTHER, "ŠO‚Ì¢ŠE‚©‚ç‚Ìƒ[ƒ‹‚¾",
+                MSG_OTHER, "å¤–ã®ä¸–ç•Œã‹ã‚‰ã®ãƒ¡ãƒ¼ãƒ«ã ",
 #endif
                 0, 0
             };

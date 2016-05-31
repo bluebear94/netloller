@@ -272,7 +272,7 @@ NH_panictrace_gdb()
 }
 #endif /* PANICTRACE */
 
-#if 0 /*JP*//*“ú–{Œê‚Å‚Íg‚í‚È‚¢*/
+#if 0 /*JP*//*æ—¥æœ¬èªã§ã¯ä½¿ã‚ãªã„*/
 /*
  * The order of these needs to match the macros in hack.h.
  */
@@ -295,14 +295,14 @@ static NEARDATA const char *ends[] = {
     "turned into slime", "were genocided",
     "panicked", "were tricked", "quit",
     "escaped", "ascended"
-#else /*JP: ÅŒã‚ÉuE‚³‚ê‚½v’Ç‰Á */
-    "€‚ñ‚¾", "’‚‘§‚µ‚½", "“Å‚É‚¨‚©‚³‚ê‚½",
-    "‰ì€‚µ‚½", "“M€‚µ‚½", "Ä€‚µ‚½",
-    "—nŠâ‚É—n‚¯‚½",
-    "‰Ÿ‚µ’×‚³‚ê‚½", "Î‚É‚È‚Á‚½",
-    "‚Ç‚ë‚Ç‚ë‚É—n‚¯‚½", "‹sE‚³‚ê‚½",
-    "ƒpƒjƒbƒN‚É‚¨‚¿‚¢‚Á‚½", "Šï–­‚Èo—ˆ–‚É‰ï‚Á‚½", "”²‚¯‚½",
-    "’Eo‚µ‚½", "¸“V‚µ‚½", "E‚³‚ê‚½"
+#else /*JP: æœ€å¾Œã«ã€Œæ®ºã•ã‚ŒãŸã€è¿½åŠ  */
+    "æ­»ã‚“ã ", "çª’æ¯ã—ãŸ", "æ¯’ã«ãŠã‹ã•ã‚ŒãŸ",
+    "é¤“æ­»ã—ãŸ", "æººæ­»ã—ãŸ", "ç„¼æ­»ã—ãŸ",
+    "æº¶å²©ã«æº¶ã‘ãŸ",
+    "æŠ¼ã—æ½°ã•ã‚ŒãŸ", "çŸ³ã«ãªã£ãŸ",
+    "ã©ã‚ã©ã‚ã«æº¶ã‘ãŸ", "è™æ®ºã•ã‚ŒãŸ",
+    "ãƒ‘ãƒ‹ãƒƒã‚¯ã«ãŠã¡ã„ã£ãŸ", "å¥‡å¦™ãªå‡ºæ¥äº‹ã«ä¼šã£ãŸ", "æŠœã‘ãŸ",
+    "è„±å‡ºã—ãŸ", "æ˜‡å¤©ã—ãŸ", "æ®ºã•ã‚ŒãŸ"
 #endif
 };
 
@@ -337,7 +337,7 @@ done2()
 /*JP
     if (!paranoid_query(ParanoidQuit, "Really quit?")) {
 */
-    if (!paranoid_query(ParanoidQuit, "–{“–‚É‚â‚ß‚éH")) {
+    if (!paranoid_query(ParanoidQuit, "æœ¬å½“ã«ã‚„ã‚ã‚‹ï¼Ÿ")) {
 #ifndef NO_SIGNAL
         (void) signal(SIGINT, (SIG_RET_TYPE) done1);
 #endif
@@ -427,11 +427,11 @@ int how;
 /*JP
     You((how == STONING) ? "turn to stone..." : "die...");
 */
-    You((how == STONING) ? "Î‚É‚È‚Á‚½DDD" : "€‚É‚Ü‚µ‚½DDD");
+    You((how == STONING) ? "çŸ³ã«ãªã£ãŸï¼ï¼ï¼" : "æ­»ã«ã¾ã—ãŸï¼ï¼ï¼");
     mark_synch(); /* flush buffered screen output */
     buf[0] = '\0';
     killer.format = KILLED_BY_AN;
-#if 0 /*JP*//* “ú–{Œê‚É‚ÍŠÖŒW‚È‚¢‚Ì‚Å‚Ü‚Æ‚ß‚ÄƒRƒƒ“ƒgƒAƒEƒg */
+#if 0 /*JP*//* æ—¥æœ¬èªã«ã¯é–¢ä¿‚ãªã„ã®ã§ã¾ã¨ã‚ã¦ã‚³ãƒ¡ãƒ³ãƒˆã‚¢ã‚¦ãƒˆ */
     /* "killed by the high priest of Crom" is okay,
        "killed by the high priest" alone isn't */
     if ((mptr->geno & G_UNIQ) != 0 && !(imitator && !mimicker)
@@ -450,12 +450,12 @@ int how;
 /*JP
         Strcat(buf, "invisible ");
 */
-        Strcat(buf, "“§–¾‚È");
+        Strcat(buf, "é€æ˜ãª");
     if (distorted)
 /*JP
         Strcat(buf, "hallucinogen-distorted ");
 */
-        Strcat(buf, "Œ¶Šo‚Å˜c‚ñ‚¾");
+        Strcat(buf, "å¹»è¦šã§æ­ªã‚“ã ");
 
     if (imitator) {
         char shape[BUFSZ];
@@ -474,11 +474,11 @@ int how;
                to redundant looking "vampire in vampire bat form" */
             fakenm = "bat";
 #else
-        } else if (alt && strstri(realnm, "‹zŒŒ‹S")
-                   && !strcmp(fakenm, "‹zŒŒ‚±‚¤‚à‚è")) {
-            /* u‹zŒŒ‚±‚¤‚à‚è‚Ìp‚Ì‹zŒŒ‹Sv‚Íç’·‚È‚Ì‚Å
-               u‚±‚¤‚à‚è‚Ìp‚Ì‹zŒŒ‹Sv‚ÌŒ`‚É‚·‚é */
-            fakenm = "‚±‚¤‚à‚è";
+        } else if (alt && strstri(realnm, "å¸è¡€é¬¼")
+                   && !strcmp(fakenm, "å¸è¡€ã“ã†ã‚‚ã‚Š")) {
+            /* ã€Œå¸è¡€ã“ã†ã‚‚ã‚Šã®å§¿ã®å¸è¡€é¬¼ã€ã¯å†—é•·ãªã®ã§
+               ã€Œã“ã†ã‚‚ã‚Šã®å§¿ã®å¸è¡€é¬¼ã€ã®å½¢ã«ã™ã‚‹ */
+            fakenm = "ã“ã†ã‚‚ã‚Š";
 #endif
         }
 #if 0 /*JP*/
@@ -491,7 +491,7 @@ int how;
             Sprintf(shape, "the %s", fakenm);
         else /* "a"/"an" */
             Strcpy(shape, an(fakenm));
-#else /*JP:“ú–{Œê‚Å‚ÍƒVƒ“ƒvƒ‹*/
+#else /*JP:æ—¥æœ¬èªã§ã¯ã‚·ãƒ³ãƒ—ãƒ«*/
         Strcpy(shape, fakenm);
 #endif
         /* omit "called" to avoid excessive verbosity */
@@ -503,9 +503,9 @@ int how;
                 realnm, shape);
 #else
         Sprintf(eos(buf),
-                alt ? "%s‚Ìp‚Ì%s"
-                    : mimicker ? "%s‚Ì‚Ó‚è‚ğ‚µ‚Ä‚¢‚é%s"
-                               : "%s‚Ì‚Ü‚Ë‚ğ‚µ‚Ä‚¢‚é%s",
+                alt ? "%sã®å§¿ã®%s"
+                    : mimicker ? "%sã®ãµã‚Šã‚’ã—ã¦ã„ã‚‹%s"
+                               : "%sã®ã¾ã­ã‚’ã—ã¦ã„ã‚‹%s",
                 shape, realnm);
 #endif
         mptr = mtmp->data; /* reset for mimicker case */
@@ -516,9 +516,9 @@ int how;
             Sprintf(eos(buf), " of %s", MNAME(mtmp));
 #else
         if (has_mname(mtmp))
-            Sprintf(eos(buf), "%s‚Ì—H—ì", MNAME(mtmp));
+            Sprintf(eos(buf), "%sã®å¹½éœŠ", MNAME(mtmp));
         else
-            Strcat(buf, "—H—ì");
+            Strcat(buf, "å¹½éœŠ");
 #endif
     } else if (mtmp->isshk) {
 #if 0 /*JP*/
@@ -528,7 +528,7 @@ int how;
 
         Sprintf(eos(buf), "%s%s, the shopkeeper", honorific, shknm);
 #else
-        Sprintf(eos(buf), "%s‚Æ‚¢‚¤–¼‚Ì“Xå", shkname(mtmp));
+        Sprintf(eos(buf), "%sã¨ã„ã†åã®åº—ä¸»", shkname(mtmp));
 #endif
         killer.format = KILLED_BY;
     } else if (mtmp->ispriest || mtmp->isminion) {
@@ -563,15 +563,15 @@ int how;
 #if 1 /*JP*/
     if (how == STONING){
         /*JP
-              topten.c ‚Ì killed_by_prefix ‚ğQÆ‚Ì‚±‚ÆB
-              STONING ‚Ìê‡‚Í "Î‰»‚µ‚½" ‚ª•â‚í‚ê‚éB
+              topten.c ã® killed_by_prefix ã‚’å‚ç…§ã®ã“ã¨ã€‚
+              STONING ã®å ´åˆã¯ "çŸ³åŒ–ã—ãŸ" ãŒè£œã‚ã‚Œã‚‹ã€‚
          */
-        Strcat(buf, "‚ÌUŒ‚‚Å");
+        Strcat(buf, "ã®æ”»æ’ƒã§");
     }
     if (how == DIED){
         /*JP
-              DIED ‚Ìê‡‚Í’Êí "€‚ñ‚¾" ‚ª•â‚í‚ê‚é‚ªA
-              ‰ö•¨‚É‚æ‚éê‡‚Í "‚ÉE‚³‚ê‚½" ‚ğ•â‚¤B
+              DIED ã®å ´åˆã¯é€šå¸¸ "æ­»ã‚“ã " ãŒè£œã‚ã‚Œã‚‹ãŒã€
+              æ€ªç‰©ã«ã‚ˆã‚‹å ´åˆã¯ "ã«æ®ºã•ã‚ŒãŸ" ã‚’è£œã†ã€‚
          */
         killer.format = KILLED_SUFFIX;
         done(DIED);
@@ -606,16 +606,16 @@ VA_DECL(const char *, str)
 /*JP
                   ? "Postgame wrapup disrupted."
 */
-                  ? "ƒQ[ƒ€I—¹‚Ìˆ—‚ª•ö‰ó‚µ‚½D"
+                  ? "ã‚²ãƒ¼ãƒ çµ‚äº†æ™‚ã®å‡¦ç†ãŒå´©å£Šã—ãŸï¼"
                   : !program_state.something_worth_saving
 /*JP
                         ? "Program initialization has failed."
 */
-                        ? "ƒvƒƒOƒ‰ƒ€‚Ì‰Šú‰»‚É¸”s‚µ‚½D"
+                        ? "ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã®åˆæœŸåŒ–ã«å¤±æ•—ã—ãŸï¼"
 /*JP
                         : "Suddenly, the dungeon collapses.");
 */
-                        : "“Ë‘R–À‹{‚ª•ö‚ê‚½D");
+                        : "çªç„¶è¿·å®®ãŒå´©ã‚ŒãŸï¼");
 #ifndef MICRO
 #if defined(NOTIFY_NETHACK_BUGS)
     if (!wizard)
@@ -631,8 +631,8 @@ VA_DECL(const char *, str)
                                      : "\nand it may be possible to rebuild.";
 #else
         const char *maybe_rebuild = !program_state.something_worth_saving
-                                     ? "D"
-                                     : "\n•œ‹Œ‚Å‚«‚é‰Â”\«‚ª‚ ‚è‚Ü‚·D";
+                                     ? "ï¼"
+                                     : "\nå¾©æ—§ã§ãã‚‹å¯èƒ½æ€§ãŒã‚ã‚Šã¾ã™ï¼";
 #endif
 
         if (sysopt.support)
@@ -646,7 +646,7 @@ VA_DECL(const char *, str)
             raw_printf("Report error to \"%s\"%s", WIZARD_NAME,
                        maybe_rebuild);
 #else
-            raw_printf("\"%s\"‚ÉƒGƒ‰[‚ğ•ñ‚µ‚Ä‚­‚¾‚³‚¢D%s", WIZARD_NAME,
+            raw_printf("\"%s\"ã«ã‚¨ãƒ©ãƒ¼ã‚’å ±å‘Šã—ã¦ãã ã•ã„ï¼%s", WIZARD_NAME,
                        maybe_rebuild);
 #endif
     }
@@ -732,14 +732,14 @@ boolean taken;
             Sprintf(qbuf, "Do you want to see what you had when you %s?",
                     (how == QUIT) ? "quit" : "died");
 #else
-            Sprintf(qbuf,"%s‚Æ‚«‰½‚ğ‚Á‚Ä‚¢‚½‚©Œ©‚Ü‚·‚©H",
-                    (how == QUIT) ? "‚â‚ß‚½" : "€‚ñ‚¾");
+            Sprintf(qbuf,"%sã¨ãä½•ã‚’æŒã£ã¦ã„ãŸã‹è¦‹ã¾ã™ã‹ï¼Ÿ",
+                    (how == QUIT) ? "ã‚„ã‚ãŸ" : "æ­»ã‚“ã ");
 #endif
         else
 /*JP
             Strcpy(qbuf, "Do you want your possessions identified?");
 */
-            Strcpy(qbuf,"‚¿•¨‚ğ¯•Ê‚µ‚Ü‚·‚©H"); 
+            Strcpy(qbuf,"æŒã¡ç‰©ã‚’è­˜åˆ¥ã—ã¾ã™ã‹ï¼Ÿ"); 
 
         ask = should_query_disclose_option('i', &defquery);
         c = ask ? yn_function(qbuf, ynqchars, defquery) : defquery;
@@ -766,7 +766,7 @@ boolean taken;
                               defquery)
                 : defquery;
 #else
-        c = ask ? yn_function("‘®«‚ğŒ©‚Ü‚·‚©H", ynqchars,
+        c = ask ? yn_function("å±æ€§ã‚’è¦‹ã¾ã™ã‹ï¼Ÿ", ynqchars,
                               defquery)
                 : defquery;
 #endif
@@ -795,7 +795,7 @@ boolean taken;
                               defquery)
                 : defquery;
 #else
-        c = ask ? yn_function("‚Ç‚¤‚¢‚¤s“®‚ğ‚Æ‚Á‚½‚©Œ©‚Ü‚·‚©H", ynqchars,
+        c = ask ? yn_function("ã©ã†ã„ã†è¡Œå‹•ã‚’ã¨ã£ãŸã‹è¦‹ã¾ã™ã‹ï¼Ÿ", ynqchars,
                               defquery)
                 : defquery;
 #endif
@@ -812,7 +812,7 @@ boolean taken;
                               ynqchars, defquery)
                 : defquery;
 #else
-        c = ask ? yn_function("–À‹{‚ÌŠT—v‚ğŒ©‚Ü‚·‚©H",
+        c = ask ? yn_function("è¿·å®®ã®æ¦‚è¦ã‚’è¦‹ã¾ã™ã‹ï¼Ÿ",
                               ynqchars, defquery)
                 : defquery;
 #endif
@@ -848,7 +848,7 @@ int how;
 /*JP
     nomovemsg = "You survived that attempt on your life.";
 */
-    nomovemsg = "‚ ‚È‚½‚Í¶‚«‚È‚ª‚ç‚¦‚½D";
+    nomovemsg = "ã‚ãªãŸã¯ç”ŸããªãŒã‚‰ãˆãŸï¼";
     context.move = 0;
     if (multi > 0)
         multi = 0;
@@ -978,7 +978,7 @@ winid endwin;
                                         : OBJ_NAME(objects[otmp->otyp]),
                         value, currency(value), points);
 #else
-                Sprintf(pbuf, "%s(%ld%sC%ldƒ|ƒCƒ“ƒg‚Ì‰¿’l)C",
+                Sprintf(pbuf, "%s(%ld%sï¼Œ%ldãƒã‚¤ãƒ³ãƒˆã®ä¾¡å€¤)ï¼Œ",
                         otmp->oartifact ? artifact_name(xname(otmp), &dummy)
                                         : OBJ_NAME(objects[otmp->otyp]),
                         value, currency(value), points);
@@ -1005,7 +1005,7 @@ int how;
 /*JP
             You("are a very tricky wizard, it seems.");
 */
-            You("‚Æ‚Ä‚àˆµ‚¢‚É‚­‚¢wizard‚Ì‚æ‚¤‚¾D");
+            You("ã¨ã¦ã‚‚æ‰±ã„ã«ãã„wizardã®ã‚ˆã†ã ï¼");
             return;
         }
     }
@@ -1027,25 +1027,25 @@ int how;
 /*JP
         pline("But wait...");
 */
-        pline("‚¿‚å‚Á‚Æ‚Ü‚Á‚½DDD");
+        pline("ã¡ã‚‡ã£ã¨ã¾ã£ãŸï¼ï¼ï¼");
         makeknown(AMULET_OF_LIFE_SAVING);
 /*JP
         Your("medallion %s!", !Blind ? "begins to glow" : "feels warm");
 */
-        Your("–‚œ‚¯‚Í%sI", !Blind ? "‹P‚«‚Í‚¶‚ß‚½" : "’g‚©‚­‚È‚è‚Í‚¶‚ß‚½");
+        Your("é­”é™¤ã‘ã¯%sï¼", !Blind ? "è¼ãã¯ã˜ã‚ãŸ" : "æš–ã‹ããªã‚Šã¯ã˜ã‚ãŸ");
         if (how == CHOKING)
 /*JP
             You("vomit ...");
 */
-            You("“f‚¢‚½DDD");
+            You("åã„ãŸï¼ï¼ï¼");
 /*JP
         You_feel("much better!");
 */
-        You("‹C•ª‚ª‚æ‚­‚È‚Á‚½I");
+        You("æ°—åˆ†ãŒã‚ˆããªã£ãŸï¼");
 /*JP
         pline_The("medallion crumbles to dust!");
 */
-        pline("–‚œ‚¯‚Í‚±‚È‚²‚È‚É‚­‚¾‚¯‚½I");
+        pline("é­”é™¤ã‘ã¯ã“ãªã”ãªã«ãã ã‘ãŸï¼");
         if (uamul)
             useup(uamul);
 
@@ -1055,7 +1055,7 @@ int how;
 /*JP
             pline("Unfortunately you are still genocided...");
 */
-            pline("c”O‚È‚ª‚çC‚ ‚È‚½‚Í‹sE‚³‚ê‚½‚Ü‚Ü‚¾DDD");
+            pline("æ®‹å¿µãªãŒã‚‰ï¼Œã‚ãªãŸã¯è™æ®ºã•ã‚ŒãŸã¾ã¾ã ï¼ï¼ï¼");
         } else {
             killer.name[0] = 0;
             killer.format = 0;
@@ -1066,11 +1066,11 @@ int how;
 /*JP
         !paranoid_query(ParanoidDie, "Die?")) {
 */
-        !paranoid_query(ParanoidDie, "€‚ñ‚Å‚İ‚éH")) {
+        !paranoid_query(ParanoidDie, "æ­»ã‚“ã§ã¿ã‚‹ï¼Ÿ")) {
 /*JP
         pline("OK, so you don't %s.", (how == CHOKING) ? "choke" : "die");
 */
-        You("€‚È‚È‚©‚Á‚½D");
+        You("æ­»ãªãªã‹ã£ãŸï¼");
         savelife(how);
         killer.name[0] = 0;
         killer.format = 0;
@@ -1126,7 +1126,7 @@ int how;
 /*JP
         pline("Do not pass go.  Do not collect 200 %s.", currency(200L));
 */
-        pline("’ˆÓˆê•bC‰ö‰äˆê¶C€–Sˆê•àD");
+        pline("æ³¨æ„ä¸€ç§’ï¼Œæ€ªæˆ‘ä¸€ç”Ÿï¼Œæ­»äº¡ä¸€æ­©ï¼");
 
     if (have_windows)
         wait_synch(); /* flush screen output */
@@ -1166,7 +1166,7 @@ int how;
 /*JP
             Strcpy(killer.name, "quit while already on Charon's boat");
 */
-            Strcpy(killer.name, "O“r‚Ìì‚Ì“n‚µ‘D‚Éæ‚Á‚Ä‚¢‚éŠÔ‚É”²‚¯‚½");
+            Strcpy(killer.name, "ä¸‰é€”ã®å·ã®æ¸¡ã—èˆ¹ã«ä¹—ã£ã¦ã„ã‚‹é–“ã«æŠœã‘ãŸ");
         }
     }
     if (how == ESCAPED || how == PANICKED)
@@ -1211,7 +1211,7 @@ int how;
 /*JP
         Sprintf(pbuf, "%s, ", plname);
 */
-        Sprintf(pbuf, "%s‚Ì•æC", plname);
+        Sprintf(pbuf, "%sã®å¢“ï¼Œ", plname);
         formatkiller(eos(pbuf), sizeof pbuf - strlen(pbuf), how);
         make_grave(u.ux, u.uy, pbuf);
     }
@@ -1253,7 +1253,7 @@ int how;
 /*JP
         Your("body rises from the dead as %s...",
 */
-        Your("‘Ì‚Í%s‚Æ‚µ‚Ä€‘Ì‚©‚ç‘h‚Á‚½DDD",
+        Your("ä½“ã¯%sã¨ã—ã¦æ­»ä½“ã‹ã‚‰è˜‡ã£ãŸï¼ï¼ï¼",
              an(mons[u.ugrave_arise].mname));
         display_nhwindow(WIN_MESSAGE, FALSE);
     }
@@ -1262,7 +1262,7 @@ int how;
 /*JP
         if (!wizard || paranoid_query(ParanoidBones, "Save bones?"))
 */
-        if (!wizard || paranoid_query(ParanoidBones, "œ‚ğ‚¤‚ß‚éH"))
+        if (!wizard || paranoid_query(ParanoidBones, "éª¨ã‚’ã†ã‚ã‚‹ï¼Ÿ"))
             savebones(how, endtime, corpse);
         /* corpse may be invalid pointer now so
             ensure that it isn't used again */
@@ -1298,18 +1298,18 @@ int how;
 /*JP
         Strcat(killer.name, " (with the Amulet)");
 */
-        Strcat(killer.name, "–‚œ‚¯‚ğè‚É");
+        Strcat(killer.name, "é­”é™¤ã‘ã‚’æ‰‹ã«");
     } else if (how == ESCAPED) {
         if (Is_astralevel(&u.uz)) /* offered Amulet to wrong deity */
 /*JP
             Strcat(killer.name, " (in celestial disgrace)");
 */
-            Strcat(killer.name, "“Vã‚Å’pJ‚ğó‚¯’Eo‚µ‚½");
+            Strcat(killer.name, "å¤©ä¸Šã§æ¥è¾±ã‚’å—ã‘è„±å‡ºã—ãŸ");
         else if (carrying(FAKE_AMULET_OF_YENDOR))
 /*JP
             Strcat(killer.name, " (with a fake Amulet)");
 */
-            Strcat(killer.name, "‹U•¨‚Ì–‚œ‚¯‚ğ’Í‚Ü‚³‚ê’Eo‚µ‚½");
+            Strcat(killer.name, "å½ç‰©ã®é­”é™¤ã‘ã‚’æ´ã¾ã•ã‚Œè„±å‡ºã—ãŸ");
         /* don't bother counting to see whether it should be plural */
     }
 
@@ -1322,12 +1322,12 @@ int how;
                                       : urole.name.m)
                  : (const char *) (flags.female ? "Demigoddess" : "Demigod"));
 #else
-        Sprintf(pbuf, "%s%s‚Ì%sDDD", Goodbye(),
+        Sprintf(pbuf, "%s%sã®%sï¼ï¼ï¼", Goodbye(),
                 how != ASCENDED
                 ? (const char *) ((flags.female && urole.name.f)
                                       ? urole.name.f
                                       : urole.name.m)
-                : (const char *) (flags.female ? "—_" : "_"),
+                : (const char *) (flags.female ? "å¥³ç¥" : "ç¥"),
                 plname);
 #endif
         putstr(endwin, 0, pbuf);
@@ -1364,7 +1364,7 @@ int how;
 /*JP
             Strcpy(pbuf, "You");
 */
-            Strcpy(pbuf, "‚ ‚È‚½");
+            Strcpy(pbuf, "ã‚ãªãŸ");
         if (!Schroedingers_cat) /* check here in case disclosure was off */
             Schroedingers_cat = odds_and_ends(invent, CAT_CHECK);
         if (Schroedingers_cat) {
@@ -1375,7 +1375,7 @@ int how;
 /*JP
                 Strcat(eos(pbuf), " and Schroedinger's cat");
 */
-                Strcat(eos(pbuf), "‚ÆƒVƒ…ƒŒƒfƒBƒ“ƒK[‚Ì”L");
+                Strcat(eos(pbuf), "ã¨ã‚·ãƒ¥ãƒ¬ãƒ‡ã‚£ãƒ³ã‚¬ãƒ¼ã®çŒ«");
         }
         if (mtmp) {
             while (mtmp) {
@@ -1383,14 +1383,14 @@ int how;
 /*JP
                     Sprintf(eos(pbuf), " and %s", mon_nam(mtmp));
 */
-                    Sprintf(eos(pbuf), "‚Æ%s", mon_nam(mtmp));
+                    Sprintf(eos(pbuf), "ã¨%s", mon_nam(mtmp));
                 if (mtmp->mtame)
                     nowrap_add(u.urexp, mtmp->mhp);
                 mtmp = mtmp->nmon;
             }
 #if 1 /*JP*/
             if (!done_stopprint)
-                Strcat(pbuf, "‚Í");
+                Strcat(pbuf, "ã¯");
 #endif
             if (!done_stopprint)
                 putstr(endwin, 0, pbuf);
@@ -1400,7 +1400,7 @@ int how;
 /*JP
                 Strcat(pbuf, " ");
 */
-                Strcat(pbuf, "‚Í");
+                Strcat(pbuf, "ã¯");
         }
         if (!done_stopprint) {
 #if 0 /*JP*/
@@ -1409,9 +1409,9 @@ int how;
                                     : "escaped from the dungeon",
                     u.urexp, plur(u.urexp));
 #else
-            Sprintf(eos(pbuf), "%ldƒ|ƒCƒ“ƒgƒ}[ƒN‚µ%sD",
+            Sprintf(eos(pbuf), "%ldãƒã‚¤ãƒ³ãƒˆãƒãƒ¼ã‚¯ã—%sï¼",
                     u.urexp,
-                    how==ASCENDED ? "¸“V‚µ‚½" : "–À‹{‚©‚ç’Eo‚µ‚½");
+                    how==ASCENDED ? "æ˜‡å¤©ã—ãŸ" : "è¿·å®®ã‹ã‚‰è„±å‡ºã—ãŸ");
 #endif
             putstr(endwin, 0, pbuf);
         }
@@ -1441,7 +1441,7 @@ int how;
                             xname(otmp), count * (long) objects[typ].oc_cost,
                             currency(2L));
 #else
-                    Sprintf(pbuf, "%ldŒÂ‚Ì%s(%ld%s‚Ì‰¿’l)C", count,
+                    Sprintf(pbuf, "%ldå€‹ã®%s(%ld%sã®ä¾¡å€¤)ï¼Œ", count,
                             xname(otmp), count * (long) objects[typ].oc_cost,
                             currency(2L));
 #endif
@@ -1451,7 +1451,7 @@ int how;
                     Sprintf(pbuf, "%8ld worthless piece%s of colored glass,",
                             count, plur(count));
 #else
-                    Sprintf(pbuf, "%ldŒÂ‚Ì‰¿’l‚Ì‚È‚¢F‚Â‚«ƒKƒ‰ƒXC",
+                    Sprintf(pbuf, "%ldå€‹ã®ä¾¡å€¤ã®ãªã„è‰²ã¤ãã‚¬ãƒ©ã‚¹ï¼Œ",
                             count);
 #endif
                 }
@@ -1468,8 +1468,8 @@ int how;
             Sprintf(pbuf, "You %s beyond the confines of the dungeon",
                     (u.uz.dlevel < 0) ? "passed away" : ends[how]);
 #else
-            Sprintf(pbuf, "–À‹{‚Ì—Ìˆæ‚ğ‰z‚¦%sD",
-                    (u.uz.dlevel < 0) ? "Á‚¦‚³‚Á‚½" : ends[how]);
+            Sprintf(pbuf, "è¿·å®®ã®é ˜åŸŸã‚’è¶Šãˆ%sï¼",
+                    (u.uz.dlevel < 0) ? "æ¶ˆãˆã•ã£ãŸ" : ends[how]);
 #endif
         } else {
             /* more conventional demise */
@@ -1479,17 +1479,17 @@ int how;
 /*JP
                 where = "The Astral Plane";
 */
-                where = "¸—ìŠE‚É‚Ä";
+                where = "ç²¾éœŠç•Œã«ã¦";
 /*JP
             Sprintf(pbuf, "You %s in %s", ends[how], where);
 */
-            Sprintf(pbuf, "‚ ‚È‚½‚Í%s", where);
+            Sprintf(pbuf, "ã‚ãªãŸã¯%s", where);
             if (!In_endgame(&u.uz) && !Is_knox(&u.uz))
 #if 0 /*JP*/
                 Sprintf(eos(pbuf), " on dungeon level %d",
                         In_quest(&u.uz) ? dunlev(&u.uz) : depth(&u.uz));
 #else
-                Sprintf(eos(pbuf), "‚Ì’n‰º%dŠK‚Å",
+                Sprintf(eos(pbuf), "ã®åœ°ä¸‹%déšã§",
                         In_quest(&u.uz) ? dunlev(&u.uz) : depth(&u.uz));
 #endif
         }
@@ -1497,7 +1497,7 @@ int how;
 /*JP
         Sprintf(eos(pbuf), " with %ld point%s,", u.urexp, plur(u.urexp));
 */
-        Sprintf(eos(pbuf), " %ldƒ|ƒCƒ“ƒg‚ğƒ}[ƒN‚µC", u.urexp);
+        Sprintf(eos(pbuf), " %ldãƒã‚¤ãƒ³ãƒˆã‚’ãƒãƒ¼ã‚¯ã—ï¼Œ", u.urexp);
         putstr(endwin, 0, pbuf);
     }
 
@@ -1506,7 +1506,7 @@ int how;
         Sprintf(pbuf, "and %ld piece%s of gold, after %ld move%s.", umoney,
                 plur(umoney), moves, plur(moves));
 #else
-        Sprintf(pbuf, "%ld–‡‚Ì‹à‰İ‚ğ‚Á‚ÄC%ld•à“®‚¢‚½D",
+        Sprintf(pbuf, "%ldæšã®é‡‘è²¨ã‚’æŒã£ã¦ï¼Œ%ldæ­©å‹•ã„ãŸï¼",
                 umoney, moves);
 #endif
         putstr(endwin, 0, pbuf);
@@ -1518,7 +1518,7 @@ int how;
                 u.ulevel, u.uhpmax, plur(u.uhpmax), ends[how]);
 #else
         Sprintf(pbuf,
-                "%s‚Æ‚«C‚ ‚È‚½‚ÍƒŒƒxƒ‹%u‚ÅCÅ‘å‘Ì—Í‚Í%d‚Å‚ ‚Á‚½D",
+                "%sã¨ãï¼Œã‚ãªãŸã¯ãƒ¬ãƒ™ãƒ«%uã§ï¼Œæœ€å¤§ä½“åŠ›ã¯%dã§ã‚ã£ãŸï¼",
                 ends[how],u.ulevel, u.uhpmax);
 #endif
         putstr(endwin, 0, pbuf);
@@ -1601,7 +1601,7 @@ boolean identified, all_containers, reportempty;
 /*JP
                 Sprintf(buf, "Contents of %s:", the(xname(box)));
 */
-                Sprintf(buf, "%s‚Ì’†gF", the(xname(box)));
+                Sprintf(buf, "%sã®ä¸­èº«ï¼š", the(xname(box)));
                 putstr(tmpwin, 0, buf);
                 putstr(tmpwin, 0, "");
                 for (i = 0; i < n; i++) {
@@ -1620,12 +1620,12 @@ boolean identified, all_containers, reportempty;
 /*JP
                     putstr(tmpwin, 0, "Schroedinger's cat");
 */
-                    putstr(tmpwin, 0, "ƒVƒ…ƒŒƒfƒBƒ“ƒK[‚Ì”L");
+                    putstr(tmpwin, 0, "ã‚·ãƒ¥ãƒ¬ãƒ‡ã‚£ãƒ³ã‚¬ãƒ¼ã®çŒ«");
                 else if (deadcat)
 /*JP
                     putstr(tmpwin, 0, "Schroedinger's dead cat");
 */
-                    putstr(tmpwin, 0, "ƒVƒ…ƒŒƒfƒBƒ“ƒK[‚Ì”L‚Ì€‘Ì");
+                    putstr(tmpwin, 0, "ã‚·ãƒ¥ãƒ¬ãƒ‡ã‚£ãƒ³ã‚¬ãƒ¼ã®çŒ«ã®æ­»ä½“");
                 display_nhwindow(tmpwin, TRUE);
                 destroy_nhwindow(tmpwin);
                 if (all_containers)
@@ -1636,15 +1636,15 @@ boolean identified, all_containers, reportempty;
                 pline("%s Schroedinger's %scat!", Tobjnam(box, "contain"),
                       deadcat ? "dead " : "");
 #else
-                pline("%s‚É‚ÍƒVƒ…ƒŒƒfƒBƒ“ƒK[‚Ì”L%s‚ª“ü‚Á‚Ä‚¢‚½I", xname(box),
-                      deadcat ? "‚Ì€‘Ì" : "");
+                pline("%sã«ã¯ã‚·ãƒ¥ãƒ¬ãƒ‡ã‚£ãƒ³ã‚¬ãƒ¼ã®çŒ«%sãŒå…¥ã£ã¦ã„ãŸï¼", xname(box),
+                      deadcat ? "ã®æ­»ä½“" : "");
 #endif
                 display_nhwindow(WIN_MESSAGE, FALSE);
             } else if (reportempty) {
 /*JP
                 pline("%s is empty.", upstart(thesimpleoname(box)));
 */
-                pline("%s‚Í‹ó‚Á‚Û‚¾D", xname(box));
+                pline("%sã¯ç©ºã£ã½ã ï¼", xname(box));
                 display_nhwindow(WIN_MESSAGE, FALSE);
             }
         }
@@ -1727,7 +1727,7 @@ boolean ask;
                 : defquery;
 #else
         c = ask ? yn_function(
-                            "“|‚µ‚½“G‚Ìˆê——‚ğŒ©‚Ü‚·‚©H",
+                            "å€’ã—ãŸæ•µã®ä¸€è¦§ã‚’è¦‹ã¾ã™ã‹ï¼Ÿ",
                               ynqchars, defquery)
                 : defquery;
 #endif
@@ -1738,7 +1738,7 @@ boolean ask;
 /*JP
             putstr(klwin, 0, "Vanquished creatures:");
 */
-            putstr(klwin, 0, "“|‚µ‚½“GF");
+            putstr(klwin, 0, "å€’ã—ãŸæ•µï¼š");
             putstr(klwin, 0, "");
 
             /* countdown by monster "toughness" */
@@ -1768,7 +1768,7 @@ boolean ask;
                                     break;
                                 }
 #else
-                                Sprintf(eos(buf)," (%d‰ñ)", nkilled);
+                                Sprintf(eos(buf)," (%då›)", nkilled);
 #endif
                             }
                         } else {
@@ -1781,7 +1781,7 @@ boolean ask;
                                 Sprintf(buf, "%d %s", nkilled,
                                         makeplural(mons[i].mname));
 #else
-                                Sprintf(buf, "%d‘Ì‚Ì%s", nkilled,
+                                Sprintf(buf, "%dä½“ã®%s", nkilled,
                                         mons[i].mname);
 #endif
                         }
@@ -1796,7 +1796,7 @@ boolean ask;
 /*JP
                 Sprintf(buf, "%ld creatures vanquished.", total_killed);
 */
-                Sprintf(buf, "%ld•C‚Ì“G‚ğ“|‚µ‚½D", total_killed);
+                Sprintf(buf, "%ldåŒ¹ã®æ•µã‚’å€’ã—ãŸï¼", total_killed);
                 putstr(klwin, 0, buf);
             }
             display_nhwindow(klwin, TRUE);
@@ -1807,7 +1807,7 @@ boolean ask;
 /*JP
         pline("No monsters have been vanquished.");
 */
-        pline("“|‚µ‚½“G‚Í‚¢‚È‚©‚Á‚½D");
+        pline("å€’ã—ãŸæ•µã¯ã„ãªã‹ã£ãŸï¼");
     }
 }
 
@@ -1859,10 +1859,10 @@ boolean ask;
                 (ngenocided) ? " genocided" : "",
                 (nextinct && ngenocided) ? " and extinct" : "");
 #else
-        Sprintf(buf, "%s%s%s‚µ‚½í‚Ìˆê——‚ğŒ©‚Ü‚·‚©H",
-                (nextinct && !ngenocided) ? "â–Å" : "",
-                (ngenocided) ? "‹sE" : "",
-                (nextinct && ngenocided) ? "‚¨‚æ‚Ñâ–Å" : "");
+        Sprintf(buf, "%s%s%sã—ãŸç¨®ã®ä¸€è¦§ã‚’è¦‹ã¾ã™ã‹ï¼Ÿ",
+                (nextinct && !ngenocided) ? "çµ¶æ»…" : "",
+                (ngenocided) ? "è™æ®º" : "",
+                (nextinct && ngenocided) ? "ãŠã‚ˆã³çµ¶æ»…" : "");
 #endif
         c = ask ? yn_function(buf, ynqchars, defquery) : defquery;
         if (c == 'q')
@@ -1874,9 +1874,9 @@ boolean ask;
                     (ngenocided) ? "Genocided" : "Extinct",
                     (nextinct && ngenocided) ? " or extinct" : "");
 #else
-            Sprintf(buf, "%s%s‚µ‚½í:",
-                    (ngenocided) ? "‹sE" : "â–Å",
-                    (nextinct && ngenocided) ? "‚Ü‚½‚Íâ–Å" : "");
+            Sprintf(buf, "%s%sã—ãŸç¨®:",
+                    (ngenocided) ? "è™æ®º" : "çµ¶æ»…",
+                    (nextinct && ngenocided) ? "ã¾ãŸã¯çµ¶æ»…" : "");
 #endif
             putstr(klwin, 0, buf);
             putstr(klwin, 0, "");
@@ -1897,7 +1897,7 @@ boolean ask;
 /*JP
                         Strcat(buf, " (extinct)");
 */
-                        Strcat(buf, "(â–Å)");
+                        Strcat(buf, "(çµ¶æ»…)");
                     putstr(klwin, 0, buf);
                 }
 
@@ -1906,14 +1906,14 @@ boolean ask;
 /*JP
                 Sprintf(buf, "%d species genocided.", ngenocided);
 */
-                Sprintf(buf, "%dí—Ş‚Ìí‚ğ‹sE‚µ‚½D", ngenocided);
+                Sprintf(buf, "%dç¨®é¡ã®ç¨®ã‚’è™æ®ºã—ãŸï¼", ngenocided);
                 putstr(klwin, 0, buf);
             }
             if (nextinct > 0) {
 /*JP
                 Sprintf(buf, "%d species extinct.", nextinct);
 */
-                Sprintf(buf, "%dí—Ş‚Ìí‚ğâ–Å‚³‚¹‚½D", nextinct);
+                Sprintf(buf, "%dç¨®é¡ã®ç¨®ã‚’çµ¶æ»…ã•ã›ãŸï¼", nextinct);
                 putstr(klwin, 0, buf);
             }
 

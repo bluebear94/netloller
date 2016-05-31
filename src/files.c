@@ -557,7 +557,7 @@ char errbuf[];
         Sprintf(errbuf, "Cannot open file \"%s\" for level %d (errno %d).",
                 lock, lev, errno);
 #else
-        Sprintf(errbuf, "’n‰º%dŠK‚Ìƒtƒ@ƒCƒ‹\"%s\"‚ğŠJ‚¯‚È‚¢(errno %d)D",
+        Sprintf(errbuf, "åœ°ä¸‹%déšã®ãƒ•ã‚¡ã‚¤ãƒ«\"%s\"ã‚’é–‹ã‘ãªã„(errno %d)ï¼",
                 lev, lock, errno);
 #endif
 
@@ -1963,7 +1963,7 @@ int src;
         return fp;
 #else /* should be only UNIX left */
     envp = nh_getenv("HOME");
-#if 1 /*JP*//*".jnethackrc"‚ğ—Dæ‚µ‚Ä“Ç‚İ‚İ*/
+#if 1 /*JP*//*".jnethackrc"ã‚’å„ªå…ˆã—ã¦èª­ã¿è¾¼ã¿*/
     if (!envp)
         Strcpy(tmp_config, ".jnethackrc");
     else

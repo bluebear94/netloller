@@ -79,8 +79,8 @@ STATIC_OVL boolean force_save_hs = FALSE;
 const char *hu_stat[] = { "Satiated", "        ", "Hungry  ", "Weak    ",
                           "Fainting", "Fainted ", "Starved " };
 #else
-const char *hu_stat[] = { "–•     ", "        ", "‚Ø‚±‚Ø‚±", "Šã    ",
-                          "‚Ó‚ç‚Ó‚ç", "‘²“|    ", "‰ì€    " };
+const char *hu_stat[] = { "æº€è…¹    ", "        ", "ãºã“ãºã“", "è¡°å¼±    ",
+                          "ãµã‚‰ãµã‚‰", "å’å€’    ", "é¤“æ­»    " };
 #endif
 
 /*
@@ -143,21 +143,21 @@ static const struct {
                 { "pureed", 500, 1, 0 },
                 { "", 0, 0, 0 } };
 #else
-} tintxts[] = { { "•…‚Á‚½", -50, 0, 0 },  /* ROTTEN_TIN = 0 */
-                { "©‰Æ»‚Ì", 50, 1, 0 }, /* HOMEMADE_TIN = 1 */
-                { "‚ÌƒX[ƒv", 20, 1, 0 },
-                { "‚Ìƒtƒ‰ƒC", 40, 0, 1 },
-                { "‚Ì’Ğ•¨", 40, 1, 0 },
-                { "‚ä‚Å", 50, 1, 0 },
-                { "‚Ìà»", 50, 1, 0 },
-                { "Š£‘‡", 55, 1, 0 },
-                { "‚Ì—g‚°•¨", 60, 0, 1 },
-                { "lì•—", 70, 1, 0 },
-                { "‚Ì–ÔÄ‚«", 80, 0, 0 },
-                { "àu‚ß", 80, 0, 1 },
-                { "‚Ìƒ\ƒe[", 95, 0, 0 },
-                { "‚Ì»“œ’Ğ‚¯", 100, 1, 0 },
-                { "‚Ìƒsƒ…[ƒŒ", 500, 1, 0 },
+} tintxts[] = { { "è…ã£ãŸ", -50, 0, 0 },  /* ROTTEN_TIN = 0 */
+                { "è‡ªå®¶è£½ã®", 50, 1, 0 }, /* HOMEMADE_TIN = 1 */
+                { "ã®ã‚¹ãƒ¼ãƒ—", 20, 1, 0 },
+                { "ã®ãƒ•ãƒ©ã‚¤", 40, 0, 1 },
+                { "ã®æ¼¬ç‰©", 40, 1, 0 },
+                { "ã‚†ã§", 50, 1, 0 },
+                { "ã®ç‡»è£½", 50, 1, 0 },
+                { "ä¹¾ç‡¥", 55, 1, 0 },
+                { "ã®æšã’ç‰©", 60, 0, 1 },
+                { "å››å·é¢¨", 70, 1, 0 },
+                { "ã®ç¶²ç„¼ã", 80, 0, 0 },
+                { "ç‚’ã‚", 80, 0, 1 },
+                { "ã®ã‚½ãƒ†ãƒ¼", 95, 0, 0 },
+                { "ã®ç ‚ç³–æ¼¬ã‘", 100, 1, 0 },
+                { "ã®ãƒ”ãƒ¥ãƒ¼ãƒ¬", 500, 1, 0 },
                 { "", 0, 0, 0 } };
 #endif
 #define TTSZ SIZE(tintxts)
@@ -197,7 +197,7 @@ eatmupdate()
 /*JP
         altmsg = "You now prefer mimicking yourself.";
 */
-        altmsg = "‚ ‚È‚½‚Í©•ª©g‚Ì‚Ü‚Ë‚ğ‚·‚é‚±‚Æ‚ğ‘I‚ñ‚¾D";
+        altmsg = "ã‚ãªãŸã¯è‡ªåˆ†è‡ªèº«ã®ã¾ã­ã‚’ã™ã‚‹ã“ã¨ã‚’é¸ã‚“ã ï¼";
         altapp = GOLD_PIECE;
     } else if (is_obj_mappear(&youmonst,GOLD_PIECE) && Hallucination) {
         /* won't happen; anything which might make immobilized
@@ -206,7 +206,7 @@ eatmupdate()
 /*JP
         altmsg = "Your rind escaped intact.";
 */
-        altmsg = "‚ ‚È‚½‚Ì”ç‚ª‚»‚Ì‚Ü‚Ü‚ÌŒ`‚Å“¦‚°‚Ä‚¢‚Á‚½D";
+        altmsg = "ã‚ãªãŸã®çš®ãŒãã®ã¾ã¾ã®å½¢ã§é€ƒã’ã¦ã„ã£ãŸï¼";
         altapp = ORANGE;
     }
 
@@ -267,7 +267,7 @@ struct obj *food;
 /*JP
         You_feel("like a glutton!");
 */
-        You("‘åHŠ¿‚Ì‚æ‚¤‚È‹C‚ª‚µ‚½I");
+        You("å¤§é£Ÿæ¼¢ã®ã‚ˆã†ãªæ°—ãŒã—ãŸï¼");
     }
 
     exercise(A_CON, FALSE);
@@ -278,13 +278,13 @@ struct obj *food;
 /*JP
             You("choke, but recover your composure.");
 */
-            You("ñ‚ği‚ß‚ç‚ê‚½D‚µ‚©‚µ‚È‚ñ‚Æ‚à‚È‚©‚Á‚½D");
+            You("é¦–ã‚’çµã‚ã‚‰ã‚ŒãŸï¼ã—ã‹ã—ãªã‚“ã¨ã‚‚ãªã‹ã£ãŸï¼");
             return;
         }
 /*JP
         You("stuff yourself and then vomit voluminously.");
 */
-        pline("‚ª‚Â‚ª‚Â‚ÆŒû‚É‹l‚ß‚ñ‚¾‚ªCƒhƒo‚Á‚Æ“f‚«o‚µ‚Ä‚µ‚Ü‚Á‚½D");
+        pline("ãŒã¤ãŒã¤ã¨å£ã«è©°ã‚è¾¼ã‚“ã ãŒï¼Œãƒ‰ãƒã£ã¨åãå‡ºã—ã¦ã—ã¾ã£ãŸï¼");
         morehungry(1000); /* you just got *very* sick! */
         vomit();
     } else {
@@ -297,12 +297,12 @@ struct obj *food;
 /*JP
             You("choke over your %s.", foodword(food));
 */
-            You("%s‚ğA‚É‹l‚Ü‚ç‚¹‚Ä‚µ‚Ü‚Á‚½D", foodword(food));
+            You("%sã‚’å–‰ã«è©°ã¾ã‚‰ã›ã¦ã—ã¾ã£ãŸï¼", foodword(food));
             if (food->oclass == COIN_CLASS) {
 /*JP
                 Strcpy(killer.name, "very rich meal");
 */
-                Strcpy(killer.name, "‚Æ‚Ä‚à‚‰¿‚È—¿—");
+                Strcpy(killer.name, "ã¨ã¦ã‚‚é«˜ä¾¡ãªæ–™ç†");
             } else {
                 killer.format = KILLED_BY;
                 Strcpy(killer.name, killer_xname(food));
@@ -311,16 +311,16 @@ struct obj *food;
 /*JP
             You("choke over it.");
 */
-            pline("A‚É‹l‚Ü‚ç‚¹‚Ä‚µ‚Ü‚Á‚½D");
+            pline("å–‰ã«è©°ã¾ã‚‰ã›ã¦ã—ã¾ã£ãŸï¼");
 /*JP
             Strcpy(killer.name, "quick snack");
 */
-            Strcpy(killer.name, "‘H‚¢");
+            Strcpy(killer.name, "æ—©é£Ÿã„");
         }
 /*JP
         You("die...");
 */
-        pline("‚ ‚È‚½‚Í€‚É‚Ü‚µ‚½DDD");
+        pline("ã‚ãªãŸã¯æ­»ã«ã¾ã—ãŸï¼ï¼ï¼");
         done(CHOKING);
     }
 }
@@ -484,7 +484,7 @@ boolean message;
 /*JP
         You("finish eating %s.", food_xname(context.victual.piece, TRUE));
 */
-        You("%s‚ğH‚×I‚¦‚½D",  food_xname(context.victual.piece, TRUE));
+        You("%sã‚’é£Ÿã¹çµ‚ãˆãŸï¼",  food_xname(context.victual.piece, TRUE));
 
     if (context.victual.piece->otyp == CORPSE)
         cpostfx(context.victual.piece->corpsenm);
@@ -529,26 +529,26 @@ int *dmg_p; /* for dishing out extra damage in lieu of Int loss */
             pline("%s brain is unharmed.",
                   (mdef == &youmonst) ? "Your" : s_suffix(Monnam(mdef)));
 #else
-            pline("%s‚Ì”]‚Í–³–‚¾‚Á‚½D",
-                  (mdef == &youmonst) ? "‚ ‚È‚½" : Monnam(mdef));
+            pline("%sã®è„³ã¯ç„¡äº‹ã ã£ãŸï¼",
+                  (mdef == &youmonst) ? "ã‚ãªãŸ" : Monnam(mdef));
 #endif
         return MM_MISS; /* side-effects can't occur */
     } else if (magr == &youmonst) {
 /*JP
         You("eat %s brain!", s_suffix(mon_nam(mdef)));
 */
-        You("%s‚Ì”]‚ğH‚×‚½I", mon_nam(mdef));
+        You("%sã®è„³ã‚’é£Ÿã¹ãŸï¼", mon_nam(mdef));
     } else if (mdef == &youmonst) {
 /*JP
         Your("brain is eaten!");
 */
-        Your("”]‚ÍH‚×‚ç‚ê‚½I");
+        Your("è„³ã¯é£Ÿã¹ã‚‰ã‚ŒãŸï¼");
     } else { /* monster against monster */
         if (visflag)
 /*JP
             pline("%s brain is eaten!", s_suffix(Monnam(mdef)));
 */
-            pline("%s‚Ì”]‚ÍH‚×‚ç‚ê‚½I", Monnam(mdef));
+            pline("%sã®è„³ã¯é£Ÿã¹ã‚‰ã‚ŒãŸï¼", Monnam(mdef));
     }
 
     if (flesh_petrifies(pd)) {
@@ -565,7 +565,7 @@ int *dmg_p; /* for dishing out extra damage in lieu of Int loss */
 /*JP
                 pline("%s turns to stone!", Monnam(magr));
 */
-                pline("%s‚ÍÎ‚É‚È‚Á‚½I", Monnam(magr));
+                pline("%sã¯çŸ³ã«ãªã£ãŸï¼", Monnam(magr));
             monstone(magr);
             if (magr->mhp > 0) {
                 /* life-saved; don't continue eating the brains */
@@ -576,7 +576,7 @@ int *dmg_p; /* for dishing out extra damage in lieu of Int loss */
 /*JP
                     You("have a sad thought for a moment, then is passes.");
 */
-                    You("”ß‚µ‚¢l‚¦‚É‚¨‚»‚í‚ê‚½‚ªA‚·‚®‚É‰ß‚¬‚³‚Á‚½D");
+                    You("æ‚²ã—ã„è€ƒãˆã«ãŠãã‚ã‚ŒãŸãŒã€ã™ãã«éãã•ã£ãŸï¼");
                 return MM_AGR_DIED;
             }
         }
@@ -591,18 +591,18 @@ int *dmg_p; /* for dishing out extra damage in lieu of Int loss */
 /*JP
             pline("%s doesn't notice.", Monnam(mdef));
 */
-            pline("%s‚Í‹C‚Ã‚¢‚Ä‚¢‚È‚¢D", Monnam(mdef));
+            pline("%sã¯æ°—ã¥ã„ã¦ã„ãªã„ï¼", Monnam(mdef));
             /* all done; no extra harm inflicted upon target */
             return MM_MISS;
         } else if (is_rider(pd)) {
 /*JP
             pline("Ingesting that is fatal.");
 */
-            pline("æ‚è‚ñ‚¾‚ç‚·‚®‚É€‚ñ‚Å‚µ‚Ü‚Á‚½D");
+            pline("å–ã‚Šè¾¼ã‚“ã ã‚‰ã™ãã«æ­»ã‚“ã§ã—ã¾ã£ãŸï¼");
 /*JP
             Sprintf(killer.name, "unwisely ate the brain of %s", pd->mname);
 */
-            Sprintf(killer.name, "‹ğ‚©‚É‚à%s‚Ì‘Ì‚ğH‚×‚Ä", pd->mname);
+            Sprintf(killer.name, "æ„šã‹ã«ã‚‚%sã®ä½“ã‚’é£Ÿã¹ã¦", pd->mname);
             killer.format = NO_KILLER_PREFIX;
             done(DIED);
             /* life-saving needed to reach here */
@@ -633,7 +633,7 @@ int *dmg_p; /* for dishing out extra damage in lieu of Int loss */
 /*JP
             static NEARDATA const char brainlessness[] = "brainlessness";
 */
-            static NEARDATA const char brainlessness[] = "”]‚ğ¸‚Á‚Ä";
+            static NEARDATA const char brainlessness[] = "è„³ã‚’å¤±ã£ã¦";
 
             if (Lifesaved) {
                 Strcpy(killer.name, brainlessness);
@@ -643,7 +643,7 @@ int *dmg_p; /* for dishing out extra damage in lieu of Int loss */
 /*JP
                 pline("Unfortunately your brain is still gone.");
 */
-                pline("c”O‚È‚ª‚ç‚ ‚È‚½‚É‚Í”]‚ª‚È‚¢D");
+                pline("æ®‹å¿µãªãŒã‚‰ã‚ãªãŸã«ã¯è„³ãŒãªã„ï¼");
                 /* sanity check against adding other forms of life-saving */
                 u.uprops[LIFESAVED].extrinsic =
                     u.uprops[LIFESAVED].intrinsic = 0L;
@@ -651,7 +651,7 @@ int *dmg_p; /* for dishing out extra damage in lieu of Int loss */
 /*JP
                 Your("last thought fades away.");
 */
-                Your("ÅŒã‚Ìv‚¢‚ª‘–”n“•‚Ì‚æ‚¤‚É‰¡‚¬‚Á‚½D");
+                Your("æœ€å¾Œã®æ€ã„ãŒèµ°é¦¬ç‡ˆã®ã‚ˆã†ã«æ¨ªãã£ãŸï¼");
             }
             Strcpy(killer.name, brainlessness);
             killer.format = KILLED_BY;
@@ -662,7 +662,7 @@ int *dmg_p; /* for dishing out extra damage in lieu of Int loss */
 /*JP
             You_feel("like a scarecrow.");
 */
-            You("‚©‚©‚µ‚Ì‚æ‚¤‚È‹C‚ª‚µ‚½D");
+            You("ã‹ã‹ã—ã®ã‚ˆã†ãªæ°—æŒãŒã—ãŸï¼");
         }
         give_nutrit = TRUE; /* in case a conflicted pet is doing this */
         exercise(A_WIS, FALSE);
@@ -677,7 +677,7 @@ int *dmg_p; /* for dishing out extra damage in lieu of Int loss */
 /*JP
                 pline("%s doesn't notice.", Monnam(mdef));
 */
-                pline("%s‚Í‹C‚Ã‚¢‚Ä‚¢‚È‚¢D", Monnam(mdef));
+                pline("%sã¯æ°—ã¥ã„ã¦ã„ãªã„ï¼", Monnam(mdef));
             return MM_MISS;
         } else if (is_rider(pd)) {
             mondied(magr);
@@ -692,7 +692,7 @@ int *dmg_p; /* for dishing out extra damage in lieu of Int loss */
 /*JP
                 pline("%s last thought fades away...",
 */
-                pline("%s‚ÌÅŒã‚Ìv‚¢‚ª‚æ‚¬‚éDDD",
+                pline("%sã®æœ€å¾Œã®æ€ã„ãŒã‚ˆãã‚‹ï¼ï¼ï¼",
                       s_suffix(Monnam(mdef)));
         }
     }
@@ -732,11 +732,11 @@ boolean allowmsg;
 /*JP
                 You("have a bad feeling deep inside.");
 */
-                You("Œ™ˆ«Š´‚É‚¨‚»‚í‚ê‚½D");
+                You("å«Œæ‚ªæ„Ÿã«ãŠãã‚ã‚ŒãŸï¼");
 /*JP
             You("cannibal!  You will regret this!");
 */
-            pline("‹¤‹ò‚¢‚¾IŒã‰÷‚·‚é‚¼I");
+            pline("å…±å–°ã„ã ï¼å¾Œæ‚”ã™ã‚‹ãï¼");
         }
         HAggravate_monster |= FROMOUTSIDE;
         change_luck(-rn1(4, 2)); /* -5..-2 */
@@ -757,12 +757,12 @@ register int pm;
 /*JP
             Sprintf(killer.name, "tasting %s meat", mons[pm].mname);
 */
-            Sprintf(killer.name, "%s‚Ì“÷‚ğH‚×", mons[pm].mname);
+            Sprintf(killer.name, "%sã®è‚‰ã‚’é£Ÿã¹", mons[pm].mname);
             killer.format = KILLED_BY;
 /*JP
             You("turn to stone.");
 */
-            You("Î‚É‚È‚Á‚½D");
+            You("çŸ³ã«ãªã£ãŸï¼");
             done(STONING);
             if (context.victual.piece)
                 context.victual.eating = FALSE;
@@ -782,7 +782,7 @@ register int pm;
 /*JP
             You_feel("that eating the %s was a bad idea.", mons[pm].mname);
 */
-            pline("%s‚ğH‚×‚é‚Ì‚Í‚æ‚­‚È‚¢‹C‚ª‚µ‚½D", mons[pm].mname);
+            pline("%sã‚’é£Ÿã¹ã‚‹ã®ã¯ã‚ˆããªã„æ°—ãŒã—ãŸï¼", mons[pm].mname);
             HAggravate_monster |= FROMOUTSIDE;
         }
         break;
@@ -796,12 +796,12 @@ register int pm;
 /*JP
         pline("Eating that is instantly fatal.");
 */
-        pline("H‚×‚½‚ç‚·‚®‚É€‚ñ‚Å‚µ‚Ü‚Á‚½D");
+        pline("é£Ÿã¹ãŸã‚‰ã™ãã«æ­»ã‚“ã§ã—ã¾ã£ãŸï¼");
 #if 0 /*JP*/
         Sprintf(killer.name, "unwisely ate the body of %s", mons[pm].mname);
         killer.format = NO_KILLER_PREFIX;
 #else
-        Sprintf(killer.name, "‹ğ‚©‚É‚à%s‚Ì‘Ì‚ğH‚×‚Ä", mons[pm].mname);
+        Sprintf(killer.name, "æ„šã‹ã«ã‚‚%sã®ä½“ã‚’é£Ÿã¹ã¦", mons[pm].mname);
         killer.format = KILLED_BY;
 #endif
         done(DIED);
@@ -821,7 +821,7 @@ register int pm;
 /*JP
             You("don't feel very well.");
 */
-            You("‚·‚²‚­‹C•ª‚ªˆ«‚¢D");
+            You("ã™ã”ãæ°—åˆ†ãŒæ‚ªã„ï¼");
             make_slimed(10L, (char *) 0);
             delayed_killer(SLIMED, KILLED_BY_AN, "");
         }
@@ -843,14 +843,14 @@ fix_petrification()
         Sprintf(buf, "What a pity--you just ruined a future piece of %sart!",
                 ACURR(A_CHA) > 15 ? "fine " : "");
 #else
-        Sprintf(buf, "‚È‚ñ‚Ä‚±‚Æ‚¾I%sŒ|pì•i‚É‚È‚ê‚½‚©‚à‚µ‚ê‚È‚¢‚Ì‚ÉI",
-                ACURR(A_CHA) > 15 ? "‹Md‚È" : "");
+        Sprintf(buf, "ãªã‚“ã¦ã“ã¨ã ï¼%sèŠ¸è¡“ä½œå“ã«ãªã‚ŒãŸã‹ã‚‚ã—ã‚Œãªã„ã®ã«ï¼",
+                ACURR(A_CHA) > 15 ? "è²´é‡ãª" : "");
 #endif
     else
 /*JP
         Strcpy(buf, "You feel limber!");
 */
-        Strcpy(buf, "‘Ì‚ª“î‚ç‚©‚­‚È‚Á‚½‚æ‚¤‚È‹C‚ª‚µ‚½I");
+        Strcpy(buf, "ä½“ãŒè»Ÿã‚‰ã‹ããªã£ãŸã‚ˆã†ãªæ°—ãŒã—ãŸï¼");
     make_stoned(0L, buf, 0, (char *) 0);
 }
 
@@ -969,7 +969,7 @@ register struct permonst *ptr;
 /*JP
             You(Hallucination ? "be chillin'." : "feel a momentary chill.");
 */
-            You(Hallucination ? "uƒN[ƒ‹‘î”z•Öv‚³‚ê‚Ä‚¢‚é‚æ‚¤‚¾D" : "ˆêuŠ¦‚¯‚ª‚µ‚½D");
+            You(Hallucination ? "ã€Œã‚¯ãƒ¼ãƒ«å®…é…ä¾¿ã€ã•ã‚Œã¦ã„ã‚‹ã‚ˆã†ã ï¼" : "ä¸€ç¬å¯’ã‘ãŒã—ãŸï¼");
             HFire_resistance |= FROMOUTSIDE;
         }
         break;
@@ -979,7 +979,7 @@ register struct permonst *ptr;
 /*JP
             You_feel("wide awake.");
 */
-            You("‚Ï‚Á‚¿‚è–Ú‚ª‚³‚ß‚½D");
+            You("ã±ã£ã¡ã‚Šç›®ãŒã•ã‚ãŸï¼");
             HSleep_resistance |= FROMOUTSIDE;
         }
         break;
@@ -989,7 +989,7 @@ register struct permonst *ptr;
 /*JP
             You_feel("full of hot air.");
 */
-            You("”M•—‚ğ‘Sg‚ÉŠ´‚¶‚½D");
+            You("ç†±é¢¨ã‚’å…¨èº«ã«æ„Ÿã˜ãŸï¼");
             HCold_resistance |= FROMOUTSIDE;
         }
         break;
@@ -999,7 +999,7 @@ register struct permonst *ptr;
 /*JP
             You_feel(Hallucination ? "totally together, man." : "very firm.");
 */
-            You_feel(Hallucination ? "¢ŠEl—Ş‚ÆŒZ’í‚É‚È‚Á‚½‚æ‚¤‚È‹C‚ª‚µ‚½D" : "‚Æ‚Ä‚àŠæä‚É‚È‚Á‚½‚æ‚¤‚È‹C‚ª‚µ‚½D");
+            You_feel(Hallucination ? "ä¸–ç•Œäººé¡ã¨å…„å¼Ÿã«ãªã£ãŸã‚ˆã†ãªæ°—ãŒã—ãŸï¼" : "ã¨ã¦ã‚‚é ‘ä¸ˆã«ãªã£ãŸã‚ˆã†ãªæ°—ãŒã—ãŸï¼");
             HDisint_resistance |= FROMOUTSIDE;
         }
         break;
@@ -1010,12 +1010,12 @@ register struct permonst *ptr;
 /*JP
                 You_feel("grounded in reality.");
 */
-              You("À‚ÍƒA[ƒX‚³‚ê‚Ä‚¢‚é‚æ‚¤‚È‹C‚ª‚µ‚½D");
+              You("å®Ÿã¯ã‚¢ãƒ¼ã‚¹ã•ã‚Œã¦ã„ã‚‹ã‚ˆã†ãªæ°—ãŒã—ãŸï¼");
             else
 /*JP
                 Your("health currently feels amplified!");
 */
-              pline("Œ’N‚ª‘•‚³‚ê‚½‚æ‚¤‚È‹C‚ª‚µ‚½I");
+              pline("å¥åº·ãŒå¢—å¹…ã•ã‚ŒãŸã‚ˆã†ãªæ°—ãŒã—ãŸï¼");
             HShock_resistance |= FROMOUTSIDE;
         }
         break;
@@ -1025,7 +1025,7 @@ register struct permonst *ptr;
 /*JP
             You_feel(Poison_resistance ? "especially healthy." : "healthy.");
 */
-            You_feel(Poison_resistance ? "“Á‚ÉŒ’N‚É‚È‚Á‚½‹C‚ª‚µ‚½D" : "Œ’N‚É‚È‚Á‚½‹C‚ª‚µ‚½D");
+            You_feel(Poison_resistance ? "ç‰¹ã«å¥åº·ã«ãªã£ãŸæ°—ãŒã—ãŸï¼" : "å¥åº·ã«ãªã£ãŸæ°—ãŒã—ãŸï¼");
             HPoison_resistance |= FROMOUTSIDE;
         }
         break;
@@ -1035,7 +1035,7 @@ register struct permonst *ptr;
 /*JP
             You_feel(Hallucination ? "diffuse." : "very jumpy.");
 */
-            pline(Hallucination ? "‘Ì‚ª”ò‚ÑU‚Á‚½‚æ‚¤‚È‹C‚ª‚µ‚½D" : "’µ–ô—Í‚ª‚‚Ü‚Á‚½‚æ‚¤‚È‹C‚ª‚µ‚½D");
+            pline(Hallucination ? "ä½“ãŒé£›ã³æ•£ã£ãŸã‚ˆã†ãªæ°—ãŒã—ãŸï¼" : "è·³èºåŠ›ãŒé«˜ã¾ã£ãŸã‚ˆã†ãªæ°—ãŒã—ãŸï¼");
             HTeleportation |= FROMOUTSIDE;
         }
         break;
@@ -1046,8 +1046,8 @@ register struct permonst *ptr;
             You_feel(Hallucination ? "centered in your personal space."
                                    : "in control of yourself.");
 #else
-            You_feel(Hallucination ? "©ŒÈ’†S“I‚É‚È‚Á‚½‚æ‚¤‚È‹C‚ª‚µ‚½D"
-                                   : "©•ª©g‚ğ§Œä‚Å‚«‚é‚æ‚¤‚È‹C‚ª‚µ‚½D");
+            You_feel(Hallucination ? "è‡ªå·±ä¸­å¿ƒçš„ã«ãªã£ãŸã‚ˆã†ãªæ°—ãŒã—ãŸï¼"
+                                   : "è‡ªåˆ†è‡ªèº«ã‚’åˆ¶å¾¡ã§ãã‚‹ã‚ˆã†ãªæ°—ãŒã—ãŸï¼");
 #endif
             HTeleport_control |= FROMOUTSIDE;
         }
@@ -1059,8 +1059,8 @@ register struct permonst *ptr;
             You_feel(Hallucination ? "in touch with the cosmos."
                                    : "a strange mental acuity.");
 #else
-            You_feel(Hallucination ? "‰F’ˆ‚Ì_”é‚ÉG‚ê‚½‚æ‚¤‚È‹C‚ª‚µ‚½D"
-                                   : "Šï–­‚È¸_“I‰s‚³‚ğŠ´‚¶‚½D");
+            You_feel(Hallucination ? "å®‡å®™ã®ç¥ç§˜ã«è§¦ã‚ŒãŸã‚ˆã†ãªæ°—ãŒã—ãŸï¼"
+                                   : "å¥‡å¦™ãªç²¾ç¥çš„é‹­ã•ã‚’æ„Ÿã˜ãŸï¼");
 #endif
             HTelepat |= FROMOUTSIDE;
             /* If blind, make sure monsters show up. */
@@ -1102,7 +1102,7 @@ register int pm;
 /*JP
                 You_feel("a mild buzz.");
 */
-                You("‚·‚±‚µ‚Ó‚ç‚Ó‚ç‚µ‚½D");
+                You("ã™ã“ã—ãµã‚‰ãµã‚‰ã—ãŸï¼");
                 context.botl = 1;
             }
         }
@@ -1139,7 +1139,7 @@ register int pm;
 /*JP
                 You_feel("hidden!");
 */
-                Your("p‚Í‰B‚³‚ê‚½I");
+                Your("å§¿ã¯éš ã•ã‚ŒãŸï¼");
             HInvis |= FROMOUTSIDE;
             HSee_invisible |= FROMOUTSIDE;
         }
@@ -1168,8 +1168,8 @@ register int pm;
             You_cant("resist the temptation to mimic %s.",
                      Hallucination ? "an orange" : "a pile of gold");
 #else
-            You("%s‚ğ^—‚µ‚½‚¢—U˜f‚É‚©‚ç‚ê‚½D",
-                     Hallucination ? "ƒIƒŒƒ“ƒW" : "‹à‰İ‚ÌR");
+            You("%sã‚’çœŸä¼¼ã—ãŸã„èª˜æƒ‘ã«ã‹ã‚‰ã‚ŒãŸï¼",
+                     Hallucination ? "ã‚ªãƒ¬ãƒ³ã‚¸" : "é‡‘è²¨ã®å±±");
 #endif
             /* A pile of gold can't ride. */
             if (u.usteed)
@@ -1181,11 +1181,11 @@ register int pm;
 /*JP
                        ? "You suddenly dread being peeled and mimic %s again!"
 */
-                       ? "“Ë‘RŠÛ—‡‚É‚³‚ê‚é‚Ì‚ª‹°‚ë‚µ‚­‚È‚Á‚Ä‚Ü‚½%s‚Ì^—‚ğ‚µ‚½I"
+                       ? "çªç„¶ä¸¸è£¸ã«ã•ã‚Œã‚‹ã®ãŒæã‚ã—ããªã£ã¦ã¾ãŸ%sã®çœŸä¼¼ã‚’ã—ãŸï¼"
 /*JP
                        : "You now prefer mimicking %s again.",
 */
-                       : "‚±‚ñ‚Ç‚Í‚Ü‚½%s‚Ì^—‚ª‚µ‚½‚­‚È‚Á‚½D",
+                       : "ã“ã‚“ã©ã¯ã¾ãŸ%sã®çœŸä¼¼ãŒã—ãŸããªã£ãŸï¼",
                     an(Upolyd ? youmonst.data->mname : urace.noun));
             eatmbuf = dupstr(buf);
             nomovemsg = eatmbuf;
@@ -1203,19 +1203,19 @@ register int pm;
 /*JP
         Your("velocity suddenly seems very uncertain!");
 */
-        Your("‘¬“x‚ª“Ë‘RC•sŠm’è‚É‚È‚Á‚½I");
+        Your("é€Ÿåº¦ãŒçªç„¶ï¼Œä¸ç¢ºå®šã«ãªã£ãŸï¼");
         if (HFast & INTRINSIC) {
             HFast &= ~INTRINSIC;
 /*JP
             You("seem slower.");
 */
-            You("’x‚­‚È‚Á‚½‚æ‚¤‚¾D");
+            You("é…ããªã£ãŸã‚ˆã†ã ï¼");
         } else {
             HFast |= FROMOUTSIDE;
 /*JP
             You("seem faster.");
 */
-            You("‘¬‚­‚È‚Á‚½‚æ‚¤‚¾D");
+            You("é€Ÿããªã£ãŸã‚ˆã†ã ï¼");
         }
         break;
     case PM_LIZARD:
@@ -1229,14 +1229,14 @@ register int pm;
     case PM_SANDESTIN: /* moot--they don't leave corpses */
         if (Unchanging) {
 #if 0 /*JP*/
-            You_feel("ˆêuˆá‚Á‚½Š´‚¶‚ª‚µ‚½D"); /* same as poly trap */
+            You_feel("ä¸€ç¬é•ã£ãŸæ„Ÿã˜ãŒã—ãŸï¼"); /* same as poly trap */
 #else
 #endif
         } else {
 /*JP
             You_feel("a change coming over you.");
 */
-            pline("•Ï‰»‚ª–K‚ê‚½D");
+            pline("å¤‰åŒ–ãŒè¨ªã‚ŒãŸï¼");
             polyself(0);
         }
         break;
@@ -1253,7 +1253,7 @@ register int pm;
 /*JP
                 pline("Yum! That was real brain food!");
 */
-                pline("‚¤‚Ü‚¢I‚±‚ê‚±‚»–{“–‚Ìu“ª‚Ì—Ç‚­‚È‚éH–v‚¾I");
+                pline("ã†ã¾ã„ï¼ã“ã‚Œã“ãæœ¬å½“ã®ã€Œé ­ã®è‰¯ããªã‚‹é£Ÿäº‹ã€ã ï¼");
                 (void) adjattrib(A_INT, 1, FALSE);
                 break; /* don't give them telepathy, too */
             }
@@ -1261,7 +1261,7 @@ register int pm;
 /*JP
             pline("For some reason, that tasted bland.");
 */
-            pline("‚Ç‚¤‚µ‚½‚í‚¯‚©C’W”’‚È–¡‚¾D");
+            pline("ã©ã†ã—ãŸã‚ã‘ã‹ï¼Œæ·¡ç™½ãªå‘³ã ï¼");
         }
     /*FALLTHRU*/
     default: {
@@ -1274,7 +1274,7 @@ register int pm;
 /*JP
             pline("Oh wow!  Great stuff!");
 */
-            pline("ƒ[ƒHI‚±‚è‚á‚·‚²‚¢I");
+            pline("ãƒ¯ãƒ¼ã‚©ï¼ã“ã‚Šã‚ƒã™ã”ã„ï¼");
             (void) make_hallucinated((HHallucination & TIMEOUT) + 200L, FALSE,
                                      0L);
         }
@@ -1331,7 +1331,7 @@ violated_vegetarian()
 /*JP
         You_feel("guilty.");
 */
-        pline("ß‚ğŠ´‚¶‚½D");
+        pline("ç½ªã‚’æ„Ÿã˜ãŸï¼");
         adjalign(-1);
     }
     return;
@@ -1380,7 +1380,7 @@ int *tinvariety;
  * This assumes that buf already contains the word "tin",
  * as is the case with caller xname().
  */
-/*JP:uŠÊ‹lv‚ÍŒã‚Å•t‚¯‚é */
+/*JP:ã€Œç¼¶è©°ã€ã¯å¾Œã§ä»˜ã‘ã‚‹ */
 void
 tin_details(obj, mnum, buf)
 struct obj *obj;
@@ -1395,14 +1395,14 @@ char *buf;
 /*JP
             Strcat(buf, " of spinach");
 */
-            Strcat(buf, "ƒzƒEƒŒƒ“‘‚Ì");
+            Strcat(buf, "ãƒ›ã‚¦ãƒ¬ãƒ³è‰ã®");
         else if (mnum == NON_PM)
 /*JP
             Strcpy(buf, "empty tin");
 */
-            Strcat(buf, "‹ó‚Á‚Û‚Ì");
+            Strcat(buf, "ç©ºã£ã½ã®");
         else {
-#if 0 /*JP*//*“ú–{Œê‚ÍŒã‚Å*/
+#if 0 /*JP*//*æ—¥æœ¬èªã¯å¾Œã§*/
             if ((obj->cknown || iflags.override_ID) && obj->spe < 0) {
                 if (r == ROTTEN_TIN || r == HOMEMADE_TIN) {
                     /* put these before the word tin */
@@ -1416,8 +1416,8 @@ char *buf;
                 Strcpy(eos(buf), " of ");
             }
 #endif
-#if 1 /*JP*//*u‚Ìv‚Ån‚Ü‚é‚È‚çŒã’uA‚»‚êˆÈŠO‚È‚ç‘O’u*/
-            if (strstr(tintxts[r].txt, "‚Ì") != tintxts[r].txt) {
+#if 1 /*JP*//*ã€Œã®ã€ã§å§‹ã¾ã‚‹ãªã‚‰å¾Œç½®ã€ãã‚Œä»¥å¤–ãªã‚‰å‰ç½®*/
+            if (strstr(tintxts[r].txt, "ã®") != tintxts[r].txt) {
                 Strcpy(eos(buf), tintxts[r].txt);
             }
 #endif
@@ -1430,12 +1430,12 @@ char *buf;
 /*JP
                 Sprintf(eos(buf), "%s meat", mons[mnum].mname);
 */
-                Sprintf(eos(buf), "%s‚Ì“÷", mons[mnum].mname);
-#if 1 /*JP*//*u‚Ìv‚Ån‚Ü‚é‚È‚çŒã’uA‚»‚êˆÈŠO‚È‚ç‘O’u*/
-            if (strstr(tintxts[r].txt, "‚Ì") == tintxts[r].txt) {
+                Sprintf(eos(buf), "%sã®è‚‰", mons[mnum].mname);
+#if 1 /*JP*//*ã€Œã®ã€ã§å§‹ã¾ã‚‹ãªã‚‰å¾Œç½®ã€ãã‚Œä»¥å¤–ãªã‚‰å‰ç½®*/
+            if (strstr(tintxts[r].txt, "ã®") == tintxts[r].txt) {
                 Strcpy(eos(buf), tintxts[r].txt);
             }
-            Strcpy(eos(buf), "‚Ì");
+            Strcpy(eos(buf), "ã®");
 #endif
         }
     }
@@ -1509,7 +1509,7 @@ const char *mesg;
 /*JP
         b_trapped("tin", 0);
 */
-        b_trapped("ŠÊ", 0);
+        b_trapped("ç¼¶", 0);
         costly_tin(COST_DSTROY);
         goto use_up_tin;
     }
@@ -1522,7 +1522,7 @@ const char *mesg;
 /*JP
             pline("It turns out to be empty.");
 */
-            pline("ŠÊ‚Í‹ó‚Á‚Û‚¾‚Á‚½D");
+            pline("ç¼¶ã¯ç©ºã£ã½ã ã£ãŸï¼");
             tin->dknown = tin->known = 1;
             costly_tin(COST_OPEN);
             goto use_up_tin;
@@ -1534,7 +1534,7 @@ const char *mesg;
 /*JP
             what = "chicken";
 */
-            what = "Œ{“÷";
+            what = "é¶è‚‰";
             which = 1; /* suppress pluralization */
         } else if (Hallucination) {
             what = rndmonnam(NULL);
@@ -1553,16 +1553,16 @@ const char *mesg;
 /*JP
         pline("It smells like %s.", what);
 */
-        pline("%s‚Ì‚æ‚¤‚È“õ‚¢‚ª‚µ‚½D", what);
+        pline("%sã®ã‚ˆã†ãªåŒ‚ã„ãŒã—ãŸï¼", what);
 /*JP
         if (yn("Eat it?") == 'n') {
 */
-        if (yn("H‚×‚Ü‚·‚©H") == 'n') {
+        if (yn("é£Ÿã¹ã¾ã™ã‹ï¼Ÿ") == 'n') {
             if (flags.verbose)
 /*JP
                 You("discard the open tin.");
 */
-                You("ŠJ‚¯‚½ŠÊ‚ğÌ‚Ä‚½D");
+                You("é–‹ã‘ãŸç¼¶ã‚’æ¨ã¦ãŸï¼");
             if (!Hallucination)
                 tin->dknown = tin->known = 1;
             costly_tin(COST_OPEN);
@@ -1577,11 +1577,11 @@ const char *mesg;
 
 #if 0 /*JP*/
         You("consume %s %s.", tintxts[r].txt, mons[mnum].mname);
-#else /*JP: u‚Ìv‚Ån‚Ü‚é‚È‚çŒã’uA‚»‚êˆÈŠO‚È‚ç‘O’u */
-        if (strstr(tintxts[r].txt, "‚Ì") == tintxts[r].txt) {
-            You("%s%s‚ÌŠÊ‹l‚ğ‚½‚¢‚ç‚°‚½D", mons[mnum].mname, tintxts[r].txt);
+#else /*JP: ã€Œã®ã€ã§å§‹ã¾ã‚‹ãªã‚‰å¾Œç½®ã€ãã‚Œä»¥å¤–ãªã‚‰å‰ç½® */
+        if (strstr(tintxts[r].txt, "ã®") == tintxts[r].txt) {
+            You("%s%sã®ç¼¶è©°ã‚’ãŸã„ã‚‰ã’ãŸï¼", mons[mnum].mname, tintxts[r].txt);
         } else {
-            You("%s%s‚ÌŠÊ‹l‚ğ‚½‚¢‚ç‚°‚½D", tintxts[r].txt, mons[mnum].mname);
+            You("%s%sã®ç¼¶è©°ã‚’ãŸã„ã‚‰ã’ãŸï¼", tintxts[r].txt, mons[mnum].mname);
         }
 #endif
 
@@ -1606,7 +1606,7 @@ const char *mesg;
             pline("Eating %s food made your %s very slippery.",
                   tintxts[r].txt, makeplural(body_part(FINGER)));
 #else
-            pline("–û‚Á‚Û‚¢•¨‚ğH‚×‚½‚Ì‚Å‚ ‚È‚½‚Ì%s‚ÍŠŠ‚è‚â‚·‚­‚È‚Á‚½D",
+            pline("æ²¹ã£ã½ã„ç‰©ã‚’é£Ÿã¹ãŸã®ã§ã‚ãªãŸã®%sã¯æ»‘ã‚Šã‚„ã™ããªã£ãŸï¼",
                   body_part(FINGER));
 #endif
         }
@@ -1617,26 +1617,26 @@ const char *mesg;
             pline("It contains some decaying%s%s substance.",
                   Blind ? "" : " ", Blind ? "" : hcolor(NH_GREEN));
 #else
-            pline("%s•…‚Á‚½•¨‘Ì‚ª“ü‚Á‚Ä‚¢‚éD",
+            pline("%sè…ã£ãŸç‰©ä½“ãŒå…¥ã£ã¦ã„ã‚‹ï¼",
                   Blind ? "" : hcolor(NH_GREEN));
 #endif
         } else {
 /*JP
             pline("It contains spinach.");
 */
-            pline("ƒzƒEƒŒƒ“‘‚ª“ü‚Á‚Ä‚¢‚éD");
+            pline("ãƒ›ã‚¦ãƒ¬ãƒ³è‰ãŒå…¥ã£ã¦ã„ã‚‹ï¼");
             tin->dknown = tin->known = 1;
         }
 
 /*JP
         if (yn("Eat it?") == 'n') {
 */
-        if (yn("H‚×‚Ü‚·‚©H") == 'n') {
+        if (yn("é£Ÿã¹ã¾ã™ã‹ï¼Ÿ") == 'n') {
             if (flags.verbose)
 /*JP
                 You("discard the open tin.");
 */
-                You("ŠJ‚¯‚½ŠÊ‚ğÌ‚Ä‚½D");
+                You("é–‹ã‘ãŸç¼¶ã‚’æ¨ã¦ãŸï¼");
             costly_tin(COST_OPEN);
             goto use_up_tin;
         }
@@ -1652,8 +1652,8 @@ const char *mesg;
             pline("This makes you feel like %s!",
                   Hallucination ? "Swee'pea" : "Popeye");
 #else
-            pline("%s‚Ì‚æ‚¤‚È‹C•ª‚É‚È‚Á‚½I",
-                  Hallucination ? "ƒXƒC[ƒs[" : "ƒ|ƒpƒC");
+            pline("%sã®ã‚ˆã†ãªæ°—åˆ†ã«ãªã£ãŸï¼",
+                  Hallucination ? "ã‚¹ã‚¤ãƒ¼ãƒ”ãƒ¼" : "ãƒãƒ‘ã‚¤");
 #endif
         gainstr(tin, 0, FALSE);
 
@@ -1687,7 +1687,7 @@ opentin(VOID_ARGS)
 /*JP
         You("give up your attempt to open the tin.");
 */
-        You("ŠÊ‚ğŠJ‚¯‚é‚Ì‚ğ‚ ‚«‚ç‚ß‚½D");
+        You("ç¼¶ã‚’é–‹ã‘ã‚‹ã®ã‚’ã‚ãã‚‰ã‚ãŸï¼");
         return 0;
     }
     if (context.tin.usedtime < context.tin.reqtime)
@@ -1696,7 +1696,7 @@ opentin(VOID_ARGS)
 /*JP
     consume_tin("You succeed in opening the tin.");
 */
-    consume_tin("ŠÊ‚ğŠJ‚¯‚é‚Ì‚É¬Œ÷‚µ‚½D");
+    consume_tin("ç¼¶ã‚’é–‹ã‘ã‚‹ã®ã«æˆåŠŸã—ãŸï¼");
     return 0;
 }
 
@@ -1712,13 +1712,13 @@ struct obj *otmp;
 /*JP
         mesg = "You bite right into the metal tin...";
 */
-        mesg = "‹à‘®‚ÌŠÊ‚ğŠš‚İ‚Í‚¶‚ß‚½DDD";
+        mesg = "é‡‘å±ã®ç¼¶ã‚’å™›ã¿ã¯ã˜ã‚ãŸï¼ï¼ï¼";
         tmp = 0;
     } else if (cantwield(youmonst.data)) { /* nohands || verysmall */
 /*JP
         You("cannot handle the tin properly to open it.");
 */
-        You("ŠÊ‚ğ‚¤‚Ü‚­ŠJ‚¯‚ç‚ê‚È‚¢D");
+        You("ç¼¶ã‚’ã†ã¾ãé–‹ã‘ã‚‰ã‚Œãªã„ï¼");
         return;
     } else if (otmp->blessed) {
         /* 50/50 chance for immediate access vs 1 turn delay (unless
@@ -1731,19 +1731,19 @@ struct obj *otmp;
 /*JP
             mesg = "The tin opens like magic!";
 */
-            mesg = "ŠÊ‚Í–‚–@‚Ì‚æ‚¤‚ÉŠJ‚¢‚½I";
+            mesg = "ç¼¶ã¯é­”æ³•ã®ã‚ˆã†ã«é–‹ã„ãŸï¼";
         else
 /*JP
             pline_The("tin seems easy to open.");
 */
-            pline_The("ŠÊ‚ÍŠÈ’P‚ÉŠJ‚¯‚ç‚ê‚»‚¤‚¾D");
+            pline_The("ç¼¶ã¯ç°¡å˜ã«é–‹ã‘ã‚‰ã‚Œãã†ã ï¼");
     } else if (uwep) {
         switch (uwep->otyp) {
         case TIN_OPENER:
 #if 0 /*JP*/
             mesg = "You easily open the tin."; /* iff tmp==0 */
 #else
-            mesg = "‚ ‚È‚½‚ÍŠÈ’P‚ÉŠÊ‚ğŠJ‚¯‚½D"; /* iff tmp==0 */
+            mesg = "ã‚ãªãŸã¯ç°¡å˜ã«ç¼¶ã‚’é–‹ã‘ãŸï¼"; /* iff tmp==0 */
 #endif
             tmp = rn2(uwep->cursed ? 3 : !uwep->blessed ? 2 : 1);
             break;
@@ -1765,18 +1765,18 @@ struct obj *otmp;
 /*JP
         pline("Using %s you try to open the tin.", yobjnam(uwep, (char *) 0));
 */
-        You("%s‚ğg‚Á‚ÄŠÊ‚ğŠJ‚¯‚æ‚¤‚Æ‚µ‚½D", xname(uwep));
+        You("%sã‚’ä½¿ã£ã¦ç¼¶ã‚’é–‹ã‘ã‚ˆã†ã¨ã—ãŸï¼", xname(uwep));
     } else {
     no_opener:
 /*JP
         pline("It is not so easy to open this tin.");
 */
-        pline("‚±‚ÌŠÊ‚ğŠJ‚¯‚é‚Ì‚Í—eˆÕ‚È‚±‚Æ‚Å‚Í‚È‚¢D");
+        pline("ã“ã®ç¼¶ã‚’é–‹ã‘ã‚‹ã®ã¯å®¹æ˜“ãªã“ã¨ã§ã¯ãªã„ï¼");
         if (Glib) {
 /*JP
             pline_The("tin slips from your %s.",
 */
-            pline("ŠÊ‚Í‚ ‚È‚½‚Ì%s‚©‚çŠŠ‚è—‚¿‚½D",
+            pline("ç¼¶ã¯ã‚ãªãŸã®%sã‹ã‚‰æ»‘ã‚Šè½ã¡ãŸï¼",
                       makeplural(body_part(FINGER)));
             if (otmp->quan > 1L) {
                 otmp = splitobj(otmp, 1L);
@@ -1800,7 +1800,7 @@ struct obj *otmp;
 /*JP
         set_occupation(opentin, "opening the tin", 0);
 */
-        set_occupation(opentin, "ŠÊ‚ğŠJ‚¯‚é", 0);
+        set_occupation(opentin, "ç¼¶ã‚’é–‹ã‘ã‚‹", 0);
     }
     return;
 }
@@ -1823,24 +1823,24 @@ struct obj *obj;
 /*JP
     pline("Blecch!  Rotten %s!", foodword(obj));
 */
-    pline("ƒQƒFI•…‚Á‚½%s‚¾I", foodword(obj));
+    pline("ã‚²ã‚§ï¼è…ã£ãŸ%sã ï¼", foodword(obj));
     if (!rn2(4)) {
         if (Hallucination)
 /*JP
             You_feel("rather trippy.");
 */
-            You("‚Ö‚ë‚Ö‚ë‚µ‚½D");
+            You("ã¸ã‚ã¸ã‚ã—ãŸï¼");
         else
 /*JP
             You_feel("rather %s.", body_part(LIGHT_HEADED));
 */
-            You("%sD", body_part(LIGHT_HEADED));
+            You("%sï¼", body_part(LIGHT_HEADED));
         make_confused(HConfusion + d(2, 4), FALSE);
     } else if (!rn2(4) && !Blind) {
 /*JP
         pline("Everything suddenly goes dark.");
 */
-        pline("“Ë‘R‘S‚Ä‚ªˆÃ‚­‚È‚Á‚½D");
+        pline("çªç„¶å…¨ã¦ãŒæš—ããªã£ãŸï¼");
         make_blinded((long) d(2, 10), FALSE);
         if (!Blind)
             Your1(vision_clears);
@@ -1852,32 +1852,32 @@ struct obj *obj;
 /*JP
             what = "goes", where = "dark";
 */
-            what = "‚È‚Á‚½", where = "ˆÃˆÅ‚É";
+            what = "ãªã£ãŸ", where = "æš—é—‡ã«";
         else if (Levitation || Is_airlevel(&u.uz) || Is_waterlevel(&u.uz))
 /*JP
             what = "you lose control of", where = "yourself";
 */
-            what = "§Œä‚Å‚«‚È‚­‚È‚Á‚½", where = "©•ª‚ğ";
+            what = "åˆ¶å¾¡ã§ããªããªã£ãŸ", where = "è‡ªåˆ†ã‚’";
         else
 /*JP
             what = "you slap against the",
 */
-            what = "‚É‚Ô‚Â‚©‚Á‚½",
+            what = "ã«ã¶ã¤ã‹ã£ãŸ",
 /*JP
             where = (u.usteed) ? "saddle" : surface(u.ux, u.uy);
 */
-            where = (u.usteed) ? "ˆÆ" : surface(u.ux, u.uy);
+            where = (u.usteed) ? "é" : surface(u.ux, u.uy);
 /*JP
         pline_The("world spins and %s %s.", what, where);
 */
-        pline("¢ŠE‚ª‰ñ“]‚µC%s%sD", where, what);
+        pline("ä¸–ç•ŒãŒå›è»¢ã—ï¼Œ%s%sï¼", where, what);
         incr_itimeout(&HDeaf, duration);
         nomul(-duration);
         multi_reason = "unconscious from rotten food";
 /*JP
         nomovemsg = "You are conscious again.";
 */
-        nomovemsg = "‚ ‚È‚½‚Í‚Ü‚½³‹C‚Ã‚¢‚½D";
+        nomovemsg = "ã‚ãªãŸã¯ã¾ãŸæ­£æ°—ã¥ã„ãŸï¼";
         afternmv = Hear_again;
         return 1;
     }
@@ -1921,17 +1921,17 @@ struct obj *otmp;
                   : !vegetarian(&mons[mnum]) ? "meat" : "protoplasm",
               cannibal ? ", you cannibal" : "");
 #else
-        pline("ƒIƒFI‚±‚Ì%s‚Í•…‚Á‚Ä‚¢‚é%sI", 
+        pline("ã‚ªã‚§ï¼ã“ã®%sã¯è…ã£ã¦ã„ã‚‹%sï¼", 
               mons[mnum].mlet == S_FUNGUS
-                  ? "×‹Û‚É‰˜õ‚³‚ê‚½A•¨"
-                  : !vegetarian(&mons[mnum]) ? "“÷" : "¶•¨",
-              cannibal ? "D‚µ‚©‚à‹¤H‚¢‚¾" : "");
+                  ? "ç´°èŒã«æ±šæŸ“ã•ã‚ŒãŸæ¤ç‰©"
+                  : !vegetarian(&mons[mnum]) ? "è‚‰" : "ç”Ÿç‰©",
+              cannibal ? "ï¼ã—ã‹ã‚‚å…±é£Ÿã„ã " : "");
 #endif
         if (Sick_resistance) {
 /*JP
             pline("It doesn't seem at all sickening, though...");
 */
-            pline("‚µ‚©‚µC‚¢‚½‚Á‚ÄŒ³‹C‚¾DDD");
+            pline("ã—ã‹ã—ï¼Œã„ãŸã£ã¦å…ƒæ°—ã ï¼ï¼ï¼");
         } else {
             long sick_time;
 
@@ -1943,7 +1943,7 @@ struct obj *otmp;
             make_sick(sick_time, corpse_xname(otmp, "rotted", CXN_NORMAL),
                       TRUE, SICK_VOMITABLE);
 #else
-            make_sick(sick_time, corpse_xname(otmp, "•…‚Á‚½", CXN_NORMAL),
+            make_sick(sick_time, corpse_xname(otmp, "è…ã£ãŸ", CXN_NORMAL),
                       TRUE, SICK_VOMITABLE);
 #endif
         }
@@ -1957,41 +1957,41 @@ struct obj *otmp;
 #if 0 /*JP:T*/
         You("have a very bad case of stomach acid.");   /* not body_part() */
 #else
-        pline("ˆİ_‚Ì’²q‚ª‚Æ‚Ä‚àˆ«‚¢D");
+        pline("èƒƒé…¸ã®èª¿å­ãŒã¨ã¦ã‚‚æ‚ªã„ï¼");
 #endif
 #if 0 /*JP*/
         losehp(rnd(15), "acidic corpse", KILLED_BY_AN); /* acid damage */
 #else
-        losehp(rnd(15), "_‚Ì€‘Ì‚Å", KILLED_BY_AN);
+        losehp(rnd(15), "é…¸ã®æ­»ä½“ã§", KILLED_BY_AN);
 #endif
     } else if (poisonous(&mons[mnum]) && rn2(5)) {
         tp++;
 /*JP
         pline("Ecch - that must have been poisonous!");
 */
-        pline("ƒEƒQƒF[C—L“Å‚¾‚Á‚½‚É‚¿‚ª‚¢‚È‚¢I");  
+        pline("ã‚¦ã‚²ã‚§ãƒ¼ï¼Œæœ‰æ¯’ã ã£ãŸã«ã¡ãŒã„ãªã„ï¼");  
         if (!Poison_resistance) {
             losestr(rnd(4));
 /*JP
             losehp(rnd(15), "poisonous corpse", KILLED_BY_AN);
 */
-            losehp(rnd(15), "“Å‚Ì€‘Ì‚Å", KILLED_BY_AN);
+            losehp(rnd(15), "æ¯’ã®æ­»ä½“ã§", KILLED_BY_AN);
         } else
 /*JP
             You("seem unaffected by the poison.");
 */
-            You("“Å‚Ì‰e‹¿‚ğó‚¯‚È‚¢‚æ‚¤‚¾D");
+            You("æ¯’ã®å½±éŸ¿ã‚’å—ã‘ãªã„ã‚ˆã†ã ï¼");
         /* now any corpse left too long will make you mildly ill */
     } else if ((rotted > 5L || (rotted > 3L && rn2(5))) && !Sick_resistance) {
         tp++;
 /*JP
         You_feel("%ssick.", (Sick) ? "very " : "");
 */
-        You("%s‹C•ª‚ªˆ«‚¢D", (Sick) ? "‚Æ‚Ä‚à" : "");
+        You("%sæ°—åˆ†ãŒæ‚ªã„ï¼", (Sick) ? "ã¨ã¦ã‚‚" : "");
 /*JP
         losehp(rnd(8), "cadaver", KILLED_BY_AN);
 */
-        losehp(rnd(8), "•…—€‘Ì‚Å", KILLED_BY_AN);
+        losehp(rnd(8), "è…ä¹±æ­»ä½“ã§", KILLED_BY_AN);
     }
 
     /* delay is weight dependent */
@@ -2010,7 +2010,7 @@ struct obj *otmp;
 /*JP
                 pline_The("corpse rots away completely.");
 */
-                pline("€‘Ì‚ÍŠ®‘S‚É•…‚Á‚Ä‚µ‚Ü‚Á‚½D");
+                pline("æ­»ä½“ã¯å®Œå…¨ã«è…ã£ã¦ã—ã¾ã£ãŸï¼");
             if (carried(otmp))
                 useup(otmp);
             else
@@ -2025,12 +2025,12 @@ struct obj *otmp;
 /*JP
         pline("This tastes just like chicken!");
 */
-        pline("‚±‚ê‚ÍŒ{“÷‚Ì–¡‚¾I");
+        pline("ã“ã‚Œã¯é¶è‚‰ã®å‘³ã ï¼");
     } else if (mnum == PM_FLOATING_EYE && u.umonnum == PM_RAVEN) {
 /*JP
         You("peck the eyeball with delight.");
 */
-        You("–Ú‹Ê‚ğ‚Â‚ñ‚Â‚ñ‚Â‚Â‚¢‚½D");
+        You("ç›®ç‰ã‚’ã¤ã‚“ã¤ã‚“ã¤ã¤ã„ãŸï¼");
     } else {
         /* [is this right?  omnivores end up always disliking the taste] */
         boolean yummy = vegan(&mons[mnum])
@@ -2050,13 +2050,13 @@ struct obj *otmp;
                            : "is grody")
                   : (yummy ? "is delicious" : "tastes terrible"));
 #else
-        pline("‚±‚Ì%s‚Í%sI",
+        pline("ã“ã®%sã¯%sï¼",
               food_xname(otmp, FALSE),
               Hallucination
-                  ? (yummy ? ((u.umonnum == PM_TIGER) ? "ƒOƒDƒŒƒCƒgƒD"
-                                                      : "ƒCƒP‚Ä‚é")
-                           : "ƒCƒP‚Ä‚È‚¢")
-                  : (yummy ? "‚Æ‚Ä‚à|‚¢" : "‚Ğ‚Ç‚¢–¡‚¾"));
+                  ? (yummy ? ((u.umonnum == PM_TIGER) ? "ã‚°ã‚¥ãƒ¬ã‚¤ãƒˆã‚¥"
+                                                      : "ã‚¤ã‚±ã¦ã‚‹")
+                           : "ã‚¤ã‚±ã¦ãªã„")
+                  : (yummy ? "ã¨ã¦ã‚‚æ—¨ã„" : "ã²ã©ã„å‘³ã "));
 #endif
     }
 
@@ -2113,7 +2113,7 @@ struct obj *otmp;
 /*JP
     Sprintf(msgbuf, "eating %s", food_xname(otmp, TRUE));
 */
-    Sprintf(msgbuf, "%s‚ğH‚×‚é", food_xname(otmp, TRUE));
+    Sprintf(msgbuf, "%sã‚’é£Ÿã¹ã‚‹", food_xname(otmp, TRUE));
     set_occupation(eatfood, msgbuf, 0);
 }
 
@@ -2131,37 +2131,37 @@ struct obj *otmp;
 /*JP
             pline(Hallucination ? "Oh wow, like, superior, man!"
 */
-            pline(Hallucination ? "‚Ü‚Á‚½‚è‚Æ‚µ‚ÄC‚»‚ê‚Å‚¢‚Ä‚µ‚Â‚±‚­‚È‚¢I‚±‚ê‚¼‹†‹É‚Ìƒƒjƒ…[‚¾I"
+            pline(Hallucination ? "ã¾ã£ãŸã‚Šã¨ã—ã¦ï¼Œãã‚Œã§ã„ã¦ã—ã¤ã“ããªã„ï¼ã“ã‚Œãç©¶æ¥µã®ãƒ¡ãƒ‹ãƒ¥ãƒ¼ã ï¼"
 /*JP
                                 : "That food really hit the spot!");
 */
-                                : "‚±‚ÌH‚×•¨‚Í–{“–‚É\‚µ•ª‚È‚¢I");
+                                : "ã“ã®é£Ÿã¹ç‰©ã¯æœ¬å½“ã«ç”³ã—åˆ†ãªã„ï¼");
         else if (u.uhunger <= 700)
 /*JP
             pline("That satiated your %s!", body_part(STOMACH));
 */
-            pline("–• ‚É‚È‚Á‚½I");
+            pline("æº€è…¹ã«ãªã£ãŸï¼");
         break;
     case TRIPE_RATION:
         if (carnivorous(youmonst.data) && !humanoid(youmonst.data))
 /*JP
             pline("That tripe ration was surprisingly good!");
 */
-            pline("‚±‚Ìƒ‚ƒc“÷‚Í‚¨‚Ç‚ë‚­‚Ù‚Ç|‚¢I");
+            pline("ã“ã®ãƒ¢ãƒ„è‚‰ã¯ãŠã©ã‚ãã»ã©æ—¨ã„ï¼");
         else if (maybe_polyd(is_orc(youmonst.data), Race_if(PM_ORC)))
 /*JP
             pline(Hallucination ? "Tastes great! Less filling!"
 */
-            pline(Hallucination ? "‚¤‚Ü‚¢I‚à‚Á‚Æ‚Ù‚µ‚­‚È‚é‚ËI"
+            pline(Hallucination ? "ã†ã¾ã„ï¼ã‚‚ã£ã¨ã»ã—ããªã‚‹ã­ï¼"
 /*JP
                                 : "Mmm, tripe... not bad!");
 */
-                                : "‚ñ[Cƒ‚ƒc‚©DDDˆ«‚­‚È‚¢I");
+                                : "ã‚“ãƒ¼ï¼Œãƒ¢ãƒ„ã‹ï¼ï¼ï¼æ‚ªããªã„ï¼");
         else {
 /*JP
             pline("Yak - dog food!");
 */
-            pline("‚¤‚°CƒhƒbƒOƒt[ƒh‚¾I");
+            pline("ã†ã’ï¼Œãƒ‰ãƒƒã‚°ãƒ•ãƒ¼ãƒ‰ã ï¼");
             more_experienced(1, 0);
             newexplevel();
             /* not cannibalism, but we use similar criteria
@@ -2189,8 +2189,8 @@ struct obj *otmp;
                   Hallucination ? "primo" : "yummy",
                   singular(otmp, xname));
 #else
-            pline("‚¨‚âC‚È‚ñ‚Ä%s%s‚¾I",
-                  Hallucination ? "ã•i‚È" : "‚¨‚¢‚µ‚¢",
+            pline("ãŠã‚„ï¼Œãªã‚“ã¦%s%sã ï¼",
+                  Hallucination ? "ä¸Šå“ãª" : "ãŠã„ã—ã„",
                   singular(otmp, xname));
 #endif
         } else if (otmp->otyp == APPLE && otmp->cursed && !Sleep_resistance) {
@@ -2204,7 +2204,7 @@ struct obj *otmp;
 /*JP
             pline("Delicious!  Must be a Macintosh!");
 */
-            pline("‚·‚Î‚ç‚µ‚¢Iƒ}ƒbƒLƒ“ƒgƒbƒVƒ…‚Éˆá‚¢‚È‚¢I");
+            pline("ã™ã°ã‚‰ã—ã„ï¼ãƒãƒƒã‚­ãƒ³ãƒˆãƒƒã‚·ãƒ¥ã«é•ã„ãªã„ï¼");
 #endif
 
 #ifdef UNIX
@@ -2229,7 +2229,7 @@ struct obj *otmp;
 #if 0 /*JP*/
             pline("Ugh.  Rotten egg."); /* perhaps others like it */
 #else
-            pline("ƒEƒQƒF[•…‚Á‚½—‘‚¾D");
+            pline("ã‚¦ã‚²ã‚§ãƒ¼è…ã£ãŸåµã ï¼");
 #endif
             make_vomiting((Vomiting & TIMEOUT) + (long) d(10, 4), TRUE);
         } else {
@@ -2244,14 +2244,14 @@ struct obj *otmp;
                         ? "bland."
                         : Hallucination ? "gnarly!" : "delicious!");
 #else
-            pline("‚±‚Ì%s‚Í%s", singular(otmp, xname),
+            pline("ã“ã®%sã¯%s", singular(otmp, xname),
                   otmp->cursed
-                    ? (Hallucination ? "ƒCƒP‚Ä‚È‚¢I" : "‚Ğ‚Ç‚¢–¡‚¾I")
+                    ? (Hallucination ? "ã‚¤ã‚±ã¦ãªã„ï¼" : "ã²ã©ã„å‘³ã ï¼")
                     : (otmp->otyp == CRAM_RATION
                         || otmp->otyp == K_RATION
                         || otmp->otyp == C_RATION)
-                        ? "–¡‹C‚È‚¢D"
-                        : Hallucination ? "ƒCƒP‚Ä‚éI" : "‚¤‚Ü‚¢I");
+                        ? "å‘³æ°—ãªã„ï¼"
+                        : Hallucination ? "ã‚¤ã‚±ã¦ã‚‹ï¼" : "ã†ã¾ã„ï¼");
 #endif
         }
         break; /* default */
@@ -2299,8 +2299,8 @@ struct obj *otmp;
     pline("Magic spreads through your body as you digest the %s.",
           otmp->oclass == RING_CLASS ? "ring" : "amulet");
 #else
-    pline("‚ ‚È‚½‚ª%s‚ğÁ‰»‚·‚é‚ÆC‚»‚Ì–‚—Í‚ª‘Ì‚É‚µ‚İ‚±‚ñ‚¾D",
-          otmp->oclass == RING_CLASS ? "w—Ö" : "–‚œ‚¯");
+    pline("ã‚ãªãŸãŒ%sã‚’æ¶ˆåŒ–ã™ã‚‹ã¨ï¼Œãã®é­”åŠ›ãŒä½“ã«ã—ã¿ã“ã‚“ã ï¼",
+          otmp->oclass == RING_CLASS ? "æŒ‡è¼ª" : "é­”é™¤ã‘");
 #endif
 }
 
@@ -2341,7 +2341,7 @@ struct obj *otmp;
 /*JP
                     pline("Suddenly you can see yourself.");
 */
-                    pline("“Ë‘R©•ª©g‚ªŒ©‚¦‚é‚æ‚¤‚É‚È‚Á‚½D");
+                    pline("çªç„¶è‡ªåˆ†è‡ªèº«ãŒè¦‹ãˆã‚‹ã‚ˆã†ã«ãªã£ãŸï¼");
                     makeknown(typ);
                 }
                 break;
@@ -2353,8 +2353,8 @@ struct obj *otmp;
                     Your("body takes on a %s transparency...",
                          Hallucination ? "normal" : "strange");
 #else
-                    pline("%s‚ ‚È‚½‚Ì‘Ì‚Í“§‰ß«‚ğ‚à‚Á‚½DDD",
-                          Hallucination ? "‚ ‚½‚è‚Ü‚¦‚È‚±‚Æ‚¾‚ª" : "Šï–­‚È‚±‚Æ‚É");
+                    pline("%sã‚ãªãŸã®ä½“ã¯é€éæ€§ã‚’ã‚‚ã£ãŸï¼ï¼ï¼",
+                          Hallucination ? "ã‚ãŸã‚Šã¾ãˆãªã“ã¨ã ãŒ" : "å¥‡å¦™ãªã“ã¨ã«");
 #endif
                     makeknown(typ);
                 }
@@ -2414,7 +2414,7 @@ struct obj *otmp;
 /*JP
                 You_feel("wide awake.");
 */
-                You("‚Ï‚Á‚¿‚è–Ú‚ª‚³‚ß‚½D");
+                You("ã±ã£ã¡ã‚Šç›®ãŒã•ã‚ãŸï¼");
             HSleep_resistance |= FROMOUTSIDE;
             break;
         case AMULET_OF_CHANGE:
@@ -2425,8 +2425,8 @@ struct obj *otmp;
             You("are suddenly very %s!",
                 flags.female ? "feminine" : "masculine");
 #else
-            You("“Ë‘R‚Æ‚Ä‚à%s‚Á‚Û‚­‚È‚Á‚½I", 
-                flags.female ? "—" : "’j");
+            You("çªç„¶ã¨ã¦ã‚‚%sã£ã½ããªã£ãŸï¼", 
+                flags.female ? "å¥³" : "ç”·");
 #endif
             context.botl = 1;
             break;
@@ -2474,7 +2474,7 @@ eatspecial()
 /*JP
     set_occupation(eatfood, "eating non-food", 0);
 */
-    set_occupation(eatfood, "H‚×‚é", 0);
+    set_occupation(eatfood, "é£Ÿã¹ã‚‹", 0);
     lesshungry(context.victual.nmod);
     occupation = 0;
     context.victual.piece = (struct obj *) 0;
@@ -2510,8 +2510,8 @@ eatspecial()
         pline(Hallucination ? "Four out of five dentists agree."
                             : "That was pure chewing satisfaction!");
 #else
-        pline(Hallucination ? "ŒÜl‚Éll‚Ì•ˆãÒ‚ªƒgƒ‰ƒCƒfƒ“ƒg‚ğ‚¨‘E‚ß‚µ‚Ä‚¢‚Ü‚·D"
-                            : "ƒˆ‚ÉŠš‚İ‚½‚¢‹C‚ğ–‚½‚µ‚½I");
+        pline(Hallucination ? "äº”äººã«å››äººã®æ­¯åŒ»è€…ãŒãƒˆãƒ©ã‚¤ãƒ‡ãƒ³ãƒˆã‚’ãŠè–¦ã‚ã—ã¦ã„ã¾ã™ï¼"
+                            : "ç´”ç²‹ã«å™›ã¿ãŸã„æ°—æŒã‚’æº€ãŸã—ãŸï¼");
 #endif
         exercise(A_WIS, TRUE);
     }
@@ -2520,7 +2520,7 @@ eatspecial()
 /*JP
         pline("Yabba-dabba delicious!");
 */
-        pline("ƒ„ƒbƒoƒ_ƒbƒo‚¤‚Ü‚¢I");
+        pline("ãƒ¤ãƒƒãƒãƒ€ãƒƒãƒã†ã¾ã„ï¼");
         exercise(A_CON, TRUE);
     }
 
@@ -2550,10 +2550,10 @@ static const char *foodwords[] = {
     "metal",   "metal",   "silver",    "gold", "platinum", "mithril",
     "plastic", "glass",   "rich food", "stone"
 #else
-    "“÷",           "‰t‘Ì",   "–û",       "H—¿", "“÷",       "†",
-    "•",           "”ç",     "–Ø",       "œ",   "—Ø",       "‹à‘®",
-    "‹à‘®",         "‹à‘®",   "‹â",       "‹à",   "ƒvƒ‰ƒ`ƒi", "ƒ~ƒXƒŠƒ‹",
-    "ƒvƒ‰ƒXƒ`ƒbƒN", "ƒKƒ‰ƒX", "‚‹‰—¿—", "Î"
+    "è‚‰",           "æ¶²ä½“",   "æ²¹",       "é£Ÿæ–™", "è‚‰",       "ç´™",
+    "æœ",           "çš®",     "æœ¨",       "éª¨",   "é±—",       "é‡‘å±",
+    "é‡‘å±",         "é‡‘å±",   "éŠ€",       "é‡‘",   "ãƒ—ãƒ©ãƒãƒŠ", "ãƒŸã‚¹ãƒªãƒ«",
+    "ãƒ—ãƒ©ã‚¹ãƒãƒƒã‚¯", "ã‚¬ãƒ©ã‚¹", "é«˜ç´šæ–™ç†", "çŸ³"
 #endif
 };
 
@@ -2565,7 +2565,7 @@ struct obj *otmp;
 /*JP
         return "food";
 */
-        return "H—¿";
+        return "é£Ÿæ–™";
     if (otmp->oclass == GEM_CLASS && objects[otmp->otyp].oc_material == GLASS
         && otmp->dknown)
         makeknown(otmp->otyp);
@@ -2616,7 +2616,7 @@ struct obj *otmp;
                 Strcpy(killer.name, "rotten lump of royal jelly");
                 done(POISONING);
 #else
-                Strcpy(killer.name, "•…‚Á‚½ƒƒCƒ„ƒ‹ƒ[ƒŠ[‚ğH‚×H’†“Å‚Å");
+                Strcpy(killer.name, "è…ã£ãŸãƒ­ã‚¤ãƒ¤ãƒ«ã‚¼ãƒªãƒ¼ã‚’é£Ÿã¹é£Ÿä¸­æ¯’ã§");
                 done(DIED);
 #endif
             }
@@ -2633,7 +2633,7 @@ struct obj *otmp;
 /*JP
                     Sprintf(killer.name, "%s egg",
 */
-                    Sprintf(killer.name, "%s‚Ì—‘‚Å",
+                    Sprintf(killer.name, "%sã®åµã§",
                             mons[otmp->corpsenm].mname);
                     make_stoned(5L, (char *) 0, KILLED_BY_AN, killer.name);
                 }
@@ -2656,17 +2656,17 @@ struct obj *otmp;
 /*JP
                 verbalize("Heigh-ho, ho-hum, I think I'll skip work today.");
 */
-                verbalize("ƒnƒCƒz[CƒnƒCƒz[C¡“ú‚Í‹x‚İD");
+                verbalize("ãƒã‚¤ãƒ›ãƒ¼ï¼Œãƒã‚¤ãƒ›ãƒ¼ï¼Œä»Šæ—¥ã¯ä¼‘ã¿ï¼");
             else if (Deaf || !flags.acoustics)
 /*JP
                 You("fall asleep.");
 */
-                You("–°‚è‚É—‚¿‚½D");
+                You("çœ ã‚Šã«è½ã¡ãŸï¼");
             else
 /*JP
                 You_hear("sinister laughter as you fall asleep...");
 */
-                You_hear("–°‚è‚É—‚¿‚é‚Æ‚«‚É×ˆ«‚ÈÎ‚¢º‚ğ•·‚¢‚½DDD");
+                You_hear("çœ ã‚Šã«è½ã¡ã‚‹ã¨ãã«é‚ªæ‚ªãªç¬‘ã„å£°ã‚’èã„ãŸï¼ï¼ï¼");
             fall_asleep(-rn1(11, 20), TRUE);
         }
         break;
@@ -2723,7 +2723,7 @@ struct obj *otmp;
     Sprintf(eat_it_anyway, "Eat %s anyway?",
             (otmp->quan == 1L) ? "it" : "one");
 #else
-    Strcpy(eat_it_anyway, "‚»‚ê‚Å‚àH‚×‚éH");
+    Strcpy(eat_it_anyway, "ãã‚Œã§ã‚‚é£Ÿã¹ã‚‹ï¼Ÿ");
 #endif
 
     if (cadaver || otmp->otyp == EGG || otmp->otyp == TIN) {
@@ -2756,7 +2756,7 @@ struct obj *otmp;
         Sprintf(buf, "%s like %s could be tainted! %s", foodsmell, it_or_they,
                 eat_it_anyway);
 #else
-        Sprintf(buf, "%s‚Í‰˜õ‚³‚ê‚Ä‚¢‚é‚æ‚¤‚È‚É‚¨‚¢‚ª‚·‚éI%s",
+        Sprintf(buf, "%sã¯æ±šæŸ“ã•ã‚Œã¦ã„ã‚‹ã‚ˆã†ãªã«ãŠã„ãŒã™ã‚‹ï¼%s",
                 foodsmell, eat_it_anyway);
 #endif
         if (yn_function(buf, ynchars, 'n') == 'n')
@@ -2769,7 +2769,7 @@ struct obj *otmp;
         Sprintf(buf, "%s like %s could be something very dangerous! %s",
                 foodsmell, it_or_they, eat_it_anyway);
 #else
-        Sprintf(buf, "%s‚Í‚È‚ñ‚¾‚©‚·‚²‚­ŠëŒ¯‚»‚¤‚È‚É‚¨‚¢‚ª‚·‚éI%s",
+        Sprintf(buf, "%sã¯ãªã‚“ã ã‹ã™ã”ãå±é™ºãã†ãªã«ãŠã„ãŒã™ã‚‹ï¼%s",
                 foodsmell, eat_it_anyway);
 #endif
         if (yn_function(buf, ynchars, 'n') == 'n')
@@ -2783,7 +2783,7 @@ struct obj *otmp;
         Sprintf(buf, "%s like %s could be rotten! %s", foodsmell, it_or_they,
                 eat_it_anyway);
 #else
-        Sprintf(buf, "%s‚Í•…‚Á‚½‚æ‚¤‚È‚É‚¨‚¢‚ª‚·‚éI%s",
+        Sprintf(buf, "%sã¯è…ã£ãŸã‚ˆã†ãªã«ãŠã„ãŒã™ã‚‹ï¼%s",
                 foodsmell, eat_it_anyway);
 #endif
         if (yn_function(buf, ynchars, 'n') == 'n')
@@ -2797,7 +2797,7 @@ struct obj *otmp;
         Sprintf(buf, "%s like %s might be poisonous! %s", foodsmell,
                 it_or_they, eat_it_anyway);
 #else
-        Sprintf(buf, "%s‚Í“Å‚ğ‚à‚Á‚Ä‚¢‚»‚¤‚È‚É‚¨‚¢‚ª‚·‚éI%s",
+        Sprintf(buf, "%sã¯æ¯’ã‚’ã‚‚ã£ã¦ã„ãã†ãªã«ãŠã„ãŒã™ã‚‹ï¼%s",
                 foodsmell, eat_it_anyway);
 #endif
         if (yn_function(buf, ynchars, 'n') == 'n')
@@ -2811,7 +2811,7 @@ struct obj *otmp;
         Sprintf(buf, "%s like %s might have been poisoned. %s", foodsmell,
                 it_or_they, eat_it_anyway);
 #else
-        Sprintf(buf, "%s‚Í“Å‚ª“ü‚ê‚ç‚ê‚Ä‚¢‚»‚¤‚È‚É‚¨‚¢‚ª‚·‚éI%s",
+        Sprintf(buf, "%sã¯æ¯’ãŒå…¥ã‚Œã‚‰ã‚Œã¦ã„ãã†ãªã«ãŠã„ãŒã™ã‚‹ï¼%s",
                 foodsmell, eat_it_anyway);
 #endif
         return (yn_function(buf, ynchars, 'n') == 'n') ? 1 : 2;
@@ -2821,7 +2821,7 @@ struct obj *otmp;
 /*JP
         Sprintf(buf, "%s unhealthy. %s", foodsmell, eat_it_anyway);
 */
-        Sprintf(buf, "%s‚ÍŒ’N‚Éˆ«‚»‚¤‚È‚É‚¨‚¢‚ª‚·‚éD%s", foodsmell, eat_it_anyway);
+        Sprintf(buf, "%sã¯å¥åº·ã«æ‚ªãã†ãªã«ãŠã„ãŒã™ã‚‹ï¼%s", foodsmell, eat_it_anyway);
         if (yn_function(buf, ynchars, 'n') == 'n')
             return 1;
         else
@@ -2831,7 +2831,7 @@ struct obj *otmp;
 /*JP
         Sprintf(buf, "%s rather acidic. %s", foodsmell, eat_it_anyway);
 */
-        Sprintf(buf, "%s‚Í­‚µ_‚Á‚Ï‚»‚¤‚È‚É‚¨‚¢‚ª‚·‚éD%s", foodsmell, eat_it_anyway);
+        Sprintf(buf, "%sã¯å°‘ã—é…¸ã£ã±ãã†ãªã«ãŠã„ãŒã™ã‚‹ï¼%s", foodsmell, eat_it_anyway);
         if (yn_function(buf, ynchars, 'n') == 'n')
             return 1;
         else
@@ -2843,7 +2843,7 @@ struct obj *otmp;
         Sprintf(buf, "%s disgusting to you right now. %s", foodsmell,
                 eat_it_anyway);
 #else
-        Sprintf(buf, "%s‚Í‹C•ª‚ªˆ«‚­‚È‚é‚É‚¨‚¢‚ª‚·‚éD%s", foodsmell,
+        Sprintf(buf, "%sã¯æ°—åˆ†ãŒæ‚ªããªã‚‹ã«ãŠã„ãŒã™ã‚‹ï¼%s", foodsmell,
                 eat_it_anyway);
 #endif
         if (yn_function(buf, ynchars, 'n') == 'n')
@@ -2863,7 +2863,7 @@ struct obj *otmp;
         Sprintf(buf, "%s foul and unfamiliar to you. %s", foodsmell,
                 eat_it_anyway);
 #else
-        Sprintf(buf, "%s‚Í‰˜‚ê‚Ä‚¢‚ÄC‚ ‚È‚½‚É‚È‚¶‚Ü‚È‚¢‚æ‚¤‚È‚É‚¨‚¢‚ª‚·‚éD%s", foodsmell,
+        Sprintf(buf, "%sã¯æ±šã‚Œã¦ã„ã¦ï¼Œã‚ãªãŸã«ãªã˜ã¾ãªã„ã‚ˆã†ãªã«ãŠã„ãŒã™ã‚‹ï¼%s", foodsmell,
                 eat_it_anyway);
 #endif
         if (yn_function(buf, ynchars, 'n') == 'n')
@@ -2878,7 +2878,7 @@ struct obj *otmp;
 /*JP
         Sprintf(buf, "%s unfamiliar to you. %s", foodsmell, eat_it_anyway);
 */
-        Sprintf(buf, "%s‚Í‚ ‚È‚½‚É‚È‚¶‚Ü‚È‚¢‚æ‚¤‚È‚É‚¨‚¢‚ª‚·‚éD%s", foodsmell, eat_it_anyway);
+        Sprintf(buf, "%sã¯ã‚ãªãŸã«ãªã˜ã¾ãªã„ã‚ˆã†ãªã«ãŠã„ãŒã™ã‚‹ï¼%s", foodsmell, eat_it_anyway);
         if (yn_function(buf, ynchars, 'n') == 'n')
             return 1;
         else
@@ -2891,7 +2891,7 @@ struct obj *otmp;
         Sprintf(buf, "%s like %s could be tainted! %s", foodsmell, it_or_they,
                 eat_it_anyway);
 #else
-        Sprintf(buf, "%s‚Í‰˜õ‚³‚ê‚Ä‚¢‚é‚æ‚¤‚È‚É‚¨‚¢‚ª‚·‚éI%s", foodsmell,
+        Sprintf(buf, "%sã¯æ±šæŸ“ã•ã‚Œã¦ã„ã‚‹ã‚ˆã†ãªã«ãŠã„ãŒã™ã‚‹ï¼%s", foodsmell,
                 eat_it_anyway);
 #endif
         if (yn_function(buf, ynchars, 'n') == 'n')
@@ -2914,7 +2914,7 @@ doeat()
 /*JP
         pline("If you can't breathe air, how can you consume solids?");
 */
-        pline("‘§‚à‚Å‚«‚È‚¢‚Ì‚ÉC‚Ç‚¤‚â‚Á‚ÄH‚×‚½‚ç‚¢‚¢‚ñ‚¾‚¢H");
+        pline("æ¯ã‚‚ã§ããªã„ã®ã«ï¼Œã©ã†ã‚„ã£ã¦é£Ÿã¹ãŸã‚‰ã„ã„ã‚“ã ã„ï¼Ÿ");
         return 0;
     }
     if (!(otmp = floorfood("eat", 0)))
@@ -2930,7 +2930,7 @@ doeat()
                "%s stops tingling and your sense of smell returns to normal.",
                  body_part(NOSE));
 #else
-            Your("%s‚ª‚¤‚¸‚¤‚¸‚·‚é‚Ì‚Í~‚Ü‚èCškŠo‚Í•’Ê‚É–ß‚Á‚½D",
+            Your("%sãŒã†ãšã†ãšã™ã‚‹ã®ã¯æ­¢ã¾ã‚Šï¼Œå—…è¦šã¯æ™®é€šã«æˆ»ã£ãŸï¼",
                  body_part(NOSE));
 #endif
             u.uedibility = 0;
@@ -2951,7 +2951,7 @@ doeat()
 /*JP
         You("cannot eat that!");
 */
-        You("‚»‚ê‚ğH‚×‚ç‚ê‚È‚¢I");
+        You("ãã‚Œã‚’é£Ÿã¹ã‚‰ã‚Œãªã„ï¼");
         return 0;
     } else if ((otmp->owornmask & (W_ARMOR | W_TOOL | W_AMUL | W_SADDLE))
                != 0) {
@@ -2959,7 +2959,7 @@ doeat()
 /*JP
         You_cant("eat %s you're wearing.", something);
 */
-        You("g‚É‚Â‚¯‚Ä‚¢‚éŠÔ‚ÍH‚×‚ê‚È‚¢D");
+        You("èº«ã«ã¤ã‘ã¦ã„ã‚‹é–“ã¯é£Ÿã¹ã‚Œãªã„ï¼");
         return 0;
     }
     if (is_metallic(otmp) && u.umonnum == PM_RUST_MONSTER
@@ -2974,7 +2974,7 @@ doeat()
 /*JP
         pline("Ulch - that %s was rustproofed!", xname(otmp));
 */
-        pline("ƒEƒQƒF[I%s‚Í–hK‚³‚ê‚Ä‚¢‚éI", xname(otmp));
+        pline("ã‚¦ã‚²ã‚§ãƒ¼ï¼%sã¯é˜²éŒ†ã•ã‚Œã¦ã„ã‚‹ï¼", xname(otmp));
         /* The regurgitated object's rustproofing is gone now */
         otmp->oerodeproof = 0;
         make_stunned((HStun & TIMEOUT) + (long) rn2(10), TRUE);
@@ -2982,7 +2982,7 @@ doeat()
         You("spit %s out onto the %s.", the(xname(otmp)),
             surface(u.ux, u.uy));
 #else
-        You("%s‚ğ%s‚É“f‚«o‚µ‚½D", the(xname(otmp)),
+        You("%sã‚’%sã«åãå‡ºã—ãŸï¼", the(xname(otmp)),
             surface(u.ux, u.uy));
 #endif
         if (carried(otmp)) {
@@ -2997,7 +2997,7 @@ doeat()
 /*JP
         pline("This ring is indigestible!");
 */
-        pline("‚±‚Ìw—Ö‚ÍÁ‰»‚µ‚É‚­‚¢I");
+        pline("ã“ã®æŒ‡è¼ªã¯æ¶ˆåŒ–ã—ã«ãã„ï¼");
         (void) rottenfood(otmp);
         if (otmp->dknown && !objects[otmp->otyp].oc_name_known
             && !objects[otmp->otyp].oc_uname)
@@ -3049,7 +3049,7 @@ doeat()
 /*JP
             pline("Ecch - that must have been poisonous!");
 */
-            pline("ƒEƒQƒF[C—L“Å‚¾‚Á‚½‚Éˆá‚¢‚È‚¢I");  
+            pline("ã‚¦ã‚²ã‚§ãƒ¼ï¼Œæœ‰æ¯’ã ã£ãŸã«é•ã„ãªã„ï¼");  
             if (!Poison_resistance) {
                 losestr(rnd(4));
 #if 0 /*JP*/
@@ -3057,7 +3057,7 @@ doeat()
 #else
                 {
                     char jbuf[BUFSZ];
-                    Sprintf(jbuf, "%s‚Å", xname(otmp));
+                    Sprintf(jbuf, "%sã§", xname(otmp));
                     losehp(rnd(15), jbuf, KILLED_BY_AN);
                 }
 #endif
@@ -3065,7 +3065,7 @@ doeat()
 /*JP
                 You("seem unaffected by the poison.");
 */
-                You("“Å‚Ì‰e‹¿‚ğó‚¯‚È‚¢‚æ‚¤‚¾D");
+                You("æ¯’ã®å½±éŸ¿ã‚’å—ã‘ãªã„ã‚ˆã†ã ï¼");
         } else if (!otmp->cursed && !nodelicious) {
 #if 0 /*JP*/
             pline("%s%s is delicious!",
@@ -3077,7 +3077,7 @@ doeat()
                       ? foodword(otmp)
                       : singular(otmp, xname));
 #else
-            pline("‚±‚Ì%s‚Í|‚¢I",
+            pline("ã“ã®%sã¯æ—¨ã„ï¼",
                   otmp->oclass == COIN_CLASS
                       ? foodword(otmp)
                       : singular(otmp, xname));
@@ -3102,7 +3102,7 @@ doeat()
 /*JP
         You("resume your meal.");
 */
-        You("H–‚ğÄŠJ‚µ‚½D");
+        You("é£Ÿäº‹ã‚’å†é–‹ã—ãŸï¼");
         start_eating(context.victual.piece);
         return 1;
     }
@@ -3331,11 +3331,11 @@ int num;
 /*JP
                 pline("You're having a hard time getting all of it down.");
 */
-                pline("‘S‚Ä‚ğˆù‚İ‚±‚Ş‚É‚ÍŠÔ‚ª‚©‚©‚éD");
+                pline("å…¨ã¦ã‚’é£²ã¿ã“ã‚€ã«ã¯æ™‚é–“ãŒã‹ã‹ã‚‹ï¼");
 /*JP
                 nomovemsg = "You're finally finished.";
 */
-                nomovemsg = "‚â‚Á‚ÆH‚×I‚¦‚½D";
+                nomovemsg = "ã‚„ã£ã¨é£Ÿã¹çµ‚ãˆãŸï¼";
                 if (!context.victual.eating) {
                     multi = -2;
                 } else {
@@ -3346,7 +3346,7 @@ int num;
 /*JP
                         if (yn_function("Continue eating?", ynchars, 'n')
 */
-                        if (yn_function("H‚×‘±‚¯‚Ü‚·‚©H", ynchars, 'n')
+                        if (yn_function("é£Ÿã¹ç¶šã‘ã¾ã™ã‹ï¼Ÿ", ynchars, 'n')
                             != 'y') {
                             reset_eat();
                             nomovemsg = (char *) 0;
@@ -3385,7 +3385,7 @@ reset_faint()
 /*JP
         unmul("You revive.");
 */
-        unmul("‚ ‚È‚½‚Í‹C‚ª‚Â‚¢‚½D");
+        unmul("ã‚ãªãŸã¯æ°—ãŒã¤ã„ãŸï¼");
 }
 
 /* compute and comment on your (new?) hunger status */
@@ -3451,19 +3451,19 @@ boolean incr;
 /*JP
                 You("faint from lack of food.");
 */
-                You("• ‚ªŒ¸‚Á‚Ä“|‚ê‚½D");
+                You("è…¹ãŒæ¸›ã£ã¦å€’ã‚ŒãŸï¼");
                 if (!Levitation)
 /*JP
                     selftouch("Falling, you");
 */
-                    selftouch("—‚¿‚È‚ª‚çC‚ ‚È‚½‚Í");
+                    selftouch("è½ã¡ãªãŒã‚‰ï¼Œã‚ãªãŸã¯");
                 incr_itimeout(&HDeaf, duration);
                 nomul(-duration);
                 multi_reason = "fainted from lack of food";
 /*JP
                 nomovemsg = "You regain consciousness.";
 */
-                nomovemsg = "‚ ‚È‚½‚Í³‹C‚Ã‚¢‚½D";
+                nomovemsg = "ã‚ãªãŸã¯æ­£æ°—ã¥ã„ãŸï¼";
                 afternmv = unfaint;
                 newhs = FAINTED;
             }
@@ -3474,12 +3474,12 @@ boolean incr;
 /*JP
             You("die from starvation.");
 */
-            You("‰ì€‚µ‚½D");
+            You("é¤“æ­»ã—ãŸï¼");
             killer.format = KILLED_BY;
 /*JP
             Strcpy(killer.name, "starvation");
 */
-            Strcpy(killer.name, "H—¿•s‘«‚Å‰ì€‚µ‚½");
+            Strcpy(killer.name, "é£Ÿæ–™ä¸è¶³ã§é¤“æ­»ã—ãŸ");
             done(STARVING);
             /* if we return, we lifesaved, and that calls newuhs */
             return;
@@ -3499,25 +3499,25 @@ boolean incr;
                             : "are getting the munchies.");
 #else
                 if (!incr) {
-                    You("ƒnƒ‰ƒwƒŠ‚ªŒ¸‚Á‚½D");
+                    You("ãƒãƒ©ãƒ˜ãƒªãŒæ¸›ã£ãŸï¼");
                 } else {
-                    pline("ƒnƒ‰ƒwƒŠƒwƒŠƒnƒ‰D");
+                    pline("ãƒãƒ©ãƒ˜ãƒªãƒ˜ãƒªãƒãƒ©ï¼");
                 }
 #endif
             } else
 /*JP
                 You((!incr) ? "only feel hungry now."
 */
-                You((!incr) ? "’P‚É• ƒyƒRó‘Ô‚É‚È‚Á‚½D"
+                You((!incr) ? "å˜ã«è…¹ãƒšã‚³çŠ¶æ…‹ã«ãªã£ãŸï¼"
                             : (u.uhunger < 145)
 /*JP
                                   ? "feel hungry."
 */
-                                  ? "‹ó• Š´‚ğŠ´‚¶‚½D"
+                                  ? "ç©ºè…¹æ„Ÿã‚’æ„Ÿã˜ãŸï¼"
 /*JP
                                   : "are beginning to feel hungry.");
 */
-                                  : "‹ó• Š´‚ğ‚¨‚Ú‚¦‚Í‚¶‚ß‚½D");
+                                  : "ç©ºè…¹æ„Ÿã‚’ãŠã¼ãˆã¯ã˜ã‚ãŸï¼");
             if (incr && occupation
                 && (occupation != eatfood && occupation != opentin))
                 stop_occupation();
@@ -3528,37 +3528,37 @@ boolean incr;
 /*JP
                 pline((!incr) ? "You still have the munchies."
 */
-                pline((!incr) ? "ƒnƒ‰ƒwƒŠ‚ªŒ¸‚ç‚È‚¢D"
+                pline((!incr) ? "ãƒãƒ©ãƒ˜ãƒªãŒæ¸›ã‚‰ãªã„ï¼"
 /*JP
               : "The munchies are interfering with your motor capabilities.");
 */
-              : "ƒnƒ‰ƒwƒŠ‚ªƒ‚[ƒ^[«”\‚É‰e‹¿‚ğ—^‚¦‚Ä‚¢‚éD");
+              : "ãƒãƒ©ãƒ˜ãƒªãŒãƒ¢ãƒ¼ã‚¿ãƒ¼æ€§èƒ½ã«å½±éŸ¿ã‚’ä¸ãˆã¦ã„ã‚‹ï¼");
             else if (incr && (Role_if(PM_WIZARD) || Race_if(PM_ELF)
                               || Role_if(PM_VALKYRIE)))
 /*JP
                 pline("%s needs food, badly!",
 */
-                pline("%s‚É‚ÍŠ‹}H—¿‚ª•K—v‚¾I",
+                pline("%sã«ã¯è‡³æ€¥é£Ÿæ–™ãŒå¿…è¦ã ï¼",
                       (Role_if(PM_WIZARD) || Role_if(PM_VALKYRIE))
                           ? urole.name.m
 /*JP
                           : "Elf");
 */
-                          : "ƒGƒ‹ƒt");
+                          : "ã‚¨ãƒ«ãƒ•");
             else
                 You((!incr)
 /*JP
                         ? "feel weak now."
 */
-                        ? "Šãó‘Ô‚É‚È‚Á‚½D"
+                        ? "è¡°å¼±çŠ¶æ…‹ã«ãªã£ãŸï¼"
 /*JP
                         : (u.uhunger < 45) ? "feel weak."
 */
-                        : (u.uhunger < 45) ? "Šã‚µ‚Ä‚«‚½D"
+                        : (u.uhunger < 45) ? "è¡°å¼±ã—ã¦ããŸï¼"
 /*JP
                                            : "are beginning to feel weak.");
 */
-                                           : "ã‚­‚È‚Á‚Ä‚«‚½‚æ‚¤‚ÉŠ´‚¶‚½D");
+                                           : "å¼±ããªã£ã¦ããŸã‚ˆã†ã«æ„Ÿã˜ãŸï¼");
             if (incr && occupation
                 && (occupation != eatfood && occupation != opentin))
                 stop_occupation();
@@ -3572,12 +3572,12 @@ boolean incr;
 /*JP
             You("die from hunger and exhaustion.");
 */
-            You("‹ó• ‚ÆŠã‚Å€‚ñ‚¾D");
+            You("ç©ºè…¹ã¨è¡°å¼±ã§æ­»ã‚“ã ï¼");
             killer.format = KILLED_BY;
 /*JP
             Strcpy(killer.name, "exhaustion");
 */
-            Strcpy(killer.name, "‹ó• ‚ÆŠã‚Å€‚ñ‚¾");
+            Strcpy(killer.name, "ç©ºè…¹ã¨è¡°å¼±ã§æ­»ã‚“ã ");
             done(STARVING);
             return;
         }
@@ -3587,10 +3587,10 @@ boolean incr;
 /* Returns an object representing food.
  * Object may be either on floor or in inventory.
  */
-/*JP CHECK: 3.4.3 ‚Å‚ÌŒÄ‚Ño‚µŒ³
-apply.c:1959:   if (!(corpse = floorfood("ŠÊ‹l‚ß‚É‚·‚é", 2))) return;
-eat.c:2404:     if (!(otmp = floorfood("H‚×‚é", 0))) return 0;
-pray.c:1478:    if (!(otmp = floorfood("•ù‚°‚é", 1))) return 0;
+/*JP CHECK: 3.4.3 ã§ã®å‘¼ã³å‡ºã—å…ƒ
+apply.c:1959:   if (!(corpse = floorfood("ç¼¶è©°ã‚ã«ã™ã‚‹", 2))) return;
+eat.c:2404:     if (!(otmp = floorfood("é£Ÿã¹ã‚‹", 0))) return 0;
+pray.c:1478:    if (!(otmp = floorfood("æ§ã’ã‚‹", 1))) return 0;
 */
 struct obj *
 floorfood(verb, corpsecheck)
@@ -3625,15 +3625,15 @@ int corpsecheck; /* 0, no check, 1, corpses, 2, tinnable corpses */
 /*JP
             Sprintf(qbuf, "There is a bear trap here (%s); eat it?",
 */
-            Sprintf(qbuf, "‚±‚±‚É‚ÍŒF‚Ìã©(%s)‚ª‚ ‚é; H‚×‚Ü‚·‚©H",
+            Sprintf(qbuf, "ã“ã“ã«ã¯ç†Šã®ç½ (%s)ãŒã‚ã‚‹; é£Ÿã¹ã¾ã™ã‹ï¼Ÿ",
 /*JP
                     (u.utrap && u.utraptype == TT_BEARTRAP) ? "holding you"
 */
-                    (u.utrap && u.utraptype == TT_BEARTRAP) ? "‚ ‚È‚½‚ğ’Í‚Ü‚¦‚Ä‚¢‚é"
+                    (u.utrap && u.utraptype == TT_BEARTRAP) ? "ã‚ãªãŸã‚’æ´ã¾ãˆã¦ã„ã‚‹"
 /*JP
                                                             : "armed");
 */
-                                                            : "‰Ò“®’†");
+                                                            : "ç¨¼å‹•ä¸­");
             if ((c = yn_function(qbuf, ynqchars, 'n')) == 'y') {
                 u.utrap = u.utraptype = 0;
                 deltrap(ttmp);
@@ -3652,7 +3652,7 @@ int corpsecheck; /* 0, no check, 1, corpses, 2, tinnable corpses */
                 Sprintf(qbuf, "There are %ld gold pieces here; eat them?",
                         gold->quan);
 #else
-            Sprintf(qbuf, "‚±‚±‚É‚Í%ld–‡‚Ì‹à‰İ‚ª‚ ‚éDH‚×‚Ü‚·‚©H", gold->quan);
+            Sprintf(qbuf, "ã“ã“ã«ã¯%ldæšã®é‡‘è²¨ãŒã‚ã‚‹ï¼é£Ÿã¹ã¾ã™ã‹ï¼Ÿ", gold->quan);
 #endif
             if ((c = yn_function(qbuf, ynqchars, 'n')) == 'y') {
                 return gold;
@@ -3680,10 +3680,10 @@ int corpsecheck; /* 0, no check, 1, corpses, 2, tinnable corpses */
             (void) safe_qbuf(qbuf, qbuf, qsfx, otmp, doname, ansimpleoname,
                              one ? something : (const char *) "things");
 #else
-            Strcpy(qbuf, "‚±‚±‚É");
-            Sprintf(qsfx, "‚ª‚ ‚é; %s%s?", one ? "" : "ˆê‚Â", jverb);
+            Strcpy(qbuf, "ã“ã“ã«");
+            Sprintf(qsfx, "ãŒã‚ã‚‹; %s%s?", one ? "" : "ä¸€ã¤", jverb);
             (void) safe_qbuf(qbuf, qbuf, qsfx, otmp, doname, ansimpleoname,
-                             one ? something : (const char *) "‰½‚©");
+                             one ? something : (const char *) "ä½•ã‹");
 #endif
             if ((c = yn_function(qbuf, ynqchars, 'n')) == 'y')
                 return  otmp;
@@ -3703,7 +3703,7 @@ skipfloor:
 /*JP
             You_cant("%s that!", verb);
 */
-            You_cant("‚»‚ê‚ğ%s‚±‚Æ‚Í‚Å‚«‚È‚¢I", jverb);
+            You_cant("ãã‚Œã‚’%sã“ã¨ã¯ã§ããªã„ï¼", jverb);
             return (struct obj *) 0;
         }
     return otmp;
@@ -3720,7 +3720,7 @@ vomit() /* A good idea from David Neves */
 /*JP
         Your("jaw gapes convulsively.");
 */
-        Your("‚ ‚²‚Í”­ì“I‚É‘å‚«‚­ŠJ‚¢‚½D");
+        Your("ã‚ã”ã¯ç™ºä½œçš„ã«å¤§ããé–‹ã„ãŸï¼");
     else
         make_sick(0L, (char *) 0, TRUE, SICK_VOMITABLE);
     nomul(-2);

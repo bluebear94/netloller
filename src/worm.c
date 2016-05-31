@@ -397,14 +397,14 @@ struct obj *weap;
                 pline("Part of %s tail has been cut off.",
                       s_suffix(mon_nam(worm)));
 #else
-                pline("%s‚ÌK”ö‚Ìˆê•”•ª‚ªØ‚è—‚Æ‚³‚ê‚½D",
+                pline("%sã®å°»å°¾ã®ä¸€éƒ¨åˆ†ãŒåˆ‡ã‚Šè½ã¨ã•ã‚ŒãŸï¼",
                       mon_nam(worm));
 #endif
         } else
 /*JP
             You("cut part of the tail off of %s.", mon_nam(worm));
 */
-            You("%s‚ÌK”ö‚Ìˆê•”•ª‚ğØ‚Á‚½D", mon_nam(worm));
+            You("%sã®å°»å°¾ã®ä¸€éƒ¨åˆ†ã‚’åˆ‡ã£ãŸï¼", mon_nam(worm));
         toss_wsegs(new_tail, TRUE);
         if (worm->mhp > 1)
             worm->mhp /= 2;
@@ -437,12 +437,12 @@ struct obj *weap;
 /*JP
         pline("%s is cut in half.", Monnam(worm));
 */
-        pline("%s‚Í^‚Á‚Õ‚½‚Â‚É‚³‚ê‚½D", Monnam(worm));
+        pline("%sã¯çœŸã£ã·ãŸã¤ã«ã•ã‚ŒãŸï¼", Monnam(worm));
     else
 /*JP
         You("cut %s in half.", mon_nam(worm));
 */
-        You("%s‚ğ^‚Á‚Õ‚½‚Â‚É‚µ‚½D", mon_nam(worm));
+        You("%sã‚’çœŸã£ã·ãŸã¤ã«ã—ãŸï¼", mon_nam(worm));
 }
 
 /*

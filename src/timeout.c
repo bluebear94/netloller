@@ -28,11 +28,11 @@ static NEARDATA const char *const stoned_texts[] = {
     "You have turned to stone.",        /* 2 */
     "You are a statue."                 /* 1 */
 #else
-    "‚ ‚È‚½‚Í‚Ì‚ë‚­‚È‚Á‚½D",           /* 5 */
-    "‚ ‚È‚½‚Ìè‘«‚Íd’¼‚µ‚½D",         /* 4 */
-    "‚ ‚È‚½‚Ìè‘«‚ÍÎ‰»‚µ‚½D",         /* 3 */
-    "‚ ‚È‚½‚ÍÎ‚É‚È‚Á‚½D",             /* 2 */
-    "‚ ‚È‚½‚Í’¤‘œ‚É‚È‚Á‚½D"            /* 1 */
+    "ã‚ãªãŸã¯ã®ã‚ããªã£ãŸï¼",           /* 5 */
+    "ã‚ãªãŸã®æ‰‹è¶³ã¯ç¡¬ç›´ã—ãŸï¼",         /* 4 */
+    "ã‚ãªãŸã®æ‰‹è¶³ã¯çŸ³åŒ–ã—ãŸï¼",         /* 3 */
+    "ã‚ãªãŸã¯çŸ³ã«ãªã£ãŸï¼",             /* 2 */
+    "ã‚ãªãŸã¯å½«åƒã«ãªã£ãŸï¼"            /* 1 */
 #endif
 };
 
@@ -84,11 +84,11 @@ static NEARDATA const char *const vomiting_texts[] = {
     "feel incredibly sick.",         /* 5 */
     "suddenly vomit!"                /* 2 */
 #else
-    "‚¿‚å‚Á‚Æ“f‚«‹C‚ª‚µ‚½D",        /* 14 */
-    "­‚µ¬—‚µ‚½D",                /* 11 */
-    "‚Ü‚Æ‚à‚Évl‚Å‚«‚È‚­‚È‚Á‚½D",  /* 8 */
-    "‚Æ‚Ä‚à‹C•ª‚ªˆ«‚­‚È‚Á‚½D",      /* 5 */
-    "“Ë‘Ršq“f‚µ‚½I"                 /* 2 */
+    "ã¡ã‚‡ã£ã¨åãæ°—ãŒã—ãŸï¼",        /* 14 */
+    "å°‘ã—æ··ä¹±ã—ãŸï¼",                /* 11 */
+    "ã¾ã¨ã‚‚ã«æ€è€ƒã§ããªããªã£ãŸï¼",  /* 8 */
+    "ã¨ã¦ã‚‚æ°—åˆ†ãŒæ‚ªããªã£ãŸï¼",      /* 5 */
+    "çªç„¶å˜”åã—ãŸï¼"                 /* 2 */
 #endif
 };
 
@@ -147,11 +147,11 @@ static NEARDATA const char *const choke_texts[] = {
     "You find it hard to breathe.", "You're gasping for air.",
     "You can no longer breathe.", "You're turning %s.", "You suffocate."
 #else
-    "‚ ‚È‚½‚ÍŒÄ‹z‚ª¢“ï‚É‚È‚Á‚½D",
-    "‚ ‚È‚½‚Í‹ê‚µ‚­‚Ä‚ ‚¦‚¢‚¾D",
-    "‚ ‚È‚½‚Í‚à‚¤ŒÄ‹z‚ª‚Å‚«‚È‚¢D",
-    "‚ ‚È‚½‚Í%s‚È‚Á‚½D",
-    "‚ ‚È‚½‚Í’‚‘§‚µ‚½D"
+    "ã‚ãªãŸã¯å‘¼å¸ãŒå›°é›£ã«ãªã£ãŸï¼",
+    "ã‚ãªãŸã¯è‹¦ã—ãã¦ã‚ãˆã„ã ï¼",
+    "ã‚ãªãŸã¯ã‚‚ã†å‘¼å¸ãŒã§ããªã„ï¼",
+    "ã‚ãªãŸã¯%sãªã£ãŸï¼",
+    "ã‚ãªãŸã¯çª’æ¯ã—ãŸï¼"
 #endif
 };
 
@@ -162,11 +162,11 @@ static NEARDATA const char *const choke_texts2[] = {
     "The pressure on your %s increases.", "Your consciousness is fading.",
     "You suffocate."
 #else
-    "‚ ‚È‚½‚Ì%s‚Íi‚ß‚Â‚¯‚ç‚ê‚½D",
-    "ŒŒ‰t‚Ì‚ß‚®‚è‚ªˆ«‚­‚È‚Á‚½D",
-    "%s‚Ìˆ³—Í‚ª‚‚­‚È‚Á‚½D",
-    "ˆÓ¯‚ª‰“‚­‚È‚Á‚Ä‚«‚½D",
-    "‚ ‚È‚½‚Í’‚‘§‚µ‚½D"
+    "ã‚ãªãŸã®%sã¯çµã‚ã¤ã‘ã‚‰ã‚ŒãŸï¼",
+    "è¡€æ¶²ã®ã‚ãã‚ŠãŒæ‚ªããªã£ãŸï¼",
+    "%sã®åœ§åŠ›ãŒé«˜ããªã£ãŸï¼",
+    "æ„è­˜ãŒé ããªã£ã¦ããŸï¼",
+    "ã‚ãªãŸã¯çª’æ¯ã—ãŸï¼"
 #endif
 };
 
@@ -201,11 +201,11 @@ static NEARDATA const char *const slime_texts[] = {
     "You are turning into %s.",       /* 2 */
     "You have become %s."             /* 1 */
 #else
-    "­‚µ%s‚È‚Á‚½D",                 /* 5 */
-    "è‘«‚ª—n‚¯‚Í‚¶‚ß‚½D",           /* 4 */
-    "”§‚ª‚Ç‚ë‚Ç‚ë‚É‚È‚Á‚Ä‚«‚½D",     /* 3 */
-    "%s‚É‚È‚è‚Í‚¶‚ß‚½D",             /* 2 */
-    "%s‚É‚È‚Á‚Ä‚µ‚Ü‚Á‚½D",           /* 1 */
+    "å°‘ã—%sãªã£ãŸï¼",                 /* 5 */
+    "æ‰‹è¶³ãŒæº¶ã‘ã¯ã˜ã‚ãŸï¼",           /* 4 */
+    "è‚ŒãŒã©ã‚ã©ã‚ã«ãªã£ã¦ããŸï¼",     /* 3 */
+    "%sã«ãªã‚Šã¯ã˜ã‚ãŸï¼",             /* 2 */
+    "%sã«ãªã£ã¦ã—ã¾ã£ãŸï¼",           /* 1 */
 #endif
 };
 
@@ -233,7 +233,7 @@ slime_dialogue()
 /*JP
                       an(Hallucination ? rndmonnam(NULL) : "green slime"));
 */
-                      Hallucination ? rndmonnam(NULL) : "—ÎƒXƒ‰ƒCƒ€");
+                      Hallucination ? rndmonnam(NULL) : "ç·‘ã‚¹ãƒ©ã‚¤ãƒ ");
         } else
             pline1(buf);
     }
@@ -254,7 +254,7 @@ burn_away_slime()
 /*JP
         make_slimed(0L, "The slime that covers you is burned away!");
 */
-        pline("‚ ‚È‚½‚ğ•¢‚Á‚Ä‚¢‚½ƒXƒ‰ƒCƒ€‚ÍÄ‚¯—‚¿‚½I");
+        pline("ã‚ãªãŸã‚’è¦†ã£ã¦ã„ãŸã‚¹ãƒ©ã‚¤ãƒ ã¯ç„¼ã‘è½ã¡ãŸï¼");
     }
 }
 
@@ -315,8 +315,8 @@ nh_timeout()
                 Norep("The %s haze around you %s.", hcolor(NH_GOLDEN),
                       u.uspellprot ? "becomes less dense" : "disappears");
 #else
-                Norep("‚ ‚È‚½‚Ì‰ñ‚è‚Ì%s–¶‚Í%sD", hcolor(NH_GOLDEN),
-                      u.uspellprot ? "Á‚¦‚Í‚¶‚ß‚½" : "Á‚¦‚½");
+                Norep("ã‚ãªãŸã®å›ã‚Šã®%séœ§ã¯%sï¼", hcolor(NH_GOLDEN),
+                      u.uspellprot ? "æ¶ˆãˆã¯ã˜ã‚ãŸ" : "æ¶ˆãˆãŸ");
 #endif
         }
     }
@@ -326,7 +326,7 @@ nh_timeout()
 /*JP
             pline("%s stops galloping.", Monnam(u.usteed));
 */
-            pline("%s‚Í‘¬‹ì‚¯‚ğ‚â‚ß‚½D", Monnam(u.usteed));
+            pline("%sã¯é€Ÿé§†ã‘ã‚’ã‚„ã‚ãŸï¼", Monnam(u.usteed));
     }
 
     for (upp = u.uprops; upp < u.uprops + SIZE(u.uprops); upp++)
@@ -339,7 +339,7 @@ nh_timeout()
 #if 0 /*JP*/
                     Strcpy(killer.name, kptr->name);
 #else
-                    Sprintf(killer.name, "%s‚ÌUŒ‚‚Å", kptr->name);
+                    Sprintf(killer.name, "%sã®æ”»æ’ƒã§", kptr->name);
 #endif
                 } else {
 #if 0 /*JP*/
@@ -347,7 +347,7 @@ nh_timeout()
                     Strcpy(killer.name, "killed by petrification");
 #else
                     killer.format = KILLED_BY;
-                    Strcpy(killer.name, "Î‰»UŒ‚‚Å");
+                    Strcpy(killer.name, "çŸ³åŒ–æ”»æ’ƒã§");
 #endif
                 }
                 dealloc_killer(kptr);
@@ -363,7 +363,7 @@ nh_timeout()
 /*JP
                     Strcpy(killer.name, "turned into green slime");
 */
-                    Strcpy(killer.name, "—ÎƒXƒ‰ƒCƒ€‚É‚È‚Á‚½");
+                    Strcpy(killer.name, "ç·‘ã‚¹ãƒ©ã‚¤ãƒ ã«ãªã£ãŸ");
                 }
                 dealloc_killer(kptr);
                 /* involuntarily break "never changed form" conduct */
@@ -377,7 +377,7 @@ nh_timeout()
 /*JP
                 You("die from your illness.");
 */
-                You("•a‹C‚Å€‚ñ‚¾D");
+                You("ç—…æ°—ã§æ­»ã‚“ã ï¼");
                 if (kptr && kptr->name[0]) {
                     killer.format = kptr->format;
                     Strcpy(killer.name, kptr->name);
@@ -404,8 +404,8 @@ nh_timeout()
                     You_feel("yourself slowing down%s.",
                              Fast ? " a bit" : "");
 #else
-                    You("%s’x‚­‚È‚Á‚½‚æ‚¤‚È‹C‚ª‚µ‚½D",
-                        Fast ? "‚¿‚å‚Á‚Æ" : "");
+                    You("%sé…ããªã£ãŸã‚ˆã†ãªæ°—ãŒã—ãŸï¼",
+                        Fast ? "ã¡ã‚‡ã£ã¨" : "");
 #endif
                 break;
             case CONFUSION:
@@ -442,8 +442,8 @@ nh_timeout()
                             : "can no longer see through yourself.");
 #else
                     You(!See_invisible
-                        ? "‚à‚¤“§–¾‚Å‚Í‚È‚¢D"
-                        : "“§‚«‚Æ‚¨‚Á‚Ä‚¢‚È‚¢D");
+                        ? "ã‚‚ã†é€æ˜ã§ã¯ãªã„ï¼"
+                        : "é€ãã¨ãŠã£ã¦ã„ãªã„ï¼");
 #endif
                     stop_occupation();
                 }
@@ -478,7 +478,7 @@ nh_timeout()
 /*JP
                     You("fall asleep.");
 */
-                    You("–°‚è‚É—‚¿‚½D");
+                    You("çœ ã‚Šã«è½ã¡ãŸï¼");
                     sleeptime = rnd(20);
                     fall_asleep(-sleeptime, TRUE);
                     incr_itimeout(&HSleepy, sleeptime + rnd(100));
@@ -494,7 +494,7 @@ nh_timeout()
                        (u.uburied) ? "suffocation" : "strangulation");
 #else
                 Strcpy(killer.name,
-                       (u.uburied) ? "’‚‘§‚µ‚Ä" : "ñ‚ği‚ß‚ç‚ê‚Ä");
+                       (u.uburied) ? "çª’æ¯ã—ã¦" : "é¦–ã‚’çµã‚ã‚‰ã‚Œã¦");
 #endif
                 done(DIED);
                 /* must be declining to die in explore|wizard mode;
@@ -520,7 +520,7 @@ nh_timeout()
 /*JP
                         You("make a lot of noise!");
 */
-                        You("‘å‚«‚È‰¹‚ğ‚½‚Ä‚½I");
+                        You("å¤§ããªéŸ³ã‚’ãŸã¦ãŸï¼");
                         wake_nearby();
                     }
                 }
@@ -559,7 +559,7 @@ boolean wakeup_msg;
 /*JP
     nomovemsg = wakeup_msg ? "You wake up." : You_can_move_again;
 */
-    nomovemsg = wakeup_msg ? "–Ú‚ğŠo‚Ü‚µ‚½D" : You_can_move_again;
+    nomovemsg = wakeup_msg ? "ç›®ã‚’è¦šã¾ã—ãŸï¼" : You_can_move_again;
 }
 
 /* Attach an egg hatch timeout to the given egg.
@@ -690,7 +690,7 @@ long timeout;
             Sprintf(monnambuf, "%s%s", siblings ? "some " : "",
                     siblings ? makeplural(m_monnam(mon)) : an(m_monnam(mon)));
 #else
-            Sprintf(monnambuf, "%s%s", siblings ? "‚¢‚­‚Â‚©‚Ì" : "",
+            Sprintf(monnambuf, "%s%s", siblings ? "ã„ãã¤ã‹ã®" : "",
                     a_monnam(mon));
 #endif
             /* we don't learn the egg type here because learning
@@ -708,16 +708,16 @@ long timeout;
                 You_feel("%s %s from your pack!", something,
                          locomotion(mon->data, "drop"));
 #else
-                pline("‰½‚©‚ª‚ ‚È‚½‚Ì”w•‰‚¢‘Ü‚©‚ç%s‚æ‚¤‚È‹C‚ª‚µ‚½D",
-                      jpast(locomotion(mon->data, "—‚¿‚é")));
+                pline("ä½•ã‹ãŒã‚ãªãŸã®èƒŒè² ã„è¢‹ã‹ã‚‰%sã‚ˆã†ãªæ°—ãŒã—ãŸï¼",
+                      jpast(locomotion(mon->data, "è½ã¡ã‚‹")));
 #endif
             else
 #if 0 /*JP*/
                 You_see("%s %s out of your pack!", monnambuf,
                         locomotion(mon->data, "drop"));
 #else
-                You("%s‚ª‚ ‚È‚½‚Ì”w•‰‚¢‘Ü‚©‚ç%s‚Ì‚ğŒ©‚½D", monnambuf,
-                    jpast(locomotion(mon->data, "—‚¿‚é")));
+                You("%sãŒã‚ãªãŸã®èƒŒè² ã„è¢‹ã‹ã‚‰%sã®ã‚’è¦‹ãŸï¼", monnambuf,
+                    jpast(locomotion(mon->data, "è½ã¡ã‚‹")));
 #endif
             if (yours) {
 #if 0 /*JP*/
@@ -725,14 +725,14 @@ long timeout;
                       siblings ? "Their" : "Its",
                       flags.female ? "mommy" : "daddy", egg->spe ? "." : "?");
 #else
-                pline("‚»‚ê‚Íw%s%sx‚Æ–Â‚¢‚Ä‚¢‚é‚æ‚¤‚¾D",
-                      flags.female ? "ƒ}ƒ}" : "ƒpƒp", egg->spe ? "" : "H");
+                pline("ãã‚Œã¯ã€%s%sã€ã¨é³´ã„ã¦ã„ã‚‹ã‚ˆã†ã ï¼",
+                      flags.female ? "ãƒãƒ" : "ãƒ‘ãƒ‘", egg->spe ? "" : "ï¼Ÿ");
 #endif
             } else if (mon->data->mlet == S_DRAGON && !Deaf) {
 #if 0 /*JP*/
                 verbalize("Gleep!"); /* Mything eggs :-) */
 #else
-                verbalize("ƒuƒH[I");          /* Mything eggs :-) */
+                verbalize("ãƒ–ã‚©ãƒ¼ï¼");          /* Mything eggs :-) */
 #endif
             }
             break;
@@ -743,7 +743,7 @@ long timeout;
 /*JP
                 You_see("%s hatch.", monnambuf);
 */
-                You("%s‚ª—‘‚©‚ç‚©‚¦‚é‚Ì‚ğŒ©‚½D", monnambuf);
+                You("%sãŒåµã‹ã‚‰ã‹ãˆã‚‹ã®ã‚’è¦‹ãŸï¼", monnambuf);
                 redraw = TRUE; /* update egg's map location */
             }
             break;
@@ -755,25 +755,25 @@ long timeout;
 /*JP
                     Sprintf(carriedby, "%s pack",
 */
-                    Sprintf(carriedby, "%s‚Ì”w•‰‚¢‘Ü‚©‚ç",
+                    Sprintf(carriedby, "%sã®èƒŒè² ã„è¢‹ã‹ã‚‰",
                             s_suffix(a_monnam(egg->ocarry)));
                     knows_egg = TRUE;
                 } else if (is_pool(mon->mx, mon->my))
 /*JP
                     Strcpy(carriedby, "empty water");
 */
-                    Strcpy(carriedby, "‰½‚à‚È‚¢…’†‚©‚ç");
+                    Strcpy(carriedby, "ä½•ã‚‚ãªã„æ°´ä¸­ã‹ã‚‰");
                 else
 /*JP
                     Strcpy(carriedby, "thin air");
 */
-                    Strcpy(carriedby, "‰½‚à‚È‚¢‹óŠÔ‚©‚ç");
+                    Strcpy(carriedby, "ä½•ã‚‚ãªã„ç©ºé–“ã‹ã‚‰");
 #if 0 /*JP*/
                 You_see("%s %s out of %s!", monnambuf,
                         locomotion(mon->data, "drop"), carriedby);
 #else
-                You("%s‚ª%s%s‚Ì‚ğŒ©‚½D", monnambuf, carriedby, 
-                    locomotion(mon->data, "—‚¿‚é"));
+                You("%sãŒ%s%sã®ã‚’è¦‹ãŸï¼", monnambuf, carriedby, 
+                    locomotion(mon->data, "è½ã¡ã‚‹"));
 #endif
             }
             break;
@@ -869,12 +869,12 @@ slip_or_trip()
                              : (otmp2->quan == 1L ? "a rock" : "some rocks"));
 #else
         what = (iflags.last_msg == PLNMSG_ONE_ITEM_HERE)
-                ? "‚»‚ê"
+                ? "ãã‚Œ"
                 : (otmp->dknown || !Blind)
                       ? doname(otmp)
                       : ((otmp2 = sobj_at(ROCK, u.ux, u.uy)) == 0
                              ? something
-                             : "Î");
+                             : "çŸ³");
 #endif
         if (Hallucination) {
             what = strcpy(buf, what);
@@ -883,13 +883,13 @@ slip_or_trip()
             pline("Egads!  %s bite%s your %s!", what,
                   (!otmp || otmp->quan == 1L) ? "s" : "", body_part(FOOT));
 #else
-            pline("‚®‚í‚ŸI%s‚ª%s‚ÉŠš‚İ‚Â‚¢‚½I", what, body_part(FOOT));
+            pline("ãã‚ãï¼%sãŒ%sã«å™›ã¿ã¤ã„ãŸï¼", what, body_part(FOOT));
 #endif
         } else {
 /*JP
             You("trip over %s.", what);
 */
-            You("%s‚É‚Â‚Ü‚Ã‚¢‚½D", what);
+            You("%sã«ã¤ã¾ã¥ã„ãŸï¼", what);
         }
         if (!uarmf && otmp->otyp == CORPSE
             && touch_petrifies(&mons[otmp->corpsenm]) && !Stone_resistance) {
@@ -907,12 +907,12 @@ slip_or_trip()
                        : "You",
               rn2(2) ? "slip" : "slide", on_foot ? "" : "s");
 #else
-        pline("%s‚Í•X‚Ìã‚ÅŠŠ‚Á‚½D",
+        pline("%sã¯æ°·ã®ä¸Šã§æ»‘ã£ãŸï¼",
               u.usteed ? upstart(x_monnam(u.usteed,
                                           (has_mname(u.usteed)) ? ARTICLE_NONE
                                                                 : ARTICLE_THE,
                                           (char *) 0, SUPPRESS_SADDLE, FALSE))
-                       : "‚ ‚È‚½");
+                       : "ã‚ãªãŸ");
 #endif
     } else {
         if (on_foot) {
@@ -922,8 +922,8 @@ slip_or_trip()
                 You("trip over your own %s.",
                     Hallucination ? "elbow" : makeplural(body_part(FOOT)));
 #else
-                You("©•ª‚Ì%s‚ğ“¥‚ñ‚Å‚Â‚Ü‚Ã‚¢‚½D",
-                    Hallucination ? "•I" : body_part(FOOT));
+                You("è‡ªåˆ†ã®%sã‚’è¸ã‚“ã§ã¤ã¾ã¥ã„ãŸï¼",
+                    Hallucination ? "è‚˜" : body_part(FOOT));
 #endif
                 break;
             case 2:
@@ -931,21 +931,21 @@ slip_or_trip()
                 You("slip %s.",
                     Hallucination ? "on a banana peel" : "and nearly fall");
 #else
-                You("%sD", Hallucination ?
-                    "ƒoƒiƒi‚Ì”ç‚ÅŠŠ‚Á‚½" : "ŠŠ‚Á‚Ä“]‚Ñ‚»‚¤‚É‚È‚Á‚½");
+                You("%sï¼", Hallucination ?
+                    "ãƒãƒŠãƒŠã®çš®ã§æ»‘ã£ãŸ" : "æ»‘ã£ã¦è»¢ã³ãã†ã«ãªã£ãŸ");
 #endif
                 break;
             case 3:
 /*JP
                 You("flounder.");
 */
-                You("‚¶‚½‚Î‚½‚µ‚½D");
+                You("ã˜ãŸã°ãŸã—ãŸï¼");
                 break;
             default:
 /*JP
                 You("stumble.");
 */
-                You("‚æ‚ë‚ß‚¢‚½D");
+                You("ã‚ˆã‚ã‚ã„ãŸï¼");
                 break;
             }
         } else {
@@ -955,26 +955,26 @@ slip_or_trip()
                 Your("%s slip out of the stirrups.",
                      makeplural(body_part(FOOT)));
 #else
-                You("‚ ‚Ô‚İ‚ğ“¥‚İŠO‚µ‚Ä‚µ‚Ü‚Á‚½D");
+                You("ã‚ã¶ã¿ã‚’è¸ã¿å¤–ã—ã¦ã—ã¾ã£ãŸï¼");
 #endif
                 break;
             case 2:
 /*JP
                 You("let go of the reins.");
 */
-                You("èj‚ğ•ú‚µ‚Ä‚µ‚Ü‚Á‚½D");
+                You("æ‰‹ç¶±ã‚’æ”¾ã—ã¦ã—ã¾ã£ãŸï¼");
                 break;
             case 3:
 /*JP
                 You("bang into the saddle-horn.");
 */
-                You("ƒTƒhƒ‹ƒz[ƒ“‚É‚Ô‚Â‚©‚Á‚Ä‚µ‚Ü‚Á‚½D");
+                You("ã‚µãƒ‰ãƒ«ãƒ›ãƒ¼ãƒ³ã«ã¶ã¤ã‹ã£ã¦ã—ã¾ã£ãŸï¼");
                 break;
             default:
 /*JP
                 You("slide to one side of the saddle.");
 */
-                You("‚·‚×‚Á‚ÄˆÆ‚Ì•Ğ‘¤‚É‚¸‚ê‚Ä‚µ‚Ü‚Á‚½D");
+                You("ã™ã¹ã£ã¦éã®ç‰‡å´ã«ãšã‚Œã¦ã—ã¾ã£ãŸï¼");
                 break;
             }
             dismount_steed(DISMOUNT_FELL);
@@ -994,13 +994,13 @@ const char *tailer;
 /*JP
         pline("%s flickers%s.", Yname2(obj), tailer);
 */
-        pline("%s‚Í%s“_–Å‚µ‚½D", Yname2(obj), tailer);
+        pline("%sã¯%sç‚¹æ»…ã—ãŸï¼", Yname2(obj), tailer);
         break;
     case OBJ_FLOOR:
 /*JP
         You_see("%s flicker%s.", an(xname(obj)), tailer);
 */
-        You("%s‚ª%s“_–Å‚·‚é‚Ì‚ğŒ©‚½D", an(xname(obj)), tailer);
+        You("%sãŒ%sç‚¹æ»…ã™ã‚‹ã®ã‚’è¦‹ãŸï¼", an(xname(obj)), tailer);
         break;
     }
 }
@@ -1016,24 +1016,24 @@ struct obj *obj;
 /*JP
         Your("lantern is getting dim.");
 */
-        Your("ƒ‰ƒ“ƒ^ƒ“‚ÍˆÃ‚­‚È‚Á‚Ä‚«‚½D");
+        Your("ãƒ©ãƒ³ã‚¿ãƒ³ã¯æš—ããªã£ã¦ããŸï¼");
         if (Hallucination)
 /*JP
             pline("Batteries have not been invented yet.");
 */
-            pline("“d’r‚Í‚Ü‚¾”­–¾‚³‚ê‚Ä‚È‚¢‚ñ‚¾‚Á‚¯D");
+            pline("é›»æ± ã¯ã¾ã ç™ºæ˜ã•ã‚Œã¦ãªã„ã‚“ã ã£ã‘ï¼");
         break;
     case OBJ_FLOOR:
 /*JP
         You_see("a lantern getting dim.");
 */
-        pline("ƒ‰ƒ“ƒ^ƒ“‚ªˆÃ‚­‚È‚Á‚Ä‚«‚½‚Ì‚ªŒ©‚¦‚½D");
+        pline("ãƒ©ãƒ³ã‚¿ãƒ³ãŒæš—ããªã£ã¦ããŸã®ãŒè¦‹ãˆãŸï¼");
         break;
     case OBJ_MINVENT:
 /*JP
         pline("%s lantern is getting dim.", s_suffix(Monnam(obj->ocarry)));
 */
-        pline("%s‚Ìƒ‰ƒ“ƒ^ƒ“‚ÍˆÃ‚­‚È‚Á‚Ä‚«‚½D", Monnam(obj->ocarry));
+        pline("%sã®ãƒ©ãƒ³ã‚¿ãƒ³ã¯æš—ããªã£ã¦ããŸï¼", Monnam(obj->ocarry));
         break;
     }
 }
@@ -1102,13 +1102,13 @@ long timeout;
 /*JP
                 pline("%spotion of oil has burnt away.", whose);
 */
-                pline("%sƒIƒCƒ‹‚Í”R‚¦‚Â‚«‚½D", whose);
+                pline("%sã‚ªã‚¤ãƒ«ã¯ç‡ƒãˆã¤ããŸï¼", whose);
                 break;
             case OBJ_FLOOR:
 /*JP
                 You_see("a burning potion of oil go out.");
 */
-                You("ƒIƒCƒ‹‚Ì‰Î‚ªÁ‚¦‚½‚Ì‚ğŒ©‚½D");
+                You("ã‚ªã‚¤ãƒ«ã®ç«ãŒæ¶ˆãˆãŸã®ã‚’è¦‹ãŸï¼");
                 need_newsym = TRUE;
                 break;
             }
@@ -1141,7 +1141,7 @@ long timeout;
 /*JP
                                      obj->age == 50L ? " considerably" : "");
 */
-                                     obj->age == 50L ? "Œƒ‚µ‚­" : "");
+                                     obj->age == 50L ? "æ¿€ã—ã" : "");
             }
             break;
 
@@ -1156,13 +1156,13 @@ long timeout;
 /*JP
                         pline("%s seems about to go out.", Yname2(obj));
 */
-                        pline("%s‚Í¡‚É‚àÁ‚¦‚»‚¤‚¾D", Yname2(obj));
+                        pline("%sã¯ä»Šã«ã‚‚æ¶ˆãˆãã†ã ï¼", Yname2(obj));
                         break;
                     case OBJ_FLOOR:
 /*JP
                         You_see("%s about to go out.", an(xname(obj)));
 */
-                        pline("%s‚ªÁ‚¦‚©‚¯‚Ä‚¢‚é‚Ì‚ªŒ©‚¦‚½D", an(xname(obj)));
+                        pline("%sãŒæ¶ˆãˆã‹ã‘ã¦ã„ã‚‹ã®ãŒè¦‹ãˆãŸï¼", an(xname(obj)));
                         break;
                     }
                 }
@@ -1179,24 +1179,24 @@ long timeout;
 /*JP
                         pline("%slantern has run out of power.", whose);
 */
-                        pline("%sƒ‰ƒ“ƒ^ƒ“‚Ì—Í‚ğg‚¢Ø‚Á‚½D", whose);
+                        pline("%sãƒ©ãƒ³ã‚¿ãƒ³ã®åŠ›ã‚’ä½¿ã„åˆ‡ã£ãŸï¼", whose);
                     else
 /*JP
                         pline("%s has gone out.", Yname2(obj));
 */
-                        pline("%s‚ÍÁ‚¦‚½D", Yname2(obj));
+                        pline("%sã¯æ¶ˆãˆãŸï¼", Yname2(obj));
                     break;
                 case OBJ_FLOOR:
                     if (obj->otyp == BRASS_LANTERN)
 /*JP
                         You_see("a lantern run out of power.");
 */
-                        You("ƒ‰ƒ“ƒ^ƒ“‚ªÁ‚¦‚é‚Ì‚ğŒ©‚½D");
+                        You("ãƒ©ãƒ³ã‚¿ãƒ³ãŒæ¶ˆãˆã‚‹ã®ã‚’è¦‹ãŸï¼");
                     else
 /*JP
                         You_see("%s go out.", an(xname(obj)));
 */
-                        You("%s‚ªÁ‚¦‚é‚Ì‚ğŒ©‚½D", an(xname(obj)));
+                        You("%sãŒæ¶ˆãˆã‚‹ã®ã‚’è¦‹ãŸï¼", an(xname(obj)));
                     break;
                 }
             }
@@ -1231,8 +1231,8 @@ long timeout;
                           menorah ? "candelabrum's " : "",
                           many ? "s are" : " is");
 #else
-                    pline("%s%s‚ë‚¤‚»‚­‚Í’Z‚­‚È‚Á‚½D", whose,
-                          menorah ? "C‘ä‚Ì" : "");
+                    pline("%s%sã‚ã†ããã¯çŸ­ããªã£ãŸï¼", whose,
+                          menorah ? "ç‡­å°ã®" : "");
 #endif
                     break;
                 case OBJ_FLOOR:
@@ -1242,8 +1242,8 @@ long timeout;
                                                                 : "a ",
                             many ? "s" : "");
 #else
-                    You("%s‚ë‚¤‚»‚­‚ª’Z‚­‚È‚é‚Ì‚ğŒ©‚½D",
-                        menorah ? "C‘ä‚Ì" : "");
+                    You("%sã‚ã†ãããŒçŸ­ããªã‚‹ã®ã‚’è¦‹ãŸï¼",
+                        menorah ? "ç‡­å°ã®" : "");
 #endif
                     break;
                 }
@@ -1259,8 +1259,8 @@ long timeout;
                           menorah ? "candelabrum's " : "", many ? "s'" : "'s",
                           many ? "s" : "", many ? "" : "s");
 #else
-                    pline("%s%s‚ë‚¤‚»‚­‚Ì‰Š‚Í“_–Å‚µCˆÃ‚­‚È‚Á‚½I", whose,
-                          menorah ? "C‘ä‚Ì" : "");
+                    pline("%s%sã‚ã†ããã®ç‚ã¯ç‚¹æ»…ã—ï¼Œæš—ããªã£ãŸï¼", whose,
+                          menorah ? "ç‡­å°ã®" : "");
 #endif
                     break;
                 case OBJ_FLOOR:
@@ -1270,8 +1270,8 @@ long timeout;
                                                                 : "a ",
                             many ? "s'" : "'s", many ? "s" : "");
 #else
-                    You("%s‚ë‚¤‚»‚­‚Ì‰Š‚ª“_–Å‚µCˆÃ‚­‚È‚é‚Ì‚ğŒ©‚½I",
-                        menorah ? "C‘ä‚Ì" : "");
+                    You("%sã‚ã†ããã®ç‚ãŒç‚¹æ»…ã—ï¼Œæš—ããªã‚‹ã®ã‚’è¦‹ãŸï¼",
+                        menorah ? "ç‡­å°ã®" : "");
 #endif
                     break;
                 }
@@ -1288,7 +1288,7 @@ long timeout;
                         pline("%scandelabrum's flame%s.", whose,
                               many ? "s die" : " dies");
 #else
-                        pline("%sC‘ä‚Ì‰Š‚ÍÁ‚¦‚½D", whose);
+                        pline("%sç‡­å°ã®ç‚ã¯æ¶ˆãˆãŸï¼", whose);
 #endif
                         break;
                     case OBJ_FLOOR:
@@ -1296,7 +1296,7 @@ long timeout;
                         You_see("a candelabrum's flame%s die.",
                                 many ? "s" : "");
 #else
-                        You("C‘ä‚Ì‰Š‚ªÁ‚¦‚é‚Ì‚ğŒ©‚½D");
+                        You("ç‡­å°ã®ç‚ãŒæ¶ˆãˆã‚‹ã®ã‚’è¦‹ãŸï¼");
 #endif
                         break;
                     }
@@ -1308,7 +1308,7 @@ long timeout;
                         pline("%s %s consumed!", Yname2(obj),
                               many ? "are" : "is");
 #else
-                        pline("%s‚Í”R‚¦‚Â‚«‚½I", Yname2(obj));
+                        pline("%sã¯ç‡ƒãˆã¤ããŸï¼", Yname2(obj));
 #endif
                         break;
                     case OBJ_FLOOR:
@@ -1320,7 +1320,7 @@ long timeout;
                         You_see("%s%s consumed!", many ? "some " : "",
                                 many ? xname(obj) : an(xname(obj)));
 #else
-                        You("%s‚ª”R‚¦‚Â‚«‚é‚Ì‚ğŒ©‚½I", xname(obj));
+                        You("%sãŒç‡ƒãˆã¤ãã‚‹ã®ã‚’è¦‹ãŸï¼", xname(obj));
 #endif
                         need_newsym = TRUE;
                         break;
@@ -1333,9 +1333,9 @@ long timeout;
                               : Blind ? "" : (many ? "Their flames die."
                                                    : "Its flame dies."));
 #else
-                    pline(Hallucination ? "‚»‚ê‚Ík‚¦‚½D"
+                    pline(Hallucination ? "ãã‚Œã¯éœ‡ãˆãŸï¼"
                           : Blind ? "" 
-                          : "‰Š‚ÍÁ‚¦‚½D");
+                          : "ç‚ã¯æ¶ˆãˆãŸï¼");
 #endif
                 }
             }
@@ -1584,7 +1584,7 @@ do_storms()
 /*JP
         pline("Kaboom!!!  Boom!!  Boom!!");
 */
-        pline("ƒsƒJƒbIIƒSƒƒSƒƒSƒƒSƒIIƒh[ƒ“I");
+        pline("ãƒ”ã‚«ãƒƒï¼ï¼ã‚´ãƒ­ã‚´ãƒ­ã‚´ãƒ­ã‚´ãƒ­ï¼ï¼ãƒ‰ãƒ¼ãƒ³ï¼");
         incr_itimeout(&HDeaf, rn1(20, 30));
         if (!u.uinvulnerable) {
             stop_occupation();
@@ -1596,7 +1596,7 @@ do_storms()
 /*JP
         You_hear("a rumbling noise.");
 */
-        You_hear("—‹‚Ì‰¹‚ğ•·‚¢‚½D");
+        You_hear("é›·ã®éŸ³ã‚’èã„ãŸï¼");
 }
 
 /* -------------------------------------------------------------------------

@@ -19,17 +19,17 @@ static const char
     *const plusattr[] = { "strong", "smart", "wise",
                           "agile",  "tough", "charismatic" },
 #else
-    *const plusattr[] = { "‹­‚¢", "Œ«–¾‚¾", "Œ«‚¢",
-                          "‹@•q‚¾", "Šæä‚¾", "–£—Í“I‚¾" },
+    *const plusattr[] = { "å¼·ã„", "è³¢æ˜ã ", "è³¢ã„",
+                          "æ©Ÿæ•ã ", "é ‘ä¸ˆã ", "é­…åŠ›çš„ã " },
 #endif
 #if 0 /*JP*/
     *const minusattr[] = { "weak",    "stupid",
                            "foolish", "clumsy",
                            "fragile", "repulsive" };
 #else
-    *const minusattr[] = { "ã‚¢", "‹ğ‚©‚¾",
-                           "ŠÔ”²‚¯‚¾", "•sŠí—p‚¾",
-                           "‚Ğã‚¾","X‚¢" };
+    *const minusattr[] = { "å¼±ã„", "æ„šã‹ã ",
+                           "é–“æŠœã‘ã ", "ä¸å™¨ç”¨ã ",
+                           "ã²å¼±ã ","é†œã„" };
 #endif
 
 static const struct innate {
@@ -41,41 +41,41 @@ static const struct innate {
 /*JP
                  { 10, &(HSearching), "perceptive", "" },
 */
-                 { 10, &(HSearching), "’mŠo—Í‚ğ“¾‚½", "’mŠo—Í‚ğ¸‚Á‚½" },
+                 { 10, &(HSearching), "çŸ¥è¦šåŠ›ã‚’å¾—ãŸ", "çŸ¥è¦šåŠ›ã‚’å¤±ã£ãŸ" },
                  { 0, 0, 0, 0 } },
 
   bar_abil[] = { { 1, &(HPoison_resistance), "", "" },
 /*JP
                  { 7, &(HFast), "quick", "slow" },
 */
-                 { 7, &(HFast), "‘f‘‚³‚ğ“¾‚½", "’x‚­‚È‚Á‚½" },
+                 { 7, &(HFast), "ç´ æ—©ã•ã‚’å¾—ãŸ", "é…ããªã£ãŸ" },
 /*JP
                  { 15, &(HStealth), "stealthy", "" },
 */
-                 { 15, &(HStealth), "l–Ú‚ğ“‚Ş—Í‚ğ“¾‚½", "l–Ú‚ğ“‚Ş—Í‚ğ¸‚Á‚½" },
+                 { 15, &(HStealth), "äººç›®ã‚’ç›—ã‚€åŠ›ã‚’å¾—ãŸ", "äººç›®ã‚’ç›—ã‚€åŠ›ã‚’å¤±ã£ãŸ" },
                  { 0, 0, 0, 0 } },
 
 /*JP
   cav_abil[] = { { 7, &(HFast), "quick", "slow" },
 */
-  cav_abil[] = { { 7, &(HFast), "‘f‘‚³‚ğ“¾‚½", "’x‚­‚È‚Á‚½" },
+  cav_abil[] = { { 7, &(HFast), "ç´ æ—©ã•ã‚’å¾—ãŸ", "é…ããªã£ãŸ" },
 /*JP
                  { 15, &(HWarning), "sensitive", "" },
 */
-                 { 15, &(HWarning), "•qŠ´‚É‚È‚Á‚½", "“İŠ´‚É‚È‚Á‚½" },
+                 { 15, &(HWarning), "æ•æ„Ÿã«ãªã£ãŸ", "éˆæ„Ÿã«ãªã£ãŸ" },
                  { 0, 0, 0, 0 } },
 
   hea_abil[] = { { 1, &(HPoison_resistance), "", "" },
 /*JP
                  { 15, &(HWarning), "sensitive", "" },
 */
-                 { 15, &(HWarning), "•qŠ´‚É‚È‚Á‚½", "“İŠ´‚É‚È‚Á‚½" },
+                 { 15, &(HWarning), "æ•æ„Ÿã«ãªã£ãŸ", "éˆæ„Ÿã«ãªã£ãŸ" },
                  { 0, 0, 0, 0 } },
 
 /*JP
   kni_abil[] = { { 7, &(HFast), "quick", "slow" }, { 0, 0, 0, 0 } },
 */
-  kni_abil[] = { { 7, &(HFast), "‘f‘‚³‚ğ“¾‚½", "’x‚­‚È‚Á‚½" }, { 0, 0, 0, 0 } },
+  kni_abil[] = { { 7, &(HFast), "ç´ æ—©ã•ã‚’å¾—ãŸ", "é…ããªã£ãŸ" }, { 0, 0, 0, 0 } },
 
   mon_abil[] = { { 1, &(HFast), "", "" },
                  { 1, &(HSleep_resistance), "", "" },
@@ -83,52 +83,52 @@ static const struct innate {
 /*JP
                  { 3, &(HPoison_resistance), "healthy", "" },
 */
-                 { 3, &(HPoison_resistance), "Œ’N‚É‚È‚Á‚½", "•sŒ’N‚É‚È‚Á‚½" },
+                 { 3, &(HPoison_resistance), "å¥åº·ã«ãªã£ãŸ", "ä¸å¥åº·ã«ãªã£ãŸ" },
 /*JP
                  { 5, &(HStealth), "stealthy", "" },
 */
-                 { 5, &(HStealth), "l–Ú‚ğ“‚Ş—Í‚ğ“¾‚½", "l–Ú‚ğ“‚Ş—Í‚ğ¸‚Á‚½" },
+                 { 5, &(HStealth), "äººç›®ã‚’ç›—ã‚€åŠ›ã‚’å¾—ãŸ", "äººç›®ã‚’ç›—ã‚€åŠ›ã‚’å¤±ã£ãŸ" },
 /*JP
                  { 7, &(HWarning), "sensitive", "" },
 */
-                 { 7, &(HWarning), "•qŠ´‚É‚È‚Á‚½", "“İŠ´‚É‚È‚Á‚½" },
+                 { 7, &(HWarning), "æ•æ„Ÿã«ãªã£ãŸ", "éˆæ„Ÿã«ãªã£ãŸ" },
 /*JP
                  { 9, &(HSearching), "perceptive", "unaware" },
 */
-                 { 9, &(HSearching), "’mŠo—Í‚ğ“¾‚½", "’mŠo—Í‚ğ¸‚Á‚½" },
+                 { 9, &(HSearching), "çŸ¥è¦šåŠ›ã‚’å¾—ãŸ", "çŸ¥è¦šåŠ›ã‚’å¤±ã£ãŸ" },
 /*JP
                  { 11, &(HFire_resistance), "cool", "warmer" },
 */
-                 { 11, &(HFire_resistance), "—â‚½‚­‚È‚Á‚½", "’g‚©‚­‚È‚Á‚½" },
+                 { 11, &(HFire_resistance), "å†·ãŸããªã£ãŸ", "æš–ã‹ããªã£ãŸ" },
 /*JP
                  { 13, &(HCold_resistance), "warm", "cooler" },
 */
-                 { 13, &(HCold_resistance), "’g‚©‚­‚È‚Á‚½", "—â‚½‚­‚È‚Á‚½"},
+                 { 13, &(HCold_resistance), "æš–ã‹ããªã£ãŸ", "å†·ãŸããªã£ãŸ"},
 /*JP
                  { 15, &(HShock_resistance), "insulated", "conductive" },
 */
-                 { 15, &(HShock_resistance), "â‰‚³‚ê‚½", "“±“d‚³‚ê‚½" },
+                 { 15, &(HShock_resistance), "çµ¶ç¸ã•ã‚ŒãŸ", "å°é›»ã•ã‚ŒãŸ" },
 /*JP
                  { 17, &(HTeleport_control), "controlled", "uncontrolled" },
 */
-                 { 17, &(HTeleport_control), "§Œä—Í‚ğ“¾‚½","§Œä—Í‚ğ¸‚Á‚½" },
+                 { 17, &(HTeleport_control), "åˆ¶å¾¡åŠ›ã‚’å¾—ãŸ","åˆ¶å¾¡åŠ›ã‚’å¤±ã£ãŸ" },
                  { 0, 0, 0, 0 } },
 
 /*JP
   pri_abil[] = { { 15, &(HWarning), "sensitive", "" },
 */
-  pri_abil[] = { { 15, &(HWarning), "•qŠ´‚É‚È‚Á‚½", "“İŠ´‚É‚È‚Á‚½" },
+  pri_abil[] = { { 15, &(HWarning), "æ•æ„Ÿã«ãªã£ãŸ", "éˆæ„Ÿã«ãªã£ãŸ" },
 /*JP
                  { 20, &(HFire_resistance), "cool", "warmer" },
 */
-                 { 20, &(HFire_resistance), "—â‚½‚­‚È‚Á‚½", "’g‚©‚­‚È‚Á‚½" },
+                 { 20, &(HFire_resistance), "å†·ãŸããªã£ãŸ", "æš–ã‹ããªã£ãŸ" },
                  { 0, 0, 0, 0 } },
 
   ran_abil[] = { { 1, &(HSearching), "", "" },
 /*JP
                  { 7, &(HStealth), "stealthy", "" },
 */
-                 { 7, &(HStealth), "l–Ú‚ğ“‚Ş—Í‚ğ“¾‚½", "l–Ú‚ğ“‚Ş—Í‚ğ¸‚Á‚½" },
+                 { 7, &(HStealth), "äººç›®ã‚’ç›—ã‚€åŠ›ã‚’å¾—ãŸ", "äººç›®ã‚’ç›—ã‚€åŠ›ã‚’å¤±ã£ãŸ" },
                  { 15, &(HSee_invisible), "", "" },
                  { 0, 0, 0, 0 } },
 
@@ -136,24 +136,24 @@ static const struct innate {
 /*JP
                  { 10, &(HSearching), "perceptive", "" },
 */
-                 { 10, &(HSearching), "’mŠo—Í‚ğ“¾‚½", "’mŠo—Í‚ğ¸‚Á‚½" },
+                 { 10, &(HSearching), "çŸ¥è¦šåŠ›ã‚’å¾—ãŸ", "çŸ¥è¦šåŠ›ã‚’å¤±ã£ãŸ" },
                  { 0, 0, 0, 0 } },
 
   sam_abil[] = { { 1, &(HFast), "", "" },
 /*JP
                  { 15, &(HStealth), "stealthy", "" },
 */
-                 { 15, &(HStealth), "l–Ú‚ğ“‚Ş—Í‚ğ“¾‚½", "l–Ú‚ğ“‚Ş—Í‚ğ¸‚Á‚½" },
+                 { 15, &(HStealth), "äººç›®ã‚’ç›—ã‚€åŠ›ã‚’å¾—ãŸ", "äººç›®ã‚’ç›—ã‚€åŠ›ã‚’å¤±ã£ãŸ" },
                  { 0, 0, 0, 0 } },
 
 /*JP
   tou_abil[] = { { 10, &(HSearching), "perceptive", "" },
 */
-  tou_abil[] = { { 10, &(HSearching), "’mŠo—Í‚ğ“¾‚½", "’mŠo—Í‚ğ¸‚Á‚½" },
+  tou_abil[] = { { 10, &(HSearching), "çŸ¥è¦šåŠ›ã‚’å¾—ãŸ", "çŸ¥è¦šåŠ›ã‚’å¤±ã£ãŸ" },
 /*JP
                  { 20, &(HPoison_resistance), "hardy", "" },
 */
-                 { 20, &(HPoison_resistance), "–Æ‰u—Í‚ğ“¾‚½", "–Æ‰u—Í‚ğ¸‚Á‚½" },
+                 { 20, &(HPoison_resistance), "å…ç–«åŠ›ã‚’å¾—ãŸ", "å…ç–«åŠ›ã‚’å¤±ã£ãŸ" },
                  { 0, 0, 0, 0 } },
 
   val_abil[] = { { 1, &(HCold_resistance), "", "" },
@@ -161,24 +161,24 @@ static const struct innate {
 /*JP
                  { 7, &(HFast), "quick", "slow" },
 */
-                 { 7, &(HFast), "‘f‘‚³‚ğ“¾‚½", "’x‚­‚È‚Á‚½" },
+                 { 7, &(HFast), "ç´ æ—©ã•ã‚’å¾—ãŸ", "é…ããªã£ãŸ" },
                  { 0, 0, 0, 0 } },
 
 /*JP
   wiz_abil[] = { { 15, &(HWarning), "sensitive", "" },
 */
-  wiz_abil[] = { { 15, &(HWarning), "•qŠ´‚É‚È‚Á‚½", "“İŠ´‚É‚È‚Á‚½" },
+  wiz_abil[] = { { 15, &(HWarning), "æ•æ„Ÿã«ãªã£ãŸ", "éˆæ„Ÿã«ãªã£ãŸ" },
 /*JP
                  { 17, &(HTeleport_control), "controlled", "uncontrolled" },
 */
-                 { 17, &(HTeleport_control), "§Œä—Í‚ğ“¾‚½","§Œä—Í‚ğ¸‚Á‚½" },
+                 { 17, &(HTeleport_control), "åˆ¶å¾¡åŠ›ã‚’å¾—ãŸ","åˆ¶å¾¡åŠ›ã‚’å¤±ã£ãŸ" },
                  { 0, 0, 0, 0 } },
 
   /* Intrinsics conferred by race */
 /*JP
     elf_abil[] = { { 4, &(HSleep_resistance), "awake", "tired" },
 */
-    elf_abil[] = { { 4, &(HSleep_resistance), "–Ú‚ªŠo‚ß‚½", "–°‚­‚È‚Á‚½" },
+    elf_abil[] = { { 4, &(HSleep_resistance), "ç›®ãŒè¦šã‚ãŸ", "çœ ããªã£ãŸ" },
                    { 0, 0, 0, 0 } },
 
   orc_abil[] = { { 1, &(HPoison_resistance), "", "" }, { 0, 0, 0, 0 } };
@@ -206,7 +206,7 @@ int msgflg; /* positive => no message, zero => message, and */
 /*JP
             Your("cap constricts briefly, then relaxes again.");
 */
-            Your("–Xq‚ª‚µ‚Î‚ç‚­‚ÌŠÔƒLƒ…‚Á‚Æ’÷‚ß‚Â‚¯C‚»‚µ‚Ä‚ä‚é‚ñ‚¾D");
+            Your("å¸½å­ãŒã—ã°ã‚‰ãã®é–“ã‚­ãƒ¥ã£ã¨ç· ã‚ã¤ã‘ï¼Œãã—ã¦ã‚†ã‚‹ã‚“ã ï¼");
         return FALSE;
     }
 
@@ -240,8 +240,8 @@ int msgflg; /* positive => no message, zero => message, and */
             pline("You're %s as %s as you can get.",
                   abonflg ? "currently" : "already", attrstr);
 #else
-            You("%s\•ª‚É%sD",
-                  abonflg ? "¡‚Ì‚Æ‚±‚ë" : "Šù‚É", attrstr);
+            You("%sååˆ†ã«%sï¼",
+                  abonflg ? "ä»Šã®ã¨ã“ã‚" : "æ—¢ã«", attrstr);
 #endif
         return FALSE;
     }
@@ -250,7 +250,7 @@ int msgflg; /* positive => no message, zero => message, and */
 /*JP
         You_feel("%s%s!", (incr > 1 || incr < -1) ? "very " : "", attrstr);
 */
-        You("%s%s‚È‚Á‚½‚æ‚¤‚È‹C‚ª‚µ‚½I", (incr > 1 || incr < -1) ? "‚Æ‚Ä‚à" : "", jconj_adj(attrstr));
+        You("%s%sãªã£ãŸã‚ˆã†ãªæ°—ãŒã—ãŸï¼", (incr > 1 || incr < -1) ? "ã¨ã¦ã‚‚" : "", jconj_adj(attrstr));
     context.botl = 1;
     if (moves > 1 && (ndx == A_STR || ndx == A_CON))
         (void) encumber_msg();
@@ -305,32 +305,32 @@ static const struct poison_effect_message {
 #if 0 /*JP*/
     { You_feel, "weaker" },             /* A_STR */
 #else
-    { You_feel, "ã‚­‚È‚Á‚½" },         /* A_STR */
+    { You_feel, "å¼±ããªã£ãŸ" },         /* A_STR */
 #endif
 #if 0 /*JP*/
     { Your, "brain is on fire" },       /* A_INT */
 #else
-    { You, "“ª‚ÉŒŒ‚ª‚Ì‚Ú‚Á‚½" },        /* A_INT */
+    { You, "é ­ã«è¡€ãŒã®ã¼ã£ãŸ" },        /* A_INT */
 #endif
 #if 0 /*JP*/
     { Your, "judgement is impaired" },  /* A_WIS */
 #else
-    { You, "”»’f—Í‚ğ¸‚Á‚½" },          /* A_WIS */
+    { You, "åˆ¤æ–­åŠ›ã‚’å¤±ã£ãŸ" },          /* A_WIS */
 #endif
 #if 0 /*JP*/
     { Your, "muscles won't obey you" }, /* A_DEX */
 #else
-    { You, "v‚¤‚æ‚¤‚É“®‚¯‚È‚¢" },      /* A_DEX */
+    { You, "æ€ã†ã‚ˆã†ã«å‹•ã‘ãªã„" },      /* A_DEX */
 #endif
 #if 0 /*JP*/
     { You_feel, "very sick" },          /* A_CON */
 #else
-    { You_feel, "‚Æ‚Ä‚à‹C•ª‚ªˆ«‚­‚È‚Á‚½" }, /* A_CON */
+    { You_feel, "ã¨ã¦ã‚‚æ°—åˆ†ãŒæ‚ªããªã£ãŸ" }, /* A_CON */
 #endif
 #if 0 /*JP*/
     { You, "break out in hives" }       /* A_CHA */
 #else
-    { You, "‚¶‚ñ‚Ü‚µ‚ñ‚ª‚ ‚ç‚í‚ê‚½" }   /* A_CHA */
+    { You, "ã˜ã‚“ã¾ã—ã‚“ãŒã‚ã‚‰ã‚ã‚ŒãŸ" }   /* A_CHA */
 #endif
 };
 
@@ -345,7 +345,7 @@ boolean exclaim; /* emphasis */
 /*JP
     (*func)("%s%c", poiseff[typ].effect_msg, exclaim ? '!' : '.');
 */
-    (*func)("%s%s", poiseff[typ].effect_msg, exclaim ? "I" : "D");
+    (*func)("%s%s", poiseff[typ].effect_msg, exclaim ? "ï¼" : "ï¼");
 }
 
 /* called when an attack or trap has poisoned the hero (used to be in mon.c)
@@ -365,7 +365,7 @@ boolean thrown_weapon; /* thrown weapons are less deadly */
 #if 0 /*JP*/
     if (strcmp(reason, "blast") && !strstri(reason, "poison")) {
 #else
-    if (strcmp(reason, "•—") && strcmp(reason, "‘§") && !strstri(reason, "“Å")) {
+    if (strcmp(reason, "é¢¨") && strcmp(reason, "æ¯") && !strstri(reason, "æ¯’")) {
 #endif
 #if 0 /*JP*/
         boolean plural = (reason[strlen(reason) - 1] == 's') ? 1 : 0;
@@ -376,24 +376,24 @@ boolean thrown_weapon; /* thrown weapons are less deadly */
         pline("%s%s %s poisoned!", isupper(*reason) ? "" : "The ", reason,
               plural ? "were" : "was");
 #else
-        pline("%s‚Í“Å‚É‚¨‚©‚³‚ê‚Ä‚¢‚éI", reason);
+        pline("%sã¯æ¯’ã«ãŠã‹ã•ã‚Œã¦ã„ã‚‹ï¼", reason);
 #endif
     }
     if (Poison_resistance) {
 #if 0 /*JP*/
         if (!strcmp(reason, "blast"))
 #else
-        if (!strcmp(reason, "•—") || !strcmp(reason, "‘§"))
+        if (!strcmp(reason, "é¢¨") || !strcmp(reason, "æ¯"))
 #endif
             shieldeff(u.ux, u.uy);
 /*JP
         pline_The("poison doesn't seem to affect you.");
 */
-        pline("“Å‚ÍŒø‚©‚È‚©‚Á‚½‚æ‚¤‚¾D");
+        pline("æ¯’ã¯åŠ¹ã‹ãªã‹ã£ãŸã‚ˆã†ã ï¼");
         return;
     }
 
-#if 0 /*JP*//*“ú–{Œê‚Å‚Í•s—v*/
+#if 0 /*JP*//*æ—¥æœ¬èªã§ã¯ä¸è¦*/
     /* suppress killer prefix if it already has one */
     i = name_to_mon(pkiller);
     if (i >= LOW_PM && (mons[i].geno & G_UNIQ)) {
@@ -414,7 +414,7 @@ boolean thrown_weapon; /* thrown weapons are less deadly */
 /*JP
         pline_The("poison was deadly...");
 */
-        pline("“Å‚Í’v€—Ê‚¾‚Á‚½DDD");
+        pline("æ¯’ã¯è‡´æ­»é‡ã ã£ãŸï¼ï¼ï¼");
     } else if (i > 5) {
         /* HP damage; more likely--but less severe--with missiles */
         loss = thrown_weapon ? rnd(6) : rn1(10, 6);
@@ -434,7 +434,7 @@ boolean thrown_weapon; /* thrown weapons are less deadly */
 #if 0 /*JP*/
         /* "Poisoned by a poisoned ___" is redundant */
         done(strstri(pkiller, "poison") ? DIED : POISONING);
-#else /*JP:“ú–{Œê‚Å‚Í‹æ•Ê‚µ‚Ä‚¢‚È‚¢*/
+#else /*JP:æ—¥æœ¬èªã§ã¯åŒºåˆ¥ã—ã¦ã„ãªã„*/
         done(POISONING);
 #endif
     }
@@ -621,11 +621,11 @@ static NEARDATA const char *const exertext[A_MAX][2] = {
     { "leading a healthy life-style", "watching your health" },   /* Con */
     { 0, 0 },                                                     /* Cha */
 #else
-    { "”O“ü‚è‚É‰^“®‚µ‚Ä‚¢‚½", "“KØ‚É‰^“®‚µ‚Ä‚¢‚È‚©‚Á‚½" },       /* Str */
+    { "å¿µå…¥ã‚Šã«é‹å‹•ã—ã¦ã„ãŸ", "é©åˆ‡ã«é‹å‹•ã—ã¦ã„ãªã‹ã£ãŸ" },       /* Str */
     { 0, 0 },                                                     /* Int */
-    { "Td‚És“®‚µ‚Ä‚¢‚½", "’ˆÓ•s‘«‚¾‚Á‚½" },                   /* Wis */
-    { "”½Ë_Œo‚ğg‚Á‚Ä‚¢‚½", "Å‹ß”½Ë_Œo‚ğg‚Á‚Ä‚¢‚È‚©‚Á‚½" }, /* Dex */
-    { "Œ’N“I‚È¶Šˆ‚ğ‚µ‚Ä‚¢‚½", "Œ’NŠÇ—‚ğ‘Ó‚Á‚Ä‚¢‚½" },         /* Con */
+    { "æ…é‡ã«è¡Œå‹•ã—ã¦ã„ãŸ", "æ³¨æ„ä¸è¶³ã ã£ãŸ" },                   /* Wis */
+    { "åå°„ç¥çµŒã‚’ä½¿ã£ã¦ã„ãŸ", "æœ€è¿‘åå°„ç¥çµŒã‚’ä½¿ã£ã¦ã„ãªã‹ã£ãŸ" }, /* Dex */
+    { "å¥åº·çš„ãªç”Ÿæ´»ã‚’ã—ã¦ã„ãŸ", "å¥åº·ç®¡ç†ã‚’æ€ ã£ã¦ã„ãŸ" },         /* Con */
     { 0, 0 },                                                     /* Cha */
 #endif
 };
@@ -708,7 +708,7 @@ exerchk()
                     (mod_val > 0) ? "must have been" : "haven't been",
                     exertext[i][(mod_val > 0) ? 0 : 1]);
 #else
-                You("%s‚Éˆá‚¢‚È‚¢D",
+                You("%sã«é•ã„ãªã„ï¼",
                     exertext[i][(mod_val > 0) ? 0 : 1]);
 #endif
             }
@@ -917,13 +917,13 @@ int propidx; /* special cases can have negative values */
     /*
      * Restrict the source of the attributes just to debug mode for now
      */
-/*JP:u‚ ‚È‚½‚Í‚ ‚È‚½‚Ìc‚É‚æ‚Á‚Äv‚Æ‚È‚é‚Æ•s©‘R‚È‚Ì‚Åsimpleonames()‚ğg‚¤*/
-/*JP: –{—ˆ‚Íminimal_xname()‚ğg‚¤‚×‚«‚¾‚ªstatic‚È‚Ì‚Å‘ã—p*/
+/*JP:ã€Œã‚ãªãŸã¯ã‚ãªãŸã®â€¦ã«ã‚ˆã£ã¦ã€ã¨ãªã‚‹ã¨ä¸è‡ªç„¶ãªã®ã§simpleonames()ã‚’ä½¿ã†*/
+/*JP: æœ¬æ¥ã¯minimal_xname()ã‚’ä½¿ã†ã¹ãã ãŒstaticãªã®ã§ä»£ç”¨*/
     if (wizard) {
 /*JP
         static NEARDATA const char because_of[] = " because of %s";
 */
-        static NEARDATA const char because_of[] = "%s‚É‚æ‚Á‚Ä";
+        static NEARDATA const char because_of[] = "%sã«ã‚ˆã£ã¦";
 
         if (propidx >= 0) {
             char *p;
@@ -934,12 +934,12 @@ int propidx; /* special cases can have negative values */
 /*JP
                 Strcpy(buf, " because of your experience");
 */
-                Strcpy(buf, "ŒoŒ±‚É‚æ‚Á‚Ä");
+                Strcpy(buf, "çµŒé¨“ã«ã‚ˆã£ã¦");
             else if (innate == 1)
 /*JP
                 Strcpy(buf, " innately");
 */
-                Strcpy(buf, "¶‚Ü‚ê‚È‚ª‚ç‚É");
+                Strcpy(buf, "ç”Ÿã¾ã‚ŒãªãŒã‚‰ã«");
             else if (wizard
                      && (obj = what_gives(&u.uprops[propidx].extrinsic)))
                 Sprintf(buf, because_of, obj->oartifact
@@ -952,14 +952,14 @@ int propidx; /* special cases can have negative values */
 /*JP
                 Sprintf(buf, " from birth");
 */
-                Sprintf(buf, "¶‚Ü‚ê‚Ä‚©‚ç‚¸‚Á‚Æ");
+                Sprintf(buf, "ç”Ÿã¾ã‚Œã¦ã‹ã‚‰ãšã£ã¨");
             else if (propidx == BLINDED && Blindfolded_only)
 /*JP
                 Sprintf(buf, because_of, ysimple_name(ublindf));
 */
                 Sprintf(buf, because_of, simpleonames(ublindf));
 
-#if 0 /*JP*//*•s—v*/
+#if 0 /*JP*//*ä¸è¦*/
             /* remove some verbosity and/or redundancy */
             if ((p = strstri(buf, " pair of ")) != 0)
                 copynchars(p + 1, p + 9, BUFSZ); /* overlapping buffers ok */
@@ -1096,7 +1096,7 @@ int oldlevel, newlevel;
 /*JP
                     You_feel("%s!", abil->gainstr);
 */
-                    You("%s‚æ‚¤‚È‹C‚ª‚µ‚½I", abil->gainstr);
+                    You("%sã‚ˆã†ãªæ°—ãŒã—ãŸï¼", abil->gainstr);
             }
         } else if (oldlevel >= abil->ulevel && newlevel < abil->ulevel) {
             *(abil->ability) &= ~mask;
@@ -1105,8 +1105,8 @@ int oldlevel, newlevel;
 /*JP
                     You_feel("%s!", abil->losestr);
 */
-                    You("%s‚æ‚¤‚È‹C‚ª‚µ‚½I", abil->losestr);
-/*JP:‚±‚ÌğŒ‚Í–‚³‚È‚¢‚Í‚¸D*/
+                    You("%sã‚ˆã†ãªæ°—ãŒã—ãŸï¼", abil->losestr);
+/*JP:ã“ã®æ¡ä»¶ã¯æº€ã•ãªã„ã¯ãšï¼*/
                 else if (*(abil->gainstr))
                     You_feel("less %s!", abil->gainstr);
             }
@@ -1294,8 +1294,8 @@ int reason; /* 0==conversion, 1==helm-of-OA on, 2==helm-of-OA off */
         You("have a %ssense of a new direction.",
             (u.ualign.type != oldalign) ? "sudden " : "");
 #else
-        You("%s•Ê‚Ì•ûŒü«‚É‚ß‚´‚ß‚½D",
-            (u.ualign.type != oldalign) ? "“Ë‘R" : "");
+        You("%såˆ¥ã®æ–¹å‘æ€§ã«ã‚ã–ã‚ãŸï¼",
+            (u.ualign.type != oldalign) ? "çªç„¶" : "");
 #endif
     } else {
         /* putting on or taking off a helm of opposite alignment */
@@ -1304,16 +1304,16 @@ int reason; /* 0==conversion, 1==helm-of-OA on, 2==helm-of-OA off */
 /*JP
             Your("mind oscillates %s.", Hallucination ? "wildly" : "briefly");
 */
-            You("%sQ•Ô‚Á‚½D", Hallucination ? "r‚Á‚Û‚­" : "‚ ‚Á‚³‚è‚Æ");
+            You("%så¯è¿”ã£ãŸï¼", Hallucination ? "è’ã£ã½ã" : "ã‚ã£ã•ã‚Šã¨");
         else if (reason == 2)
 #if 0 /*JP*/
             Your("mind is %s.", Hallucination
                                     ? "much of a muchness"
                                     : "back in sync with your body");
 #else
-            Your("S‚Í%sD", Hallucination
-                                    ? "—‚½‚èŠñ‚Á‚½‚è‚É‚È‚Á‚½"
-                                    : "Ä‚Ñ‘Ì‚Æˆê’v‚·‚é‚æ‚¤‚É‚È‚Á‚½");
+            Your("å¿ƒã¯%sï¼", Hallucination
+                                    ? "ä¼¼ãŸã‚Šå¯„ã£ãŸã‚Šã«ãªã£ãŸ"
+                                    : "å†ã³ä½“ã¨ä¸€è‡´ã™ã‚‹ã‚ˆã†ã«ãªã£ãŸ");
 #endif
     }
 

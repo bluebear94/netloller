@@ -53,20 +53,20 @@ boolean resuming;
 /*JP
         You("are lucky!  Full moon tonight.");
 */
-        pline("ƒ‰ƒbƒL[I¡”Ó‚Í–Œ‚¾D");
+        pline("ãƒ©ãƒƒã‚­ãƒ¼ï¼ä»Šæ™©ã¯æº€æœˆã ï¼");
         change_luck(1);
     } else if (flags.moonphase == NEW_MOON) {
 /*JP
         pline("Be careful!  New moon tonight.");
 */
-        pline("’ˆÓ‚µ‚ëI¡”Ó‚ÍVŒ‚¾D");
+        pline("æ³¨æ„ã—ã‚ï¼ä»Šæ™©ã¯æ–°æœˆã ï¼");
     }
     flags.friday13 = friday_13th();
     if (flags.friday13) {
 /*JP
         pline("Watch out!  Bad things can happen on Friday the 13th.");
 */
-        pline("—pS‚µ‚ëI‚P‚R“ú‚Ì‹à—j“ú‚É‚Í‚æ‚­‚È‚¢‚±‚Æ‚ª‚ ‚éD") ;
+        pline("ç”¨å¿ƒã—ã‚ï¼ï¼‘ï¼“æ—¥ã®é‡‘æ›œæ—¥ã«ã¯ã‚ˆããªã„ã“ã¨ãŒã‚ã‚‹ï¼") ;
         change_luck(-1);
     }
 
@@ -270,7 +270,7 @@ boolean resuming;
 /*JP
                                 You("pass out from exertion!");
 */
-                                pline("”æ˜J‚ÅˆÓ¯‚ğ¸‚Á‚½I");
+                                pline("ç–²åŠ´ã§æ„è­˜ã‚’å¤±ã£ãŸï¼");
                                 exercise(A_CON, FALSE);
                                 fall_asleep(-10, FALSE);
                             }
@@ -506,7 +506,7 @@ stop_occupation()
 /*JP
             You("stop %s.", occtxt);
 */
-            You("%s‚Ì‚ğ’†’f‚µ‚½D", occtxt);
+            You("%sã®ã‚’ä¸­æ–­ã—ãŸï¼", occtxt);
         occupation = 0;
         context.botl = 1; /* in case u.uhs changed */
         nomul(0);
@@ -648,7 +648,7 @@ boolean new_game; /* false => restoring an old game */
 /*JP
         Sprintf(eos(buf), " %s", genders[currentgend].adj);
 */
-        Sprintf(eos(buf), "‚Ì%s", genders[currentgend].adj);
+        Sprintf(eos(buf), "ã®%s", genders[currentgend].adj);
 
 #if 0 /*JP*/
     pline(new_game ? "%s %s, welcome to NetHack!  You are a%s %s %s."
@@ -657,12 +657,12 @@ boolean new_game; /* false => restoring an old game */
           (currentgend && urole.name.f) ? urole.name.f : urole.name.m);
 #else
     if(new_game){
-        pline("%sCNetHack‚Ì¢ŠE‚ÖI‚±‚ÌƒQ[ƒ€‚Å‚Í‚ ‚È‚½‚Í%s%s(%s)‚¾D",
+        pline("%sï¼ŒNetHackã®ä¸–ç•Œã¸ï¼ã“ã®ã‚²ãƒ¼ãƒ ã§ã¯ã‚ãªãŸã¯%s%s(%s)ã ï¼",
               Hello((struct monst *) 0), urace.adj,
               (currentgend && urole.name.f) ? urole.name.f : urole.name.m,
               buf);
     } else {
-        pline("%sCNetHack‚Ì¢ŠE‚ÖI‚ ‚È‚½‚Í%s%s‚¾I",
+        pline("%sï¼ŒNetHackã®ä¸–ç•Œã¸ï¼ã‚ãªãŸã¯%s%sã ï¼",
               Hello((struct monst *) 0), urace.adj,
               (currentgend && urole.name.f) ? urole.name.f : urole.name.m);
     }

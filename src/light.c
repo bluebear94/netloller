@@ -673,19 +673,19 @@ struct obj *obj;
 #if 0 /*JP*/
         return "brilliantly"; /* blessed */
 #else
-        return "ƒLƒ‰ƒLƒ‰‚Æ"; /* blessed */
+        return "ã‚­ãƒ©ã‚­ãƒ©ã¨"; /* blessed */
 #endif
     case 2:
 #if 0 /*JP*/
         return "brightly"; /* uncursed */
 #else
-        return "–¾‚é‚­"; /* uncursed */
+        return "æ˜ã‚‹ã"; /* uncursed */
 #endif
     case 1:
 #if 0 /*JP*/
         return "dimly"; /* cursed */
 #else
-        return "”–ˆÃ‚­"; /* cursed */
+        return "è–„æš—ã"; /* cursed */
 #endif
     default:
         break;
@@ -693,7 +693,7 @@ struct obj *obj;
 /*JP
     return "strangely";
 */
-    return "•sv‹c‚É";
+    return "ä¸æ€è­°ã«";
 }
 
 int

@@ -1134,7 +1134,7 @@ water_friction()
 /*JP
         pline("Water turbulence affects your movements.");
 */
-        pline("…‚Ì—¬‚ê‚ª‚ ‚È‚½‚Ì“®‚«‚É‰e‹¿‚ğ—^‚¦‚½D");
+        pline("æ°´ã®æµã‚ŒãŒã‚ãªãŸã®å‹•ãã«å½±éŸ¿ã‚’ä¸ãˆãŸï¼");
 }
 
 void
@@ -1215,34 +1215,34 @@ xchar x, y;
 /*JP
         return "lava";
 */
-        return "—nŠâ";
+        return "æº¶å²©";
     else if (ltyp == ICE)
 /*JP
         return "ice";
 */
-        return "•X";
+        return "æ°·";
     else if (ltyp == POOL)
 /*JP
         return "pool of water";
 */
-        return "…‚½‚Ü‚è";
+        return "æ°´ãŸã¾ã‚Š";
     else if (ltyp == WATER || Is_waterlevel(&u.uz))
         ; /* fall through to default return value */
     else if (Is_juiblex_level(&u.uz))
 /*JP
         return "swamp";
 */
-        return "À";
+        return "æ²¼";
     else if (ltyp == MOAT && !Is_medusa_level(&u.uz))
 /*JP
         return "moat";
 */
-        return "–x";
+        return "å €";
 
 /*JP
     return "water";
 */
-    return "…’†";
+    return "æ°´ä¸­";
 }
 
 STATIC_OVL void

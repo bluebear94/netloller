@@ -93,10 +93,10 @@ char *nam;
     Strcat(nam, " the ");
     Strcat(nam, rank_of((int) mtmp->m_lev, monsndx(mtmp->data),
                         (boolean) mtmp->female));
-#else /*Ì†‚ð‘O‚É•t‚¯‚½‚¢‚Ì‚Åtmp_nam‚Éˆê’U\’z‚µ‚Änam‚É–ß‚·*/
+#else /*ç§°å·ã‚’å‰ã«ä»˜ã‘ãŸã„ã®ã§tmp_namã«ä¸€æ—¦æ§‹ç¯‰ã—ã¦namã«æˆ»ã™*/
     Strcpy(tmp_nam, rank_of((int) mtmp->m_lev, monsndx(mtmp->data),
                         (boolean)mtmp->female));
-    Strcat(tmp_nam, "‚Ì");
+    Strcat(tmp_nam, "ã®");
     Strcat(tmp_nam, nam);
     Strcpy(nam, tmp_nam);
 #endif
@@ -381,26 +381,26 @@ register struct monst *mtmp;
 #else
     static const char *same_class_msg[2][3] = {
         {
-            "Ž„‚Å‚·‚ç’B¬‚Å‚«‚È‚¢‚Ì‚ÉC‚¨‘O‚É’B¬‚Å‚«‚é‚Ì‚©H",
-            "‚¨‘O‚ª¬Œ÷‚·‚é‚È‚ñ‚Ä‚±‚Æ‚Í‚È‚¢‚ÈD",
-            "–¼—_‚ð‰ä‚ÉI‚¨‘O‚¶‚á‚È‚¢I",
+            "ç§ã§ã™ã‚‰é”æˆã§ããªã„ã®ã«ï¼ŒãŠå‰ã«é”æˆã§ãã‚‹ã®ã‹ï¼Ÿ",
+            "ãŠå‰ãŒæˆåŠŸã™ã‚‹ãªã‚“ã¦ã“ã¨ã¯ãªã„ãªï¼Ž",
+            "åèª‰ã‚’æˆ‘ã«ï¼ãŠå‰ã˜ã‚ƒãªã„ï¼",
         },
         {
-            "Ž„‚Å‚·‚ç’B¬‚Å‚«‚È‚¢‚Ì‚ÉC‚ ‚È‚½‚É’B¬‚Å‚«‚ÄH",
-            "‚ ‚È‚½‚ª¬Œ÷‚·‚é‚È‚ñ‚Ä‚ ‚è‚¦‚Ü‚¹‚ñ‚íD",
-            "–¼—_‚ÍŽ„‚ÉI‚ ‚È‚½‚É‚È‚ñ‚Ä‚Æ‚ñ‚Å‚à‚È‚¢D",
+            "ç§ã§ã™ã‚‰é”æˆã§ããªã„ã®ã«ï¼Œã‚ãªãŸã«é”æˆã§ãã¦ï¼Ÿ",
+            "ã‚ãªãŸãŒæˆåŠŸã™ã‚‹ãªã‚“ã¦ã‚ã‚Šãˆã¾ã›ã‚“ã‚ï¼Ž",
+            "åèª‰ã¯ç§ã«ï¼ã‚ãªãŸã«ãªã‚“ã¦ã¨ã‚“ã§ã‚‚ãªã„ï¼Ž",
         }
     },
     *other_class_msg[2][3] = {
         {
-            "‰ºO‚ª˜b‚µ‚©‚¯‚é‚©H‚Í‚Í[‚ñH",
-            "í‚¦I‚±‚Ì–ì˜YI",
-            "‚¨‘O‚Æ˜b‚·‚±‚Æ‚È‚Ç‚È‚É‚à‚È‚¢I",
+            "ä¸‹è¡†ãŒè©±ã—ã‹ã‘ã‚‹ã‹ï¼Ÿã¯ã¯ãƒ¼ã‚“ï¼Ÿ",
+            "æˆ¦ãˆï¼ã“ã®é‡ŽéƒŽï¼",
+            "ãŠå‰ã¨è©±ã™ã“ã¨ãªã©ãªã«ã‚‚ãªã„ï¼",
         },
         {
-            "Ž„‚Æ˜b‚µ‚½‚¢‚Å‚·‚Á‚ÄH",
-            "Œ•‚ðŽæ‚è‚È‚³‚¢I",
-            "‚ ‚È‚½‚Æ˜b‚·‚±‚Æ‚È‚Ç‚ ‚è‚Ü‚¹‚ñ‚íI",
+            "ç§ã¨è©±ã—ãŸã„ã§ã™ã£ã¦ï¼Ÿ",
+            "å‰£ã‚’å–ã‚Šãªã•ã„ï¼",
+            "ã‚ãªãŸã¨è©±ã™ã“ã¨ãªã©ã‚ã‚Šã¾ã›ã‚“ã‚ï¼",
         }
     };
     int female;
@@ -416,7 +416,7 @@ register struct monst *mtmp;
                              : other_class_msg[rn2(3)]);
 #else
     female = (mtmp->female ? 1 : 0);
-    pline("˜b‚·H -- %s", (mtmp->data == &mons[urole.malenum]
+    pline("è©±ã™ï¼Ÿ -- %s", (mtmp->data == &mons[urole.malenum]
                           || mtmp->data == &mons[urole.femalenum])
           ? same_class_msg[female][rn2(3)]
           : other_class_msg[female][rn2(3)]);

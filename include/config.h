@@ -184,7 +184,7 @@
  */
 
 #ifndef WIZARD_NAME /* allow for compile-time or Makefile changes */
-#define WIZARD_NAME "wizard" /* value is ignored if SYSCF is enabled */
+#define WIZARD_NAME "wizard uruwi megumin" /* value is ignored if SYSCF is enabled */
 #endif
 
 #ifndef SYSCF

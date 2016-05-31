@@ -190,7 +190,7 @@ doread()
 /*JP
             You("break up the cookie and throw away the pieces.");
 */
-            You("ƒNƒbƒL[‚ğŠ„‚èC‚©‚¯‚ç‚ğ“Š‚°‚·‚Ä‚½D");
+            You("ã‚¯ãƒƒã‚­ãƒ¼ã‚’å‰²ã‚Šï¼Œã‹ã‘ã‚‰ã‚’æŠ•ã’ã™ã¦ãŸï¼");
         outrumor(bcsign(scroll), BY_COOKIE);
         if (!Blind)
             u.uconduct.literate++;
@@ -202,7 +202,7 @@ doread()
 /*JP
             You_cant("feel any Braille writing.");
 */
-            You("“_š‚Í‚Ç‚¤‚à‘‚¢‚Ä‚È‚¢‚æ‚¤‚¾D");
+            You("ç‚¹å­—ã¯ã©ã†ã‚‚æ›¸ã„ã¦ãªã„ã‚ˆã†ã ï¼");
             return 0;
         }
         /* can't read shirt worn under suit (under cloak is ok though) */
@@ -212,7 +212,7 @@ doread()
                   scroll->unpaid ? "That" : "Your", shk_your(buf, uarm),
                   suit_simple_name(uarm));
 #else
-            pline("ƒVƒƒƒc‚Í%s‚Å‰B‚³‚ê‚Ä‚¢‚éD",
+            pline("ã‚·ãƒ£ãƒ„ã¯%sã§éš ã•ã‚Œã¦ã„ã‚‹ï¼",
                   suit_simple_name(uarm));
 #endif
             return 0;
@@ -222,12 +222,12 @@ doread()
 /*JP
             pline("It reads:");
 */
-            pline("‚»‚ê‚ğ“Ç‚ñ‚¾F");
+            pline("ãã‚Œã‚’èª­ã‚“ã ï¼š");
 #if 0 /*JP*/
         pline("\"%s\"", (scroll->otyp == T_SHIRT) ? tshirt_text(scroll, buf)
                                                   : apron_text(scroll, buf));
 #else
-        pline("u%sv", (scroll->otyp == T_SHIRT) ? tshirt_text(scroll, buf)
+        pline("ã€Œ%sã€", (scroll->otyp == T_SHIRT) ? tshirt_text(scroll, buf)
                                                   : apron_text(scroll, buf));
 #endif
         return 1;
@@ -252,17 +252,17 @@ doread()
 /*JP
             You("feel the embossed numbers:");
 */
-            You("•‚‚«’¤‚è‚É‚³‚ê‚Ä‚¢‚é”Ô†‚ğŠ´‚¶‚½:");
+            You("æµ®ãå½«ã‚Šã«ã•ã‚Œã¦ã„ã‚‹ç•ªå·ã‚’æ„Ÿã˜ãŸ:");
         } else {
             if (flags.verbose)
 /*JP
                 pline("It reads:");
 */
-                pline("‚»‚ê‚ğ“Ç‚ñ‚¾F");
+                pline("ãã‚Œã‚’èª­ã‚“ã ï¼š");
 /*JP
             pline("\"%s\"",
 */
-            pline("u%sv",
+            pline("ã€Œ%sã€",
                   scroll->oartifact
                       ? card_msgs[SIZE(card_msgs) - 1]
                       : card_msgs[scroll->o_id % (SIZE(card_msgs) - 1)]);
@@ -278,25 +278,25 @@ doread()
 /*JP
         pline("This %s has no label.", singular(scroll, xname));
 */
-        pline("‚±‚Ì%s‚É‚Íƒ‰ƒxƒ‹‚ª‚È‚¢D", singular(scroll, xname));
+        pline("ã“ã®%sã«ã¯ãƒ©ãƒ™ãƒ«ãŒãªã„ï¼", singular(scroll, xname));
         return 0;
     } else if (scroll->otyp == MAGIC_MARKER) {
         if (Blind) {
 /*JP
             You_cant("feel any Braille writing.");
 */
-            You("“_š‚Í‚Ç‚¤‚à‘‚¢‚Ä‚È‚¢‚æ‚¤‚¾D");
+            You("ç‚¹å­—ã¯ã©ã†ã‚‚æ›¸ã„ã¦ãªã„ã‚ˆã†ã ï¼");
             return 0;
         }
         if (flags.verbose)
 /*JP
             pline("It reads:");
 */
-            pline("‚»‚ê‚ğ“Ç‚ñ‚¾F");
+            pline("ãã‚Œã‚’èª­ã‚“ã ï¼š");
 /*JP
         pline("\"Magic Marker(TM) Red Ink Marker Pen. Water Soluble.\"");
 */
-        pline("u–‚–@‚Ìƒ}[ƒJ(TM) ÔƒCƒ“ƒNƒ}[ƒJƒyƒ“D…«Dv");
+        pline("ã€Œé­”æ³•ã®ãƒãƒ¼ã‚«(TM) èµ¤ã‚¤ãƒ³ã‚¯ãƒãƒ¼ã‚«ãƒšãƒ³ï¼æ°´æ€§ï¼ã€");
         u.uconduct.literate++;
         return 1;
     } else if (scroll->oclass == COIN_CLASS) {
@@ -304,12 +304,12 @@ doread()
 /*JP
             You("feel the embossed words:");
 */
-            You("•‚‚«’¤‚è‚É‚³‚ê‚Ä‚¢‚é•¶š‚ğŠ´‚¶‚½:");
+            You("æµ®ãå½«ã‚Šã«ã•ã‚Œã¦ã„ã‚‹æ–‡å­—ã‚’æ„Ÿã˜ãŸ:");
         else if (flags.verbose)
 /*JP
             You("read:");
 */
-            pline("‚»‚ê‚ğ“Ç‚ñ‚¾F");
+            pline("ãã‚Œã‚’èª­ã‚“ã ï¼š");
         pline("\"1 Zorkmid. 857 GUE. In Frobs We Trust.\"");
         u.uconduct.literate++;
         return 1;
@@ -318,16 +318,16 @@ doread()
 /*JP
             You("feel the engraved signature:");
 */
-            You("’¤‚è‚Ü‚ê‚Ä‚¢‚éƒTƒCƒ“‚ğŠ´‚¶‚½F");
+            You("å½«ã‚Šè¾¼ã¾ã‚Œã¦ã„ã‚‹ã‚µã‚¤ãƒ³ã‚’æ„Ÿã˜ãŸï¼š");
         else
 /*JP
             pline("It is signed:");
 */
-            pline("ƒTƒCƒ“‚ª‚ ‚éF");
+            pline("ã‚µã‚¤ãƒ³ãŒã‚ã‚‹ï¼š");
 /*JP
         pline("\"Odin.\"");
 */
-        pline("uƒI[ƒfƒBƒ“v");
+        pline("ã€Œã‚ªãƒ¼ãƒ‡ã‚£ãƒ³ã€");
         u.uconduct.literate++;
         return 1;
     } else if (scroll->otyp == CANDY_BAR) {
@@ -345,13 +345,13 @@ doread()
 /*JP
             You_cant("feel any Braille writing.");
 */
-            You("“_š‚Í‚Ç‚¤‚à‘‚¢‚Ä‚È‚¢‚æ‚¤‚¾D");
+            You("ç‚¹å­—ã¯ã©ã†ã‚‚æ›¸ã„ã¦ãªã„ã‚ˆã†ã ï¼");
             return 0;
         }
 /*JP
         pline("The wrapper reads: \"%s\"",
 */
-        pline("•ï‚İ†‚Ì•¶š‚ğ“Ç‚ñ‚¾Fu%sv",
+        pline("åŒ…ã¿ç´™ã®æ–‡å­—ã‚’èª­ã‚“ã ï¼šã€Œ%sã€",
               wrapper_msgs[scroll->o_id % SIZE(wrapper_msgs)]);
         u.uconduct.literate++;
         return 1;
@@ -360,7 +360,7 @@ doread()
 /*JP
         pline(silly_thing_to, "read");
 */
-        pline(silly_thing_to, "“Ç‚Ş");
+        pline(silly_thing_to, "èª­ã‚€");
         return 0;
     } else if (Blind && (scroll->otyp != SPE_BOOK_OF_THE_DEAD)) {
         const char *what = 0;
@@ -368,17 +368,17 @@ doread()
 /*JP
             what = "mystic runes";
 */
-            what = "_”é“I‚Èƒ‹[ƒ“•¶š";
+            what = "ç¥ç§˜çš„ãªãƒ«ãƒ¼ãƒ³æ–‡å­—";
         else if (!scroll->dknown)
 /*JP
             what = "formula on the scroll";
 */
-            what = "Šª•¨‚Ìô•¶";
+            what = "å·»ç‰©ã®å‘ªæ–‡";
         if (what) {
 /*JP
             pline("Being blind, you cannot read the %s.", what);
 */
-            pline("–Ú‚ªŒ©‚¦‚È‚¢‚Ì‚ÅC‚ ‚È‚½‚Í%s‚ğ“Ç‚Ş‚±‚Æ‚ª‚Å‚«‚È‚¢D", what);
+            pline("ç›®ãŒè¦‹ãˆãªã„ã®ã§ï¼Œã‚ãªãŸã¯%sã‚’èª­ã‚€ã“ã¨ãŒã§ããªã„ï¼", what);
             return 0;
         }
     }
@@ -428,31 +428,31 @@ doread()
                   is_silent(youmonst.data) ? "cogitate" : "pronounce");
 #else
             pline(nodisappear
-                      ? "‚ ‚È‚½‚Íô•¶‚ğ%s‚½D"
-                      : "ô•¶‚ğ%s‚é‚ÆCŠª•¨‚ÍÁ‚¦‚½D",
-                  is_silent(youmonst.data) ? "”O‚¶" : "¥‚¦");
+                      ? "ã‚ãªãŸã¯å‘ªæ–‡ã‚’%sãŸï¼"
+                      : "å‘ªæ–‡ã‚’%sã‚‹ã¨ï¼Œå·»ç‰©ã¯æ¶ˆãˆãŸï¼",
+                  is_silent(youmonst.data) ? "å¿µã˜" : "å”±ãˆ");
 #endif
         else
 #if 0 /*JP*/
             pline(nodisappear ? "You read the scroll."
                               : "As you read the scroll, it disappears.");
 #else
-            pline(nodisappear ? "‚ ‚È‚½‚ÍŠª•¨‚ğ“Ç‚ñ‚¾D"
-                              : "Šª•¨‚ğ“Ç‚Ş‚ÆC‚»‚ê‚ÍÁ‚¦‚½D");
+            pline(nodisappear ? "ã‚ãªãŸã¯å·»ç‰©ã‚’èª­ã‚“ã ï¼"
+                              : "å·»ç‰©ã‚’èª­ã‚€ã¨ï¼Œãã‚Œã¯æ¶ˆãˆãŸï¼");
 #endif
         if (confused) {
             if (Hallucination)
 /*JP
                 pline("Being so trippy, you screw up...");
 */
-                pline("‚Æ‚Ä‚à‚Ö‚ë‚Ö‚ë‚È‚Ì‚ÅC‚­‚µ‚á‚­‚µ‚á‚É‚µ‚Ä‚µ‚Ü‚Á‚½DDD");
+                pline("ã¨ã¦ã‚‚ã¸ã‚ã¸ã‚ãªã®ã§ï¼Œãã—ã‚ƒãã—ã‚ƒã«ã—ã¦ã—ã¾ã£ãŸï¼ï¼ï¼");
             else
 #if 0 /*JP*/
                 pline("Being confused, you %s the magic words...",
                       is_silent(youmonst.data) ? "misunderstand"
                                                : "mispronounce");
 #else
-                pline("¬—‚µ‚Ä‚¢‚é‚Ì‚ÅCô•¶‚ğŠÔˆá‚Á‚Ä‚µ‚Ü‚Á‚½DDD");
+                pline("æ··ä¹±ã—ã¦ã„ã‚‹ã®ã§ï¼Œå‘ªæ–‡ã‚’é–“é•ã£ã¦ã—ã¾ã£ãŸï¼ï¼ï¼");
 #endif
         }
     }
@@ -481,7 +481,7 @@ register struct obj *obj;
 /*JP
         pline("%s briefly.", Yobjnam2(obj, "vibrate"));
 */
-        Your("%s‚Í¬‚İ‚ÉU“®‚µ‚½D",xname(obj));
+        Your("%sã¯å°åˆ»ã¿ã«æŒ¯å‹•ã—ãŸï¼",xname(obj));
         costly_alteration(obj, COST_UNCHRG);
         obj->spe = 0;
         if (obj->otyp == OIL_LAMP || obj->otyp == BRASS_LANTERN)
@@ -496,7 +496,7 @@ register struct obj *otmp;
 /*JP
     pline("%s briefly.", Yobjnam2(otmp, Blind ? "vibrate" : "glow"));
 */
-    Your("%s‚Í¬‚İ‚É%sD", xname(otmp), Blind ? "U“®‚µ‚½" : "‹P‚¢‚½");
+    Your("%sã¯å°åˆ»ã¿ã«%sï¼", xname(otmp), Blind ? "æŒ¯å‹•ã—ãŸ" : "è¼ã„ãŸ");
 }
 
 STATIC_OVL void
@@ -508,9 +508,9 @@ register const char *color;
     pline("%s%s%s for a moment.", Yobjnam2(otmp, Blind ? "vibrate" : "glow"),
           Blind ? "" : " ", Blind ? "" : hcolor(color));
 #else
-    Your("%s‚Íˆêu%s%sD", xname(otmp),
+    Your("%sã¯ä¸€ç¬%s%sï¼", xname(otmp),
          Blind ? "" : jconj_adj(hcolor(color)),
-         Blind ? "U“®‚µ‚½" : "‹P‚¢‚½");
+         Blind ? "æŒ¯å‹•ã—ãŸ" : "è¼ã„ãŸ");
 #endif
 }
 
@@ -618,7 +618,7 @@ int curse_bless;
             pline("%s momentarily, then %s!", Yobjnam2(obj, "pulsate"),
                   otense(obj, "explode"));
 #else
-            Your("%s‚Íˆêu–¬“®‚µC”š”­‚µ‚½I", xname(obj));
+            Your("%sã¯ä¸€ç¬è„ˆå‹•ã—ï¼Œçˆ†ç™ºã—ãŸï¼", xname(obj));
 #endif
             if (is_on)
                 Ring_gone(obj);
@@ -627,7 +627,7 @@ int curse_bless;
 /*JP
             losehp(Maybe_Half_Phys(s), "exploding ring", KILLED_BY_AN);
 */
-            losehp(Maybe_Half_Phys(s), "w—Ö‚Ì”š”­‚Å", KILLED_BY_AN);
+            losehp(Maybe_Half_Phys(s), "æŒ‡è¼ªã®çˆ†ç™ºã§", KILLED_BY_AN);
         } else {
             long mask = is_on ? (obj == uleft ? LEFT_RING : RIGHT_RING) : 0L;
 
@@ -635,8 +635,8 @@ int curse_bless;
             pline("%s spins %sclockwise for a moment.", Yname2(obj),
                   s < 0 ? "counter" : "");
 #else
-            Your("%s‚Íˆêu%sŒv‰ñ‚è‚É‰ñ“]‚µ‚½D", xname(obj),
-                 s < 0 ? "”½" : "");
+            Your("%sã¯ä¸€ç¬%sæ™‚è¨ˆå›ã‚Šã«å›è»¢ã—ãŸï¼", xname(obj),
+                 s < 0 ? "å" : "");
 #endif
             if (s < 0)
                 costly_alteration(obj, COST_DECHNT);
@@ -685,7 +685,7 @@ int curse_bless;
 /*JP
                     Your("marker seems permanently dried out.");
 */
-                    Your("ƒ}[ƒJ‚ÍŠ®‘S‚ÉŠ£‚«‚«‚Á‚Ä‚µ‚Ü‚Á‚½D");
+                    Your("ãƒãƒ¼ã‚«ã¯å®Œå…¨ã«ä¹¾ããã£ã¦ã—ã¾ã£ãŸï¼");
                 else
                     pline1(nothing_happens);
             } else if (is_blessed) {
@@ -725,7 +725,7 @@ int curse_bless;
 #if 0 /*JP*/
                         pline("%s out!", Tobjnam(obj, "go"));
 #else
-                        pline("%s‚ÍÁ‚¦‚½I", xname(obj));
+                        pline("%sã¯æ¶ˆãˆãŸï¼", xname(obj));
 #endif
                     end_burn(obj, TRUE);
                 }
@@ -805,7 +805,7 @@ int curse_bless;
 /*JP
         You("have a feeling of loss.");
 */
-        You("‚È‚É‚©‘¹‚µ‚½‹C•ª‚É‚È‚Á‚½D");
+        You("ãªã«ã‹æã—ãŸæ°—åˆ†ã«ãªã£ãŸï¼");
     }
 }
 
@@ -1055,7 +1055,7 @@ boolean showmsg;
 /*JP
             You("smell rotten eggs.");
 */
-            pline("‚­‚³‚Á‚½—‘‚Ì‚É‚¨‚¢‚ª‚µ‚½D");
+            pline("ãã•ã£ãŸåµã®ã«ãŠã„ãŒã—ãŸï¼");
         return FALSE;
     }
     return TRUE;
@@ -1109,7 +1109,7 @@ struct obj *sobj; /* scroll, or fake spellbook object for scroll-like spell */
 /*JP
     "This seems to be junk mail addressed to the finder of the Eye of Larn.");
 */
-    "Eye of Larn‚Ì”­Œ©Ò‚Éˆ¶‚Ä‚ç‚ê‚½ƒSƒ~ƒƒCƒ‹‚Ì‚æ‚¤‚¾D");
+    "Eye of Larnã®ç™ºè¦‹è€…ã«å®›ã¦ã‚‰ã‚ŒãŸã‚´ãƒŸãƒ¡ã‚¤ãƒ«ã®ã‚ˆã†ã ï¼");
         /* note to the puzzled: the game Larn actually sends you junk
          * mail if you win!
          */
@@ -1130,8 +1130,8 @@ struct obj *sobj; /* scroll, or fake spellbook object for scroll-like spell */
                                       : "Your skin feels warm for a moment.");
 #else
             strange_feeling(sobj, !Blind
-                            ? "‚ ‚È‚½‚Ì‘Ì‚Íˆêu‹P‚¢‚½D"
-                            : "‚ ‚È‚½‚Ì‘Ì‚Íˆêu’g‚©‚­‚È‚Á‚½D");
+                            ? "ã‚ãªãŸã®ä½“ã¯ä¸€ç¬è¼ã„ãŸï¼"
+                            : "ã‚ãªãŸã®ä½“ã¯ä¸€ç¬æš–ã‹ããªã£ãŸï¼");
 #endif
             sobj = 0; /* useup() in strange_feeling() */
             exercise(A_CON, !scursed);
@@ -1147,7 +1147,7 @@ struct obj *sobj; /* scroll, or fake spellbook object for scroll-like spell */
 /*JP
                 pline("%s warm for a moment.", Yobjnam2(otmp, "feel"));
 */
-                Your("%s‚Íˆêu’g‚©‚­‚È‚Á‚½D", xname(otmp));
+                Your("%sã¯ä¸€ç¬æš–ã‹ããªã£ãŸï¼", xname(otmp));
             } else {
                 otmp->rknown = TRUE;
 #if 0 /*JP*/
@@ -1157,11 +1157,11 @@ struct obj *sobj; /* scroll, or fake spellbook object for scroll-like spell */
                       scursed ? "glow"
                               : (is_shield(otmp) ? "layer" : "shield"));
 #else
-                Your("%s‚Í%s%s%s‚Å•¢‚í‚ê‚½I", xname(otmp),
+                Your("%sã¯%s%s%sã§è¦†ã‚ã‚ŒãŸï¼", xname(otmp),
                      jconj_adj(hcolor(scursed ? NH_BLACK : NH_GOLDEN)),
-                     scursed ? "Œõ‚é‚Ü‚¾‚ç‚Ì" : "‚ä‚ç‚ß‚­",
-                     scursed ? "‹P‚«"
-                             : "ƒoƒŠƒA");
+                     scursed ? "å…‰ã‚‹ã¾ã ã‚‰ã®" : "ã‚†ã‚‰ã‚ã",
+                     scursed ? "è¼ã"
+                             : "ãƒãƒªã‚¢");
 #endif
             }
             if (new_erodeproof && (otmp->oeroded || otmp->oeroded2)) {
@@ -1170,7 +1170,7 @@ struct obj *sobj; /* scroll, or fake spellbook object for scroll-like spell */
                 pline("%s as good as new!",
                       Yobjnam2(otmp, Blind ? "feel" : "look"));
 #else
-                Your("%s‚ÍV•i“¯—l‚É‚È‚Á‚½I",
+                Your("%sã¯æ–°å“åŒæ§˜ã«ãªã£ãŸï¼",
                      xname(otmp));
 #endif
             }
@@ -1207,9 +1207,9 @@ struct obj *sobj; /* scroll, or fake spellbook object for scroll-like spell */
                                                               : NH_SILVER),
                   otense(otmp, "evaporate"));
 #else
-            Your("%s‚Í‚µ‚Î‚ç‚­‚ÌŠÔŒƒ‚µ‚­%s%sCö”­‚µ‚½D", xname(otmp),
+            Your("%sã¯ã—ã°ã‚‰ãã®é–“æ¿€ã—ã%s%sï¼Œè’¸ç™ºã—ãŸï¼", xname(otmp),
                  (Blind || same_color) ? "" : jconj_adj(hcolor(scursed ? NH_BLACK : NH_SILVER)),
-                 Blind ? "U“®‚µ" : "‹P‚«");
+                 Blind ? "æŒ¯å‹•ã—" : "è¼ã");
 #endif
             remove_worn_item(otmp, FALSE);
             useup(otmp);
@@ -1223,7 +1223,7 @@ struct obj *sobj; /* scroll, or fake spellbook object for scroll-like spell */
 /*JP
             pline("%s merges and hardens!", Yname2(otmp));
 */
-            Your("%s‚Í—Z‡‚µŒÅ‚­‚È‚Á‚½I", xname(otmp));
+            Your("%sã¯èåˆã—å›ºããªã£ãŸï¼", xname(otmp));
             setworn((struct obj *) 0, W_ARM);
             /* assumes same order */
             otmp->otyp += GRAY_DRAGON_SCALE_MAIL - GRAY_DRAGON_SCALES;
@@ -1248,12 +1248,12 @@ struct obj *sobj; /* scroll, or fake spellbook object for scroll-like spell */
                                     : hcolor(scursed ? NH_BLACK : NH_SILVER),
               (s * s > 1) ? "while" : "moment");
 #else
-        Your("%s‚Í%s%s%s%sD", xname(otmp),
-             (s * s > 1) ? "‚µ‚Î‚ç‚­‚ÌŠÔ" : "ˆêu",
-             s == 0 ? "Œƒ‚µ‚­" : "",
+        Your("%sã¯%s%s%s%sï¼", xname(otmp),
+             (s * s > 1) ? "ã—ã°ã‚‰ãã®é–“" : "ä¸€ç¬",
+             s == 0 ? "æ¿€ã—ã" : "",
              (Blind || same_color) ? ""
                                    : jconj_adj(hcolor(sobj->cursed ? NH_BLACK : NH_SILVER)),
-             Blind ? "U“®‚µ‚½" : "‹P‚¢‚½");
+             Blind ? "æŒ¯å‹•ã—ãŸ" : "è¼ã„ãŸ");
 #endif
         /* [this cost handling will need updating if shop pricing is
            ever changed to care about curse/bless status of armor] */
@@ -1278,8 +1278,8 @@ struct obj *sobj; /* scroll, or fake spellbook object for scroll-like spell */
             pline("%s %s.", Yobjnam2(otmp, "suddenly vibrate"),
                   Blind ? "again" : "unexpectedly");
 #else
-            Your("%s‚Í“Ë‘R%sU“®‚µ‚½D", xname(otmp),
-                 Blind ? "‚Ü‚½" : "v‚¢‚à‚æ‚ç‚¸");
+            Your("%sã¯çªç„¶%sæŒ¯å‹•ã—ãŸï¼", xname(otmp),
+                 Blind ? "ã¾ãŸ" : "æ€ã„ã‚‚ã‚ˆã‚‰ãš");
 #endif
         break;
     }
@@ -1290,7 +1290,7 @@ struct obj *sobj; /* scroll, or fake spellbook object for scroll-like spell */
 /*JP
                 strange_feeling(sobj, "Your bones itch.");
 */
-                strange_feeling(sobj, "œ‚ªƒ€ƒYƒ€ƒY‚·‚éD");
+                strange_feeling(sobj, "éª¨ãŒãƒ ã‚ºãƒ ã‚ºã™ã‚‹ï¼");
                 sobj = 0; /* useup() in strange_feeling() */
                 exercise(A_STR, FALSE);
                 exercise(A_CON, FALSE);
@@ -1313,7 +1313,7 @@ struct obj *sobj; /* scroll, or fake spellbook object for scroll-like spell */
 /*JP
                 strange_feeling(sobj, "Your skin itches.");
 */
-                strange_feeling(sobj,"”ç•†‚ªƒ€ƒYƒ€ƒY‚·‚éD");
+                strange_feeling(sobj,"çš®è†šãŒãƒ ã‚ºãƒ ã‚ºã™ã‚‹ï¼");
                 sobj = 0; /* useup() in strange_feeling() */
                 exercise(A_STR, FALSE);
                 exercise(A_CON, FALSE);
@@ -1324,7 +1324,7 @@ struct obj *sobj; /* scroll, or fake spellbook object for scroll-like spell */
 /*JP
             pline("%s.", Yobjnam2(otmp, "vibrate"));
 */
-            Your("%s‚ÍU“®‚µ‚½D", xname(otmp));
+            Your("%sã¯æŒ¯å‹•ã—ãŸï¼", xname(otmp));
             if (otmp->spe >= -6) {
                 otmp->spe += -1;
                 adj_abon(otmp, -1);
@@ -1348,9 +1348,9 @@ struct obj *sobj; /* scroll, or fake spellbook object for scroll-like spell */
                      Blind ? "tingle" : "glow ",
                      Blind ? "" : hcolor(NH_PURPLE));
 #else
-                Your("%s‚Í%s%s‚Í‚¶‚ß‚½D", makeplural(body_part(HAND)),
+                Your("%sã¯%s%sã¯ã˜ã‚ãŸï¼", makeplural(body_part(HAND)),
                      Blind ? "" : jconj_adj(hcolor(NH_PURPLE)),
-                     Blind ? "ƒqƒŠƒqƒŠ‚µ" : "‹P‚«");
+                     Blind ? "ãƒ’ãƒªãƒ’ãƒªã—" : "è¼ã");
 #endif
                 make_confused(HConfusion + rnd(100), FALSE);
             } else {
@@ -1359,9 +1359,9 @@ struct obj *sobj; /* scroll, or fake spellbook object for scroll-like spell */
                       Blind ? "" : hcolor(NH_RED),
                       Blind ? "faint buzz" : " glow", body_part(HEAD));
 #else
-                pline("%s%s‚ª‚ ‚È‚½‚Ì%s‚ğæ‚èŠª‚¢‚½D",
+                pline("%s%sãŒã‚ãªãŸã®%sã‚’å–ã‚Šå·»ã„ãŸï¼",
                       Blind ? "" : jconj_adj(hcolor(NH_RED)),
-                      Blind ? "‚©‚·‚©‚Éƒu[ƒ“‚Æ–Â‚é‚à‚Ì" : "‹P‚­‚à‚Ì",
+                      Blind ? "ã‹ã™ã‹ã«ãƒ–ãƒ¼ãƒ³ã¨é³´ã‚‹ã‚‚ã®" : "è¼ãã‚‚ã®",
                       body_part(HEAD));
 #endif
                 make_confused(0L, TRUE);
@@ -1374,10 +1374,10 @@ struct obj *sobj; /* scroll, or fake spellbook object for scroll-like spell */
                      Blind ? (const char *) "tingle" : hcolor(NH_RED),
                      u.umconf ? " even more" : "");
 #else
-                Your("%s‚Í%s%s%sD", makeplural(body_part(HAND)),
-                     u.umconf ? "­‚µ" : "",
-                     Blind ? (const char *) "ƒqƒŠƒqƒŠ‚µ‚½" : jconj_adj(hcolor(NH_RED)),
-                     Blind ? "" : "‹P‚«‚Í‚¶‚ß‚½");
+                Your("%sã¯%s%s%sï¼", makeplural(body_part(HAND)),
+                     u.umconf ? "å°‘ã—" : "",
+                     Blind ? (const char *) "ãƒ’ãƒªãƒ’ãƒªã—ãŸ" : jconj_adj(hcolor(NH_RED)),
+                     Blind ? "" : "è¼ãã¯ã˜ã‚ãŸ");
 #endif
                 u.umconf++;
             } else {
@@ -1386,8 +1386,8 @@ struct obj *sobj; /* scroll, or fake spellbook object for scroll-like spell */
                     Your("%s tingle %s sharply.", makeplural(body_part(HAND)),
                          u.umconf ? "even more" : "very");
 #else
-                    Your("%s‚Í%sƒsƒŠƒsƒŠ‚·‚éD", makeplural(body_part(HAND)),
-                         u.umconf ? "­‚µ" : "‚Æ‚Ä‚à");
+                    Your("%sã¯%sãƒ”ãƒªãƒ”ãƒªã™ã‚‹ï¼", makeplural(body_part(HAND)),
+                         u.umconf ? "å°‘ã—" : "ã¨ã¦ã‚‚");
 #endif
                 else
 #if 0 /*JP*/
@@ -1395,9 +1395,9 @@ struct obj *sobj; /* scroll, or fake spellbook object for scroll-like spell */
                          makeplural(body_part(HAND)),
                          u.umconf ? "n even more" : "", hcolor(NH_RED));
 #else
-                    Your("%s‚Í%s%s–¾‚é‚­‹P‚¢‚½D",
+                    Your("%sã¯%s%sæ˜ã‚‹ãè¼ã„ãŸï¼",
                          makeplural(body_part(HAND)),
-                         u.umconf ? "­‚µ" : "", jconj_adj(hcolor(NH_RED)));
+                         u.umconf ? "å°‘ã—" : "", jconj_adj(hcolor(NH_RED)));
 #endif
                 /* after a while, repeated uses become less effective */
                 if (u.umconf >= 40)
@@ -1431,9 +1431,9 @@ struct obj *sobj; /* scroll, or fake spellbook object for scroll-like spell */
                                                      : "maniacal laughter",
                      !ct ? "in the distance" : "close by");
 #else
-            You_hear("‰“‚­‚Å%s‚ğ•·‚¢‚½D",
-                     (confused || sobj->cursed) ? "”ß‚µ‚­‹ƒ‚«‹©‚Ôº"
-                                                : "‹¶‚Á‚½‚æ‚¤‚ÉÎ‚¤º");
+            You_hear("é ãã§%sã‚’èã„ãŸï¼",
+                     (confused || sobj->cursed) ? "æ‚²ã—ãæ³£ãå«ã¶å£°"
+                                                : "ç‹‚ã£ãŸã‚ˆã†ã«ç¬‘ã†å£°");
 #endif
         break;
     }
@@ -1442,12 +1442,12 @@ struct obj *sobj; /* scroll, or fake spellbook object for scroll-like spell */
 /*JP
             You("don't remember there being any magic words on this scroll.");
 */
-            You("Šª•¨‚Éô•¶‚ª‘‚¢‚Ä‚È‚©‚Á‚½‚±‚Æ‚ğv‚¢‚¾‚µ‚½D");
+            You("å·»ç‰©ã«å‘ªæ–‡ãŒæ›¸ã„ã¦ãªã‹ã£ãŸã“ã¨ã‚’æ€ã„ã ã—ãŸï¼");
         else
 /*JP
             pline("This scroll seems to be blank.");
 */
-            pline("‚±‚ÌŠª•¨‚É‚Í‰½‚à‘‚¢‚Ä‚È‚¢‚æ‚¤‚ÉŒ©‚¦‚éD");
+            pline("ã“ã®å·»ç‰©ã«ã¯ä½•ã‚‚æ›¸ã„ã¦ãªã„ã‚ˆã†ã«è¦‹ãˆã‚‹ï¼");
         known = TRUE;
         break;
     case SCR_REMOVE_CURSE:
@@ -1462,17 +1462,17 @@ struct obj *sobj; /* scroll, or fake spellbook object for scroll-like spell */
                                   : "the power of the Force against you!"));
 #else
         You(!Hallucination
-            ? (!confused ? "’N‚©‚ª‚ ‚È‚½‚ğ•‚¯‚Ä‚¢‚é‚æ‚¤‚È‹C‚ª‚µ‚½D"
-                         : "©•ª‚ª•‚¯‚ğ•K—v‚Æ‚µ‚Ä‚¢‚é‚æ‚¤‚È‹C‚ª‚µ‚½D")
-            : (!confused ? "‰F’ˆ’²˜a‚ÌŒ´—‚ÉG‚ê‚Ä‚¢‚é‚æ‚¤‚È‹C‚ª‚µ‚½D"
-                         : "ƒtƒH[ƒX‚Ì—Í‚ª‚ ‚È‚½‚É‚Í‚Ş‚©‚Á‚Ä‚¢‚é‚æ‚¤‚ÉŠ´‚¶‚½I"));
+            ? (!confused ? "èª°ã‹ãŒã‚ãªãŸã‚’åŠ©ã‘ã¦ã„ã‚‹ã‚ˆã†ãªæ°—ãŒã—ãŸï¼"
+                         : "è‡ªåˆ†ãŒåŠ©ã‘ã‚’å¿…è¦ã¨ã—ã¦ã„ã‚‹ã‚ˆã†ãªæ°—ãŒã—ãŸï¼")
+            : (!confused ? "å®‡å®™èª¿å’Œã®åŸç†ã«è§¦ã‚Œã¦ã„ã‚‹ã‚ˆã†ãªæ°—ãŒã—ãŸï¼"
+                         : "ãƒ•ã‚©ãƒ¼ã‚¹ã®åŠ›ãŒã‚ãªãŸã«ã¯ã‚€ã‹ã£ã¦ã„ã‚‹ã‚ˆã†ã«æ„Ÿã˜ãŸï¼"));
 #endif
 
         if (scursed) {
 /*JP
             pline_The("scroll disintegrates.");
 */
-            pline("Šª•¨‚Í•²X‚É‚È‚Á‚½D");
+            pline("å·»ç‰©ã¯ç²‰ã€…ã«ãªã£ãŸï¼");
         } else {
             for (obj = invent; obj; obj = obj->nobj) {
                 long wornmask;
@@ -1536,7 +1536,7 @@ struct obj *sobj; /* scroll, or fake spellbook object for scroll-like spell */
 /*JP
             pline_The("clasp on your %s vanishes.", body_part(LEG));
 */
-            pline_The("%s‚Ì‹à‹ï‚ªÁ‚¦‚½D", body_part(LEG));
+            pline_The("%sã®é‡‘å…·ãŒæ¶ˆãˆãŸï¼", body_part(LEG));
         }
         update_inventory();
         break;
@@ -1564,7 +1564,7 @@ struct obj *sobj; /* scroll, or fake spellbook object for scroll-like spell */
 /*JP
                 Your("weapon feels warm for a moment.");
 */
-                pline("•Ší‚ªˆêu’g‚©‚­‚È‚Á‚½‚æ‚¤‚È‹C‚ª‚µ‚½D");
+                pline("æ­¦å™¨ãŒä¸€ç¬æš–ã‹ããªã£ãŸã‚ˆã†ãªæ°—ãŒã—ãŸï¼");
             } else {
                 uwep->rknown = TRUE;
 #if 0 /*JP*/
@@ -1573,10 +1573,10 @@ struct obj *sobj; /* scroll, or fake spellbook object for scroll-like spell */
                       hcolor(scursed ? NH_PURPLE : NH_GOLDEN),
                       scursed ? "glow" : "shield");
 #else
-                Your("%s‚Í%s%s%s‚Å•¢‚í‚ê‚½I", xname(uwep),
+                Your("%sã¯%s%s%sã§è¦†ã‚ã‚ŒãŸï¼", xname(uwep),
                      jconj_adj(hcolor(scursed ? NH_PURPLE : NH_GOLDEN)),
-                     scursed ? "Œõ‚é‚Ü‚¾‚ç‚Ì" : "‚ä‚ç‚ß‚­",
-                     scursed ? "‹P‚«" : "ƒoƒŠƒA");
+                     scursed ? "å…‰ã‚‹ã¾ã ã‚‰ã®" : "ã‚†ã‚‰ã‚ã",
+                     scursed ? "è¼ã" : "ãƒãƒªã‚¢");
 #endif
             }
             if (new_erodeproof && (uwep->oeroded || uwep->oeroded2)) {
@@ -1585,7 +1585,7 @@ struct obj *sobj; /* scroll, or fake spellbook object for scroll-like spell */
                 pline("%s as good as new!",
                       Yobjnam2(uwep, Blind ? "feel" : "look"));
 #else
-                pline("%s‚ÍV•i“¯—l‚É‚È‚Á‚½I", xname(uwep));
+                pline("%sã¯æ–°å“åŒæ§˜ã«ãªã£ãŸï¼", xname(uwep));
 #endif
             }
             if (old_erodeproof && !new_erodeproof) {
@@ -1649,7 +1649,7 @@ struct obj *sobj; /* scroll, or fake spellbook object for scroll-like spell */
 /*JP
             You("have found a scroll of genocide!");
 */
-            pline("‚±‚ê‚Í‹sE‚ÌŠª•¨‚¾I");
+            pline("ã“ã‚Œã¯è™æ®ºã®å·»ç‰©ã ï¼");
         known = TRUE;
         if (sblessed)
             do_class_genocide();
@@ -1700,14 +1700,14 @@ struct obj *sobj; /* scroll, or fake spellbook object for scroll-like spell */
 /*JP
             You("identify this as an identify scroll.");
 */
-            You("‚±‚ê‚Í¯•Ê‚ÌŠª•¨‚¾‚Æ¯•Ê‚µ‚½D");
+            You("ã“ã‚Œã¯è­˜åˆ¥ã®å·»ç‰©ã ã¨è­˜åˆ¥ã—ãŸï¼");
         else if (!already_known || !invent)
             /* force feedback now if invent became
                empty after using up this scroll */
 /*JP
             pline("This is an identify scroll.");
 */
-            pline("‚±‚ê‚Í¯•Ê‚ÌŠª•¨‚¾D");
+            pline("ã“ã‚Œã¯è­˜åˆ¥ã®å·»ç‰©ã ï¼");
         if (!already_known)
             (void) learnscrolltyp(SCR_IDENTIFY);
         /*FALLTHRU*/
@@ -1734,13 +1734,13 @@ struct obj *sobj; /* scroll, or fake spellbook object for scroll-like spell */
 /*JP
                 You_feel("discharged.");
 */
-                You_feel("•úo‚³‚ê‚½‹C‚ª‚·‚éD");
+                You_feel("æ”¾å‡ºã•ã‚ŒãŸæ°—ãŒã™ã‚‹ï¼");
                 u.uen = 0;
             } else {
 /*JP
                 You_feel("charged up!");
 */
-                You_feel("[“U‚³‚ê‚½‚æ‚¤‚È‹C‚ª‚·‚éI");
+                You_feel("å……å¡«ã•ã‚ŒãŸã‚ˆã†ãªæ°—ãŒã™ã‚‹ï¼");
                 u.uen += d(sblessed ? 6 : 4, 4);
                 if (u.uen > u.uenmax) /* if current energy is already at   */
                     u.uenmax = u.uen; /* or near maximum, increase maximum */
@@ -1755,7 +1755,7 @@ struct obj *sobj; /* scroll, or fake spellbook object for scroll-like spell */
 /*JP
             pline("This is a charging scroll.");
 */
-            pline("‚±‚ê‚Í[“U‚ÌŠª•¨‚¾I");
+            pline("ã“ã‚Œã¯å……å¡«ã®å·»ç‰©ã ï¼");
             learnscroll(sobj);
         }
         /* use it up now to prevent it from showing in the
@@ -1772,17 +1772,17 @@ struct obj *sobj; /* scroll, or fake spellbook object for scroll-like spell */
 /*JP
             Your("mind is filled with crazy lines!");
 */
-            Your("S‚É‚½‚¾‚È‚ç‚ÊüIüIüI‚ª•‚‚Ñ‚ ‚ª‚Á‚½I");
+            Your("å¿ƒã«ãŸã ãªã‚‰ã¬ç·šï¼ç·šï¼ç·šï¼ãŒæµ®ã³ã‚ãŒã£ãŸï¼");
             if (Hallucination)
 /*JP
                 pline("Wow!  Modern art.");
 */
-                pline("ƒƒHIƒ‚ƒ_ƒ“ƒA[ƒg‚¾I");
+                pline("ãƒ¯ã‚©ï¼ãƒ¢ãƒ€ãƒ³ã‚¢ãƒ¼ãƒˆã ï¼");
             else
 /*JP
                 Your("%s spins in bewilderment.", body_part(HEAD));
 */
-                You("“–˜f‚µ‚Ä–Ú‚ª‚Ü‚í‚Á‚½D");
+                You("å½“æƒ‘ã—ã¦ç›®ãŒã¾ã‚ã£ãŸï¼");
             make_confused(HConfusion + rnd(30), FALSE);
             break;
         }
@@ -1802,7 +1802,7 @@ struct obj *sobj; /* scroll, or fake spellbook object for scroll-like spell */
             Your("%s spins as %s blocks the spell!", body_part(HEAD),
                  something);
 #else
-            You("‰½‚©‚ªô•¶‚ğ‚³‚¦‚¬‚èC–Ú‚ª‚Ü‚í‚Á‚½I");
+            You("ä½•ã‹ãŒå‘ªæ–‡ã‚’ã•ãˆãã‚Šï¼Œç›®ãŒã¾ã‚ã£ãŸï¼");
 #endif
             make_confused(HConfusion + rnd(30), FALSE);
             break;
@@ -1810,7 +1810,7 @@ struct obj *sobj; /* scroll, or fake spellbook object for scroll-like spell */
 /*JP
         pline("A map coalesces in your mind!");
 */
-        pline("’n}‚ª‚ ‚È‚½‚ÌS‚É—Z‡‚µ‚½I");
+        pline("åœ°å›³ãŒã‚ãªãŸã®å¿ƒã«èåˆã—ãŸï¼");
         cval = (scursed && !confused);
         if (cval)
             HConfusion = 1; /* to screw up map */
@@ -1820,7 +1820,7 @@ struct obj *sobj; /* scroll, or fake spellbook object for scroll-like spell */
 /*JP
             pline("Unfortunately, you can't grasp the details.");
 */
-            pline("c”O‚È‚ª‚çC‚ ‚È‚½‚ÍÚ×‚ğ“¾‚é‚±‚Æ‚ª‚Å‚«‚È‚©‚Á‚½D");
+            pline("æ®‹å¿µãªãŒã‚‰ï¼Œã‚ãªãŸã¯è©³ç´°ã‚’å¾—ã‚‹ã“ã¨ãŒã§ããªã‹ã£ãŸï¼");
         }
         break;
     case SCR_AMNESIA:
@@ -1831,23 +1831,23 @@ struct obj *sobj; /* scroll, or fake spellbook object for scroll-like spell */
 /*JP
             Your("mind releases itself from mundane concerns.");
 */
-            Your("S‚Í•½–}‚È—˜ŠQŠÖŒW‚©‚ç‰ğ•ú‚³‚ê‚½D");
+            Your("å¿ƒã¯å¹³å‡¡ãªåˆ©å®³é–¢ä¿‚ã‹ã‚‰è§£æ”¾ã•ã‚ŒãŸï¼");
         else if (!strncmpi(plname, "Maud", 4))
             pline(
 /*JP
           "As your mind turns inward on itself, you forget everything else.");
 */
-          "‚ ‚È‚½‚ÌS‚Í“à‘¤‚ÉŒü‚«C‘S‚Ä‚ğ–Y‚ê‚Ä‚µ‚Ü‚Á‚½D");
+          "ã‚ãªãŸã®å¿ƒã¯å†…å´ã«å‘ãï¼Œå…¨ã¦ã‚’å¿˜ã‚Œã¦ã—ã¾ã£ãŸï¼");
         else if (rn2(2))
 /*JP
             pline("Who was that Maud person anyway?");
 */
-            pline("Maud‚Á‚Ä–º‚Í‚¢‚Á‚½‚¢’N‚¾‚¢H");
+            pline("Maudã£ã¦å¨˜ã¯ã„ã£ãŸã„èª°ã ã„ï¼Ÿ");
         else
 /*JP
             pline("Thinking of Maud you forget everything else.");
 */
-            pline("Maud‚ğl‚¦‚é‚±‚ÆˆÈŠOC‚ ‚È‚½‚Í‘S‚Ä‚ğ–Y‚ê‚Ä‚µ‚Ü‚Á‚½D");
+            pline("Maudã‚’è€ƒãˆã‚‹ã“ã¨ä»¥å¤–ï¼Œã‚ãªãŸã¯å…¨ã¦ã‚’å¿˜ã‚Œã¦ã—ã¾ã£ãŸï¼");
         exercise(A_WIS, FALSE);
         break;
     case SCR_FIRE:
@@ -1863,24 +1863,24 @@ struct obj *sobj; /* scroll, or fake spellbook object for scroll-like spell */
 /*JP
                     pline("Oh, look, what a pretty fire in your %s.",
 */
-                    pline("‚í‚Ÿ‚²‚ç‚ñD¬‚³‚È‰Î‚ª%s‚É‚ ‚éD",
+                    pline("ã‚ãã”ã‚‰ã‚“ï¼å°ã•ãªç«ãŒ%sã«ã‚ã‚‹ï¼",
                           makeplural(body_part(HAND)));
                 else
 /*JP
                     You_feel("a pleasant warmth in your %s.",
 */
-                    You_feel("%s‚Ì’†‚É‰õ“K‚È’g‚©‚³‚ğŠ´‚¶‚½D",
+                    You_feel("%sã®ä¸­ã«å¿«é©ãªæš–ã‹ã•ã‚’æ„Ÿã˜ãŸï¼",
                              makeplural(body_part(HAND)));
             } else {
 /*JP
                 pline_The("scroll catches fire and you burn your %s.",
 */
-                pline("Šª•¨‚É‰Î‚ª”R‚¦‚¤‚Â‚èC‚ ‚È‚½‚Ì%s‚ğÄ‚¢‚½D",
+                pline("å·»ç‰©ã«ç«ãŒç‡ƒãˆã†ã¤ã‚Šï¼Œã‚ãªãŸã®%sã‚’ç„¼ã„ãŸï¼",
                           makeplural(body_part(HAND)));
 /*JP
                 losehp(1, "scroll of fire", KILLED_BY_AN);
 */
-                losehp(1, "‰Š‚ÌŠª•¨‚Å", KILLED_BY_AN);
+                losehp(1, "ç‚ã®å·»ç‰©ã§", KILLED_BY_AN);
             }
             break;
         }
@@ -1888,12 +1888,12 @@ struct obj *sobj; /* scroll, or fake spellbook object for scroll-like spell */
 /*JP
             pline_The("water around you vaporizes violently!");
 */
-            pline("‚ ‚È‚½‚Ì‰ñ‚è‚Ì…‚Í•¦“«‚µ‚½I");
+            pline("ã‚ãªãŸã®å›ã‚Šã®æ°´ã¯æ²¸é¨°ã—ãŸï¼");
         } else {
 /*JP
             pline_The("scroll erupts in a tower of flame!");
 */
-            pline("Šª•¨‚©‚ç‰Î’Œ‚ª—§‚¿¸‚Á‚½I");
+            pline("å·»ç‰©ã‹ã‚‰ç«æŸ±ãŒç«‹ã¡æ˜‡ã£ãŸï¼");
             iflags.last_msg = PLNMSG_TOWER_OF_FLAME; /* for explode() */
             burn_away_slime();
         }
@@ -1912,14 +1912,14 @@ struct obj *sobj; /* scroll, or fake spellbook object for scroll-like spell */
 /*JP
                 You_hear("rumbling.");
 */
-                You_hear("ƒSƒƒSƒ‚Æ‚¢‚¤‰¹‚ğ•·‚¢‚½D");
+                You_hear("ã‚´ãƒ­ã‚´ãƒ­ã¨ã„ã†éŸ³ã‚’èã„ãŸï¼");
             else
 #if 0 /*JP*/
                 pline_The("%s rumbles %s you!", ceiling(u.ux, u.uy),
                           sblessed ? "around" : "above");
 #else
-                pline("‚ ‚È‚½‚Ì%s‚Ì%s‚©‚çƒSƒƒSƒ‚Æ‰¹‚ª•·‚±‚¦‚Ä‚«‚½I",
-                      sblessed ? "‚Ü‚í‚è" : "^ã", ceiling(u.ux,u.uy));
+                pline("ã‚ãªãŸã®%sã®%sã‹ã‚‰ã‚´ãƒ­ã‚´ãƒ­ã¨éŸ³ãŒèã“ãˆã¦ããŸï¼",
+                      sblessed ? "ã¾ã‚ã‚Š" : "çœŸä¸Š", ceiling(u.ux,u.uy));
 #endif
             known = 1;
             sokoban_guilt();
@@ -1951,7 +1951,7 @@ struct obj *sobj; /* scroll, or fake spellbook object for scroll-like spell */
 /*JP
             You_feel("guilty.");
 */
-            You("ß‚ğŠ´‚¶‚½D");
+            You("ç½ªã‚’æ„Ÿã˜ãŸï¼");
             break;
         }
         punish(sobj);
@@ -1963,13 +1963,13 @@ struct obj *sobj; /* scroll, or fake spellbook object for scroll-like spell */
 /*JP
             You("have found a scroll of stinking cloud!");
 */
-            You("ˆ«L‰_‚ÌŠª•¨‚ğ”­Œ©‚µ‚½I");
+            You("æ‚ªè‡­é›²ã®å·»ç‰©ã‚’ç™ºè¦‹ã—ãŸï¼");
         known = TRUE;
 #if 0 /*JP*/
         pline("Where do you want to center the %scloud?",
               already_known ? "stinking " : "");
 #else
-        pline("‰_‚Ì’†S‚ğ‚Ç‚±‚É‚µ‚Ü‚·‚©H");
+        pline("é›²ã®ä¸­å¿ƒã‚’ã©ã“ã«ã—ã¾ã™ã‹ï¼Ÿ");
 #endif
         cc.x = u.ux;
         cc.y = u.uy;
@@ -1977,7 +1977,7 @@ struct obj *sobj; /* scroll, or fake spellbook object for scroll-like spell */
 /*JP
         if (getpos(&cc, TRUE, "the desired position") < 0) {
 */
-        if (getpos(&cc, TRUE, "‘_‚¤êŠ") < 0) {
+        if (getpos(&cc, TRUE, "ç‹™ã†å ´æ‰€") < 0) {
             pline1(Never_mind);
             break;
         }
@@ -2016,21 +2016,21 @@ boolean confused, helmet_protects, byu, skip_uswallow;
 /*JP
         You("are hit by %s!", doname(otmp2));
 */
-        pline("%s‚ª–½’†‚µ‚½I", doname(otmp2));
+        pline("%sãŒå‘½ä¸­ã—ãŸï¼", doname(otmp2));
         dmg = dmgval(otmp2, &youmonst) * otmp2->quan;
         if (uarmh && helmet_protects) {
             if (is_metallic(uarmh)) {
 /*JP
                 pline("Fortunately, you are wearing a hard helmet.");
 */
-                pline("K‰^‚É‚àC‚ ‚È‚½‚ÍŒÅ‚¢Š•‚ğg‚É‚Â‚¯‚Ä‚¢‚éD");
+                pline("å¹¸é‹ã«ã‚‚ï¼Œã‚ãªãŸã¯å›ºã„å…œã‚’èº«ã«ã¤ã‘ã¦ã„ã‚‹ï¼");
                 if (dmg > 2)
                     dmg = 2;
             } else if (flags.verbose) {
 /*JP
                 pline("%s does not protect you.", Yname2(uarmh));
 */
-                Your("%s‚Å‚Íç‚ê‚È‚¢D", xname(uarmh));
+                Your("%sã§ã¯å®ˆã‚Œãªã„ï¼", xname(uarmh));
             }
         }
     } else
@@ -2039,7 +2039,7 @@ boolean confused, helmet_protects, byu, skip_uswallow;
 /*JP
     if (!flooreffects(otmp2, u.ux, u.uy, "fall")) {
 */
-    if (!flooreffects(otmp2, u.ux, u.uy, "—‚¿‚é")) {
+    if (!flooreffects(otmp2, u.ux, u.uy, "è½ã¡ã‚‹")) {
         place_object(otmp2, u.ux, u.uy);
         stackobj(otmp2);
         newsym(u.ux, u.uy);
@@ -2048,7 +2048,7 @@ boolean confused, helmet_protects, byu, skip_uswallow;
 /*JP
         losehp(Maybe_Half_Phys(dmg), "scroll of earth", KILLED_BY_AN);
 */
-        losehp(Maybe_Half_Phys(dmg), "‘å’n‚ÌŠª•¨‚Å", KILLED_BY_AN);
+        losehp(Maybe_Half_Phys(dmg), "å¤§åœ°ã®å·»ç‰©ã§", KILLED_BY_AN);
 }
 
 boolean
@@ -2077,7 +2077,7 @@ boolean confused, byu;
 /*JP
             pline("%s is hit by %s!", Monnam(mtmp), doname(otmp2));
 */
-            pline("%s‚ª%s‚É–½’†‚µ‚½I", doname(otmp2), Monnam(mtmp));
+            pline("%sãŒ%sã«å‘½ä¸­ã—ãŸï¼", doname(otmp2), Monnam(mtmp));
             if (mtmp->minvis && !canspotmon(mtmp))
                 map_invisible(mtmp->mx, mtmp->my);
         } else if (u.uswallow && mtmp == u.ustuck)
@@ -2092,13 +2092,13 @@ boolean confused, byu;
 /*JP
                     pline("Fortunately, %s is wearing a hard helmet.",
 */
-                    pline("K‰^‚É‚àC%s‚ÍŒÅ‚¢Š•‚ğg‚É‚Â‚¯‚Ä‚¢‚éD",
+                    pline("å¹¸é‹ã«ã‚‚ï¼Œ%sã¯å›ºã„å…œã‚’èº«ã«ã¤ã‘ã¦ã„ã‚‹ï¼",
                           mon_nam(mtmp));
                 else if (!Deaf)
 /*JP
                     You_hear("a clanging sound.");
 */
-                    You_hear("ƒKƒ‰ƒ“ƒKƒ‰ƒ“‚Æ‚¢‚¤‰¹‚ğ•·‚¢‚½D");
+                    You_hear("ã‚¬ãƒ©ãƒ³ã‚¬ãƒ©ãƒ³ã¨ã„ã†éŸ³ã‚’èã„ãŸï¼");
                 if (mdmg > 2)
                     mdmg = 2;
             } else {
@@ -2107,7 +2107,7 @@ boolean confused, byu;
                     pline("%s's %s does not protect %s.", Monnam(mtmp),
                           xname(helmet), mhim(mtmp));
 #else
-                    pline("%s‚Ì%s‚Å‚Íç‚ê‚È‚¢D", Monnam(mtmp),
+                    pline("%sã®%sã§ã¯å®ˆã‚Œãªã„ï¼", Monnam(mtmp),
                           xname(helmet));
 #endif
             }
@@ -2131,7 +2131,7 @@ boolean confused, byu;
 /*JP
     if (!flooreffects(otmp2, x, y, "fall")) {
 */
-    if (!flooreffects(otmp2, x, y, "—‚¿‚é")) {
+    if (!flooreffects(otmp2, x, y, "è½ã¡ã‚‹")) {
         place_object(otmp2, x, y);
         stackobj(otmp2);
         newsym(x, y); /* map the rock */
@@ -2148,7 +2148,7 @@ int chg; /* recharging */
 /*JP
     const char *expl = !chg ? "suddenly" : "vibrates violently and";
 */
-    const char *expl = !chg ? "“Ë‘R" : "Œƒ‚µ‚­U“®‚µC";
+    const char *expl = !chg ? "çªç„¶" : "æ¿€ã—ãæŒ¯å‹•ã—ï¼Œ";
     int dmg, n, k;
 
     /* number of damage dice */
@@ -2187,12 +2187,12 @@ int chg; /* recharging */
 #if 0 /*JP*/
     pline("%s %s explodes!", Yname2(obj), expl);
 #else
-    pline("%s‚Í%s”š”­‚µ‚½I", xname(obj), expl);
+    pline("%sã¯%sçˆ†ç™ºã—ãŸï¼", xname(obj), expl);
 #endif
 /*JP
     losehp(Maybe_Half_Phys(dmg), "exploding wand", KILLED_BY_AN);
 */
-    losehp(Maybe_Half_Phys(dmg), "ñ‚Ì”š”­‚Å", KILLED_BY_AN);
+    losehp(Maybe_Half_Phys(dmg), "æ–ã®çˆ†ç™ºã§", KILLED_BY_AN);
     useup(obj);
     /* obscure side-effect */
     exercise(A_STR, FALSE);
@@ -2248,19 +2248,19 @@ struct obj *obj;
 /*JP
                 pline("It seems even darker in here than before.");
 */
-                pline("‘O‚æ‚èˆÃ‚­‚È‚Á‚½‚æ‚¤‚ÉŒ©‚¦‚éD");
+                pline("å‰ã‚ˆã‚Šæš—ããªã£ãŸã‚ˆã†ã«è¦‹ãˆã‚‹ï¼");
             } else {
                 if (uwep && artifact_light(uwep) && uwep->lamplit)
 /*JP
                     pline("Suddenly, the only light left comes from %s!",
 */
-                    pline("“Ë‘RC–¾‚©‚è‚ª%s‚¾‚¯‚É‚È‚Á‚½I",
+                    pline("çªç„¶ï¼Œæ˜ã‹ã‚ŠãŒ%sã ã‘ã«ãªã£ãŸï¼",
                           the(xname(uwep)));
                 else
 /*JP
                     You("are surrounded by darkness!");
 */
-                    You("ˆÃˆÅ‚É•¢‚í‚ê‚½I");
+                    You("æš—é—‡ã«è¦†ã‚ã‚ŒãŸï¼");
             }
         }
 
@@ -2277,24 +2277,24 @@ struct obj *obj;
                 pline("%s %s is lit.", s_suffix(Monnam(u.ustuck)),
                       mbodypart(u.ustuck, STOMACH));
 #else
-                pline("%s‚Ì%s‚Í–¾‚é‚­‚È‚Á‚½D", Monnam(u.ustuck),
+                pline("%sã®%sã¯æ˜ã‚‹ããªã£ãŸï¼", Monnam(u.ustuck),
                       mbodypart(u.ustuck, STOMACH));
 #endif
             else if (is_whirly(u.ustuck->data))
 /*JP
                 pline("%s shines briefly.", Monnam(u.ustuck));
 */
-                pline("%s‚Í‚¿‚å‚Á‚Æ‹P‚¢‚½D", Monnam(u.ustuck));
+                pline("%sã¯ã¡ã‚‡ã£ã¨è¼ã„ãŸï¼", Monnam(u.ustuck));
             else
 /*JP
                 pline("%s glistens.", Monnam(u.ustuck));
 */
-                pline("%s‚Í‚«‚ç‚«‚ç‹P‚¢‚½D", Monnam(u.ustuck));
+                pline("%sã¯ãã‚‰ãã‚‰è¼ã„ãŸï¼", Monnam(u.ustuck));
         } else if (!Blind)
 /*JP
             pline("A lit field surrounds you!");
 */
-            pline("“”‚è‚ª‚ ‚È‚½‚ğæ‚èˆÍ‚ñ‚¾I");
+            pline("ç¯ã‚ŠãŒã‚ãªãŸã‚’å–ã‚Šå›²ã‚“ã ï¼");
     }
 
     /* No-op when swallowed or in water */
@@ -2375,7 +2375,7 @@ do_class_genocide()
 /*JP
             getlin("What class of monsters do you wish to genocide?", buf);
 */
-            getlin("‚Ç‚ÌƒNƒ‰ƒX‚É‘®‚·‚é‰ö•¨‚ğ‹sE‚µ‚Ü‚·‚©H[•¶š‚ğ“ü‚ê‚Ä‚Ë]", buf);
+            getlin("ã©ã®ã‚¯ãƒ©ã‚¹ã«å±ã™ã‚‹æ€ªç‰©ã‚’è™æ®ºã—ã¾ã™ã‹ï¼Ÿ[æ–‡å­—ã‚’å…¥ã‚Œã¦ã­]", buf);
             (void) mungspaces(buf);
         } while (!*buf);
         /* choosing "none" preserves genocideless conduct */
@@ -2383,8 +2383,8 @@ do_class_genocide()
         if (*buf == '\033' || !strcmpi(buf, "none")
             || !strcmpi(buf, "nothing"))
 #else
-        if (*buf == '\033' || !strcmpi(buf, "‚È‚µ")
-            || !strcmpi(buf, "–³‚µ"))
+        if (*buf == '\033' || !strcmpi(buf, "ãªã—")
+            || !strcmpi(buf, "ç„¡ã—"))
 #endif
             return;
 
@@ -2408,12 +2408,12 @@ do_class_genocide()
 /*JP
                 pline("All such monsters are already nonexistent.");
 */
-                pline("‚»‚Ì‰ö•¨‚Í‚à‚¤‚¢‚È‚¢D");
+                pline("ãã®æ€ªç‰©ã¯ã‚‚ã†ã„ãªã„ï¼");
             else if (immunecnt || class == S_invisible)
 /*JP
                 You("aren't permitted to genocide such monsters.");
 */
-                You("‚»‚Ì‰ö•¨‚ğ‹sE‚·‚é‚±‚Æ‚Í‚Å‚«‚È‚¢D");
+                You("ãã®æ€ªç‰©ã‚’è™æ®ºã™ã‚‹ã“ã¨ã¯ã§ããªã„ï¼");
             else if (wizard && buf[0] == '*') {
                 register struct monst *mtmp, *mtmp2;
 
@@ -2428,14 +2428,14 @@ do_class_genocide()
 /*JP
                 pline("Eliminated %d monster%s.", gonecnt, plur(gonecnt));
 */
-                pline("%d‚Ì‰ö•¨‚ğœ‚¢‚½D", gonecnt);
+                pline("%dã®æ€ªç‰©ã‚’é™¤ã„ãŸï¼", gonecnt);
                 return;
             } else
 #if 0 /*JP*/
                 pline("That %s does not represent any monster.",
                       strlen(buf) == 1 ? "symbol" : "response");
 #else
-                pline("‚»‚Ì‚æ‚¤‚È‰ö•¨‚Í‚¢‚È‚¢D");
+                pline("ãã®ã‚ˆã†ãªæ€ªç‰©ã¯ã„ãªã„ï¼");
 #endif
             continue;
         }
@@ -2461,7 +2461,7 @@ do_class_genocide()
 /*JP
                     pline("Wiped out all %s.", nam);
 */
-                    pline("%s‚ğ‘S‚Ä”rœ‚µ‚½D", nam);
+                    pline("%sã‚’å…¨ã¦æ’é™¤ã—ãŸï¼", nam);
                     if (Upolyd && i == u.umonnum) {
                         u.mh = -1;
                         if (Unchanging) {
@@ -2469,7 +2469,7 @@ do_class_genocide()
 /*JP
                                 You("die.");
 */
-                                You("€‚É‚Ü‚µ‚½DDD");
+                                You("æ­»ã«ã¾ã—ãŸï¼ï¼ï¼");
                             /* finish genociding this class of
                                monsters before ultimately dying */
                             gameover = TRUE;
@@ -2486,13 +2486,13 @@ do_class_genocide()
 /*JP
                                 You_feel("dead inside.");
 */
-                                You("°‚ª€‚ñ‚¾‚æ‚¤‚È‹C‚ª‚µ‚½D");
+                                You("é­‚ãŒæ­»ã‚“ã ã‚ˆã†ãªæ°—ãŒã—ãŸï¼");
                         } else {
                             if (!feel_dead++)
 /*JP
                                 You("die.");
 */
-                                You("€‚É‚Ü‚µ‚½DDD");
+                                You("æ­»ã«ã¾ã—ãŸï¼ï¼ï¼");
                             gameover = TRUE;
                         }
                     }
@@ -2501,7 +2501,7 @@ do_class_genocide()
 /*JP
                         pline("All %s are already nonexistent.", nam);
 */
-                        pline("%s‚ÍŠù‚É‚¢‚È‚¢D", nam);
+                        pline("%sã¯æ—¢ã«ã„ãªã„ï¼", nam);
                 } else if (!gameover) {
                     /* suppress feedback about quest beings except
                        for those applicable to our own role */
@@ -2528,7 +2528,7 @@ do_class_genocide()
                             (uniq && !named) ? "the " : "",
                             (uniq || named) ? mons[i].mname : nam);
 #else
-                        You("%s‚ğ‹sE‚Å‚«‚È‚¢D",
+                        You("%sã‚’è™æ®ºã§ããªã„ï¼",
                             (uniq || named) ? mons[i].mname : nam);
 #endif
                     }
@@ -2540,7 +2540,7 @@ do_class_genocide()
 /*JP
             Strcpy(killer.name, "scroll of genocide");
 */
-            Strcpy(killer.name, "‹sE‚ÌŠª•¨‚Å");
+            Strcpy(killer.name, "è™æ®ºã®å·»ç‰©ã§");
             if (gameover)
                 done(GENOCIDED);
         }
@@ -2579,14 +2579,14 @@ int how;
 /*JP
             getlin("What monster do you want to genocide? [type the name]",
 */
-            getlin("‚Ç‚Ì‰ö•¨‚ğ‹sE‚µ‚Ü‚·‚©H[–¼‘O‚ğ“ü‚ê‚Ä‚Ë]",
+            getlin("ã©ã®æ€ªç‰©ã‚’è™æ®ºã—ã¾ã™ã‹ï¼Ÿ[åå‰ã‚’å…¥ã‚Œã¦ã­]",
                    buf);
             (void) mungspaces(buf);
             /* choosing "none" preserves genocideless conduct */
 /*JP
             if (!strcmpi(buf, "none") || !strcmpi(buf, "nothing")) {
 */
-            if (!strcmpi(buf, "‚È‚µ") || !strcmpi(buf, "–³‚µ")) {
+            if (!strcmpi(buf, "ãªã—") || !strcmpi(buf, "ç„¡ã—")) {
                 /* ... but no free pass if cursed */
                 if (!(how & REALLY)) {
                     ptr = rndmonst();
@@ -2604,8 +2604,8 @@ int how;
                 pline("Such creatures %s exist in this world.",
                       (mndx == NON_PM) ? "do not" : "no longer");
 #else
-                pline("‚»‚Ì‚æ‚¤‚È¶‚«•¨‚Í%s‚±‚Ì¢ŠE‚É‘¶İ‚µ‚È‚¢D",
-                      (mndx == NON_PM) ? "" : "‚à‚Í‚â");
+                pline("ãã®ã‚ˆã†ãªç”Ÿãç‰©ã¯%sã“ã®ä¸–ç•Œã«å­˜åœ¨ã—ãªã„ï¼",
+                      (mndx == NON_PM) ? "" : "ã‚‚ã¯ã‚„");
 #endif
                 continue;
             }
@@ -2631,11 +2631,11 @@ int how;
 /*JP
                             "A thunderous voice booms through the caverns:");
 */
-                            "—‹‚Ì‚æ‚¤‚Èº‚ª“´ŒA‚É‹¿‚¢‚½F");
+                            "é›·ã®ã‚ˆã†ãªå£°ãŒæ´çªŸã«éŸ¿ã„ãŸï¼š");
 /*JP
                     verbalize("No, mortal!  That will not be done.");
 */
-                    pline("u’è–½‚ÌÒ‚æI‚»‚Ì–]‚İ‚Í‚©‚È‚¤‚Ü‚¢Dv");
+                    pline("ã€Œå®šå‘½ã®è€…ã‚ˆï¼ãã®æœ›ã¿ã¯ã‹ãªã†ã¾ã„ï¼ã€");
                 }
                 continue;
             }
@@ -2649,7 +2649,7 @@ int how;
 /*JP
     which = "all ";
 */
-    which = "‘S‚Ä";
+    which = "å…¨ã¦";
     if (Hallucination) {
         if (Upolyd)
             Strcpy(buf, youmonst.data->mname);
@@ -2673,7 +2673,7 @@ int how;
         pline("Wiped out %s%s.", which,
               (*which != 'a') ? buf : makeplural(buf));
 #else
-        pline("%s‚ğ%sˆê‘|‚µ‚½D", buf, which);
+        pline("%sã‚’%sä¸€æƒã—ãŸï¼", buf, which);
 #endif
 
         if (killplayer) {
@@ -2693,20 +2693,20 @@ int how;
 /*JP
                 Strcpy(killer.name, "genocidal confusion");
 */
-                Strcpy(killer.name, "¬—‚É‚æ‚é©‹s“I‹sE‚Å");
+                Strcpy(killer.name, "æ··ä¹±ã«ã‚ˆã‚‹è‡ªè™çš„è™æ®ºã§");
             } else if (how & ONTHRONE) {
                 /* player selected while on a throne */
                 killer.format = KILLED_BY_AN;
 /*JP
                 Strcpy(killer.name, "imperious order");
 */
-                Strcpy(killer.name, "˜ü–‚È–½—ß‚Å");
+                Strcpy(killer.name, "å‚²æ…¢ãªå‘½ä»¤ã§");
             } else { /* selected player deliberately, not confused */
                 killer.format = KILLED_BY_AN;
 /*JP
                 Strcpy(killer.name, "scroll of genocide");
 */
-                Strcpy(killer.name, "‹sE‚ÌŠª•¨‚Å");
+                Strcpy(killer.name, "è™æ®ºã®å·»ç‰©ã§");
             }
 
             /* Polymorphed characters will die as soon as they're rehumanized.
@@ -2717,7 +2717,7 @@ int how;
 /*JP
                 You_feel("dead inside.");
 */
-                You("°‚ª€‚ñ‚¾‚æ‚¤‚È‹C‚ª‚µ‚½D");
+                You("é­‚ãŒæ­»ã‚“ã ã‚ˆã†ãªæ°—ãŒã—ãŸï¼");
             } else
                 done(GENOCIDED);
         } else if (ptr == youmonst.data) {
@@ -2746,7 +2746,7 @@ int how;
             pline("Sent in %s%s.", (cnt > 1) ? "some " : "",
                   (cnt > 1) ? makeplural(buf) : an(buf));
 #else
-            pline("%s‚ª‘—‚ç‚ê‚Ä‚«‚½D", buf);
+            pline("%sãŒé€ã‚‰ã‚Œã¦ããŸï¼", buf);
 #endif
         } else
             pline1(nothing_happens);
@@ -2765,12 +2765,12 @@ struct obj *sobj;
 /*JP
         You("are being punished for your misbehavior!");
 */
-        You("•sì–@‚Ì‚½‚ß”±‚ğó‚¯‚½I");
+        You("ä¸ä½œæ³•ã®ãŸã‚ç½°ã‚’å—ã‘ãŸï¼");
     if (Punished) {
 /*JP
         Your("iron ball gets heavier.");
 */
-        Your("“S‹…‚Í‚³‚ç‚Éd‚­‚È‚Á‚½D");
+        Your("é‰„çƒã¯ã•ã‚‰ã«é‡ããªã£ãŸï¼");
         uball->owt += 160 * (1 + sobj->cursed);
         return;
     }
@@ -2780,7 +2780,7 @@ struct obj *sobj;
 /*JP
             pline("A ball and chain appears, then falls away.");
 */
-            pline("“S‹…‚Æ½‚ªŒ»‚í‚ê‚½‚ªC‚·‚é‚Á‚Æ”²‚¯‚½D");
+            pline("é‰„çƒã¨é–ãŒç¾ã‚ã‚ŒãŸãŒï¼Œã™ã‚‹ã£ã¨æŠœã‘ãŸï¼");
             dropy(mkobj(BALL_CLASS, TRUE));
         } else {
             dropy(reuse_ball);
@@ -2880,7 +2880,7 @@ create_particular()
 /*JP
         getlin("Create what kind of monster? [type the name or symbol]", buf);
 */
-        getlin("‚Ç‚Ìí‚Ì‰ö•¨‚ğì‚è‚Ü‚·‚©H[–¼‘O‚ğ“ü‚ê‚Ä‚Ë]", buf);
+        getlin("ã©ã®ç¨®ã®æ€ªç‰©ã‚’ä½œã‚Šã¾ã™ã‹ï¼Ÿ[åå‰ã‚’å…¥ã‚Œã¦ã­]", buf);
         bufp = mungspaces(buf);
         if (*bufp == '\033')
             return FALSE;
@@ -2889,7 +2889,7 @@ create_particular()
         if (!strncmpi(bufp, "tame ", 5)) {
             bufp += 5;
 #else
-        if (!strncmpi(bufp, "è‚È‚¸‚¯‚ç‚ê‚½", 14)) {
+        if (!strncmpi(bufp, "æ‰‹ãªãšã‘ã‚‰ã‚ŒãŸ", 14)) {
             bufp += 14;
 #endif
             maketame = TRUE;
@@ -2897,7 +2897,7 @@ create_particular()
         } else if (!strncmpi(bufp, "peaceful ", 9)) {
             bufp += 9;
 #else
-        } else if (!strncmpi(bufp, "—FD“I‚È", 8)) {
+        } else if (!strncmpi(bufp, "å‹å¥½çš„ãª", 8)) {
             bufp += 8;
 #endif
             makepeaceful = TRUE;
@@ -2905,7 +2905,7 @@ create_particular()
         } else if (!strncmpi(bufp, "hostile ", 8)) {
             bufp += 8;
 #else
-        } else if (!strncmpi(bufp, "“G‘Î“I‚È", 8)) {
+        } else if (!strncmpi(bufp, "æ•µå¯¾çš„ãª", 8)) {
             bufp += 8;
 #endif
             makehostile = TRUE;
@@ -2914,7 +2914,7 @@ create_particular()
 /*JP
         if (wizard && (!strcmp(bufp, "*") || !strcmp(bufp, "random"))) {
 */
-        if (wizard && (!strcmp(bufp, "*") || !strcmp(bufp, "ƒ‰ƒ“ƒ_ƒ€"))) {
+        if (wizard && (!strcmp(bufp, "*") || !strcmp(bufp, "ãƒ©ãƒ³ãƒ€ãƒ "))) {
             randmonst = TRUE;
             break;
         }
@@ -2933,7 +2933,7 @@ create_particular()
 /*JP
         pline("I've never heard of such monsters.");
 */
-        pline("‚»‚Ì‚æ‚¤‚È‰ö•¨‚Í•·‚¢‚½‚±‚Æ‚ª‚È‚¢D");
+        pline("ãã®ã‚ˆã†ãªæ€ªç‰©ã¯èã„ãŸã“ã¨ãŒãªã„ï¼");
     } while (--tryct > 0);
 
     if (!tryct) {
@@ -2947,7 +2947,7 @@ create_particular()
                 Sprintf(buf, "Creating %s instead; force %s?",
                         mons[which].mname, mons[firstchoice].mname);
 #else
-                Sprintf(buf, "‘ã‚í‚è‚É%s‚ªì‚ç‚ê‚Ü‚·G%s‚É‚·‚éH",
+                Sprintf(buf, "ä»£ã‚ã‚Šã«%sãŒä½œã‚‰ã‚Œã¾ã™ï¼›%sã«ã™ã‚‹ï¼Ÿ",
                         mons[which].mname, mons[firstchoice].mname);
 #endif
                 if (yn(buf) == 'y')

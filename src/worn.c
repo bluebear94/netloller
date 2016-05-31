@@ -285,7 +285,7 @@ struct obj *obj; /* item to make known if effect can be seen */
 /*JP
             (mon->mspeed + oldspeed == MFAST + MSLOW) ? "much " : "";
 */
-            (mon->mspeed + oldspeed == MFAST + MSLOW) ? "‚·‚²‚­" : "";
+            (mon->mspeed + oldspeed == MFAST + MSLOW) ? "ã™ã”ã" : "";
 
         if (petrify) {
             /* mimic the player's petrification countdown; "slowing down"
@@ -294,17 +294,17 @@ struct obj *obj; /* item to make known if effect can be seen */
 /*JP
                 pline("%s is slowing down.", Monnam(mon));
 */
-                pline("%s‚Í‚Ì‚ë‚­‚È‚Á‚½D", Monnam(mon));
+                pline("%sã¯ã®ã‚ããªã£ãŸï¼Ž", Monnam(mon));
         } else if (adjust > 0 || mon->mspeed == MFAST)
 /*JP
             pline("%s is suddenly moving %sfaster.", Monnam(mon), howmuch);
 */
-            pline("%s‚Ì“®‚«‚Í“Ë‘R%s‚·‚Î‚â‚­‚È‚Á‚½D", Monnam(mon), howmuch);
+            pline("%sã®å‹•ãã¯çªç„¶%sã™ã°ã‚„ããªã£ãŸï¼Ž", Monnam(mon), howmuch);
         else
 /*JP
             pline("%s seems to be moving %sslower.", Monnam(mon), howmuch);
 */
-            pline("%s‚Ì“®‚«‚Í%s‚Ì‚ë‚­‚È‚Á‚½‚æ‚¤‚ÉŒ©‚¦‚éD", Monnam(mon), howmuch);
+            pline("%sã®å‹•ãã¯%sã®ã‚ããªã£ãŸã‚ˆã†ã«è¦‹ãˆã‚‹ï¼Ž", Monnam(mon), howmuch);
 
         /* might discover an object if we see the speed change happen */
         if (obj != 0)
@@ -616,14 +616,14 @@ outer_break:
 /*JP
                 Sprintf(buf, " removes %s and", distant_name(old, doname));
 */
-                Sprintf(buf, "%s‚ð‚Í‚¸‚µ‚Ä", distant_name(old, doname));
+                Sprintf(buf, "%sã‚’ã¯ãšã—ã¦", distant_name(old, doname));
             else
                 buf[0] = '\0';
 #if 0 /*JP*/
             pline("%s%s puts on %s.", Monnam(mon), buf,
                   distant_name(best, doname));
 #else
-            pline("%s‚Í%s%s‚ðg‚É‚Â‚¯‚½D", Monnam(mon), buf,
+            pline("%sã¯%s%sã‚’èº«ã«ã¤ã‘ãŸï¼Ž", Monnam(mon), buf,
                   distant_name(best,doname));
 #endif
             if (autocurse)
@@ -649,7 +649,7 @@ outer_break:
 /*JP
             pline("Suddenly you cannot see %s.", nambuf);
 */
-            pline("“Ë‘R%s‚ªŒ©‚¦‚È‚­‚È‚Á‚½D", nambuf);
+            pline("çªç„¶%sãŒè¦‹ãˆãªããªã£ãŸï¼Ž", nambuf);
             makeknown(best->otyp);
         } /* else if (!mon->minvis) pline("%s suddenly appears!",
              Amonnam(mon)); */
@@ -803,7 +803,7 @@ boolean polyspot;
     struct permonst *mdat = mon->data;
     boolean vis = cansee(mon->mx, mon->my);
     boolean handless_or_tiny = (nohands(mdat) || verysmall(mdat));
-#if 0 /*JP*//*Žg‚í‚È‚¢*/
+#if 0 /*JP*//*ä½¿ã‚ãªã„*/
     const char *pronoun = mhim(mon), *ppronoun = mhis(mon);
 #endif
 
@@ -818,12 +818,12 @@ boolean polyspot;
 /*JP
                 pline("%s breaks out of %s armor!", Monnam(mon), ppronoun);
 */
-                pline("%s‚ÍŠZ‚ð‚â‚Ô‚èo‚½I", Monnam(mon));
+                pline("%sã¯éŽ§ã‚’ã‚„ã¶ã‚Šå‡ºãŸï¼", Monnam(mon));
             else
 /*JP
                 You_hear("a cracking sound.");
 */
-                You_hear("ƒoƒŠƒoƒŠ‚Æ‚¢‚¤‰¹‚ð•·‚¢‚½D");
+                You_hear("ãƒãƒªãƒãƒªã¨ã„ã†éŸ³ã‚’èžã„ãŸï¼Ž");
             m_useup(mon, otmp);
         }
         if ((otmp = which_armor(mon, W_ARMC)) != 0) {
@@ -833,7 +833,7 @@ boolean polyspot;
                     pline("%s %s falls off!", s_suffix(Monnam(mon)),
                           cloak_simple_name(otmp));
 #else
-                    pline("%s‚Ì%s‚Í—Ž‚¿‚½I", Monnam(mon),
+                    pline("%sã®%sã¯è½ã¡ãŸï¼", Monnam(mon),
                           cloak_simple_name(otmp));
 #endif
                 if (polyspot)
@@ -845,14 +845,14 @@ boolean polyspot;
                     pline("%s %s tears apart!", s_suffix(Monnam(mon)),
                           cloak_simple_name(otmp));
 #else
-                    pline("%s‚Ì%s‚Í‚¸‚½‚¸‚½‚É‚È‚Á‚½I", Monnam(mon),
+                    pline("%sã®%sã¯ãšãŸãšãŸã«ãªã£ãŸï¼", Monnam(mon),
                           cloak_simple_name(otmp));
 #endif
                 else
 /*JP
                     You_hear("a ripping sound.");
 */
-                    You_hear("ƒrƒŠƒb‚Æ‚¢‚¤‰¹‚ð•·‚¢‚½D");
+                    You_hear("ãƒ“ãƒªãƒƒã¨ã„ã†éŸ³ã‚’èžã„ãŸï¼Ž");
                 m_useup(mon, otmp);
             }
         }
@@ -861,12 +861,12 @@ boolean polyspot;
 /*JP
                 pline("%s shirt rips to shreds!", s_suffix(Monnam(mon)));
 */
-                pline("%s‚ÌƒVƒƒƒc‚Í‚¸‚½‚¸‚½‚É‚È‚Á‚½I", Monnam(mon));
+                pline("%sã®ã‚·ãƒ£ãƒ„ã¯ãšãŸãšãŸã«ãªã£ãŸï¼", Monnam(mon));
             else
 /*JP
                 You_hear("a ripping sound.");
 */
-                You_hear("ƒrƒŠƒb‚Æ‚¢‚¤‰¹‚ð•·‚¢‚½D");
+                You_hear("ãƒ“ãƒªãƒƒã¨ã„ã†éŸ³ã‚’èžã„ãŸï¼Ž");
             m_useup(mon, otmp);
         }
     } else if (sliparm(mdat)) {
@@ -876,13 +876,13 @@ boolean polyspot;
                 pline("%s armor falls around %s!", s_suffix(Monnam(mon)),
                       pronoun);
 #else
-                pline("%s‚ÌŠZ‚ª‰ñ‚è‚É—Ž‚¿‚½I", Monnam(mon));
+                pline("%sã®éŽ§ãŒå›žã‚Šã«è½ã¡ãŸï¼", Monnam(mon));
 #endif
             else
 /*JP
                 You_hear("a thud.");
 */
-                You_hear("ƒhƒVƒ“‚Æ‚¢‚¤‰¹‚ð•·‚¢‚½D");
+                You_hear("ãƒ‰ã‚·ãƒ³ã¨ã„ã†éŸ³ã‚’èžã„ãŸï¼Ž");
             if (polyspot)
                 bypass_obj(otmp);
             m_lose_armor(mon, otmp);
@@ -894,7 +894,7 @@ boolean polyspot;
                     pline("%s %s falls, unsupported!", s_suffix(Monnam(mon)),
                           cloak_simple_name(otmp));
 #else
-                    pline("%s‚Ì%s‚ÍŽx‚¦‚«‚ê‚¸‚É—Ž‚¿‚½I", Monnam(mon),
+                    pline("%sã®%sã¯æ”¯ãˆãã‚Œãšã«è½ã¡ãŸï¼", Monnam(mon),
                           cloak_simple_name(otmp));
 #endif
                 else
@@ -902,7 +902,7 @@ boolean polyspot;
                     pline("%s shrinks out of %s %s!", Monnam(mon), ppronoun,
                           cloak_simple_name(otmp));
 #else
-                    pline("%s‚Í%s‚æ‚èk‚ñ‚¾I", Monnam(mon),
+                    pline("%sã¯%sã‚ˆã‚Šç¸®ã‚“ã ï¼", Monnam(mon),
                           cloak_simple_name(otmp));
 #endif
             }
@@ -917,14 +917,14 @@ boolean polyspot;
                     pline("%s seeps right through %s shirt!", Monnam(mon),
                           ppronoun);
 #else
-                    pline("%s‚ÍŽ©•ª‚ÌƒVƒƒƒc‚É‚µ‚Ýž‚ñ‚¾I", Monnam(mon));
+                    pline("%sã¯è‡ªåˆ†ã®ã‚·ãƒ£ãƒ„ã«ã—ã¿è¾¼ã‚“ã ï¼", Monnam(mon));
 #endif
                 else
 #if 0 /*JP*/
                     pline("%s becomes much too small for %s shirt!",
                           Monnam(mon), ppronoun);
 #else
-                    pline("%s‚ÍŽ©•ª‚ÌƒVƒƒƒc‚æ‚è‚¸‚Á‚Æ¬‚³‚­‚È‚Á‚½I",
+                    pline("%sã¯è‡ªåˆ†ã®ã‚·ãƒ£ãƒ„ã‚ˆã‚Šãšã£ã¨å°ã•ããªã£ãŸï¼",
                           Monnam(mon));
 #endif
             }
@@ -941,8 +941,8 @@ boolean polyspot;
                 pline("%s drops %s gloves%s!", Monnam(mon), ppronoun,
                       MON_WEP(mon) ? " and weapon" : "");
 #else
-                pline("%s‚Í¬Žè%s‚ð—Ž‚µ‚½I", Monnam(mon), 
-                      MON_WEP(mon) ? "‚Æ•Ší" : "");
+                pline("%sã¯å°æ‰‹%sã‚’è½ã—ãŸï¼", Monnam(mon), 
+                      MON_WEP(mon) ? "ã¨æ­¦å™¨" : "");
 #endif
             if (polyspot)
                 bypass_obj(otmp);
@@ -954,13 +954,13 @@ boolean polyspot;
                 pline("%s can no longer hold %s shield!", Monnam(mon),
                       ppronoun);
 #else
-                pline("%s‚Í‚à‚Í‚â‚‚ðŽ‚Â‚±‚Æ‚ª‚Å‚«‚È‚¢I", Monnam(mon));
+                pline("%sã¯ã‚‚ã¯ã‚„ç›¾ã‚’æŒã¤ã“ã¨ãŒã§ããªã„ï¼", Monnam(mon));
 #endif
             else
 /*JP
                 You_hear("a clank.");
 */
-                You_hear("ƒJƒ‰ƒ“‚Æ‚¢‚¤‰¹‚ð•·‚¢‚½D");
+                You_hear("ã‚«ãƒ©ãƒ³ã¨ã„ã†éŸ³ã‚’èžã„ãŸï¼Ž");
             if (polyspot)
                 bypass_obj(otmp);
             m_lose_armor(mon, otmp);
@@ -975,14 +975,14 @@ boolean polyspot;
                 pline("%s helmet falls to the %s!", s_suffix(Monnam(mon)),
                       surface(mon->mx, mon->my));
 #else
-                pline("%s‚ÌŠ•‚Í%s‚Ö—Ž‚¿‚½I", 
+                pline("%sã®å…œã¯%sã¸è½ã¡ãŸï¼", 
                       Monnam(mon), surface(mon->mx, mon->my));
 #endif
             else
 /*JP
                 You_hear("a clank.");
 */
-                You_hear("ƒKƒ`ƒƒƒ“‚Æ‚¢‚¤‰¹‚ð•·‚¢‚½D");
+                You_hear("ã‚¬ãƒãƒ£ãƒ³ã¨ã„ã†éŸ³ã‚’èžã„ãŸï¼Ž");
             if (polyspot)
                 bypass_obj(otmp);
             m_lose_armor(mon, otmp);
@@ -995,14 +995,14 @@ boolean polyspot;
 /*JP
                     pline("%s boots fall away!", s_suffix(Monnam(mon)));
 */
-                    pline("%s‚ÌŒC‚Í‚Ê‚°—Ž‚¿‚½I", Monnam(mon));
+                    pline("%sã®é´ã¯ã¬ã’è½ã¡ãŸï¼", Monnam(mon));
                 else
 #if 0 /*JP*/
                     pline("%s boots %s off %s feet!", s_suffix(Monnam(mon)),
                           verysmall(mdat) ? "slide" : "are pushed", ppronoun);
 #else
-                    pline("%s‚ÌŒC‚Í‘«‚©‚ç%sI", Monnam(mon),
-                          verysmall(mdat) ? "ŠŠ‚è—Ž‚¿‚½" : "‰Ÿ‚µo‚³‚ê‚½");
+                    pline("%sã®é´ã¯è¶³ã‹ã‚‰%sï¼", Monnam(mon),
+                          verysmall(mdat) ? "æ»‘ã‚Šè½ã¡ãŸ" : "æŠ¼ã—å‡ºã•ã‚ŒãŸ");
 #endif
             }
             if (polyspot)
@@ -1019,7 +1019,7 @@ boolean polyspot;
 /*JP
                 pline("%s saddle falls off.", s_suffix(Monnam(mon)));
 */
-                pline("%s‚©‚çˆÆ‚ª—Ž‚¿‚½D", Monnam(mon));
+                pline("%sã‹ã‚‰éžãŒè½ã¡ãŸï¼Ž", Monnam(mon));
         }
         if (mon == u.usteed)
             goto noride;
@@ -1028,18 +1028,18 @@ boolean polyspot;
 /*JP
         You("can no longer ride %s.", mon_nam(mon));
 */
-        You("‚à‚¤%s‚Éæ‚Á‚Ä‚¢‚ç‚ê‚È‚¢D", mon_nam(mon));
+        You("ã‚‚ã†%sã«ä¹—ã£ã¦ã„ã‚‰ã‚Œãªã„ï¼Ž", mon_nam(mon));
         if (touch_petrifies(u.usteed->data) && !Stone_resistance && rnl(3)) {
             char buf[BUFSZ];
 
 /*JP
             You("touch %s.", mon_nam(u.usteed));
 */
-            You("%s‚ÉG‚Á‚½D", mon_nam(u.usteed));
+            You("%sã«è§¦ã£ãŸï¼Ž", mon_nam(u.usteed));
 /*JP
             Sprintf(buf, "falling off %s", an(u.usteed->data->mname));
 */
-            Sprintf(buf, "%s‚©‚ç—Ž‚¿‚Ä", u.usteed->data->mname);
+            Sprintf(buf, "%sã‹ã‚‰è½ã¡ã¦", u.usteed->data->mname);
             instapetrify(buf);
         }
         dismount_steed(DISMOUNT_FELL);

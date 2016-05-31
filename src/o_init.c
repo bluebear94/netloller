@@ -280,7 +280,7 @@ find_skates()
 /*JP
         if ((s = OBJ_DESCR(objects[i])) != 0 && !strcmp(s, "snow boots"))
 */
-        if ((s = OBJ_DESCR(objects[i])) != 0 && !strcmp(s, "áŒC"))
+        if ((s = OBJ_DESCR(objects[i])) != 0 && !strcmp(s, "é›ªé´"))
             return i;
 
     impossible("snow boots not found?");
@@ -429,7 +429,7 @@ dodiscovered() /* free after Robert Viduya */
 /*JP
     putstr(tmpwin, 0, "Discoveries");
 */
-    putstr(tmpwin, 0, "”­Œ©•¨ˆê——");
+    putstr(tmpwin, 0, "ç™ºè¦‹ç‰©ä¸€è¦§");
     putstr(tmpwin, 0, "");
 
     /* gather "unique objects" into a pseudo-class; note that they'll
@@ -440,7 +440,7 @@ dodiscovered() /* free after Robert Viduya */
 /*JP
                 putstr(tmpwin, iflags.menu_headings, "Unique items");
 */
-                putstr(tmpwin, iflags.menu_headings, "“ÁêƒAƒCƒeƒ€");
+                putstr(tmpwin, iflags.menu_headings, "ç‰¹æ®Šã‚¢ã‚¤ãƒ†ãƒ ");
             Sprintf(buf, "  %s", OBJ_NAME(objects[uniq_objs[i]]));
             putstr(tmpwin, 0, buf);
             ++ct;
@@ -479,7 +479,7 @@ dodiscovered() /* free after Robert Viduya */
 /*JP
         You("haven't discovered anything yet...");
 */
-        You("‚Ü‚¾‰½‚à”­Œ©‚µ‚Ä‚¢‚È‚¢DDD");
+        You("ã¾ã ä½•ã‚‚ç™ºè¦‹ã—ã¦ã„ãªã„ï¼ï¼ï¼");
     } else
         display_nhwindow(tmpwin, TRUE);
     destroy_nhwindow(tmpwin);
@@ -493,12 +493,12 @@ oclass_to_name(oclass, buf)
 char oclass;
 char *buf;
 {
-#if 0 /*JP*//*g‚í‚È‚¢*/
+#if 0 /*JP*//*ä½¿ã‚ãªã„*/
     char *s;
 #endif
 
     Strcpy(buf, let_to_name(oclass, FALSE, FALSE));
-#if 0 /*JP*//*¬•¶š‰»‚µ‚È‚¢*/
+#if 0 /*JP*//*å°æ–‡å­—åŒ–ã—ãªã„*/
     for (s = buf; *s; ++s)
         *s = lowc(*s);
 #endif
@@ -513,19 +513,19 @@ doclassdisco()
 /*JP
         prompt[] = "View discoveries for which sort of objects?",
 */
-        prompt[] = "‚Ç‚Ìí—Ş‚Ì”­Œ©•¨‚ğŒ©‚Ü‚·‚©H",
+        prompt[] = "ã©ã®ç¨®é¡ã®ç™ºè¦‹ç‰©ã‚’è¦‹ã¾ã™ã‹ï¼Ÿ",
 /*JP
         havent_discovered_any[] = "haven't discovered any %s yet.",
 */
-        havent_discovered_any[] = "‚Ü‚¾‰½‚à%s‚ğ”­Œ©‚µ‚Ä‚¢‚È‚¢D",
+        havent_discovered_any[] = "ã¾ã ä½•ã‚‚%sã‚’ç™ºè¦‹ã—ã¦ã„ãªã„ï¼",
 /*JP
         unique_items[] = "unique items",
 */
-        unique_items[] = "“ÁêƒAƒCƒeƒ€",
+        unique_items[] = "ç‰¹æ®Šã‚¢ã‚¤ãƒ†ãƒ ",
 /*JP
         artifact_items[] = "artifacts";
 */
-        artifact_items[] = "¹Ší";
+        artifact_items[] = "è–å™¨";
     char *s, c, oclass, menulet, allclasses[MAXOCLASSES],
         discosyms[2 + MAXOCLASSES + 1], buf[BUFSZ];
     int i, ct, dis, xtras;
@@ -592,7 +592,7 @@ doclassdisco()
 /*JP
         You(havent_discovered_any, "items");
 */
-        You(havent_discovered_any, "ƒAƒCƒeƒ€");
+        You(havent_discovered_any, "ã‚¢ã‚¤ãƒ†ãƒ ");
         if (tmpwin != WIN_ERR)
             destroy_nhwindow(tmpwin);
         return 0;
@@ -667,7 +667,7 @@ doclassdisco()
 /*JP
         Sprintf(buf, "Discovered %s", let_to_name(oclass, FALSE, FALSE));
 */
-        Sprintf(buf, "”­Œ©‚µ‚½%s", let_to_name(oclass, FALSE, FALSE));
+        Sprintf(buf, "ç™ºè¦‹ã—ãŸ%s", let_to_name(oclass, FALSE, FALSE));
         putstr(tmpwin, iflags.menu_headings, buf);
         for (i = bases[(int) oclass];
              i < NUM_OBJECTS && objects[i].oc_class == oclass; ++i) {
@@ -741,17 +741,17 @@ rename_disco()
 /*JP
         You("haven't discovered anything yet...");
 */
-        You("‚Ü‚¾‰½‚à”­Œ©‚µ‚Ä‚¢‚È‚¢DDD");
+        You("ã¾ã ä½•ã‚‚ç™ºè¦‹ã—ã¦ã„ãªã„ï¼ï¼ï¼");
     } else if (mn == 0) {
 /*JP
         pline("None of your discoveries can be assigned names...");
 */
-        pline("–¼‘O‚Ì•t‚¯‚ç‚ê‚é”­Œ©•¨‚Í‚È‚¢DDD");
+        pline("åå‰ã®ä»˜ã‘ã‚‰ã‚Œã‚‹ç™ºè¦‹ç‰©ã¯ãªã„ï¼ï¼ï¼");
     } else {
 /*JP
         end_menu(tmpwin, "Pick an object type to name");
 */
-        end_menu(tmpwin, "–¼‘O‚ğ•t‚¯‚éƒIƒuƒWƒFƒNƒg‚Ìí—Ş‚ğ‘I‚ñ‚Å‚­‚¾‚³‚¢");
+        end_menu(tmpwin, "åå‰ã‚’ä»˜ã‘ã‚‹ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã®ç¨®é¡ã‚’é¸ã‚“ã§ãã ã•ã„");
         dis = STRANGE_OBJECT;
         sl = select_menu(tmpwin, PICK_ONE, &selected);
         if (sl > 0) {

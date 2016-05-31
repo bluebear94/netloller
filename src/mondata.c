@@ -259,7 +259,7 @@ struct obj *obj; /* aatyp == AT_WEAP, AT_SPIT */
 #else
             if ((o->owornmask & W_ARMH)
                 && (s = OBJ_DESCR(objects[o->otyp])) != (char *) 0
-                && !strcmp(s, "–Ê–j•t‚«‚ÌŠ•"))
+                && !strcmp(s, "é¢é ¬ä»˜ãã®å…œ"))
 #endif
                 return FALSE;
     }
@@ -1029,31 +1029,31 @@ struct monst *mtmp;
 /*JP
 static const char *levitate[4] = { "float", "Float", "wobble", "Wobble" };
 */
-static const char *levitate[4] = { "•‚‚­", "•‚‚­", "‚æ‚ë‚ß‚­", "‚æ‚ë‚ß‚­" };
+static const char *levitate[4] = { "æµ®ã", "æµ®ã", "ã‚ˆã‚ã‚ã", "ã‚ˆã‚ã‚ã" };
 /*JP
 static const char *flys[4] = { "fly", "Fly", "flutter", "Flutter" };
 */
-static const char *flys[4] = { "”ò‚Ô", "”ò‚Ô", "‚Í‚½‚ß‚­", "‚Í‚½‚ß‚­" };
+static const char *flys[4] = { "é£›ã¶", "é£›ã¶", "ã¯ãŸã‚ã", "ã¯ãŸã‚ã" };
 /*JP
 static const char *flyl[4] = { "fly", "Fly", "stagger", "Stagger" };
 */
-static const char *flyl[4] = { "”ò‚Ô", "”ò‚Ô", "‚æ‚ë‚ß‚­", "‚æ‚ë‚ß‚­" };
+static const char *flyl[4] = { "é£›ã¶", "é£›ã¶", "ã‚ˆã‚ã‚ã", "ã‚ˆã‚ã‚ã" };
 /*JP
 static const char *slither[4] = { "slither", "Slither", "falter", "Falter" };
 */
-static const char *slither[4] = { "ŠŠ‚é", "ŠŠ‚é", "‚½‚¶‚ë‚®", "‚½‚¶‚ë‚®" };
+static const char *slither[4] = { "æ»‘ã‚‹", "æ»‘ã‚‹", "ãŸã˜ã‚ã", "ãŸã˜ã‚ã" };
 /*JP
 static const char *ooze[4] = { "ooze", "Ooze", "tremble", "Tremble" };
 */
-static const char *ooze[4] = { "‚É‚¶‚İo‚é", "‚É‚¶‚İo‚é", "k‚¦‚é", "k‚¦‚é" };
+static const char *ooze[4] = { "ã«ã˜ã¿å‡ºã‚‹", "ã«ã˜ã¿å‡ºã‚‹", "éœ‡ãˆã‚‹", "éœ‡ãˆã‚‹" };
 /*JP
 static const char *immobile[4] = { "wiggle", "Wiggle", "pulsate", "Pulsate" };
 */
-static const char *immobile[4] = { "k‚¦‚é", "k‚¦‚é", "k‚¦‚é", "k‚¦‚é" };
+static const char *immobile[4] = { "éœ‡ãˆã‚‹", "éœ‡ãˆã‚‹", "éœ‡ãˆã‚‹", "éœ‡ãˆã‚‹" };
 /*JP
 static const char *crawl[4] = { "crawl", "Crawl", "falter", "Falter" };
 */
-static const char *crawl[4] = { "‚Í‚¢‚¸‚é", "‚Í‚¢‚¸‚é", "‚½‚¶‚ë‚®", "‚½‚¶‚ë‚®" };
+static const char *crawl[4] = { "ã¯ã„ãšã‚‹", "ã¯ã„ãšã‚‹", "ãŸã˜ã‚ã", "ãŸã˜ã‚ã" };
 
 const char *
 locomotion(ptr, def)
@@ -1089,11 +1089,11 @@ const char *def;
                         : def);
 }
 #if 1 /*JP*/
-static const char *levitate2 = "•‚‚«o‚½";
-static const char *fly2 = "”ò‚Ño‚½";
-static const char *slither2 = "ŠŠ‚èo‚½";
-static const char *ooze2 = "‚É‚¶‚İo‚½";
-static const char *crawl2 = "‚Í‚¢‚¸‚èo‚½";
+static const char *levitate2 = "æµ®ãå‡ºãŸ";
+static const char *fly2 = "é£›ã³å‡ºãŸ";
+static const char *slither2 = "æ»‘ã‚Šå‡ºãŸ";
+static const char *ooze2 = "ã«ã˜ã¿å‡ºãŸ";
+static const char *crawl2 = "ã¯ã„ãšã‚Šå‡ºãŸ";
 
 const char *
 jumpedthrough(ptr, def)
@@ -1127,7 +1127,7 @@ struct attack *mattk;
 /*JP
         what = "already on fire";
 */
-        what = "‚·‚Å‚É‰Š‚É‚Â‚Â‚Ü‚ê‚Ä‚¢‚é";
+        what = "ã™ã§ã«ç‚ã«ã¤ã¤ã¾ã‚Œã¦ã„ã‚‹";
         break;
     case PM_WATER_ELEMENTAL:
     case PM_FOG_CLOUD:
@@ -1135,14 +1135,14 @@ struct attack *mattk;
 /*JP
         what = "boiling";
 */
-        what = "•¦“«‚µ‚½";
+        what = "æ²¸é¨°ã—ãŸ";
         break;
     case PM_ICE_VORTEX:
     case PM_GLASS_GOLEM:
 /*JP
         what = "melting";
 */
-        what = "—n‚¯‚½";
+        what = "æº¶ã‘ãŸ";
         break;
     case PM_STONE_GOLEM:
     case PM_CLAY_GOLEM:
@@ -1154,13 +1154,13 @@ struct attack *mattk;
 /*JP
         what = "heating up";
 */
-        what = "”M‚­‚È‚Á‚½";
+        what = "ç†±ããªã£ãŸ";
         break;
     default:
 /*JP
         what = (mattk->aatyp == AT_HUGS) ? "being roasted" : "on fire";
 */
-        what = (mattk->aatyp == AT_HUGS) ? "ŠÛÄ‚¯‚É‚È‚Á‚½" : "‰Î‚¾‚é‚Ü‚É‚È‚Á‚½";
+        what = (mattk->aatyp == AT_HUGS) ? "ä¸¸ç„¼ã‘ã«ãªã£ãŸ" : "ç«ã ã‚‹ã¾ã«ãªã£ãŸ";
         break;
     }
     return what;

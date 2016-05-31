@@ -34,7 +34,7 @@ nhsym warnsyms[WARNCOUNT] = DUMMY; /* the current warning display symbols */
 /*JP
 const char invisexplain[] = "remembered, unseen, creature";
 */
-const char invisexplain[] = "Šo‚¦‚Ä‚¢‚é‚ªŒ©‚¦‚Ä‚¢‚È‚¢‰ö•¨";
+const char invisexplain[] = "è¦šãˆã¦ã„ã‚‹ãŒè¦‹ãˆã¦ã„ãªã„æ€ªç‰©";
 
 /* Default object class symbols.  See objclass.h.
  * {symbol, name, explain}
@@ -46,71 +46,71 @@ const struct class_sym def_oc_syms[MAXOCLASSES] = {
 /*JP
     { ILLOBJ_SYM, "illegal objects", "strange object" },
 */
-    { ILLOBJ_SYM, "Šï–­‚È•¨‘Ì", "Šï–­‚È•¨‘Ì" },
+    { ILLOBJ_SYM, "å¥‡å¦™ãªç‰©ä½“", "å¥‡å¦™ãªç‰©ä½“" },
 /*JP
     { WEAPON_SYM, "weapons", "weapon" },
 */
-    { WEAPON_SYM, "•Ší", "•Ší" },
+    { WEAPON_SYM, "æ­¦å™¨", "æ­¦å™¨" },
 /*JP
     { ARMOR_SYM, "armor", "suit or piece of armor" },
 */
-    { ARMOR_SYM, "ŠZ", "•ž‚Ü‚½‚ÍŠZ‚Ì‚½‚®‚¢" },
+    { ARMOR_SYM, "éŽ§", "æœã¾ãŸã¯éŽ§ã®ãŸãã„" },
 /*JP
     { RING_SYM, "rings", "ring" },
 */
-    { RING_SYM, "Žw—Ö", "Žw—Ö" },
+    { RING_SYM, "æŒ‡è¼ª", "æŒ‡è¼ª" },
 /*JP
     { AMULET_SYM, "amulets", "amulet" },
 */
-    { AMULET_SYM, "–‚œ‚¯", "–‚œ‚¯" },
+    { AMULET_SYM, "é­”é™¤ã‘", "é­”é™¤ã‘" },
 /*JP
     { TOOL_SYM, "tools", "useful item (pick-axe, key, lamp...)" },
 */
-    { TOOL_SYM, "“¹‹ï", "•Ö—˜‚È“¹‹ï(‚Â‚é‚Í‚µCŒ®Cƒ‰ƒ“ƒvDDD)" },
+    { TOOL_SYM, "é“å…·", "ä¾¿åˆ©ãªé“å…·(ã¤ã‚‹ã¯ã—ï¼Œéµï¼Œãƒ©ãƒ³ãƒ—ï¼Žï¼Žï¼Ž)" },
 /*JP
     { FOOD_SYM, "food", "piece of food" },
 */
-    { FOOD_SYM, "H—¿", "H—¿" },
+    { FOOD_SYM, "é£Ÿæ–™", "é£Ÿæ–™" },
 /*JP
     { POTION_SYM, "potions", "potion" },
 */
-    { POTION_SYM, "–ò", "–ò" },
+    { POTION_SYM, "è–¬", "è–¬" },
 /*JP
     { SCROLL_SYM, "scrolls", "scroll" },
 */
-    { SCROLL_SYM, "Šª•¨", "Šª•¨" },
+    { SCROLL_SYM, "å·»ç‰©", "å·»ç‰©" },
 /*JP
     { SPBOOK_SYM, "spellbooks", "spellbook" },
 */
-    { SPBOOK_SYM, "–‚–@‘", "–‚–@‘" },
+    { SPBOOK_SYM, "é­”æ³•æ›¸", "é­”æ³•æ›¸" },
 /*JP
     { WAND_SYM, "wands", "wand" },
 */
-    { WAND_SYM, "ñ", "ñ" },
+    { WAND_SYM, "æ–", "æ–" },
 /*JP
     { GOLD_SYM, "coins", "pile of coins" },
 */
-    { GOLD_SYM, "‹à‰Ý", "‹à‰Ý‚ÌŽR" },
+    { GOLD_SYM, "é‡‘è²¨", "é‡‘è²¨ã®å±±" },
 /*JP
     { GEM_SYM, "rocks", "gem or rock" },
 */
-    { GEM_SYM, "Î", "•óÎ‚Ü‚½‚ÍÎ" },
+    { GEM_SYM, "çŸ³", "å®çŸ³ã¾ãŸã¯çŸ³" },
 /*JP
     { ROCK_SYM, "large stones", "boulder or statue" },
 */
-    { ROCK_SYM, "‹Î", "Šâ‚Ü‚½‚Í‘œ" },
+    { ROCK_SYM, "å·¨çŸ³", "å²©ã¾ãŸã¯åƒ" },
 /*JP
     { BALL_SYM, "iron balls", "iron ball" },
 */
-    { BALL_SYM, "“S‹…", "“S‹…" },
+    { BALL_SYM, "é‰„çƒ", "é‰„çƒ" },
 /*JP
     { CHAIN_SYM, "chains", "iron chain" },
 */
-    { CHAIN_SYM, "½", "“S‚Ì½" },
+    { CHAIN_SYM, "éŽ–", "é‰„ã®éŽ–" },
 /*JP
     { VENOM_SYM, "venoms", "splash of venom" }
 */
-    { VENOM_SYM, "“Å", "“Å‰t" }
+    { VENOM_SYM, "æ¯’", "æ¯’æ¶²" }
 };
 
 /* Default monster class symbols.  See monsym.h. */
@@ -119,243 +119,243 @@ const struct class_sym def_monsyms[MAXMCLASSES] = {
 /*JP
     { DEF_ANT, "", "ant or other insect" },
 */
-    { DEF_ANT, "", "‹a‚Ü‚½‚Í‘¼‚Ì©’Ž" },
+    { DEF_ANT, "", "èŸ»ã¾ãŸã¯ä»–ã®æ˜†è™«" },
 /*JP
     { DEF_BLOB, "", "blob" },
 */
-    { DEF_BLOB, "", "ƒuƒƒbƒu" },
+    { DEF_BLOB, "", "ãƒ–ãƒ­ãƒƒãƒ–" },
 /*JP
     { DEF_COCKATRICE, "", "cockatrice" },
 */
-    { DEF_COCKATRICE, "", "ƒRƒJƒgƒŠƒX" },
+    { DEF_COCKATRICE, "", "ã‚³ã‚«ãƒˆãƒªã‚¹" },
 /*JP
     { DEF_DOG, "", "dog or other canine" },
 */
-    { DEF_DOG, "", "Œ¢‚Ü‚½‚ÍƒCƒk‰È‚Ì“®•¨" },
+    { DEF_DOG, "", "çŠ¬ã¾ãŸã¯ã‚¤ãƒŒç§‘ã®å‹•ç‰©" },
 /*JP
     { DEF_EYE, "", "eye or sphere" },
 */
-    { DEF_EYE, "", "–Ú‚Ü‚½‚Í‹…‘Ì" },
+    { DEF_EYE, "", "ç›®ã¾ãŸã¯çƒä½“" },
 /*JP
     { DEF_FELINE, "", "cat or other feline" },
 */
-    { DEF_FELINE, "", "”L‚Ü‚½‚ÍƒlƒR‰È‚Ì“®•¨" },
+    { DEF_FELINE, "", "çŒ«ã¾ãŸã¯ãƒã‚³ç§‘ã®å‹•ç‰©" },
 /*JP
     { DEF_GREMLIN, "", "gremlin" },
 */
-    { DEF_GREMLIN, "", "ƒOƒŒƒ€ƒŠƒ“" },
+    { DEF_GREMLIN, "", "ã‚°ãƒ¬ãƒ ãƒªãƒ³" },
 /*JP
     { DEF_HUMANOID, "", "humanoid" },
 */
-    { DEF_HUMANOID, "", "ƒqƒ…[ƒ}ƒmƒCƒh" },
+    { DEF_HUMANOID, "", "ãƒ’ãƒ¥ãƒ¼ãƒžãƒŽã‚¤ãƒ‰" },
 /*JP
     { DEF_IMP, "", "imp or minor demon" },
 */
-    { DEF_IMP, "", "ƒCƒ“ƒv‚Ü‚½‚Í‰º‹‰ˆ«–‚" },
+    { DEF_IMP, "", "ã‚¤ãƒ³ãƒ—ã¾ãŸã¯ä¸‹ç´šæ‚ªé­”" },
 /*JP
     { DEF_JELLY, "", "jelly" },
 */
-    { DEF_JELLY, "", "ƒ[ƒŠ[" },
+    { DEF_JELLY, "", "ã‚¼ãƒªãƒ¼" },
 /*JP
     { DEF_KOBOLD, "", "kobold" },
 */
-    { DEF_KOBOLD, "", "ƒRƒ{ƒ‹ƒg" },
+    { DEF_KOBOLD, "", "ã‚³ãƒœãƒ«ãƒˆ" },
 /*JP
     { DEF_LEPRECHAUN, "", "leprechaun" },
 */
-    { DEF_LEPRECHAUN, "", "ƒŒƒvƒ‰ƒR[ƒ“" },
+    { DEF_LEPRECHAUN, "", "ãƒ¬ãƒ—ãƒ©ã‚³ãƒ¼ãƒ³" },
 /*JP
     { DEF_MIMIC, "", "mimic" },
 */
-    { DEF_MIMIC, "", "ƒ~ƒ~ƒbƒN" },
+    { DEF_MIMIC, "", "ãƒŸãƒŸãƒƒã‚¯" },
 /*JP
     { DEF_NYMPH, "", "nymph" },
 */
-    { DEF_NYMPH, "", "ƒjƒ“ƒt" },
+    { DEF_NYMPH, "", "ãƒ‹ãƒ³ãƒ•" },
 /*JP
     { DEF_ORC, "", "orc" },
 */
-    { DEF_ORC, "", "ƒI[ƒN" },
+    { DEF_ORC, "", "ã‚ªãƒ¼ã‚¯" },
 /*JP
     { DEF_PIERCER, "", "piercer" },
 */
-    { DEF_PIERCER, "", "ŒŠ‹ò‚¢" },
+    { DEF_PIERCER, "", "ç©´å–°ã„" },
 /*JP
     { DEF_QUADRUPED, "", "quadruped" },
 */
-    { DEF_QUADRUPED, "", "Žl‘«“®•¨" },
+    { DEF_QUADRUPED, "", "å››è¶³å‹•ç‰©" },
 /*JP
     { DEF_RODENT, "", "rodent" },
 */
-    { DEF_RODENT, "", "ê–Ž•“®•¨" },
+    { DEF_RODENT, "", "é½§æ­¯å‹•ç‰©" },
 /*JP
     { DEF_SPIDER, "", "arachnid or centipede" },
 */
-    { DEF_SPIDER, "", "ƒNƒ‚Œ`—Þ“®•¨‚Ü‚½‚Íƒ€ƒJƒf" },
+    { DEF_SPIDER, "", "ã‚¯ãƒ¢å½¢é¡žå‹•ç‰©ã¾ãŸã¯ãƒ ã‚«ãƒ‡" },
 /*JP
     { DEF_TRAPPER, "", "trapper or lurker above" },
 */
-    { DEF_TRAPPER, "", "ƒgƒ‰ƒbƒp[‚Ü‚½‚Íƒ‰[ƒJ[" },
+    { DEF_TRAPPER, "", "ãƒˆãƒ©ãƒƒãƒ‘ãƒ¼ã¾ãŸã¯ãƒ©ãƒ¼ã‚«ãƒ¼" },
 /*JP
     { DEF_UNICORN, "", "unicorn or horse" },
 */
-    { DEF_UNICORN, "", "ƒ†ƒjƒR[ƒ“‚Ü‚½‚Í”n" },
+    { DEF_UNICORN, "", "ãƒ¦ãƒ‹ã‚³ãƒ¼ãƒ³ã¾ãŸã¯é¦¬" },
 /*JP
     { DEF_VORTEX, "", "vortex" },
 */
-    { DEF_VORTEX, "", "‰Q" },
+    { DEF_VORTEX, "", "æ¸¦" },
 /*JP
     { DEF_WORM, "", "worm" },
 */
-    { DEF_WORM, "", "ƒ[ƒ€" },
+    { DEF_WORM, "", "ãƒ¯ãƒ¼ãƒ " },
 /*JP
     { DEF_XAN, "", "xan or other mythical/fantastic insect" },
 */
-    { DEF_XAN, "", "ƒUƒ“‚Ü‚½‚Í_˜b‚âƒtƒ@ƒ“ƒ^ƒW[‚Ì©’Ž" },
+    { DEF_XAN, "", "ã‚¶ãƒ³ã¾ãŸã¯ç¥žè©±ã‚„ãƒ•ã‚¡ãƒ³ã‚¿ã‚¸ãƒ¼ã®æ˜†è™«" },
 /*JP
     { DEF_LIGHT, "", "light" },
 */
-    { DEF_LIGHT, "", "Œõ" },
+    { DEF_LIGHT, "", "å…‰" },
 /*JP
     { DEF_ZRUTY, "", "zruty" },
 */
-    { DEF_ZRUTY, "", "ƒYƒ‹ƒeƒB" },
+    { DEF_ZRUTY, "", "ã‚ºãƒ«ãƒ†ã‚£" },
 /*JP
     { DEF_ANGEL, "", "angelic being" },
 */
-    { DEF_ANGEL, "", "“VŽg" },
+    { DEF_ANGEL, "", "å¤©ä½¿" },
 /*JP
     { DEF_BAT, "", "bat or bird" },
 */
-    { DEF_BAT, "", "‚±‚¤‚à‚è‚Ü‚½‚Í’¹" },
+    { DEF_BAT, "", "ã“ã†ã‚‚ã‚Šã¾ãŸã¯é³¥" },
 /*JP
     { DEF_CENTAUR, "", "centaur" },
 */
-    { DEF_CENTAUR, "", "ƒPƒ“ƒ^ƒEƒƒX" },
+    { DEF_CENTAUR, "", "ã‚±ãƒ³ã‚¿ã‚¦ãƒ­ã‚¹" },
 /*JP
     { DEF_DRAGON, "", "dragon" },
 */
-    { DEF_DRAGON, "", "ƒhƒ‰ƒSƒ“" },
+    { DEF_DRAGON, "", "ãƒ‰ãƒ©ã‚´ãƒ³" },
 /*JP
     { DEF_ELEMENTAL, "", "elemental" },
 */
-    { DEF_ELEMENTAL, "", "¸—ì" },
+    { DEF_ELEMENTAL, "", "ç²¾éœŠ" },
 /*JP
     { DEF_FUNGUS, "", "fungus or mold" },
 */
-    { DEF_FUNGUS, "", "ƒLƒmƒR‚Ü‚½‚Íƒ‚[ƒ‹ƒh" },
+    { DEF_FUNGUS, "", "ã‚­ãƒŽã‚³ã¾ãŸã¯ãƒ¢ãƒ¼ãƒ«ãƒ‰" },
 /*JP
     { DEF_GNOME, "", "gnome" },
 */
-    { DEF_GNOME, "", "ƒm[ƒ€" },
+    { DEF_GNOME, "", "ãƒŽãƒ¼ãƒ " },
 /*JP
     { DEF_GIANT, "", "giant humanoid" },
 */
-    { DEF_GIANT, "", "‹l" },
+    { DEF_GIANT, "", "å·¨äºº" },
 /*JP
     { '\0', "", "invisible monster" },
 */
-    { '\0', "", "“§–¾‚È‰ö•¨" },
+    { '\0', "", "é€æ˜Žãªæ€ªç‰©" },
 /*JP
     { DEF_JABBERWOCK, "", "jabberwock" },
 */
-    { DEF_JABBERWOCK, "", "ƒWƒƒƒoƒEƒHƒbƒN" },
+    { DEF_JABBERWOCK, "", "ã‚¸ãƒ£ãƒã‚¦ã‚©ãƒƒã‚¯" },
 /*JP
     { DEF_KOP, "", "Keystone Kop" },
 */
-    { DEF_KOP, "", "Œx”õˆõ" },
+    { DEF_KOP, "", "è­¦å‚™å“¡" },
 /*JP
     { DEF_LICH, "", "lich" },
 */
-    { DEF_LICH, "", "ƒŠƒbƒ`" },
+    { DEF_LICH, "", "ãƒªãƒƒãƒ" },
 /*JP
     { DEF_MUMMY, "", "mummy" },
 */
-    { DEF_MUMMY, "", "ƒ~ƒCƒ‰" },
+    { DEF_MUMMY, "", "ãƒŸã‚¤ãƒ©" },
 /*JP
     { DEF_NAGA, "", "naga" },
 */
-    { DEF_NAGA, "", "ƒi[ƒK" },
+    { DEF_NAGA, "", "ãƒŠãƒ¼ã‚¬" },
 /*JP
     { DEF_OGRE, "", "ogre" },
 */
-    { DEF_OGRE, "", "ƒI[ƒK" },
+    { DEF_OGRE, "", "ã‚ªãƒ¼ã‚¬" },
 /*JP
     { DEF_PUDDING, "", "pudding or ooze" },
 */
-    { DEF_PUDDING, "", "ƒvƒŠƒ“‚Ü‚½‚ÍƒE[ƒY" },
+    { DEF_PUDDING, "", "ãƒ—ãƒªãƒ³ã¾ãŸã¯ã‚¦ãƒ¼ã‚º" },
 /*JP
     { DEF_QUANTMECH, "", "quantum mechanic" },
 */
-    { DEF_QUANTMECH, "", "—ÊŽqê" },
+    { DEF_QUANTMECH, "", "é‡å­å ´" },
 /*JP
     { DEF_RUSTMONST, "", "rust monster or disenchanter" },
 */
-    { DEF_RUSTMONST, "", "ŽK‚Ì‰ö•¨‚Ü‚½‚Í‹z–‚‚Ì‰ö•¨" },
+    { DEF_RUSTMONST, "", "éŒ†ã®æ€ªç‰©ã¾ãŸã¯å¸é­”ã®æ€ªç‰©" },
 /*JP
     { DEF_SNAKE, "", "snake" },
 */
-    { DEF_SNAKE, "", "ƒwƒr" },
+    { DEF_SNAKE, "", "ãƒ˜ãƒ“" },
 /*JP
     { DEF_TROLL, "", "troll" },
 */
-    { DEF_TROLL, "", "ƒgƒƒ‹" },
+    { DEF_TROLL, "", "ãƒˆãƒ­ãƒ«" },
 /*JP
     { DEF_UMBER, "", "umber hulk" },
 */
-    { DEF_UMBER, "", "ƒAƒ“ƒo[ƒnƒ‹ƒN" },
+    { DEF_UMBER, "", "ã‚¢ãƒ³ãƒãƒ¼ãƒãƒ«ã‚¯" },
 /*JP
     { DEF_VAMPIRE, "", "vampire" },
 */
-    { DEF_VAMPIRE, "", "‹zŒŒ‹S" },
+    { DEF_VAMPIRE, "", "å¸è¡€é¬¼" },
 /*JP
     { DEF_WRAITH, "", "wraith" },
 */
-    { DEF_WRAITH, "", "ƒŒƒCƒX" },
+    { DEF_WRAITH, "", "ãƒ¬ã‚¤ã‚¹" },
 /*JP
     { DEF_XORN, "", "xorn" },
 */
-    { DEF_XORN, "", "ƒ][ƒ“" },
+    { DEF_XORN, "", "ã‚¾ãƒ¼ãƒ³" },
 /*JP
     { DEF_YETI, "", "apelike creature" },
 */
-    { DEF_YETI, "", "‰Ž‚Ì‚æ‚¤‚È¶•¨" },
+    { DEF_YETI, "", "çŒ¿ã®ã‚ˆã†ãªç”Ÿç‰©" },
 /*JP
     { DEF_ZOMBIE, "", "zombie" },
 */
-    { DEF_ZOMBIE, "", "ƒ]ƒ“ƒr" },
+    { DEF_ZOMBIE, "", "ã‚¾ãƒ³ãƒ“" },
 /*JP
     { DEF_HUMAN, "", "human or elf" },
 */
-    { DEF_HUMAN, "", "lŠÔ‚Ü‚½‚ÍƒGƒ‹ƒt" },
+    { DEF_HUMAN, "", "äººé–“ã¾ãŸã¯ã‚¨ãƒ«ãƒ•" },
 /*JP
     { DEF_GHOST, "", "ghost" },
 */
-    { DEF_GHOST, "", "ˆ«–‚" },
+    { DEF_GHOST, "", "æ‚ªé­”" },
 /*JP
     { DEF_GOLEM, "", "golem" },
 */
-    { DEF_GOLEM, "", "ƒS[ƒŒƒ€" },
+    { DEF_GOLEM, "", "ã‚´ãƒ¼ãƒ¬ãƒ " },
 /*JP
     { DEF_DEMON, "", "major demon" },
 */
-    { DEF_DEMON, "", "ˆ«–‚" },
+    { DEF_DEMON, "", "æ‚ªé­”" },
 /*JP
     { DEF_EEL, "", "sea monster" },
 */
-    { DEF_EEL, "", "ŠC‚Ì‰ö•¨" },
+    { DEF_EEL, "", "æµ·ã®æ€ªç‰©" },
 /*JP
     { DEF_LIZARD, "", "lizard" },
 */
-    { DEF_LIZARD, "", "ƒgƒJƒQ" },
+    { DEF_LIZARD, "", "ãƒˆã‚«ã‚²" },
 /*JP
     { DEF_WORM_TAIL, "", "long worm tail" },
 */
-    { DEF_WORM_TAIL, "", "ƒƒ“ƒOƒ[ƒ€‚ÌK”ö" },
+    { DEF_WORM_TAIL, "", "ãƒ­ãƒ³ã‚°ãƒ¯ãƒ¼ãƒ ã®å°»å°¾" },
 /*JP
     { DEF_MIMIC_DEF, "", "mimic" },
 */
-    { DEF_MIMIC_DEF, "", "ƒ~ƒ~ƒbƒN" },
+    { DEF_MIMIC_DEF, "", "ãƒŸãƒŸãƒƒã‚¯" },
 };
 
 const struct symdef def_warnsyms[WARNCOUNT] = {
@@ -363,32 +363,32 @@ const struct symdef def_warnsyms[WARNCOUNT] = {
 /*JP
     { '0', "unknown creature causing you worry",    C(CLR_WHITE) },
 */
-    { '0', "‚ ‚È‚½‚ª‹C‚É‚µ‚Ä‚¢‚é“ä‚Ì‰ö•¨", C(CLR_WHITE)},
+    { '0', "ã‚ãªãŸãŒæ°—ã«ã—ã¦ã„ã‚‹è¬Žã®æ€ªç‰©", C(CLR_WHITE)},
     /* pink warning   */
 /*JP
     { '1', "unknown creature causing you concern",  C(CLR_RED) },
 */
-    { '1', "‚ ‚È‚½‚ªS”z‚µ‚Ä‚¢‚é“ä‚Ì‰ö•¨", C(CLR_RED)},
+    { '1', "ã‚ãªãŸãŒå¿ƒé…ã—ã¦ã„ã‚‹è¬Žã®æ€ªç‰©", C(CLR_RED)},
     /* red warning    */
 /*JP
     { '2', "unknown creature causing you anxiety",  C(CLR_RED) },
 */
-    { '2', "‚ ‚È‚½‚ªŒœ”O‚µ‚Ä‚¢‚é“ä‚Ì‰ö•¨", C(CLR_RED)},
+    { '2', "ã‚ãªãŸãŒæ‡¸å¿µã—ã¦ã„ã‚‹è¬Žã®æ€ªç‰©", C(CLR_RED)},
     /* ruby warning   */
 /*JP
     { '3', "unknown creature causing you disquiet", C(CLR_RED) },
 */
-    { '3', "‚ ‚È‚½‚ª‹C‚ð‚à‚ñ‚Å‚¢‚é“ä‚Ì‰ö•¨", C(CLR_RED)},
+    { '3', "ã‚ãªãŸãŒæ°—ã‚’ã‚‚ã‚“ã§ã„ã‚‹è¬Žã®æ€ªç‰©", C(CLR_RED)},
     /* purple warning */
 /*JP
     { '4', "unknown creature causing you alarm",    C(CLR_MAGENTA) },
 */
-    { '4', "‚ ‚È‚½‚ª‹°‚ê‚Ä‚¢‚é“ä‚Ì‰ö•¨", C(CLR_MAGENTA)},
+    { '4', "ã‚ãªãŸãŒæã‚Œã¦ã„ã‚‹è¬Žã®æ€ªç‰©", C(CLR_MAGENTA)},
     /* black warning  */
 /*JP
     { '5', "unknown creature causing you dread",    C(CLR_BRIGHT_MAGENTA) },
 */
-    { '5', "‚ ‚È‚½‚ª”ñí‚É‹°‚ê‚Ä‚¢‚é“ä‚Ì‰ö•¨", C(CLR_BRIGHT_MAGENTA)},
+    { '5', "ã‚ãªãŸãŒéžå¸¸ã«æã‚Œã¦ã„ã‚‹è¬Žã®æ€ªç‰©", C(CLR_BRIGHT_MAGENTA)},
 };
 
 /*
@@ -407,16 +407,16 @@ const struct symdef defsyms[MAXPCHARS] = {
        { '-', "wall", C(CLR_GRAY) },                 /* tuwall */
        { '-', "wall", C(CLR_GRAY) },                 /* tdwall */
 #else
-/* 0*/ { ' ', "•”‰®‚ÌˆÃ‚¢•”•ª", C(NO_COLOR) },       /* stone */
-       { '|', "•Ç", C(CLR_GRAY) },                   /* vwall */
-       { '-', "•Ç", C(CLR_GRAY) },                   /* hwall */
-       { '-', "•Ç", C(CLR_GRAY) },                   /* tlcorn */
-       { '-', "•Ç", C(CLR_GRAY) },                   /* trcorn */
-       { '-', "•Ç", C(CLR_GRAY) },                   /* blcorn */
-       { '-', "•Ç", C(CLR_GRAY) },                   /* brcorn */
-       { '-', "•Ç", C(CLR_GRAY) },                   /* crwall */
-       { '-', "•Ç", C(CLR_GRAY) },                   /* tuwall */
-       { '-', "•Ç", C(CLR_GRAY) },                   /* tdwall */
+/* 0*/ { ' ', "éƒ¨å±‹ã®æš—ã„éƒ¨åˆ†", C(NO_COLOR) },       /* stone */
+       { '|', "å£", C(CLR_GRAY) },                   /* vwall */
+       { '-', "å£", C(CLR_GRAY) },                   /* hwall */
+       { '-', "å£", C(CLR_GRAY) },                   /* tlcorn */
+       { '-', "å£", C(CLR_GRAY) },                   /* trcorn */
+       { '-', "å£", C(CLR_GRAY) },                   /* blcorn */
+       { '-', "å£", C(CLR_GRAY) },                   /* brcorn */
+       { '-', "å£", C(CLR_GRAY) },                   /* crwall */
+       { '-', "å£", C(CLR_GRAY) },                   /* tuwall */
+       { '-', "å£", C(CLR_GRAY) },                   /* tdwall */
 #endif
 #if 0 /*JP*/
 /*10*/ { '|', "wall", C(CLR_GRAY) },                 /* tlwall */
@@ -430,16 +430,16 @@ const struct symdef defsyms[MAXPCHARS] = {
        { '#', "tree", C(CLR_GREEN) },                /* tree */
        { '.', "floor of a room", C(CLR_GRAY) },      /* room */
 #else
-/*10*/ { '|', "•Ç", C(CLR_GRAY) },                   /* tlwall */
-       { '|', "•Ç", C(CLR_GRAY) },                   /* trwall */
-       { '.', "o“üŒû", C(CLR_GRAY) },               /* ndoor */
-       { '-', "ŠJ‚¢‚½”à", C(CLR_BROWN) },            /* vodoor */
-       { '|', "ŠJ‚¢‚½”à", C(CLR_BROWN) },            /* hodoor */
-       { '+', "•Â‚¶‚½”à", C(CLR_BROWN) },            /* vcdoor */
-       { '+', "•Â‚¶‚½”à", C(CLR_BROWN) },            /* hcdoor */
-       { '#', "“S–_", C(HI_METAL) },                 /* bars */
-       { '#', "–Ø", C(CLR_GREEN) },                  /* tree */
-       { '.', "•”‰®‚Ì°", C(CLR_GRAY) },             /* room */
+/*10*/ { '|', "å£", C(CLR_GRAY) },                   /* tlwall */
+       { '|', "å£", C(CLR_GRAY) },                   /* trwall */
+       { '.', "å‡ºå…¥å£", C(CLR_GRAY) },               /* ndoor */
+       { '-', "é–‹ã„ãŸæ‰‰", C(CLR_BROWN) },            /* vodoor */
+       { '|', "é–‹ã„ãŸæ‰‰", C(CLR_BROWN) },            /* hodoor */
+       { '+', "é–‰ã˜ãŸæ‰‰", C(CLR_BROWN) },            /* vcdoor */
+       { '+', "é–‰ã˜ãŸæ‰‰", C(CLR_BROWN) },            /* hcdoor */
+       { '#', "é‰„æ£’", C(HI_METAL) },                 /* bars */
+       { '#', "æœ¨", C(CLR_GREEN) },                  /* tree */
+       { '.', "éƒ¨å±‹ã®åºŠ", C(CLR_GRAY) },             /* room */
 #endif
 #if 0 /*JP*/
 /*20*/ { '.', "dark part of a room", C(CLR_BLACK) }, /* dark room */
@@ -453,16 +453,16 @@ const struct symdef defsyms[MAXPCHARS] = {
        { '|', "grave", C(CLR_GRAY) },                /* grave */
        { '\\', "opulent throne", C(HI_GOLD) },       /* throne */
 #else
-/*20*/ { '.', "•”‰®‚ÌˆÃ‚¢•”•ª", C(CLR_BLACK) },      /* dark room */
-       { '#', "’Ê˜H", C(CLR_GRAY) },                 /* dark corr */
-       { '#', "–¾‚é‚¢’Ê˜H", C(CLR_GRAY) },     /* lit corr (see mapglyph.c) */
-       { '<', "ã‚èŠK’i", C(CLR_GRAY) },             /* upstair */
-       { '>', "‰º‚èŠK’i", C(CLR_GRAY) },             /* dnstair */
-       { '<', "ã‚è‚Í‚µ‚²", C(CLR_BROWN) },          /* upladder */
-       { '>', "‰º‚è‚Í‚µ‚²", C(CLR_BROWN) },          /* dnladder */
-       { '_', "Õ’d", C(CLR_GRAY) },                 /* altar */
-       { '|', "•æ", C(CLR_GRAY) },                   /* grave */
-       { '\\', "‰Ø‚â‚©‚È‹ÊÀ", C(HI_GOLD) },         /* throne */
+/*20*/ { '.', "éƒ¨å±‹ã®æš—ã„éƒ¨åˆ†", C(CLR_BLACK) },      /* dark room */
+       { '#', "é€šè·¯", C(CLR_GRAY) },                 /* dark corr */
+       { '#', "æ˜Žã‚‹ã„é€šè·¯", C(CLR_GRAY) },     /* lit corr (see mapglyph.c) */
+       { '<', "ä¸Šã‚ŠéšŽæ®µ", C(CLR_GRAY) },             /* upstair */
+       { '>', "ä¸‹ã‚ŠéšŽæ®µ", C(CLR_GRAY) },             /* dnstair */
+       { '<', "ä¸Šã‚Šã¯ã—ã”", C(CLR_BROWN) },          /* upladder */
+       { '>', "ä¸‹ã‚Šã¯ã—ã”", C(CLR_BROWN) },          /* dnladder */
+       { '_', "ç¥­å£‡", C(CLR_GRAY) },                 /* altar */
+       { '|', "å¢“", C(CLR_GRAY) },                   /* grave */
+       { '\\', "è¯ã‚„ã‹ãªçŽ‰åº§", C(HI_GOLD) },         /* throne */
 #endif
 #if 0 /*JP*/
 /*30*/ { '#', "sink", C(CLR_GRAY) },                 /* sink */
@@ -476,16 +476,16 @@ const struct symdef defsyms[MAXPCHARS] = {
        { '#', "raised drawbridge", C(CLR_BROWN) },   /* hcdbridge */
        { ' ', "air", C(CLR_CYAN) },                  /* open air */
 #else
-/*30*/ { '#', "—¬‚µ‘ä", C(CLR_GRAY) },               /* sink */
-       { '{', "ò", C(CLR_BLUE) },                   /* fountain */
-       { '}', "…‚Ì‚½‚Ü‚Á‚½êŠ", C(CLR_BLUE) },     /* pool */
-       { '.', "•X", C(CLR_CYAN) },                   /* ice */
-       { '}', "—nŠâ", C(CLR_RED) },                  /* lava */
-       { '.', "~‚è‚Ä‚¢‚é’µ‚Ë‹´", C(CLR_BROWN) },    /* vodbridge */
-       { '.', "~‚è‚Ä‚¢‚é’µ‚Ë‹´", C(CLR_BROWN) },    /* hodbridge */
-       { '#', "ã‚Á‚Ä‚¢‚é’µ‚Ë‹´", C(CLR_BROWN) },    /* vcdbridge */
-       { '#', "ã‚Á‚Ä‚¢‚é’µ‚Ë‹´", C(CLR_BROWN) },    /* hcdbridge */
-       { ' ', "‹ó‹C‚Ì‚½‚Ü‚Á‚½êŠ", C(CLR_CYAN) },   /* open air */
+/*30*/ { '#', "æµã—å°", C(CLR_GRAY) },               /* sink */
+       { '{', "æ³‰", C(CLR_BLUE) },                   /* fountain */
+       { '}', "æ°´ã®ãŸã¾ã£ãŸå ´æ‰€", C(CLR_BLUE) },     /* pool */
+       { '.', "æ°·", C(CLR_CYAN) },                   /* ice */
+       { '}', "æº¶å²©", C(CLR_RED) },                  /* lava */
+       { '.', "é™ã‚Šã¦ã„ã‚‹è·³ã­æ©‹", C(CLR_BROWN) },    /* vodbridge */
+       { '.', "é™ã‚Šã¦ã„ã‚‹è·³ã­æ©‹", C(CLR_BROWN) },    /* hodbridge */
+       { '#', "ä¸Šã£ã¦ã„ã‚‹è·³ã­æ©‹", C(CLR_BROWN) },    /* vcdbridge */
+       { '#', "ä¸Šã£ã¦ã„ã‚‹è·³ã­æ©‹", C(CLR_BROWN) },    /* hcdbridge */
+       { ' ', "ç©ºæ°—ã®ãŸã¾ã£ãŸå ´æ‰€", C(CLR_CYAN) },   /* open air */
 #endif
 #if 0 /*JP*/
 /*40*/ { '#', "cloud", C(CLR_GRAY) },                /* [part of] a cloud */
@@ -499,16 +499,16 @@ const struct symdef defsyms[MAXPCHARS] = {
        { '^', "rolling boulder trap", C(CLR_GRAY) }, /* trap */
        { '^', "sleeping gas trap", C(HI_ZAP) },      /* trap */
 #else
-/*40*/ { '#', "‰_", C(CLR_GRAY) },                   /* [part of] a cloud */
-       { '}', "…", C(CLR_BLUE) },                   /* under water */
-       { '^', "–î‚Ìã©", C(HI_METAL) },               /* trap */
-       { '^', "“Š‚°–î‚Ìã©", C(HI_METAL) },           /* trap */
-       { '^', "—ŽÎ‚Ìã©", C(CLR_GRAY) },             /* trap */
-       { '^', "‚«‚µ‚Þ”Â", C(CLR_BROWN) },            /* trap */
-       { '^', "ŒF‚Ìã©", C(HI_METAL) },               /* trap */
-       { '^', "’n—‹", C(CLR_RED) },                  /* trap */
-       { '^', "‹Šâ‚Ìã©", C(CLR_GRAY) },             /* trap */
-       { '^', "‡–°ƒKƒX‚Ìã©", C(HI_ZAP) },           /* trap */
+/*40*/ { '#', "é›²", C(CLR_GRAY) },                   /* [part of] a cloud */
+       { '}', "æ°´", C(CLR_BLUE) },                   /* under water */
+       { '^', "çŸ¢ã®ç½ ", C(HI_METAL) },               /* trap */
+       { '^', "æŠ•ã’çŸ¢ã®ç½ ", C(HI_METAL) },           /* trap */
+       { '^', "è½çŸ³ã®ç½ ", C(CLR_GRAY) },             /* trap */
+       { '^', "ãã—ã‚€æ¿", C(CLR_BROWN) },            /* trap */
+       { '^', "ç†Šã®ç½ ", C(HI_METAL) },               /* trap */
+       { '^', "åœ°é›·", C(CLR_RED) },                  /* trap */
+       { '^', "å·¨å²©ã®ç½ ", C(CLR_GRAY) },             /* trap */
+       { '^', "ç¡çœ ã‚¬ã‚¹ã®ç½ ", C(HI_ZAP) },           /* trap */
 #endif
 #if 0 /*JP*/
 /*50*/ { '^', "rust trap", C(CLR_BLUE) },            /* trap */
@@ -522,16 +522,16 @@ const struct symdef defsyms[MAXPCHARS] = {
        { '^', "magic portal", C(CLR_BRIGHT_MAGENTA) }, /* trap */
        { '"', "web", C(CLR_GRAY) },                    /* web */
 #else
-/*50*/ { '^', "•…H‚Ìã©", C(CLR_BLUE) },             /* trap */
-       { '^', "‰Î‚Ìã©", C(CLR_ORANGE) },             /* trap */
-       { '^', "—Ž‚µŒŠ", C(CLR_BLACK) },              /* trap */
-       { '^', "ƒgƒQ‚¾‚ç‚¯‚Ì—Ž‚µŒŠ", C(CLR_BLACK) },  /* trap */
-       { '^', "ŒŠ", C(CLR_BROWN) },                  /* trap */
-       { '^', "—Ž‚µ”à", C(CLR_BROWN) },              /* trap */
-       { '^', "uŠÔˆÚ“®‚Ìã©", C(CLR_MAGENTA) },      /* trap */
-       { '^', "•Ê‚ÌŠK‚Ö‚ÌuŠÔˆÚ“®‚Ìã©", C(CLR_MAGENTA) }, /* trap */
-       { '^', "–‚–@‚Ìã©", C(CLR_BRIGHT_MAGENTA) },   /* trap */
-       { '"', "‚­‚à‚Ì‘ƒ", C(CLR_GRAY) },             /* web */
+/*50*/ { '^', "è…é£Ÿã®ç½ ", C(CLR_BLUE) },             /* trap */
+       { '^', "ç«ã®ç½ ", C(CLR_ORANGE) },             /* trap */
+       { '^', "è½ã—ç©´", C(CLR_BLACK) },              /* trap */
+       { '^', "ãƒˆã‚²ã ã‚‰ã‘ã®è½ã—ç©´", C(CLR_BLACK) },  /* trap */
+       { '^', "ç©´", C(CLR_BROWN) },                  /* trap */
+       { '^', "è½ã—æ‰‰", C(CLR_BROWN) },              /* trap */
+       { '^', "çž¬é–“ç§»å‹•ã®ç½ ", C(CLR_MAGENTA) },      /* trap */
+       { '^', "åˆ¥ã®éšŽã¸ã®çž¬é–“ç§»å‹•ã®ç½ ", C(CLR_MAGENTA) }, /* trap */
+       { '^', "é­”æ³•ã®ç½ ", C(CLR_BRIGHT_MAGENTA) },   /* trap */
+       { '"', "ãã‚‚ã®å·£", C(CLR_GRAY) },             /* web */
 #endif
 #if 0 /*JP*/
 /*60*/ { '^', "statue trap", C(CLR_GRAY) },            /* trap */
@@ -547,15 +547,15 @@ const struct symdef defsyms[MAXPCHARS] = {
        { '!', "", C(CLR_WHITE) },               /* camera flash beam */
        { ')', "", C(HI_WOOD) },                 /* boomerang open left */
 #else
-/*60*/ { '^', "’¤‘œ‚Ìã©", C(CLR_GRAY) },               /* trap */
-       { '^', "–‚–@‚Ìã©", C(HI_ZAP) },                 /* trap */
-       { '^', "”½–‚–@‹óŠÔ‚Ìã©", C(HI_ZAP) },           /* trap */
-       { '^', "•Ï‰»‚Ìã©", C(CLR_BRIGHT_GREEN) },       /* trap */
-       { '^', "U“®‚µ‚Ä‚¢‚éêŠ", C(CLR_YELLOW) },     /* trap */
-       { '|', "•Ç", C(CLR_GRAY) },              /* vbeam */
-       { '-', "•Ç", C(CLR_GRAY) },              /* hbeam */
-       { '\\', "•Ç", C(CLR_GRAY) },             /* lslant */
-       { '/', "•Ç", C(CLR_GRAY) },              /* rslant */
+/*60*/ { '^', "å½«åƒã®ç½ ", C(CLR_GRAY) },               /* trap */
+       { '^', "é­”æ³•ã®ç½ ", C(HI_ZAP) },                 /* trap */
+       { '^', "åé­”æ³•ç©ºé–“ã®ç½ ", C(HI_ZAP) },           /* trap */
+       { '^', "å¤‰åŒ–ã®ç½ ", C(CLR_BRIGHT_GREEN) },       /* trap */
+       { '^', "æŒ¯å‹•ã—ã¦ã„ã‚‹å ´æ‰€", C(CLR_YELLOW) },     /* trap */
+       { '|', "å£", C(CLR_GRAY) },              /* vbeam */
+       { '-', "å£", C(CLR_GRAY) },              /* hbeam */
+       { '\\', "å£", C(CLR_GRAY) },             /* lslant */
+       { '/', "å£", C(CLR_GRAY) },              /* rslant */
        { '*', "", C(CLR_WHITE) },               /* dig beam */
        { '!', "", C(CLR_WHITE) },               /* camera flash beam */
        { ')', "", C(HI_WOOD) },                 /* boomerang open left */
@@ -569,8 +569,8 @@ const struct symdef defsyms[MAXPCHARS] = {
        { '#', "poison cloud", C(CLR_BRIGHT_GREEN) },   /* part of a cloud */
        { '?', "valid position", C(CLR_BRIGHT_GREEN) }, /*  target position */
 #else
-       { '#', "“Å‰_", C(CLR_BRIGHT_GREEN) },           /* part of a cloud */
-       { '?', "—LŒø‚ÈˆÊ’u", C(CLR_BRIGHT_GREEN) },     /*  target position */
+       { '#', "æ¯’é›²", C(CLR_BRIGHT_GREEN) },           /* part of a cloud */
+       { '?', "æœ‰åŠ¹ãªä½ç½®", C(CLR_BRIGHT_GREEN) },     /*  target position */
 #endif
        { '/', "", C(CLR_GREEN) },         /* swallow top left      */
        { '-', "", C(CLR_GREEN) },         /* swallow top center    */
