@@ -448,7 +448,7 @@ NEARDATA struct permonst mons[] = {
         A(ATTK(AT_EXPL, AD_PHYS, 5, 12), NO_ATTK, NO_ATTK, NO_ATTK, NO_ATTK,
           NO_ATTK),
         SIZ(10, 10, MS_HISS, MZ_SMALL), 0, 0,
-        M1_ANIMAL,
+        M1_HUMANOID | M1_NOHANDS,
         M2_HOSTILE | M2_NEUTER,
         M3_INFRAVISIBLE | M3_INFRAVISION, CLR_GREEN),
     MON("mind flayer", S_HUMANOID, LVL(9, 12, 5, 90, -8), (G_GENO | 1),
