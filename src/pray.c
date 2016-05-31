@@ -1007,7 +1007,7 @@ aligntyp g_align;
                 update_inventory();
             }
             break;
-        case 3:
+        case 2:
             /* takes 2 hints to get the music to enter the stronghold;
                skip if you've solved it via mastermind or destroyed the
                drawbridge (both set uopened_dbridge) or if you've already
@@ -1030,7 +1030,7 @@ aligntyp g_align;
                 }
             }
         /* Otherwise, falls into next case */
-        case 2:
+        case 4:
             if (!Blind)
                 You("are surrounded by %s glow.", an(hcolor(NH_GOLDEN)));
             /* if any levels have been lost (and not yet regained),
@@ -1039,9 +1039,13 @@ aligntyp g_align;
                 u.ulevelmax -= 1; /* see potion.c */
                 pluslvl(FALSE);
             } else {
-                u.uhpmax += 5;
+                int amt = 4;
+                /* player deserves it */
+                if (u.uevent.uhand_of_elbereth)
+                  amt += rn2(12);
+                u.uhpmax += amt;
                 if (Upolyd)
-                    u.mhmax += 5;
+                    u.mhmax += amt;
             }
             u.uhp = u.uhpmax;
             if (Upolyd)
@@ -1061,7 +1065,7 @@ aligntyp g_align;
             make_blinded(0L, TRUE);
             context.botl = 1;
             break;
-        case 4: {
+        case 3: {
             register struct obj *otmp;
             int any = 0;
 
