@@ -156,8 +156,9 @@ getlin_hook_proc hook;
             } else
                 tty_nhbell();
 #if 1 /*JP*/
-	    if(is_kanji2(tmp, bufp-tmp))
-	      goto moreback;
+	    /* if (is_kanji2(tmp, bufp-tmp)) */
+      if (bufp[1] >= 0x80 && bufp[1] < 0xC0)
+        goto moreback;
 #endif
 #if defined(apollo)
         } else if (c == '\n' || c == '\r') {
