@@ -3338,7 +3338,7 @@ const char *str;
 #if defined(MICRO) || defined(WIN32CON)
     msmsg("%s\n", str);
 #else
-# if 0 /*JP*/
+# if 1 /*JP*/
     puts(str);
 # else
     jputs(str);
@@ -3357,7 +3357,7 @@ const char *str;
 #if defined(MICRO) || defined(WIN32CON)
     msmsg("%s", str);
 #else
-# if 0 /*JP*/
+# if 1 /*JP*/
     (void) fputs(str, stdout);
 # else
     (void) jputs(str);
@@ -3367,7 +3367,7 @@ const char *str;
 #if defined(MICRO) || defined(WIN32CON)
     msmsg("\n");
 #else
-# if 0 /*JP*/
+# if 1 /*JP*/
     puts("");
 # endif
     (void) fflush(stdout);

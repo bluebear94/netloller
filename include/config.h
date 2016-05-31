@@ -43,7 +43,11 @@
 #if !defined(NOTTYGRAPHICS)
 #define TTY_GRAPHICS /* good old tty based graphics */
 #endif
-/* #define X11_GRAPHICS */   /* X11 interface */
+#if 0
+#ifndef X11_GRAPHICS
+#define X11_GRAPHICS   /* X11 interface */
+#endif
+#endif
 /* #define QT_GRAPHICS */    /* Qt interface */
 /* #define GNOME_GRAPHICS */ /* Gnome interface */
 /* #define MSWIN_GRAPHICS */ /* Windows NT, CE, Graphics */
@@ -317,7 +321,7 @@
  * otherwise it will be the current directory.
  */
 #ifndef HACKDIR
-#define HACKDIR "/usr/games/lib/nethackdir"
+#define HACKDIR "/home/uruwi/nh/install/games/lib/jnethackdir"
 #endif
 
 /*
