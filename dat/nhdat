@@ -1,459 +1,457 @@
-  1      137     1628     3038  1248875
+  1      137     1628     3038  1260381
 nDirectory        0
 nhelp     3038
-nhh    12456
-ncmdhelp    17759
-nhistory    22179
-nopthelp    28334
-nwizhelp    43507
-ndungeon    44090
-ntribute    46606
-nasmodeus.lev   251952
-nbaalz.lev   255088
-nbigrm-1.lev   257951
-nbigrm-10.lev   263555
-nbigrm-2.lev   266163
-nbigrm-3.lev   271181
-nbigrm-4.lev   275719
-nbigrm-5.lev   280341
-nbigrm-6.lev   284935
-nbigrm-7.lev   287042
-nbigrm-8.lev   289367
-nbigrm-9.lev   291694
-ncastle.lev   293875
-nfakewiz1.lev   307082
-nfakewiz2.lev   308678
-njuiblex.lev   310167
-nknox.lev   316264
-nmedusa-1.lev   321732
-nmedusa-2.lev   327621
-nmedusa-3.lev   334421
-nmedusa-4.lev   339476
-nminend-1.lev   345392
-nminend-2.lev   351776
-nminend-3.lev   358798
-nminefill.lev   364248
-nminetn-1.lev   366075
-nminetn-2.lev   372625
-nminetn-3.lev   378547
-nminetn-4.lev   383607
-nminetn-5.lev   388115
-nminetn-6.lev   394249
-nminetn-7.lev   397880
-noracle.lev   404470
-norcus.lev   407703
-nsanctum.lev   414758
-nsoko1-1.lev   421061
-nsoko1-2.lev   424939
-nsoko2-1.lev   428989
-nsoko2-2.lev   431296
-nsoko3-1.lev   433860
-nsoko3-2.lev   436908
-nsoko4-1.lev   439606
-nsoko4-2.lev   441861
-ntower1.lev   444267
-ntower2.lev   446363
-ntower3.lev   447991
-nvalley.lev   449957
-nwizard1.lev   458361
-nwizard2.lev   461975
-nwizard3.lev   464219
-nastral.lev   467415
-nair.lev   477847
-nearth.lev   484142
-nfire.lev   490756
-nwater.lev   498606
-nArc-goal.lev   504701
-nBar-goal.lev   510544
-nCav-goal.lev   516189
-nHea-goal.lev   519085
-nKni-goal.lev   523731
-nMon-goal.lev   529841
-nPri-goal.lev   533126
-nRan-goal.lev   536854
-nRog-goal.lev   542861
-nSam-goal.lev   549691
-nTou-goal.lev   554731
-nVal-goal.lev   562774
-nWiz-goal.lev   566793
-nArc-fila.lev   574418
-nArc-filb.lev   576586
-nBar-fila.lev   578754
-nBar-filb.lev   580190
-nCav-fila.lev   582489
-nCav-filb.lev   584102
-nHea-fila.lev   586142
-nHea-filb.lev   588212
-nKni-fila.lev   590769
-nKni-filb.lev   592369
-nMon-fila.lev   594340
-nMon-filb.lev   596749
-nPri-fila.lev   599128
-nPri-filb.lev   601072
-nRan-fila.lev   603322
-nRan-filb.lev   604935
-nRog-fila.lev   606824
-nRog-filb.lev   609458
-nSam-fila.lev   612092
-nSam-filb.lev   613661
-nTou-fila.lev   616334
-nTou-filb.lev   617947
-nVal-fila.lev   619810
-nVal-filb.lev   621495
-nWiz-fila.lev   623370
-nWiz-filb.lev   625698
-nArc-loca.lev   627996
-nBar-loca.lev   634811
-nCav-loca.lev   640908
-nHea-loca.lev   646346
-nKni-loca.lev   651025
-nMon-loca.lev   656913
-nPri-loca.lev   661498
-nRan-loca.lev   664381
-nRog-loca.lev   668530
-nSam-loca.lev   674504
-nTou-loca.lev   681845
-nVal-loca.lev   689399
-nWiz-loca.lev   693393
-nArc-strt.lev   700129
-nBar-strt.lev   705206
-nCav-strt.lev   710017
-nHea-strt.lev   714345
-nKni-strt.lev   719217
-nMon-strt.lev   723312
-nPri-strt.lev   727593
-nRan-strt.lev   731943
-nRog-strt.lev   736505
-nSam-strt.lev   742899
-nTou-strt.lev   747078
-nVal-strt.lev   752985
-nWiz-strt.lev   757300
-nbogusmon   762173
-ndata   766304
-nengrave  1026968
-nepitaph  1028232
-noracles  1042254
-noptions  1046456
-nquest.dat  1046922
-nrumors  1201816
-        JNetHack ‚Ö‚æ‚¤‚±‚»I                ( ƒo[ƒWƒ‡ƒ“ 3.6 ‚Ìà–¾ )
+nhh    15349
+ncmdhelp    22123
+nhistory    26543
+nopthelp    33620
+nwizhelp    52509
+ndungeon    53177
+ntribute    55693
+nasmodeus.lev   261039
+nbaalz.lev   264175
+nbigrm-1.lev   267038
+nbigrm-10.lev   272642
+nbigrm-2.lev   275250
+nbigrm-3.lev   280268
+nbigrm-4.lev   284806
+nbigrm-5.lev   289428
+nbigrm-6.lev   294022
+nbigrm-7.lev   296129
+nbigrm-8.lev   298454
+nbigrm-9.lev   300781
+ncastle.lev   302962
+nfakewiz1.lev   316169
+nfakewiz2.lev   317765
+njuiblex.lev   319254
+nknox.lev   325351
+nmedusa-1.lev   330819
+nmedusa-2.lev   336708
+nmedusa-3.lev   343508
+nmedusa-4.lev   348563
+nminend-1.lev   354479
+nminend-2.lev   360863
+nminend-3.lev   367885
+nminefill.lev   373335
+nminetn-1.lev   375162
+nminetn-2.lev   381712
+nminetn-3.lev   387634
+nminetn-4.lev   392694
+nminetn-5.lev   397202
+nminetn-6.lev   403336
+nminetn-7.lev   406967
+noracle.lev   413557
+norcus.lev   416790
+nsanctum.lev   423845
+nsoko1-1.lev   430148
+nsoko1-2.lev   434026
+nsoko2-1.lev   438076
+nsoko2-2.lev   440383
+nsoko3-1.lev   442947
+nsoko3-2.lev   445995
+nsoko4-1.lev   448693
+nsoko4-2.lev   450948
+ntower1.lev   453354
+ntower2.lev   455450
+ntower3.lev   457078
+nvalley.lev   459044
+nwizard1.lev   467448
+nwizard2.lev   471062
+nwizard3.lev   473306
+nastral.lev   476502
+nair.lev   486934
+nearth.lev   493229
+nfire.lev   499843
+nwater.lev   507693
+nArc-goal.lev   513788
+nBar-goal.lev   519631
+nCav-goal.lev   525276
+nHea-goal.lev   528172
+nKni-goal.lev   532818
+nMon-goal.lev   538928
+nPri-goal.lev   542213
+nRan-goal.lev   545941
+nRog-goal.lev   551948
+nSam-goal.lev   558778
+nTou-goal.lev   563818
+nVal-goal.lev   571861
+nWiz-goal.lev   575880
+nArc-fila.lev   583505
+nArc-filb.lev   585673
+nBar-fila.lev   587841
+nBar-filb.lev   589277
+nCav-fila.lev   591576
+nCav-filb.lev   593189
+nHea-fila.lev   595229
+nHea-filb.lev   597299
+nKni-fila.lev   599856
+nKni-filb.lev   601456
+nMon-fila.lev   603427
+nMon-filb.lev   605836
+nPri-fila.lev   608215
+nPri-filb.lev   610159
+nRan-fila.lev   612409
+nRan-filb.lev   614022
+nRog-fila.lev   615911
+nRog-filb.lev   618545
+nSam-fila.lev   621179
+nSam-filb.lev   622748
+nTou-fila.lev   625421
+nTou-filb.lev   627034
+nVal-fila.lev   628897
+nVal-filb.lev   630582
+nWiz-fila.lev   632457
+nWiz-filb.lev   634785
+nArc-loca.lev   637083
+nBar-loca.lev   643898
+nCav-loca.lev   649995
+nHea-loca.lev   655433
+nKni-loca.lev   660112
+nMon-loca.lev   666000
+nPri-loca.lev   670585
+nRan-loca.lev   673468
+nRog-loca.lev   677617
+nSam-loca.lev   683591
+nTou-loca.lev   690932
+nVal-loca.lev   698486
+nWiz-loca.lev   702480
+nArc-strt.lev   709216
+nBar-strt.lev   714293
+nCav-strt.lev   719104
+nHea-strt.lev   723432
+nKni-strt.lev   728304
+nMon-strt.lev   732399
+nPri-strt.lev   736680
+nRan-strt.lev   741030
+nRog-strt.lev   745592
+nSam-strt.lev   751986
+nTou-strt.lev   756165
+nVal-strt.lev   762072
+nWiz-strt.lev   766387
+nbogusmon   771260
+ndata   775391
+nengrave  1036055
+nepitaph  1037457
+noracles  1052029
+noptions  1057962
+nquest.dat  1058428
+nrumors  1213322
+        JNetHack ã¸ã‚ˆã†ã“ãï¼                ( ãƒãƒ¼ã‚¸ãƒ§ãƒ³ 3.6 ã®èª¬æ˜Ž )
 
-  JNetHack ‚Í20ŠK‚æ‚è‰º‚Ì‚Ç‚±‚©‚É‰B‚³‚ê‚Ä‚¢‚é‚Æ‰\‚³‚ê‚Ä‚¢‚éuƒCƒFƒ“ƒ_[‚Ì–‚œ
-‚¯v‚ð‹‚ßC–À‹{‚Ì[‚Ý‚É~‚è‚Äs‚­uDungeons and Dragonsv•—‚ÌƒQ[ƒ€‚Å‚ ‚éD‚ 
-‚È‚½‚Íˆê•C‚Ìƒyƒbƒg‚ð”º‚Á‚Ä‚¢‚éDƒyƒbƒg‚Í‚¢‚ë‚¢‚ë‚Æ•‚¯‚Ä‚­‚ê‚½‚èC‚¢‚ë‚ñ‚È‚±‚Æ
-‚ð‚·‚é‚æ‚¤‚É‚µ‚Â‚¯‚é‚±‚Æ‚ª‚Å‚«‚éD‚ ‚È‚½‚Í“r’†‚Å•Ö—˜‚È(Žž‚É‚Í–ð—§‚½‚¸‚Ì)“¹‹ï
-(–‚–@‚Ì•i‚à‚ ‚é) ‚âC‚¢‚ë‚¢‚ë‚È‰ö•¨‚Éo‰ï‚¤D‰ö•¨‚Ì‚¢‚éŠ‚Ö‘Ì“–‚è‚ð‚·‚é‚±‚Æ‚É
-‚æ‚Á‚ÄUŒ‚‚Å‚«‚é(‚µ‚©‚µ‘å’ï‚Ìê‡‚Í—£‚ê‚Ä‚¢‚½•û‚ªŒ«–¾‚¾‚ë‚¤)D
+  JNetHack ã¯20éšŽã‚ˆã‚Šä¸‹ã®ã©ã“ã‹ã«éš ã•ã‚Œã¦ã„ã‚‹ã¨å™‚ã•ã‚Œã¦ã„ã‚‹ã€Œã‚¤ã‚§ãƒ³ãƒ€ãƒ¼ã®é­”é™¤
+ã‘ã€ã‚’æ±‚ã‚ï¼Œè¿·å®®ã®æ·±ã¿ã«é™ã‚Šã¦è¡Œãã€ŒDungeons and Dragonsã€é¢¨ã®ã‚²ãƒ¼ãƒ ã§ã‚ã‚‹ï¼Žã‚
+ãªãŸã¯ä¸€åŒ¹ã®ãƒšãƒƒãƒˆã‚’ä¼´ã£ã¦ã„ã‚‹ï¼Žãƒšãƒƒãƒˆã¯ã„ã‚ã„ã‚ã¨åŠ©ã‘ã¦ãã‚ŒãŸã‚Šï¼Œã„ã‚ã‚“ãªã“ã¨
+ã‚’ã™ã‚‹ã‚ˆã†ã«ã—ã¤ã‘ã‚‹ã“ã¨ãŒã§ãã‚‹ï¼Žã‚ãªãŸã¯é€”ä¸­ã§ä¾¿åˆ©ãª(æ™‚ã«ã¯å½¹ç«‹ãŸãšã®)é“å…·
+(é­”æ³•ã®å“ã‚‚ã‚ã‚‹) ã‚„ï¼Œã„ã‚ã„ã‚ãªæ€ªç‰©ã«å‡ºä¼šã†ï¼Žæ€ªç‰©ã®ã„ã‚‹æ‰€ã¸ä½“å½“ã‚Šã‚’ã™ã‚‹ã“ã¨ã«
+ã‚ˆã£ã¦æ”»æ’ƒã§ãã‚‹(ã—ã‹ã—å¤§æŠµã®å ´åˆã¯é›¢ã‚Œã¦ã„ãŸæ–¹ãŒè³¢æ˜Žã ã‚ã†)ï¼Ž
 
-  Œ¾—t‚Å‚ ‚È‚½‚ÌˆÊ’u‚ð•\Œ»‚·‚é‚æ‚¤‚È‘½‚­‚ÌƒAƒhƒxƒ“ƒ`ƒƒ[ƒQ[ƒ€‚Æˆá‚Á‚ÄC 
-JNetHack ‚Í‚ ‚È‚½‚Ì‚¢‚é–À‹{‚ÌƒrƒWƒ…ƒAƒ‹ƒCƒ[ƒW‚ð‚ ‚½‚¦‚Ä‚­‚ê‚éD
-
-
-        NetHack ‚Å‚ÍˆÈ‰º‚Ì•¶Žš‚ðŽg‚¤:
-
-        - ‚Æ |   •”‰®‚Ì•ÇDŠJ‚¢‚½ƒhƒA‚â•æ‚Ì‚±‚Æ‚à‚ ‚éD
-        .        ° ‚Ü‚½‚Í o“üŒûD
-        #        ˜L‰º “S–_ ‚Ü‚½‚Í –ØD—¬‚µ‘ä(‚à‚µ‚ ‚ê‚Î)‚â
-                 ’µ‚Ë‹´‚Ì‚±‚Æ‚à‚ ‚éD
-        >        ŽŸ‚ÌŠK‚Ö‚ÌŠK’i“™D
-        <        ‘O‚ÌŠK‚Ö‚ÌŠK’i“™D
-        @        ( ‚Ó‚Â‚¤‚Í )ƒvƒŒ[ƒ„[ ‚Ü‚½‚Í •Ê‚ÌlŠÔD
-        )        ‚¢‚ë‚ñ‚ÈŽí—Þ‚Ì•ŠíD
-        [        •ž ‚Ü‚½‚Í ŠZD
-        %        H‚×‚à‚ÌD(•…‚Á‚Ä‚È‚¢‚Æ‚ÍŒÀ‚ç‚È‚¢)
-        /        –‚–@‚ÌñD
-        =        Žw—ÖD
-        ?        Šª•¨D
-        !        …–òD
-        (        “¹‹ïD(‚Â‚é‚Í‚µ, Œ®, ƒ‰ƒ“ƒvDDD)
-        $        ‹à‚Ì‰òD
-        *        •óÎ ‚Ü‚½‚Í ŠâD(–ð‚É—§‚Âê‡‚àC–³‰¿’l‚Ìê‡‚à‚ ‚é)
-        +        •Â‚¶‚½”à ‚Ü‚½‚Í Žô•¶‚Ì–{D
-        ^        (Œ©‚Â‚¯‚½Œã‚Ì) ã©D
-        "        –‚œ‚¯ ‚Ü‚½‚Í ’wå‚Ì‘ƒD
-        0        “S‚Ì‹ÊD
-        _        Õ’d ‚Ü‚½‚Í “S‚Ì½D
-        {        òD
-        }        …—­‚è ‚â o‚¾‚Ü‚è
-        \        ‹‰Ø‚È‰¤ÀD
-        `        ‹ÊÎ ‚Ü‚½‚Í ’¤‘œD
-        A ‚©‚ç Z, a ‚©‚ç z, ‚»‚Ì‘¼:  ‰ö•¨
-        I        “§–¾‚Ü‚½‚ÍŒ©‚¦‚Ä‚¢‚È‚¢‰ö•¨‚ªÅŒã‚É‚¢‚½êŠ
-
-                 '/' ‚ÌŒã‚É•¶Žš‚ð“ü—Í‚·‚é‚±‚Æ‚ÅC‚»‚ê‚ª‰½‚ð•\‚µ‚Ä‚¢‚é‚Ì‚©
-                 Œ©•ª‚¯‚é‚±‚Æ‚ª‚Å‚«‚éD‚½‚Æ‚¦‚Î "/A" ‚ÍC'A' ‚Í‰ŽC
-                 ‚Ì‚æ‚¤‚É•\Ž¦‚·‚éD
+  è¨€è‘‰ã§ã‚ãªãŸã®ä½ç½®ã‚’è¡¨ç¾ã™ã‚‹ã‚ˆã†ãªå¤šãã®ã‚¢ãƒ‰ãƒ™ãƒ³ãƒãƒ£ãƒ¼ã‚²ãƒ¼ãƒ ã¨é•ã£ã¦ï¼Œ
+JNetHack ã¯ã‚ãªãŸã®ã„ã‚‹è¿·å®®ã®ãƒ“ã‚¸ãƒ¥ã‚¢ãƒ«ã‚¤ãƒ¡ãƒ¼ã‚¸ã‚’ã‚ãŸãˆã¦ãã‚Œã‚‹ï¼Ž
 
 
+        NetHack ã§ã¯ä»¥ä¸‹ã®æ–‡å­—ã‚’ä½¿ã†:
 
-y k u   7 8 9   ˆÚ“®ƒRƒ}ƒ“ƒh:
- \|/     \|/            yuhjklbn: Žw’è‚³‚ê‚½•ûŒü‚É‚PƒXƒeƒbƒvˆÚ“®‚·‚éD
-h-.-l   4-.-6           YUHJKLBN: •Ç‚É“–‚½‚é‚©‰½‚©‚É“ü‚é‚Ü‚ÅˆÚ“®‚·‚éD
+        - ã¨ |   éƒ¨å±‹ã®å£ï¼Žé–‹ã„ãŸãƒ‰ã‚¢ã‚„å¢“ã®ã“ã¨ã‚‚ã‚ã‚‹ï¼Ž
+        .        åºŠ ã¾ãŸã¯ å‡ºå…¥å£ï¼Ž
+        #        å»Šä¸‹ é‰„æ£’ ã¾ãŸã¯ æœ¨ï¼Žæµã—å°(ã‚‚ã—ã‚ã‚Œã°)ã‚„
+                 è·³ã­æ©‹ã®ã“ã¨ã‚‚ã‚ã‚‹ï¼Ž
+        >        æ¬¡ã®éšŽã¸ã®éšŽæ®µç­‰ï¼Ž
+        <        å‰ã®éšŽã¸ã®éšŽæ®µç­‰ï¼Ž
+        @        ( ãµã¤ã†ã¯ )ãƒ—ãƒ¬ãƒ¼ãƒ¤ãƒ¼ ã¾ãŸã¯ åˆ¥ã®äººé–“ï¼Ž
+        )        ã„ã‚ã‚“ãªç¨®é¡žã®æ­¦å™¨ï¼Ž
+        [        æœ ã¾ãŸã¯ éŽ§ï¼Ž
+        %        é£Ÿã¹ã‚‚ã®ï¼Ž(è…ã£ã¦ãªã„ã¨ã¯é™ã‚‰ãªã„)
+        /        é­”æ³•ã®æ–ï¼Ž
+        =        æŒ‡è¼ªï¼Ž
+        ?        å·»ç‰©ï¼Ž
+        !        æ°´è–¬ï¼Ž
+        (        é“å…·ï¼Ž(ã¤ã‚‹ã¯ã—, éµ, ãƒ©ãƒ³ãƒ—ï¼Žï¼Žï¼Ž)
+        $        é‡‘ã®å¡Šï¼Ž
+        *        å®çŸ³ ã¾ãŸã¯ å²©ï¼Ž(å½¹ã«ç«‹ã¤å ´åˆã‚‚ï¼Œç„¡ä¾¡å€¤ã®å ´åˆã‚‚ã‚ã‚‹)
+        +        é–‰ã˜ãŸæ‰‰ ã¾ãŸã¯ å‘ªæ–‡ã®æœ¬ï¼Ž
+        ^        (è¦‹ã¤ã‘ãŸå¾Œã®) ç½ ï¼Ž
+        "        é­”é™¤ã‘ ã¾ãŸã¯ èœ˜è››ã®å·£ï¼Ž
+        0        é‰„ã®çŽ‰ï¼Ž
+        _        ç¥­å£‡ ã¾ãŸã¯ é‰„ã®éŽ–ï¼Ž
+        {        æ³‰ï¼Ž
+        }        æ°´æºœã‚Š ã‚„ å¡µã ã¾ã‚Š
+        \        è±ªè¯ãªçŽ‹åº§ï¼Ž
+        `        çŽ‰çŸ³ ã¾ãŸã¯ å½«åƒï¼Ž
+        A ã‹ã‚‰ Z, a ã‹ã‚‰ z, ãã®ä»–:  æ€ªç‰©
+        I        é€æ˜Žã¾ãŸã¯è¦‹ãˆã¦ã„ãªã„æ€ªç‰©ãŒæœ€å¾Œã«ã„ãŸå ´æ‰€
+
+                 '/' ã®å¾Œã«æ–‡å­—ã‚’å…¥åŠ›ã™ã‚‹ã“ã¨ã§ï¼Œãã‚ŒãŒä½•ã‚’è¡¨ã—ã¦ã„ã‚‹ã®ã‹
+                 è¦‹åˆ†ã‘ã‚‹ã“ã¨ãŒã§ãã‚‹ï¼ŽãŸã¨ãˆã° "/A" ã¯ï¼Œ'A' ã¯çŒ¿ï¼Œ
+                 ã®ã‚ˆã†ã«è¡¨ç¤ºã™ã‚‹ï¼Ž
+
+
+
+y k u   7 8 9   ç§»å‹•ã‚³ãƒžãƒ³ãƒ‰:
+ \|/     \|/            yuhjklbn: æŒ‡å®šã•ã‚ŒãŸæ–¹å‘ã«ï¼‘ã‚¹ãƒ†ãƒƒãƒ—ç§»å‹•ã™ã‚‹ï¼Ž
+h-.-l   4-.-6           YUHJKLBN: å£ã«å½“ãŸã‚‹ã‹ä½•ã‹ã«å…¥ã‚‹ã¾ã§ç§»å‹•ã™ã‚‹ï¼Ž
  /|\     /|\
-b j n   1 2 3           g<dir>:   ‰½‚©‚Éo‰ï‚¤‚Ü‚Å <dir> ‚Ì•ûŒü‚ÉˆÚ“®‚·‚éD
-      numberpad         G<dir>,   ã‚Æ“¯‚¶ ‚½‚¾‚µ˜L‰º‚Ì•ª‚©‚ê“¹‚Å‚à‹C‚É‚µ‚È‚¢D
+b j n   1 2 3           g<dir>:   ä½•ã‹ã«å‡ºä¼šã†ã¾ã§ <dir> ã®æ–¹å‘ã«ç§»å‹•ã™ã‚‹ï¼Ž
+      numberpad         G<dir>,   ä¸Šã¨åŒã˜ ãŸã ã—å»Šä¸‹ã®åˆ†ã‹ã‚Œé“ã§ã‚‚æ°—ã«ã—ãªã„ï¼Ž
 
- <  ã                  ^<dir>:   (‚±‚±‚Å‚Ì ^ ‚ÍƒRƒ“ƒgƒ[ƒ‹ƒL[‚ðˆÓ–¡‚·‚é)
- >  ‰º                  m<dir>:   ‚à‚Ì‚ðE‚í‚¸‚ÉˆÚ“®‚·‚éD
-                number_pad ƒIƒvƒVƒ‡ƒ“‚ðƒZƒbƒg‚·‚é‚ÆCƒeƒ“ƒL[‚ÅˆÚ“®‚Å‚«‚éD
-                ƒvƒ‰ƒbƒgƒtƒH[ƒ€‚É‚æ‚Á‚Ä‚ÍCShift+”ŽšCMeta-”ŽšCAlt+”Žš‚Å
-                YUHJKLBNƒRƒ}ƒ“ƒh‚ð”­“®‚·‚é‚à‚Ì‚à‚ ‚éD
-                Control <•ûŒü> ‚Í number_pad ƒIƒvƒVƒ‡ƒ“‚ªƒZƒbƒg‚³‚ê‚Ä‚¢‚éê‡
-                ‚Íƒvƒ‰ƒbƒgƒtƒH[ƒ€‚É‚æ‚Á‚Ä“®‚¢‚½‚è“®‚©‚È‚©‚Á‚½‚è‚·‚éD
-                ”Žš‚Ì '5' ‚Í 'G' Ú“ªŽ«‚Ì‚æ‚¤‚É“­‚­‚ªCnumber_pad ‚ª 2 ‚ÌŽž‚Í
-                'g' ‚Ì‚æ‚¤‚É“­‚­D
-                number_pad ‚ª 3 ‚È‚ç 1,2,3 ‚Æ 7,8,9 ‚Ì–ðŠ„‚Í‹t‚É‚È‚é; 4 ‚È‚ç
-                3 ‚Æ 2 ‚Ì‘g‚Ý‡‚í‚¹‚Ì‚æ‚¤‚ÉU‚é•‘‚¤B
-                number_pad ‚ª -1 ‚È‚çC‰pŽš‚ÌˆÚ“®ƒRƒ}ƒ“ƒh‚ðŽg‚¤‚ªC'y' ‚Æ
-                'z' ‚ª“ü‚ê‘Ö‚í‚éD
+ <  ä¸Š                  ^<dir>:   (ã“ã“ã§ã® ^ ã¯ã‚³ãƒ³ãƒˆãƒ­ãƒ¼ãƒ«ã‚­ãƒ¼ã‚’æ„å‘³ã™ã‚‹)
+ >  ä¸‹                  m<dir>:   ã‚‚ã®ã‚’æ‹¾ã‚ãšã«ç§»å‹•ã™ã‚‹ï¼Ž
+                number_pad ã‚ªãƒ—ã‚·ãƒ§ãƒ³ã‚’ã‚»ãƒƒãƒˆã™ã‚‹ã¨ï¼Œãƒ†ãƒ³ã‚­ãƒ¼ã§ç§»å‹•ã§ãã‚‹ï¼Ž
+                ãƒ—ãƒ©ãƒƒãƒˆãƒ•ã‚©ãƒ¼ãƒ ã«ã‚ˆã£ã¦ã¯ï¼ŒShift+æ•°å­—ï¼ŒMeta-æ•°å­—ï¼ŒAlt+æ•°å­—ã§
+                YUHJKLBNã‚³ãƒžãƒ³ãƒ‰ã‚’ç™ºå‹•ã™ã‚‹ã‚‚ã®ã‚‚ã‚ã‚‹ï¼Ž
+                Control <æ–¹å‘> ã¯ number_pad ã‚ªãƒ—ã‚·ãƒ§ãƒ³ãŒã‚»ãƒƒãƒˆã•ã‚Œã¦ã„ã‚‹å ´åˆ
+                ã¯ãƒ—ãƒ©ãƒƒãƒˆãƒ•ã‚©ãƒ¼ãƒ ã«ã‚ˆã£ã¦å‹•ã„ãŸã‚Šå‹•ã‹ãªã‹ã£ãŸã‚Šã™ã‚‹ï¼Ž
+                æ•°å­—ã® '5' ã¯ 'G' æŽ¥é ­è¾žã®ã‚ˆã†ã«åƒããŒï¼Œnumber_pad ãŒ 2 ã®æ™‚ã¯
+                'g' ã®ã‚ˆã†ã«åƒãï¼Ž
+                number_pad ãŒ 3 ãªã‚‰ 1,2,3 ã¨ 7,8,9 ã®å½¹å‰²ã¯é€†ã«ãªã‚‹; 4 ãªã‚‰
+                3 ã¨ 2 ã®çµ„ã¿åˆã‚ã›ã®ã‚ˆã†ã«æŒ¯ã‚‹èˆžã†ã€‚
+                number_pad ãŒ -1 ãªã‚‰ï¼Œè‹±å­—ã®ç§»å‹•ã‚³ãƒžãƒ³ãƒ‰ã‚’ä½¿ã†ãŒï¼Œ'y' ã¨
+                'z' ãŒå…¥ã‚Œæ›¿ã‚ã‚‹ï¼Ž
 
-ƒRƒ}ƒ“ƒhˆê——:
-        NetHack ‚Å‚ÍˆÈ‰º‚ÌƒRƒ}ƒ“ƒh‚ðŽg‚¤‚±‚Æ‚ª‚Å‚«‚éD
-        ?       ƒwƒ‹ƒvƒƒjƒ…[D
-        /       ƒVƒ“ƒ{ƒ‹‚ª‰½‚ð•\‚µ‚Ä‚¢‚é‚©‹³‚¦‚éD
-                ˆÊ’u‚ÅŽw’è‚·‚é‚©CƒA[ƒMƒ…ƒƒ“ƒg‚ÅŽw’è‚·‚é‚©‚Å‘I‚ÔD
-        &       ƒRƒ}ƒ“ƒh‚ÌˆÓ–¡‚ð‹³‚¦‚éD
-        <       ŠK’i‚ð“o‚éD  (‚»‚Ìã‚É‚¢‚éê‡‚Ì‚Ý)
-        >       ŠK’i‚ð~‚è‚éD(‚»‚Ìã‚É‚¢‚éê‡‚Ì‚Ý)
-        .       ‰½‚à‚µ‚È‚¢D(‘Ò‚Â)
-        _       ƒ}ƒbƒv‚ÅŽ¦‚³‚ê‚½“_‚ÉÅ¬Œo˜HƒAƒ‹ƒSƒŠƒYƒ€‚ÅˆÚ“®‚·‚éD
-        a       “¹‹ï‚ðŽg‚¤D(‚Â‚é‚Í‚µ, Œ®, ƒ‰ƒ“ƒvc)D
-        A       ‚·‚×‚Ä‚Ì–h‹ï‚ðŠO‚·D
-        ^A      ’¼‘O‚ÉŽÀs‚µ‚½ƒRƒ}ƒ“ƒh‚ðŒJ‚è•Ô‚·D
-        c       ƒhƒA‚ð•Â‚ß‚éD
-        C       “Á’è‚Ì‰ö•¨CŒÂX‚ÌƒAƒCƒeƒ€CƒAƒCƒeƒ€‚ÌŽí—Þ‚É–¼‘O‚ð‚Â‚¯‚éD
-        d       ‰½‚©‚ð—Ž‚·D d7a: 'a' ‚ð‚VŒÂ—Ž‚·D
-        D       ‚¢‚­‚Â‚©‚Ì‚à‚Ì‚ð’u‚­D‚±‚ÌƒRƒ}ƒ“ƒh‚Ì‚Ó‚é‚Ü‚¢‚Í2Ží—Þ‚ ‚è
-                ƒ†[ƒU‚ª‘I‘ð‚Å‚«‚éD
+ã‚³ãƒžãƒ³ãƒ‰ä¸€è¦§:
+        NetHack ã§ã¯ä»¥ä¸‹ã®ã‚³ãƒžãƒ³ãƒ‰ã‚’ä½¿ã†ã“ã¨ãŒã§ãã‚‹ï¼Ž
+        ?       ãƒ˜ãƒ«ãƒ—ãƒ¡ãƒ‹ãƒ¥ãƒ¼ï¼Ž
+        /       ã‚·ãƒ³ãƒœãƒ«ãŒä½•ã‚’è¡¨ã—ã¦ã„ã‚‹ã‹æ•™ãˆã‚‹ï¼Ž
+                ä½ç½®ã§æŒ‡å®šã™ã‚‹ã‹ï¼Œã‚¢ãƒ¼ã‚®ãƒ¥ãƒ¡ãƒ³ãƒˆã§æŒ‡å®šã™ã‚‹ã‹ã§é¸ã¶ï¼Ž
+        &       ã‚³ãƒžãƒ³ãƒ‰ã®æ„å‘³ã‚’æ•™ãˆã‚‹ï¼Ž
+        <       éšŽæ®µã‚’ç™»ã‚‹ï¼Ž  (ãã®ä¸Šã«ã„ã‚‹å ´åˆã®ã¿)
+        >       éšŽæ®µã‚’é™ã‚Šã‚‹ï¼Ž(ãã®ä¸Šã«ã„ã‚‹å ´åˆã®ã¿)
+        .       ä½•ã‚‚ã—ãªã„ï¼Ž(å¾…ã¤)
+        _       ãƒžãƒƒãƒ—ã§ç¤ºã•ã‚ŒãŸç‚¹ã«æœ€å°çµŒè·¯ã‚¢ãƒ«ã‚´ãƒªã‚ºãƒ ã§ç§»å‹•ã™ã‚‹ï¼Ž
+        a       é“å…·ã‚’ä½¿ã†ï¼Ž(ã¤ã‚‹ã¯ã—, éµ, ãƒ©ãƒ³ãƒ—â€¦)ï¼Ž
+        A       ã™ã¹ã¦ã®é˜²å…·ã‚’å¤–ã™ï¼Ž
+        ^A      ç›´å‰ã«å®Ÿè¡Œã—ãŸã‚³ãƒžãƒ³ãƒ‰ã‚’ç¹°ã‚Šè¿”ã™ï¼Ž
+        c       ãƒ‰ã‚¢ã‚’é–‰ã‚ã‚‹ï¼Ž
+        C       ç‰¹å®šã®æ€ªç‰©ï¼Œå€‹ã€…ã®ã‚¢ã‚¤ãƒ†ãƒ ï¼Œã‚¢ã‚¤ãƒ†ãƒ ã®ç¨®é¡žã«åå‰ã‚’ã¤ã‘ã‚‹ï¼Ž
+        d       ä½•ã‹ã‚’è½ã™ï¼Ž d7a: 'a' ã‚’ï¼—å€‹è½ã™ï¼Ž
+        D       ã„ãã¤ã‹ã®ã‚‚ã®ã‚’ç½®ãï¼Žã“ã®ã‚³ãƒžãƒ³ãƒ‰ã®ãµã‚‹ã¾ã„ã¯2ç¨®é¡žã‚ã‚Š
+                ãƒ¦ãƒ¼ã‚¶ãŒé¸æŠžã§ãã‚‹ï¼Ž
                 1:
-                uDv‚Í‚ ‚È‚½‚ÌŽ‚ÂƒAƒCƒeƒ€‘S‚Ä‚Ìˆê——‚ð•\Ž¦‚·‚éDu+v‚Í
-                u’u‚­v‚ðu-v‚Í’u‚©‚È‚¢‚ðˆÓ–¡‚·‚éDˆê——‚Ì•¶Žš‚ðƒ^ƒCƒv
-                ‚·‚é‚±‚Æ‚É‚æ‚èC‘I‘ðC”ñ‘I‘ð‚ð•Ï‚¦‚é‚±‚Æ‚ª‚Å‚«‚éD‘S‚Ä‚Ì
-                ƒAƒCƒeƒ€‚ð‘I‘ð‚·‚é‚É‚Íu.vC”ñ‘I‘ð‚É‚·‚é‚É‚Íu-v‚Å‚ ‚éD
-                ƒXƒy[ƒXƒL[‚ÅŽŸ‚Ìƒy[ƒW‚ÖˆÚ“®‚·‚é‚±‚ª‚Å‚«‚éD
+                ã€ŒDã€ã¯ã‚ãªãŸã®æŒã¤ã‚¢ã‚¤ãƒ†ãƒ å…¨ã¦ã®ä¸€è¦§ã‚’è¡¨ç¤ºã™ã‚‹ï¼Žã€Œ+ã€ã¯
+                ã€Œç½®ãã€ã‚’ã€Œ-ã€ã¯ç½®ã‹ãªã„ã‚’æ„å‘³ã™ã‚‹ï¼Žä¸€è¦§ã®æ–‡å­—ã‚’ã‚¿ã‚¤ãƒ—
+                ã™ã‚‹ã“ã¨ã«ã‚ˆã‚Šï¼Œé¸æŠžï¼Œéžé¸æŠžã‚’å¤‰ãˆã‚‹ã“ã¨ãŒã§ãã‚‹ï¼Žå…¨ã¦ã®
+                ã‚¢ã‚¤ãƒ†ãƒ ã‚’é¸æŠžã™ã‚‹ã«ã¯ã€Œ.ã€ï¼Œéžé¸æŠžã«ã™ã‚‹ã«ã¯ã€Œ-ã€ã§ã‚ã‚‹ï¼Ž
+                ã‚¹ãƒšãƒ¼ã‚¹ã‚­ãƒ¼ã§æ¬¡ã®ãƒšãƒ¼ã‚¸ã¸ç§»å‹•ã™ã‚‹ã“ãŒã§ãã‚‹ï¼Ž
                 2:
-                "‚Ç‚ÌŽí—Þ‚Ì‚à‚Ì‚ð’u‚«‚Ü‚·‚©H [!%= au]"‚ÌŽ¿–â‚Ì“š‚¦‚Æ
-                ‚µ‚ÄCƒ^ƒCƒv‚ð•\‚·•¶Žš‚ðƒ[ƒŒÂˆÈã 'a' ‚â 'u' ‚ðŒã‚É•t
-                ‚¯‚ÄŽw’è‚Å‚«‚éD
-                Da  - Šm”F‚É“š‚¦‚½‚à‚ÌˆÈŠO‚Ì‚·‚×‚Ä‚ÌŽ‚¿‚à‚Ì‚ð—Ž‚·D
-                Du  - Š¨’è‚ð•¥‚Á‚Ä‚¢‚È‚¢‚à‚Ì‚¾‚¯—Ž‚·D(“X‚Ì’†‚Ìê‡)
-                D%u - Š¨’è‚ð•¥‚Á‚Ä‚¢‚È‚¢H—Æ‚¾‚¯—Ž‚·D
-        ^D      (•’Ê‚ÍƒhƒA‚ð)R‚éD
-        e       ‚à‚Ì‚ðH‚×‚éD
-        E       °‚É•¶Žš‚ð’¤‚éD
-                E- - Žw‚ÅƒzƒRƒŠ‚ÉŽš‚ð‘‚­D
-        f       ‘•“U‚³‚ê‚½‚à‚Ì‚ðŽË‚é
-        F       •ûŒü‚ðŽw’è‚µ‚Ä‰ö•¨‚Æí‚¤(‚»‚±‚É‚¢‚é‚©‚Ç‚¤‚©‚Í•Ê‚Æ‚µ‚Ä)
-        i       Ž‚¿‚à‚Ì‚ð•\Ž¦‚·‚éD
-        I       ˆÈ‰º‚Ì‚æ‚¤‚ÉCŽ‚¿‚à‚Ì‚ÌŽí—Þ‚ð‘I‚ñ‚Å•\Ž¦‚·‚éD
-                I* - Ž‚Á‚Ä‚¢‚é•óÎ‚ð‘S•”•\Ž¦‚·‚éD
-                Iu - Š¨’è‚ð•¥‚Á‚Ä‚¢‚È‚¢‚à‚Ì‚ð•\Ž¦‚·‚éD
-                Ix - Á”ï‚µ‚ÄŠ¨’è‚ð•¥‚Á‚Ä‚¢‚È‚¢‚à‚Ì‚ð•\Ž¦‚·‚éD
-                I$ - ‹à‚ðŠ¨’è‚·‚éD
-        o       ƒhƒA‚ðŠJ‚¯‚éD
-        O       Œ»Ý‚ÌƒIƒvƒVƒ‡ƒ“Ý’è‚ð•\Ž¦‚µ‰Â”\‚È‚ç•ÏX‚·‚éD
-                •ÏX‚·‚é‚½‚ß‚Ìƒƒjƒ…[‚ª•\Ž¦‚³‚êC‚Ù‚Æ‚ñ‚Ç‚Í‘I‘ð‚·‚é‚¾‚¯
-                ‚Å•ÏX‚Å‚«‚éD’ÊíCƒIƒvƒVƒ‡ƒ“‚ÍƒvƒŒƒC‚·‚é‚Æ‚«‚ÉŠÂ‹«•Ï”
-                NETHACKOPTIONS‚à‚µ‚­‚ÍCÝ’èƒtƒ@ƒCƒ‹(defaults.nhC
-                NetHack DefaultsCnethack.cnfC.jnethackrc‚È‚Ç)‚Ås‚¤D
-        p       ”ƒ‚¢‚à‚Ì‚ÌŠ¨’è‚ð•¥‚¤D
-        P       ƒAƒNƒZƒTƒŠ[‚ð‚Â‚¯‚éD(Žw—ÖC–‚œ‚¯,etc)
-        ^P      ÅŒã‚ÌƒƒbƒZ[ƒW‚ð‚­‚è‚©‚¦‚·D
-                (‘±‚¯‚é‚Æ‚æ‚èŒÃ‚¢ƒƒbƒZ[ƒW‚ð•\Ž¦‚·‚é)
-        q       ‰½‚©‚ðˆù‚Þ(…–ò, …, ‚È‚Ç)
-        Q       ‘•“U‚·‚é‚à‚Ì‚ð‘I‘ð‚·‚éD
-        r       Šª•¨‚âŽô•¶‚Ì–{‚ð“Ç‚ÞD
-        R       ƒAƒNƒZƒTƒŠ[‚ð‚Í‚¸‚·D(Žw—ÖC–‚œ‚¯,etc)
-        ^R      ‰æ–Ê‚ÌÄ•\Ž¦D
-        s       ‰B‚³‚ê‚½ƒhƒA‚âã©‚ð’T‚·D
-        S       ƒQ[ƒ€‚ðƒZ[ƒu‚·‚éD
-        t       ‚à‚Ì‚ð“Š‚°‚éD‚Ü‚½‚Í”ò‚Ñ“¹‹ï‚ðŽg‚¤D
-        T       –h‹ï‚ðŠO‚·D
-        ^T      (o—ˆ‚é‚È‚ç)ƒeƒŒƒ|[ƒg‚·‚éD
-        v       ƒo[ƒWƒ‡ƒ“‚ð•\Ž¦‚·‚éD
-        V       ’·‚¢Œ`Ž®‚Ìƒo[ƒWƒ‡ƒ“‚ÆC‚±‚ÌƒQ[ƒ€‚Ì—ðŽj‚ðŠÜ‚ß‚Ä•\Ž¦‚·‚éD
+                "ã©ã®ç¨®é¡žã®ã‚‚ã®ã‚’ç½®ãã¾ã™ã‹ï¼Ÿ [!%= au]"ã®è³ªå•ã®ç­”ãˆã¨
+                ã—ã¦ï¼Œã‚¿ã‚¤ãƒ—ã‚’è¡¨ã™æ–‡å­—ã‚’ã‚¼ãƒ­å€‹ä»¥ä¸Š 'a' ã‚„ 'u' ã‚’å¾Œã«ä»˜
+                ã‘ã¦æŒ‡å®šã§ãã‚‹ï¼Ž
+                Da  - ç¢ºèªã«ç­”ãˆãŸã‚‚ã®ä»¥å¤–ã®ã™ã¹ã¦ã®æŒã¡ã‚‚ã®ã‚’è½ã™ï¼Ž
+                Du  - å‹˜å®šã‚’æ‰•ã£ã¦ã„ãªã„ã‚‚ã®ã ã‘è½ã™ï¼Ž(åº—ã®ä¸­ã®å ´åˆ)
+                D%u - å‹˜å®šã‚’æ‰•ã£ã¦ã„ãªã„é£Ÿç³§ã ã‘è½ã™ï¼Ž
+        ^D      (æ™®é€šã¯ãƒ‰ã‚¢ã‚’)è¹´ã‚‹ï¼Ž
+        e       ã‚‚ã®ã‚’é£Ÿã¹ã‚‹ï¼Ž
+        E       åºŠã«æ–‡å­—ã‚’å½«ã‚‹ï¼Ž
+                E- - æŒ‡ã§ãƒ›ã‚³ãƒªã«å­—ã‚’æ›¸ãï¼Ž
+        f       è£…å¡«ã•ã‚ŒãŸã‚‚ã®ã‚’å°„ã‚‹
+        F       æ–¹å‘ã‚’æŒ‡å®šã—ã¦æ€ªç‰©ã¨æˆ¦ã†(ãã“ã«ã„ã‚‹ã‹ã©ã†ã‹ã¯åˆ¥ã¨ã—ã¦)
+        i       æŒã¡ã‚‚ã®ã‚’è¡¨ç¤ºã™ã‚‹ï¼Ž
+        I       ä»¥ä¸‹ã®ã‚ˆã†ã«ï¼ŒæŒã¡ã‚‚ã®ã®ç¨®é¡žã‚’é¸ã‚“ã§è¡¨ç¤ºã™ã‚‹ï¼Ž
+                I* - æŒã£ã¦ã„ã‚‹å®çŸ³ã‚’å…¨éƒ¨è¡¨ç¤ºã™ã‚‹ï¼Ž
+                Iu - å‹˜å®šã‚’æ‰•ã£ã¦ã„ãªã„ã‚‚ã®ã‚’è¡¨ç¤ºã™ã‚‹ï¼Ž
+                Ix - æ¶ˆè²»ã—ã¦å‹˜å®šã‚’æ‰•ã£ã¦ã„ãªã„ã‚‚ã®ã‚’è¡¨ç¤ºã™ã‚‹ï¼Ž
+                I$ - é‡‘ã‚’å‹˜å®šã™ã‚‹ï¼Ž
+        o       ãƒ‰ã‚¢ã‚’é–‹ã‘ã‚‹ï¼Ž
+        O       ç¾åœ¨ã®ã‚ªãƒ—ã‚·ãƒ§ãƒ³è¨­å®šã‚’è¡¨ç¤ºã—å¯èƒ½ãªã‚‰å¤‰æ›´ã™ã‚‹ï¼Ž
+                å¤‰æ›´ã™ã‚‹ãŸã‚ã®ãƒ¡ãƒ‹ãƒ¥ãƒ¼ãŒè¡¨ç¤ºã•ã‚Œï¼Œã»ã¨ã‚“ã©ã¯é¸æŠžã™ã‚‹ã ã‘
+                ã§å¤‰æ›´ã§ãã‚‹ï¼Žé€šå¸¸ï¼Œã‚ªãƒ—ã‚·ãƒ§ãƒ³ã¯ãƒ—ãƒ¬ã‚¤ã™ã‚‹ã¨ãã«ç’°å¢ƒå¤‰æ•°
+                NETHACKOPTIONSã‚‚ã—ãã¯ï¼Œè¨­å®šãƒ•ã‚¡ã‚¤ãƒ«(defaults.nhï¼Œ
+                NetHack Defaultsï¼Œnethack.cnfï¼Œ.jnethackrcãªã©)ã§è¡Œã†ï¼Ž
+        p       è²·ã„ã‚‚ã®ã®å‹˜å®šã‚’æ‰•ã†ï¼Ž
+        P       ã‚¢ã‚¯ã‚»ã‚µãƒªãƒ¼ã‚’ã¤ã‘ã‚‹ï¼Ž(æŒ‡è¼ªï¼Œé­”é™¤ã‘,etc)
+        ^P      æœ€å¾Œã®ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã‚’ãã‚Šã‹ãˆã™ï¼Ž
+                (ç¶šã‘ã‚‹ã¨ã‚ˆã‚Šå¤ã„ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã‚’è¡¨ç¤ºã™ã‚‹)
+        q       ä½•ã‹ã‚’é£²ã‚€(æ°´è–¬, æ°´, ãªã©)
+        Q       è£…å¡«ã™ã‚‹ã‚‚ã®ã‚’é¸æŠžã™ã‚‹ï¼Ž
+        r       å·»ç‰©ã‚„å‘ªæ–‡ã®æœ¬ã‚’èª­ã‚€ï¼Ž
+        R       ã‚¢ã‚¯ã‚»ã‚µãƒªãƒ¼ã‚’ã¯ãšã™ï¼Ž(æŒ‡è¼ªï¼Œé­”é™¤ã‘,etc)
+        ^R      ç”»é¢ã®å†è¡¨ç¤ºï¼Ž
+        s       éš ã•ã‚ŒãŸãƒ‰ã‚¢ã‚„ç½ ã‚’æŽ¢ã™ï¼Ž
+        S       ã‚²ãƒ¼ãƒ ã‚’ã‚»ãƒ¼ãƒ–ã™ã‚‹ï¼Ž
+        t       ã‚‚ã®ã‚’æŠ•ã’ã‚‹ï¼Žã¾ãŸã¯é£›ã³é“å…·ã‚’ä½¿ã†ï¼Ž
+        T       é˜²å…·ã‚’å¤–ã™ï¼Ž
+        ^T      (å‡ºæ¥ã‚‹ãªã‚‰)ãƒ†ãƒ¬ãƒãƒ¼ãƒˆã™ã‚‹ï¼Ž
+        v       ãƒãƒ¼ã‚¸ãƒ§ãƒ³ã‚’è¡¨ç¤ºã™ã‚‹ï¼Ž
+        V       é•·ã„å½¢å¼ã®ãƒãƒ¼ã‚¸ãƒ§ãƒ³ã¨ï¼Œã“ã®ã‚²ãƒ¼ãƒ ã®æ­´å²ã‚’å«ã‚ã¦è¡¨ç¤ºã™ã‚‹ï¼Ž
 
-        w       •Ší‚ðg‚É‚Â‚¯‚éDw- ‚Í‰½‚àŽg‚í‚¸‘fŽè‚Åí‚¤‚±‚Æ‚ðˆÓ–¡‚·‚éD
-        W       –h‹ï‚ð‚Â‚¯‚éD
-        x       ¶‰E‚Ì•Ší‚ðŒðŠ·‚·‚éD
-        X       “ñ“—¬‚ðØ‚è‘Ö‚¦‚éD
-        ^X      ‘®«‚ð•\Ž¦‚·‚éD
-        z       –‚–@‚Ìñ‚ðU‚è‚©‚´‚·D(number_pad ‚ª -1 ‚È‚ç z ‚Å‚Í‚È‚­ yD)
-        Z       Žô•¶‚ð¥‚¦‚éD(number_pad ‚ª -1 ‚È‚ç Z ‚Å‚Í‚È‚­ YD)
-        ^Z      ƒQ[ƒ€‚ð’†’f‚·‚éD(number_pad ‚ª -1 ‚È‚ç ^Z ‚Å‚Í‚È‚­ ^YD)
-        :       ‚±‚±‚É‰½‚ª‚ ‚é‚Ì‚©Œ©‚éD
-        ;       •Ê‚ÈêŠ‚É‚ ‚é•¨‚ª‰½‚©‚ð’²‚×‚éD
-        ,       E‚¤D
-        @       pickup ƒIƒvƒVƒ‡ƒ“‚ð”½“]‚·‚éD
-        ^       ’¼‘O‚ÉŒ©•t‚¯‚½ã©‚ÌŽí—Þ‚ð•·‚­
-        )       Žg‚Á‚Ä‚¢‚é•Ší‚ð•\Ž¦‚·‚éD
-        [       Žg‚Á‚Ä‚¢‚é–h‹ï‚ð•\Ž¦‚·‚éD
-        =       ‚Í‚ß‚Ä‚¢‚éŽw—Ö‚ð•\Ž¦‚·‚éD
-        "       g‚É‚Â‚¯‚Ä‚¢‚é–‚œ‚¯‚ð•\Ž¦‚·‚éD
-        (       Žg‚Á‚Ä‚¢‚é“¹‹ï‚ð•\Ž¦‚·‚éD
-        *       Žg—p‚µ‚Ä‚¢‚é‘•”õ—Þ‚ð•\Ž¦‚·‚éD
-        $       Ž‚Á‚Ä‚¢‚é‹à‰Ý‚Ì”‚ð”‚¦‚éD
-        +       ’m‚Á‚Ä‚¢‚éŽô•¶‚ð•\Ž¦‚·‚éD•À‚ÑŠ·‚¦‚ào—ˆ‚éD
-        \       ”­Œ©‚µ‚½•¨‚ÌŽí—Þ‚ð•\Ž¦‚·‚éD
-        !       OS‚ÅƒTƒ|[ƒg‚³‚ê‚Ä‚¢‚é‚È‚ç shell ‚ðŽÀs‚·‚éD
-        `       ˆê‚Â‚ÌŽí—Þ‚Ì’†‚Å”­Œ©‚µ‚½•¨‚ð•\Ž¦‚·‚éD
-                '/'ƒRƒ}ƒ“ƒh‚Å‚Ì–¼‘O‚ªƒIƒŠƒWƒiƒ‹–¼‚É‚È‚éD
-        #       uŠg’£vƒRƒ}ƒ“ƒh‚ðŽw’è‚·‚éD"#" ‚ÅŽg‚¦‚éƒRƒ}ƒ“ƒh‚ÌƒŠƒX
-                ƒg‚Í "#?" ‚Å“¾‚ç‚ê‚éDŽg‚¦‚éŠg’£ƒRƒ}ƒ“ƒh‚ÍCnethack ‚ð
-                ƒRƒ“ƒpƒCƒ‹‚µ‚½Žž‚ÌƒIƒvƒVƒ‡ƒ“C‚ ‚È‚½‚ÌƒNƒ‰ƒXC‚Ç‚ñ‚ÈŽí
-                —Þ‚Ì‰ö•¨‚¾‚Á‚½‚©C‚ÉˆË‘¶‚·‚éD ƒL[ƒ{[ƒh‚Éƒƒ^ƒL[ 
-                (‚»‚ê‚ÍC‘¼‚ÌƒL[‚Æˆê‚É‰Ÿ‚³‚ê‚é‚±‚Æ‚ÅCuƒƒ^v(‚W”Ô
-                –Ú‚ÌC‚Ü‚½‚Í 'high')ƒrƒbƒg‚ðƒZƒbƒg‚·‚é) ‚ª‚ ‚ê‚ÎC‚»‚ê
-                ‚ÆŠg’£ƒRƒ}ƒ“ƒh‚Ì‚P•¶Žš–Ú‚¾‚¯‚ÅŒÄ‚Ño‚·Ž–‚ª‚Å‚«‚éD
-                Alt ƒL[‚àŽ—‚½‚æ‚¤‚ÈŒø‰Ê‚ª‚ ‚éD
+        w       æ­¦å™¨ã‚’èº«ã«ã¤ã‘ã‚‹ï¼Žw- ã¯ä½•ã‚‚ä½¿ã‚ãšç´ æ‰‹ã§æˆ¦ã†ã“ã¨ã‚’æ„å‘³ã™ã‚‹ï¼Ž
+        W       é˜²å…·ã‚’ã¤ã‘ã‚‹ï¼Ž
+        x       å·¦å³ã®æ­¦å™¨ã‚’äº¤æ›ã™ã‚‹ï¼Ž
+        X       äºŒåˆ€æµã‚’åˆ‡ã‚Šæ›¿ãˆã‚‹ï¼Ž
+        ^X      å±žæ€§ã‚’è¡¨ç¤ºã™ã‚‹ï¼Ž
+        z       é­”æ³•ã®æ–ã‚’æŒ¯ã‚Šã‹ã–ã™ï¼Ž(number_pad ãŒ -1 ãªã‚‰ z ã§ã¯ãªã yï¼Ž)
+        Z       å‘ªæ–‡ã‚’å”±ãˆã‚‹ï¼Ž(number_pad ãŒ -1 ãªã‚‰ Z ã§ã¯ãªã Yï¼Ž)
+        ^Z      ã‚²ãƒ¼ãƒ ã‚’ä¸­æ–­ã™ã‚‹ï¼Ž(number_pad ãŒ -1 ãªã‚‰ ^Z ã§ã¯ãªã ^Yï¼Ž)
+        :       ã“ã“ã«ä½•ãŒã‚ã‚‹ã®ã‹è¦‹ã‚‹ï¼Ž
+        ;       åˆ¥ãªå ´æ‰€ã«ã‚ã‚‹ç‰©ãŒä½•ã‹ã‚’èª¿ã¹ã‚‹ï¼Ž
+        ,       æ‹¾ã†ï¼Ž
+        @       pickup ã‚ªãƒ—ã‚·ãƒ§ãƒ³ã‚’åè»¢ã™ã‚‹ï¼Ž
+        ^       ç›´å‰ã«è¦‹ä»˜ã‘ãŸç½ ã®ç¨®é¡žã‚’èžã
+        )       ä½¿ã£ã¦ã„ã‚‹æ­¦å™¨ã‚’è¡¨ç¤ºã™ã‚‹ï¼Ž
+        [       ä½¿ã£ã¦ã„ã‚‹é˜²å…·ã‚’è¡¨ç¤ºã™ã‚‹ï¼Ž
+        =       ã¯ã‚ã¦ã„ã‚‹æŒ‡è¼ªã‚’è¡¨ç¤ºã™ã‚‹ï¼Ž
+        "       èº«ã«ã¤ã‘ã¦ã„ã‚‹é­”é™¤ã‘ã‚’è¡¨ç¤ºã™ã‚‹ï¼Ž
+        (       ä½¿ã£ã¦ã„ã‚‹é“å…·ã‚’è¡¨ç¤ºã™ã‚‹ï¼Ž
+        *       ä½¿ç”¨ã—ã¦ã„ã‚‹è£…å‚™é¡žã‚’è¡¨ç¤ºã™ã‚‹ï¼Ž
+        $       æŒã£ã¦ã„ã‚‹é‡‘è²¨ã®æ•°ã‚’æ•°ãˆã‚‹ï¼Ž
+        +       çŸ¥ã£ã¦ã„ã‚‹å‘ªæ–‡ã‚’è¡¨ç¤ºã™ã‚‹ï¼Žä¸¦ã³æ›ãˆã‚‚å‡ºæ¥ã‚‹ï¼Ž
+        \       ç™ºè¦‹ã—ãŸç‰©ã®ç¨®é¡žã‚’è¡¨ç¤ºã™ã‚‹ï¼Ž
+        !       OSã§ã‚µãƒãƒ¼ãƒˆã•ã‚Œã¦ã„ã‚‹ãªã‚‰ shell ã‚’å®Ÿè¡Œã™ã‚‹ï¼Ž
+        `       ä¸€ã¤ã®ç¨®é¡žã®ä¸­ã§ç™ºè¦‹ã—ãŸç‰©ã‚’è¡¨ç¤ºã™ã‚‹ï¼Ž
+                '/'ã‚³ãƒžãƒ³ãƒ‰ã§ã®åå‰ãŒã‚ªãƒªã‚¸ãƒŠãƒ«åã«ãªã‚‹ï¼Ž
+        #       ã€Œæ‹¡å¼µã€ã‚³ãƒžãƒ³ãƒ‰ã‚’æŒ‡å®šã™ã‚‹ï¼Ž"#" ã§ä½¿ãˆã‚‹ã‚³ãƒžãƒ³ãƒ‰ã®ãƒªã‚¹
+                ãƒˆã¯ "#?" ã§å¾—ã‚‰ã‚Œã‚‹ï¼Žä½¿ãˆã‚‹æ‹¡å¼µã‚³ãƒžãƒ³ãƒ‰ã¯ï¼Œnethack ã‚’
+                ã‚³ãƒ³ãƒ‘ã‚¤ãƒ«ã—ãŸæ™‚ã®ã‚ªãƒ—ã‚·ãƒ§ãƒ³ï¼Œã‚ãªãŸã®ã‚¯ãƒ©ã‚¹ï¼Œã©ã‚“ãªç¨®
+                é¡žã®æ€ªç‰©ã ã£ãŸã‹ï¼Œã«ä¾å­˜ã™ã‚‹ï¼Ž ã‚­ãƒ¼ãƒœãƒ¼ãƒ‰ã«ãƒ¡ã‚¿ã‚­ãƒ¼
+                (ãã‚Œã¯ï¼Œä»–ã®ã‚­ãƒ¼ã¨ä¸€ç·’ã«æŠ¼ã•ã‚Œã‚‹ã“ã¨ã§ï¼Œã€Œãƒ¡ã‚¿ã€(ï¼˜ç•ª
+                ç›®ã®ï¼Œã¾ãŸã¯ 'high')ãƒ“ãƒƒãƒˆã‚’ã‚»ãƒƒãƒˆã™ã‚‹) ãŒã‚ã‚Œã°ï¼Œãã‚Œ
+                ã¨æ‹¡å¼µã‚³ãƒžãƒ³ãƒ‰ã®ï¼‘æ–‡å­—ç›®ã ã‘ã§å‘¼ã³å‡ºã™äº‹ãŒã§ãã‚‹ï¼Ž
+                Alt ã‚­ãƒ¼ã‚‚ä¼¼ãŸã‚ˆã†ãªåŠ¹æžœãŒã‚ã‚‹ï¼Ž
 
-        "number_pad" ƒIƒvƒVƒ‡ƒ“‚ªƒZƒbƒg‚³‚ê‚Ä‚¢‚éê‡C‚¢‚­‚Â‚©‚Ì’Ç‰Á
-        ‚ÌƒRƒ}ƒ“ƒh‚ªŽg‚¦‚é‚æ‚¤‚É‚È‚éD
+        "number_pad" ã‚ªãƒ—ã‚·ãƒ§ãƒ³ãŒã‚»ãƒƒãƒˆã•ã‚Œã¦ã„ã‚‹å ´åˆï¼Œã„ãã¤ã‹ã®è¿½åŠ 
+        ã®ã‚³ãƒžãƒ³ãƒ‰ãŒä½¿ãˆã‚‹ã‚ˆã†ã«ãªã‚‹ï¼Ž
 
-        h       '?'‚Æ“¯—l‚Éƒwƒ‹ƒv‚ð•\Ž¦‚·‚éD
-        j       •Ê‚ÌêŠ‚É”ò‚ÔD
-        k       R‚éD(‘å’ï‚Ìê‡‚ÍƒhƒA)
-        l       °‚É’u‚©‚ê‚Ä‚¢‚é” ‚ð—ª’D‚·‚éD
-        n       ‘±‚¢‚Ä”Žš‚ð“ü—Í‚µCŽŸ‚ÌƒRƒ}ƒ“ƒh‚ð‰½‰ñŒJ‚è•Ô‚·‚©‚ðŽw’è‚·‚éD
-        N       “Á’è‚Ì‰ö•¨CŒÂX‚ÌƒAƒCƒeƒ€CƒAƒCƒeƒ€‚ÌŽí—Þ‚É–¼‘O‚ð‚Â‚¯‚éD
-        u       ã©‚ÌŽdŠ|‚¯‚ç‚ê‚Ä‚¢‚éƒhƒA‚â•¨‚Ìã©‚ðŠO‚·D
+        h       '?'ã¨åŒæ§˜ã«ãƒ˜ãƒ«ãƒ—ã‚’è¡¨ç¤ºã™ã‚‹ï¼Ž
+        j       åˆ¥ã®å ´æ‰€ã«é£›ã¶ï¼Ž
+        k       è¹´ã‚‹ï¼Ž(å¤§æŠµã®å ´åˆã¯ãƒ‰ã‚¢)
+        l       åºŠã«ç½®ã‹ã‚Œã¦ã„ã‚‹ç®±ã‚’ç•¥å¥ªã™ã‚‹ï¼Ž
+        n       ç¶šã„ã¦æ•°å­—ã‚’å…¥åŠ›ã—ï¼Œæ¬¡ã®ã‚³ãƒžãƒ³ãƒ‰ã‚’ä½•å›žç¹°ã‚Šè¿”ã™ã‹ã‚’æŒ‡å®šã™ã‚‹ï¼Ž
+        N       ç‰¹å®šã®æ€ªç‰©ï¼Œå€‹ã€…ã®ã‚¢ã‚¤ãƒ†ãƒ ï¼Œã‚¢ã‚¤ãƒ†ãƒ ã®ç¨®é¡žã«åå‰ã‚’ã¤ã‘ã‚‹ï¼Ž
+        u       ç½ ã®ä»•æŽ›ã‘ã‚‰ã‚Œã¦ã„ã‚‹ãƒ‰ã‚¢ã‚„ç‰©ã®ç½ ã‚’å¤–ã™ï¼Ž
 
-        "40." ‚Ü‚½‚Í "20s"‚Ì‚æ‚¤‚ÉCƒRƒ}ƒ“ƒh‚Ì‘O‚ÉŒJ‚è•Ô‚µ‰ñ”‚ð‚Â‚¯‚é‚±‚Æ
-        ‚ª‚Å‚«‚éD‚à‚µ number_pad ƒIƒvƒVƒ‡ƒ“‚ðƒZƒbƒg‚µ‚Ä‚¢‚½‚ç"n40." ‚Ü‚½
-        ‚Í "n20s"‚Ì‚æ‚¤‚É‰ñ”‚Ì‘O‚É'n'‚ð•t‚¯‚È‚¯‚ê‚Î‚È‚ç‚È‚¢D
+        "40." ã¾ãŸã¯ "20s"ã®ã‚ˆã†ã«ï¼Œã‚³ãƒžãƒ³ãƒ‰ã®å‰ã«ç¹°ã‚Šè¿”ã—å›žæ•°ã‚’ã¤ã‘ã‚‹ã“ã¨
+        ãŒã§ãã‚‹ï¼Žã‚‚ã— number_pad ã‚ªãƒ—ã‚·ãƒ§ãƒ³ã‚’ã‚»ãƒƒãƒˆã—ã¦ã„ãŸã‚‰"n40." ã¾ãŸ
+        ã¯ "n20s"ã®ã‚ˆã†ã«å›žæ•°ã®å‰ã«'n'ã‚’ä»˜ã‘ãªã‘ã‚Œã°ãªã‚‰ãªã„ï¼Ž
 
 
-        ‚¢‚­‚Â‚©‚Ìî•ñ‚Í‰æ–Ê‚Ì‰º‚Ü‚½‚Í•ÊƒEƒBƒ“ƒhƒE(ƒvƒ‰ƒbƒgƒtƒH[ƒ€‚É‚æ‚é)
-        ‚É•\Ž¦‚³‚ê‚éD‚ ‚È‚½‚Ì‘®«C‚ ‚È‚½‚ÌM‹ÂCƒ_ƒ“ƒWƒ‡ƒ“‚Ì‰½ŠK‚É‚¢‚é
-        ‚©C‚¢‚Üƒqƒbƒgƒ|ƒCƒ“ƒg‚ð‚Ç‚ê‚¾‚¯Ž‚Á‚Ä‚¢‚é‚©(‚»‚µ‚ÄÅ‘å‚ª‚¢‚­‚Â
-        ‚©)CƒA[ƒ}[ƒNƒ‰ƒX‚ª‚¢‚­‚Â‚©(¬‚³‚¢‚Ù‚Ç—Ç‚¢)CŒoŒ±ƒŒƒxƒ‹C• ‚Ì
-        ‹ï‡‚ª‚í‚©‚éDƒIƒvƒVƒ‡ƒ“‚Æ‚µ‚ÄCƒXƒyƒ‹ƒ|ƒCƒ“ƒgC‹à‰Ý‚Ì•Û—L”C‚»
-        ‚Ì‘¼‚ðŒ©‚é‚©Œ©‚È‚¢‚©‚ÍŽ©—R‚Å‚ ‚éD
+        ã„ãã¤ã‹ã®æƒ…å ±ã¯ç”»é¢ã®ä¸‹ã¾ãŸã¯åˆ¥ã‚¦ã‚£ãƒ³ãƒ‰ã‚¦(ãƒ—ãƒ©ãƒƒãƒˆãƒ•ã‚©ãƒ¼ãƒ ã«ã‚ˆã‚‹)
+        ã«è¡¨ç¤ºã•ã‚Œã‚‹ï¼Žã‚ãªãŸã®å±žæ€§ï¼Œã‚ãªãŸã®ä¿¡ä»°ï¼Œãƒ€ãƒ³ã‚¸ãƒ§ãƒ³ã®ä½•éšŽã«ã„ã‚‹
+        ã‹ï¼Œã„ã¾ãƒ’ãƒƒãƒˆãƒã‚¤ãƒ³ãƒˆã‚’ã©ã‚Œã ã‘æŒã£ã¦ã„ã‚‹ã‹(ãã—ã¦æœ€å¤§ãŒã„ãã¤
+        ã‹)ï¼Œã‚¢ãƒ¼ãƒžãƒ¼ã‚¯ãƒ©ã‚¹ãŒã„ãã¤ã‹(å°ã•ã„ã»ã©è‰¯ã„)ï¼ŒçµŒé¨“ãƒ¬ãƒ™ãƒ«ï¼Œè…¹ã®
+        å…·åˆãŒã‚ã‹ã‚‹ï¼Žã‚ªãƒ—ã‚·ãƒ§ãƒ³ã¨ã—ã¦ï¼Œã‚¹ãƒšãƒ«ãƒã‚¤ãƒ³ãƒˆï¼Œé‡‘è²¨ã®ä¿æœ‰æ•°ï¼Œã
+        ã®ä»–ã‚’è¦‹ã‚‹ã‹è¦‹ãªã„ã‹ã¯è‡ªç”±ã§ã‚ã‚‹ï¼Ž
 
         Have Fun, and Happy Hacking!
+y k u   7 8 9   ç§»å‹•:
+ \|/     \|/            yuhjklbn: æŒ‡å®šæ–¹å‘ã«ï¼Œä¸€æ­©æ­©ã
+h-.-l   4-.-6           YUHJKLBN: æŒ‡å®šæ–¹å‘ã«ï¼Œä½•ã‹ã«ã¶ã¤ã‹ã‚‹ã¾ã§æ­©ãï¼Œ
+ /|\     /|\                      ã¾ãŸã¯ä½•ã‹ã®ä¸­ã¸å…¥ã‚‹ï¼Ž
+b j n   1 2 3           g<dir>:   æŒ‡å®šæ–¹å‘ã«ï¼Œä½•ã‹ãŒè¦‹ãˆã‚‹ã¾ã§æ­©ã
+      numberpad         G<dir>:   æŒ‡å®šæ–¹å‘ã«ï¼Œä½•ã‹ãŒè¦‹ãˆã‚‹ã¾ã§æ­©ãï¼Ž
+                                  ãŸã ã—ï¼Œé€šè·¯ã®åˆ†å²ã§æ­¢ã¾ã‚‰ãªã„ï¼Ž
+ <  up                  ^<dir>:   ä¸Šã«åŒã˜ï¼Ž(ã‚³ãƒ³ãƒˆãƒ­ãƒ¼ãƒ«ã‚’æŠ¼ã—ãªãŒã‚‰)
+ >  down                m<dir>:   ä½•ã‚‚ã›ãšã«ç§»å‹•ã™ã‚‹ï¼Ž
+                number_pad ã‚ªãƒ—ã‚·ãƒ§ãƒ³ã‚’ã‚»ãƒƒãƒˆã™ã‚‹ã¨ï¼Œãƒ†ãƒ³ã‚­ãƒ¼ã§ç§»å‹•ã§ãã‚‹ï¼Ž
+                ãƒ—ãƒ©ãƒƒãƒˆãƒ•ã‚©ãƒ¼ãƒ ã«ã‚ˆã£ã¦ã¯ï¼ŒShift+æ•°å­—ï¼ŒMeta-æ•°å­—ï¼ŒAlt+æ•°å­—ã§
+                YUHJKLBNã‚³ãƒžãƒ³ãƒ‰ã‚’ç™ºå‹•ã™ã‚‹ã‚‚ã®ã‚‚ã‚ã‚‹ï¼Ž
+                Control <æ–¹å‘> ã¯ number_pad ã‚ªãƒ—ã‚·ãƒ§ãƒ³ãŒã‚»ãƒƒãƒˆã•ã‚Œã¦ã„ã‚‹å ´åˆ
+                ã¯ãƒ—ãƒ©ãƒƒãƒˆãƒ•ã‚©ãƒ¼ãƒ ã«ã‚ˆã£ã¦å‹•ã„ãŸã‚Šå‹•ã‹ãªã‹ã£ãŸã‚Šã™ã‚‹ï¼Ž
+                æ•°å­—ã® '5' ã¯ 'G' æŽ¥é ­è¾žã®ã‚ˆã†ã«åƒããŒï¼Œnumber_pad ãŒ 2 ã®æ™‚ã¯
+                'g' ã®ã‚ˆã†ã«åƒãï¼Ž
+                number_pad ãŒ 3 ãªã‚‰ 1,2,3 ã¨ 7,8,9 ã®å½¹å‰²ã¯é€†ã«ãªã‚‹; 4 ãªã‚‰
+                3 ã¨ 2 ã®çµ„ã¿åˆã‚ã›ã®ã‚ˆã†ã«æŒ¯ã‚‹èˆžã†ã€‚
+                number_pad ãŒ -1 ãªã‚‰ï¼Œè‹±å­—ã®ç§»å‹•ã‚³ãƒžãƒ³ãƒ‰ã‚’ä½¿ã†ãŒï¼Œ'y' ã¨
+                'z' ãŒå…¥ã‚Œæ›¿ã‚ã‚‹ï¼Ž
 
-y k u   7 8 9   ˆÚ“®:
- \|/     \|/            yuhjklbn: Žw’è•ûŒü‚ÉCˆê•à•à‚­
-h-.-l   4-.-6           YUHJKLBN: Žw’è•ûŒü‚ÉC‰½‚©‚É‚Ô‚Â‚©‚é‚Ü‚Å•à‚­C
- /|\     /|\                      ‚Ü‚½‚Í‰½‚©‚Ì’†‚Ö“ü‚éD
-b j n   1 2 3           g<dir>:   Žw’è•ûŒü‚ÉC‰½‚©‚ªŒ©‚¦‚é‚Ü‚Å•à‚­
-      numberpad         G<dir>:   Žw’è•ûŒü‚ÉC‰½‚©‚ªŒ©‚¦‚é‚Ü‚Å•à‚­D
-                                  ‚½‚¾‚µC’Ê˜H‚Ì•ªŠò‚ÅŽ~‚Ü‚ç‚È‚¢D
- <  up                  ^<dir>:   ã‚É“¯‚¶D(ƒRƒ“ƒgƒ[ƒ‹‚ð‰Ÿ‚µ‚È‚ª‚ç)
- >  down                m<dir>:   ‰½‚à‚¹‚¸‚ÉˆÚ“®‚·‚éD
-                number_pad ƒIƒvƒVƒ‡ƒ“‚ðƒZƒbƒg‚·‚é‚ÆCƒeƒ“ƒL[‚ÅˆÚ“®‚Å‚«‚éD
-                ƒvƒ‰ƒbƒgƒtƒH[ƒ€‚É‚æ‚Á‚Ä‚ÍCShift+”ŽšCMeta-”ŽšCAlt+”Žš‚Å
-                YUHJKLBNƒRƒ}ƒ“ƒh‚ð”­“®‚·‚é‚à‚Ì‚à‚ ‚éD
-                Control <•ûŒü> ‚Í number_pad ƒIƒvƒVƒ‡ƒ“‚ªƒZƒbƒg‚³‚ê‚Ä‚¢‚éê‡
-                ‚Íƒvƒ‰ƒbƒgƒtƒH[ƒ€‚É‚æ‚Á‚Ä“®‚¢‚½‚è“®‚©‚È‚©‚Á‚½‚è‚·‚éD
-                ”Žš‚Ì '5' ‚Í 'G' Ú“ªŽ«‚Ì‚æ‚¤‚É“­‚­‚ªCnumber_pad ‚ª 2 ‚ÌŽž‚Í
-                'g' ‚Ì‚æ‚¤‚É“­‚­D
-                number_pad ‚ª 3 ‚È‚ç 1,2,3 ‚Æ 7,8,9 ‚Ì–ðŠ„‚Í‹t‚É‚È‚é; 4 ‚È‚ç
-                3 ‚Æ 2 ‚Ì‘g‚Ý‡‚í‚¹‚Ì‚æ‚¤‚ÉU‚é•‘‚¤B
-                number_pad ‚ª -1 ‚È‚çC‰pŽš‚ÌˆÚ“®ƒRƒ}ƒ“ƒh‚ðŽg‚¤‚ªC'y' ‚Æ
-                'z' ‚ª“ü‚ê‘Ö‚í‚éD
+ä¸€èˆ¬:
+?       help    ãƒ˜ãƒ«ãƒ—
+#quit   quit    ã‚²ãƒ¼ãƒ ã‚’ã‚„ã‚ã‚‹ï¼Ž
+S       save    ã‚²ãƒ¼ãƒ ã‚’(å¾Œã§ç¶šã‘ã‚‹ãŸã‚ã«)ä¸­æ–­ã™ã‚‹ï¼Ž
+!       sh      (ã‚‚ã—ã§ãã‚‹ãªã‚‰)ã‚·ã‚§ãƒ«ã‚’å®Ÿè¡Œã™ã‚‹ï¼Ž
+^Z      suspend ã‚²ãƒ¼ãƒ ã‚’ä¸­æ–­ã™ã‚‹ï¼Ž
+O       options ã‚ªãƒ—ã‚·ãƒ§ãƒ³ã‚’è¨­å®šã™ã‚‹ï¼Ž
+/       whatis  ç”»é¢ã®è¨˜å·ãŒä½•ã‹ã‚’çŸ¥ã‚‹ï¼Ž
+\       known   ä»Šã¾ã§ã«ç™ºè¦‹ã—ãŸé“å…·ã®ä¸€è¦§ã‚’è¡¨ç¤ºã™ã‚‹ï¼Ž
+v       version ãƒãƒ¼ã‚¸ãƒ§ãƒ³ã‚’è¡¨ç¤ºã™ã‚‹ï¼Ž
+V       history ã‚²ãƒ¼ãƒ ã®æ­´å²ã‚’è¡¨ç¤ºã™ã‚‹ï¼Ž
+^A      again   1ã¤å‰ã®ã‚³ãƒžãƒ³ãƒ‰ã‚’å®Ÿè¡Œã™ã‚‹ï¼Ž(^Aã¯ã‚³ãƒ³ãƒˆãƒ­ãƒ¼ãƒ«ã‚’æŠ¼ã—ãª
+                ãŒã‚‰Aã‚’æŠ¼ã™ã“ã¨ã‚’æ„å‘³ã™ã‚‹ï¼Ž)
+^R      redraw  ç”»é¢ã‚’æ›¸ããªãŠã™ï¼Ž
+^P      prevmsg å‰ã®ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã‚’è¦‹ã‚‹ï¼Ž(^Pã¯ç¹°ã‚Šè¿”ã—ä½¿ãˆã‚‹)
+`               ã‚ªãƒªã‚¸ãƒŠãƒ«ãƒ¢ãƒ¼ãƒ‰ã¨æ—¥æœ¬èªžãƒ¢ãƒ¼ãƒ‰ã®åˆ‡ã‚Šæ›¿ãˆ
+#               æ‹¡å¼µã‚³ãƒžãƒ³ãƒ‰(#?ã§ãƒ˜ãƒ«ãƒ—)
 
-ˆê”Ê:
-?       help    ƒwƒ‹ƒv
-#quit   quit    ƒQ[ƒ€‚ð‚â‚ß‚éD
-S       save    ƒQ[ƒ€‚ð(Œã‚Å‘±‚¯‚é‚½‚ß‚É)’†’f‚·‚éD
-!       sh      (‚à‚µ‚Å‚«‚é‚È‚ç)ƒVƒFƒ‹‚ðŽÀs‚·‚éD
-^Z      suspend ƒQ[ƒ€‚ð’†’f‚·‚éD
-O       options ƒIƒvƒVƒ‡ƒ“‚ðÝ’è‚·‚éD
-/       whatis  ‰æ–Ê‚Ì‹L†‚ª‰½‚©‚ð’m‚éD
-\       known   ¡‚Ü‚Å‚É”­Œ©‚µ‚½“¹‹ï‚Ìˆê——‚ð•\Ž¦‚·‚éD
-v       version ƒo[ƒWƒ‡ƒ“‚ð•\Ž¦‚·‚éD
-V       history ƒQ[ƒ€‚Ì—ðŽj‚ð•\Ž¦‚·‚éD
-^A      again   1‚Â‘O‚ÌƒRƒ}ƒ“ƒh‚ðŽÀs‚·‚éD(^A‚ÍƒRƒ“ƒgƒ[ƒ‹‚ð‰Ÿ‚µ‚È
-                ‚ª‚çA‚ð‰Ÿ‚·‚±‚Æ‚ðˆÓ–¡‚·‚éD)
-^R      redraw  ‰æ–Ê‚ð‘‚«‚È‚¨‚·D
-^P      prevmsg ‘O‚ÌƒƒbƒZ[ƒW‚ðŒ©‚éD(^P‚ÍŒJ‚è•Ô‚µŽg‚¦‚é)
-`               ƒIƒŠƒWƒiƒ‹ƒ‚[ƒh‚Æ“ú–{Œêƒ‚[ƒh‚ÌØ‚è‘Ö‚¦
-#               Šg’£ƒRƒ}ƒ“ƒh(#?‚Åƒwƒ‹ƒv)
+ã‚²ãƒ¼ãƒ :
+^D      kick    è¹´ã‚‹ï¼Ž(æ‰‰ç­‰)
+^T      'port   çž¬é–“ç§»å‹•ï¼Ž(å¯èƒ½ãªã‚‰)
+a       apply   é“å…·ã‚’ä½¿ã†ï¼Ž(ã¤ã‚‹ã¯ã—ï¼Œéµï¼Œã‚«ãƒ¡ãƒ©ç­‰)
+A       armor   å…¨ã¦ã®éŽ§ã‚’è„±ãï¼Ž
+c       close   æ‰‰ã‚’é–‰ã‚ã‚‹ï¼Ž
+C       call    ç‰¹å®šã®æ€ªç‰©ï¼Œå€‹ã€…ã®ã‚¢ã‚¤ãƒ†ãƒ ï¼Œã‚¢ã‚¤ãƒ†ãƒ ã®ç¨®é¡žã«åå‰ã‚’ã¤ã‘ã‚‹ï¼Ž
+d       drop    ç‰©ã‚’ç½®ãï¼Ž  d7aï¼šaãªã‚‹ã‚‚ã®ã‚’7å€‹ç½®ãï¼Ž
+D       Drop    ç¨®é¡žã‚’é¸ã‚“ã§ç‰©ã‚’ç½®ãï¼Ž
+e       eat     ä½•ã‹ã‚’é£Ÿã¹ã‚‹ï¼Ž
+f       fire    è£…å¡«ã•ã‚Œã¦ã„ã‚‹ã‚‚ã®ã‚’å°„ã‚‹ï¼Ž
+F       fight   æ–¹å‘ã‚’æŒ‡å®šã—æˆ¦ã†ï¼Ž
+E       engrave åºŠã®ã»ã“ã‚Šã«æ–‡å­—ã‚’æ›¸ãï¼Ž(E-  æŒ‡ã‚’ä½¿ã£ã¦)
+i       invent  ã‚ãªãŸã®æŒã¡ç‰©ä¸€è¦§ï¼Ž(ã‚ãªãŸãŒæŒã£ã¦ã„ã‚‹ã‚‚ã®å…¨ã¦)
+I       Invent  ç¨®é¡žã‚’é¸æŠžã—ã¦æŒã¡ç‰©ä¸€è¦§ï¼Ž
+                Iu: æœªæ‰•ã®é“å…·ä¸€è¦§ï¼Ž
+                Ix: æœªæ‰•ã ãŒä½¿ã„ã¯ãŸã—ãŸé“å…·ä¸€è¦§ï¼Ž
+                I$: ãŠé‡‘ã‚’æ•°ãˆã‚‹ï¼Ž
+o       open    æ‰‰ã‚’é–‹ã‘ã‚‹ï¼Ž
+p       pay     å‹˜å®šã‚’æ‰•ã†ï¼Ž(åº—ã®ä¸­ã§)
+P       puton   ã‚¢ã‚¯ã‚»ã‚µãƒªã‚’èº«ã«ã¤ã‘ã‚‹ï¼Ž(æŒ‡è¼ªï¼Œé­”é™¤ã‘ãªã©)
+q       quaff   ä½•ã‹ã‚’é£²ã‚€(æ°´è–¬, æ°´, ãªã©)
+Q       quiver  è£…å¡«ã™ã‚‹ã‚‚ã®ã‚’é¸æŠžã™ã‚‹ï¼Ž
+r       read    å·»ç‰©ã‚„é­”æ³•ã®æœ¬ã‚’èª­ã‚€ï¼Ž
+R       remove  ã‚¢ã‚¯ã‚»ã‚µãƒªã‚’ã¯ãšã™ï¼Ž(æŒ‡è¼ªï¼Œé­”é™¤ã‘ãªã©)
+s       search  ç§˜å¯†ã®æ‰‰ï¼Œéš ã‚ŒãŸç½ ï¼Œæ€ªç‰©ã‚’æŽ¢ã™ï¼Ž
+t       throw   æ­¦å™¨ã‚’æŠ•ã’ã‚‹ï¼Œæ’ƒã¤ï¼Œå°„ã‚‹ï¼Ž
+T       takeoff éŽ§ã‚’è„±ãï¼Ž
+w       wield   æ­¦å™¨ã‚’è£…å‚™ã™ã‚‹ï¼Ž(w-  ä½•ã‚‚è£…å‚™ã—ãªã„)
+W       wear    éŽ§ã‚’ç€ã‚‹ï¼Ž
+x       xchange å·¦å³ã®æ­¦å™¨ã‚’äº¤æ›ã™ã‚‹ï¼Ž
+X       twoweapon äºŒåˆ€æµã‚’åˆ‡ã‚Šæ›¿ãˆã‚‹ï¼Ž
+z       zap     æ–ã‚’æŒ¯ã‚Šã‹ã–ã™ï¼Ž(number_pad ãŒ -1 ãªã‚‰ z ã§ã¯ãªã y)
+Z       Zap     å‘ªæ–‡ã‚’å”±ãˆã‚‹ï¼Ž(number_pad ãŒ -1 ãªã‚‰ Z ã§ã¯ãªã Y)
+<       up      éšŽæ®µã‚’æ˜‡ã‚‹ï¼Ž
+>       down    éšŽæ®µã‚’é™ã‚Šã‚‹ï¼Ž
+^       trap_id ç½ ã‚’èª¿ã¹ã‚‹ï¼Ž
+),[,=,",(       ç¾åœ¨è£…å‚™ã—ã¦ã„ã‚‹è¨˜å·ã«å¯¾å¿œã—ãŸã‚‚ã®ã‚’è¡¨ç¤º
+*               è£…å‚™ã—ã¦ã„ã‚‹ã‚‚ã®ã‚’è¡¨ç¤º
+$       gold    ãŠé‡‘ã‚’æ•°ãˆã‚‹ï¼Ž
++       spells  å”±ãˆã‚‹ã“ã¨ã®ã§ãã‚‹é­”æ³•ã®ä¸€è¦§ï¼Ž
+`       classkn ä¸€ã¤ã®ç¨®é¡žã®ä¸­ã§ç™ºè¦‹ã—ãŸç‰©ã‚’è¡¨ç¤ºã™ã‚‹
+_       travel  ãƒžãƒƒãƒ—ã§ç¤ºã•ã‚ŒãŸç‚¹ã«æœ€å°çµŒè·¯ã‚¢ãƒ«ã‚´ãƒªã‚ºãƒ ã§ç§»å‹•ã™ã‚‹ï¼Ž
+.       rest    ä¼‘ã‚€ï¼Ž
+,       pickup  ç‰©ã‚’æ‹¾ã†ï¼Ž
+@               `pickup'(è‡ªå‹•pickup)ã®ã‚ªãƒ—ã‚·ãƒ§ãƒ³ã‚’åˆ‡ã‚Šæ›¿ãˆã‚‹ï¼Ž
+:       look    ä½•ãŒã‚ã‚‹ã‹ã‚’è¦‹ã‚‹ï¼Ž
+;       farlook ä»–ã«ä½•ãŒã‚ã‚‹ã‹èª¿ã¹ã‚‹ï¼Ž(åœ°å›³ä¸Šã®è¨˜å·ã‚’é¸æŠžã™ã‚‹)
 
-ƒQ[ƒ€:
-^D      kick    R‚éD(”à“™)
-^T      'port   uŠÔˆÚ“®D(‰Â”\‚È‚ç)
-a       apply   “¹‹ï‚ðŽg‚¤D(‚Â‚é‚Í‚µCŒ®CƒJƒƒ‰“™)
-A       armor   ‘S‚Ä‚ÌŠZ‚ð’E‚®D
-c       close   ”à‚ð•Â‚ß‚éD
-C       call    “Á’è‚Ì‰ö•¨CŒÂX‚ÌƒAƒCƒeƒ€CƒAƒCƒeƒ€‚ÌŽí—Þ‚É–¼‘O‚ð‚Â‚¯‚éD
-d       drop    •¨‚ð’u‚­D  d7aFa‚È‚é‚à‚Ì‚ð7ŒÂ’u‚­D
-D       Drop    Ží—Þ‚ð‘I‚ñ‚Å•¨‚ð’u‚­D
-e       eat     ‰½‚©‚ðH‚×‚éD
-f       fire    ‘•“U‚³‚ê‚Ä‚¢‚é‚à‚Ì‚ðŽË‚éD
-F       fight   •ûŒü‚ðŽw’è‚µí‚¤D
-E       engrave °‚Ì‚Ù‚±‚è‚É•¶Žš‚ð‘‚­D(E-  Žw‚ðŽg‚Á‚Ä)
-i       invent  ‚ ‚È‚½‚ÌŽ‚¿•¨ˆê——D(‚ ‚È‚½‚ªŽ‚Á‚Ä‚¢‚é‚à‚Ì‘S‚Ä)
-I       Invent  Ží—Þ‚ð‘I‘ð‚µ‚ÄŽ‚¿•¨ˆê——D
-                Iu: –¢•¥‚Ì“¹‹ïˆê——D
-                Ix: –¢•¥‚¾‚ªŽg‚¢‚Í‚½‚µ‚½“¹‹ïˆê——D
-                I$: ‚¨‹à‚ð”‚¦‚éD
-o       open    ”à‚ðŠJ‚¯‚éD
-p       pay     Š¨’è‚ð•¥‚¤D(“X‚Ì’†‚Å)
-P       puton   ƒAƒNƒZƒTƒŠ‚ðg‚É‚Â‚¯‚éD(Žw—ÖC–‚œ‚¯‚È‚Ç)
-q       quaff   ‰½‚©‚ðˆù‚Þ(…–ò, …, ‚È‚Ç)
-Q       quiver  ‘•“U‚·‚é‚à‚Ì‚ð‘I‘ð‚·‚éD
-r       read    Šª•¨‚â–‚–@‚Ì–{‚ð“Ç‚ÞD
-R       remove  ƒAƒNƒZƒTƒŠ‚ð‚Í‚¸‚·D(Žw—ÖC–‚œ‚¯‚È‚Ç)
-s       search  ”é–§‚Ì”àC‰B‚ê‚½ã©C‰ö•¨‚ð’T‚·D
-t       throw   •Ší‚ð“Š‚°‚éCŒ‚‚ÂCŽË‚éD
-T       takeoff ŠZ‚ð’E‚®D
-w       wield   •Ší‚ð‘•”õ‚·‚éD(w-  ‰½‚à‘•”õ‚µ‚È‚¢)
-W       wear    ŠZ‚ð’…‚éD
-x       xchange ¶‰E‚Ì•Ší‚ðŒðŠ·‚·‚éD
-X       twoweapon “ñ“—¬‚ðØ‚è‘Ö‚¦‚éD
-z       zap     ñ‚ðU‚è‚©‚´‚·D(number_pad ‚ª -1 ‚È‚ç z ‚Å‚Í‚È‚­ y)
-Z       Zap     Žô•¶‚ð¥‚¦‚éD(number_pad ‚ª -1 ‚È‚ç Z ‚Å‚Í‚È‚­ Y)
-<       up      ŠK’i‚ð¸‚éD
->       down    ŠK’i‚ð~‚è‚éD
-^       trap_id ã©‚ð’²‚×‚éD
-),[,=,",(       Œ»Ý‘•”õ‚µ‚Ä‚¢‚é‹L†‚É‘Î‰ž‚µ‚½‚à‚Ì‚ð•\Ž¦
-*               ‘•”õ‚µ‚Ä‚¢‚é‚à‚Ì‚ð•\Ž¦
-$       gold    ‚¨‹à‚ð”‚¦‚éD
-+       spells  ¥‚¦‚é‚±‚Æ‚Ì‚Å‚«‚é–‚–@‚Ìˆê——D
-`       classkn ˆê‚Â‚ÌŽí—Þ‚Ì’†‚Å”­Œ©‚µ‚½•¨‚ð•\Ž¦‚·‚é
-_       travel  ƒ}ƒbƒv‚ÅŽ¦‚³‚ê‚½“_‚ÉÅ¬Œo˜HƒAƒ‹ƒSƒŠƒYƒ€‚ÅˆÚ“®‚·‚éD
-.       rest    ‹x‚ÞD
-,       pickup  •¨‚ðE‚¤D
-@               `pickup'(Ž©“®pickup)‚ÌƒIƒvƒVƒ‡ƒ“‚ðØ‚è‘Ö‚¦‚éD
-:       look    ‰½‚ª‚ ‚é‚©‚ðŒ©‚éD
-;       farlook ‘¼‚É‰½‚ª‚ ‚é‚©’²‚×‚éD(’n}ã‚Ì‹L†‚ð‘I‘ð‚·‚é)
+ãƒ¡ã‚¿ã‚­ãƒ¼ã®ã‚ã‚‹ã‚­ãƒ¼ãƒœãƒ¼ãƒ‰ã§ã¯ä»¥ä¸‹ã®æ‹¡å¼µã‚³ãƒžãƒ³ãƒ‰ã‚’ # ã®ã‹ã‚ã‚Šã«ãƒ¡ã‚¿ã‚­ãƒ¼
+ã‚’æŠ¼ã—ãªãŒã‚‰å®Ÿè¡Œã§ãã‚‹ï¼Ž
 
-ƒƒ^ƒL[‚Ì‚ ‚éƒL[ƒ{[ƒh‚Å‚ÍˆÈ‰º‚ÌŠg’£ƒRƒ}ƒ“ƒh‚ð # ‚Ì‚©‚í‚è‚Éƒƒ^ƒL[
-‚ð‰Ÿ‚µ‚È‚ª‚çŽÀs‚Å‚«‚éD
+M-?             æ‹¡å¼µã‚³ãƒžãƒ³ãƒ‰ãƒ˜ãƒ«ãƒ—ã®è¡¨ç¤º (ãƒ—ãƒ©ãƒƒãƒˆãƒ•ã‚©ãƒ¼ãƒ ãŒè¨±ã›ã°)
+M-2     twoweapon äºŒåˆ€æµã®åˆ‡ã‚Šæ›¿ãˆ (number_pad ãŒç„¡åŠ¹ãªã‚‰)
+M-a     adjust  æŒã¡ç‰©ä¸€è¦§ã®èª¿æ•´
+M-c     chat    èª°ã‹ã¨è©±ã™
+M-d     dip     ä½•ã‹ã«ç‰©ã‚’æµ¸ã™ï¼Ž
+M-e     enhance æ­¦å™¨ã®æŠ€é‡ã‚’é«˜ã‚ã‚‹ã¾ãŸã¯è¦‹ã‚‹
+M-f     force   éµã‚’ã“ã˜ã‚ã‘ã‚‹ï¼Ž
+M-i     invoke  ç‰©ã®ç‰¹åˆ¥ãªåŠ›ã‚’ä½¿ã†ï¼Ž
+M-j     jump    ä»–ã®ä½ç½®ã«é£›ã³ã†ã¤ã‚‹ï¼Ž
+M-l     loot    åºŠã®ä¸Šã®ç®±ã®ä¸­èº«ã‚’ç•¥å¥ªã™ã‚‹ï¼Ž
+M-m     monster æ€ªç‰©ã®ç‰¹åˆ¥èƒ½åŠ›ã‚’ä½¿ã†ï¼Ž
+M-n     name    ç‰¹å®šã®æ€ªç‰©ï¼Œå€‹ã€…ã®ã‚¢ã‚¤ãƒ†ãƒ ï¼Œã‚¢ã‚¤ãƒ†ãƒ ã®ç¨®é¡žã«åå‰ã‚’ã¤ã‘ã‚‹ï¼Ž
+M-o     offer   ç¥žã«ä¾›ç‰©ã‚’æ§ã’ã‚‹ï¼Ž
+M-p     pray    ç¥žã«ç¥ˆã‚‹ï¼Ž
+M-q     quit    ã‚²ãƒ¼ãƒ ã‚’ã‚„ã‚ã‚‹
+M-r     rub     ãƒ©ãƒ³ãƒ—ã‚’ã“ã™ã‚‹ï¼Ž
+M-s     sit     åº§ã‚‹ï¼Ž
+M-t     turn    ã‚¢ãƒ³ãƒ‡ãƒƒãƒˆã‚’åœŸã«è¿”ã™ï¼Ž
+M-u     untrap  ç½ ã‚’ã¯ãšã™ï¼Ž
+M-v     version ã‚³ãƒ³ãƒ‘ã‚¤ãƒ«æ™‚ã®ã‚ªãƒ—ã‚·ãƒ§ãƒ³ã‚’è¡¨ç¤ºã™ã‚‹ï¼Ž
+M-w     wipe    é¡”ã‚’æ‹­ã†ï¼Ž
 
-M-?             Šg’£ƒRƒ}ƒ“ƒhƒwƒ‹ƒv‚Ì•\Ž¦ (ƒvƒ‰ƒbƒgƒtƒH[ƒ€‚ª‹–‚¹‚Î)
-M-2     twoweapon “ñ“—¬‚ÌØ‚è‘Ö‚¦ (number_pad ‚ª–³Œø‚È‚ç)
-M-a     adjust  Ž‚¿•¨ˆê——‚Ì’²®
-M-c     chat    ’N‚©‚Æ˜b‚·
-M-d     dip     ‰½‚©‚É•¨‚ðZ‚·D
-M-e     enhance •Ší‚Ì‹Z—Ê‚ð‚‚ß‚é‚Ü‚½‚ÍŒ©‚é    
-M-f     force   Œ®‚ð‚±‚¶‚ ‚¯‚éD
-M-i     invoke  •¨‚Ì“Á•Ê‚È—Í‚ðŽg‚¤D
-M-j     jump    ‘¼‚ÌˆÊ’u‚É”ò‚Ñ‚¤‚Â‚éD
-M-l     loot    °‚Ìã‚Ì” ‚Ì’†g‚ð—ª’D‚·‚éD
-M-m     monster ‰ö•¨‚Ì“Á•Ê”\—Í‚ðŽg‚¤D
-M-n     name    “Á’è‚Ì‰ö•¨CŒÂX‚ÌƒAƒCƒeƒ€CƒAƒCƒeƒ€‚ÌŽí—Þ‚É–¼‘O‚ð‚Â‚¯‚éD
-M-o     offer   _‚É‹Ÿ•¨‚ð•ù‚°‚éD
-M-p     pray    _‚É‹F‚éD
-M-q     quit    ƒQ[ƒ€‚ð‚â‚ß‚é
-M-r     rub     ƒ‰ƒ“ƒv‚ð‚±‚·‚éD
-M-s     sit     À‚éD
-M-t     turn    ƒAƒ“ƒfƒbƒg‚ð“y‚É•Ô‚·D
-M-u     untrap  ã©‚ð‚Í‚¸‚·D
-M-v     version ƒRƒ“ƒpƒCƒ‹Žž‚ÌƒIƒvƒVƒ‡ƒ“‚ð•\Ž¦‚·‚éD
-M-w     wipe    Šç‚ð@‚¤D
+`number_pad'ã®ã‚ªãƒ—ã‚·ãƒ§ãƒ³ãŒã‚ªãƒ³ãªã‚‰ï¼Œæ¬¡ã®ã‚³ãƒžãƒ³ãƒ‰ãŒå¯èƒ½ã«ãªã‚‹ï¼Ž
 
-`number_pad'‚ÌƒIƒvƒVƒ‡ƒ“‚ªƒIƒ“‚È‚çCŽŸ‚ÌƒRƒ}ƒ“ƒh‚ª‰Â”\‚É‚È‚éD
-
-n               ‚±‚ê‚É‘±‚­”Žš‚¾‚¯ŽŸ‚ÌƒRƒ}ƒ“ƒh‚ðŽÀs‚·‚éD
-j       jump    ‘¼‚ÌˆÊ’u‚É”ò‚Ñ‚¤‚Â‚éD
-k       kick    R‚éD(”à“™)
-l       loot    °‚Ìã‚Ì” ‚Ì’†g‚ð—ª’D‚·‚éD
-N       name    ƒAƒCƒeƒ€‚â•¨‚É–¼‘O‚ð‚Â‚¯‚éD
-u       untrap  ã©‚ð‚Í‚¸‚·D(’Êí‚Í‚µ‚©‚¯‚ç‚ê‚½•¨)
-
+n               ã“ã‚Œã«ç¶šãæ•°å­—ã ã‘æ¬¡ã®ã‚³ãƒžãƒ³ãƒ‰ã‚’å®Ÿè¡Œã™ã‚‹ï¼Ž
+j       jump    ä»–ã®ä½ç½®ã«é£›ã³ã†ã¤ã‚‹ï¼Ž
+k       kick    è¹´ã‚‹ï¼Ž(æ‰‰ç­‰)
+l       loot    åºŠã®ä¸Šã®ç®±ã®ä¸­èº«ã‚’ç•¥å¥ªã™ã‚‹ï¼Ž
+N       name    ã‚¢ã‚¤ãƒ†ãƒ ã‚„ç‰©ã«åå‰ã‚’ã¤ã‘ã‚‹ï¼Ž
+u       untrap  ç½ ã‚’ã¯ãšã™ï¼Ž(é€šå¸¸ã¯ã—ã‹ã‘ã‚‰ã‚ŒãŸç‰©)
 ^       ã©‚ÌŽí—Þ‚ð’²‚×‚é
 ^[      ƒRƒ}ƒ“ƒh‚ðƒLƒƒƒ“ƒZƒ‹‚·‚é
 ^A      ‘O‚ÌƒRƒ}ƒ“ƒh‚ðŒJ‚è•Ô‚·
@@ -577,80 +575,80 @@ M-T     “ü‚ê•¨‚ð‹ó‚É‚·‚é
 M-u     ã©‚ð‚Í‚¸‚· (’Êí‚Í‚µ‚©‚¯‚ç‚ê‚½•¨)
 M-v     ƒRƒ“ƒpƒCƒ‹Žž‚ÌƒIƒvƒVƒ‡ƒ“‚ð•\Ž¦‚·‚é
 M-w     Šç‚ð@‚¤
-ƒŠƒŠ[ƒX 3.6‚ÌNetHackƒqƒXƒgƒŠƒtƒ@ƒCƒ‹
+ãƒªãƒªãƒ¼ã‚¹ 3.6ã®NetHackãƒ’ã‚¹ãƒˆãƒªãƒ•ã‚¡ã‚¤ãƒ«
 
-Œ©‚æCŽ€‚·‚×‚«‚à‚Ì‚æCNetHack‚Ì‹NŒ¹‚ðDDD
+è¦‹ã‚ˆï¼Œæ­»ã™ã¹ãã‚‚ã®ã‚ˆï¼ŒNetHackã®èµ·æºã‚’ï¼Žï¼Žï¼Ž
 
-Jay Fenlason‚ªÅ‰‚ÌHack‚ð Kenny Woodland, Mike Thome ‚¨‚æ‚Ñ Jon Payne
-‚Ì•‚¯‚Ì‚à‚Æ‘‚¢‚½D
+Jay FenlasonãŒæœ€åˆã®Hackã‚’ Kenny Woodland, Mike Thome ãŠã‚ˆã³ Jon Payne
+ã®åŠ©ã‘ã®ã‚‚ã¨æ›¸ã„ãŸï¼Ž
 
-Andries Brouwer‚Í‚±‚ê‚ð‘å‚«‚­‘‚«’¼‚µCHack‚ð‚Ü‚Á‚½‚­ˆá‚¤ƒQ[ƒ€‚ÉŽd—§‚ÄC
-UNIX(tm)‚Å“®‚­(­‚È‚­‚Æ‚à)3‚Â‚Ìƒo[ƒWƒ‡ƒ“(1.0.1, 1.0.2, 1.0.3)‚ð
-Usenet‚ÅŒöŠJ‚µ‚½D
+Andries Brouwerã¯ã“ã‚Œã‚’å¤§ããæ›¸ãç›´ã—ï¼ŒHackã‚’ã¾ã£ãŸãé•ã†ã‚²ãƒ¼ãƒ ã«ä»•ç«‹ã¦ï¼Œ
+UNIX(tm)ã§å‹•ã(å°‘ãªãã¨ã‚‚)3ã¤ã®ãƒãƒ¼ã‚¸ãƒ§ãƒ³(1.0.1, 1.0.2, 1.0.3)ã‚’
+Usenetã§å…¬é–‹ã—ãŸï¼Ž
 
-Don G. Kneller‚Í Hack 1.0.3‚ð Microsoft(tm) C ‚¨‚æ‚Ñ MS-DOS(tm)‚ÖˆÚA‚µC
-PC HACK 1.01e‚ð§ì‚µ‚½D‰Á‚¦‚Ä DEC RainbowƒOƒ‰ƒtƒBƒbƒN‚ð 1.03g‚ÅƒT
-ƒ|[ƒg‚µC­‚È‚­‚Æ‚à4‚ÂˆÈã‚Ìƒo[ƒWƒ‡ƒ“‚ð§ì‚µ‚½D(3.0, 3.2, 3.51, 3.6;
-‚±‚ê‚ÍŒÃ‚¢Hack‚Ìƒo[ƒWƒ‡ƒ“”Ô†‚Å‚ ‚èCNetHack‚Ìƒo[ƒWƒ‡ƒ“‚Æ‚ÍŠÖŒW‚ª‚È‚¢)D
+Don G. Knellerã¯ Hack 1.0.3ã‚’ Microsoft(tm) C ãŠã‚ˆã³ MS-DOS(tm)ã¸ç§»æ¤ã—ï¼Œ
+PC HACK 1.01eã‚’åˆ¶ä½œã—ãŸï¼ŽåŠ ãˆã¦ DEC Rainbowã‚°ãƒ©ãƒ•ã‚£ãƒƒã‚¯ã‚’ 1.03gã§ã‚µ
+ãƒãƒ¼ãƒˆã—ï¼Œå°‘ãªãã¨ã‚‚4ã¤ä»¥ä¸Šã®ãƒãƒ¼ã‚¸ãƒ§ãƒ³ã‚’åˆ¶ä½œã—ãŸï¼Ž(3.0, 3.2, 3.51, 3.6;
+ã“ã‚Œã¯å¤ã„Hackã®ãƒãƒ¼ã‚¸ãƒ§ãƒ³ç•ªå·ã§ã‚ã‚Šï¼ŒNetHackã®ãƒãƒ¼ã‚¸ãƒ§ãƒ³ã¨ã¯é–¢ä¿‚ãŒãªã„)ï¼Ž
 
-P. Black‚Í PC HACK 3.51‚ð Lattice(tm) C‚¨‚æ‚ÑCAtari 520/1040ST‚ÖˆÚA‚µC
-ST Hack 1.03‚ðŠJ”­‚µ‚½D
+P. Blackã¯ PC HACK 3.51ã‚’ Lattice(tm) CãŠã‚ˆã³ï¼ŒAtari 520/1040STã¸ç§»æ¤ã—ï¼Œ
+ST Hack 1.03ã‚’é–‹ç™ºã—ãŸï¼Ž
 
-Mike Stephenson‚Í‚±‚ê‚çFX‚Èƒo[ƒWƒ‡ƒ“‚ðˆê‚É“‡‚µCV‚È‹@”\‚ð‰Á‚¦C
-Nethackƒo[ƒWƒ‡ƒ“1.4‚ð1987”N‚É§ì‚µ‚½D”Þ‚Í‚»‚ÌŒã1000‚É‚à‹y‚ÔCNetHack 1.4
-‚Ì‰ü—Ç‚âƒfƒoƒbƒO‚ðd‚Ë®‚¦CNetHackƒo[ƒWƒ‡ƒ“ 2.2‚¨‚æ‚Ñ 2.3‚ðƒŠƒŠ[ƒX‚µ‚½D
+Mike Stephensonã¯ã“ã‚Œã‚‰è‰²ã€…ãªãƒãƒ¼ã‚¸ãƒ§ãƒ³ã‚’ä¸€ç·’ã«çµ±åˆã—ï¼Œæ–°ãªæ©Ÿèƒ½ã‚’åŠ ãˆï¼Œ
+Nethackãƒãƒ¼ã‚¸ãƒ§ãƒ³1.4ã‚’1987å¹´ã«åˆ¶ä½œã—ãŸï¼Žå½¼ã¯ãã®å¾Œ1000ã«ã‚‚åŠã¶ï¼ŒNetHack 1.4
+ã®æ”¹è‰¯ã‚„ãƒ‡ãƒãƒƒã‚°ã‚’é‡ã­æ•´ãˆï¼ŒNetHackãƒãƒ¼ã‚¸ãƒ§ãƒ³ 2.2ãŠã‚ˆã³ 2.3ã‚’ãƒªãƒªãƒ¼ã‚¹ã—ãŸï¼Ž
 
-‚»‚ÌŒãCMike‚ÍƒQ[ƒ€‚ð‘å•‚É‘‚«Š·‚¦C’²®‚µCKen Arromdee,
+ãã®å¾Œï¼ŒMikeã¯ã‚²ãƒ¼ãƒ ã‚’å¤§å¹…ã«æ›¸ãæ›ãˆï¼Œèª¿æ•´ã—ï¼ŒKen Arromdee,
 Jean-Christophe Collet, Steve Creps, Eric Hendrickson, Izchak Miller,
-Eric S. Raymond, John Rupley, Mike Threepoint ‚¨‚æ‚Ñ Janet Walz‚ðŠÜ‚Þ
-ƒ`[ƒ€‚Ìæ“ª‚É—§‚¿CNetHack 3.0c‚ð§ì‚µ‚½D“¯‚¶ƒOƒ‹[ƒv‚ª‚»‚ÌŒã10‚ÌƒŠ
-ƒrƒWƒ‡ƒ“ƒpƒbƒ`‚ðƒŠƒŠ[ƒX‚µC3.0‚ðƒAƒvƒf[ƒg‚µ‚½D
+Eric S. Raymond, John Rupley, Mike Threepoint ãŠã‚ˆã³ Janet Walzã‚’å«ã‚€
+ãƒãƒ¼ãƒ ã®å…ˆé ­ã«ç«‹ã¡ï¼ŒNetHack 3.0cã‚’åˆ¶ä½œã—ãŸï¼ŽåŒã˜ã‚°ãƒ«ãƒ¼ãƒ—ãŒãã®å¾Œ10ã®ãƒª
+ãƒ“ã‚¸ãƒ§ãƒ³ãƒ‘ãƒƒãƒã‚’ãƒªãƒªãƒ¼ã‚¹ã—ï¼Œ3.0ã‚’ã‚¢ãƒ—ãƒ‡ãƒ¼ãƒˆã—ãŸï¼Ž
 
-NetHack 3.0‚Í Eric R. Smith‚É‚æ‚Á‚Ä Atari‚ÉˆÚA‚³‚êCTimo Hakulinen‚É‚æ‚Á‚Ä
-OS/2‚ÉˆÚA‚³‚êC Dabvid Gentzel‚É‚æ‚Á‚Ä VMS‚ÉˆÚA‚³‚ê‚½D”Þ‚ç3l‚¨‚æ‚ÑC
-Kevi Darcy‚ÍŒã‚É 3.0‚ÌƒŠƒrƒWƒ‡ƒ“‚ð§ì‚µ‚½ƒƒCƒ“ŠJ”­ƒ`[ƒ€‚É‡—¬‚µ‚½D
+NetHack 3.0ã¯ Eric R. Smithã«ã‚ˆã£ã¦ Atariã«ç§»æ¤ã•ã‚Œï¼ŒTimo Hakulinenã«ã‚ˆã£ã¦
+OS/2ã«ç§»æ¤ã•ã‚Œï¼Œ Dabvid Gentzelã«ã‚ˆã£ã¦ VMSã«ç§»æ¤ã•ã‚ŒãŸï¼Žå½¼ã‚‰3äººãŠã‚ˆã³ï¼Œ
+Kevi Darcyã¯å¾Œã« 3.0ã®ãƒªãƒ“ã‚¸ãƒ§ãƒ³ã‚’åˆ¶ä½œã—ãŸãƒ¡ã‚¤ãƒ³é–‹ç™ºãƒãƒ¼ãƒ ã«åˆæµã—ãŸï¼Ž
 
-Olaf Seibert‚Í NetHack 2.3‚¨‚æ‚Ñ 3.0‚ð Amiga‚ÉˆÚA‚µ‚½D Norm Meluch,
-Stephen Spackman ‚¨‚æ‚Ñ Pierre Martineau‚Í PC NetHack 3.0‚ÌƒI[ƒoƒŒƒC
-ƒR[ƒh‚ðƒfƒUƒCƒ“‚µ‚½DJohnny Lee‚Í NetHack 3.0‚ð Macintosh‚ÉˆÚA‚µ‚½D
-‘òŽR‚Ì‘¼‚Ìƒ_ƒ“ƒWƒ‡ƒi[‚É‚æ‚èC”Þ‚ç‚ÍCPC, Macintosh ‚¨‚æ‚Ñ Amiga‚É
-3.0Œã‚ÌƒŠƒrƒWƒ‡ƒ“‚ðˆÚA‚µ‚½D
+Olaf Seibertã¯ NetHack 2.3ãŠã‚ˆã³ 3.0ã‚’ Amigaã«ç§»æ¤ã—ãŸï¼Ž Norm Meluch,
+Stephen Spackman ãŠã‚ˆã³ Pierre Martineauã¯ PC NetHack 3.0ã®ã‚ªãƒ¼ãƒãƒ¬ã‚¤
+ã‚³ãƒ¼ãƒ‰ã‚’ãƒ‡ã‚¶ã‚¤ãƒ³ã—ãŸï¼ŽJohnny Leeã¯ NetHack 3.0ã‚’ Macintoshã«ç§»æ¤ã—ãŸï¼Ž
+æ²¢å±±ã®ä»–ã®ãƒ€ãƒ³ã‚¸ãƒ§ãƒŠãƒ¼ã«ã‚ˆã‚Šï¼Œå½¼ã‚‰ã¯ï¼ŒPC, Macintosh ãŠã‚ˆã³ Amigaã«
+3.0å¾Œã®ãƒªãƒ“ã‚¸ãƒ§ãƒ³ã‚’ç§»æ¤ã—ãŸï¼Ž
 
-Mike Stephenson‚ðæ“ª‚ÉCIzchak Miller‚¨‚æ‚Ñ Janet Walz‚ª’²®‚µC
-¡‚â Ken Arromdee, David Cohrs, Jean-Christophe Collet, Kevin Darcy, 
-Matt Day, Timo Hakulinen, Steve Linhart, Dean Luick, Pat Rankin, 
-Eric Raymond ‚¨‚æ‚ÑC Eric Smith‚ðŠÜ‚ÞŠJ”­ƒ`[ƒ€‚Í3.0‚Ì”²–{“I‚ÈƒŠƒrƒWƒ‡ƒ“
-‚É’…Žè‚µ‚½D”Þ‚ç‚ÍƒQ[ƒ€‚ðƒfƒUƒCƒ“‚µ‚È‚¨‚µCƒR[ƒh‚Ì‘å‚«‚È‰ü—Ç‚ðs‚È‚Á‚½D
-”Þ‚ç‚Íƒ}ƒ‹ƒ`ƒvƒ‹ƒ_ƒ“ƒWƒ‡ƒ“CV‚µ‚¢ƒfƒBƒXƒvƒŒƒCCƒLƒƒƒ‰ƒNƒ^[–ˆ‚ÌƒNƒGƒXƒgC
-V‚µ‚¢ÅIŽŽ—û‚¨‚æ‚Ñ‘òŽR‚ÌV‚µ‚¢‹@”\‚ð‰Á‚¦CNetHack 3.1‚ð§ì‚µ‚½D
+Mike Stephensonã‚’å…ˆé ­ã«ï¼ŒIzchak MillerãŠã‚ˆã³ Janet WalzãŒèª¿æ•´ã—ï¼Œ
+ä»Šã‚„ Ken Arromdee, David Cohrs, Jean-Christophe Collet, Kevin Darcy,
+Matt Day, Timo Hakulinen, Steve Linhart, Dean Luick, Pat Rankin,
+Eric Raymond ãŠã‚ˆã³ï¼Œ Eric Smithã‚’å«ã‚€é–‹ç™ºãƒãƒ¼ãƒ ã¯3.0ã®æŠœæœ¬çš„ãªãƒªãƒ“ã‚¸ãƒ§ãƒ³
+ã«ç€æ‰‹ã—ãŸï¼Žå½¼ã‚‰ã¯ã‚²ãƒ¼ãƒ ã‚’ãƒ‡ã‚¶ã‚¤ãƒ³ã—ãªãŠã—ï¼Œã‚³ãƒ¼ãƒ‰ã®å¤§ããªæ”¹è‰¯ã‚’è¡Œãªã£ãŸï¼Ž
+å½¼ã‚‰ã¯ãƒžãƒ«ãƒãƒ—ãƒ«ãƒ€ãƒ³ã‚¸ãƒ§ãƒ³ï¼Œæ–°ã—ã„ãƒ‡ã‚£ã‚¹ãƒ—ãƒ¬ã‚¤ï¼Œã‚­ãƒ£ãƒ©ã‚¯ã‚¿ãƒ¼æ¯Žã®ã‚¯ã‚¨ã‚¹ãƒˆï¼Œ
+æ–°ã—ã„æœ€çµ‚è©¦ç·´ãŠã‚ˆã³æ²¢å±±ã®æ–°ã—ã„æ©Ÿèƒ½ã‚’åŠ ãˆï¼ŒNetHack 3.1ã‚’åˆ¶ä½œã—ãŸï¼Ž
 
-Ken Lorber, Gregg Wonderly‚¨‚æ‚Ñ Grag Olson‚Í Richard Addison,
-Mike Passaretti ‚¨‚æ‚Ñ Olaf Seibert‚ÌŽè‚ðŽØ‚è Amiga‚Ì NetHack 3.1‚ðŠJ”­
-‚µ‚½D
+Ken Lorber, Gregg WonderlyãŠã‚ˆã³ Grag Olsonã¯ Richard Addison,
+Mike Passaretti ãŠã‚ˆã³ Olaf Seibertã®æ‰‹ã‚’å€Ÿã‚Š Amigaã® NetHack 3.1ã‚’é–‹ç™º
+ã—ãŸï¼Ž
 
-Norm Meluch ‚¨‚æ‚Ñ Kevin Smolkowski‚Í Carl Schelin, Stephen Spackman
-Steve VanDevender‚¨‚æ‚Ñ Paul Winner‚ÌŽè‚ðŽØ‚è NetHack 3.1‚ðPC‚ÉˆÚA‚µ‚½D
+Norm Meluch ãŠã‚ˆã³ Kevin Smolkowskiã¯ Carl Schelin, Stephen Spackman
+Steve VanDevenderãŠã‚ˆã³ Paul Winnerã®æ‰‹ã‚’å€Ÿã‚Š NetHack 3.1ã‚’PCã«ç§»æ¤ã—ãŸï¼Ž
 
-Jon W{tte ‚¨‚æ‚Ñ Hao-yang Wang‚Í Ross Brown, Mike Engber, David Hairston,
+Jon W{tte ãŠã‚ˆã³ Hao-yang Wangã¯ Ross Brown, Mike Engber, David Hairston,
 Micheal Hamel, Jonathan Handler, Johnny Lee, Tim Lennan, Rob Menke
-‚¨‚æ‚Ñ Andy Swanson‚ÌŽè‚ðŽØ‚è Macintosh‚Ì Nethack 3.1‚ðŠJ”­‚µCMPW—p‚É
-ˆÚA‚µ‚½D‚»‚ê‚ÌŠJ”­‚ÌÛCBarton House‚Í Think C‚ÉˆÚA‚µ‚½D
+ãŠã‚ˆã³ Andy Swansonã®æ‰‹ã‚’å€Ÿã‚Š Macintoshã® Nethack 3.1ã‚’é–‹ç™ºã—ï¼ŒMPWç”¨ã«
+ç§»æ¤ã—ãŸï¼Žãã‚Œã®é–‹ç™ºã®éš›ï¼ŒBarton Houseã¯ Think Cã«ç§»æ¤ã—ãŸï¼Ž
 
-Timo Hakulinen‚Í NetHack 3.1‚ð OS/2‚ÉˆÚA‚µ‚½D Eric Smith‚Í NetHack 3.1
-‚ð Atari‚ÉˆÚA‚µ‚½D Pat Rankin‚Í Joshua Delahunty‚ÌŽè‚ðŽØ‚èCNetHack 3.1
-‚ÌVMSƒo[ƒWƒ‡ƒ“‚É‰ž‚¶‚Ä‚¢‚éDMichael Allison‚Í NetHack3.1‚ð Windows NT‚É
-ˆÚA‚µ‚½D
+Timo Hakulinenã¯ NetHack 3.1ã‚’ OS/2ã«ç§»æ¤ã—ãŸï¼Ž Eric Smithã¯ NetHack 3.1
+ã‚’ Atariã«ç§»æ¤ã—ãŸï¼Ž Pat Rankinã¯ Joshua Delahuntyã®æ‰‹ã‚’å€Ÿã‚Šï¼ŒNetHack 3.1
+ã®VMSãƒãƒ¼ã‚¸ãƒ§ãƒ³ã«å¿œã˜ã¦ã„ã‚‹ï¼ŽMichael Allisonã¯ NetHack3.1ã‚’ Windows NTã«
+ç§»æ¤ã—ãŸï¼Ž
 
-Dean Luick‚Í David Cohrs‚ÌŽè‚ðŽØ‚èCX11‚ÌNetHack 3.1‚ðŠJ”­‚µ‚½D
-\fBWarwick Allison\fP ‚Í Atari —p‚É NetHack ‚Ìƒ^ƒCƒ‹ƒo[ƒWƒ‡ƒ“‚ðì¬‚µ‚½D
-”Þ‚ÍŒã‚Éƒ^ƒCƒ‹‚ðŠJ”­ƒ`[ƒ€‚ÉŠñ‘¡‚µCƒ^ƒCƒ‹ƒTƒ|[ƒg‚Í‘¼‚Ìƒvƒ‰ƒbƒgƒtƒH[ƒ€‚É‚à’Ç‰Á‚³‚ê‚½D
+Dean Luickã¯ David Cohrsã®æ‰‹ã‚’å€Ÿã‚Šï¼ŒX11ã®NetHack 3.1ã‚’é–‹ç™ºã—ãŸï¼Ž
+Â¥fBWarwick AllisonÂ¥fP ã¯ Atari ç”¨ã« NetHack ã®ã‚¿ã‚¤ãƒ«ãƒãƒ¼ã‚¸ãƒ§ãƒ³ã‚’ä½œæˆã—ãŸï¼Ž
+å½¼ã¯å¾Œã«ã‚¿ã‚¤ãƒ«ã‚’é–‹ç™ºãƒãƒ¼ãƒ ã«å¯„è´ˆã—ï¼Œã‚¿ã‚¤ãƒ«ã‚µãƒãƒ¼ãƒˆã¯ä»–ã®ãƒ—ãƒ©ãƒƒãƒˆãƒ•ã‚©ãƒ¼ãƒ ã«ã‚‚è¿½åŠ ã•ã‚ŒãŸï¼Ž
 
                            - - - - - - - - - -
 
-ŽžXC‘Â—Ž‚µ‚½l•¨‚ª”Þ‚ç‚Ìƒlƒbƒgƒ‰ƒ“ƒh‚©‚çƒQ[ƒ€‚ÌŽè•‚¯‚Æ‚È‚é‚æ‚¤‚È‹»
-–¡‚ð‚»‚»‚é‰ü—ÇˆÄ‚ð‘—‚Á‚Ä‚­‚éDƒ_ƒ“ƒWƒ‡ƒ“‚Ì_‚Í‚±‚ê‚ç‘Â‚¿‚é‚Æ‚±‚ë‚Ü‚Å‘Â
-‚¿‚½lŠÔ‚½‚¿‚Ì–¼‘O‚ð‚«‚Ü‚®‚ê‚Å‚Ð‚©‚¦‚Ä‚¢‚éD‚»‚Ìƒ_ƒ“ƒWƒ‡ƒ“ƒi[‚½‚¿‚ÍˆÈ
-‰º‚Å‚ ‚é:
+æ™‚ã€…ï¼Œå •è½ã—ãŸäººç‰©ãŒå½¼ã‚‰ã®ãƒãƒƒãƒˆãƒ©ãƒ³ãƒ‰ã‹ã‚‰ã‚²ãƒ¼ãƒ ã®æ‰‹åŠ©ã‘ã¨ãªã‚‹ã‚ˆã†ãªèˆˆ
+å‘³ã‚’ããã‚‹æ”¹è‰¯æ¡ˆã‚’é€ã£ã¦ãã‚‹ï¼Žãƒ€ãƒ³ã‚¸ãƒ§ãƒ³ã®ç¥žã¯ã“ã‚Œã‚‰å •ã¡ã‚‹ã¨ã“ã‚ã¾ã§å •
+ã¡ãŸäººé–“ãŸã¡ã®åå‰ã‚’ãã¾ãã‚Œã§ã²ã‹ãˆã¦ã„ã‚‹ï¼Žãã®ãƒ€ãƒ³ã‚¸ãƒ§ãƒ³ãƒŠãƒ¼ãŸã¡ã¯ä»¥
+ä¸‹ã§ã‚ã‚‹:
 
     Adam Aronow               Izchak Miller             Mike Stephenson
     Alex Kompel               J. Ali Harlow             Norm Meluch
@@ -687,278 +685,278 @@ Dean Luick‚Í David Cohrs‚ÌŽè‚ðŽØ‚èCX11‚ÌNetHack 3.1‚ðŠJ”­‚µ‚½D
     Greg Olson                Michael Hamel             Warren Cheung
     Gregg Wonderly            Michael Sokolov           Warwick Allison
     Hao-yang Wang             Mike Engber               Yitzhak Sapir
-    Helge Hafting             Mike Gallop               
-    Irina Rempt-Drijfhout     Mike Passaretti           
-ƒRƒ“ƒpƒCƒ‹Žž‚ÌŽw’è‚ÉŠÖ‚í‚ç‚¸—˜—p‰Â”\‚È^‹UƒIƒvƒVƒ‡ƒ“(ƒfƒtƒHƒ‹ƒg‚Í[]D):
-('O'ƒRƒ}ƒ“ƒh‚ðŽg—p‚µ‚ÄŒ»Ý‚ÌƒIƒvƒVƒ‡ƒ“‚ÌÝ’è‚ðƒ`ƒFƒbƒN‚µC‚Ç‚ÌƒIƒvƒVƒ‡ƒ“‚ª
-‚ ‚È‚½‚Ìƒo[ƒWƒ‡ƒ“‚É‚ ‚é‚©’m‚é‚±‚Æ‚ª‚Å‚«‚é)
+    Helge Hafting             Mike Gallop
+    Irina Rempt-Drijfhout     Mike Passaretti
+ã‚³ãƒ³ãƒ‘ã‚¤ãƒ«æ™‚ã®æŒ‡å®šã«é–¢ã‚ã‚‰ãšåˆ©ç”¨å¯èƒ½ãªçœŸå½ã‚ªãƒ—ã‚·ãƒ§ãƒ³(ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆã¯[]ï¼Ž):
+('O'ã‚³ãƒžãƒ³ãƒ‰ã‚’ä½¿ç”¨ã—ã¦ç¾åœ¨ã®ã‚ªãƒ—ã‚·ãƒ§ãƒ³ã®è¨­å®šã‚’ãƒã‚§ãƒƒã‚¯ã—ï¼Œã©ã®ã‚ªãƒ—ã‚·ãƒ§ãƒ³ãŒ
+ã‚ãªãŸã®ãƒãƒ¼ã‚¸ãƒ§ãƒ³ã«ã‚ã‚‹ã‹çŸ¥ã‚‹ã“ã¨ãŒã§ãã‚‹)
 
-autodig        Œ@‚é“¹‹ï‚ð‘•”õ‚µ‚ÄˆÚ“®‚µ‚½ê‡‚ÍŒ@‚é                    [FALSE]
-autoopen       ”à‚ÉŒü‚©‚Á‚ÄˆÚ“®‚·‚é‚ÆŠJ‚¯‚æ‚¤‚Æ‚·‚é                    [TRUE]
-autopickup     ˆÚ“®‚µ‚½‚Æ‚«Ž©“®‚Å•¨‚ðE‚¤                              [TRUE]
-autoquiver     ‰½‚©‚ðŽË‚é‚Æ‚«‚É–î“›(‚È‚Ç)‚ª‹ó‚Ìê‡C“K“–‚È•Ší‚ð
-               ‘•“U‚·‚éD                                              [FALSE]
-cmdassist      •ûŒü‚â‚»‚Ì‘¼‚ÌƒRƒ}ƒ“ƒh‚ÅƒGƒ‰[Žž‚Éƒwƒ‹ƒv‚ð•\Ž¦‚·‚é      [TRUE]
-confirm        ƒyƒbƒg‚â—FD“I‚È‰ö•¨‚ðUŒ‚‚·‚é‘O‚ÉŠm”F‚·‚é              [TRUE]
-DECgraphics    ƒ_ƒ“ƒWƒ‡ƒ“‚ÉDEC/VT‚ÌŒrü‚ðŽg—p‚·‚é                      [FALSE]
-eight_bit_tty  8-bitƒLƒƒƒ‰ƒNƒ^‚ð’[––‚É‚»‚Ì‚Ü‚Ü‘—M‚·‚é                 [FALSE]
-extmenu        Šg’£ƒRƒ}ƒ“ƒh (#) ‚ð‘I‘ð‚·‚é‚Æ‚«‚Éƒƒjƒ…[‚ðŽg—p‚·‚é     [FALSE]
-fixinv         ‚Å‚«‚é‚¾‚¯C“¯‚¶•¨‚Í“¯‚¶•¶Žš‚É“–‚Ä‚é                    [TRUE]
-help           '/'ƒRƒ}ƒ“ƒhŽž‚É‚³‚ç‚È‚éî•ñ‚ðŒ©‚é‚©Šm”F‚·‚é             [TRUE]
-IBMgraphics    ƒ_ƒ“ƒWƒ‡ƒ“‚ÉIBMŠg’£•¶Žš‚ðŽg—p‚·‚é                       [FALSE]
-ignintr        ƒuƒŒ[ƒN‚ðŠÜ‚ÞƒCƒ“ƒ^ƒ‰ƒvƒgƒVƒOƒiƒ‹‚ð–³Ž‹‚·‚é            [FALSE]
-implicit_uncursed ‰Â”\‚È‚çŽ‚¿•¨•\Ž¦‚ÌŽž‚ÉuŽô‚í‚ê‚Ä‚¢‚È‚¢v•\Ž¦‚ðœ‚­ [TRUE]
-legacy         ƒQ[ƒ€Å‰‚ÉƒCƒ“ƒgƒƒ_ƒNƒVƒ‡ƒ“‚ð•\Ž¦‚·‚é                [TRUE]
-lit_corridor   ˆÃ‚¢‰ñ˜L‚Å‚àƒvƒŒ[ƒ„‚ÌŽüˆÍ‚ð–¾‚é‚­•\Ž¦‚·‚é              [FALSE]
-lootabc        ” ‚ðŠJ‚¯‚½‚Æ‚«‚Éo/i/b‚Å‚Í‚È‚­a/b/c‚ðŽg‚¤                [FALSE]
-mail           ƒ[ƒ‹ƒf[ƒ‚ƒ“‚Ì‘¶Ý‚ð‹–‚·                              [TRUE]
-null           ’[––‚Éƒkƒ‹‚ð‘—‚éD                                      [TRUE]
-               ˆÚ“®‚·‚é•¨‘Ì‚ª•”‰®‚ðƒeƒŒƒ|[ƒg‚µ‚Ä‚¢‚é‚æ‚¤‚ÉŒ©‚¦‚é‚È‚ç
-               ‚ÎC‚±‚ÌƒIƒvƒVƒ‡ƒ“‚ðƒIƒt‚É‚¹‚æD(‹­§“I‚ÉƒfƒBƒŒƒCƒR[ƒh
-               ‚ð‘—‚é‚æ‚¤‚É‚È‚é)
-perm_invent    Ž‚¿•¨ˆê——‚ð‚¸‚Á‚ÆƒEƒBƒ“ƒhƒE‚É•\Ž¦‚µ‚Ä‚¨‚­              [FALSE]
-pickup_thrown  “Š‚°‚ç‚ê‚½ƒAƒCƒeƒ€‚É‘Î‚µ‚Ä‚Ípickup_types‚ðã‘‚«‚·‚é    [TRUE]
-prayconfirm    #prayƒRƒ}ƒ“ƒh‚ªŽÀs‚³‚ê‚é‚Æ‚«‚ÉŠm”F‚·‚é                 [TRUE]
-pushweapon     ‰½‚©‚ðV‚µ‚­‘•”õ‚·‚é‚Æ‚«C‰EŽè‚Ì•Ší‚ð¶Žè‚ÉŽ‚¿‘Ö‚¦‚é  [FALSE]
-rawio          raw I/O‚ÌŽd—l‚ð‹–‰Â‚·‚é                                 [FALSE]
-rest_on_space  ƒXƒy[ƒXƒo[‚Å‹xŒe‚·‚é                                  [FALSE]
-safe_pet       (‚í‚©‚Á‚Ä‚¢‚é‚È‚ç)ƒyƒbƒg‚ðUŒ‚‚·‚é‚Ì‚ð”ð‚¯‚é            [TRUE]
-showexp        ŒoŒ±’l‚ð•\Ž¦‚·‚é                                        [FALSE]
-showrace       Ž©•ªŽ©g‚ðE‹Æ‚Å‚È‚­Ží‘°‚Å•\Ž¦‚·‚é                      [FALSE]
-silent         ’[––‚Ìƒxƒ‹‚ð–Â‚ç‚³‚È‚¢                                  [TRUE]
-sortpack       Ž—‚½‚æ‚¤‚ÈŽí—Þ‚Ì•¨‚ð‚Ü‚Æ‚ß‚é                            [TRUE]
-sound          ƒLƒƒƒ‰ƒNƒ^‚ª•·‚¢‚½‚à‚Ì‚É‚Â‚¢‚Ä‚ÌƒƒbƒZ[ƒW‚ð•\Ž¦‚·‚é    [TRUE]
-               (’ˆÓ: ‚±‚ê‚Í‚ ‚È‚½‚ÌƒRƒ“ƒsƒ…[ƒ^[‚ÌƒI[ƒfƒBƒI‹@”\‚É
-               ‰½‚©‚ð‚·‚é‚à‚Ì‚Å‚Í‚È‚¢D‚Ü‚½’èŠú“I‚ÉƒŠƒZƒbƒg‚³‚ê‚éD)
-sparkle        –‚–@UŒ‚‚ÉƒŒƒWƒXƒg‚µ‚½‚Æ‚«(‰Î‚Ö‚Ì‘Ï«‚ðŽ‚Â‰ö•¨‚É       [TRUE]
-               ‰Î‚ÌUŒ‚‚ðs‚Á‚½‚Æ‚«‚È‚Ç)‚ÉƒGƒtƒFƒNƒg‚ð•\Ž¦‚·‚é
-standout       --More--‚ð‘¾Žš‚Å•\Ž¦‚·‚é                                [FALSE]
-time           ƒQ[ƒ€‚ÌŒo‰ßŽžŠÔ‚ð•\Ž¦‚·‚é                              [FALSE]
-tombstone      Ž€‚ñ‚¾‚Æ‚«•æÎ‚ð•\Ž¦‚·‚é                                [TRUE]
-toptenwin      ƒgƒbƒv10‚ð•W€o—Í‚Å‚Í‚È‚­ƒEƒBƒ“ƒhƒE‚É•\Ž¦‚·‚é          [FALSE]
-travel         ’n}‚Ì“Á’è‚ÌˆÊ’u‚ÉÅ¬Œo˜HƒAƒ‹ƒSƒŠƒYƒ€‚ð—p‚¢‚ÄˆÚ“®‚·‚é
-               ƒRƒ}ƒ“ƒh(•’Ê‚Í '_' ƒRƒ}ƒ“ƒh‚Å‹N“®‚·‚é)‚ð—LŒø‚É‚·‚é     [TRUE]
-use_darkgray   •‚¢ƒVƒ“ƒ{ƒ‹‚ÌŽž‚ÉÂ‚Å‚Í‚È‚­•‚Ì‘¾Žš‚ðŽg‚¤              [TRUE]
-use_inverse    Š´’m‚µ‚½‰ö•¨‚ðƒnƒCƒ‰ƒCƒg‚µ‚Ä•\Ž¦‚·‚é                    [FALSE]
-verbose        ƒQ[ƒ€‚ÌƒRƒƒ“ƒg‚ðÚ‚µ‚­•\Ž¦‚·‚é                        [TRUE]
-
-
-
-ƒRƒ“ƒpƒCƒ‹Žž‚ÌÝ’è‚É‚æ‚Á‚Ä‚Í‚³‚ç‚É^‹UƒIƒvƒVƒ‡ƒ“‚ª‘¶Ý‚·‚éD
-
-ƒRƒ“ƒpƒCƒ‹Žž‚É INSURANCE ‚ªÝ’è‚³‚ê‚Ä‚é‚È‚ç‚Î:
-checkpoint     ŠK‚ðˆÚ“®‚·‚é“x‚ÉƒQ[ƒ€ƒZ[ƒu‚µC‰Â”\‚È‚ç‚ÎƒvƒƒO        [TRUE]
-               ƒ‰ƒ€‚ªƒNƒ‰ƒbƒVƒ…‚µ‚Ä‚à•œŠˆ‚Å‚«‚é‚æ‚¤‚É‚·‚é
-
-ƒRƒ“ƒpƒCƒ‹Žž‚É NEWS ‚ªÝ’è‚³‚ê‚Ä‚¢‚é‚È‚ç‚Î:
-news           ƒXƒ^[ƒgƒAƒbƒvŽž‚ÉƒQ[ƒ€ŠÇ—ŽÒ‚©‚ç‚ÌƒƒbƒZ[ƒW‚ð        [TRUE]
-               •\Ž¦‚·‚é
-
-ƒRƒ“ƒpƒCƒ‹Žž‚É DGK‚ªÝ’è‚³‚ê‚Ä‚¢‚é‚È‚ç‚Î:
-BIOS           IBM ROM BIOS‚ðŽg—p‚·‚é                                  [FALSE]
-rawio          I/O‚ð’¼Ú‘€ì‚·‚é(ƒXƒ^[ƒgŽž‚Ì‚ÝÝ’è‰Â”\)               [FALSE]
+autodig        æŽ˜ã‚‹é“å…·ã‚’è£…å‚™ã—ã¦ç§»å‹•ã—ãŸå ´åˆã¯æŽ˜ã‚‹                    [FALSE]
+autoopen       æ‰‰ã«å‘ã‹ã£ã¦ç§»å‹•ã™ã‚‹ã¨é–‹ã‘ã‚ˆã†ã¨ã™ã‚‹                    [TRUE]
+autopickup     ç§»å‹•ã—ãŸã¨ãè‡ªå‹•ã§ç‰©ã‚’æ‹¾ã†                              [TRUE]
+autoquiver     ä½•ã‹ã‚’å°„ã‚‹ã¨ãã«çŸ¢ç­’(ãªã©)ãŒç©ºã®å ´åˆï¼Œé©å½“ãªæ­¦å™¨ã‚’
+               è£…å¡«ã™ã‚‹ï¼Ž                                              [FALSE]
+cmdassist      æ–¹å‘ã‚„ãã®ä»–ã®ã‚³ãƒžãƒ³ãƒ‰ã§ã‚¨ãƒ©ãƒ¼æ™‚ã«ãƒ˜ãƒ«ãƒ—ã‚’è¡¨ç¤ºã™ã‚‹      [TRUE]
+confirm        ãƒšãƒƒãƒˆã‚„å‹å¥½çš„ãªæ€ªç‰©ã‚’æ”»æ’ƒã™ã‚‹å‰ã«ç¢ºèªã™ã‚‹              [TRUE]
+DECgraphics    ãƒ€ãƒ³ã‚¸ãƒ§ãƒ³ã«DEC/VTã®ç½«ç·šã‚’ä½¿ç”¨ã™ã‚‹                      [FALSE]
+eight_bit_tty  8-bitã‚­ãƒ£ãƒ©ã‚¯ã‚¿ã‚’ç«¯æœ«ã«ãã®ã¾ã¾é€ä¿¡ã™ã‚‹                 [FALSE]
+extmenu        æ‹¡å¼µã‚³ãƒžãƒ³ãƒ‰ (#) ã‚’é¸æŠžã™ã‚‹ã¨ãã«ãƒ¡ãƒ‹ãƒ¥ãƒ¼ã‚’ä½¿ç”¨ã™ã‚‹     [FALSE]
+fixinv         ã§ãã‚‹ã ã‘ï¼ŒåŒã˜ç‰©ã¯åŒã˜æ–‡å­—ã«å½“ã¦ã‚‹                    [TRUE]
+help           '/'ã‚³ãƒžãƒ³ãƒ‰æ™‚ã«ã•ã‚‰ãªã‚‹æƒ…å ±ã‚’è¦‹ã‚‹ã‹ç¢ºèªã™ã‚‹             [TRUE]
+IBMgraphics    ãƒ€ãƒ³ã‚¸ãƒ§ãƒ³ã«IBMæ‹¡å¼µæ–‡å­—ã‚’ä½¿ç”¨ã™ã‚‹                       [FALSE]
+ignintr        ãƒ–ãƒ¬ãƒ¼ã‚¯ã‚’å«ã‚€ã‚¤ãƒ³ã‚¿ãƒ©ãƒ—ãƒˆã‚·ã‚°ãƒŠãƒ«ã‚’ç„¡è¦–ã™ã‚‹            [FALSE]
+implicit_uncursed å¯èƒ½ãªã‚‰æŒã¡ç‰©è¡¨ç¤ºã®æ™‚ã«ã€Œå‘ªã‚ã‚Œã¦ã„ãªã„ã€è¡¨ç¤ºã‚’é™¤ã [TRUE]
+legacy         ã‚²ãƒ¼ãƒ æœ€åˆã«ã‚¤ãƒ³ãƒˆãƒ­ãƒ€ã‚¯ã‚·ãƒ§ãƒ³ã‚’è¡¨ç¤ºã™ã‚‹                [TRUE]
+lit_corridor   æš—ã„å›žå»Šã§ã‚‚ãƒ—ãƒ¬ãƒ¼ãƒ¤ã®å‘¨å›²ã‚’æ˜Žã‚‹ãè¡¨ç¤ºã™ã‚‹              [FALSE]
+lootabc        ç®±ã‚’é–‹ã‘ãŸã¨ãã«o/i/bã§ã¯ãªãa/b/cã‚’ä½¿ã†                [FALSE]
+mail           ãƒ¡ãƒ¼ãƒ«ãƒ‡ãƒ¼ãƒ¢ãƒ³ã®å­˜åœ¨ã‚’è¨±ã™                              [TRUE]
+null           ç«¯æœ«ã«ãƒŒãƒ«ã‚’é€ã‚‹ï¼Ž                                      [TRUE]
+               ç§»å‹•ã™ã‚‹ç‰©ä½“ãŒéƒ¨å±‹ã‚’ãƒ†ãƒ¬ãƒãƒ¼ãƒˆã—ã¦ã„ã‚‹ã‚ˆã†ã«è¦‹ãˆã‚‹ãªã‚‰
+               ã°ï¼Œã“ã®ã‚ªãƒ—ã‚·ãƒ§ãƒ³ã‚’ã‚ªãƒ•ã«ã›ã‚ˆï¼Ž(å¼·åˆ¶çš„ã«ãƒ‡ã‚£ãƒ¬ã‚¤ã‚³ãƒ¼ãƒ‰
+               ã‚’é€ã‚‹ã‚ˆã†ã«ãªã‚‹)
+perm_invent    æŒã¡ç‰©ä¸€è¦§ã‚’ãšã£ã¨ã‚¦ã‚£ãƒ³ãƒ‰ã‚¦ã«è¡¨ç¤ºã—ã¦ãŠã              [FALSE]
+pickup_thrown  æŠ•ã’ã‚‰ã‚ŒãŸã‚¢ã‚¤ãƒ†ãƒ ã«å¯¾ã—ã¦ã¯pickup_typesã‚’ä¸Šæ›¸ãã™ã‚‹    [TRUE]
+prayconfirm    #prayã‚³ãƒžãƒ³ãƒ‰ãŒå®Ÿè¡Œã•ã‚Œã‚‹ã¨ãã«ç¢ºèªã™ã‚‹                 [TRUE]
+pushweapon     ä½•ã‹ã‚’æ–°ã—ãè£…å‚™ã™ã‚‹ã¨ãï¼Œå³æ‰‹ã®æ­¦å™¨ã‚’å·¦æ‰‹ã«æŒã¡æ›¿ãˆã‚‹  [FALSE]
+rawio          raw I/Oã®ä»•æ§˜ã‚’è¨±å¯ã™ã‚‹                                 [FALSE]
+rest_on_space  ã‚¹ãƒšãƒ¼ã‚¹ãƒãƒ¼ã§ä¼‘æ†©ã™ã‚‹                                  [FALSE]
+safe_pet       (ã‚ã‹ã£ã¦ã„ã‚‹ãªã‚‰)ãƒšãƒƒãƒˆã‚’æ”»æ’ƒã™ã‚‹ã®ã‚’é¿ã‘ã‚‹            [TRUE]
+showexp        çµŒé¨“å€¤ã‚’è¡¨ç¤ºã™ã‚‹                                        [FALSE]
+showrace       è‡ªåˆ†è‡ªèº«ã‚’è·æ¥­ã§ãªãç¨®æ—ã§è¡¨ç¤ºã™ã‚‹                      [FALSE]
+silent         ç«¯æœ«ã®ãƒ™ãƒ«ã‚’é³´ã‚‰ã•ãªã„                                  [TRUE]
+sortpack       ä¼¼ãŸã‚ˆã†ãªç¨®é¡žã®ç‰©ã‚’ã¾ã¨ã‚ã‚‹                            [TRUE]
+sound          ã‚­ãƒ£ãƒ©ã‚¯ã‚¿ãŒèžã„ãŸã‚‚ã®ã«ã¤ã„ã¦ã®ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã‚’è¡¨ç¤ºã™ã‚‹    [TRUE]
+               (æ³¨æ„: ã“ã‚Œã¯ã‚ãªãŸã®ã‚³ãƒ³ãƒ”ãƒ¥ãƒ¼ã‚¿ãƒ¼ã®ã‚ªãƒ¼ãƒ‡ã‚£ã‚ªæ©Ÿèƒ½ã«
+               ä½•ã‹ã‚’ã™ã‚‹ã‚‚ã®ã§ã¯ãªã„ï¼Žã¾ãŸå®šæœŸçš„ã«ãƒªã‚»ãƒƒãƒˆã•ã‚Œã‚‹ï¼Ž)
+sparkle        é­”æ³•æ”»æ’ƒã«ãƒ¬ã‚¸ã‚¹ãƒˆã—ãŸã¨ã(ç«ã¸ã®è€æ€§ã‚’æŒã¤æ€ªç‰©ã«       [TRUE]
+               ç«ã®æ”»æ’ƒã‚’è¡Œã£ãŸã¨ããªã©)ã«ã‚¨ãƒ•ã‚§ã‚¯ãƒˆã‚’è¡¨ç¤ºã™ã‚‹
+standout       --More--ã‚’å¤ªå­—ã§è¡¨ç¤ºã™ã‚‹                                [FALSE]
+time           ã‚²ãƒ¼ãƒ ã®çµŒéŽæ™‚é–“ã‚’è¡¨ç¤ºã™ã‚‹                              [FALSE]
+tombstone      æ­»ã‚“ã ã¨ãå¢“çŸ³ã‚’è¡¨ç¤ºã™ã‚‹                                [TRUE]
+toptenwin      ãƒˆãƒƒãƒ—10ã‚’æ¨™æº–å‡ºåŠ›ã§ã¯ãªãã‚¦ã‚£ãƒ³ãƒ‰ã‚¦ã«è¡¨ç¤ºã™ã‚‹          [FALSE]
+travel         åœ°å›³ã®ç‰¹å®šã®ä½ç½®ã«æœ€å°çµŒè·¯ã‚¢ãƒ«ã‚´ãƒªã‚ºãƒ ã‚’ç”¨ã„ã¦ç§»å‹•ã™ã‚‹
+               ã‚³ãƒžãƒ³ãƒ‰(æ™®é€šã¯ '_' ã‚³ãƒžãƒ³ãƒ‰ã§èµ·å‹•ã™ã‚‹)ã‚’æœ‰åŠ¹ã«ã™ã‚‹     [TRUE]
+use_darkgray   é»’ã„ã‚·ãƒ³ãƒœãƒ«ã®æ™‚ã«é’ã§ã¯ãªãé»’ã®å¤ªå­—ã‚’ä½¿ã†              [TRUE]
+use_inverse    æ„ŸçŸ¥ã—ãŸæ€ªç‰©ã‚’ãƒã‚¤ãƒ©ã‚¤ãƒˆã—ã¦è¡¨ç¤ºã™ã‚‹                    [FALSE]
+verbose        ã‚²ãƒ¼ãƒ ã®ã‚³ãƒ¡ãƒ³ãƒˆã‚’è©³ã—ãè¡¨ç¤ºã™ã‚‹                        [TRUE]
 
 
-ƒRƒ“ƒpƒCƒ‹Žž‚É SCORE_ON_BOTL ‚ªÝ’è‚³‚ê‚Ä‚¢‚é‚È‚ç‚Î:
-showscore      ƒXƒRƒA‚ð•\Ž¦‚·‚é                                        [FALSE]
 
-ƒRƒ“ƒpƒCƒ‹Žž‚É TEXTCOLOR ‚ªÝ’è‚³‚ê‚Ä‚¢‚é‚È‚ç‚Î:
-color          ‰æ–Ê‚Ì•¨‚ÌFX‚ÈF‚ðŽg—p‚·‚é                  [TRUE for micros]
-hilite_pet     ƒyƒbƒg‚ð‹­’²•\Ž¦‚·‚é                                    [FALSE]
+ã‚³ãƒ³ãƒ‘ã‚¤ãƒ«æ™‚ã®è¨­å®šã«ã‚ˆã£ã¦ã¯ã•ã‚‰ã«çœŸå½ã‚ªãƒ—ã‚·ãƒ§ãƒ³ãŒå­˜åœ¨ã™ã‚‹ï¼Ž
 
-ƒRƒ“ƒpƒCƒ‹Žž‚É TIMED_DELAY ‚ªÝ’è‚³‚ê‚Ä‚¢‚é‚È‚ç‚Î(tty ƒCƒ“ƒ^[ƒtƒF[ƒX‚Ì‚Ý):
-timed_delay    UNIX‚âVMS‚Å‚ÍƒfƒBƒXƒvƒŒƒC‚Ö•\Ž¦‚ðƒ|[ƒY‚·‚é‘ã‚è‚É       [TRUE]
-               ƒ^ƒCƒ}[‚ðŽg‚¤DMSDOS‚Å termcapƒ‰ƒCƒuƒ‰ƒŠ‚ðŽg—p‚µ
-               ‚È‚¢ê‡‚ÍC•\Ž¦‚ðƒ|[ƒY‚Ì‚ ‚é‚È‚µ‚É‚©‚©‚í‚ç‚¸
-               ƒ^ƒCƒ}[‚ªŽg‚í‚ê‚éD
+ã‚³ãƒ³ãƒ‘ã‚¤ãƒ«æ™‚ã« INSURANCE ãŒè¨­å®šã•ã‚Œã¦ã‚‹ãªã‚‰ã°:
+checkpoint     éšŽã‚’ç§»å‹•ã™ã‚‹åº¦ã«ã‚²ãƒ¼ãƒ ã‚»ãƒ¼ãƒ–ã—ï¼Œå¯èƒ½ãªã‚‰ã°ãƒ—ãƒ­ã‚°        [TRUE]
+               ãƒ©ãƒ ãŒã‚¯ãƒ©ãƒƒã‚·ãƒ¥ã—ã¦ã‚‚å¾©æ´»ã§ãã‚‹ã‚ˆã†ã«ã™ã‚‹
 
-Amiga‚©AƒRƒ“ƒpƒCƒ‹Žž‚ÉALTMETA‚ªÝ’è‚³‚ê‚Ä‚¢‚é‚È‚ç‚Î:
-altmeta        Amiga‚ÅAAlt+ƒL[‚ðMeta+ƒL[‚Æ‚µ‚Äˆµ‚¤D                [TRUE]
-altmeta        unix‚ÆVMS‚ÅCjnethack‚ªƒvƒŒƒCƒ„[‚ÌƒL[ƒ{[ƒh‚©‚çƒRƒ}ƒ“ƒh‚ð“¾‚é
-               ŽžC2•¶Žš•À‚Ñ"ESC c"‚ðM-c(Meta+c,ÅãˆÊƒrƒbƒgÝ’è)‚Æ‚µ‚Äˆµ‚¤D
+ã‚³ãƒ³ãƒ‘ã‚¤ãƒ«æ™‚ã« NEWS ãŒè¨­å®šã•ã‚Œã¦ã„ã‚‹ãªã‚‰ã°:
+news           ã‚¹ã‚¿ãƒ¼ãƒˆã‚¢ãƒƒãƒ—æ™‚ã«ã‚²ãƒ¼ãƒ ç®¡ç†è€…ã‹ã‚‰ã®ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã‚’        [TRUE]
+               è¡¨ç¤ºã™ã‚‹
+
+ã‚³ãƒ³ãƒ‘ã‚¤ãƒ«æ™‚ã« DGKãŒè¨­å®šã•ã‚Œã¦ã„ã‚‹ãªã‚‰ã°:
+BIOS           IBM ROM BIOSã‚’ä½¿ç”¨ã™ã‚‹                                  [FALSE]
+rawio          I/Oã‚’ç›´æŽ¥æ“ä½œã™ã‚‹(ã‚¹ã‚¿ãƒ¼ãƒˆæ™‚ã®ã¿è¨­å®šå¯èƒ½)               [FALSE]
+
+
+ã‚³ãƒ³ãƒ‘ã‚¤ãƒ«æ™‚ã« SCORE_ON_BOTL ãŒè¨­å®šã•ã‚Œã¦ã„ã‚‹ãªã‚‰ã°:
+showscore      ã‚¹ã‚³ã‚¢ã‚’è¡¨ç¤ºã™ã‚‹                                        [FALSE]
+
+ã‚³ãƒ³ãƒ‘ã‚¤ãƒ«æ™‚ã« TEXTCOLOR ãŒè¨­å®šã•ã‚Œã¦ã„ã‚‹ãªã‚‰ã°:
+color          ç”»é¢ã®ç‰©ã®è‰²ã€…ãªè‰²ã‚’ä½¿ç”¨ã™ã‚‹                  [TRUE for micros]
+hilite_pet     ãƒšãƒƒãƒˆã‚’å¼·èª¿è¡¨ç¤ºã™ã‚‹                                    [FALSE]
+
+ã‚³ãƒ³ãƒ‘ã‚¤ãƒ«æ™‚ã« TIMED_DELAY ãŒè¨­å®šã•ã‚Œã¦ã„ã‚‹ãªã‚‰ã°(tty ã‚¤ãƒ³ã‚¿ãƒ¼ãƒ•ã‚§ãƒ¼ã‚¹ã®ã¿):
+timed_delay    UNIXã‚„VMSã§ã¯ãƒ‡ã‚£ã‚¹ãƒ—ãƒ¬ã‚¤ã¸è¡¨ç¤ºã‚’ãƒãƒ¼ã‚ºã™ã‚‹ä»£ã‚Šã«       [TRUE]
+               ã‚¿ã‚¤ãƒžãƒ¼ã‚’ä½¿ã†ï¼ŽMSDOSã§ termcapãƒ©ã‚¤ãƒ–ãƒ©ãƒªã‚’ä½¿ç”¨ã—
+               ãªã„å ´åˆã¯ï¼Œè¡¨ç¤ºã‚’ãƒãƒ¼ã‚ºã®ã‚ã‚‹ãªã—ã«ã‹ã‹ã‚ã‚‰ãš
+               ã‚¿ã‚¤ãƒžãƒ¼ãŒä½¿ã‚ã‚Œã‚‹ï¼Ž
+
+Amigaã‹ã€ã‚³ãƒ³ãƒ‘ã‚¤ãƒ«æ™‚ã«ALTMETAãŒè¨­å®šã•ã‚Œã¦ã„ã‚‹ãªã‚‰ã°:
+altmeta        Amigaã§ã€Alt+ã‚­ãƒ¼ã‚’Meta+ã‚­ãƒ¼ã¨ã—ã¦æ‰±ã†ï¼Ž                [TRUE]
+altmeta        unixã¨VMSã§ï¼ŒjnethackãŒãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ¼ã®ã‚­ãƒ¼ãƒœãƒ¼ãƒ‰ã‹ã‚‰ã‚³ãƒžãƒ³ãƒ‰ã‚’å¾—ã‚‹
+               æ™‚ï¼Œ2æ–‡å­—ä¸¦ã³"ESC c"ã‚’M-c(Meta+c,æœ€ä¸Šä½ãƒ“ãƒƒãƒˆè¨­å®š)ã¨ã—ã¦æ‰±ã†ï¼Ž
                                                                        [FALSE]
 
-ƒRƒ“ƒpƒCƒ‹Žž‚É USE_TILES ‚ªÝ’è‚³‚ê‚Ä‚¢‚é‚È‚ç‚Î (MSDOS ƒvƒƒeƒNƒgƒ‚[ƒh‚Ì‚Ý):
-preload_tiles  ƒQ[ƒ€ŠJŽnŽž‚Éƒ^ƒCƒ‹‚ð—\‚ß RAM ‚É“Ç‚Ýž‚Þ‚©‚ð§Œä‚·‚éD
-               ‚±‚ê‚É‚æ‚èƒ^ƒCƒ‹ƒOƒ‰ƒtƒBƒbƒN‚Ì«”\‚ªŒüã‚·‚é‚ªC
-               ‚æ‚è‘½‚­‚Ìƒƒ‚ƒŠ‚ðŽg‚¤D                                [TRUE]
+ã‚³ãƒ³ãƒ‘ã‚¤ãƒ«æ™‚ã« USE_TILES ãŒè¨­å®šã•ã‚Œã¦ã„ã‚‹ãªã‚‰ã° (MSDOS ãƒ—ãƒ­ãƒ†ã‚¯ãƒˆãƒ¢ãƒ¼ãƒ‰ã®ã¿):
+preload_tiles  ã‚²ãƒ¼ãƒ é–‹å§‹æ™‚ã«ã‚¿ã‚¤ãƒ«ã‚’äºˆã‚ RAM ã«èª­ã¿è¾¼ã‚€ã‹ã‚’åˆ¶å¾¡ã™ã‚‹ï¼Ž
+               ã“ã‚Œã«ã‚ˆã‚Šã‚¿ã‚¤ãƒ«ã‚°ãƒ©ãƒ•ã‚£ãƒƒã‚¯ã®æ€§èƒ½ãŒå‘ä¸Šã™ã‚‹ãŒï¼Œ
+               ã‚ˆã‚Šå¤šãã®ãƒ¡ãƒ¢ãƒªã‚’ä½¿ã†ï¼Ž                                [TRUE]
 
-”CˆÓ‚Ì^‹UƒIƒvƒVƒ‡ƒ“‚Í'!'‚â'no'‚ð‚Â‚¯‚é‚±‚Æ‚É‚æ‚è”Û’è‚Å‚«‚éD
+ä»»æ„ã®çœŸå½ã‚ªãƒ—ã‚·ãƒ§ãƒ³ã¯'!'ã‚„'no'ã‚’ã¤ã‘ã‚‹ã“ã¨ã«ã‚ˆã‚Šå¦å®šã§ãã‚‹ï¼Ž
 
-ƒpƒ‰ƒ[ƒ^‚Â‚«ƒIƒvƒVƒ‡ƒ“‚Í option_name:option_value ‚Ì‚æ‚¤‚ÉŠùq‚·‚éD
-Š¿ŽšƒR[ƒh‚Í“à•”ƒR[ƒh‚É‚·‚é•K—v‚ª‚ ‚éD(•’Ê‚ÍEUC)
+ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ã¤ãã‚ªãƒ—ã‚·ãƒ§ãƒ³ã¯ option_name:option_value ã®ã‚ˆã†ã«æ—¢è¿°ã™ã‚‹ï¼Ž
+æ¼¢å­—ã‚³ãƒ¼ãƒ‰ã¯å†…éƒ¨ã‚³ãƒ¼ãƒ‰ã«ã™ã‚‹å¿…è¦ãŒã‚ã‚‹ï¼Ž(æ™®é€šã¯EUC)
 
-ƒQ[ƒ€’†‚ÉÝ’è‚Å‚«‚éƒpƒ‰ƒ[ƒ^‚Â‚«ƒIƒvƒVƒ‡ƒ“‚Í:
+ã‚²ãƒ¼ãƒ ä¸­ã«è¨­å®šã§ãã‚‹ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ã¤ãã‚ªãƒ—ã‚·ãƒ§ãƒ³ã¯:
 
-boulder        ‹Šâ‚Ì•¶Žš‚ð‘¼‚Ì‚à‚Ì‚É•Ï‚¦‚é [`]
-disclose       ƒQ[ƒ€I—¹Žž‚ÉŒ©‚éî•ñ‚ÌŽí—Þ [ni na nv ng nc no]
-fruit          D•¨‚Ì‰Ê•¨‚Ì–¼‘O [slime mold]
-               (Šî–{“I‚ÉNetHack‚ª‹C‚Ü‚®‚ê‚ÅŽg‚Á‚Ä‚«‚½)
-menustyle      •¡”ƒIƒuƒWƒFƒNƒg‚ð‘I‘ð‚·‚é‚Æ‚«‚Ìƒ†[ƒU[ƒCƒ“ƒ^ƒtƒF[ƒX
-               Traditional -- ‘ÎÛ‚Æ‚·‚éƒNƒ‰ƒX‚ð“ü—Í‚µC‚»‚ê‚©‚ç‚»‚ÌƒNƒ‰ƒX‚ÌƒA
-                              ƒCƒeƒ€‚ðˆê‚Â‚¸‚Â‘I‚Ô
-               Combination -- ‘ÎÛ‚Æ‚·‚éƒNƒ‰ƒX‚ð“ü—Í‚µC‚»‚ê‚©‚çƒAƒCƒeƒ€‚ð‘I‚Ô
-                              ‚Ì‚Éƒƒjƒ…[‚ðŽg‚¤
-               Full        -- ‘ÎÛ‚Æ‚·‚éƒNƒ‰ƒX‚ðƒƒjƒ…[‚Å‘I‚ÑC‚»‚ê‚©‚çƒAƒCƒe
-                              ƒ€‚ð‘I‚Ô‚Ì‚Éƒƒjƒ…[‚ðŽg‚¤
-               Partial     -- ƒNƒ‰ƒX‘I‘ð‚ðŽg—p‚¹‚¸C‘S‚Ä‚ÌƒAƒCƒeƒ€‚Ìƒƒjƒ…[‚ð
-                              Žg‚¤
-               Å‰‚Ìˆê•¶Žš('T', 'C', 'P', 'F')‚ÅŒˆ’èD'N' ‚Í 'T' ‚Æ“¯—l‚ÌˆÓ
-               –¡D[Full]
-number_pad     ˆÚ“®‚É‰pŽš‚ðŽg‚¤‚©”Žš‚ðŽg‚¤‚©:
-               0 -- “`““I‚È hjkl + yubn ˆÚ“® (ƒfƒtƒHƒ‹ƒg);
-               1 -- ƒeƒ“ƒL[—p‚É”Žš‚ÅˆÚ“®;
-               2 -- 1‚Æ“¯—l‚¾‚ª'5'‚Í'G'‚Å‚Í‚È‚­'g'Ú“ªŽ«‚Æ‚µ‚Ä“®ì;
-               3 -- Œg‘Ñ“d˜b‚Ì”ŽšƒL[ (1,2,3‚Íã, 7,8,9‚Í‰º);
-               4 -- Œg‘Ñ“d˜b”ŽšƒL[(3)‚ÆMSDOSŒÝŠ·(2)‚Ì‘g‚Ý‡‚í‚¹;
-              -1 -- ‰pŽšˆÚ“®‚¾‚ª'z'‚Æ'y'‚ðŒðŠ·‚·‚éD[0]
-packorder      ”w•‰‚¢‘Ü“à‚Ì•¨‚Ì‡”Ô‚ðŒˆ‚ß‚éƒVƒ“ƒ{ƒ‹ [")[%?+!=/(*`0_]
-               (‚¢‚­‚Â‚©‚Ì•¨‘Ì‚µ‚©“Á’è‚µ‚È‚¢ê‡CŽc‚è‚Ì‚ÍƒfƒtƒHƒ‹ƒg‚Ì
-               ‡”Ô‚É•À‚Ô)
-paranoid_confirmation  ‘z’è‚Æˆá‚¤–â‚¢‡‚í‚¹‚ð‚·‚éó‹µ‚Ì‹ó”’‹æØ‚è‚ÌƒŠƒXƒg
+boulder        å·¨å²©ã®æ–‡å­—ã‚’ä»–ã®ã‚‚ã®ã«å¤‰ãˆã‚‹ [`]
+disclose       ã‚²ãƒ¼ãƒ çµ‚äº†æ™‚ã«è¦‹ã‚‹æƒ…å ±ã®ç¨®é¡ž [ni na nv ng nc no]
+fruit          å¥½ç‰©ã®æžœç‰©ã®åå‰ [slime mold]
+               (åŸºæœ¬çš„ã«NetHackãŒæ°—ã¾ãã‚Œã§ä½¿ã£ã¦ããŸ)
+menustyle      è¤‡æ•°ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’é¸æŠžã™ã‚‹ã¨ãã®ãƒ¦ãƒ¼ã‚¶ãƒ¼ã‚¤ãƒ³ã‚¿ãƒ•ã‚§ãƒ¼ã‚¹
+               Traditional -- å¯¾è±¡ã¨ã™ã‚‹ã‚¯ãƒ©ã‚¹ã‚’å…¥åŠ›ã—ï¼Œãã‚Œã‹ã‚‰ãã®ã‚¯ãƒ©ã‚¹ã®ã‚¢
+                              ã‚¤ãƒ†ãƒ ã‚’ä¸€ã¤ãšã¤é¸ã¶
+               Combination -- å¯¾è±¡ã¨ã™ã‚‹ã‚¯ãƒ©ã‚¹ã‚’å…¥åŠ›ã—ï¼Œãã‚Œã‹ã‚‰ã‚¢ã‚¤ãƒ†ãƒ ã‚’é¸ã¶
+                              ã®ã«ãƒ¡ãƒ‹ãƒ¥ãƒ¼ã‚’ä½¿ã†
+               Full        -- å¯¾è±¡ã¨ã™ã‚‹ã‚¯ãƒ©ã‚¹ã‚’ãƒ¡ãƒ‹ãƒ¥ãƒ¼ã§é¸ã³ï¼Œãã‚Œã‹ã‚‰ã‚¢ã‚¤ãƒ†
+                              ãƒ ã‚’é¸ã¶ã®ã«ãƒ¡ãƒ‹ãƒ¥ãƒ¼ã‚’ä½¿ã†
+               Partial     -- ã‚¯ãƒ©ã‚¹é¸æŠžã‚’ä½¿ç”¨ã›ãšï¼Œå…¨ã¦ã®ã‚¢ã‚¤ãƒ†ãƒ ã®ãƒ¡ãƒ‹ãƒ¥ãƒ¼ã‚’
+                              ä½¿ã†
+               æœ€åˆã®ä¸€æ–‡å­—('T', 'C', 'P', 'F')ã§æ±ºå®šï¼Ž'N' ã¯ 'T' ã¨åŒæ§˜ã®æ„
+               å‘³ï¼Ž[Full]
+number_pad     ç§»å‹•ã«è‹±å­—ã‚’ä½¿ã†ã‹æ•°å­—ã‚’ä½¿ã†ã‹:
+               0 -- ä¼çµ±çš„ãª hjkl + yubn ç§»å‹• (ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆ);
+               1 -- ãƒ†ãƒ³ã‚­ãƒ¼ç”¨ã«æ•°å­—ã§ç§»å‹•;
+               2 -- 1ã¨åŒæ§˜ã ãŒ'5'ã¯'G'ã§ã¯ãªã'g'æŽ¥é ­è¾žã¨ã—ã¦å‹•ä½œ;
+               3 -- æºå¸¯é›»è©±ã®æ•°å­—ã‚­ãƒ¼ (1,2,3ã¯ä¸Š, 7,8,9ã¯ä¸‹);
+               4 -- æºå¸¯é›»è©±æ•°å­—ã‚­ãƒ¼(3)ã¨MSDOSäº’æ›(2)ã®çµ„ã¿åˆã‚ã›;
+              -1 -- è‹±å­—ç§»å‹•ã ãŒ'z'ã¨'y'ã‚’äº¤æ›ã™ã‚‹ï¼Ž[0]
+packorder      èƒŒè² ã„è¢‹å†…ã®ç‰©ã®é †ç•ªã‚’æ±ºã‚ã‚‹ã‚·ãƒ³ãƒœãƒ« [")[%?+!=/(*`0_]
+               (ã„ãã¤ã‹ã®ç‰©ä½“ã—ã‹ç‰¹å®šã—ãªã„å ´åˆï¼Œæ®‹ã‚Šã®ã¯ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆã®
+               é †ç•ªã«ä¸¦ã¶)
+paranoid_confirmation  æƒ³å®šã¨é•ã†å•ã„åˆã‚ã›ã‚’ã™ã‚‹çŠ¶æ³ã®ç©ºç™½åŒºåˆ‡ã‚Šã®ãƒªã‚¹ãƒˆ
               [paranoid_confirmation:pray]
-              Confirm -- yes‚ª•K—v‚È‚Æ‚«C”Û’è‚É‚Íno‚ª•K—v
-              quit    -- ”²‚¯‚½‚è’Tõƒ‚[ƒh‚É“ü‚éŠm”F‚Íyes‚©y‚©
-              die     -- (’Tõ‚âƒfƒoƒbƒOƒ‚[ƒh‚Å)Ž€‚Ê‚Æ‚«‚ÌŠm”F‚Íyes‚©y‚©
-              bones   -- ƒfƒoƒbƒOƒ‚[ƒh‚Åœ‚ðŽc‚·Šm”F‚Íyes‚©y‚©
-              attack  -- —FD“I‚È‰ö•¨‚ðUŒ‚‚·‚éŠm”F‚Íyes‚©y‚©
-              pray    -- ‹F‚é‚Æ‚«‚Éy‚ÅŠm”F‚·‚é; ƒfƒtƒHƒ‹ƒg‚Åon
-              Remove  -- ŠO‚·‚±‚Æ‚ª‚Å‚«‚éƒAƒCƒeƒ€‚ªˆê‚Â‚ÌŽž‚à'R'‚â'T'‚ÅŠm”F
-                         ‚·‚é‚©
-pickup_burden  ‰½‚©‚ðŽ‚¿‚ ‚°‚æ‚¤‚Æ‚µ‚Ä‚Ó‚ç‚ß‚­ó‘Ô‚É‚È‚Á‚½‚Æ‚«‚ÉC‘±‚¯‚é‚©
-               ‚Ç‚¤‚©‚ÌŠm”F‚ð‚·‚éD(’Êí:UC‚æ‚ë‚ß‚«:BCˆ³”—:SCŒÀŠE:NC
-               ‰×d:NC’´‰ß:T)  [S]
-pickup_types   Ž©“®‚ÅE‚¢‚ ‚°‚é•¨‚ÌƒVƒ“ƒ{ƒ‹ [all]
-pile_limit     ƒAƒCƒeƒ€‚ª—Ž‚¿‚Ä‚¢‚é°‚Ìã‚ð•à‚­ŽžCƒAƒCƒeƒ€‚Ìˆê——‚Å‚Í‚È‚­
-              u‚±‚±‚É‚Í‚½‚­‚³‚ñ‚Ì‚à‚Ì‚ª‚ ‚év‚Æ•\Ž¦‚·‚éè‡’lD
-               (0‚Íuí‚ÉƒAƒCƒeƒ€‚Ìˆê——‚ð•\Ž¦vD)  [5]
-runmode        (—lX‚ÈˆÚ“®ƒRƒ}ƒ“ƒh‚âƒgƒ‰ƒxƒ‹ƒRƒ}ƒ“ƒh‚É‚æ‚Á‚Ä)•¡”ƒ}ƒXˆÚ“®‚·‚é
-               ê‡‚É’n}ƒEƒBƒ“ƒhƒE‚ðXV‚·‚é•p“x‚ðŽw’è‚·‚é:
-               teleport -- ˆÚ“®‚ªI—¹‚·‚é‚Ü‚ÅXV‚µ‚È‚¢;
-               run      -- ŽžX’n}‚ðXV‚·‚é (ŠÔŠu‚Í 7 ƒ}ƒX);
-               walk     -- ˆê•à–ˆ‚É’n}‚ðXV‚·‚é;
-               crawl    -- walk ‚Æ“¯—l‚¾‚ªAˆê•à–ˆ‚ÉƒEƒFƒCƒg‚ð“ü‚ê‚é;
-               (‚±‚ê‚Í‰æ–Ê•\Ž¦‚É‚Ì‚Ýì—p‚µCŽÀÛ‚ÌˆÚ“®‚É‚Í‰e‹¿‚µ‚È‚¢D) [run]
-scores         ƒQ[ƒ€I—¹Žž‚ÉŒ©‚éƒXƒRƒA‚ÌŽí—Þ [!own/3 top/2 around]
-               ƒgƒbƒvƒXƒRƒACƒgƒbƒvƒXƒRƒA‚ÌŽü•ÓC‚ ‚È‚½Ž©g‚ÌƒXƒRƒA‚Ì
-               ‘g‚Ý‡‚¹‚ð‘I‚ÔD 
-suppress_alert —á‚¦‚ÎƒQ[ƒ€I—¹ƒRƒ}ƒ“ƒh‚ÍˆÈ‘O‚Í 'Q' ‚¾‚Á‚½‚ª¡‚Í #quitA
-               ‚Æ‚¢‚Á‚½AƒQ[ƒ€ƒvƒŒƒC‚âƒ†[ƒU[ƒCƒ“ƒ^[ƒtƒF[ƒX‚Ìƒo[ƒWƒ‡ƒ“
-               ŠÔ‚Ìˆá‚¢‚ÉŠÖ‚·‚éŒxƒƒbƒZ[ƒW‚ð–³Œø‰»‚·‚éD
-               (—á: suppress_alert:3.3.1 ‚Æ‚·‚é‚ÆA‚±‚Ìƒo[ƒWƒ‡ƒ“ˆÈ‘O‚É‰Á‚¦‚ç
-               ‚ê‚½ŒxƒƒbƒZ[ƒW‚ª’âŽ~‚³‚ê‚éD) [(none)]
-kcode          ’[––‚ÌŠ¿ŽšƒR[ƒh [EUC]
+              Confirm -- yesãŒå¿…è¦ãªã¨ãï¼Œå¦å®šã«ã¯noãŒå¿…è¦
+              quit    -- æŠœã‘ãŸã‚ŠæŽ¢ç´¢ãƒ¢ãƒ¼ãƒ‰ã«å…¥ã‚‹ç¢ºèªã¯yesã‹yã‹
+              die     -- (æŽ¢ç´¢ã‚„ãƒ‡ãƒãƒƒã‚°ãƒ¢ãƒ¼ãƒ‰ã§)æ­»ã¬ã¨ãã®ç¢ºèªã¯yesã‹yã‹
+              bones   -- ãƒ‡ãƒãƒƒã‚°ãƒ¢ãƒ¼ãƒ‰ã§éª¨ã‚’æ®‹ã™ç¢ºèªã¯yesã‹yã‹
+              attack  -- å‹å¥½çš„ãªæ€ªç‰©ã‚’æ”»æ’ƒã™ã‚‹ç¢ºèªã¯yesã‹yã‹
+              pray    -- ç¥ˆã‚‹ã¨ãã«yã§ç¢ºèªã™ã‚‹; ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆã§on
+              Remove  -- å¤–ã™ã“ã¨ãŒã§ãã‚‹ã‚¢ã‚¤ãƒ†ãƒ ãŒä¸€ã¤ã®æ™‚ã‚‚'R'ã‚„'T'ã§ç¢ºèª
+                         ã™ã‚‹ã‹
+pickup_burden  ä½•ã‹ã‚’æŒã¡ã‚ã’ã‚ˆã†ã¨ã—ã¦ãµã‚‰ã‚ãçŠ¶æ…‹ã«ãªã£ãŸã¨ãã«ï¼Œç¶šã‘ã‚‹ã‹
+               ã©ã†ã‹ã®ç¢ºèªã‚’ã™ã‚‹ï¼Ž(é€šå¸¸:Uï¼Œã‚ˆã‚ã‚ã:Bï¼Œåœ§è¿«:Sï¼Œé™ç•Œ:Nï¼Œ
+               è·é‡:Nï¼Œè¶…éŽ:T)  [S]
+pickup_types   è‡ªå‹•ã§æ‹¾ã„ã‚ã’ã‚‹ç‰©ã®ã‚·ãƒ³ãƒœãƒ« [all]
+pile_limit     ã‚¢ã‚¤ãƒ†ãƒ ãŒè½ã¡ã¦ã„ã‚‹åºŠã®ä¸Šã‚’æ­©ãæ™‚ï¼Œã‚¢ã‚¤ãƒ†ãƒ ã®ä¸€è¦§ã§ã¯ãªã
+              ã€Œã“ã“ã«ã¯ãŸãã•ã‚“ã®ã‚‚ã®ãŒã‚ã‚‹ã€ã¨è¡¨ç¤ºã™ã‚‹é–¾å€¤ï¼Ž
+               (0ã¯ã€Œå¸¸ã«ã‚¢ã‚¤ãƒ†ãƒ ã®ä¸€è¦§ã‚’è¡¨ç¤ºã€ï¼Ž)  [5]
+runmode        (æ§˜ã€…ãªç§»å‹•ã‚³ãƒžãƒ³ãƒ‰ã‚„ãƒˆãƒ©ãƒ™ãƒ«ã‚³ãƒžãƒ³ãƒ‰ã«ã‚ˆã£ã¦)è¤‡æ•°ãƒžã‚¹ç§»å‹•ã™ã‚‹
+               å ´åˆã«åœ°å›³ã‚¦ã‚£ãƒ³ãƒ‰ã‚¦ã‚’æ›´æ–°ã™ã‚‹é »åº¦ã‚’æŒ‡å®šã™ã‚‹:
+               teleport -- ç§»å‹•ãŒçµ‚äº†ã™ã‚‹ã¾ã§æ›´æ–°ã—ãªã„;
+               run      -- æ™‚ã€…åœ°å›³ã‚’æ›´æ–°ã™ã‚‹ (é–“éš”ã¯ 7 ãƒžã‚¹);
+               walk     -- ä¸€æ­©æ¯Žã«åœ°å›³ã‚’æ›´æ–°ã™ã‚‹;
+               crawl    -- walk ã¨åŒæ§˜ã ãŒã€ä¸€æ­©æ¯Žã«ã‚¦ã‚§ã‚¤ãƒˆã‚’å…¥ã‚Œã‚‹;
+               (ã“ã‚Œã¯ç”»é¢è¡¨ç¤ºã«ã®ã¿ä½œç”¨ã—ï¼Œå®Ÿéš›ã®ç§»å‹•ã«ã¯å½±éŸ¿ã—ãªã„ï¼Ž) [run]
+scores         ã‚²ãƒ¼ãƒ çµ‚äº†æ™‚ã«è¦‹ã‚‹ã‚¹ã‚³ã‚¢ã®ç¨®é¡ž [!own/3 top/2 around]
+               ãƒˆãƒƒãƒ—ã‚¹ã‚³ã‚¢ï¼Œãƒˆãƒƒãƒ—ã‚¹ã‚³ã‚¢ã®å‘¨è¾ºï¼Œã‚ãªãŸè‡ªèº«ã®ã‚¹ã‚³ã‚¢ã®
+               çµ„ã¿åˆã›ã‚’é¸ã¶ï¼Ž
+suppress_alert ä¾‹ãˆã°ã‚²ãƒ¼ãƒ çµ‚äº†ã‚³ãƒžãƒ³ãƒ‰ã¯ä»¥å‰ã¯ 'Q' ã ã£ãŸãŒä»Šã¯ #quitã€
+               ã¨ã„ã£ãŸã€ã‚²ãƒ¼ãƒ ãƒ—ãƒ¬ã‚¤ã‚„ãƒ¦ãƒ¼ã‚¶ãƒ¼ã‚¤ãƒ³ã‚¿ãƒ¼ãƒ•ã‚§ãƒ¼ã‚¹ã®ãƒãƒ¼ã‚¸ãƒ§ãƒ³
+               é–“ã®é•ã„ã«é–¢ã™ã‚‹è­¦å‘Šãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã‚’ç„¡åŠ¹åŒ–ã™ã‚‹ï¼Ž
+               (ä¾‹: suppress_alert:3.3.1 ã¨ã™ã‚‹ã¨ã€ã“ã®ãƒãƒ¼ã‚¸ãƒ§ãƒ³ä»¥å‰ã«åŠ ãˆã‚‰
+               ã‚ŒãŸè­¦å‘Šãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ãŒåœæ­¢ã•ã‚Œã‚‹ï¼Ž) [(none)]
+kcode          ç«¯æœ«ã®æ¼¢å­—ã‚³ãƒ¼ãƒ‰ [EUC]
 
-ƒXƒ^[ƒgŽž‚É‚Ì‚ÝÝ’è‚Å‚«‚éƒpƒ‰ƒ[ƒ^‚Â‚«ƒIƒvƒVƒ‡ƒ“‚Í:
+ã‚¹ã‚¿ãƒ¼ãƒˆæ™‚ã«ã®ã¿è¨­å®šã§ãã‚‹ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ã¤ãã‚ªãƒ—ã‚·ãƒ§ãƒ³ã¯:
 
-align      ƒQ[ƒ€ƒXƒ^[ƒgŽž‚Ì‘®«(align:lawful, align:neutral, align:chaotic
-           ‚Ì‚¢‚¸‚ê‚©)DÅ‰‚Ìˆê•¶Žš‚ðŽw’è‚·‚é‚¾‚¯‚Å‚æ‚¢D[RANDOM]
-catname    –`Œ¯‚ð‹Ÿ‚É‚·‚éÅ‰‚Ì”L‚Ì–¼‘O [NONE]
-dogname    –`Œ¯‚ð‹Ÿ‚É‚·‚éÅ‰‚ÌŒ¢‚Ì–¼‘O [NONE]
+align      ã‚²ãƒ¼ãƒ ã‚¹ã‚¿ãƒ¼ãƒˆæ™‚ã®å±žæ€§(align:lawful, align:neutral, align:chaotic
+           ã®ã„ãšã‚Œã‹)ï¼Žæœ€åˆã®ä¸€æ–‡å­—ã‚’æŒ‡å®šã™ã‚‹ã ã‘ã§ã‚ˆã„ï¼Ž[RANDOM]
+catname    å†’é™ºã‚’ä¾›ã«ã™ã‚‹æœ€åˆã®çŒ«ã®åå‰ [NONE]
+dogname    å†’é™ºã‚’ä¾›ã«ã™ã‚‹æœ€åˆã®çŠ¬ã®åå‰ [NONE]
 dungeon
-           ƒ_ƒ“ƒWƒ‡ƒ“‚ð•`‰æ‚·‚é‚½‚ß‚ÉƒfƒtƒHƒ‹ƒg‚Ì‘ã‚í‚è‚É—p‚¢‚éƒVƒ“ƒ{ƒ‹‚ÌƒŠƒX
-           ƒgD
-           ƒVƒ“ƒ{ƒ‹‚Í‘òŽR‚Ìˆ—‚ð‚±‚È‚¹‚é‚æ‚¤‚É‚È‚Á‚Ä‚¢‚éC
-           ƒRƒ“ƒgƒ[ƒ‹ƒLƒƒƒ‰ƒNƒ^ ^x‚âƒƒ^ƒLƒƒƒ‰ƒNƒ^ \Mx‚Í‚à‚¿‚ë‚ñ
-           \n‚â \081‚Ì‚æ‚¤‚È CŒ¾Œêƒ‰ƒCƒN‚ÈƒGƒXƒP[ƒv‚ðŽg‚¦‚éD
-           •’Ê, \‚ÍŽŸ‚Ì•¶Žš‚ð‹­§“I‚É•¶Žš’Ê‚è‚É‚·‚éDƒfƒtƒHƒ‹ƒg‚ÌƒVƒ“
-           ƒ{ƒ‹‚Ì‘½‚­‚ªd•¡‚³‚êŽg—p‚³‚ê‚Ä‚¢‚é‚Ì‚ÅC‚±‚±‚Å‚Í‚¢‚­‚Â‚©‚Ì’
-           ˆÓ‚Æ‚Æ‚à‚ÉƒVƒ“ƒ{ƒ‹‚Ì‘ã‚è‚É–¼‘O‚ð—^‚¦‚é:
+           ãƒ€ãƒ³ã‚¸ãƒ§ãƒ³ã‚’æç”»ã™ã‚‹ãŸã‚ã«ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆã®ä»£ã‚ã‚Šã«ç”¨ã„ã‚‹ã‚·ãƒ³ãƒœãƒ«ã®ãƒªã‚¹
+           ãƒˆï¼Ž
+           ã‚·ãƒ³ãƒœãƒ«ã¯æ²¢å±±ã®å‡¦ç†ã‚’ã“ãªã›ã‚‹ã‚ˆã†ã«ãªã£ã¦ã„ã‚‹ï¼Œ
+           ã‚³ãƒ³ãƒˆãƒ­ãƒ¼ãƒ«ã‚­ãƒ£ãƒ©ã‚¯ã‚¿ ^xã‚„ãƒ¡ã‚¿ã‚­ãƒ£ãƒ©ã‚¯ã‚¿ Â¥Mxã¯ã‚‚ã¡ã‚ã‚“
+           Â¥nã‚„ Â¥081ã®ã‚ˆã†ãª Cè¨€èªžãƒ©ã‚¤ã‚¯ãªã‚¨ã‚¹ã‚±ãƒ¼ãƒ—ã‚’ä½¿ãˆã‚‹ï¼Ž
+           æ™®é€š, Â¥ã¯æ¬¡ã®æ–‡å­—ã‚’å¼·åˆ¶çš„ã«æ–‡å­—é€šã‚Šã«ã™ã‚‹ï¼Žãƒ‡ãƒ•ã‚©ãƒ«ãƒˆã®ã‚·ãƒ³
+           ãƒœãƒ«ã®å¤šããŒé‡è¤‡ã•ã‚Œä½¿ç”¨ã•ã‚Œã¦ã„ã‚‹ã®ã§ï¼Œã“ã“ã§ã¯ã„ãã¤ã‹ã®æ³¨
+           æ„ã¨ã¨ã‚‚ã«ã‚·ãƒ³ãƒœãƒ«ã®ä»£ã‚Šã«åå‰ã‚’ä¸Žãˆã‚‹:
 
-           stone                                   (ŒÅ‚¢ŠâC•’Ê‚Í ' ' )
-           vwall hwall tlcorn trcorn blcorn brcorn            (•”‰®‚Ì•Ç)
-           crwall tuwall tdwall tlwall trwall   (‚Ü‚ª‚è‚­‚Ë‚Á‚½–À˜H‚Ì•Ç)
-           nodoor vodoor hodoor             (‚È‚µC‚’¼C…•½‚ÌŠJ‚¢‚½”à)
-           vcdoor hcdoor                          (‚’¼C…•½‚Ì•Â‚¶‚½”à)
+           stone                                   (å›ºã„å²©ï¼Œæ™®é€šã¯ ' ' )
+           vwall hwall tlcorn trcorn blcorn brcorn            (éƒ¨å±‹ã®å£)
+           crwall tuwall tdwall tlwall trwall   (ã¾ãŒã‚Šãã­ã£ãŸè¿·è·¯ã®å£)
+           nodoor vodoor hodoor             (ãªã—ï¼Œåž‚ç›´ï¼Œæ°´å¹³ã®é–‹ã„ãŸæ‰‰)
+           vcdoor hcdoor                          (åž‚ç›´ï¼Œæ°´å¹³ã®é–‰ã˜ãŸæ‰‰)
            irocnbars tree room darkcorr litcorr
            upstair dnstair upladder dnladder
            altar grave throne sink fountain pool ice lava
-           vodbridge hodbridge                (‚’¼C…•½‚ÌŠJ‚¢‚½’µ‚Ë‹´)
-           vcdbridge hcdbridge                (‚’¼C…•½‚Ì~‚è‚½’µ‚Ë‹´)
+           vodbridge hodbridge                (åž‚ç›´ï¼Œæ°´å¹³ã®é–‹ã„ãŸè·³ã­æ©‹)
+           vcdbridge hcdbridge                (åž‚ç›´ï¼Œæ°´å¹³ã®é™ã‚ŠãŸè·³ã­æ©‹)
            air cloud water
-           default:  \ |--------||.-|++.##<><>_\\#{}.}..##\ #}
+           default:  Â¥ |--------||.-|++.##<><>_Â¥Â¥#{}.}..##Â¥ #}
 effects
-           dungeon “¯—l‚¾‚ªC“ÁŽêŒø‰Ê‚Ì•`‰æ‚ÉŽg‚í‚ê‚é‚à‚ÌD
-           vbeam hbeam lslant rslant                  (•’Ê‚Íñ‚Ìƒr[ƒ€)
-           digbeam flashbeam              (ŒŠŒ@‚è‚ÆƒJƒƒ‰‚Ì“ÁŽê‚Èƒr[ƒ€)
-           boomleft boomright                               (ƒu[ƒƒ‰ƒ“)
-           ss1 ss2 ss3 ss4                                  (–hŒä‚Ì‰Û’ö)
-           sw_topl, sw_topm, sw_topr,           (ˆù‚Ýž‚Ü‚ê‚½‚Æ‚«‚Ìã’i)
-           sw_midl, sw_midr,                    (ˆù‚Ýž‚Ü‚ê‚½‚Æ‚«‚Ì’†’i)
-           sw_botl, sw_botm, sw_botr            (ˆù‚Ýž‚Ü‚ê‚½‚Æ‚«‚Ì‰º’i)
-           extl extm extr                                   (”š”­‚Ìã’i)
-           exml exmm exmr                                   (”š”­‚Ì’†’i)
-           exbl exbm exbr                                   (”š”­‚Ì‰º’i)
-           default:  |-\\/*!)(0#@*/-\\||\\-//-\\|\ |\\-/
-gender     ƒQ[ƒ€ŠJŽnŽž‚Ì«•Ê(gender:male ‚Ü‚½‚Í gender:female)DÅ‰‚Ì
-           1 •¶Žš‚ðŽw’è‚·‚é‚¾‚¯‚Å‚æ‚¢Dmale ‚â female ƒIƒvƒVƒ‡ƒ“‚àŽg—p‚Å‚«
-           ‚é‚ªCgender ƒIƒvƒVƒ‡ƒ“‚ª—Dæ‚·‚éD
-horsename  –`Œ¯‚ð‹Ÿ‚É‚·‚éÅ‰‚Ì”n‚Ì–¼‘O [NONE]
-menu_*     ƒƒjƒ…[ƒRƒ}ƒ“ƒh‚ÅŽg—p‚·‚éˆê•¶Žš‚ÌƒLƒƒƒ‰ƒNƒ^DˆÈ‰º‚É‚ ‚é‚Ì‚Í
-           ‘S‚Ä‚ÌƒRƒ}ƒ“ƒh‚Ìƒƒjƒ…[‚Å‚ ‚éD‚»‚ê‚¼‚ê‚É‘±‚­( )“à•¶Žš‚ÌˆÓ–¡
-           ‚ÍŽŸ‚Ì’Ê‚è: 'x' = x11, 't' = tty, 'g' = Gem, 'a' = Amiga.
-           menu_deselect_all  ‘S‚Ä‚ÌƒAƒCƒeƒ€‚ð”ñ‘I‘ð [-](gxta)
-           menu_deselect_page Œ»Ý•\Ž¦‚³‚ê‚Ä‚¢‚éƒy[ƒW‚ÌƒAƒCƒeƒ€‚ð”ñ‘I‘ð [\](gta)
-           menu_first_page    ƒƒjƒ…[‚ÌÅ‰‚Ìƒy[ƒW‚Ö [^](gta)
-           menu_invert_all    ‘S‚Ä‚ÌƒAƒCƒeƒ€‚ð”½“] [@](gxta)
-           menu_invert_page   Œ»Ý•\Ž¦‚³‚ê‚Ä‚¢‚éƒy[ƒW‚ÌƒAƒCƒeƒ€‚ð”½“] [~](gta)
-           menu_last_page     ƒƒjƒ…[‚ÌÅŒã‚Ìƒy[ƒW‚Ö [|](gta)
-           menu_next_page     ŽŸ‚Ìƒƒjƒ…[‚Ìƒy[ƒW‚Ö [>](gta)
-           menu_previous_page ‘O‚Ìƒƒjƒ…[‚Ìƒy[ƒW‚Ö [<](gta)
-           menu_search        ƒƒjƒ…[‚ÌŒŸõ [:](gxta)
-           menu_select_all    ‘S‚Ä‚ÌƒAƒCƒeƒ€‚ð‘I‘ð [.](gxta)
-           menu_select_page   Œ»Ý•\Ž¦‚³‚ê‚Ä‚¢‚é‘S‚Ä‚ÌƒAƒCƒeƒ€‚ð‘I‘ð [,](gta)
+           dungeon åŒæ§˜ã ãŒï¼Œç‰¹æ®ŠåŠ¹æžœã®æç”»ã«ä½¿ã‚ã‚Œã‚‹ã‚‚ã®ï¼Ž
+           vbeam hbeam lslant rslant                  (æ™®é€šã¯æ–ã®ãƒ“ãƒ¼ãƒ )
+           digbeam flashbeam              (ç©´æŽ˜ã‚Šã¨ã‚«ãƒ¡ãƒ©ã®ç‰¹æ®Šãªãƒ“ãƒ¼ãƒ )
+           boomleft boomright                               (ãƒ–ãƒ¼ãƒ¡ãƒ©ãƒ³)
+           ss1 ss2 ss3 ss4                                  (é˜²å¾¡ã®èª²ç¨‹)
+           sw_topl, sw_topm, sw_topr,           (é£²ã¿è¾¼ã¾ã‚ŒãŸã¨ãã®ä¸Šæ®µ)
+           sw_midl, sw_midr,                    (é£²ã¿è¾¼ã¾ã‚ŒãŸã¨ãã®ä¸­æ®µ)
+           sw_botl, sw_botm, sw_botr            (é£²ã¿è¾¼ã¾ã‚ŒãŸã¨ãã®ä¸‹æ®µ)
+           extl extm extr                                   (çˆ†ç™ºã®ä¸Šæ®µ)
+           exml exmm exmr                                   (çˆ†ç™ºã®ä¸­æ®µ)
+           exbl exbm exbr                                   (çˆ†ç™ºã®ä¸‹æ®µ)
+           default:  |-Â¥Â¥/*!)(0#@*/-Â¥Â¥||Â¥Â¥-//-Â¥Â¥|Â¥ |Â¥Â¥-/
+gender     ã‚²ãƒ¼ãƒ é–‹å§‹æ™‚ã®æ€§åˆ¥(gender:male ã¾ãŸã¯ gender:female)ï¼Žæœ€åˆã®
+           1 æ–‡å­—ã‚’æŒ‡å®šã™ã‚‹ã ã‘ã§ã‚ˆã„ï¼Žmale ã‚„ female ã‚ªãƒ—ã‚·ãƒ§ãƒ³ã‚‚ä½¿ç”¨ã§ã
+           ã‚‹ãŒï¼Œgender ã‚ªãƒ—ã‚·ãƒ§ãƒ³ãŒå„ªå…ˆã™ã‚‹ï¼Ž
+horsename  å†’é™ºã‚’ä¾›ã«ã™ã‚‹æœ€åˆã®é¦¬ã®åå‰ [NONE]
+menu_*     ãƒ¡ãƒ‹ãƒ¥ãƒ¼ã‚³ãƒžãƒ³ãƒ‰ã§ä½¿ç”¨ã™ã‚‹ä¸€æ–‡å­—ã®ã‚­ãƒ£ãƒ©ã‚¯ã‚¿ï¼Žä»¥ä¸‹ã«ã‚ã‚‹ã®ã¯
+           å…¨ã¦ã®ã‚³ãƒžãƒ³ãƒ‰ã®ãƒ¡ãƒ‹ãƒ¥ãƒ¼ã§ã‚ã‚‹ï¼Žãã‚Œãžã‚Œã«ç¶šã( )å†…æ–‡å­—ã®æ„å‘³
+           ã¯æ¬¡ã®é€šã‚Š: 'x' = x11, 't' = tty, 'g' = Gem, 'a' = Amiga.
+           menu_deselect_all  å…¨ã¦ã®ã‚¢ã‚¤ãƒ†ãƒ ã‚’éžé¸æŠž [-](gxta)
+           menu_deselect_page ç¾åœ¨è¡¨ç¤ºã•ã‚Œã¦ã„ã‚‹ãƒšãƒ¼ã‚¸ã®ã‚¢ã‚¤ãƒ†ãƒ ã‚’éžé¸æŠž [Â¥](gta)
+           menu_first_page    ãƒ¡ãƒ‹ãƒ¥ãƒ¼ã®æœ€åˆã®ãƒšãƒ¼ã‚¸ã¸ [^](gta)
+           menu_invert_all    å…¨ã¦ã®ã‚¢ã‚¤ãƒ†ãƒ ã‚’åè»¢ [@](gxta)
+           menu_invert_page   ç¾åœ¨è¡¨ç¤ºã•ã‚Œã¦ã„ã‚‹ãƒšãƒ¼ã‚¸ã®ã‚¢ã‚¤ãƒ†ãƒ ã‚’åè»¢ [â€¾](gta)
+           menu_last_page     ãƒ¡ãƒ‹ãƒ¥ãƒ¼ã®æœ€å¾Œã®ãƒšãƒ¼ã‚¸ã¸ [|](gta)
+           menu_next_page     æ¬¡ã®ãƒ¡ãƒ‹ãƒ¥ãƒ¼ã®ãƒšãƒ¼ã‚¸ã¸ [>](gta)
+           menu_previous_page å‰ã®ãƒ¡ãƒ‹ãƒ¥ãƒ¼ã®ãƒšãƒ¼ã‚¸ã¸ [<](gta)
+           menu_search        ãƒ¡ãƒ‹ãƒ¥ãƒ¼ã®æ¤œç´¢ [:](gxta)
+           menu_select_all    å…¨ã¦ã®ã‚¢ã‚¤ãƒ†ãƒ ã‚’é¸æŠž [.](gxta)
+           menu_select_page   ç¾åœ¨è¡¨ç¤ºã•ã‚Œã¦ã„ã‚‹å…¨ã¦ã®ã‚¢ã‚¤ãƒ†ãƒ ã‚’é¸æŠž [,](gta)
 monsters
-           dungeon“¯—lC‰ö•¨‚Ì‚½‚ß‚ÌƒVƒ“ƒ{ƒ‹D
-           ƒfƒtƒHƒ‹ƒg:  abcdefghijklmnopqrstuvwxyz
-                        ABCDEFGHIJKLMNOPQRSTUVWXYZ@\ \\&;:~]
-msghistory æ“ªs‚É•\Ž¦‚³‚ê‚½ƒƒbƒZ[ƒW—š—ð‚Ì•Û‘¶” [20]
-name       ‚ ‚È‚½‚Ì–¼‘O [ƒVƒXƒeƒ€‚©‚ ‚È‚½‚É–¼‘O‚ðq‚Ë‚Ä“¾‚ç‚ê‚½‚à‚Ì]
-objects    dungeon“¯—lCƒIƒuƒWƒFƒNƒg‚ÌƒVƒ“ƒ{ƒ‹
-           ƒfƒtƒHƒ‹ƒg:  ])[="(%!?+/$*`0_.
-pettype    ‚ ‚È‚½‚ÌƒLƒƒƒ‰ƒNƒ^‚ª‚Ç‚¿‚ç‚àŽg‚¦‚é‚È‚çC‚ ‚È‚½‚ÌD‚«‚È
-           ƒyƒbƒg‚ÌŽí—Þ(”L‚©Œ¢‚©)D'none' ‚Æ‚·‚é‚Æƒyƒbƒg‚È‚µ‚É‚È‚éD[RANDOM]
-playmode   ’Êí(normal)ƒvƒŒƒC‚©ƒXƒRƒA‚ÌŽc‚ç‚È‚¢’Tõ(explore)ƒ‚[ƒh‚©ƒfƒoƒbƒO
-           (debug)ƒ‚[ƒh‚© [normal]
-race       ƒQ[ƒ€ŠJŽnŽž‚ÌŽí‘° (—á race:Human, race:Elf) [RANDOM]
-role       ƒQ[ƒ€ŠJŽnŽž‚ÌE‹Æ (—á race:Barbarian, role: Valk)
-           Å‰‚Ìˆê•¶Žš‚ðŽw’è‚·‚é‚¾‚¯‚Å‚æ‚¢‚ªC’P‚ÉÅ‰‚Éƒ}ƒbƒ`‚µ‚½
-           E‹Æ‚ð‘I‚Ô‚¾‚¯‚Å‚ ‚éDŠ®‘S‚ÉŽ¯•Ê‰Â”\‚È•¶Žš‚ð‹Lq‚·‚é‚±‚Æ
-           ‚ð‚¨‘E‚ß‚·‚éD–¼‘O‚ÌŒã‚ÉE‹Æ‚ðŽw’è‚·‚é‚±‚Æ‚à‰Â”\‚Å‚ ‚é‚ªC
-           (—á Vic-V)roleƒIƒvƒVƒ‡ƒ“‚ª—Dæ‚·‚éD
+           dungeonåŒæ§˜ï¼Œæ€ªç‰©ã®ãŸã‚ã®ã‚·ãƒ³ãƒœãƒ«ï¼Ž
+           ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆ:  abcdefghijklmnopqrstuvwxyz
+                        ABCDEFGHIJKLMNOPQRSTUVWXYZ@Â¥ Â¥Â¥&;:â€¾]
+msghistory å…ˆé ­è¡Œã«è¡¨ç¤ºã•ã‚ŒãŸãƒ¡ãƒƒã‚»ãƒ¼ã‚¸å±¥æ­´ã®ä¿å­˜æ•° [20]
+name       ã‚ãªãŸã®åå‰ [ã‚·ã‚¹ãƒ†ãƒ ã‹ã‚ãªãŸã«åå‰ã‚’å°‹ã­ã¦å¾—ã‚‰ã‚ŒãŸã‚‚ã®]
+objects    dungeonåŒæ§˜ï¼Œã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã®ã‚·ãƒ³ãƒœãƒ«
+           ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆ:  ])[="(%!?+/$*`0_.
+pettype    ã‚ãªãŸã®ã‚­ãƒ£ãƒ©ã‚¯ã‚¿ãŒã©ã¡ã‚‰ã‚‚ä½¿ãˆã‚‹ãªã‚‰ï¼Œã‚ãªãŸã®å¥½ããª
+           ãƒšãƒƒãƒˆã®ç¨®é¡ž(çŒ«ã‹çŠ¬ã‹)ï¼Ž'none' ã¨ã™ã‚‹ã¨ãƒšãƒƒãƒˆãªã—ã«ãªã‚‹ï¼Ž[RANDOM]
+playmode   é€šå¸¸(normal)ãƒ—ãƒ¬ã‚¤ã‹ã‚¹ã‚³ã‚¢ã®æ®‹ã‚‰ãªã„æŽ¢ç´¢(explore)ãƒ¢ãƒ¼ãƒ‰ã‹ãƒ‡ãƒãƒƒã‚°
+           (debug)ãƒ¢ãƒ¼ãƒ‰ã‹ [normal]
+race       ã‚²ãƒ¼ãƒ é–‹å§‹æ™‚ã®ç¨®æ— (ä¾‹ race:Human, race:Elf) [RANDOM]
+role       ã‚²ãƒ¼ãƒ é–‹å§‹æ™‚ã®è·æ¥­ (ä¾‹ race:Barbarian, role: Valk)
+           æœ€åˆã®ä¸€æ–‡å­—ã‚’æŒ‡å®šã™ã‚‹ã ã‘ã§ã‚ˆã„ãŒï¼Œå˜ã«æœ€åˆã«ãƒžãƒƒãƒã—ãŸ
+           è·æ¥­ã‚’é¸ã¶ã ã‘ã§ã‚ã‚‹ï¼Žå®Œå…¨ã«è­˜åˆ¥å¯èƒ½ãªæ–‡å­—ã‚’è¨˜è¿°ã™ã‚‹ã“ã¨
+           ã‚’ãŠè–¦ã‚ã™ã‚‹ï¼Žåå‰ã®å¾Œã«è·æ¥­ã‚’æŒ‡å®šã™ã‚‹ã“ã¨ã‚‚å¯èƒ½ã§ã‚ã‚‹ãŒï¼Œ
+           (ä¾‹ Vic-V)roleã‚ªãƒ—ã‚·ãƒ§ãƒ³ãŒå„ªå…ˆã™ã‚‹ï¼Ž
 traps
-           dungeon“¯—lCã©‚Ì‚½‚ß‚ÌƒVƒ“ƒ{ƒ‹D
+           dungeonåŒæ§˜ï¼Œç½ ã®ãŸã‚ã®ã‚·ãƒ³ãƒœãƒ«ï¼Ž
            arrow_trap dart_trap falling_rock_trap squeaky_board
            bear_trap land_mine rolling_boulder_trap sleeping_gas_trap
            rust_trap fire_trap pit spiked_pit hole trap_door
            teleportation_trap level_teleporter magic_portal web statue_trap
            magic_trap anti_magic_trap polymorph_trap
-           ƒfƒtƒHƒ‹ƒg:  ^^^^^^^^^^^^^^^^^"^^^^
-windowtype Žg—p‚·‚éƒEƒCƒ“ƒhƒDƒVƒXƒeƒ€ [ƒVƒXƒeƒ€ˆË‘¶]
+           ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆ:  ^^^^^^^^^^^^^^^^^"^^^^
+windowtype ä½¿ç”¨ã™ã‚‹ã‚¦ã‚¤ãƒ³ãƒ‰ã‚¥ã‚·ã‚¹ãƒ†ãƒ  [ã‚·ã‚¹ãƒ†ãƒ ä¾å­˜]
 
-ƒRƒ“ƒpƒCƒ‹Žž‚É TTY_GRAPHICS ‚ªÝ’è‚³‚ê‚Ä‚¢‚é‚È‚ç‚Î:
-msg_window Žg—p‚·‚éƒƒbƒZ[ƒWƒEƒBƒ“ƒhƒE‚ÌŽí—Þ:
-           single      -- ˆê“x‚É 1 ƒƒbƒZ[ƒW‚¸‚Â
-           full        -- •Û‘¶‚³‚ê‚Ä‚¢‚é‘S‚Ä‚ÌƒƒbƒZ[ƒW‚ð~‚éƒEƒBƒ“ƒhƒE‚Å•\Ž¦
-           reverse     -- full ‚Æ“¯—l‚¾‚ªAV‚µ‚¢ƒƒbƒZ[ƒW‚©‚ç‡‚É•\Ž¦
-           combination -- 1 ƒƒbƒZ[ƒW‚ð 2 ‰ñA‚»‚ÌŒã‚Í full
+ã‚³ãƒ³ãƒ‘ã‚¤ãƒ«æ™‚ã« TTY_GRAPHICS ãŒè¨­å®šã•ã‚Œã¦ã„ã‚‹ãªã‚‰ã°:
+msg_window ä½¿ç”¨ã™ã‚‹ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã‚¦ã‚£ãƒ³ãƒ‰ã‚¦ã®ç¨®é¡ž:
+           single      -- ä¸€åº¦ã« 1 ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ãšã¤
+           full        -- ä¿å­˜ã•ã‚Œã¦ã„ã‚‹å…¨ã¦ã®ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã‚’é™ã‚‹ã‚¦ã‚£ãƒ³ãƒ‰ã‚¦ã§è¡¨ç¤º
+           reverse     -- full ã¨åŒæ§˜ã ãŒã€æ–°ã—ã„ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã‹ã‚‰é †ã«è¡¨ç¤º
+           combination -- 1 ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã‚’ 2 å›žã€ãã®å¾Œã¯ full
            default:  single
 
-ƒIƒvƒVƒ‡ƒ“‚Ì—á:
+ã‚ªãƒ—ã‚·ãƒ§ãƒ³ã®ä¾‹:
 !autopickup,!tombstone,name:Gandalf,scores:own/3 top/2 around
-female,nonews,dogname:Rover,dungeon: |--------||.-|++.##<><>_\\#{}.}..## #}
+female,nonews,dogname:Rover,dungeon: |--------||.-|++.##<><>_Â¥Â¥#{}.}..## #}
 rest_on_space,!verbose,menustyle:traditional
-ƒfƒoƒbƒOƒ‚[ƒhF
+ãƒ‡ãƒãƒƒã‚°ãƒ¢ãƒ¼ãƒ‰ï¼š
 
-^E  ==  ”é–§‚ÌƒhƒA‚âã©‚ð’²‚×‚éD
-^F  ==  –‚–@‚Ì’n}D
-^G  ==  ‰ö•¨‚ð‘¢‚éD
-^I  ==  Ž‚¿•¨‚ðŽ¯•Ê‚·‚éD
-^O  ==  “ÁŽêŠK‚ÌˆÊ’u‚ð’m‚éD
-^T  ==  ‚»‚ÌŠK‚Å‚ÌuŠÔˆÚ“®D
-^V  ==  ˆá‚¤ŠK‚Ö‚ÌuŠÔˆÚ“®D
-^W  ==  –]‚Ý‚ð‚©‚È‚¦‚éD
-^X  ==  ‘®«‚ðŒ©‚éD
+^E  ==  ç§˜å¯†ã®ãƒ‰ã‚¢ã‚„ç½ ã‚’èª¿ã¹ã‚‹ï¼Ž
+^F  ==  é­”æ³•ã®åœ°å›³ï¼Ž
+^G  ==  æ€ªç‰©ã‚’é€ ã‚‹ï¼Ž
+^I  ==  æŒã¡ç‰©ã‚’è­˜åˆ¥ã™ã‚‹ï¼Ž
+^O  ==  ç‰¹æ®ŠéšŽã®ä½ç½®ã‚’çŸ¥ã‚‹ï¼Ž
+^T  ==  ãã®éšŽã§ã®çž¬é–“ç§»å‹•ï¼Ž
+^V  ==  é•ã†éšŽã¸ã®çž¬é–“ç§»å‹•ï¼Ž
+^W  ==  æœ›ã¿ã‚’ã‹ãªãˆã‚‹ï¼Ž
+^X  ==  å±žæ€§ã‚’è¦‹ã‚‹ï¼Ž
 
 #levelchange == change experience level
 #lightsources == show mobile light sources
@@ -13289,26 +13287,26 @@ zruty
 	wildernesses of the Tatra mountains.
 #	This data file is generated by 'makedefs'.  Do not edit. 
 Dnfmbdvl
-ƒ”ƒ‰ƒi‚É‚¡‚³‚Á‚£‚í
+âƒ°ëƒ¨áƒ‰ó­ç“â“ëªá„ó‚‹
 `f$iuscvael
 Nuhjbdcp`
 Fchitskad
-ƒNƒ‹ƒƒGŽAá
+â‚©ëƒªáƒ¥ó‚¦á‚åºŠ
 @,W&0,<
 =/$I>R,
-‚¹‚â‚Ì‚Á‚»‚Þ‚±‚ð@
-‚³‚¹‚¨‚ã“ì‚å‚ù‚Ç‚³‚ù‚â‚Ä‚Ì‘W‚ÔŠñ–U‚ñŽÈ‚Ô‚äL
-‚ä‚¥—ˆ‚¹‚Ø
-‚°–È˜g‚ô‚¸‚«‚§‚´‚¹‚¡‚Ä‚øZ‚©‚¸˜n‚Ù‚£‚¹‚¥‚Þ‚¿E
-‘‚¥—ˆ‚¦—ˆ‚ –Ð—k“þ
-‚Î‚ï‚¬‚ï
-ƒmƒKƒ@™ƒ‰!:;?=4141
-“¬• ‚ÈƒCƒD‚ò—V‚§‚Ì‚²‚Ç‚¥‚¿‚·‚²F
-Ž„•‰‚®‚Ø‚¥‚¿‚å
-ƒAƒh„‚±Y
+âë‚Œá§ó¥çâºë›á‚“ÿ½Ž
+â“ë“á‹ó‚‰á…µâ‚‰ë‚“á ó™ç‚‹â‚‚ë¯á§õ…ªç¶äºŒîœ›á‚’öªç¶â‚ˆç¬Ž
+â‚ˆëä­óŸçº
+â”à¯¶äƒ‘ó‚’çŠâ‹ë‘á—óŸç“â¬ë‚’ä³¹óçŠé«¯ë²á„óŸç—âºë™í¸Ž
+ç—­ëä­ó„âµâ„îœ©ä›œö—§
+âªë‚‰áó‚
+âƒë‚¥á‚ªò˜†çƒ¹!:;?=4141
+ä‹•ï‰¨á£ó‚ªç‚¥â‚’ì¨Žáˆó¨ç„â£ëá¨ó•ç„î¾Ž
+æ¥à¢¡á‘ó¼ç—âŸë‚
+â‚ ëƒäŽ ó—ë´
 Ighd-"Sgbmf%
-ƒ†SDƒOƒrƒ\Mƒ_ƒ‹K
-å’c‚·‚å‚Ø‚ A
+âƒ¢ëƒ½áƒ³ó‚®çƒƒâ‚»ëƒºáƒ©óƒ¾çƒ»î¾
+ä†—à»‡á˜ó‚ƒçºâ„ç¬
 CC@(GNNB
 @pkg "$_usgsg|wgw(g"]m~emv)
 Ekc(vnp$^ybvkzi!jazu
@@ -13333,33 +13331,33 @@ Xmq(qsg$|xd"kfu!omd|hmj|x!tm{yumv(dn"p`yr"tdqbg%(0Qnaicd"siyu"68 !vqz~r"bgb!{k}b
 Vcvfyoe((Uyrhgthlc(btla{1
 Hd$qt"gi~!pait!vlmcd"sgbeq$|xdl$qt"ezu!lk|0nlhq0`"jmbe"f}d!rvgr``hq0egel>
 #	This data file is generated by 'makedefs'.  Do not edit. 
-ˆÂ‚ï‚¨‚Í– ‚èL
-’ˆÛ0,/•î‚Í’†‚Ù‰½’d‚¡‚í‚ð‚Î‚Å–ˆî‚Ò‚â–‚É‚¦T
-0;=<=0;==0£–˜‚Ä‚ä‚Ñ‚Ä‚è’¶²‚»‚·‚µƒoƒfƒZYL
-–¾‚è‚´‚ã‚ÚƒlƒjƒK_‚Ü•äL
-‚³‚¹‚È–´‚Ñ‚Æ‚ª‚è‚È‚Ý’L‚¡‚Ì’i‚÷‚Ê‚ªE‚±‚¹‚·‰ìY‚É–„‘’‚½‚¼@
-ƒZƒxZƒHK!/)(‚¶‚Ê‚÷‚·‚ªŒ£‚º‚Ñ‚¿L
-‘—“l—q‚È‘öŽM‚ÄƒŒ_ƒ‹‚Ë‹K‚ñ‚Æ‚¿‚äL
+ä¬‰ë‚‰á‹ó©ãœ°â‚Œç¬Ž
+ç±¬î„")%õ£“ç¾åº©ëªæº©õ€¦ç‚â‚‹ë‚‚á¦ó­ë´Šåº€ë¥á‚‚ÿ½Šçºâ„ç¬Ž
+0;=<=0;==0å¹Šà¯„á¯ó‚‚ç³â¬ë‚‚ë•¿÷”Ÿçâ—ëŸáƒóƒƒç‚»âƒ¸ç¬Ž
+äë‚‚á—ó‚‰ç¼âƒëƒƒá‚£óƒ¾ç¾ä “ç¬Ž
+â“ë“á£÷œ¢ç³â¢ë„á‚‹ó¬ç¿é¨´ë‹á§÷Ÿ§ç‚‰â®ë„í¸Žó—ç‹â—îˆ‘á€…ó­áŸ‹é‘¨ë—áŸÿ½Ž
+â‚½ëƒ‘áƒ´ó‚¯çƒ¬!/)(ó™ç â‚‰ë—á„÷Š®ç°â§ëŸí¸Ž
+è€á›ºå” ó¬ã¤¼åº‰ë¯áƒ¤óƒ¾çƒ»â¯î —á‚’ó¦ç‘â‚ˆç¬Ž
 Lc`m0hl$\qhuef>
-ƒKƒGƒfƒ‚ƒOƒbKƒHƒKƒSƒAƒ„ƒbGƒYƒMŽ€‚ð‚ºSƒKƒGI—»T
-ƒpSƒfƒ‹ƒGƒ…SƒYƒvKƒeƒ‹ƒVƒ…KƒZƒzZƒcƒ‹ƒUƒ…Zƒ\
-‰¸‚øŒ¨‚ïY
-ŒB‚ï‚É‚¦‚Õ‚¯‚¶‚²‚¦T‚Ä‚Ì‚áO‚©‚Ê‚ù‚Ä‚³T,/$‹XŽÚ
-—Z•Þ‰¯‚·‚áF“l•ð‚É‰ª‹N‚Ä[Š‚Ù“_‘—‚´‚À‚½‚¼‚»‚£@ƒAƒuƒaŽrƒEƒHƒ‚ƒnƒDƒ\—fÅ1”Ä’®L
-ƒƒŠZ‚·‚á‚Î—z?‚Ñ‚å‚Ò‚éN‚Ã”’? ‚É‚¼‚Â‚»‚Ë‚Å?Ç‰‚È“¢‚ ‚¿
-‹A‚ø‚Ã‚«‚öK‚»‚á‚Ì‚½‚Ì“§‚·‚µ‚Ö‚¨‹F‚ª‚íT
-‚â‚¬‚¶‚ª’‡ŠÖ‚Á‚É‚î‚ùKA0,/$ƒSƒDƒ“ƒ^_‚Ü–‚–HŽf‚¦
-‹A‚ø‚Ã‚«‚öK‚¹‚Í•â‚Ý—N“Í‚É”tŠì•ª‚¢ŠÝ‚Ø‚ú‚Æ‚ª‚è@
-ŸºžÇ‚Ä‘Ö‚Ò
-–±W˜^ŽÖ‚¡‚³‚Á–±‚íT‚ß‚ù‚É’…ì‚Ã‚Ì‚£‚í‚ºA{‚¬Š‚º‚Ê‚ªE
-ƒEƒSƒMƒCƒ‹‚³‚¹‚È–´‚ùF‹”O34:Ï@‚²‚ ‚ê‚Ã‚É‘‚¯Ž€‚Ë@
-‚ï‚¢É‚µ‚¡‚Ë–¸‚è@‚¡‚³‚Á–±‚ã‚©‚¿AÉ‚ÉˆÐ‘¥‚ø“¿GŽ„‚âˆÈ‘¦‚ô“®‚¿L
-ƒUƒ‡ƒk_UƒASƒYƒc‚¡‚³‚Á–±‚íT–²‚É‚¼‚Ø‚Ì‚ÇŽ°—æ‚±‚Ì‚µL
-”Ü‚Å‚£‚Æ‚ð“{‚Äâ‚Á– ‚Ã‚Ì‚£‚¹‚ºA‚Î‚¥‚Â‚´“{‚Ä’†‚Á– ‚ë‚¹‚Ç‚Í‚Ø‚Ã‚µE
-Ž«‚ïŠE‚Í‚Ø‚Ã‚µE
-‘‚¥æ‚«‚ÞA‘‚¬ŽQ‚ùF‘‚¬‹Ž‚ùF‚½‚¨‚±Œˆ‚·‚Ì–X‚î‚Ø‚ L
-ƒUƒ‡ƒhƒPƒ“Gƒ}ƒŒƒGƒ^‚³‚¹‚È–´‚ùFƒ}ƒŒ_ƒ\‚Ç‚Å‚É‚©ƒQƒLƒRƒ‹‚ô“µ‚ó‚¶E
-—¥‚·‚²‚îY
+â‚®ë‚±áƒˆóƒ çƒ€âƒç¬Œá‚¢ó‚²ç‚´â‚ ëƒ¥áƒ„ÿ½Œç‚ºâ‚´î½ºá‚“ó¢ë´Œâ‚®ë‚±ë§Ÿö–™ë´Ž
+âƒ“ëƒ½áƒˆóƒ©ç‚¨âƒ¡ëƒ½á‚±óƒ“çƒ¬âƒˆëƒªá‚°óƒ§çƒ¬â‚½ëƒ“áƒ´óƒˆçƒ»â‚¼ëƒ¤áƒ´ó‚»
+åº‹ë‚’ê¢‹ó‚ë´
+çŽ˜ë‚‰á¢ó„ç·âë¡á•ó„ë´Žâ¬ë§á‚‚õ¸ºç›â®ë‚“á¯ó™ë´Ž,/$í¡…æ¹ø€…
+èƒ±ì®¾çµ‹ó•ç‚“î¾Žá›ºç¤¹ó­à°‹éª˜ë¯æ¹ö‰€ç»é¹¦á€á—ó¤çâ¤ë•á„ÿ½Žç‚¢âƒ˜ëƒŠç¼‚ó‚ ç‚©âƒ¦ëƒ‡á‚®ó‚»ì®ä£ž=÷•¨ã”ªî¾Ž
+âƒ¥ëƒ«áƒ´ó•ç‚“âªï®Š-ç¥â‚ë´á‚÷œŸç³æ™¹'õ›²ç³âŸë©áó©ç¿.äœ€õˆç»è€ƒë’áŸ
+ç²—ë‚’á¬ó‘ç‚ˆî¾ë•á‚‚ó¨çâ´íŒá˜ó“ç¸âŒà¥¶áó‚‹ë´Ž
+â‚‚ë†á™óà³¢è–“ëªá¢ó‚Œç‚‹î¾ç¬")%0â‚ ë‚¦áƒ»óƒ€çƒ¬âªá½”ä·•ô¼½ç„
+ç²—ë‚’á¬ó‘ç‚ˆî¾ë“á¦õ£“ç¿çœ‰î¿’á¢õºƒâ«„æ‰­ëŒç£ó¼ç‚Œâ¢ë„á‚‹ÿ½Ž
+ç´…î·ƒá¯õ¿…ç´
+æ„¥ïµžê¯–ø€…ç“â“ëªåœ¨ó‚‹ë´Žâ»ë‚“á¢÷€í«®â§ë§á„ó‚‹çŒî¾Œà±Œáö‰€çŒâ®ë„í¸Ž
+â‚¬ë‚½á‚¥ó‚ªçƒ»â“ë“á£÷œ¢ç‚‹î¾Žìªªç½¼!10â¥£î¾Žë„á„ó‚„ç´â«î—¨áö¬¹ç¼î¾Ž
+â‚ëŒç¢³ó“ç“â¯ïœ¡á‚‹ÿ½Žç“â“ëªåœ¨ó‚‰ç›âŸç¬ç¢³ó­á¦‰ç«ë‚’çº—ÿ½Œã¯â‚‚í¾‰ä§ó‚’á¶—âŸç¬Ž
+â‚¼ëƒ¦áƒ‹óƒ¾çƒ«â‚ ëƒ½á‚±óƒˆç“â“ëªåœ¨ó‚‹ë´Žæœ¤ë¢áŸó¼ç®â£í´°å ´ó—ç®â™ç¬Ž
+ä¿¸ë®á„ó¦ç‚‚äœŸë¯æ¼Šó¥ãœ°â§ë§á„óŸçŒî¾Œë©á†óªç†äœŸë¯æ¼¥ó¥ãœ°â‚‹ë“á ó©çºâ§ëŸí¸Ž
+é‡®ë‚‰å¸ó©çºâ§ëŸí¸Ž
+ç—­ëç’ºó‘ç î¾Œî—¨áö•¡ç‚‹î¾Žî—¨áõŽ¹ç‚‹î¾Žë—á‹ó—â¹ªâ—ë§ç»˜ó‚Œçºâ„ç¬Ž
+â‚¼ëƒ¦áƒŠó‚·çƒ£âƒ¿ëƒ–áƒ¤ó‚¦ç‚¿â“ë“á£÷œ¢ç‚‹î¾Žëƒ–áƒ¤óƒ¾ç‚½â£ë®á¢óç‚²â‚«ë‚ºáƒ£ó‚’ì°â‚“ë¡í¸Ž
+æ©‹ë á•ó‚Œë´
 @ne{0gcmz0Ege|x-"#|g`q$eyrqal0hl$dygg$%0rmim0qgeku!cjl0pwmmd!dvg}!o}(ghda
 @rtdqtf((}x"bzydl`{<!vlm0bmimtx"m{0gkjacig`&
 @v$dqrv*&>!c$fybg$doe${|dgt&
@@ -13728,26 +13726,26 @@ Xmq(cdv$ei!jaibu"en|`oa&0![k}0fcrm0lg$`u`ppjesl*
    21
 000ca
 00205
-00276
-002d4
-00359
-00434
-004a5
-00554
-005e4
-006d0
-0077b
-00849
-00912
-0099b
-00a59
-00ad3
-00b72
-00d3c
-00e3c
-00f57
-00fd9
-0106a
+002aa
+00333
+003f6
+00539
+005de
+006e0
+007b4
+00911
+00a0d
+00b36
+00c5e
+00d27
+00e3f
+00ef2
+00fdc
+01282
+013fd
+0159e
+0165d
+0172d
 ---
 wŽŸ‚Í’ì—Z@ecus.$Oymn((qof$[mmrii-"51'4_‚Á’½–Î‚§‚ë‚¹‚Ç‚É
 ‚Ü‚½‚ê¦˜v‚µ‚á‚°‚Â‚Õ‚¢‚áE
@@ -13760,147 +13758,147 @@ Xmq(cdv$ei!jaibu"en|`oa&0![k}0fcrm0lg$`u`ppjesl*
 —NŒð‚ÉŽì–P‚¨‚À‚£‚µ‚Ö‚ò‹¥‚¬Ž¢‚¥‚Æ‚ª‚è@f
 ZEezux"eft!Hk`~rmj$0q,$9(4,Y
 ---
-“ò‚³‚ÍõŽw‚ ‚£‚é‚±‚Ö‚©K
-“ò‚³‚ñQ‚ù‚Õ‚½E
-‚Ï‚¾‚Þ‚É–£‚Î‚Õ·‚¼‚ú‚ÅK
-‚¹‚Ä“¬‚¯‚Ù‰ž‚®B
-––Šò‚Í—É‚ºˆú‚£‚¿‚·‚ú‚óL
+ç³ëá¦ö–àµ¯â„ëá‚Šó—ç¸âç¬Œ
+ç³ëá‚’öŒ­ç‚‹â½ë—í¸Ž
+â«ë˜á‚ó­ã„±âªë¾å”Ÿóšç‚Œâ­ç¬Œ
+âë¯çƒóç»ä½œëˆí¸Œ
+çœ¯îœŸá¦õŠ›çŒä¾•ëá¨ó•ç‚Œâ‚“ç¬Ž
 ---
-‚²‚Á“YŽá‚ºQ‚±‚´‚Â‚ðA
-‘­‚Åð‚ÁŒŠ‚òŒH‚éG
-‹â‚ø•¤‚ ‚¡‚Ä‚À‚¬“¢‚ ‘Ü‚£B
-‚¢‚Ô‚¼‚È•y‚ò“‚Ý‚õT
+â’ëªç¾—ô¹¹çŒä½ƒë›á—óªç‚‚î¾Œ
+é±Šë®ä–ó¥ã¡¤â‚’îŽ˜á‚Šÿ½Œ
+è‡‘ë‚’ä‰•ó†ç“â¬ë«áù€ƒç’è€€ëí¸Œ
+â‚ë¿áŸó¬á“â‚’ï›—á¶ó‚“ë´Ž
 ---
-“ò•‹î‚ÈŽ[‚Ë”Q‚Ý‚·‚ú‚·‚Î‚ª‚ÉS
-—‚â‚´‚Â‚»‚Ë•‹î‚È—Ý‚ò‚‚Þ‚í‘•ª‚ø“Æ‚Ø‚áF
-Ž‰‚Ä“ït‚ÝA
-w‚£‚ÍŠÐ‚Ø‚è‚ÏB
-“™‚½‚ªŽã‚ø‚ÎŽå‚ñ—Z‚¶‚óL
+ç³î½§ç…¿ó¬íŒ†â¯î‚¨á¶ó•ç‚Œâ—ë©áó­ë´Œ
+å»µë‚Œá—óªçâ¯î½§ç…¿ó¬áŠ›â‚’á»˜á‚ó‚‹â›¨æ‰­ë‚’ê®¥ó¼ç‚“î¾Ž
+é„‚ë¯ê¿Ÿø†ç¿î¾Œ
+æž¨ëá¦ù–“çºâ‚Œë¨í¸Œ
+æ¯‰ë—áõ¯ˆç‚Šâªï¸¯á‚’ô¹Žçˆâ‚“ç¬Ž
 ---
-ƒPƒBƒfƒŠƒH‚Ê‚á•©‚ôŒ¹‚äK
-®‚À‚è”sô‚Ê‚â‚Æ‰F‚ú‚¿—Å‚ñ”í‚Ï‚·L
-ƒPƒBƒfƒŠƒH‚ÏO‚ë‚±‚ð‚Î‚øÏ‚Â‰«‚»‚ùE
-–bŒ§ŽÓ‚âYÌ‚Î‚É‚í‚Ü‚òL‚Ý‚Î‚Ø‚å‚ÆB
-Œ©‚£–aŒ«ŽÂ‚Î{‚£‚ôŒ¹‚Ê‚ï‚ì‚õY
-Ž€‚½‚¼‚íƒwƒHƒY‚ñL‚§‚Ä‚£E
-Ž]‚Äƒtƒƒe‚ò@‚¶‚Â‚»F
+â‚·ë‚ªáƒˆóƒ¨ç‚©â®ë‚‹å‰¡ó‚’ì®‹â‚ˆç¬Œ
+ä²ë«á‚‹øƒŒà°ˆâ®ë‚Œá¡ùš¢ç‚ŒâŸíŠ›á‚’÷¦˜ç‚â—ç¬Ž
+â‚·ë‚ªáƒˆóƒ¨ç‚©â«à·§á‚Œó—ç‚‚âªë‚’åŸ»óªáŒ–â›ë‚“í¸Ž
+ä†’á™»ê€…ó‚ˆë´æŸ·ë©á¢ó‚‹ç¾â‚’íµ¼á¶ó®çºâ‚‰ë±í¸Œ
+é±¦ëç†’ù™¸ì€…âªà±Œá„ó‚’ì®‹â®ë‚‰á‚ó‚“ë´
+ç¯¿ë—áŸó‚‹çƒˆâ‚¯ë‚³á‚’ù¢Ÿç™â¬ëí¸Ž
+è…¼ë¯áƒ–óƒ¯çƒ–â‚’á³Ÿá™óªçî¾Ž
 ---
-–bŒ§ŽÓ‚âY
-‹B’e‚È•|‚Î–bŒ§ŽÓ‚ÉS
-]”á“H‚ÌˆÃ–£‚ø’l‚ì‚­‚êL
-ƒjƒ‰ƒRƒ“‚ÜX‚Õ‚¨‚È—È‚«‚ïB
-‚ ‚°‚ë‚ÈŠJ‚¨ä‚æ‚î‚¥‚àL
+ä†’á™»ê€…ó‚ˆë´
+ç«ŸïŸ¤á£õ®Œç‚€ä†’á™»ê€…ó­ë´Œ
+æ§žï·˜åš„ó¨â„ä‘·ë‚’åŸ­ó‚ŠçŸâ‚Šç¬Ž
+âƒ‰ëƒ¨á‚¼óƒ±ç¾å¿ë¾á‹ó¬í¹—â‹ë‚‰í¸Œ
+â„ëšá‚Œó¬íŽ·âŒì­œá‚‰ó‚Œç—â‚„ç¬Ž
 ---
-“ò‚Ä–Û‚®Œ¦‚Ë‚Ô‚Æ‚é‚£‚è‚½‚Ç‚¯S
-–bŒ§ŽÓ‚È’†‚Ç‚î‚¬’i‚÷‚è‚½‚°‚Â‚°‚êL
-‚Ò‚Îˆø‚Ù‚Ü’¶‰ù•œ‚È–â‚¨ŒÔŠµ‚ô’¬‚å‚±‚ð@
-‚·‚¡‚´G–I‚ë‚á‚Ö‚­‚÷‚ºA
-“ò‚ø•`‚Í^‚»‚½”Û‚±‚»–ð‚è“™‚±‚»Œú‚¨‚æ‚õY
+ç³ë¯å›¦óŒá±«â¯ë¿á¡ó‚ç•â‚Œë—á óë´Œ
+ä†’á™»ê€…ó¬à°½â£ë‚ˆá÷Ÿ§ç‚‰â‚Œë—á“óªç‚â‚Šç¬Ž
+â¶ë©ë§ºó½ç¾é´…í›žçº¡ó¬ì–¼âŒìª”ä„Ÿó‚’ã›¤â‚‰ë›á‚“ÿ½Ž
+â—ë‹á—ÿ½Œá·˜â‚‹ë‚‹á±ó‹ç‚‰âšç¬
+ç³ë‚’å—…ó©à¶¥â›ë—ç‘ó—çé–¨ë‚‚å©‰ó—çäŠ½ë‚á‚‰ó‚“ë´
 ---
-]‚Ä’žˆ ‚àŽñ‚§‚´…‚òƒeƒBƒP‚È“ç‚ò@‚¸M
-‚±‚¿‚ë‚Ê—‚è‚½“ñ‚ô‰à‚©•ò‚¼‚õT
-‹Ë‚×‚ÅƒŒ‰‚Ê‚á·•¬‚ÜŠr‚øŽf‚ ‚Ç‚·A
-‚±‚¿‚ë‚Ê‘¬‚Î‹â”X‚ä“¿—n‚Á•û‚¹‚ú‚óA
+æ§žë¯ç«½ö„›ç‚’ä—ë‘á—ö±¶ç‚„âƒˆë‚ªá‚ºó¬ì‚‰â‚’á³Ÿá›ÿ½
+â•ë™á‚Œó²à±¡â‚Œë—äµó‚’ì¯³âî”¿áŸó‚“ë´Ž
+ç§±ë‚á®÷µ”âµ”â®ë‚‹å”Ÿ÷‰«ç¾é¥’ë‚’æ¹·ó†ç©â—ç¬
+â•ë™á‚Œó²à³–âªà‹§ä‚¡ó‚‚áŒç¥˜ëªä”¶óŸç‚Œâ‚“ç¬
 ---
-“ò‰“‚¬—§‚ú‚·’f‚ÈŽº‚½—¥‚·“o‚ã‚á‚Ä–U‚ß‚Ì‚÷A
-wŠÜˆÛ“ª‚Ü¥Œì‚ñŽÿ“®‚»‚ùE
-‚Þ‚µì‚Í‚Ý“ò‚Äf‚ô‚«‚Î’f‚Ä‚È‚ÍwŠÜˆÛ“ª‚£‚µ‚áŠ«•¬‚àŽê‚Á‚´G
-—‚â‚´‚Â‚»‚Ë“Ï‚ß‚Ó‚¥F
-ŠÎP‚´–dŒ¿ŽÐ‚ÅŠ«‚¯•¸‚à–ú‚É‚©‚Ö‚âK
-“Ã•Â‚É‘Ö‚¯•š‚±‚È”ö‚Áž‚Õ‚Å‚¿‚ú‚ò¤‚´‹‚ ‚óL
+ç³á¡áù› ç‚Œâ—íœ±á£÷–¼çæ©‹ë ä¼©ó‚‰ç‚“â¬îœ›á‚€ó¨ç‚‰î¾Œ
+æž¨á–“å£³õ‹•ç¾äˆ²í® á‚’õŽá¶—â›ë‚“í¸Ž
+âºëŸç¼°ó©ç¿ç³ë¯ê¾£ó‚’çâªíœ±á¯ó¬ç¯æž¨á–“å£³õ‹•ç•â™ë‚‹ç³³÷‰«ç‚’ç‰‹ëªá—ÿ½Œ
+å»µë‚Œá—óªçâ¯àº¬á‚€ó»ç—î¾Ž
+é‚ë€…á—õ†’í™ªé€…ë®ç³³óã‰¹â‚„à–­á¢óç¸â‚‚ç¬Œ
+æ‰½íˆ¤á¢õ¿…ç±å¾ë›á£ù¢›ç£é¼¸ë¾á®óç‚Œâ‚’îˆá—ù‚ç’â‚“ç¬Ž
 ---
-‚³‚Ä’o‚ô–[‚É‚½‘R‚À‚Ü–bŒ§ŽÓ‚âY
-‹²‚á‚Ö‚¯ƒƒdƒ…ZƒP‚àm”º‚®‚õ‚ÖŽt‚ª‚´–dŒ¿ŽÐ‚îH
-Žè‚À‚ªŠÔ‚Ï‚ò“ø‚È‘¥‚÷‚óA
-“ò‚Ä–Û‚ô–Ê‰@‚½‚Ä•¦‚²
-ƒƒnƒ…_ƒD‚ÎŽx‚ñ”¹ŽÛ‚µ‚á‹¿‚ôŒ¹‚ g‚¶‚Ó‚¥K
+â“ë¯çœ¸ó‚’ì ºâ©ë—ç… ó¤ç¾ä†’á™»ê€…ó‚ˆë´
+çë‚‹á±óçƒ±âƒ‡ëƒ¤áƒ´ó‚·ç‚’ä‡¾îŠœá‘ó‚“ç¸ç€ë„á—õ†’í™ªé€…ë‚ˆí¸
+ç¬Šë«áøªŒç‚â‚’î¡á£øµˆç‚‰â‚“ç¬
+ç³ë¯å›¦ó‚’ã›¾èš¤ë—á¯ø§†ç„
+âƒ¥ëƒ‡áƒ­óƒ¾ç‚¥âªí·¾á‚’õá¸„â™ë‚‹ë©ó‚’ì®‹â„í‡»á™ó»ç—î¾
 ---
-#c`(qdpezyto&‚Ö‘‚¡‚ë‚±úŠ‚øB
-“þ”G‚È’På‚»‚ùE
-Žž‚ÁB‹äŽ‚½ƒFƒƒGƒLƒZ‚ÄB
-–‚–H‚Í‹H”_‘sŒÁ‚×‚Â‘—‚å‚â‚èá­‚Ü“»‚¢‚¡‚¯‚÷‚«‚Á‚É‚ã‚áF
-‚±‚â‚Æ–]‚ù‚ë‚¹‚Ç‚Ì‚¹‚èL
-‘sŒÁ‚¨‚ã‹ð‚ò“‚Ü‚À‚·‚Å
-“þ‚á‚ç‚ì‚Ý‚ë‚¡‚È“ë‚¥F
+#c`(qdpezyto&ë©ä›°ó‹ç‚Œâ—í°µä‰€ó‚’ë´Œ
+ä…¡í¯´á£öŽ ã¼²â›ë‚“í¸Ž
+ç™‚ëªí¸Œù‡‘âŒâ¥ë‚®áƒ¥ó‚¦ç‚­â‚½ë¯í¸Œ
+è¯”î£•á¦ø©˜á·¥ä€‰íªªá°óªí€â‚‰ë‚Œá‚‹÷¼¢ç¾è“ëŒá‚óç‚‰â‹ëªá¢ó‚‰ç‚“î¾Ž
+â•ë‚Œá¡õ¾˜ç‚‹â‚‹ë“á ó¨ç‹â‚Œç¬Ž
+ä€‰íªªá‹ó‚‰í‡‘â‚’ï›—á·ó¤á‡ªâ—ë®
+ä…¡ë‚‹á‚ˆó‚Šç¿â‚‹ë‹á£ù›¡ç—î¾Ž
 ---
-Œ©‚ª“YŽá‚Ý’n’a‚ñ’Ù‚ø‚¢‚¸‚ð@
-‚©‚ï‚ª‚ãŒå‚ëg‚Ä—£‚¯‚Î—¿m‚ÂcŒ«‚µ‚Ç‚¯S
-•qŒþ²‚Ìý˜C‹y‚ÍŠã‚Ò‚©‚Ä—¶h‚ÖŒ«‚½‚Ç‚¯T
-”Ü‚ï‚Ì•Êˆ´‚µ‚áE
-q‚ª—Æ‚¯‹a‚òŒ¡‚´‚Â‚»A
-Œô»‚ÉŠã‚Ü‹s‚øŒ¨‚¹‚Ö‚©K
-–±ä–AŽÖ‚Ý—˜‚ø“¿‚¼T
+é±¦ë„ç¾—ô¹¹ç¿ä€ î¾´á‚’õŠç‚Šâ‚ë’á‚“ÿ½Ž
+âë‚‰áó‚‰á…‰â‚‹í‡»á¯÷ª‹ç±âªî—…æ¾²óªì©Œé¤‹ëŸá óë´Œ
+åºí…­ä©«ó¨á°¨è€§í¾£á¦ù ”ç´âë¯ä—…ô»¸ç¸é¤‹ë—á óë´Ž
+ä¿¸ë‚‰á§õâ„›â™ë‚‹í¸Ž
+é£Œë„ê‰§óá¦²â‚’à¶‹á—óªçî¾Œ
+ä…¨î½¢á¢ù ”ç¾ä¬¦ë‚’ê¢‹óŸç¸âç¬Œ
+æ„¥ì­œä·•ø€…ç¿äˆ­ë‚’çº—óšë´Ž
 ---
-‘æŠ‚Í—¨‚¥‘æ‚ÅB
-‚¹‚Ä•]‚ÍW‚è‚½‚°‚Â‚Ù‚ä‚à
-ˆÎ‘í‚É‚íN—‚ê‘¼‚©‚ÜŒR‰ò‚ñ“º‚÷‚è‚ùE
-‚¹‚Ä‚ß‚·‚Ê‚ê‹ú‚æ‚ ‚¹‚å‚¥‚é‚É
-‘¿‚¥‚ÍŽs—Æ‚ò‹r‚£ž‚Ì‚óL
+ä´î‰€á¦ö´ç—ä´ë®í¸Œ
+âë¯ê¥ ó©ì¯¶â‚Œë—á“óªç»â‚ˆë‚Š
+ä‰í´¦á¢ó‚‹ãœŸæ†ë‚„ç šóç¾éª“îˆ’á‚’õ¿—ç‚‰â‚Œë‚“í¸Ž
+âë¯á‚€ó•ç¬â‚Ší–±á‚‰ó†ç‹â‚‰ëá‚Šó­
+ä¦šëá¦öŒ‡ì´ºâ‚’í¹á„ø¿¾ç®â‚“ç¬Ž
 ---
-–‚–H‚Í²•¸‚Î“ÿ‘Í‚ÉS
-J‚Õ‚¼‚íŽÂ‚Ë–‚–A‚È“Ñ©‚ø‚´‚Ê‚¥‚Ì—V‚§‚õT
-‚±‚Ô‚ç‚ –Ê‚Î^‚´‚¯Ž€‘Î‚ÅB
-–‚–HŽf‚¦‚ÜŠÖ‚Í‚‚¦’|‚ò‚Ê‚®‚õT
-–Ñ–Ò‚Í‚Â‚»Q‚Á•‚‚­‚Á‚¢‚¢‚èG
-ƒgƒŒƒqƒRK‚ÎŽþ—_‚Â‚²‚¦Žo‚£“½‚Ü‚¿‚×B
+è¯”î£•á¦÷”Ÿã‰¹âªà‚‰æ¹“ó­ë´Œ
+è¡Ÿë¾áŸó‚‹ì€…â¯á½”ä·•ó¬ã‰©ç€£ë‚’á—ó²ç—â´ì¨Žáˆó‚“ë´Ž
+â•ë¿á‚ˆó†ã›¾âªî–±á—óâ¥«å¿“ë®í¸Œ
+è¯”î£•æ¹·ó„ç¾è–“ë¦ë¯˜ó„á€´â‚’ë¥á‘ó‚“ë´Ž
+æ›¶ï›¯á¦óªçä½ƒëªä±¦ó‹ç£â‚ëŒá‚‹ÿ½Œ
+âƒ†ëƒ­áƒ‘ó‚µçƒ¬âªîŽˆæ¼Žóªç„â†ì­¾á„ù“ç¾âŸë‚í¸Œ
 ---
-h•Ÿ‚ÇŽð‚²‚Î”¥Œ¨‚ÉO‚Î—Ä•«‚Ì‚øF
-]‚Å‚°‚È©‘½‚ø—_‚¢‚áF
-’”y‚Í’j‚Ù‚ª‚ª‚ÅŽ€‚§‚Õ‚£‚á‚È‚ÆA
-Œ¡o‚ñ•ý‚ ‚ëŽ€‚¶‚Ó‚»‚â‚Ä‚×@
+æ§ï¶á õ‘¨ç„âªï™»ê¢‹ó­ã­žâªá°˜çˆ†ó¨ç‚Šî¾Ž
+æ§žë®á“ó¬âº™ç³´ë‚’æ¼Žóˆç‚“î¾Ž
+ä¶‡î‹á¦õœ²ç»âŠë„á®ö¬¹ç™â½ëá‚‚ó¬ç¨î¾Œ
+æŒªàªªá‚’ö¥ç’â‚‹î½ºá™ó»çâ‚‚ë¯á°ÿ½Ž
 ---
-]‚Å—¦”l‚Ø’SŠàŽÓ‚Í—Ý‚ò‚è‚¼‚ã‚£‚óL
-“bè‚ÄŒî‚ø‚À‚¢‚ë‚±–¬‚Î‚¨‚è—É‚Ü‘çŒ•B
-—Ï‚¨‚è—³|‚Ï•‚®‚Ì‚¥‚ËK
-´‚Õn‚·‚ú‚óL
-ƒKSƒO‚ÍŠå‚ßŒ™‚ì‚î‚¥ƒEƒ‹ƒu‚ÈŒŒ“‚Ä‘äŒ•‚àF
+æ§žë®å¯‹öµ¼çºä˜†á±˜ê€…ó©áŠ›â‚’ë‚‚áŸó‚‰ç•â‚“ç¬Ž
+å¾àº­á¯ø«žç‚Šâ ëŒá‚Œó—áâªë‚á‚‹õŠ›ç¾ä¦£í‰¢í¸Œ
+äŠ›ë‚á‚‹ö—…à²ªâ«íŠ¨á‘ó¨ç—â¯ç¬Œ
+æ”Ÿë¾ç‡²ó•ç‚Œâ‚“ç¬Ž
+â‚®ëƒ½á‚§ó©á·Œâ»í»Œá‚ó‚Œç—â‚¬ëƒªáƒ•ó¬ì©€æ·µë¯ç ¯õ‰¡ç‚’î¾Ž
 ---
-‹¯—Å‚É–‚œ‚­‚Á‚Ì”‘­‚Îˆå˜c‚¤‚øA
-‚¹‚ÄŒµŒZ‚ÝŒÁ‘ë‚ÍƒGƒVƒ“ƒWZ@
-–‚œ‚®‚ÉˆÈ•~‚Ä—Ì‚ôŽ‚½K
-]‚Å‚º‚ÈˆÜ‘ç‚»‚ñ–Y‚ÎF
-Ž€‚¿‚Ö‚¯‚ð‚Î‚Å‚º‚È‹ ‚·‚£—Ì‚Èˆú•”‚ÁF‚î‚ù‚Î‚ÕE
-ˆï˜j‚ÌŽ€‚§‚Õ‚£‚á‚È‚Ù‚¸‚Å‚¦‚ùF
-‚³‚Ä–‚–D‚Ü–‚œ‚®‚ôŠ—N‚½‚Å‚¦‚ù‚Ä‚£E
-”Ü‚ï‚Í–Þ‚ÝŒ«‚á‚°‚Â‚º‚Ç‚£‚Ë‚ä‚Ü‚òŒ¡B
-–‚–H‚Í—E‘—“»‚ÄëŠ‚à’V‚±‚è‚ÂŒ®‚¦L
-Ž€‚¿‚Ö‚¯‚ð‚Î‚Å‚º‚È—Ý‚òˆð‚ªk‚§‚¿‚×‚È‚É
-e‚Á‚Ã‚«‚Û‚Ì‚À‚æ‚Î‚Ö‚âŒ¶‚ì‚î‚Ô‚ ‚áE
-‚·‚¡‚´‹Ëd‚Î‚µ‚ÞG
-‚¹‚Ä‚ç‚ ‚ØˆÎ‘í‚É—É‚à“¼‚á‚È‚ÉS
-‘ç‚£‚É‹Y¥‚ò•­‚ì‚Ï‚Þ‚Ê‚ï‚Ë@
+ä¾³íŠ›á¢ù¬”í™´â‘ëªá§ö•²á¬šâªá€¹ê­¹ó‚ç‚Šî¾Œ
+âë¯çŽŸõž‹ç¿ä ì«¢á¦ó‚¦ç‚·âƒ·ëƒ€áƒ´ÿ½Ž
+è¯”á™¥á‘ó­ã•ç€–ë¯çŠ›ó‚’âŒâ¥ç¬Œ
+æ§žë®áó¬á‰ä¦£ë•á‚’öœ›ç‚€î¾Ž
+ç¯¿ë™á±óç‚‚âªë®áó¬ââ—ëçŠ›ó¬à°€èƒ¬ëªê£®ó‚Œç‚‹âªë¾í¸Ž
+è€¼à¹°á§ö¬¹ç™â½ëá‚‚ó¬ç»ä‘Šë’á®ó„ç‚‹î¾Ž
+â“ë¯ë©”ö²•ç¾è¯”á™¥á‘ó‚’â‰€çœ‰ë—á®ó„ç‚‹â¬ëí¸Ž
+ä¿¸ë‚‰á¦÷›¬ç¿é¤‹ë‚‹á“óªçŒâ£ëá¤ó‚‚ç¾â‚’à¶‹í¸Œ
+è¯”î£•á¦ø½ºí€è“ë¯ç¤¼ö‰€ç‚’çŽ¦ë›á‚‹óªì €â†ç¬Ž
+ç¯¿ë™á±óç‚‚âªë®áó¬áŠ›â‚’í¬•áõ‡¸ç™âŸë‚á£ó­
+é¸¯ëªá¬ó‘ç½â´ë«á‚‰ó®ç¸â‚‚à¸€á‚ó‚Œç¶â„ë‚‹í¸Ž
+â—ë‹á—õ‡ì©±âªëŸá‚ÿ½Œ
+âë¯á‚ˆó†çºä‰í´¦á¢õŠ›ç‚’ä¼—ë‚‹á£ó­ë´Œ
+ä¦£ëá¢÷Š¢ã‰¢â‚’î‰•á‚ó¯ç â®ë‚‰á¤ÿ½Ž
 ---
-“òƒ‚ZƒƒrƒL‚Ä¸ˆâ‚Ù“§‚Õ‚°‚Ø‚á‚Ä‚¿‚è‚Ì‚÷A
-ƒSƒƒh‚È‰œY‚¥’o–Î‚Ü—j‚â‚´îŠ‚ä‚à“ý‚ã‚áF
-“ò‚ÅŽNŽé‚Ü–‚–H‚Í“½‹ÿ‚ÎŽà•‚«‚º•I—~‚É‚ìT
-h•Ÿ‚²‚î‚¥A‘ì‚ÍŒñ‚º“»‚øŠK‚¯S
-‹à‚Äƒyƒ‹‚Ü¶‚¡‚É‚í‰©‚¨“ø‚È‚ A
-ƒ‚Sƒƒfƒ^‚Î–s‚ç‚ì“×‚Þ‚â‚´‹´‚¥‚©ƒ‹Zƒ“‚Ý’l‚ø—Ì‹©‚½—j‚ï‚²‚õT
+ç³ëƒ£áƒ´óƒ¯çƒƒâ‚«ë¯ê–õŸŸç»éºë¾á“ó¼ç‚“â¬ë™á‚‹ó¨ç‚‰î¾Œ
+â‚¶ëƒ˜áƒŠó¬á­µçµµëçœ¸ù ç¾ç¾ë‚Œá—õ¡¶â‰€â‚ˆë‚Šç…­ó‚‰ç‚“î¾Ž
+ç³ë®æ¼‰÷©¬ç¾è¯”î£•á¦ù“á…§âªî‰‹çŠ¡ó‘çŒä½…à¶á¢ó‚Šë´Ž
+æ§ï¶á•ó‚Œç—æ‡©í±á¦õ…‰çŒè“ë‚’ë–‹óë´Œ
+èŠ€ë¯áƒ™óƒ©ç¾çº…ë‹á¢ó‚‹íŸ£âŒî¡á£õ‘Šç’î¾Œ
+âƒ¦ëƒ½áƒ¥óƒƒç‚¿âªîœ­á‚ˆó‚Šì¢½âºë‚Œá—öç—âëƒªáƒ´óƒ±ç¿äœ´ë‚’çŠ›õ½µçç¾ë‚‰á•ó‚“ë´Ž
 ---
-‹²•t‚Í–Ä‹k‚Î‰œ‚Í‚·‚÷‚Ê‚á‰œ‚ÁS
-‚¹‚Ä‰»‚ôŽ÷‚ë‚ß‚¬í‚ºq‚¥Žé‚ô‚Ý‚Ì‚Ô‚ð@
-‚¹‚¹‚È‚É–M‚ß‚Äð‚®’e‚«‚â‚ð@
-“ò“ô‚ê‚ ‚Ö‚µ‚á‚É‚ã‚ÞA
-‰»Šq‚ñ‘p‚Õ‚ë‚ß‚´@
-±‚½‚ª‰½V‚Ê‚ï‚Ï
-’·‚Ã‹µ‚®‚¸‚ê‚Ì‚°‚â‚´F
-‚¹‚Ä‰¸B‚Ý]‚Ä‚Ü‚¸’}‚ë‚è‚Í‚Ì‚ú‚ÅK
-‰»Šq‚Í„—‚Ï‰Ê”]‚Ì‚øF
-‚¹‚¢Š‚é‚Ú‚Ê‚ï‚ÏG
-ë‚Ä—¡–á‚Æq‚¥‚Ö‚±T
+çî€–á¦ø¾µá¦¾âªíµ¤á¦ó•ç‚‰â®ë‚‹ç¡­ó¥ë´Œ
+âë¯æ¼‹ó‚’á¦ˆâ‚‹ë¸áõŸŽçŒé£Œëä‰‹ó‚’ç¿â´ë¿á‚“ÿ½Ž
+âë“á£ó­âœ›â»ë¯ä–óŒãµ¾â‹ë‚Œá‚“ÿ½Ž
+ç³í…¤á‚ó†ç¸â™ë‚‹á¢ó‚‰ç î¾Œ
+èŸ·îµ¼á‚’õ¤ç·â‚‹ë¸á—ÿ½Ž
+ç¯§ë—áùŸ±ì‰¢â®ë‚‰á¸
+éµ·ë¬ä­‹óŒçŠâ‚Šë§á“ó‚ˆç†î¾Ž
+âë¯ëŸ»ø‰°ç¿æ§žë¯á·óžãŸµâ‚‹ë‚‚á¦ó¨ç‚Œâ­ç¬Œ
+èŸ·îµ¼á¦öŽªã†â«í®êƒµó¨ç‚Šî¾Ž
+âëŒç¾ó‚ç¼â®ë‚‰á¸ÿ½Œ
+äŸŽë¯ê§ù–€ç¨é£Œëá±ó—ë´Ž
 ---
-]‚ÅŒÉ‚®Ž›‰B‚Ä‘l—±‚ÙŽy‚¿‚ÇŠè‚ÁA
-‚¹‚ø‚¸‚±ŽÂ‚Ë—dY‚Ì‚ù‰´Œj‚ñ—Z‚´‚ÄŒ¶‚ì‚î‚­‚êL
-‚Ê‚â‚ÆGC’w‚§H
-Žã‚¥‚ã‚·‚¥‚Ï˜^‚£™á‚¥‚ä‚à‚ç‚±T
+æ§žë®ç³¹óŒá§ªè™¦ë¯çƒ¯ô¿´ç»ç–¹ë™á õ–œç£î¾Œ
+âë‚’á›ó—ì€…â¯î·˜á€…ó¨ç‚‹ç­î´á‚’ô¹Žç†â¬à¸€á‚ó‚ŒçŸâ‚Šç¬Ž
+â®ë‚Œá¡ÿ½Œá·ƒæ¿ªë‘í¸
+é‹¡ëá‚„ó•ç—â«à€á„õç—â‚ˆë‚Šá‚ˆó—ë´Ž
 ---
-Dnfmbdvl‚ÜŒæ–´‚ÌG
-“ò‘£Œ²‚Í‚«‚Î–´‚ñ‘‚¹‚Ì
-“ò‚¢“F‚ôˆÈ•~‚±‚´‚Û‚áF
-“ò‹Á‚Þ‚ÀÓ‚«‚Á‚´‚À‚¸‚è‚ÆB
-‘ç‚½—Ì‚ô“®‚óL
-‘©‚Í‚º‚È•¦‚ò
-Ã‚»‚Ë‚â‚´Q‚¿‚Ö‚±T
+Dnfmbdvlë¯çº©õç¿î¾Œ
+ç³à¦²ç…ƒó©çâªíá‚’ö›ºç‹â´
+ç³ëŒä•½ó‚’ã•ç€–ë›á—ó‚ç‚“î¾Ž
+ç³îµ´á‚ó¤í™â‹ëªá—ó¤çŠâ‚Œë±í¸Œ
+ä¦£ë—çŠ›ó‚’á¶—â‚“ç¬Ž
+é´·ë¦áó¬â–‡â‚’
+ç´ˆë•á¤ó‚ˆç†ä½ƒë™á±ó—ë´Ž
 ---
 
     NetHack version 3.6.0

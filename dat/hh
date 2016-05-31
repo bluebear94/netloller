@@ -1,122 +1,121 @@
-y k u   7 8 9   �ړ�:
- \|/     \|/            yuhjklbn: �w������ɁC�������
-h-.-l   4-.-6           YUHJKLBN: �w������ɁC�����ɂԂ���܂ŕ����C
- /|\     /|\                      �܂��͉����̒��֓���D
-b j n   1 2 3           g<dir>:   �w������ɁC������������܂ŕ���
-      numberpad         G<dir>:   �w������ɁC������������܂ŕ����D
-                                  �������C�ʘH�̕���Ŏ~�܂�Ȃ��D
- <  up                  ^<dir>:   ��ɓ����D(�R���g���[���������Ȃ���)
- >  down                m<dir>:   ���������Ɉړ�����D
-                number_pad �I�v�V�������Z�b�g����ƁC�e���L�[�ňړ��ł���D
-                �v���b�g�t�H�[���ɂ���ẮCShift+�����CMeta-�����CAlt+������
-                YUHJKLBN�R�}���h�𔭓�������̂�����D
-                Control <����> �� number_pad �I�v�V�������Z�b�g����Ă���ꍇ
-                �̓v���b�g�t�H�[���ɂ���ē������蓮���Ȃ������肷��D
-                ������ '5' �� 'G' �ړ����̂悤�ɓ������Cnumber_pad �� 2 �̎���
-                'g' �̂悤�ɓ����D
-                number_pad �� 3 �Ȃ� 1,2,3 �� 7,8,9 �̖����͋t�ɂȂ�; 4 �Ȃ�
-                3 �� 2 �̑g�ݍ��킹�̂悤�ɐU�镑���B
-                number_pad �� -1 �Ȃ�C�p���̈ړ��R�}���h���g�����C'y' ��
-                'z' ������ւ��D
+y k u   7 8 9   移動:
+ \|/     \|/            yuhjklbn: 指定方向に，一歩歩く
+h-.-l   4-.-6           YUHJKLBN: 指定方向に，何かにぶつかるまで歩く，
+ /|\     /|\                      または何かの中へ入る．
+b j n   1 2 3           g<dir>:   指定方向に，何かが見えるまで歩く
+      numberpad         G<dir>:   指定方向に，何かが見えるまで歩く．
+                                  ただし，通路の分岐で止まらない．
+ <  up                  ^<dir>:   上に同じ．(コントロールを押しながら)
+ >  down                m<dir>:   何もせずに移動する．
+                number_pad オプションをセットすると，テンキーで移動できる．
+                プラットフォームによっては，Shift+数字，Meta-数字，Alt+数字で
+                YUHJKLBNコマンドを発動するものもある．
+                Control <方向> は number_pad オプションがセットされている場合
+                はプラットフォームによって動いたり動かなかったりする．
+                数字の '5' は 'G' 接頭辞のように働くが，number_pad が 2 の時は
+                'g' のように働く．
+                number_pad が 3 なら 1,2,3 と 7,8,9 の役割は逆になる; 4 なら
+                3 と 2 の組み合わせのように振る舞う。
+                number_pad が -1 なら，英字の移動コマンドを使うが，'y' と
+                'z' が入れ替わる．
 
-���:
-?       help    �w���v
-#quit   quit    �Q�[������߂�D
-S       save    �Q�[����(��ő����邽�߂�)���f����D
-!       sh      (�����ł���Ȃ�)�V�F�������s����D
-^Z      suspend �Q�[���𒆒f����D
-O       options �I�v�V������ݒ肷��D
-/       whatis  ��ʂ̋L����������m��D
-\       known   ���܂łɔ�����������̈ꗗ��\������D
-v       version �o�[�W������\������D
-V       history �Q�[���̗��j��\������D
-^A      again   1�O�̃R�}���h�����s����D(^A�̓R���g���[����������
-                ����A���������Ƃ��Ӗ�����D)
-^R      redraw  ��ʂ������Ȃ����D
-^P      prevmsg �O�̃��b�Z�[�W������D(^P�͌J��Ԃ��g����)
-`               �I���W�i�����[�h�Ɠ��{�ꃂ�[�h�̐؂�ւ�
-#               �g���R�}���h(#?�Ńw���v)
+一般:
+?       help    ヘルプ
+#quit   quit    ゲームをやめる．
+S       save    ゲームを(後で続けるために)中断する．
+!       sh      (もしできるなら)シェルを実行する．
+^Z      suspend ゲームを中断する．
+O       options オプションを設定する．
+/       whatis  画面の記号が何かを知る．
+\       known   今までに発見した道具の一覧を表示する．
+v       version バージョンを表示する．
+V       history ゲームの歴史を表示する．
+^A      again   1つ前のコマンドを実行する．(^Aはコントロールを押しな
+                がらAを押すことを意味する．)
+^R      redraw  画面を書きなおす．
+^P      prevmsg 前のメッセージを見る．(^Pは繰り返し使える)
+`               オリジナルモードと日本語モードの切り替え
+#               拡張コマンド(#?でヘルプ)
 
-�Q�[��:
-^D      kick    �R��D(����)
-^T      'port   �u�Ԉړ��D(�\�Ȃ�)
-a       apply   ������g���D(��͂��C���C�J������)
-A       armor   �S�Ă̊Z��E���D
-c       close   ����߂�D
-C       call    ����̉����C�X�̃A�C�e���C�A�C�e���̎�ނɖ��O������D
-d       drop    ����u���D  d7a�Fa�Ȃ���̂�7�u���D
-D       Drop    ��ނ�I��ŕ���u���D
-e       eat     ������H�ׂ�D
-f       fire    ���U����Ă�����̂��˂�D
-F       fight   �������w�肵�키�D
-E       engrave ���̂ق���ɕ����������D(E-  �w���g����)
-i       invent  ���Ȃ��̎������ꗗ�D(���Ȃ��������Ă�����̑S��)
-I       Invent  ��ނ�I�����Ď������ꗗ�D
-                Iu: �����̓���ꗗ�D
-                Ix: ���������g���͂���������ꗗ�D
-                I$: �����𐔂���D
-o       open    �����J����D
-p       pay     ����𕥂��D(�X�̒���)
-P       puton   �A�N�Z�T����g�ɂ���D(�w�ցC�������Ȃ�)
-q       quaff   ����������(����, ��, �Ȃ�)
-Q       quiver  ���U������̂�I������D
-r       read    �����▂�@�̖{��ǂށD
-R       remove  �A�N�Z�T�����͂����D(�w�ցC�������Ȃ�)
-s       search  �閧�̔��C�B�ꂽ㩁C������T���D
-t       throw   ����𓊂���C���C�˂�D
-T       takeoff �Z��E���D
-w       wield   ����𑕔�����D(w-  �����������Ȃ�)
-W       wear    �Z�𒅂�D
-x       xchange ���E�̕������������D
-X       twoweapon �񓁗���؂�ւ���D
-z       zap     ���U�肩�����D(number_pad �� -1 �Ȃ� z �ł͂Ȃ� y)
-Z       Zap     ������������D(number_pad �� -1 �Ȃ� Z �ł͂Ȃ� Y)
-<       up      �K�i������D
->       down    �K�i���~���D
-^       trap_id 㩂𒲂ׂ�D
-),[,=,",(       ���ݑ������Ă���L���ɑΉ��������̂�\��
-*               �������Ă�����̂�\��
-$       gold    �����𐔂���D
-+       spells  �����邱�Ƃ̂ł��閂�@�̈ꗗ�D
-`       classkn ��̎�ނ̒��Ŕ�����������\������
-_       travel  �}�b�v�Ŏ����ꂽ�_�ɍŏ��o�H�A���S���Y���ňړ�����D
-.       rest    �x�ށD
-,       pickup  �����E���D
-@               `pickup'(����pickup)�̃I�v�V������؂�ւ���D
-:       look    �������邩������D
-;       farlook ���ɉ������邩���ׂ�D(�n�}��̋L����I������)
+ゲーム:
+^D      kick    蹴る．(扉等)
+^T      'port   瞬間移動．(可能なら)
+a       apply   道具を使う．(つるはし，鍵，カメラ等)
+A       armor   全ての鎧を脱ぐ．
+c       close   扉を閉める．
+C       call    特定の怪物，個々のアイテム，アイテムの種類に名前をつける．
+d       drop    物を置く．  d7a：aなるものを7個置く．
+D       Drop    種類を選んで物を置く．
+e       eat     何かを食べる．
+f       fire    装填されているものを射る．
+F       fight   方向を指定し戦う．
+E       engrave 床のほこりに文字を書く．(E-  指を使って)
+i       invent  あなたの持ち物一覧．(あなたが持っているもの全て)
+I       Invent  種類を選択して持ち物一覧．
+                Iu: 未払の道具一覧．
+                Ix: 未払だが使いはたした道具一覧．
+                I$: お金を数える．
+o       open    扉を開ける．
+p       pay     勘定を払う．(店の中で)
+P       puton   アクセサリを身につける．(指輪，魔除けなど)
+q       quaff   何かを飲む(水薬, 水, など)
+Q       quiver  装填するものを選択する．
+r       read    巻物や魔法の本を読む．
+R       remove  アクセサリをはずす．(指輪，魔除けなど)
+s       search  秘密の扉，隠れた罠，怪物を探す．
+t       throw   武器を投げる，撃つ，射る．
+T       takeoff 鎧を脱ぐ．
+w       wield   武器を装備する．(w-  何も装備しない)
+W       wear    鎧を着る．
+x       xchange 左右の武器を交換する．
+X       twoweapon 二刀流を切り替える．
+z       zap     杖を振りかざす．(number_pad が -1 なら z ではなく y)
+Z       Zap     呪文を唱える．(number_pad が -1 なら Z ではなく Y)
+<       up      階段を昇る．
+>       down    階段を降りる．
+^       trap_id 罠を調べる．
+),[,=,",(       現在装備している記号に対応したものを表示
+*               装備しているものを表示
+$       gold    お金を数える．
++       spells  唱えることのできる魔法の一覧．
+`       classkn 一つの種類の中で発見した物を表示する
+_       travel  マップで示された点に最小経路アルゴリズムで移動する．
+.       rest    休む．
+,       pickup  物を拾う．
+@               `pickup'(自動pickup)のオプションを切り替える．
+:       look    何があるかを見る．
+;       farlook 他に何があるか調べる．(地図上の記号を選択する)
 
-���^�L�[�̂���L�[�{�[�h�ł͈ȉ��̊g���R�}���h�� # �̂����Ƀ��^�L�[
-�������Ȃ�����s�ł���D
+メタキーのあるキーボードでは以下の拡張コマンドを # のかわりにメタキー
+を押しながら実行できる．
 
-M-?             �g���R�}���h�w���v�̕\�� (�v���b�g�t�H�[����������)
-M-2     twoweapon �񓁗��̐؂�ւ� (number_pad �������Ȃ�)
-M-a     adjust  �������ꗗ�̒���
-M-c     chat    �N���Ƙb��
-M-d     dip     �����ɕ���Z���D
-M-e     enhance ����̋Z�ʂ����߂�܂��͌���    
-M-f     force   ��������������D
-M-i     invoke  ���̓��ʂȗ͂��g���D
-M-j     jump    ���̈ʒu�ɔ�т���D
-M-l     loot    ���̏�̔��̒��g�𗪒D����D
-M-m     monster �����̓��ʔ\�͂��g���D
-M-n     name    ����̉����C�X�̃A�C�e���C�A�C�e���̎�ނɖ��O������D
-M-o     offer   �_�ɋ����������D
-M-p     pray    �_�ɋF��D
-M-q     quit    �Q�[������߂�
-M-r     rub     �����v��������D
-M-s     sit     ����D
-M-t     turn    �A���f�b�g��y�ɕԂ��D
-M-u     untrap  㩂��͂����D
-M-v     version �R���p�C�����̃I�v�V������\������D
-M-w     wipe    ���@���D
+M-?             拡張コマンドヘルプの表示 (プラットフォームが許せば)
+M-2     twoweapon 二刀流の切り替え (number_pad が無効なら)
+M-a     adjust  持ち物一覧の調整
+M-c     chat    誰かと話す
+M-d     dip     何かに物を浸す．
+M-e     enhance 武器の技量を高めるまたは見る
+M-f     force   鍵をこじあける．
+M-i     invoke  物の特別な力を使う．
+M-j     jump    他の位置に飛びうつる．
+M-l     loot    床の上の箱の中身を略奪する．
+M-m     monster 怪物の特別能力を使う．
+M-n     name    特定の怪物，個々のアイテム，アイテムの種類に名前をつける．
+M-o     offer   神に供物を捧げる．
+M-p     pray    神に祈る．
+M-q     quit    ゲームをやめる
+M-r     rub     ランプをこする．
+M-s     sit     座る．
+M-t     turn    アンデットを土に返す．
+M-u     untrap  罠をはずす．
+M-v     version コンパイル時のオプションを表示する．
+M-w     wipe    顔を拭う．
 
-`number_pad'�̃I�v�V�������I���Ȃ�C���̃R�}���h���\�ɂȂ�D
+`number_pad'のオプションがオンなら，次のコマンドが可能になる．
 
-n               ����ɑ��������������̃R�}���h�����s����D
-j       jump    ���̈ʒu�ɔ�т���D
-k       kick    �R��D(����)
-l       loot    ���̏�̔��̒��g�𗪒D����D
-N       name    �A�C�e���╨�ɖ��O������D
-u       untrap  㩂��͂����D(�ʏ�͂�������ꂽ��)
-
+n               これに続く数字だけ次のコマンドを実行する．
+j       jump    他の位置に飛びうつる．
+k       kick    蹴る．(扉等)
+l       loot    床の上の箱の中身を略奪する．
+N       name    アイテムや物に名前をつける．
+u       untrap  罠をはずす．(通常はしかけられた物)
