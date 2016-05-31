@@ -3,8 +3,8 @@
 /* NetHack may be freely redistributed.  See license for details. */
 
 /*JP:
-  artilist.h ÇÕ makedefs.c Ç∆ artifact.c Ç©ÇÁì«Ç›çûÇ‹ÇÍÇÈÅB
-  makedefs.c Ç≈ÇÕâpåÍÇÃÇ‹Ç‹Ç…ÇµÇƒÇ®Ç≠ïKóvÇ™Ç†ÇÈÇÃÇ≈ÅAartilistj.h Ç…ï™ó£ÅB
+  artilist.h „ÅØ makedefs.c „Å® artifact.c „Åã„ÇâË™≠„ÅøËæº„Åæ„Çå„Çã„ÄÇ
+  makedefs.c „Åß„ÅØËã±Ë™û„ÅÆ„Åæ„Åæ„Å´„Åó„Å¶„Åä„ÅèÂøÖË¶Å„Åå„ÅÇ„Çã„ÅÆ„Åß„ÄÅartilistj.h „Å´ÂàÜÈõ¢„ÄÇ
 */
 
 #ifdef MAKEDEFS_C
@@ -48,7 +48,7 @@ STATIC_OVL NEARDATA struct artifact artilist[] = {
     A("", STRANGE_OBJECT, 0, 0, 0, NO_ATTK, NO_DFNS, NO_CARY, 0, A_NONE,
       NON_PM, NON_PM, 0L, NO_COLOR),
 
-    A("ÉGÉNÉXÉJÉäÉoÅ[", LONG_SWORD, (SPFX_NOGEN | SPFX_RESTR | SPFX_SEEK
+    A("„Ç®„ÇØ„Çπ„Ç´„É™„Éê„Éº", LONG_SWORD, (SPFX_NOGEN | SPFX_RESTR | SPFX_SEEK
                                 | SPFX_DEFN | SPFX_INTEL | SPFX_SEARCH),
       0, 0, PHYS(5, 10), DRLI(0, 0), NO_CARY, 0, A_LAWFUL, PM_KNIGHT, NON_PM,
       4000L, NO_COLOR),
@@ -56,7 +56,7 @@ STATIC_OVL NEARDATA struct artifact artilist[] = {
      *      Stormbringer only has a 2 because it can drain a level,
      *      providing 8 more.
      */
-    A("ÉXÉgÅ[ÉÄÉuÉäÉìÉKÅ[", RUNESWORD,
+    A("„Çπ„Éà„Éº„É†„Éñ„É™„É≥„Ç¨„Éº", RUNESWORD,
       (SPFX_RESTR | SPFX_ATTK | SPFX_DEFN | SPFX_INTEL | SPFX_DRLI), 0, 0,
       DRLI(5, 2), DRLI(0, 0), NO_CARY, 0, A_CHAOTIC, NON_PM, NON_PM, 8000L,
       NO_COLOR),
@@ -64,11 +64,11 @@ STATIC_OVL NEARDATA struct artifact artilist[] = {
      *      Mjollnir will return to the hand of the wielder when thrown
      *      if the wielder is a Valkyrie wearing Gauntlets of Power.
      */
-    A("É~ÉÖÉãÉjÅ[Éã", WAR_HAMMER, /* Mjo:llnir */
+    A("„Éü„É•„É´„Éã„Éº„É´", WAR_HAMMER, /* Mjo:llnir */
       (SPFX_RESTR | SPFX_ATTK), 0, 0, ELEC(5, 24), NO_DFNS, NO_CARY, 0,
       A_NEUTRAL, PM_VALKYRIE, NON_PM, 4000L, NO_COLOR),
 
-    A("ÉNÉäÅ[ÉoÅ[", BATTLE_AXE, SPFX_RESTR, 0, 0, PHYS(3, 6), NO_DFNS, NO_CARY,
+    A("„ÇØ„É™„Éº„Éê„Éº", BATTLE_AXE, SPFX_RESTR, 0, 0, PHYS(3, 6), NO_DFNS, NO_CARY,
       0, A_NEUTRAL, PM_BARBARIAN, NON_PM, 1500L, NO_COLOR),
 
     /*
@@ -76,7 +76,7 @@ STATIC_OVL NEARDATA struct artifact artilist[] = {
      *      damage bonus applies to all targets rather than just elves
      *      (handled as special case in spec_dbon()).
      */
-    A("ÉOÉäÉÄÉgÉDÅ[ÉX", ORCISH_DAGGER, (SPFX_RESTR | SPFX_WARN | SPFX_DFLAG2),
+    A("„Ç∞„É™„É†„Éà„Ç•„Éº„Çπ", ORCISH_DAGGER, (SPFX_RESTR | SPFX_WARN | SPFX_DFLAG2),
       0, M2_ELF, PHYS(2, 6), NO_DFNS,
       NO_CARY, 0, A_CHAOTIC, NON_PM, PM_ORC, 300L, CLR_RED),
     /*
@@ -86,53 +86,53 @@ STATIC_OVL NEARDATA struct artifact artilist[] = {
      *      EWarn_of_mon for all monsters that have the M2_value flag.
      *      Sting and Orcrist will warn of M2_ORC monsters.
      */
-    A("ÉIÅ[ÉNÉäÉXÉg", ELVEN_BROADSWORD, (SPFX_WARN | SPFX_DFLAG2), 0, M2_ORC,
+    A("„Ç™„Éº„ÇØ„É™„Çπ„Éà", ELVEN_BROADSWORD, (SPFX_WARN | SPFX_DFLAG2), 0, M2_ORC,
       PHYS(5, 0), NO_DFNS, NO_CARY, 0, A_CHAOTIC, NON_PM, PM_ELF, 2000L,
       CLR_BRIGHT_BLUE), /* bright blue is actually light blue */
 
-    A("ÉXÉeÉBÉìÉO", ELVEN_DAGGER, (SPFX_WARN | SPFX_DFLAG2), 0, M2_ORC, PHYS(5, 0),
+    A("„Çπ„ÉÜ„Ç£„É≥„Ç∞", ELVEN_DAGGER, (SPFX_WARN | SPFX_DFLAG2), 0, M2_ORC, PHYS(5, 0),
       NO_DFNS, NO_CARY, 0, A_CHAOTIC, NON_PM, PM_ELF, 800L, CLR_BRIGHT_BLUE),
     /*
      *      Magicbane is a bit different!  Its magic fanfare
      *      unbalances victims in addition to doing some damage.
      */
-    A("É}ÉWÉbÉNÉxÅ[Éì", ATHAME, (SPFX_RESTR | SPFX_ATTK | SPFX_DEFN), 0, 0,
+    A("„Éû„Ç∏„ÉÉ„ÇØ„Éô„Éº„É≥", ATHAME, (SPFX_RESTR | SPFX_ATTK | SPFX_DEFN), 0, 0,
       STUN(3, 4), DFNS(AD_MAGM), NO_CARY, 0, A_NEUTRAL, PM_WIZARD, NON_PM,
       3500L, NO_COLOR),
 
-    A("ÉtÉçÉXÉgÉuÉâÉìÉh", LONG_SWORD, (SPFX_RESTR | SPFX_ATTK | SPFX_DEFN), 0, 0,
+    A("„Éï„É≠„Çπ„Éà„Éñ„É©„É≥„Éâ", LONG_SWORD, (SPFX_RESTR | SPFX_ATTK | SPFX_DEFN), 0, 0,
       COLD(5, 0), COLD(0, 0), NO_CARY, 0, A_NONE, NON_PM, NON_PM, 3000L,
       NO_COLOR),
 
-    A("ÉtÉ@ÉCÉAÉuÉâÉìÉh", LONG_SWORD, (SPFX_RESTR | SPFX_ATTK | SPFX_DEFN), 0, 0,
+    A("„Éï„Ç°„Ç§„Ç¢„Éñ„É©„É≥„Éâ", LONG_SWORD, (SPFX_RESTR | SPFX_ATTK | SPFX_DEFN), 0, 0,
       FIRE(5, 0), FIRE(0, 0), NO_CARY, 0, A_NONE, NON_PM, NON_PM, 3000L,
       NO_COLOR),
 
-    A("ÉhÉâÉSÉìÉxÅ[Éì", BROADSWORD, (SPFX_RESTR | SPFX_DCLAS), 0, S_DRAGON,
+    A("„Éâ„É©„Ç¥„É≥„Éô„Éº„É≥", BROADSWORD, (SPFX_RESTR | SPFX_DCLAS), 0, S_DRAGON,
       PHYS(5, 0), NO_DFNS, NO_CARY, 0, A_NONE, NON_PM, NON_PM, 500L,
       NO_COLOR),
 
-    A("ÉfÅ[ÉÇÉìÉxÅ[Éì", LONG_SWORD, (SPFX_RESTR | SPFX_DFLAG2), 0, M2_DEMON,
+    A("„Éá„Éº„É¢„É≥„Éô„Éº„É≥", LONG_SWORD, (SPFX_RESTR | SPFX_DFLAG2), 0, M2_DEMON,
       PHYS(5, 0), NO_DFNS, NO_CARY, 0, A_LAWFUL, NON_PM, NON_PM, 2500L,
       NO_COLOR),
 
-    A("ÉEÉFÉAÉxÅ[Éì", SILVER_SABER, (SPFX_RESTR | SPFX_DFLAG2), 0, M2_WERE,
+    A("„Ç¶„Çß„Ç¢„Éô„Éº„É≥", SILVER_SABER, (SPFX_RESTR | SPFX_DFLAG2), 0, M2_WERE,
       PHYS(5, 0), DFNS(AD_WERE), NO_CARY, 0, A_NONE, NON_PM, NON_PM, 1500L,
       NO_COLOR),
 
-    A("ÉOÉåÉCÉXÉèÉìÉ_Å[", SILVER_SABER, (SPFX_RESTR | SPFX_HALRES), 0, 0,
+    A("„Ç∞„É¨„Ç§„Çπ„ÉØ„É≥„ÉÄ„Éº", SILVER_SABER, (SPFX_RESTR | SPFX_HALRES), 0, 0,
       PHYS(5, 0), NO_DFNS, NO_CARY, 0, A_LAWFUL, NON_PM, NON_PM, 8000L,
       NO_COLOR),
 
-    A("ÉWÉÉÉCÉAÉìÉgÉXÉåÉCÉÑÅ[", LONG_SWORD, (SPFX_RESTR | SPFX_DFLAG2), 0, M2_GIANT,
+    A("„Ç∏„É£„Ç§„Ç¢„É≥„Éà„Çπ„É¨„Ç§„É§„Éº", LONG_SWORD, (SPFX_RESTR | SPFX_DFLAG2), 0, M2_GIANT,
       PHYS(5, 0), NO_DFNS, NO_CARY, 0, A_NEUTRAL, NON_PM, NON_PM, 200L,
       NO_COLOR),
 
-    A("ÉIÅ[ÉKÉXÉ}ÉbÉVÉÉÅ[", WAR_HAMMER, (SPFX_RESTR | SPFX_DCLAS), 0, S_OGRE,
+    A("„Ç™„Éº„Ç¨„Çπ„Éû„ÉÉ„Ç∑„É£„Éº", WAR_HAMMER, (SPFX_RESTR | SPFX_DCLAS), 0, S_OGRE,
       PHYS(5, 0), NO_DFNS, NO_CARY, 0, A_NONE, NON_PM, NON_PM, 200L,
       NO_COLOR),
 
-    A("ÉgÉçÉãÉXÉxÅ[Éì", MORNING_STAR, (SPFX_RESTR | SPFX_DCLAS), 0, S_TROLL,
+    A("„Éà„É≠„É´„Çπ„Éô„Éº„É≥", MORNING_STAR, (SPFX_RESTR | SPFX_DCLAS), 0, S_TROLL,
       PHYS(5, 0), NO_DFNS, NO_CARY, 0, A_NONE, NON_PM, NON_PM, 200L,
       NO_COLOR),
     /*
@@ -140,7 +140,7 @@ STATIC_OVL NEARDATA struct artifact artilist[] = {
      *      2) doesn't give unusual message for 2-headed monsters (but
      *      allowing those at all causes more problems than worth the effort).
      */
-    A("É{Å[ÉpÉãÉuÉåÅ[Éh", LONG_SWORD, (SPFX_RESTR | SPFX_BEHEAD), 0, 0,
+    A("„Éú„Éº„Éë„É´„Éñ„É¨„Éº„Éâ", LONG_SWORD, (SPFX_RESTR | SPFX_BEHEAD), 0, 0,
       PHYS(5, 1), NO_DFNS, NO_CARY, 0, A_NEUTRAL, NON_PM, NON_PM, 4000L,
       NO_COLOR),
     /*
@@ -151,10 +151,10 @@ STATIC_OVL NEARDATA struct artifact artilist[] = {
      *                      --Koko, Lord high executioner of Titipu
      *                        (From Sir W.S. Gilbert's "The Mikado")
      */
-    A("ÉXÉjÉbÉJÅ[ÉYÉjÅ[", KATANA, SPFX_RESTR, 0, 0, PHYS(0, 8), NO_DFNS, NO_CARY,
+    A("„Çπ„Éã„ÉÉ„Ç´„Éº„Ç∫„Éã„Éº", KATANA, SPFX_RESTR, 0, 0, PHYS(0, 8), NO_DFNS, NO_CARY,
       0, A_LAWFUL, PM_SAMURAI, NON_PM, 1200L, NO_COLOR),
 
-    A("ÉTÉìÉ\Å[Éh", LONG_SWORD, (SPFX_RESTR | SPFX_DFLAG2), 0, M2_UNDEAD,
+    A("„Çµ„É≥„ÇΩ„Éº„Éâ", LONG_SWORD, (SPFX_RESTR | SPFX_DFLAG2), 0, M2_UNDEAD,
       PHYS(5, 0), DFNS(AD_BLND), NO_CARY, 0, A_LAWFUL, NON_PM, NON_PM, 1500L,
       NO_COLOR),
 
@@ -162,18 +162,18 @@ STATIC_OVL NEARDATA struct artifact artilist[] = {
      *      The artifacts for the quest dungeon, all self-willed.
      */
 
-    A("íTçıÇÃÉIÅ[Éu", CRYSTAL_BALL,
+    A("Êé¢Á¥¢„ÅÆ„Ç™„Éº„Éñ", CRYSTAL_BALL,
       (SPFX_NOGEN | SPFX_RESTR | SPFX_INTEL), (SPFX_ESP | SPFX_HSPDAM), 0,
       NO_ATTK, NO_DFNS, CARY(AD_MAGM), INVIS, A_LAWFUL, PM_ARCHEOLOGIST,
       NON_PM, 2500L, NO_COLOR),
 
-    A("ÉAÅ[ÉäÉ}ÉìÇÃêSëü", LUCKSTONE,
+    A("„Ç¢„Éº„É™„Éû„É≥„ÅÆÂøÉËáì", LUCKSTONE,
       (SPFX_NOGEN | SPFX_RESTR | SPFX_INTEL), SPFX_STLTH, 0,
       /* this stone does double damage if used as a projectile weapon */
       PHYS(5, 0), NO_DFNS, NO_CARY, LEVITATION, A_NEUTRAL, PM_BARBARIAN,
       NON_PM, 2500L, NO_COLOR),
 
-    A("å†óÕÇÃ‚î", MACE,
+    A("Ê®©Âäõ„ÅÆÁ¨è", MACE,
       (SPFX_NOGEN | SPFX_RESTR | SPFX_INTEL | SPFX_DALIGN), 0, 0, PHYS(5, 0),
       DFNS(AD_MAGM), NO_CARY, CONFLICT, A_LAWFUL, PM_CAVEMAN, NON_PM, 2500L,
       NO_COLOR),
@@ -186,54 +186,54 @@ A("The Palantir of Westernesse",        CRYSTAL_BALL,
         TAMING,         A_CHAOTIC, NON_PM , PM_ELF, 8000L, NO_COLOR ),
 #endif
 
-    A("ÉAÉXÉNÉåÉsÉIÉXÇÃèÒ", QUARTERSTAFF,
+    A("„Ç¢„Çπ„ÇØ„É¨„Éî„Ç™„Çπ„ÅÆÊùñ", QUARTERSTAFF,
       (SPFX_NOGEN | SPFX_RESTR | SPFX_ATTK | SPFX_INTEL | SPFX_DRLI
        | SPFX_REGEN),
       0, 0, DRLI(0, 0), DRLI(0, 0), NO_CARY, HEALING, A_NEUTRAL, PM_HEALER,
       NON_PM, 5000L, NO_COLOR),
 
-    A("É}Å[ÉäÉìÇÃñÇñ@ÇÃãæ", MIRROR,
+    A("„Éû„Éº„É™„É≥„ÅÆÈ≠îÊ≥ï„ÅÆÈè°", MIRROR,
       (SPFX_NOGEN | SPFX_RESTR | SPFX_INTEL | SPFX_SPEAK), SPFX_ESP, 0,
       NO_ATTK, NO_DFNS, CARY(AD_MAGM), 0, A_LAWFUL, PM_KNIGHT, NON_PM, 1500L,
       NO_COLOR),
 
-    A("í¥ê¢äEÇÃñ⁄", LENSES,
+    A("Ë∂Ö‰∏ñÁïå„ÅÆÁõÆ", LENSES,
       (SPFX_NOGEN | SPFX_RESTR | SPFX_INTEL | SPFX_XRAY), 0, 0, NO_ATTK,
       DFNS(AD_MAGM), NO_CARY, ENLIGHTENING, A_NEUTRAL, PM_MONK, NON_PM,
       2500L, NO_COLOR),
 
-    A("êπÇ»ÇÈä•", HELM_OF_BRILLIANCE,
+    A("ËÅñ„Å™„ÇãÂÜ†", HELM_OF_BRILLIANCE,
       (SPFX_NOGEN | SPFX_RESTR | SPFX_DFLAG2 | SPFX_INTEL | SPFX_PROTECT), 0,
       M2_UNDEAD, NO_ATTK, NO_DFNS, CARY(AD_FIRE), ENERGY_BOOST, A_LAWFUL,
       PM_PRIEST, NON_PM, 2000L, NO_COLOR),
 
-    A("É_ÉCÉAÉiÇÃí∑ã|", BOW,
+    A("„ÉÄ„Ç§„Ç¢„Éä„ÅÆÈï∑Âºì", BOW,
       (SPFX_NOGEN | SPFX_RESTR | SPFX_INTEL | SPFX_REFLECT), SPFX_ESP, 0,
       PHYS(5, 0), NO_DFNS, NO_CARY, CREATE_AMMO, A_CHAOTIC, PM_RANGER, NON_PM,
       4000L, NO_COLOR),
 
-    A("ìêëØÇÃÉ}ÉXÉ^Å[ÉLÅ[", SKELETON_KEY,
+    A("ÁõóË≥ä„ÅÆ„Éû„Çπ„Çø„Éº„Ç≠„Éº", SKELETON_KEY,
       (SPFX_NOGEN | SPFX_RESTR | SPFX_INTEL | SPFX_SPEAK),
       (SPFX_WARN | SPFX_TCTRL | SPFX_HPHDAM), 0, NO_ATTK, NO_DFNS, NO_CARY,
       UNTRAP, A_CHAOTIC, PM_ROGUE, NON_PM, 3500L, NO_COLOR),
 
-    A("ë∫ê≥ÇÃìÅ", TSURUGI,
+    A("ÊùëÊ≠£„ÅÆÂàÄ", TSURUGI,
       (SPFX_NOGEN | SPFX_RESTR | SPFX_INTEL | SPFX_BEHEAD | SPFX_LUCK
        | SPFX_PROTECT),
       0, 0, PHYS(0, 8), NO_DFNS, NO_CARY, 0, A_LAWFUL, PM_SAMURAI, NON_PM,
       4500L, NO_COLOR),
 
-    A("ÉvÉâÉ`ÉiÉCÉFÉìÉ_Å[àÛÉGÉNÉXÉvÉåÉXÉJÅ[Éh", CREDIT_CARD,
+    A("„Éó„É©„ÉÅ„Éä„Ç§„Çß„É≥„ÉÄ„ÉºÂç∞„Ç®„ÇØ„Çπ„Éó„É¨„Çπ„Ç´„Éº„Éâ", CREDIT_CARD,
       (SPFX_NOGEN | SPFX_RESTR | SPFX_INTEL | SPFX_DEFN),
       (SPFX_ESP | SPFX_HSPDAM), 0, NO_ATTK, NO_DFNS, CARY(AD_MAGM),
       CHARGE_OBJ, A_NEUTRAL, PM_TOURIST, NON_PM, 7000L, NO_COLOR),
 
-    A("â^ñΩÇÃÉIÅ[Éu", CRYSTAL_BALL,
+    A("ÈÅãÂëΩ„ÅÆ„Ç™„Éº„Éñ", CRYSTAL_BALL,
       (SPFX_NOGEN | SPFX_RESTR | SPFX_INTEL | SPFX_LUCK),
       (SPFX_WARN | SPFX_HSPDAM | SPFX_HPHDAM), 0, NO_ATTK, NO_DFNS, NO_CARY,
       LEV_TELE, A_NEUTRAL, PM_VALKYRIE, NON_PM, 3500L, NO_COLOR),
 
-    A("ÉGÉ`ÉIÉsÉAÇÃñ⁄", AMULET_OF_ESP,
+    A("„Ç®„ÉÅ„Ç™„Éî„Ç¢„ÅÆÁõÆ", AMULET_OF_ESP,
       (SPFX_NOGEN | SPFX_RESTR | SPFX_INTEL), (SPFX_EREGEN | SPFX_HSPDAM), 0,
       NO_ATTK, DFNS(AD_MAGM), NO_CARY, CREATE_PORTAL, A_NEUTRAL, PM_WIZARD,
       NON_PM, 4000L, NO_COLOR),
