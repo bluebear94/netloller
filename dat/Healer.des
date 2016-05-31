@@ -235,7 +235,7 @@ STAIR:(39,10),up
 # Non diggable walls
 NON_DIGGABLE:(00,00,40,11)
 # Objects
-OBJECT:(')',"quarterstaff"),(20,06),blessed,0,name:"ƒAƒXƒNƒŒƒsƒIƒX‚Ìñ"
+OBJECT:(')',"quarterstaff"),(20,06),blessed,0,name:"ã‚¢ã‚¹ã‚¯ãƒ¬ãƒ”ã‚ªã‚¹ã®æ–"
 OBJECT:('/',"lightning"),(20,06)
 OBJECT:random,random
 OBJECT:random,random

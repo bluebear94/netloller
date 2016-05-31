@@ -11,9 +11,9 @@
 
 MAZE:"earth",' '
 FLAGS: noteleport,hardfloor,shortsighted
-MESSAGE: "‚æ‚­‚â‚Á‚½C’è–½‚ÌÒ‚æI"
-MESSAGE: "‚µ‚©‚µC“ğ‚ÍÅŒã‚Ì—û‚É’¼–Ê‚µ‚Ä‚¢‚éDDD"
-MESSAGE: "“ğ©g‰¿’l‚ ‚é‚à‚Ì‚©”Û‚©‚ğ¦‚¹I"
+MESSAGE: "ã‚ˆãã‚„ã£ãŸï¼Œå®šå‘½ã®è€…ã‚ˆï¼"
+MESSAGE: "ã—ã‹ã—ï¼Œæ±ã¯æœ€å¾Œã®è©¦ç·´ã«ç›´é¢ã—ã¦ã„ã‚‹ï¼ï¼ï¼"
+MESSAGE: "æ±è‡ªèº«ä¾¡å€¤ã‚ã‚‹ã‚‚ã®ã‹å¦ã‹ã‚’ç¤ºã›ï¼"
 
 GEOMETRY:center,center
 # The player lands, upon arrival, in the
@@ -131,8 +131,8 @@ MAZE:"air",' '
 FLAGS: noteleport,hardfloor,shortsighted
 # The following messages are somewhat obtuse, to make then
 # equally meaningful if the player can see or not.
-MESSAGE: "‚È‚ñ‚ÆŠï–­‚ÈŠ´Šo‚¾I"
-MESSAGE: "‚ ‚È‚½‚Í‚±‚±‚É‚Íd—Í‚ª‚È‚¢‚±‚Æ‚É‹C‚ª‚Â‚¢‚½D"
+MESSAGE: "ãªã‚“ã¨å¥‡å¦™ãªæ„Ÿè¦šã ï¼"
+MESSAGE: "ã‚ãªãŸã¯ã“ã“ã«ã¯é‡åŠ›ãŒãªã„ã“ã¨ã«æ°—ãŒã¤ã„ãŸï¼"
 GEOMETRY:center,center
 # The player lands, upon arrival, in the
 # lower-left area.  The location of the
@@ -381,7 +381,7 @@ OBJECT:('`',"boulder"),random
 
 MAZE:"water",' '
 FLAGS: noteleport,hardfloor,shortsighted
-MESSAGE: "‚ ‚È‚½‚Í©•ª‚ª…’†‚Ì‹ó‹C‚Ì–A‚Ì‚È‚©‚É•‚—V‚µ‚Ä‚¢‚é‚±‚Æ‚É‹C‚Ã‚¢‚½D"
+MESSAGE: "ã‚ãªãŸã¯è‡ªåˆ†ãŒæ°´ä¸­ã®ç©ºæ°—ã®æ³¡ã®ãªã‹ã«æµ®éŠã—ã¦ã„ã‚‹ã“ã¨ã«æ°—ã¥ã„ãŸï¼"
 GEOMETRY:center,center
 # The player lands upon arrival to an air bubble
 # within the leftmost third of the level.  The
@@ -478,9 +478,9 @@ MONSTER:('E',"water elemental"),random,hostile
 
 MAZE:"astral",' '
 FLAGS: noteleport,hardfloor,nommap,shortsighted,solidify
-MESSAGE: "‚ ‚È‚½‚Í¸—ìŠE‚É“’…‚µ‚½I"
-MESSAGE: "‚±‚±‚É‚Í‚ ‚È‚½‚Ì_‚Ì‘å_“a‚ª‚ ‚éD"
-MESSAGE: "‚ ‚È‚½‚ÍŠëŒ¯‚ğŠ´‚¶C‹»•±‚µ‚½I"
+MESSAGE: "ã‚ãªãŸã¯ç²¾éœŠç•Œã«åˆ°ç€ã—ãŸï¼"
+MESSAGE: "ã“ã“ã«ã¯ã‚ãªãŸã®ç¥ã®å¤§ç¥æ®¿ãŒã‚ã‚‹ï¼"
+MESSAGE: "ã‚ãªãŸã¯å±é™ºã‚’æ„Ÿã˜ï¼Œèˆˆå¥®ã—ãŸï¼"
 GEOMETRY:center,center
 MAP
                               ---------------                              

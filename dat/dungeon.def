@@ -14,22 +14,22 @@
 #		number of choices for its branch level _first_.
 #
 
-DUNGEON:	"‰^–½‚Ì‘å–À‹{" "D" (25, 5)
+DUNGEON:	"é‹å‘½ã®å¤§è¿·å®®" "D" (25, 5)
 ALIGNMENT:	unaligned
-BRANCH:		"ƒm[ƒ€‚ÌzR" @ (2, 3)
+BRANCH:		"ãƒãƒ¼ãƒ ã®é‰±å±±" @ (2, 3)
 LEVEL:		"rogue" "R" @ (15, 4)
 LEVELDESC:	roguelike
 LEVEL:		"oracle" "O" @ (5, 5)
 LEVALIGN:	neutral
-CHAINBRANCH:	"‘qŒÉ”Ô" "oracle" + (1, 0) up
+CHAINBRANCH:	"å€‰åº«ç•ª" "oracle" + (1, 0) up
 RNDLEVEL:	"bigrm" "B" @ (10, 3) 40 10
-CHAINBRANCH:	"ƒNƒGƒXƒg" "oracle" + (6, 2) portal
-BRANCH:		"ƒ[ƒfƒBƒIƒXÔ" @ (18, 4) portal
+CHAINBRANCH:	"ã‚¯ã‚¨ã‚¹ãƒˆ" "oracle" + (6, 2) portal
+BRANCH:		"ãƒ­ãƒ¼ãƒ‡ã‚£ã‚ªã‚¹ç ¦" @ (18, 4) portal
 RNDLEVEL:	"medusa" "none" @ (-5, 4) 4
 LEVALIGN:	chaotic
 LEVEL:		"castle" "none" @ (-1, 0)
-CHAINBRANCH:	"ƒQƒwƒi" "castle" + (0, 0) no_down
-BRANCH:		"¸—ìŠE" @ (1, 0) no_down up
+CHAINBRANCH:	"ã‚²ãƒ˜ãƒŠ" "castle" + (0, 0) no_down
+BRANCH:		"ç²¾éœŠç•Œ" @ (1, 0) no_down up
 
 #
 #	Gehennom
@@ -48,11 +48,11 @@ BRANCH:		"¸—ìŠE" @ (1, 0) no_down up
 #		monsters can properly migrate here under certain
 #		circumstances.
 #
-DUNGEON:	"ƒQƒwƒi" "G" (20, 5)
+DUNGEON:	"ã‚²ãƒ˜ãƒŠ" "G" (20, 5)
 DESCRIPTION:	mazelike
 DESCRIPTION:	hellish
 ALIGNMENT:	noalign
-BRANCH:		"ƒ”ƒ‰ƒhŒò‚Ì“ƒ" @ (9, 5) up
+BRANCH:		"ãƒ´ãƒ©ãƒ‰ä¾¯ã®å¡”" @ (9, 5) up
 LEVEL:		"valley" "V" @ (1, 0)
 LEVEL:		"sanctum" "none" @ (-1, 0)
 LEVEL:		"juiblex" "J" @ (4, 4)
@@ -68,7 +68,7 @@ LEVEL:		"fakewiz2" "G" @ (-6,4)
 #
 #	The Mines of the Gnomes of Zurich.
 #
-DUNGEON:	"ƒm[ƒ€‚ÌzR" "M" (8, 2)
+DUNGEON:	"ãƒãƒ¼ãƒ ã®é‰±å±±" "M" (8, 2)
 ALIGNMENT:	lawful
 DESCRIPTION:	mazelike
 RNDLEVEL:	"minetn" "T" @ (3, 2) 7
@@ -83,7 +83,7 @@ RNDLEVEL:	"minend" "E" @ (-1, 0) 3
 #	A special "x-fill" level must be defined in the levels description
 #	file.  It will be used for all levels not defined explicitly below.
 #
-DUNGEON:	"ƒNƒGƒXƒg" "Q" (5, 2)
+DUNGEON:	"ã‚¯ã‚¨ã‚¹ãƒˆ" "Q" (5, 2)
 LEVEL:	"x-strt" "none" @ (1, 1)
 LEVEL:	"x-loca" "L" @ (3, 1)
 LEVEL:	"x-goal" "none" @ (-1, 0)
@@ -91,7 +91,7 @@ LEVEL:	"x-goal" "none" @ (-1, 0)
 #
 # Sokoban
 #
-DUNGEON:		"‘qŒÉ”Ô" "none" (4, 0)
+DUNGEON:		"å€‰åº«ç•ª" "none" (4, 0)
 DESCRIPTION:    mazelike
 ALIGNMENT:      neutral
 ENTRY:          -1
@@ -103,7 +103,7 @@ RNDLEVEL:		"soko4" "none" @ (4, 0) 2
 #
 #	The Central Vault of Croesus.
 #
-DUNGEON:	"ƒ[ƒfƒBƒIƒXÔ" "K" (1, 0)
+DUNGEON:	"ãƒ­ãƒ¼ãƒ‡ã‚£ã‚ªã‚¹ç ¦" "K" (1, 0)
 DESCRIPTION:	mazelike
 ALIGNMENT:	unaligned
 LEVEL:		"knox" "K" @ (-1, 0)
@@ -113,7 +113,7 @@ LEVEL:		"knox" "K" @ (-1, 0)
 #	It has been removed from Gehennom, and it is surrounded by stone.
 #	Must not allow bones files for its top level.
 #
-DUNGEON:	"ƒ”ƒ‰ƒhŒò‚Ì“ƒ" "T" (3, 0)
+DUNGEON:	"ãƒ´ãƒ©ãƒ‰ä¾¯ã®å¡”" "T" (3, 0)
 PROTOFILE:	"tower"
 DESCRIPTION:	mazelike
 ALIGNMENT:	chaotic
@@ -127,7 +127,7 @@ LEVEL:		"tower1" "none" @ (1, 0)
 #	placeholder for surface level, and should be unreachable.
 #	[Note: the name "dummy" is checked for in init_dungeons().]
 #
-DUNGEON:	"¸—ìŠE" "E" (6, 0)
+DUNGEON:	"ç²¾éœŠç•Œ" "E" (6, 0)
 DESCRIPTION:	mazelike
 ALIGNMENT:	unaligned
 ENTRY:		-2

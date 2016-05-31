@@ -54,3 +54,5 @@ Makefile.gcc-orig
 
 # lev files
 *.lev
+
+src/jnethack
