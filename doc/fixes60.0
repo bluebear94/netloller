@@ -1,0 +1,14 @@
+-- In Development. --
+
+General Fixes and Modified Features
+-----------------------------------
+The golden glow needs higher luck to be triggered.
+The golden glow raises your maximum hitpoints by only 4 when not crowned;
+  when you are crowned it can give up to 15 (averaging to 9.5).
+
+General New Features
+--------------------
+T-shirts are more interesting, with multiple colors and multiple types of
+  inscriptions (text, image, or none at all).
+  (Note to self: there is a hard limit of 256 messages of either type, and
+  a hard limit of 64 colors)

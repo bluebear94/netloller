@@ -967,7 +967,7 @@ boolean artif;
                 otmp->oerodeproof = otmp->rknown = 1;
 #endif
             }
-            if (otmp->otyp = T_SHIRT) {
+            if (otmp->otyp == T_SHIRT) {
               /*
               I hope no one wants to implement a corpse that
               doubles as a T-shirt. That would be...
