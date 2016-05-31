@@ -3,6 +3,7 @@
 /* NetHack may be freely redistributed.  See license for details. */
 
 #include "hack.h"
+#include "tshirt.h"
 
 STATIC_DCL void FDECL(mkbox_cnts, (struct obj *));
 STATIC_DCL void FDECL(maybe_adjust_light, (struct obj *, int));
@@ -965,6 +966,47 @@ boolean artif;
 #else
                 otmp->oerodeproof = otmp->rknown = 1;
 #endif
+            }
+            if (otmp->otyp = T_SHIRT) {
+              /*
+              I hope no one wants to implement a corpse that
+              doubles as a T-shirt. That would be...
+              Color | Blank |  Text | Image
+              White |  10 % |  50 % |  40 %
+              Other |  50 % |  20 % |  30 %
+              */
+              int color = rn2(2) * rn2(SIZE(tshirt_colors));
+              int roll = rn2(10);
+              int type = TS_BLANK;
+              if (color == 0) {
+                switch (roll) {
+                case 0: break;
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                case 5:
+                  type = TS_MESSAGE;
+                  break;
+                default:
+                  type = TS_PICTURE;
+                }
+              } else {
+                switch (roll) {
+                case 5:
+                case 6:
+                  type = TS_MESSAGE;
+                  break;
+                case 7:
+                case 8:
+                case 9:
+                  type = TS_PICTURE;
+                } /* otherwise leave it blank */
+              }
+              int flavor = (color << 10) | (type << 8);
+              if (type == TS_MESSAGE) flavor |= rn2(SIZE(shirt_msgs));
+              else if (type == TS_PICTURE) flavor |= rn2(SIZE(tshirt_images));
+              otmp->corpsenm = flavor;
             }
             break;
         case WAND_CLASS:

@@ -364,6 +364,12 @@ unsigned cxn_flags; /* bitmask of CXN_xxx values */
             Strcpy(buf, "smooth shield");
             break;
         }
+        if (obj->otyp == T_SHIRT) {
+            if (tshirt_type(obj) == TS_BLANK)
+              Strcat(buf, "blank ");
+            Strcat(buf, tshirt_color_string(obj));
+            Strcat(buf, " ");
+        }
 
         if (nn)
             Strcat(buf, actualn);
@@ -558,9 +564,14 @@ unsigned cxn_flags; /* bitmask of CXN_xxx values */
         Strcpy(buf, makeplural(buf));
 
     if (obj->otyp == T_SHIRT && program_state.gameover) {
-        char tmpbuf[BUFSZ];
-
-        Sprintf(eos(buf), " with text \"%s\"", tshirt_text(obj, tmpbuf));
+        int type = tshirt_type(obj);
+        if (type == TS_MESSAGE) {
+          char tmpbuf[BUFSZ];
+          Sprintf(eos(buf), " with text \"%s\"", tshirt_text(obj, tmpbuf));
+        }
+        else if (type == TS_PICTURE) {
+          Sprintf(eos(buf), " with %s", tshirt_image(obj));
+        }
     }
 
     if (has_oname(obj) && dknown) {

@@ -1930,6 +1930,10 @@ E long NDECL(random);
 /* ### read.c ### */
 
 E void FDECL(learnscroll, (struct obj *));
+E int FDECL(tshirt_type, (struct obj *));
+E int FDECL(tshirt_color, (struct obj *));
+E const char *FDECL(tshirt_color_string, (struct obj *));
+E const char *FDECL(tshirt_image, (struct obj *));
 E char *FDECL(tshirt_text, (struct obj *, char *));
 E int NDECL(doread);
 E boolean FDECL(is_chargeable, (struct obj *));

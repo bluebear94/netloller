@@ -363,6 +363,12 @@ NEARDATA extern coord bhitpos; /* place where throw or zap hits or stops */
 #define RANDOM_TIN (-2)
 #define HEALTHY_TIN (-3)
 
+/* tshirt types */
+#define NUM_FC_MESSAGES 5
+#define TS_MESSAGE 0
+#define TS_PICTURE 1
+#define TS_BLANK 2
+
 /* Some misc definitions */
 #define POTION_OCCUPANT_CHANCE(n) (13 + 2 * (n))
 #define WAND_BACKFIRE_CHANCE 100

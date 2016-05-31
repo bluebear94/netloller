@@ -67,83 +67,55 @@ char *buf;
     return buf;
 }
 
+#include "tshirt.h"
+
+/*
+o_id laid out as such:
+we can assume there are at least 16 bits, so:
+6 most significant go to color
+next 2:
+- 00 - message
+- 01 - picture
+- 10 - blank
+8 least significant:
+message or pic id
+*/
+int
+tshirt_type(tshirt)
+struct obj *tshirt;
+{
+  return (tshirt->corpsenm >> 8) & 3;
+}
+int
+tshirt_color(tshirt)
+struct obj *tshirt;
+{
+  if (tshirt_type(tshirt) == TS_MESSAGE) {
+    int id = tshirt->corpsenm & 0xFF;
+    if (id < NUM_FC_MESSAGES) return fc_colors[id];
+  }
+  return tshirt->corpsenm >> 10;
+}
+const char *
+tshirt_color_string(tshirt)
+struct obj *tshirt;
+{
+  /* chert chert */
+  return tshirt_colors[tshirt_color(tshirt) % SIZE(tshirt_colors)];
+}
 char *
 tshirt_text(tshirt, buf)
 struct obj *tshirt;
 char *buf;
 {
-    static const char *shirt_msgs[] = {
-        /* Scott Bigham */
-      "I explored the Dungeons of Doom and all I got was this lousy T-shirt!",
-        "Is that Mjollnir in your pocket or are you just happy to see me?",
-      "It's not the size of your sword, it's how #enhance'd you are with it.",
-        "Madame Elvira's House O' Succubi Lifetime Customer",
-        "Madame Elvira's House O' Succubi Employee of the Month",
-        "Ludios Vault Guards Do It In Small, Dark Rooms",
-        "Yendor Military Soldiers Do It In Large Groups",
-        "I survived Yendor Military Boot Camp",
-        "Ludios Accounting School Intra-Mural Lacrosse Team",
-        "Oracle(TM) Fountains 10th Annual Wet T-Shirt Contest",
-        "Hey, black dragon!  Disintegrate THIS!",
-        "I'm With Stupid -->",
-        "Don't blame me, I voted for Izchak!",
-        "Don't Panic", /* HHGTTG */
-        "Furinkan High School Athletic Dept.",                /* Ranma 1/2 */
-        "Hel-LOOO, Nurse!",                                   /* Animaniacs */
-        "=^.^=",
-        "100% goblin hair - do not wash",
-        "Aberzombie and Fitch",
-        "cK -- Cockatrice touches the Kop",
-        "Don't ask me, I only adventure here",
-        "Down with pants!",
-        "d, your dog or a killer?",
-        "FREE PUG AND NEWT!",
-        "Go team ant!",
-        "Got newt?",
-        "Hello, my darlings!", /* Charlie Drake */
-        "Hey! Nymphs! Steal This T-Shirt!",
-        "I <3 Dungeon of Doom",
-        "I <3 Maud",
-        "I am a Valkyrie. If you see me running, try to keep up.",
-        "I am not a pack rat - I am a collector",
-        "I bounced off a rubber tree",         /* Monkey Island */
-        "Plunder Island Brimstone Beach Club", /* Monkey Island */
-        "If you can read this, I can hit you with my polearm",
-        "I'm confused!",
-        "I scored with the princess",
-        "I want to live forever or die in the attempt.",
-        "Lichen Park",
-        "LOST IN THOUGHT - please send search party",
-        "Meat is Mordor",
-        "Minetown Better Business Bureau",
-        "Minetown Watch",
- "Ms. Palm's House of Negotiable Affection -- A Very Reputable House Of Disrepute",
-        "Protection Racketeer",
-        "Real men love Crom",
-        "Somebody stole my Mojo!",
-        "The Hellhound Gang",
-        "The Werewolves",
-        "They Might Be Storm Giants",
-        "Weapons don't kill people, I kill people",
-        "White Zombie",
-        "You're killing me!",
-        "Anhur State University - Home of the Fighting Fire Ants!",
-        "FREE HUGS",
-        "Serial Ascender",
-        "Real men are valkyries",
-        "Young Men's Cavedigging Association",
-        "Occupy Fort Ludios",
-        "I couldn't afford this T-shirt so I stole it!",
-        "Mind flayers suck",
-        "I'm not wearing any pants",
-        "Down with the living!",
-        "Pudding farmer",
-        "Vegetarian",
-        "Hello, I'm War!",
-    };
-
-    Strcpy(buf, shirt_msgs[tshirt->o_id % SIZE(shirt_msgs)]);
+    Strcpy(buf, shirt_msgs[(tshirt->corpsenm & 0xFF) % SIZE(shirt_msgs)]);
     return erode_obj_text(tshirt, buf);
+}
+const char *
+tshirt_image(tshirt)
+struct obj *tshirt;
+{
+  return tshirt_images[(tshirt->corpsenm & 0xFF) % SIZE(tshirt_images)];
 }
 
 char *
@@ -202,11 +174,20 @@ doread()
                   suit_simple_name(uarm));
             return 0;
         }
-        u.uconduct.literate++;
-        if (flags.verbose)
-            pline("It reads:");
-        pline("\"%s\"", (scroll->otyp == T_SHIRT) ? tshirt_text(scroll, buf)
-                                                  : apron_text(scroll, buf));
+        switch (tshirt_type(scroll)) {
+        case TS_MESSAGE:
+          u.uconduct.literate++;
+          if (flags.verbose)
+              pline("It reads:");
+          pline("\"%s\"", (scroll->otyp == T_SHIRT) ? tshirt_text(scroll, buf)
+                                                    : apron_text(scroll, buf));
+          break;
+        case TS_PICTURE:
+          You("see on this shirt %s.", tshirt_image(scroll));
+          break;
+        case TS_BLANK:
+          pline("This shirt is blank.");
+        }
         return 1;
     } else if (scroll->otyp == CREDIT_CARD) {
         static const char *card_msgs[] = {
