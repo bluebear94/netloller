@@ -5,7 +5,7 @@
 /*
 **	Japanese version Copyright
 **	For 3.4+, Copyright (c) Kentaro Shirakata, 2002-2015
-**	JNetHack may be freely redistributed.  See license for details. 
+**	JNetHack may be freely redistributed.  See license for details.
 */
 
 #include "hack.h"
@@ -338,7 +338,7 @@ tty_get_ext_cmd()
 /*JP
         pline("%s: unknown extended command.", buf);
 */
-	pline("%s:拡張コマンドエラー", buf);
+	pline("%s:諡｡蠑ｵ繧ｳ繝槭Φ繝峨お繝ｩ繝ｼ", buf);
         i = -1;
     }
 

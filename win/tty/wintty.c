@@ -5,7 +5,7 @@
 /*
 **	Japanese version (by Issei Numata)
 **	For 3.4, Copyright (c) Kentaro Shirakata, 2002-2003
-**	JNetHack may be freely redistributed.  See license for details. 
+**	JNetHack may be freely redistributed.  See license for details.
 */
 
 /*
@@ -769,7 +769,7 @@ makepicks:
 /*JP
             Sprintf(plbuf, " %s", genders[GEND].adj);
 */
-            Sprintf(plbuf, "%s‚Ì", genders[GEND].adj);
+            Sprintf(plbuf, "%sã®", genders[GEND].adj);
         else
             *plbuf = '\0'; /* omit redundant gender */
 #if 0 /*JP*/
@@ -793,32 +793,32 @@ makepicks:
 /*JP
         add_menu(win, NO_GLYPH, &any, 'y', 0, ATR_NONE, "Yes; start game",
 */
-        add_menu(win, NO_GLYPH, &any, 'y', 0, ATR_NONE, "‚Í‚¢; ƒQ[ƒ€‚ðŽn‚ß‚é",
+        add_menu(win, NO_GLYPH, &any, 'y', 0, ATR_NONE, "ã¯ã„; ã‚²ãƒ¼ãƒ ã‚’å§‹ã‚ã‚‹",
                  MENU_SELECTED);
         any.a_int = 2;
         add_menu(win, NO_GLYPH, &any, 'n', 0, ATR_NONE,
 /*JP
                  "No; choose role again", MENU_UNSELECTED);
 */
-                 "‚¢‚¢‚¦; E‹Æ‚ð‘I‚Ñ’¼‚·", MENU_UNSELECTED);
+                 "ã„ã„ãˆ; è·æ¥­ã‚’é¸ã³ç›´ã™", MENU_UNSELECTED);
         if (iflags.renameallowed) {
             any.a_int = 3;
             add_menu(win, NO_GLYPH, &any, 'a', 0, ATR_NONE,
 /*JP
                      "Not yet; choose another name", MENU_UNSELECTED);
 */
-                     "‚Ü‚¾; –¼‘O‚ð•Ï‚¦‚é", MENU_UNSELECTED);
+                     "ã¾ã ; åå‰ã‚’å¤‰ãˆã‚‹", MENU_UNSELECTED);
         }
         any.a_int = -1;
 /*JP
         add_menu(win, NO_GLYPH, &any, 'q', 0, ATR_NONE, "Quit",
 */
-        add_menu(win, NO_GLYPH, &any, 'q', 0, ATR_NONE, "”²‚¯‚é",
+        add_menu(win, NO_GLYPH, &any, 'q', 0, ATR_NONE, "æŠœã‘ã‚‹",
                  MENU_UNSELECTED);
 /*JP
         Sprintf(pbuf, "Is this ok? [yn%sq]", iflags.renameallowed ? "a" : "");
 */
-        Sprintf(pbuf, "‚±‚ê‚Å‚æ‚¢H [yn%sq]", iflags.renameallowed ? "a" : "");
+        Sprintf(pbuf, "ã“ã‚Œã§ã‚ˆã„ï¼Ÿ [yn%sq]", iflags.renameallowed ? "a" : "");
         end_menu(win, pbuf);
         n = select_menu(win, PICK_ONE, &selected);
         /* [pick-one menus with a preselected entry behave oddly...] */
@@ -1094,7 +1094,7 @@ tty_askname()
 /*JP
     static const char who_are_you[] = "Who are you? ";
 */
-    static const char who_are_you[] = "‚ ‚È‚½‚Í’NH ";
+    static const char who_are_you[] = "ã‚ãªãŸã¯èª°ï¼Ÿ ";
     register int c, ct, tryct = 0;
 #if 1 /*JP*/
     char ptmpname[PL_NSIZ];
@@ -1122,7 +1122,7 @@ tty_askname()
 /*JP
             tty_putstr(BASE_WINDOW, 0, "Enter a name for your character...");
 */
-	    tty_putstr(BASE_WINDOW, 0, "‚ ‚È‚½‚ÌƒLƒƒƒ‰ƒNƒ^‚Ì–¼‘O‚ÍH");
+	    tty_putstr(BASE_WINDOW, 0, "ã‚ãªãŸã®ã‚­ãƒ£ãƒ©ã‚¯ã‚¿ã®åå‰ã¯ï¼Ÿ");
             /* erase previous prompt (in case of ESC after partial response)
              */
             tty_curs(BASE_WINDOW, 1, wins[BASE_WINDOW]->cury), cl_end();
