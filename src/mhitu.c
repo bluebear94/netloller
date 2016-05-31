@@ -1951,8 +1951,9 @@ boolean ufound;
         case AD_ELEC:
             physical_damage = FALSE;
             not_affected |= Shock_resistance;
+            goto common;
+        case AD_PHYS:
         common:
-
             if (!not_affected) {
                 if (ACURR(A_DEX) > rnd(20)) {
                     You("duck some of the blast.");

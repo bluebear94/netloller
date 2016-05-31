@@ -442,6 +442,15 @@ NEARDATA struct permonst mons[] = {
         M2_DWARF | M2_STRONG | M2_PRINCE | M2_MALE | M2_GREEDY | M2_JEWELS
             | M2_COLLECT,
         M3_INFRAVISIBLE | M3_INFRAVISION, HI_LORD),
+    /* We consider creepers animals so they don't have arms, but show them
+      as humanoids because they're kinda upright. */
+    MON("creeper", S_HUMANOID, LVL(8, 9, 5, 10, 6), (G_NOCORPSE | G_GENO | 1),
+        A(ATTK(AT_EXPL, AD_PHYS, 5, 12), NO_ATTK, NO_ATTK, NO_ATTK, NO_ATTK,
+          NO_ATTK),
+        SIZ(10, 10, MS_HISS, MZ_SMALL), 0, 0,
+        M1_ANIMAL,
+        M2_HOSTILE | M2_NEUTER,
+        M3_INFRAVISIBLE | M3_INFRAVISION, CLR_GREEN),
     MON("mind flayer", S_HUMANOID, LVL(9, 12, 5, 90, -8), (G_GENO | 1),
         A(ATTK(AT_WEAP, AD_PHYS, 1, 4), ATTK(AT_TENT, AD_DRIN, 2, 1),
           ATTK(AT_TENT, AD_DRIN, 2, 1), ATTK(AT_TENT, AD_DRIN, 2, 1), NO_ATTK,

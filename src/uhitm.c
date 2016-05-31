@@ -1818,6 +1818,9 @@ register struct attack *mattk;
         goto common;
     case AD_ELEC:
         resistance = resists_elec(mdef);
+        goto common;
+    case AD_PHYS:
+        resistance = 0;
     common:
         if (!resistance) {
             pline("%s gets blasted!", Monnam(mdef));
