@@ -27,9 +27,9 @@ dgn_comp.txt    dlb.6           dlb.txt         fixes22.0       fixes30.0
 fixes31.1       fixes31.2       fixes31.3       fixes32.0       fixes32.1
 fixes32.2       fixes32.3       fixes33.0       fixes33.1       fixes34.0
 fixes34.1       fixes34.2       fixes34.3       fixes35.0       fixes36.0
-fixes36.1       lev_comp.6      lev_comp.txt    makedefs.6      makedefs.txt
-nethack.6       nethack.txt     recover.6       recover.txt     tmac.n
-window.doc
+fixes36.1       fixes60.0       lev_comp.6      lev_comp.txt    makedefs.6
+makedefs.txt    nethack.6       nethack.txt     recover.6       recover.txt
+tmac.n          window.doc
 
 include:
 (files for all versions)
@@ -45,8 +45,9 @@ os2conf.h       patchlevel.h    pcconf.h        permonst.h      prop.h
 qtext.h         quest.h         rect.h          region.h        rm.h
 skills.h        sp_lev.h        spell.h         sys.h           system.h
 tcap.h          timeout.h       tosconf.h       tradstdc.h      trampoli.h
-trap.h          unixconf.h      vision.h        vmsconf.h       wceconf.h
-winami.h        winprocs.h      wintype.h       you.h           youprop.h
+trap.h          tshirt.h        unixconf.h      vision.h        vmsconf.h
+wceconf.h       winami.h        winprocs.h      wintype.h       you.h
+youprop.h
 (file for tty versions)
 wintty.h
 (files for X versions)
@@ -376,7 +377,7 @@ uudecode.exe
 
 DEVEL:
 (files for people developing changes to NetHack)
-code_features.txt   code_style.txt  Developer.txt   git_recipes.txt 
+code_features.txt   code_style.txt  Developer.txt   git_recipes.txt
 nhgitset.pl
 
 DEVEL/DOTGIT:
