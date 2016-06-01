@@ -101,7 +101,7 @@ tshirt_color_string(tshirt)
 struct obj *tshirt;
 {
   /* chert chert */
-  return tshirt_colors[tshirt_color(tshirt) % SIZE(tshirt_colors)];
+  return hcolor(tshirt_colors[tshirt_color(tshirt) % SIZE(tshirt_colors)]);
 }
 char *
 tshirt_text(tshirt, buf)
