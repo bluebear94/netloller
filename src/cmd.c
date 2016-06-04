@@ -183,6 +183,7 @@ static const char *readchar_queue = "";
 static coord clicklook_cc;
 
 STATIC_DCL char *NDECL(parse);
+STATIC_DCL void FDECL(show_direction_keys, (winid, boolean));
 STATIC_DCL boolean FDECL(help_dir, (CHAR_P, const char *));
 
 STATIC_PTR int
@@ -3385,12 +3386,12 @@ boolean initial;
             ++updated;
             /* phone_layout has been toggled */
             for (i = 0; i < 3; i++) {
-                c = '1' + i;                           /* 1,2,3 <-> 7,8,9 */
+                c = '1' + i;             /* 1,2,3 <-> 7,8,9 */
                 cmdtmp = Cmd.commands[c];              /* tmp = [1] */
                 Cmd.commands[c] = Cmd.commands[c + 6]; /* [1] = [7] */
                 Cmd.commands[c + 6] = cmdtmp;          /* [7] = tmp */
-                c = (M('1') & 0xff) + i;  /* M-1,M-2,M-3 <-> M-7,M-8,M-9 */
-                cmdtmp = Cmd.commands[c]; /* tmp = [M-1] */
+                c = (M('1') & 0xff) + i; /* M-1,M-2,M-3 <-> M-7,M-8,M-9 */
+                cmdtmp = Cmd.commands[c];              /* tmp = [M-1] */
                 Cmd.commands[c] = Cmd.commands[c + 6]; /* [M-1] = [M-7] */
                 Cmd.commands[c + 6] = cmdtmp;          /* [M-7] = tmp */
             }
@@ -3790,6 +3791,37 @@ retry:
     return 1;
 }
 
+STATIC_OVL void
+show_direction_keys(win, nodiag)
+winid win;
+boolean nodiag;
+{
+    char buf[BUFSZ];
+
+    if (nodiag) {
+        Sprintf(buf, "             %c   ", Cmd.move_N);
+        putstr(win, 0, buf);
+        putstr(win, 0, "             |   ");
+        Sprintf(buf, "          %c- . -%c", Cmd.move_W, Cmd.move_E);
+        putstr(win, 0, buf);
+        putstr(win, 0, "             |   ");
+        Sprintf(buf, "             %c   ", Cmd.move_S);
+        putstr(win, 0, buf);
+    } else {
+        Sprintf(buf, "          %c  %c  %c", Cmd.move_NW, Cmd.move_N,
+                Cmd.move_NE);
+        putstr(win, 0, buf);
+        putstr(win, 0, "           \\ | / ");
+        Sprintf(buf, "          %c- . -%c", Cmd.move_W, Cmd.move_E);
+        putstr(win, 0, buf);
+        putstr(win, 0, "           / | \\ ");
+        Sprintf(buf, "          %c  %c  %c", Cmd.move_SW, Cmd.move_S,
+                Cmd.move_SE);
+        putstr(win, 0, buf);
+    };
+}
+
+
 STATIC_OVL boolean
 help_dir(sym, msg)
 char sym;
@@ -3828,29 +3860,12 @@ const char *msg;
             putstr(win, 0, "");
         }
     }
-    if (NODIAG(u.umonnum)) {
-        putstr(win, 0, "Valid direction keys in your current form are:");
-        Sprintf(buf, "             %c   ", Cmd.move_N);
-        putstr(win, 0, buf);
-        putstr(win, 0, "             |   ");
-        Sprintf(buf, "          %c- . -%c", Cmd.move_W, Cmd.move_E);
-        putstr(win, 0, buf);
-        putstr(win, 0, "             |   ");
-        Sprintf(buf, "             %c   ", Cmd.move_S);
-        putstr(win, 0, buf);
-    } else {
-        putstr(win, 0, "Valid direction keys are:");
-        Sprintf(buf, "          %c  %c  %c", Cmd.move_NW, Cmd.move_N,
-                Cmd.move_NE);
-        putstr(win, 0, buf);
-        putstr(win, 0, "           \\ | / ");
-        Sprintf(buf, "          %c- . -%c", Cmd.move_W, Cmd.move_E);
-        putstr(win, 0, buf);
-        putstr(win, 0, "           / | \\ ");
-        Sprintf(buf, "          %c  %c  %c", Cmd.move_SW, Cmd.move_S,
-                Cmd.move_SE);
-        putstr(win, 0, buf);
-    };
+
+    Sprintf(buf, "Valid direction keys %sare:",
+            NODIAG(u.umonnum) ? "in your current form " : "");
+    putstr(win, 0, buf);
+    show_direction_keys(win, NODIAG(u.umonnum));
+
     putstr(win, 0, "");
     putstr(win, 0, "          <  up");
     putstr(win, 0, "          >  down");
