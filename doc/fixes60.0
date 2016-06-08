@@ -8,6 +8,8 @@ The golden glow raises your maximum hitpoints by only 4 when not crowned;
 Add a few more hallucinatory liquids.
 Alignment record has a lower bound of -70 and an upper bound of +30.
 Alignment record increases much more slowly from killing monsters.
+When offering the Amulet of Yendor to Moloch while hallucinating, a somewhat
+different message is displayed.
 
 General New Features
 --------------------

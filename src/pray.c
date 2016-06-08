@@ -1471,14 +1471,22 @@ dosacrifice()
                 if (u.ualign.record > -99)
                     u.ualign.record = -99;
                 /*[apparently shrug/snarl can be sensed without being seen]*/
-                pline("%s shrugs and retains dominion over %s,", Moloch,
-                      u_gname());
-                pline("then mercilessly snuffs out your life.");
+                if (Hallucination) {
+                    You("hear a slap, followed by a booming cry of pain from %s!", u_gname());
+                    pline("%s hugs you like a teddy bear.", Moloch);
+                    You("find it hard to breathe.");
+                }
+                else {
+                    pline("%s shrugs and retains dominion over %s,", Moloch,
+                        u_gname());
+                    pline("then mercilessly snuffs out your life.");
+                }
                 Sprintf(killer.name, "%s indifference", s_suffix(Moloch));
                 killer.format = KILLED_BY;
                 done(DIED);
                 /* life-saved (or declined to die in wizard/explore mode) */
-                pline("%s snarls and tries again...", Moloch);
+                if (Hallucination) godvoice(altaralign, "My teddy bear!");
+                else pline("%s snarls and tries again...", Moloch);
                 fry_by_god(A_NONE, TRUE); /* wrath of Moloch */
                 /* declined to die in wizard or explore mode */
                 pline(cloud_of_smoke, hcolor(NH_BLACK));
