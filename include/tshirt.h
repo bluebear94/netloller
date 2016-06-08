@@ -7,9 +7,9 @@ static const char *tshirt_colors[] = {
   "maroon", "dark blue", "forest green", "transparent",
 };
 #define NUM_COLORS 24
-#define NUM_FC_MESSAGES 5
+#define NUM_FC_MESSAGES 6
 static const char fc_colors[] = {
-  0, 4, 1, 0, 5
+  0, 4, 1, 0, 5, 1
 };
 
 static const char *shirt_msgs[] = {
@@ -19,6 +19,7 @@ static const char *shirt_msgs[] = {
   "Hey, black dragon!  Disintegrate THIS!",
   "White Zombie",
   "Lichen Park",
+  "Welcome <3 Hell",
   "Is that Mjollnir in your pocket or are you just happy to see me?",
   "It's not the size of your sword, it's how #enhance'd you are with it.",
   "Madame Elvira's House O' Succubi Lifetime Customer",
@@ -86,5 +87,6 @@ static const char* tshirt_images[] = {
   "a pixelated image of a dinosaur",
   "a yin-yang symbol",
   "a silhouette of a dragon",
-  "realistic drawings of ants"
+  "realistic drawings of ants",
+  "an image of a sentient mochi",
 };
