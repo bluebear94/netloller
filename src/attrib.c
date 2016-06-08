@@ -1064,18 +1064,19 @@ void
 adjalign(n)
 int n;
 {
-    int newalign = u.ualign.record + n;
+    u.ualign.record += n;
+    if (u.ualign.record < ALIGNMIN)
+        u.ualign.record = ALIGNMIN;
+    if (u.ualign.record > ALIGNLIM)
+        u.ualign.record = ALIGNLIM;
+}
 
-    if (n < 0) {
-        if (newalign < u.ualign.record)
-            u.ualign.record = newalign;
-    } else if (newalign > u.ualign.record) {
-        u.ualign.record = newalign;
-        if (u.ualign.record > ALIGNLIM)
-            u.ualign.record = ALIGNLIM;
-        if (u.ualign.record < ALIGNMIN)
-            u.ualign.record = ALIGNMIN;
-    }
+void
+adjalignp(n)
+int n;
+{
+    if (n < 0) adjalign(n);
+    else if (rn2(100) < n) adjalign(1);
 }
 
 /* change hero's alignment type, possibly losing use of artifacts */

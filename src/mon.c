@@ -2342,7 +2342,7 @@ cleanup:
         adjalign(-5);
 
     /* malign was already adjusted for u.ualign.type and randomization */
-    adjalign(mtmp->malign);
+    adjalignp(mtmp->malign);
 }
 
 /* changes the monster into a stone monster of the same type

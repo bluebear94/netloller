@@ -114,6 +114,7 @@ E schar FDECL(acurr, (int));
 E schar NDECL(acurrstr);
 E boolean FDECL(extremeattr, (int));
 E void FDECL(adjalign, (int));
+E void FDECL(adjalignp, (int));
 E int FDECL(is_innate, (int));
 E char *FDECL(from_what, (int));
 E void FDECL(uchangealign, (int, int));

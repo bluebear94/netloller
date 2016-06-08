@@ -5,6 +5,9 @@ General Fixes and Modified Features
 The golden glow needs higher luck to be triggered.
 The golden glow raises your maximum hitpoints by only 4 when not crowned;
   when you are crowned it can give up to 15 (averaging to 9.5).
+Add a few more hallucinatory liquids.
+Alignment record has a lower bound of -70 and an upper bound of +30.
+Alignment record increases much more slowly from killing monsters.
 
 General New Features
 --------------------
