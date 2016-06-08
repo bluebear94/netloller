@@ -1073,6 +1073,8 @@ int n;
         u.ualign.record = newalign;
         if (u.ualign.record > ALIGNLIM)
             u.ualign.record = ALIGNLIM;
+        if (u.ualign.record < ALIGNMIN)
+            u.ualign.record = ALIGNMIN;
     }
 }
 
