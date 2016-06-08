@@ -2328,7 +2328,8 @@ boolean wep_was_destroyed;
             if (Blind || !flags.verbose)
                 You("are splashed!");
             else
-                You("are splashed by %s acid!", s_suffix(mon_nam(mon)));
+                You("are splashed by %s %s!", s_suffix(mon_nam(mon)),
+                    hliquid("acid"));
 
             if (!Acid_resistance)
                 mdamageu(mon, tmp);
