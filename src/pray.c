@@ -1481,7 +1481,9 @@ dosacrifice()
                         u_gname());
                     pline("then mercilessly snuffs out your life.");
                 }
-                Sprintf(killer.name, "%s indifference", s_suffix(Moloch));
+                Sprintf(killer.name, "%s%s indifference",
+                  Hallucination ? "a hallucinogen-distorted " : "",
+                  s_suffix(Moloch));
                 killer.format = KILLED_BY;
                 done(DIED);
                 /* life-saved (or declined to die in wizard/explore mode) */
