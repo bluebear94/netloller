@@ -2336,6 +2336,14 @@ struct permonst _mons2[] = {
     /*
      * ghosts
      */
+    MON("sentient mochi", S_GHOST, LVL(8, 6, 5, 0, 0), G_GENO,
+        A(ATTK(AT_TUCH, AD_PHYS, 2, 4), ATTK(AT_BITE, AD_PHYS, 6, 3), NO_ATTK, NO_ATTK, NO_ATTK,
+          NO_ATTK),
+        SIZ(WT_HUMAN, 0, MS_SILENT, MZ_HUMAN),
+        MR_COLD | MR_DISINT | MR_SLEEP | MR_POISON | MR_STONE | MR_ELEC, 0,
+        M1_FLY | M1_BREATHLESS | M1_WALLWALK | M1_AMORPHOUS | M1_UNSOLID | M1_CONCEAL,
+        M2_STALK | M2_HOSTILE | M2_NEUTER | M2_WANDER | M2_STALK, M3_INFRAVISION,
+        CLR_GRAY), /* Touhou Project ish */
     MON("ghost", S_GHOST, LVL(10, 3, -5, 50, -5), (G_NOCORPSE | G_NOGEN),
         A(ATTK(AT_TUCH, AD_PHYS, 1, 1), NO_ATTK, NO_ATTK, NO_ATTK, NO_ATTK,
           NO_ATTK),
