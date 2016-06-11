@@ -927,7 +927,7 @@ register int pm;
                 u.uen = u.uenmax;
             }
             if (old_uen != u.uen) {
-                You_feel("a mild buzz.");
+                You_feel("a %s buzz.", (pm == PM_ARCH_NEWT) ? "heavy" : "mild");
                 context.botl = 1;
             }
         }
