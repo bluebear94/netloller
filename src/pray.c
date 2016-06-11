@@ -611,7 +611,9 @@ boolean via_disintegration;
     You("%s!", !via_disintegration ? "fry to a crisp"
                                    : "disintegrate into a pile of dust");
     killer.format = KILLED_BY;
-    Sprintf(killer.name, "the wrath of %s", align_gname(resp_god));
+    Sprintf(killer.name, "the wrath of %s%s",
+      Hallucination ? "a hallucinogen-distorted " : "",
+      align_gname(resp_god));
     done(DIED);
 }
 
