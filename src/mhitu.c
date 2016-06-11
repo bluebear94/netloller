@@ -1469,6 +1469,12 @@ register struct attack *mattk;
             attrcurse();
         }
         break;
+    case AD_NCUR:
+        /* mattack->damn = item class
+         mattack->damd = max items */
+        hitmsg(mtmp, mattk);
+        rndcursec(mattk->damn, mattk->damd);
+        break;
     case AD_STUN:
         hitmsg(mtmp, mattk);
         if (!mtmp->mcan && !rn2(4)) {

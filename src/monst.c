@@ -5,6 +5,7 @@
 #include "config.h"
 #include "permonst.h"
 #include "monsym.h"
+#include "objclass.h"
 
 #define NO_ATTK    \
     {              \
@@ -2336,10 +2337,10 @@ struct permonst _mons2[] = {
     /*
      * ghosts
      */
-    MON("sentient mochi", S_GHOST, LVL(8, 6, 5, 0, 0), G_GENO,
+    MON("sentient mochi", S_GHOST, LVL(8, 6, 5, 0, 0), (G_GENO | 1),
         A(ATTK(AT_TUCH, AD_PHYS, 2, 4), ATTK(AT_BITE, AD_PHYS, 6, 3), NO_ATTK, NO_ATTK, NO_ATTK,
           NO_ATTK),
-        SIZ(WT_HUMAN, 0, MS_SILENT, MZ_HUMAN),
+        SIZ(400, 0, MS_SILENT, MZ_SMALL),
         MR_COLD | MR_DISINT | MR_SLEEP | MR_POISON | MR_STONE | MR_ELEC, 0,
         M1_FLY | M1_BREATHLESS | M1_WALLWALK | M1_AMORPHOUS | M1_UNSOLID | M1_CONCEAL,
         M2_STALK | M2_HOSTILE | M2_NEUTER | M2_WANDER | M2_STALK, M3_INFRAVISION,
@@ -2711,6 +2712,13 @@ struct permonst _mons2[] = {
         M1_HUMANOID | M1_SLITHY | M1_THICK_HIDE | M1_POIS,
         M2_STALK | M2_HOSTILE | M2_COLLECT | M2_MAGIC, M3_INFRAVISIBLE,
         CLR_ORANGE),
+    MON("arch-newt", S_LIZARD, LVL(10, 8, -2, 100, 0), (G_GENO | 3),
+        A(ATTK(AT_BITE, AD_PHYS, 4, 4),
+          ATTK(AT_TUCH, AD_NCUR, POTION_CLASS, 3), NO_ATTK, NO_ATTK, NO_ATTK,
+          NO_ATTK),
+        SIZ(10, 20, MS_SILENT, MZ_TINY), 0, 0,
+        M1_SWIM | M1_AMPHIBIOUS | M1_ANIMAL | M1_NOHANDS | M1_CARNIVORE,
+        M2_HOSTILE, 0, HI_LORD),
 
     /*
      * dummy monster needed for visual interface

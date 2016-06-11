@@ -914,12 +914,15 @@ register int pm;
 
     switch (pm) {
     case PM_NEWT:
+    case PM_ARCH_NEWT:
         /* MRKR: "eye of newt" may give small magical energy boost */
         if (rn2(3) || 3 * u.uen <= 2 * u.uenmax) {
             int old_uen = u.uen;
             u.uen += rnd(3);
             if (u.uen > u.uenmax) {
-                if (!rn2(3))
+                if (pm == PM_ARCH_NEWT)
+                    u.uenmax += 4 + rn2(3);
+                else if (!rn2(3))
                     u.uenmax++;
                 u.uen = u.uenmax;
             }

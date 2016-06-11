@@ -77,6 +77,10 @@
 #define AD_SLIM 40  /* turns you into green slime */
 #define AD_ENCH 41  /* remove enchantment (disenchanter) */
 #define AD_CORR 42  /* corrode armor (black pudding) */
+#define AD_NCUR 43  /* curse one class of items */
+                    /* # of dice = item class to cursse */
+                    /* # of sides = max # of items to curse
+                      (influenced by luck) */
 
 #define AD_CLRC 240 /* random clerical spell */
 #define AD_SPEL 241 /* random magic spell */

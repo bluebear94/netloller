@@ -385,6 +385,65 @@ rndcurse()
     }
 }
 
+/* curse some inventory items from a certain class! */
+void
+rndcursec(class, count)
+int class;
+int count;
+{
+    int nobj = 0;
+    int cnt, onum;
+    struct obj *otmp;
+    static const char mal_aura[] = "feel a malignant aura surround %s.";
+
+    if (uwep && (uwep->oartifact == ART_MAGICBANE) && rn2(20)) {
+        You(mal_aura, "the magic-absorbing blade");
+        return;
+    }
+
+    if (Antimagic) {
+        shieldeff(u.ux, u.uy);
+        You(mal_aura, "you");
+    }
+
+    for (otmp = invent; otmp; otmp = otmp->nobj) {
+        /* only items of the appropriate class are cursed */
+        if (otmp->oclass == class) nobj++;
+    }
+    if (nobj) {
+        cnt = rnl(count);
+        if (!cnt) pline("Luckily it fades away!");
+        else {
+            for (; cnt > 0; cnt--) {
+                onum = rnd(nobj);
+                for (otmp = invent; otmp; otmp = otmp->nobj) {
+                    /* as above */
+                    if (otmp->oclass != class)
+                        continue;
+                    if (--onum == 0)
+                        break; /* found the target */
+                }
+                /* the !otmp case should never happen; picking an already
+                   cursed item happens--avoid "resists" message in that case */
+                if (!otmp || otmp->cursed)
+                    continue; /* next target */
+
+                if (otmp->oartifact && spec_ability(otmp, SPFX_INTEL)
+                    && rn2(10) < 8) {
+                    pline("%s!", Tobjnam(otmp, "resist"));
+                    continue;
+                }
+
+                if (otmp->blessed)
+                    unbless(otmp);
+                else
+                    curse(otmp);
+            }
+            update_inventory();
+        }
+    }
+}
+
 /* remove a random INTRINSIC ability */
 void
 attrcurse()

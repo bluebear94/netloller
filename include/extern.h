@@ -2181,6 +2181,7 @@ E boolean FDECL(is_izchak, (struct monst *, BOOLEAN_P));
 E void NDECL(take_gold);
 E int NDECL(dosit);
 E void NDECL(rndcurse);
+E void FDECL(rndcursec, (int, int));
 E void NDECL(attrcurse);
 
 /* ### sounds.c ### */
