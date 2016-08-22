@@ -1598,7 +1598,8 @@ static NEARDATA const char *const hliquids[] = {
     "ketchup", "slow light", "oil", "vinaigrette", "liquid crystal", "honey",
     "caramel sauce", "ink", "aqueous humour", "milk substitute", "fruit juice",
     "glowing lava", "liquid nitrogen", "glacial acetic acid",
-    "vegetable juice",
+    "vegetable juice", "gastric acid", "mineral water", "cough syrup",
+    "quicksilver", "sweet vitriol", "grey goo", "pink slime",
 };
 
 const char *

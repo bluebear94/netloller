@@ -1,4 +1,4 @@
-/* NetHack 3.6	pager.c	$NHDT-Date: 1465114189 2016/06/05 08:09:49 $  $NHDT-Branch: NetHack-3.6.0 $:$NHDT-Revision: 1.107 $ */
+/* NetHack 3.6	pager.c	$NHDT-Date: 1466638086 2016/06/22 23:28:06 $  $NHDT-Branch: NetHack-3.6.0 $:$NHDT-Revision: 1.111 $ */
 /* Copyright (c) Stichting Mathematisch Centrum, Amsterdam, 1985. */
 /* NetHack may be freely redistributed.  See license for details. */
 
@@ -1307,6 +1307,35 @@ doidtrap()
     return 0;
 }
 
+/*
+    Implements a rudimentary if/elif/else/endif interpretor and use
+    conditionals in dat/cmdhelp to describe what command each keystroke
+    currently invokes, so that there isn't a lot of "(debug mode only)"
+    and "(if number_pad is off)" cluttering the feedback that the user
+    sees.  (The conditionals add quite a bit of clutter to the raw data
+    but users don't see that.  number_pad produces a lot of conditional
+    commands:  basic letters vs digits, 'g' vs 'G' for '5', phone
+    keypad vs normal layout of digits, and QWERTZ keyboard swap between
+    y/Y/^Y/M-y/M-Y/M-^Y and z/Z/^Z/M-z/M-Z/M-^Z.)
+    
+    The interpretor understands
+     '&#' for comment,
+     '&? option' for 'if' (also '&? !option'
+                           or '&? option=value[,value2,...]'
+                           or '&? !option=value[,value2,...]'),
+     '&: option' for 'elif' (with argument variations same as 'if';
+                             any number of instances for each 'if'),
+     '&:' for 'else' (also '&: #comment';
+                      0 or 1 instance for a given 'if'), and
+     '&.' for 'endif' (also '&. #comment'; required for each 'if').
+    
+    The option handling is a bit of a mess, with no generality for
+    which options to deal with and only a comma separated list of
+    integer values for the '=value' part.  number_pad is the only
+    supported option that has a value; the few others (wizard/debug,
+    rest_on_space, #if SHELL, #if SUSPEND) are booleans.
+*/
+
 STATIC_DCL void
 whatdoes_help()
 {
@@ -1541,13 +1570,17 @@ dowhatdoes()
 
     if (!once) {
         pline("Ask about '&' or '?' to get more info.%s",
-              iflags.altmeta ? "  (For ESC, type it twice.)" : "");
+#ifdef ALTMETA
+              iflags.altmeta ? "  (For ESC, type it twice.)" :
+#endif
+              "");
         once = TRUE;
     }
 #if defined(UNIX) || defined(VMS)
     introff(); /* disables ^C but not ^\ */
 #endif
     q = yn_function("What command?", (char *) 0, '\0');
+#ifdef ALTMETA
     if (q == '\033' && iflags.altmeta) {
         /* in an ideal world, we would know whether another keystroke
            was already pending, but this is not an ideal world...
@@ -1557,6 +1590,7 @@ dowhatdoes()
         if (q != '\033')
             q = (char) ((uchar) q | 0200);
     }
+#endif /*ALTMETA*/
 #if defined(UNIX) || defined(VMS)
     intron(); /* reenables ^C */
 #endif
